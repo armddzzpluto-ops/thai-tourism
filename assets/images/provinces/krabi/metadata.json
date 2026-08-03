@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Krabi",
+    "slug":  "krabi",
+    "heroImage":  "assets/images/provinces/krabi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/krabi/gallery-1.webp",
+                          "assets/images/provinces/krabi/gallery-2.webp",
+                          "assets/images/provinces/krabi/gallery-3.webp",
+                          "assets/images/provinces/krabi/gallery-4.webp",
+                          "assets/images/provinces/krabi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/krabi/hero.webp",
+                            "caption":  "Krabi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/krabi/gallery-1.webp",
+                            "caption":  "Krabi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/krabi/gallery-2.webp",
+                            "caption":  "Krabi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/krabi/gallery-3.webp",
+                            "caption":  "Krabi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/krabi/gallery-4.webp",
+                            "caption":  "Krabi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Krabi",
+                            "slug":  "krabi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/krabi/gallery-5.webp",
+                            "caption":  "Krabi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

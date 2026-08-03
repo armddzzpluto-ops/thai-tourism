@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Loei",
+    "slug":  "loei",
+    "heroImage":  "assets/images/provinces/loei/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/loei/gallery-1.webp",
+                          "assets/images/provinces/loei/gallery-2.webp",
+                          "assets/images/provinces/loei/gallery-3.webp",
+                          "assets/images/provinces/loei/gallery-4.webp",
+                          "assets/images/provinces/loei/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/loei/hero.webp",
+                            "caption":  "Loei tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/loei/gallery-1.webp",
+                            "caption":  "Loei tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/loei/gallery-2.webp",
+                            "caption":  "Loei tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/loei/gallery-3.webp",
+                            "caption":  "Loei tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/loei/gallery-4.webp",
+                            "caption":  "Loei tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Loei",
+                            "slug":  "loei",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/loei/gallery-5.webp",
+                            "caption":  "Loei tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        }
+                    ]
+}

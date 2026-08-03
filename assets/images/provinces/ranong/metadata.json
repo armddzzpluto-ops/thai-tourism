@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Ranong",
+    "slug":  "ranong",
+    "heroImage":  "assets/images/provinces/ranong/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/ranong/gallery-1.webp",
+                          "assets/images/provinces/ranong/gallery-2.webp",
+                          "assets/images/provinces/ranong/gallery-3.webp",
+                          "assets/images/provinces/ranong/gallery-4.webp",
+                          "assets/images/provinces/ranong/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/ranong/hero.webp",
+                            "caption":  "Ranong tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/ranong/gallery-1.webp",
+                            "caption":  "Ranong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/ranong/gallery-2.webp",
+                            "caption":  "Ranong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/ranong/gallery-3.webp",
+                            "caption":  "Ranong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/ranong/gallery-4.webp",
+                            "caption":  "Ranong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ranong",
+                            "slug":  "ranong",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/ranong/gallery-5.webp",
+                            "caption":  "Ranong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

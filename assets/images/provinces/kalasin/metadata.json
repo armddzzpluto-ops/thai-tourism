@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Kalasin",
+    "slug":  "kalasin",
+    "heroImage":  "assets/images/provinces/kalasin/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/kalasin/gallery-1.webp",
+                          "assets/images/provinces/kalasin/gallery-2.webp",
+                          "assets/images/provinces/kalasin/gallery-3.webp",
+                          "assets/images/provinces/kalasin/gallery-4.webp",
+                          "assets/images/provinces/kalasin/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/kalasin/hero.webp",
+                            "caption":  "Kalasin tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/kalasin/gallery-1.webp",
+                            "caption":  "Kalasin tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/kalasin/gallery-2.webp",
+                            "caption":  "Kalasin tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/kalasin/gallery-3.webp",
+                            "caption":  "Kalasin tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/kalasin/gallery-4.webp",
+                            "caption":  "Kalasin tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kalasin",
+                            "slug":  "kalasin",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/kalasin/gallery-5.webp",
+                            "caption":  "Kalasin tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

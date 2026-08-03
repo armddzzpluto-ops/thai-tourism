@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Pathum Thani",
+    "slug":  "pathum-thani",
+    "heroImage":  "assets/images/provinces/pathum-thani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/pathum-thani/gallery-1.webp",
+                          "assets/images/provinces/pathum-thani/gallery-2.webp",
+                          "assets/images/provinces/pathum-thani/gallery-3.webp",
+                          "assets/images/provinces/pathum-thani/gallery-4.webp",
+                          "assets/images/provinces/pathum-thani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/pathum-thani/hero.webp",
+                            "caption":  "Pathum Thani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/pathum-thani/gallery-1.webp",
+                            "caption":  "Pathum Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/pathum-thani/gallery-2.webp",
+                            "caption":  "Pathum Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/pathum-thani/gallery-3.webp",
+                            "caption":  "Pathum Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/pathum-thani/gallery-4.webp",
+                            "caption":  "Pathum Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pathum Thani",
+                            "slug":  "pathum-thani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/pathum-thani/gallery-5.webp",
+                            "caption":  "Pathum Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

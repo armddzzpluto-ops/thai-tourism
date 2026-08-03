@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Kamphaeng Phet",
+    "slug":  "kamphaeng-phet",
+    "heroImage":  "assets/images/provinces/kamphaeng-phet/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
+                          "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
+                          "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
+                          "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
+                          "assets/images/provinces/kamphaeng-phet/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/kamphaeng-phet/hero.webp",
+                            "caption":  "Kamphaeng Phet tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
+                            "caption":  "Kamphaeng Phet tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
+                            "caption":  "Kamphaeng Phet tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
+                            "caption":  "Kamphaeng Phet tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
+                            "caption":  "Kamphaeng Phet tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kamphaeng Phet",
+                            "slug":  "kamphaeng-phet",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/kamphaeng-phet/gallery-5.webp",
+                            "caption":  "Kamphaeng Phet tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

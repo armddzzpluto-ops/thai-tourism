@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Lampang",
+    "slug":  "lampang",
+    "heroImage":  "assets/images/provinces/lampang/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/lampang/gallery-1.webp",
+                          "assets/images/provinces/lampang/gallery-2.webp",
+                          "assets/images/provinces/lampang/gallery-3.webp",
+                          "assets/images/provinces/lampang/gallery-4.webp",
+                          "assets/images/provinces/lampang/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/lampang/hero.webp",
+                            "caption":  "Lampang tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/lampang/gallery-1.webp",
+                            "caption":  "Lampang tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/lampang/gallery-2.webp",
+                            "caption":  "Lampang tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/lampang/gallery-3.webp",
+                            "caption":  "Lampang tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/lampang/gallery-4.webp",
+                            "caption":  "Lampang tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lampang",
+                            "slug":  "lampang",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/lampang/gallery-5.webp",
+                            "caption":  "Lampang tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

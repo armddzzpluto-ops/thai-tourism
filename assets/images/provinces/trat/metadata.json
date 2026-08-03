@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Trat",
+    "slug":  "trat",
+    "heroImage":  "assets/images/provinces/trat/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/trat/gallery-1.webp",
+                          "assets/images/provinces/trat/gallery-2.webp",
+                          "assets/images/provinces/trat/gallery-3.webp",
+                          "assets/images/provinces/trat/gallery-4.webp",
+                          "assets/images/provinces/trat/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/trat/hero.webp",
+                            "caption":  "Trat tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/trat/gallery-1.webp",
+                            "caption":  "Trat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/trat/gallery-2.webp",
+                            "caption":  "Trat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/trat/gallery-3.webp",
+                            "caption":  "Trat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/trat/gallery-4.webp",
+                            "caption":  "Trat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Trat",
+                            "slug":  "trat",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/trat/gallery-5.webp",
+                            "caption":  "Trat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

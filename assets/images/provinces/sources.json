@@ -1,0 +1,578 @@
+﻿[
+    {
+        "province":  "Amnat Charoen",
+        "wikidataLabel":  "Amnat Charoen",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/amnat-charoen.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:03.1882237Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Ang Thong",
+        "wikidataLabel":  "Ang Thong",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+        "localPath":  "assets/images/provinces/ang-thong.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:05.8402407Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Bueng Kan",
+        "wikidataLabel":  "Bueng Kan",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+        "localPath":  "assets/images/provinces/bueng-kan.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:11.2151355Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Buri Ram",
+        "wikidataLabel":  "Buriram",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+        "localPath":  "assets/images/provinces/buri-ram.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:15.5911946Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chachoengsao",
+        "wikidataLabel":  "Chachoengsao",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AA%E0%B8%96%E0%B8%B9%E0%B8%9B%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%82%E0%B8%88%E0%B9%89%E0%B9%82%E0%B8%A5%E0%B9%89%20King%20Taksin%20Pagoda%20-%20panoramio%20%281%29.jpg",
+        "localPath":  "assets/images/provinces/chachoengsao.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:19.6883900Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chai Nat",
+        "wikidataLabel":  "Chai Nat",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+        "localPath":  "assets/images/provinces/chai-nat.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:24.1206667Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chaiyaphum",
+        "wikidataLabel":  "Chaiyaphum",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+        "localPath":  "assets/images/provinces/chaiyaphum.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:25.0967393Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chanthaburi",
+        "wikidataLabel":  "Chanthaburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+        "localPath":  "assets/images/provinces/chanthaburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:26.5185252Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chiang Mai",
+        "wikidataLabel":  "Chiang Mai",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+        "localPath":  "assets/images/provinces/chiang-mai.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:39.0901735Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chiang Rai",
+        "wikidataLabel":  "Chiang Rai",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+        "localPath":  "assets/images/provinces/chiang-rai.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:43.4334965Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Chumphon",
+        "wikidataLabel":  "Chumphon",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+        "localPath":  "assets/images/provinces/chumphon.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:45.5288330Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Kalasin",
+        "wikidataLabel":  "Kalasin",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+        "localPath":  "assets/images/provinces/kalasin.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:46.7859729Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Kamphaeng Phet",
+        "wikidataLabel":  "Kamphaeng Phet",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/kamphaeng-phet.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:51.8622431Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Kanchanaburi",
+        "wikidataLabel":  "Kanchanaburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+        "localPath":  "assets/images/provinces/kanchanaburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:37:53.7572370Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Khon Kaen",
+        "wikidataLabel":  "Khon Kaen",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
+        "localPath":  "assets/images/provinces/khon-kaen.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:42.5970122Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Krabi",
+        "wikidataLabel":  "Krabi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Krabi%20Panorama.JPG",
+        "localPath":  "assets/images/provinces/krabi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:44.3565505Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Lampang",
+        "wikidataLabel":  "Lampang",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
+        "localPath":  "assets/images/provinces/lampang.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:49.4343821Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Lamphun",
+        "wikidataLabel":  "Lamphun",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/lamphun.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:51.3033186Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Mae Hong Son",
+        "wikidataLabel":  "Mae Hong Son",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+        "localPath":  "assets/images/provinces/mae-hong-son.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:52.7763163Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Maha Sarakham",
+        "wikidataLabel":  "Maha Sarakham",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
+        "localPath":  "assets/images/provinces/maha-sarakham.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:55.8920910Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Mukdahan",
+        "wikidataLabel":  "Mukdahan",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+        "localPath":  "assets/images/provinces/mukdahan.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:38:57.0868233Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Nayok",
+        "wikidataLabel":  "Nakhon Nayok",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
+        "localPath":  "assets/images/provinces/nakhon-nayok.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:01.2058001Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Pathom",
+        "wikidataLabel":  "Nakhon Pathom",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+        "localPath":  "assets/images/provinces/nakhon-pathom.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:05.5340768Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Phanom",
+        "wikidataLabel":  "Nakhon Phanom",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+        "localPath":  "assets/images/provinces/nakhon-phanom.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:06.8151183Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Ratchasima",
+        "wikidataLabel":  "Nakhon Ratchasima",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+        "localPath":  "assets/images/provinces/nakhon-ratchasima.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:08.5013761Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Sawan",
+        "wikidataLabel":  "Nakhon Sawan",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+        "localPath":  "assets/images/provinces/nakhon-sawan.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:10.2430300Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nakhon Si Thammarat",
+        "wikidataLabel":  "Nakhon Si Thammarat",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+        "localPath":  "assets/images/provinces/nakhon-si-thammarat.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:11.4365092Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Narathiwat",
+        "wikidataLabel":  "Narathiwat",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+        "localPath":  "assets/images/provinces/narathiwat.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:13.6900414Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nong Bua Lamphu",
+        "wikidataLabel":  "Nong Bua Lamphu",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+        "localPath":  "assets/images/provinces/nong-bua-lamphu.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:15.3118305Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nong Khai",
+        "wikidataLabel":  "Nong Khai",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+        "localPath":  "assets/images/provinces/nong-khai.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:16.5413214Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Nonthaburi",
+        "wikidataLabel":  "Nonthaburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
+        "localPath":  "assets/images/provinces/nonthaburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:17.6549911Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Pathum Thani",
+        "wikidataLabel":  "Pathum Thani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/004%20Barge%20on%20Chao%20Phraya%20River%20%28Menam%29%20in%20Pathum%20Thani%20province%2C%20Thailand.jpg",
+        "localPath":  "assets/images/provinces/pathum-thani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:20.2680685Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Pattani",
+        "wikidataLabel":  "Pattani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+        "localPath":  "assets/images/provinces/pattani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:21.5047041Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phang Nga",
+        "wikidataLabel":  "Phang Nga",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+        "localPath":  "assets/images/provinces/phang-nga.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:25.1678076Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phatthalung",
+        "wikidataLabel":  "Phatthalung",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+        "localPath":  "assets/images/provinces/phatthalung.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:26.4812683Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phayao",
+        "wikidataLabel":  "Phayao",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+        "localPath":  "assets/images/provinces/phayao.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:31.0856614Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phetchabun",
+        "wikidataLabel":  "Phetchabun",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
+        "localPath":  "assets/images/provinces/phetchabun.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:32.3129794Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phetchaburi",
+        "wikidataLabel":  "Phetchaburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+        "localPath":  "assets/images/provinces/phetchaburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:37.0109173Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phichit",
+        "wikidataLabel":  "Phichit",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+        "localPath":  "assets/images/provinces/phichit.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:40.8791995Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phitsanulok",
+        "wikidataLabel":  "Phitsanulok",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/phitsanulok.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:39:49.5627380Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phra Nakhon Si Ayutthaya",
+        "wikidataLabel":  "Phra Nakhon Si Ayutthaya",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+        "localPath":  "assets/images/provinces/phra-nakhon-si-ayutthaya.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:36.4040259Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phrae",
+        "wikidataLabel":  "Phrae",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+        "localPath":  "assets/images/provinces/phrae.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:37.9825325Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Phuket",
+        "wikidataLabel":  "Phuket",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+        "localPath":  "assets/images/provinces/phuket.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:39.1925330Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Prachin Buri",
+        "wikidataLabel":  "Prachin Buri",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+        "localPath":  "assets/images/provinces/prachin-buri.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:46.0185713Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Prachuap Khiri Khan",
+        "wikidataLabel":  "Prachuap Khiri Khan",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
+        "localPath":  "assets/images/provinces/prachuap-khiri-khan.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:47.9173594Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Ranong",
+        "wikidataLabel":  "Ranong",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1.JPG",
+        "localPath":  "assets/images/provinces/ranong.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:40:49.9706341Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Ratchaburi",
+        "wikidataLabel":  "Ratchaburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/NationalMuseumRatchaburi1.JPG",
+        "localPath":  "assets/images/provinces/ratchaburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:03.5143212Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Rayong",
+        "wikidataLabel":  "Rayong",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+        "localPath":  "assets/images/provinces/rayong.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:33.7664744Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Roi Et",
+        "wikidataLabel":  "Roi Et",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+        "localPath":  "assets/images/provinces/roi-et.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:34.8804778Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Sa Kaeo",
+        "wikidataLabel":  "Sa Kaeo",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+        "localPath":  "assets/images/provinces/sa-kaeo.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:37.9655738Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Sakon Nakhon",
+        "wikidataLabel":  "Sakon Nakhon",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+        "localPath":  "assets/images/provinces/sakon-nakhon.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:43.0018636Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Samut Prakan",
+        "wikidataLabel":  "Samut Prakan",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+        "localPath":  "assets/images/provinces/samut-prakan.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:46.4856230Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Samut Sakhon",
+        "wikidataLabel":  "Samut Sakhon",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+        "localPath":  "assets/images/provinces/samut-sakhon.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:48.0129232Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Samut Songkhram",
+        "wikidataLabel":  "Samut Songkhram",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
+        "localPath":  "assets/images/provinces/samut-songkhram.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:51.3024340Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Saraburi",
+        "wikidataLabel":  "Saraburi",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+        "localPath":  "assets/images/provinces/saraburi.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:41:55.8136287Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Satun",
+        "wikidataLabel":  "Satun",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+        "localPath":  "assets/images/provinces/satun.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:09.1632900Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Si Sa Ket",
+        "wikidataLabel":  "Sisaket",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+        "localPath":  "assets/images/provinces/si-sa-ket.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:11.2228134Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Sing Buri",
+        "wikidataLabel":  "Sing Buri",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+        "localPath":  "assets/images/provinces/sing-buri.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:14.7513191Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Songkhla",
+        "wikidataLabel":  "Songkhla",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+        "localPath":  "assets/images/provinces/songkhla.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:16.0980521Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Sukhothai",
+        "wikidataLabel":  "Sukhothai",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+        "localPath":  "assets/images/provinces/sukhothai.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:19.0548968Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Suphan Buri",
+        "wikidataLabel":  "Suphan Buri",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+        "localPath":  "assets/images/provinces/suphan-buri.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:23.9390593Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Surat Thani",
+        "wikidataLabel":  "Surat Thani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+        "localPath":  "assets/images/provinces/surat-thani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:26.2390309Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Surin",
+        "wikidataLabel":  "Surin",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
+        "localPath":  "assets/images/provinces/surin.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:27.6843528Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Tak",
+        "wikidataLabel":  "Tak",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
+        "localPath":  "assets/images/provinces/tak.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:29.3444228Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Trang",
+        "wikidataLabel":  "Trang",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
+        "localPath":  "assets/images/provinces/trang.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:30.8270672Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Trat",
+        "wikidataLabel":  "Trat",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Kohmak.jpg",
+        "localPath":  "assets/images/provinces/trat.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:32.6741152Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Ubon Ratchathani",
+        "wikidataLabel":  "Ubon Ratchathani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/ubon-ratchathani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:35.6101884Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Udon Thani",
+        "wikidataLabel":  "Udon Thani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+        "localPath":  "assets/images/provinces/udon-thani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:53.2546462Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Uthai Thani",
+        "wikidataLabel":  "Uthai Thani",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+        "localPath":  "assets/images/provinces/uthai-thani.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:55.6699307Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Uttaradit",
+        "wikidataLabel":  "Uttaradit",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
+        "localPath":  "assets/images/provinces/uttaradit.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:56.6741915Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Yala",
+        "wikidataLabel":  "Yala",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+        "localPath":  "assets/images/provinces/yala.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:58.0668301Z",
+        "source":  "Wikidata P18"
+    },
+    {
+        "province":  "Yasothon",
+        "wikidataLabel":  "Yasothon",
+        "imageUrl":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+        "localPath":  "assets/images/provinces/yasothon.jpg",
+        "retrievedAtUtc":  "2026-08-01T19:42:59.5212557Z",
+        "source":  "Wikidata P18"
+    }
+]

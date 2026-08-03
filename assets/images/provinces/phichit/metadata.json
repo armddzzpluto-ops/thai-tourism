@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phichit",
+    "slug":  "phichit",
+    "heroImage":  "assets/images/provinces/phichit/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phichit/gallery-1.webp",
+                          "assets/images/provinces/phichit/gallery-2.webp",
+                          "assets/images/provinces/phichit/gallery-3.webp",
+                          "assets/images/provinces/phichit/gallery-4.webp",
+                          "assets/images/provinces/phichit/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phichit/hero.webp",
+                            "caption":  "Phichit tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phichit/gallery-1.webp",
+                            "caption":  "Phichit tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phichit/gallery-2.webp",
+                            "caption":  "Phichit tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phichit/gallery-3.webp",
+                            "caption":  "Phichit tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phichit/gallery-4.webp",
+                            "caption":  "Phichit tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phichit",
+                            "slug":  "phichit",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phichit/gallery-5.webp",
+                            "caption":  "Phichit tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Skulptur%20Riesenkrokodil%20Pichit%20Thailand.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

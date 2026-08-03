@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Sa Kaeo",
+    "slug":  "sa-kaeo",
+    "heroImage":  "assets/images/provinces/sa-kaeo/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/sa-kaeo/gallery-1.webp",
+                          "assets/images/provinces/sa-kaeo/gallery-2.webp",
+                          "assets/images/provinces/sa-kaeo/gallery-3.webp",
+                          "assets/images/provinces/sa-kaeo/gallery-4.webp",
+                          "assets/images/provinces/sa-kaeo/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/sa-kaeo/hero.webp",
+                            "caption":  "Sa Kaeo tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/sa-kaeo/gallery-1.webp",
+                            "caption":  "Sa Kaeo tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/sa-kaeo/gallery-2.webp",
+                            "caption":  "Sa Kaeo tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/sa-kaeo/gallery-3.webp",
+                            "caption":  "Sa Kaeo tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/sa-kaeo/gallery-4.webp",
+                            "caption":  "Sa Kaeo tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sa Kaeo",
+                            "slug":  "sa-kaeo",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/sa-kaeo/gallery-5.webp",
+                            "caption":  "Sa Kaeo tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Countryside%20in%20the%20Srakaeo%20Province.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

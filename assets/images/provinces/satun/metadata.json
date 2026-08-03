@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Satun",
+    "slug":  "satun",
+    "heroImage":  "assets/images/provinces/satun/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/satun/gallery-1.webp",
+                          "assets/images/provinces/satun/gallery-2.webp",
+                          "assets/images/provinces/satun/gallery-3.webp",
+                          "assets/images/provinces/satun/gallery-4.webp",
+                          "assets/images/provinces/satun/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/satun/hero.webp",
+                            "caption":  "Satun tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/satun/gallery-1.webp",
+                            "caption":  "Satun tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/satun/gallery-2.webp",
+                            "caption":  "Satun tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/satun/gallery-3.webp",
+                            "caption":  "Satun tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/satun/gallery-4.webp",
+                            "caption":  "Satun tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Satun",
+                            "slug":  "satun",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/satun/gallery-5.webp",
+                            "caption":  "Satun tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Koh%20Lipe%20%28island%29%2C%20Beach%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

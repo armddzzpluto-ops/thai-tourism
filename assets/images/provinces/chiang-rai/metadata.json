@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chiang Rai",
+    "slug":  "chiang-rai",
+    "heroImage":  "assets/images/provinces/chiang-rai/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chiang-rai/gallery-1.webp",
+                          "assets/images/provinces/chiang-rai/gallery-2.webp",
+                          "assets/images/provinces/chiang-rai/gallery-3.webp",
+                          "assets/images/provinces/chiang-rai/gallery-4.webp",
+                          "assets/images/provinces/chiang-rai/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chiang-rai/hero.webp",
+                            "caption":  "Chiang Rai tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chiang-rai/gallery-1.webp",
+                            "caption":  "Chiang Rai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chiang-rai/gallery-2.webp",
+                            "caption":  "Chiang Rai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chiang-rai/gallery-3.webp",
+                            "caption":  "Chiang Rai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chiang-rai/gallery-4.webp",
+                            "caption":  "Chiang Rai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Rai",
+                            "slug":  "chiang-rai",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chiang-rai/gallery-5.webp",
+                            "caption":  "Chiang Rai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/20100228%20chiang%20rai3%207642%20%284444147157%29.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

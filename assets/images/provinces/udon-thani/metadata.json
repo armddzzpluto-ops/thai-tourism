@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Udon Thani",
+    "slug":  "udon-thani",
+    "heroImage":  "assets/images/provinces/udon-thani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/udon-thani/gallery-1.webp",
+                          "assets/images/provinces/udon-thani/gallery-2.webp",
+                          "assets/images/provinces/udon-thani/gallery-3.webp",
+                          "assets/images/provinces/udon-thani/gallery-4.webp",
+                          "assets/images/provinces/udon-thani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/udon-thani/hero.webp",
+                            "caption":  "Udon Thani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/udon-thani/gallery-1.webp",
+                            "caption":  "Udon Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/udon-thani/gallery-2.webp",
+                            "caption":  "Udon Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/udon-thani/gallery-3.webp",
+                            "caption":  "Udon Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/udon-thani/gallery-4.webp",
+                            "caption":  "Udon Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Udon Thani",
+                            "slug":  "udon-thani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/udon-thani/gallery-5.webp",
+                            "caption":  "Udon Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Udon%20Thani%20-%20Nong%20Prachak%20Lake%20-%200021.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

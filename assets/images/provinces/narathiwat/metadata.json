@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Narathiwat",
+    "slug":  "narathiwat",
+    "heroImage":  "assets/images/provinces/narathiwat/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/narathiwat/gallery-1.webp",
+                          "assets/images/provinces/narathiwat/gallery-2.webp",
+                          "assets/images/provinces/narathiwat/gallery-3.webp",
+                          "assets/images/provinces/narathiwat/gallery-4.webp",
+                          "assets/images/provinces/narathiwat/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/narathiwat/hero.webp",
+                            "caption":  "Narathiwat tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/narathiwat/gallery-1.webp",
+                            "caption":  "Narathiwat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/narathiwat/gallery-2.webp",
+                            "caption":  "Narathiwat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/narathiwat/gallery-3.webp",
+                            "caption":  "Narathiwat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/narathiwat/gallery-4.webp",
+                            "caption":  "Narathiwat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Narathiwat",
+                            "slug":  "narathiwat",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/narathiwat/gallery-5.webp",
+                            "caption":  "Narathiwat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

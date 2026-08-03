@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phra Nakhon Si Ayutthaya",
+    "slug":  "phra-nakhon-si-ayutthaya",
+    "heroImage":  "assets/images/provinces/phra-nakhon-si-ayutthaya/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
+                          "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
+                          "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
+                          "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-4.webp",
+                          "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/hero.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-4.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phra Nakhon Si Ayutthaya",
+                            "slug":  "phra-nakhon-si-ayutthaya",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-5.webp",
+                            "caption":  "Phra Nakhon Si Ayutthaya tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

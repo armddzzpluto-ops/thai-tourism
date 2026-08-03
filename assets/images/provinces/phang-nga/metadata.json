@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phang Nga",
+    "slug":  "phang-nga",
+    "heroImage":  "assets/images/provinces/phang-nga/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phang-nga/gallery-1.webp",
+                          "assets/images/provinces/phang-nga/gallery-2.webp",
+                          "assets/images/provinces/phang-nga/gallery-3.webp",
+                          "assets/images/provinces/phang-nga/gallery-4.webp",
+                          "assets/images/provinces/phang-nga/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phang-nga/hero.webp",
+                            "caption":  "Phang Nga tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phang-nga/gallery-1.webp",
+                            "caption":  "Phang Nga tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phang-nga/gallery-2.webp",
+                            "caption":  "Phang Nga tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phang-nga/gallery-3.webp",
+                            "caption":  "Phang Nga tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phang-nga/gallery-4.webp",
+                            "caption":  "Phang Nga tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phang Nga",
+                            "slug":  "phang-nga",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phang-nga/gallery-5.webp",
+                            "caption":  "Phang Nga tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phang%20Nga%20Bay%2C%20Karst%20formations%2C%20Thailand.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Songkhla",
+    "slug":  "songkhla",
+    "heroImage":  "assets/images/provinces/songkhla/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/songkhla/gallery-1.webp",
+                          "assets/images/provinces/songkhla/gallery-2.webp",
+                          "assets/images/provinces/songkhla/gallery-3.webp",
+                          "assets/images/provinces/songkhla/gallery-4.webp",
+                          "assets/images/provinces/songkhla/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/songkhla/hero.webp",
+                            "caption":  "Songkhla tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/songkhla/gallery-1.webp",
+                            "caption":  "Songkhla tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/songkhla/gallery-2.webp",
+                            "caption":  "Songkhla tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/songkhla/gallery-3.webp",
+                            "caption":  "Songkhla tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/songkhla/gallery-4.webp",
+                            "caption":  "Songkhla tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Songkhla",
+                            "slug":  "songkhla",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/songkhla/gallery-5.webp",
+                            "caption":  "Songkhla tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Songkhla%20Fisherman%20Village.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

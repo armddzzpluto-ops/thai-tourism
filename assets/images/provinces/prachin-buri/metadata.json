@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Prachin Buri",
+    "slug":  "prachin-buri",
+    "heroImage":  "assets/images/provinces/prachin-buri/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/prachin-buri/gallery-1.webp",
+                          "assets/images/provinces/prachin-buri/gallery-2.webp",
+                          "assets/images/provinces/prachin-buri/gallery-3.webp",
+                          "assets/images/provinces/prachin-buri/gallery-4.webp",
+                          "assets/images/provinces/prachin-buri/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/prachin-buri/hero.webp",
+                            "caption":  "Prachin Buri tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/prachin-buri/gallery-1.webp",
+                            "caption":  "Prachin Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/prachin-buri/gallery-2.webp",
+                            "caption":  "Prachin Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/prachin-buri/gallery-3.webp",
+                            "caption":  "Prachin Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/prachin-buri/gallery-4.webp",
+                            "caption":  "Prachin Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Prachin Buri",
+                            "slug":  "prachin-buri",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/prachin-buri/gallery-5.webp",
+                            "caption":  "Prachin Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Abhaibhubejhr%2001.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

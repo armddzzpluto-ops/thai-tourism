@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chanthaburi",
+    "slug":  "chanthaburi",
+    "heroImage":  "assets/images/provinces/chanthaburi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chanthaburi/gallery-1.webp",
+                          "assets/images/provinces/chanthaburi/gallery-2.webp",
+                          "assets/images/provinces/chanthaburi/gallery-3.webp",
+                          "assets/images/provinces/chanthaburi/gallery-4.webp",
+                          "assets/images/provinces/chanthaburi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chanthaburi/hero.webp",
+                            "caption":  "Chanthaburi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chanthaburi/gallery-1.webp",
+                            "caption":  "Chanthaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chanthaburi/gallery-2.webp",
+                            "caption":  "Chanthaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chanthaburi/gallery-3.webp",
+                            "caption":  "Chanthaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chanthaburi/gallery-4.webp",
+                            "caption":  "Chanthaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chanthaburi",
+                            "slug":  "chanthaburi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chanthaburi/gallery-5.webp",
+                            "caption":  "Chanthaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%201401.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

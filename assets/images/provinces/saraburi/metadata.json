@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Saraburi",
+    "slug":  "saraburi",
+    "heroImage":  "assets/images/provinces/saraburi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/saraburi/gallery-1.webp",
+                          "assets/images/provinces/saraburi/gallery-2.webp",
+                          "assets/images/provinces/saraburi/gallery-3.webp",
+                          "assets/images/provinces/saraburi/gallery-4.webp",
+                          "assets/images/provinces/saraburi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/saraburi/hero.webp",
+                            "caption":  "Saraburi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/saraburi/gallery-1.webp",
+                            "caption":  "Saraburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/saraburi/gallery-2.webp",
+                            "caption":  "Saraburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/saraburi/gallery-3.webp",
+                            "caption":  "Saraburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/saraburi/gallery-4.webp",
+                            "caption":  "Saraburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Saraburi",
+                            "slug":  "saraburi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/saraburi/gallery-5.webp",
+                            "caption":  "Saraburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Saraburi%2001.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

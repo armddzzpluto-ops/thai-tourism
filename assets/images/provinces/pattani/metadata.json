@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Pattani",
+    "slug":  "pattani",
+    "heroImage":  "assets/images/provinces/pattani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/pattani/gallery-1.webp",
+                          "assets/images/provinces/pattani/gallery-2.webp",
+                          "assets/images/provinces/pattani/gallery-3.webp",
+                          "assets/images/provinces/pattani/gallery-4.webp",
+                          "assets/images/provinces/pattani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/pattani/hero.webp",
+                            "caption":  "Pattani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/pattani/gallery-1.webp",
+                            "caption":  "Pattani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/pattani/gallery-2.webp",
+                            "caption":  "Pattani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/pattani/gallery-3.webp",
+                            "caption":  "Pattani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/pattani/gallery-4.webp",
+                            "caption":  "Pattani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Pattani",
+                            "slug":  "pattani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/pattani/gallery-5.webp",
+                            "caption":  "Pattani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Pattani%20mosque.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

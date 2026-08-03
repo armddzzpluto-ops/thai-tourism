@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Buri Ram",
+    "slug":  "buri-ram",
+    "heroImage":  "assets/images/provinces/buri-ram/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/buri-ram/gallery-1.webp",
+                          "assets/images/provinces/buri-ram/gallery-2.webp",
+                          "assets/images/provinces/buri-ram/gallery-3.webp",
+                          "assets/images/provinces/buri-ram/gallery-4.webp",
+                          "assets/images/provinces/buri-ram/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/buri-ram/hero.webp",
+                            "caption":  "Buri Ram tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/buri-ram/gallery-1.webp",
+                            "caption":  "Buri Ram tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/buri-ram/gallery-2.webp",
+                            "caption":  "Buri Ram tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/buri-ram/gallery-3.webp",
+                            "caption":  "Buri Ram tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/buri-ram/gallery-4.webp",
+                            "caption":  "Buri Ram tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Buri Ram",
+                            "slug":  "buri-ram",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/buri-ram/gallery-5.webp",
+                            "caption":  "Buri Ram tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

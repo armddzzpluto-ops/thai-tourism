@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Mae Hong Son",
+    "slug":  "mae-hong-son",
+    "heroImage":  "assets/images/provinces/mae-hong-son/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/mae-hong-son/gallery-1.webp",
+                          "assets/images/provinces/mae-hong-son/gallery-2.webp",
+                          "assets/images/provinces/mae-hong-son/gallery-3.webp",
+                          "assets/images/provinces/mae-hong-son/gallery-4.webp",
+                          "assets/images/provinces/mae-hong-son/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/mae-hong-son/hero.webp",
+                            "caption":  "Mae Hong Son tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/mae-hong-son/gallery-1.webp",
+                            "caption":  "Mae Hong Son tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/mae-hong-son/gallery-2.webp",
+                            "caption":  "Mae Hong Son tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/mae-hong-son/gallery-3.webp",
+                            "caption":  "Mae Hong Son tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/mae-hong-son/gallery-4.webp",
+                            "caption":  "Mae Hong Son tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mae Hong Son",
+                            "slug":  "mae-hong-son",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/mae-hong-son/gallery-5.webp",
+                            "caption":  "Mae Hong Son tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mae%20Hong%20Son%20Temple%20%28132668251%29.jpeg",
+                            "isFallback":  true
+                        }
+                    ]
+}

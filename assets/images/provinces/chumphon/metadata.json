@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chumphon",
+    "slug":  "chumphon",
+    "heroImage":  "assets/images/provinces/chumphon/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chumphon/gallery-1.webp",
+                          "assets/images/provinces/chumphon/gallery-2.webp",
+                          "assets/images/provinces/chumphon/gallery-3.webp",
+                          "assets/images/provinces/chumphon/gallery-4.webp",
+                          "assets/images/provinces/chumphon/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chumphon/hero.webp",
+                            "caption":  "Chumphon tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chumphon/gallery-1.webp",
+                            "caption":  "Chumphon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chumphon/gallery-2.webp",
+                            "caption":  "Chumphon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chumphon/gallery-3.webp",
+                            "caption":  "Chumphon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chumphon/gallery-4.webp",
+                            "caption":  "Chumphon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chumphon",
+                            "slug":  "chumphon",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chumphon/gallery-5.webp",
+                            "caption":  "Chumphon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chumphon%20typhoon%20damage%204.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

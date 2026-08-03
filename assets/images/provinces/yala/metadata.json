@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Yala",
+    "slug":  "yala",
+    "heroImage":  "assets/images/provinces/yala/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/yala/gallery-1.webp",
+                          "assets/images/provinces/yala/gallery-2.webp",
+                          "assets/images/provinces/yala/gallery-3.webp",
+                          "assets/images/provinces/yala/gallery-4.webp",
+                          "assets/images/provinces/yala/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/yala/hero.webp",
+                            "caption":  "Yala tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/yala/gallery-1.webp",
+                            "caption":  "Yala tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/yala/gallery-2.webp",
+                            "caption":  "Yala tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/yala/gallery-3.webp",
+                            "caption":  "Yala tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/yala/gallery-4.webp",
+                            "caption":  "Yala tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yala",
+                            "slug":  "yala",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/yala/gallery-5.webp",
+                            "caption":  "Yala tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

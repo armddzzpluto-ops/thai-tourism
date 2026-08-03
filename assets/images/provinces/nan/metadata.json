@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nan",
+    "slug":  "nan",
+    "heroImage":  "assets/images/provinces/nan/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nan/gallery-1.webp",
+                          "assets/images/provinces/nan/gallery-2.webp",
+                          "assets/images/provinces/nan/gallery-3.webp",
+                          "assets/images/provinces/nan/gallery-4.webp",
+                          "assets/images/provinces/nan/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nan/hero.webp",
+                            "caption":  "Nan tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nan/gallery-1.webp",
+                            "caption":  "Nan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nan/gallery-2.webp",
+                            "caption":  "Nan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nan/gallery-3.webp",
+                            "caption":  "Nan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nan/gallery-4.webp",
+                            "caption":  "Nan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nan",
+                            "slug":  "nan",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nan/gallery-5.webp",
+                            "caption":  "Nan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        }
+                    ]
+}

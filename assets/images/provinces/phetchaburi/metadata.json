@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phetchaburi",
+    "slug":  "phetchaburi",
+    "heroImage":  "assets/images/provinces/phetchaburi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phetchaburi/gallery-1.webp",
+                          "assets/images/provinces/phetchaburi/gallery-2.webp",
+                          "assets/images/provinces/phetchaburi/gallery-3.webp",
+                          "assets/images/provinces/phetchaburi/gallery-4.webp",
+                          "assets/images/provinces/phetchaburi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phetchaburi/hero.webp",
+                            "caption":  "Phetchaburi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phetchaburi/gallery-1.webp",
+                            "caption":  "Phetchaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phetchaburi/gallery-2.webp",
+                            "caption":  "Phetchaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phetchaburi/gallery-3.webp",
+                            "caption":  "Phetchaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phetchaburi/gallery-4.webp",
+                            "caption":  "Phetchaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phetchaburi",
+                            "slug":  "phetchaburi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phetchaburi/gallery-5.webp",
+                            "caption":  "Phetchaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

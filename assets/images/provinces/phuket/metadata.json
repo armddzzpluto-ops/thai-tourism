@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phuket",
+    "slug":  "phuket",
+    "heroImage":  "assets/images/provinces/phuket/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phuket/gallery-1.webp",
+                          "assets/images/provinces/phuket/gallery-2.webp",
+                          "assets/images/provinces/phuket/gallery-3.webp",
+                          "assets/images/provinces/phuket/gallery-4.webp",
+                          "assets/images/provinces/phuket/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phuket/hero.webp",
+                            "caption":  "Phuket tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phuket/gallery-1.webp",
+                            "caption":  "Phuket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phuket/gallery-2.webp",
+                            "caption":  "Phuket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phuket/gallery-3.webp",
+                            "caption":  "Phuket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phuket/gallery-4.webp",
+                            "caption":  "Phuket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phuket",
+                            "slug":  "phuket",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phuket/gallery-5.webp",
+                            "caption":  "Phuket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

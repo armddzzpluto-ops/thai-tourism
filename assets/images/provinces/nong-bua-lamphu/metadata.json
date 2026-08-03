@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nong Bua Lamphu",
+    "slug":  "nong-bua-lamphu",
+    "heroImage":  "assets/images/provinces/nong-bua-lamphu/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
+                          "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
+                          "assets/images/provinces/nong-bua-lamphu/gallery-3.webp",
+                          "assets/images/provinces/nong-bua-lamphu/gallery-4.webp",
+                          "assets/images/provinces/nong-bua-lamphu/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/hero.webp",
+                            "caption":  "Nong Bua Lamphu tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
+                            "caption":  "Nong Bua Lamphu tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
+                            "caption":  "Nong Bua Lamphu tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/gallery-3.webp",
+                            "caption":  "Nong Bua Lamphu tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/gallery-4.webp",
+                            "caption":  "Nong Bua Lamphu tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Bua Lamphu",
+                            "slug":  "nong-bua-lamphu",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nong-bua-lamphu/gallery-5.webp",
+                            "caption":  "Nong Bua Lamphu tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%99%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2.png",
+                            "isFallback":  true
+                        }
+                    ]
+}

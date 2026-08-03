@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Samut Sakhon",
+    "slug":  "samut-sakhon",
+    "heroImage":  "assets/images/provinces/samut-sakhon/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/samut-sakhon/gallery-1.webp",
+                          "assets/images/provinces/samut-sakhon/gallery-2.webp",
+                          "assets/images/provinces/samut-sakhon/gallery-3.webp",
+                          "assets/images/provinces/samut-sakhon/gallery-4.webp",
+                          "assets/images/provinces/samut-sakhon/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/samut-sakhon/hero.webp",
+                            "caption":  "Samut Sakhon tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/samut-sakhon/gallery-1.webp",
+                            "caption":  "Samut Sakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/samut-sakhon/gallery-2.webp",
+                            "caption":  "Samut Sakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/samut-sakhon/gallery-3.webp",
+                            "caption":  "Samut Sakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/samut-sakhon/gallery-4.webp",
+                            "caption":  "Samut Sakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Sakhon",
+                            "slug":  "samut-sakhon",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/samut-sakhon/gallery-5.webp",
+                            "caption":  "Samut Sakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samutsakorn%20ThaChalom%20Fishing%20village%203.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

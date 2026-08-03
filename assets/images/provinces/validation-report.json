@@ -1,0 +1,541 @@
+﻿[
+    {
+        "province":  "Amnat Charoen",
+        "slug":  "amnat-charoen",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Ang Thong",
+        "slug":  "ang-thong",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Bueng Kan",
+        "slug":  "bueng-kan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Buri Ram",
+        "slug":  "buri-ram",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chachoengsao",
+        "slug":  "chachoengsao",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chai Nat",
+        "slug":  "chai-nat",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chaiyaphum",
+        "slug":  "chaiyaphum",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chanthaburi",
+        "slug":  "chanthaburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chiang Mai",
+        "slug":  "chiang-mai",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chiang Rai",
+        "slug":  "chiang-rai",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chumphon",
+        "slug":  "chumphon",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Kalasin",
+        "slug":  "kalasin",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Kamphaeng Phet",
+        "slug":  "kamphaeng-phet",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Kanchanaburi",
+        "slug":  "kanchanaburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Khon Kaen",
+        "slug":  "khon-kaen",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Krabi",
+        "slug":  "krabi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Lampang",
+        "slug":  "lampang",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Lamphun",
+        "slug":  "lamphun",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Mae Hong Son",
+        "slug":  "mae-hong-son",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Maha Sarakham",
+        "slug":  "maha-sarakham",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Mukdahan",
+        "slug":  "mukdahan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Nayok",
+        "slug":  "nakhon-nayok",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Pathom",
+        "slug":  "nakhon-pathom",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Phanom",
+        "slug":  "nakhon-phanom",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Ratchasima",
+        "slug":  "nakhon-ratchasima",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Sawan",
+        "slug":  "nakhon-sawan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nakhon Si Thammarat",
+        "slug":  "nakhon-si-thammarat",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Narathiwat",
+        "slug":  "narathiwat",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nong Bua Lamphu",
+        "slug":  "nong-bua-lamphu",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nong Khai",
+        "slug":  "nong-khai",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nonthaburi",
+        "slug":  "nonthaburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Pathum Thani",
+        "slug":  "pathum-thani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Pattani",
+        "slug":  "pattani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phang Nga",
+        "slug":  "phang-nga",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phatthalung",
+        "slug":  "phatthalung",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phayao",
+        "slug":  "phayao",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phetchabun",
+        "slug":  "phetchabun",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phetchaburi",
+        "slug":  "phetchaburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phichit",
+        "slug":  "phichit",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phitsanulok",
+        "slug":  "phitsanulok",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phra Nakhon Si Ayutthaya",
+        "slug":  "phra-nakhon-si-ayutthaya",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phrae",
+        "slug":  "phrae",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Phuket",
+        "slug":  "phuket",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Prachin Buri",
+        "slug":  "prachin-buri",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Prachuap Khiri Khan",
+        "slug":  "prachuap-khiri-khan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Ranong",
+        "slug":  "ranong",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Ratchaburi",
+        "slug":  "ratchaburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Rayong",
+        "slug":  "rayong",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Roi Et",
+        "slug":  "roi-et",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Sa Kaeo",
+        "slug":  "sa-kaeo",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Sakon Nakhon",
+        "slug":  "sakon-nakhon",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Samut Prakan",
+        "slug":  "samut-prakan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Samut Sakhon",
+        "slug":  "samut-sakhon",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Samut Songkhram",
+        "slug":  "samut-songkhram",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Saraburi",
+        "slug":  "saraburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Satun",
+        "slug":  "satun",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Si Sa Ket",
+        "slug":  "si-sa-ket",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Sing Buri",
+        "slug":  "sing-buri",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Songkhla",
+        "slug":  "songkhla",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Sukhothai",
+        "slug":  "sukhothai",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Suphan Buri",
+        "slug":  "suphan-buri",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Surat Thani",
+        "slug":  "surat-thani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Surin",
+        "slug":  "surin",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Tak",
+        "slug":  "tak",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Trang",
+        "slug":  "trang",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Trat",
+        "slug":  "trat",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Ubon Ratchathani",
+        "slug":  "ubon-ratchathani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Udon Thani",
+        "slug":  "udon-thani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Uthai Thani",
+        "slug":  "uthai-thani",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Uttaradit",
+        "slug":  "uttaradit",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Yala",
+        "slug":  "yala",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Yasothon",
+        "slug":  "yasothon",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Bangkok",
+        "slug":  "bangkok",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Chonburi",
+        "slug":  "chonburi",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Loei",
+        "slug":  "loei",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Lop Buri",
+        "slug":  "lop-buri",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    },
+    {
+        "province":  "Nan",
+        "slug":  "nan",
+        "status":  "needs-curation",
+        "galleryCount":  5,
+        "fallbackCount":  5
+    }
+]

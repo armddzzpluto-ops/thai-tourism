@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Surat Thani",
+    "slug":  "surat-thani",
+    "heroImage":  "assets/images/provinces/surat-thani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/surat-thani/gallery-1.webp",
+                          "assets/images/provinces/surat-thani/gallery-2.webp",
+                          "assets/images/provinces/surat-thani/gallery-3.webp",
+                          "assets/images/provinces/surat-thani/gallery-4.webp",
+                          "assets/images/provinces/surat-thani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/surat-thani/hero.webp",
+                            "caption":  "Surat Thani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/surat-thani/gallery-1.webp",
+                            "caption":  "Surat Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/surat-thani/gallery-2.webp",
+                            "caption":  "Surat Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/surat-thani/gallery-3.webp",
+                            "caption":  "Surat Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/surat-thani/gallery-4.webp",
+                            "caption":  "Surat Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Surat Thani",
+                            "slug":  "surat-thani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/surat-thani/gallery-5.webp",
+                            "caption":  "Surat Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

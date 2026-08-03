@@ -1,0 +1,78 @@
+# Changelog
+
+## v1.0
+- Initial release deployed to GitHub Pages.
+- Completed light/dark theme and theme toggle.
+- Completed navigation, hero, gallery, and dashboard.
+- Improved accessibility.
+- Fixed runtime errors.
+- Passed production audit.
+
+## Unreleased
+- Shared data-source migration increment:
+  - Gallery page runtime now derives image items from shared destination.galleryImages records (province local assets) after hydration.
+  - Promotions deal cards now hydrate image and region metadata from shared destination data via province bindings.
+  - Legacy intentionally remaining in this increment:
+    - Promotions seasonal campaign section remains static inline marketing content.
+    - Home gallery preview teaser tiles remain static inline content.
+- Added batch curation script for province image replacement:
+  - scripts/curate-province-gallery-batch.ps1
+  - Enforces no-hero-reuse and unique candidate selection for gallery slots.
+  - Fixed attribution merge bug in script runtime path.
+  - Session blocker: terminal command execution did not persist file writes, so Batch 1 (10 provinces) curation output could not be applied in this run.
+- Production Image Sprint (tourism images only, no UI/layout/theme logic changes):
+  - Added automation script: scripts/build-province-image-pack.ps1
+  - Generated province image package structure for 77 provinces:
+    - assets/images/provinces/{slug}/hero.webp
+    - assets/images/provinces/{slug}/gallery-1.webp ... gallery-5.webp
+    - assets/images/provinces/{slug}/metadata.json
+  - Added tracking outputs:
+    - assets/images/provinces/manifest.json
+    - assets/images/provinces/validation-report.json
+  - Updated shared data normalization in js/data.js to use province folder WebP paths and image metadata keys:
+    - heroImage
+    - galleryImages
+    - caption
+    - photoCredit
+    - imageSource
+  - Validation summary for this batch:
+    - hero.webp count = 77
+    - gallery-5.webp count = 77
+    - metadata.json count = 77
+    - status = needs-curation for all provinces (gallery entries are currently fallback-based and require attraction-accurate source curation)
+- Added destination metadata enrichment in shared data layer:
+  - googleMaps
+  - officialLocation
+  - searchKeywords
+- Improved destination search matching in main and enhancement flows.
+- Corrected incorrect destination/province factual data in shared destination records:
+  - Khao Yai region classification
+  - Mae Hong Son details
+  - Prachin Buri details
+  - Bueng Kan details
+- Added officialWebsite fallback metadata to destination records using Tourism Thailand search URLs.
+- Added Google Maps metadata validation to auto-repair invalid or missing map links.
+- Completed targeted asset audit for destination image paths with no missing local destination assets.
+- Safe production fix pass (no architecture refactor):
+  - Fixed runtime console error risk by guarding optional dashboard doughnut chart initialization.
+  - Replaced broken inline province-related image sources with local destination assets.
+  - Added accessibility-safe modal/lightbox/blog preview defaults (non-empty alt/src).
+  - Added inline fallback googleMaps and officialWebsite links for active destination modal records.
+  - Corrected inline content consistency issues (Thai region/category shortcut filter mapping, Khao Yai region alignment).
+  - Detected duplicate datasets and preserved both intentionally for this pass; recommended future SoT is js/data.js.
+- Destination database completion pass (SoT-aligned, no dataset migration):
+  - Confirmed js/data.js contains 77/77 destination records.
+  - Normalized all shared destination records to include required metadata keys:
+    - heroImage
+    - galleryImages
+    - googleMaps
+    - officialWebsite
+    - coordinates
+    - description
+    - keywords/searchKeywords
+    - category/categories
+    - openingHours
+    - ticketInfo
+  - Synchronized overlapping inline index dataset records with the same required metadata keys (kept duplicate dataset intact).
+  - Validation: zero missing required field keys across shared (77) and inline (12) active records.
+  - Remaining blocker: official province-level coordinates and official province-specific image verification still require manual source verification and asset curation.

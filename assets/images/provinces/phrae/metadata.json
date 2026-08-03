@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phrae",
+    "slug":  "phrae",
+    "heroImage":  "assets/images/provinces/phrae/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phrae/gallery-1.webp",
+                          "assets/images/provinces/phrae/gallery-2.webp",
+                          "assets/images/provinces/phrae/gallery-3.webp",
+                          "assets/images/provinces/phrae/gallery-4.webp",
+                          "assets/images/provinces/phrae/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phrae/hero.webp",
+                            "caption":  "Phrae tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phrae/gallery-1.webp",
+                            "caption":  "Phrae tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phrae/gallery-2.webp",
+                            "caption":  "Phrae tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phrae/gallery-3.webp",
+                            "caption":  "Phrae tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phrae/gallery-4.webp",
+                            "caption":  "Phrae tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phrae",
+                            "slug":  "phrae",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phrae/gallery-5.webp",
+                            "caption":  "Phrae tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

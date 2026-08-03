@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nakhon Ratchasima",
+    "slug":  "nakhon-ratchasima",
+    "heroImage":  "assets/images/provinces/nakhon-ratchasima/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+                          "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+                          "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
+                          "assets/images/provinces/nakhon-ratchasima/gallery-4.webp",
+                          "assets/images/provinces/nakhon-ratchasima/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/hero.webp",
+                            "caption":  "Nakhon Ratchasima tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+                            "caption":  "Nakhon Ratchasima tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+                            "caption":  "Nakhon Ratchasima tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
+                            "caption":  "Nakhon Ratchasima tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-4.webp",
+                            "caption":  "Nakhon Ratchasima tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Ratchasima",
+                            "slug":  "nakhon-ratchasima",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-5.webp",
+                            "caption":  "Nakhon Ratchasima tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

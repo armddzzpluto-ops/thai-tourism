@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Si Sa Ket",
+    "slug":  "si-sa-ket",
+    "heroImage":  "assets/images/provinces/si-sa-ket/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/si-sa-ket/gallery-1.webp",
+                          "assets/images/provinces/si-sa-ket/gallery-2.webp",
+                          "assets/images/provinces/si-sa-ket/gallery-3.webp",
+                          "assets/images/provinces/si-sa-ket/gallery-4.webp",
+                          "assets/images/provinces/si-sa-ket/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/si-sa-ket/hero.webp",
+                            "caption":  "Si Sa Ket tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/si-sa-ket/gallery-1.webp",
+                            "caption":  "Si Sa Ket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/si-sa-ket/gallery-2.webp",
+                            "caption":  "Si Sa Ket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/si-sa-ket/gallery-3.webp",
+                            "caption":  "Si Sa Ket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/si-sa-ket/gallery-4.webp",
+                            "caption":  "Si Sa Ket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Si Sa Ket",
+                            "slug":  "si-sa-ket",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/si-sa-ket/gallery-5.webp",
+                            "caption":  "Si Sa Ket tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

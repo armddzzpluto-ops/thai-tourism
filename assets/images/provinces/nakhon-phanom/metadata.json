@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nakhon Phanom",
+    "slug":  "nakhon-phanom",
+    "heroImage":  "assets/images/provinces/nakhon-phanom/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nakhon-phanom/gallery-1.webp",
+                          "assets/images/provinces/nakhon-phanom/gallery-2.webp",
+                          "assets/images/provinces/nakhon-phanom/gallery-3.webp",
+                          "assets/images/provinces/nakhon-phanom/gallery-4.webp",
+                          "assets/images/provinces/nakhon-phanom/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nakhon-phanom/hero.webp",
+                            "caption":  "Nakhon Phanom tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nakhon-phanom/gallery-1.webp",
+                            "caption":  "Nakhon Phanom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nakhon-phanom/gallery-2.webp",
+                            "caption":  "Nakhon Phanom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nakhon-phanom/gallery-3.webp",
+                            "caption":  "Nakhon Phanom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nakhon-phanom/gallery-4.webp",
+                            "caption":  "Nakhon Phanom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Phanom",
+                            "slug":  "nakhon-phanom",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nakhon-phanom/gallery-5.webp",
+                            "caption":  "Nakhon Phanom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20in%20Nakhon%20Phanom.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

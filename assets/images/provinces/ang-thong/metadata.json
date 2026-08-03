@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Ang Thong",
+    "slug":  "ang-thong",
+    "heroImage":  "assets/images/provinces/ang-thong/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/ang-thong/gallery-1.webp",
+                          "assets/images/provinces/ang-thong/gallery-2.webp",
+                          "assets/images/provinces/ang-thong/gallery-3.webp",
+                          "assets/images/provinces/ang-thong/gallery-4.webp",
+                          "assets/images/provinces/ang-thong/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/ang-thong/hero.webp",
+                            "caption":  "Ang Thong tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/ang-thong/gallery-1.webp",
+                            "caption":  "Ang Thong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/ang-thong/gallery-2.webp",
+                            "caption":  "Ang Thong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/ang-thong/gallery-3.webp",
+                            "caption":  "Ang Thong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/ang-thong/gallery-4.webp",
+                            "caption":  "Ang Thong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ang Thong",
+                            "slug":  "ang-thong",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/ang-thong/gallery-5.webp",
+                            "caption":  "Ang Thong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ang%20Thong%20-%20Chaiyo%20%282024%29%20-%20Wat%20Chaiyo%20Worawihan%20%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%8A%E0%B9%82%E0%B8%A2%E0%B8%A7%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%20-%20img%2014.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

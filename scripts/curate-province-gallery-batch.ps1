@@ -1,0 +1,452 @@
+param(
+  [int]$BatchIndex = 1,
+  [int]$BatchSize = 10,
+  [string[]]$ProvinceSlugs = @(),
+  [int]$TargetGallery = 5,
+  [int]$WebpQuality = 82,
+  [int]$RequestDelayMs = 900,
+  [switch]$DryRun
+)
+
+$ErrorActionPreference = 'Stop'
+
+function Invoke-WithRetry {
+  param(
+    [scriptblock]$Action,
+    [int]$MaxAttempts = 4,
+    [int]$InitialDelaySeconds = 2
+  )
+
+  $attempt = 1
+  $delay = $InitialDelaySeconds
+  while ($true) {
+    try {
+      return & $Action
+    } catch {
+      if ($attempt -ge $MaxAttempts) { throw }
+      Start-Sleep -Seconds $delay
+      $attempt += 1
+      $delay = [Math]::Min($delay * 2, 20)
+    }
+  }
+}
+
+function Resolve-Cwebp {
+  $cmd = Get-Command cwebp -ErrorAction SilentlyContinue
+  if ($cmd) {
+    return $cmd.Source
+  }
+
+  $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
+  $found = Get-ChildItem $wingetPackages -Recurse -Filter cwebp.exe -ErrorAction SilentlyContinue | Select-Object -First 1
+  if ($found) {
+    return $found.FullName
+  }
+
+  throw 'cwebp.exe not found. Install Google.Libwebp first (winget install Google.Libwebp).'
+}
+
+function Convert-ToWebp {
+  param(
+    [string]$Cwebp,
+    [string]$InputPath,
+    [string]$OutputPath,
+    [int]$Quality = 82
+  )
+
+  $null = New-Item -ItemType Directory -Force -Path (Split-Path -Parent $OutputPath)
+  & $Cwebp -quiet -q $Quality -resize 1600 0 $InputPath -o $OutputPath
+  if ($LASTEXITCODE -ne 0 -or -not (Test-Path $OutputPath)) {
+    throw "Failed converting to WebP: $InputPath"
+  }
+}
+
+function Get-ProvinceCategoryCandidates {
+  param([string]$Province)
+
+  $name = $Province.Trim()
+  $escaped = $name -replace ' ', '_'
+  return @(
+    "Category:Tourism_in_${escaped}_Province",
+    "Category:Attractions_in_${escaped}_Province",
+    "Category:${escaped}_Province",
+    "Category:${escaped}"
+  )
+}
+
+function New-CandidateObject {
+  param(
+    [string]$Title,
+    [string]$Caption,
+    [string]$Credit,
+    [string]$Source,
+    [string]$DownloadUrl
+  )
+
+  [pscustomobject]@{
+    title = $Title
+    caption = $Caption
+    credit = $Credit
+    source = $Source
+    downloadUrl = $DownloadUrl
+  }
+}
+
+function Get-CommonsFilesFromCategory {
+  param([string]$CategoryTitle)
+
+  $api = 'https://commons.wikimedia.org/w/api.php'
+  $query = @{
+    action = 'query'
+    format = 'json'
+    generator = 'categorymembers'
+    gcmtitle = $CategoryTitle
+    gcmtype = 'file'
+    gcmlimit = '80'
+    prop = 'imageinfo'
+    iiprop = 'url|user|extmetadata|mime|size'
+    iiurlwidth = '1800'
+  }
+
+  $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
+
+  $response = Invoke-WithRetry -Action {
+    Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+  }
+
+  if (-not $response.query.pages) {
+    return @()
+  }
+
+  $pages = $response.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
+  $out = @()
+
+  foreach ($page in $pages) {
+    $info = $page.imageinfo | Select-Object -First 1
+    if (-not $info) { continue }
+
+    $mime = [string]$info.mime
+    if (-not $mime.StartsWith('image/')) { continue }
+    if ($mime -match 'svg|tiff') { continue }
+
+    $title = [string]$page.title
+    if ($title -match '(?i)map|flag|coat of arms|emblem|logo|seal|locator|diagram|administrative|district map') { continue }
+
+    $caption = [string]$info.extmetadata.ImageDescription.value
+    if (-not $caption) { $caption = $title }
+
+    $credit = [string]$info.extmetadata.Artist.value
+    if (-not $credit) { $credit = [string]$info.user }
+    if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
+
+    $source = [string]$info.descriptionurl
+    if (-not $source) { $source = [string]$info.url }
+
+    $downloadUrl = [string]$info.thumburl
+    if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+    if (-not $downloadUrl) { continue }
+
+    $out += (New-CandidateObject -Title $title -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
+  }
+
+  return $out
+}
+
+function Get-WikipediaImageCandidates {
+  param([string]$Province)
+
+  $pageCandidates = @(
+    "${Province} Province",
+    "$Province"
+  )
+
+  $result = @()
+  foreach ($pageTitle in $pageCandidates) {
+    try {
+      $api = 'https://en.wikipedia.org/w/api.php'
+      $query = @{
+        action = 'query'
+        format = 'json'
+        prop = 'images'
+        titles = $pageTitle
+        imlimit = '80'
+      }
+      $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
+      $response = Invoke-WithRetry -Action {
+        Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+      }
+
+      $pages = $response.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
+      $images = @($pages.images)
+      foreach ($img in $images) {
+        if (-not $img.title) { continue }
+        if ($img.title -match '(?i)map|flag|coat of arms|emblem|logo|seal|locator|diagram') { continue }
+
+        $commonsQuery = @{
+          action = 'query'
+          format = 'json'
+          titles = $img.title
+          prop = 'imageinfo'
+          iiprop = 'url|user|extmetadata|mime|size'
+          iiurlwidth = '1800'
+        }
+        $commonsApi = 'https://commons.wikimedia.org/w/api.php?' + (($commonsQuery.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
+        $commonsRes = Invoke-WithRetry -Action {
+          Invoke-RestMethod -Method Get -Uri $commonsApi -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+        }
+        $commonsPages = $commonsRes.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
+        foreach ($cp in $commonsPages) {
+          $info = $cp.imageinfo | Select-Object -First 1
+          if (-not $info) { continue }
+          $mime = [string]$info.mime
+          if (-not $mime.StartsWith('image/')) { continue }
+          if ($mime -match 'svg|tiff') { continue }
+
+          $caption = [string]$info.extmetadata.ImageDescription.value
+          if (-not $caption) { $caption = [string]$img.title }
+          $credit = [string]$info.extmetadata.Artist.value
+          if (-not $credit) { $credit = [string]$info.user }
+          if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
+          $source = [string]$info.descriptionurl
+          if (-not $source) { $source = [string]$info.url }
+          $downloadUrl = [string]$info.thumburl
+          if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+          if (-not $downloadUrl) { continue }
+
+          $result += (New-CandidateObject -Title ([string]$img.title) -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
+        }
+      }
+
+      if ($result.Count -gt 0) {
+        return $result
+      }
+    } catch {
+      continue
+    }
+  }
+
+  return $result
+}
+
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
+Set-Location $repoRoot
+
+$manifestPath = Join-Path $repoRoot 'assets\images\provinces\manifest.json'
+$validationPath = Join-Path $repoRoot 'assets\images\provinces\validation-report.json'
+
+if (-not (Test-Path $manifestPath)) {
+  throw "Missing manifest: $manifestPath"
+}
+
+$cwebp = Resolve-Cwebp
+$manifest = Get-Content $manifestPath -Raw | ConvertFrom-Json
+$validation = if (Test-Path $validationPath) { Get-Content $validationPath -Raw | ConvertFrom-Json } else { @() }
+
+if ($ProvinceSlugs -and $ProvinceSlugs.Count -gt 0) {
+  $manifestBySlug = @{}
+  foreach ($entry in $manifest) {
+    $manifestBySlug[[string]$entry.slug] = $entry
+  }
+
+  $missingSlugs = @()
+  $batch = @()
+  foreach ($slug in $ProvinceSlugs) {
+    $normalizedSlug = ([string]$slug).Trim().ToLowerInvariant()
+    if (-not $normalizedSlug) { continue }
+
+    if ($manifestBySlug.ContainsKey($normalizedSlug)) {
+      $batch += $manifestBySlug[$normalizedSlug]
+    } else {
+      $missingSlugs += $normalizedSlug
+    }
+  }
+
+  if ($missingSlugs.Count -gt 0) {
+    throw "Unknown province slug(s): $($missingSlugs -join ', ')"
+  }
+} else {
+  $start = ($BatchIndex - 1) * $BatchSize
+  $batch = @($manifest | Select-Object -Skip $start -First $BatchSize)
+  if (-not $batch.Count) {
+    throw "No provinces found for batch index $BatchIndex"
+  }
+}
+
+$batchReport = @()
+
+foreach ($provinceMeta in $batch) {
+  $province = [string]$provinceMeta.province
+  $slug = [string]$provinceMeta.slug
+  $heroImage = [string]$provinceMeta.heroImage
+  $heroAttribution = @($provinceMeta.attribution | Where-Object { $_.role -eq 'hero' }) | Select-Object -First 1
+  $heroSource = if ($heroAttribution) { [string]$heroAttribution.imageSource } else { '' }
+
+  $provinceDir = Join-Path $repoRoot ('assets\\images\\provinces\\' + $slug)
+  $heroPath = Join-Path $repoRoot ($heroImage -replace '/', '\\')
+
+  if (-not (Test-Path $heroPath)) {
+    $batchReport += [pscustomobject]@{ province = $province; slug = $slug; status = 'hero-missing'; curatedCount = 0 }
+    continue
+  }
+
+  $candidatePool = @()
+  foreach ($category in (Get-ProvinceCategoryCandidates -Province $province)) {
+    try {
+      $candidatePool += Get-CommonsFilesFromCategory -CategoryTitle $category
+      Start-Sleep -Milliseconds $RequestDelayMs
+    } catch {
+      continue
+    }
+  }
+
+  if ($candidatePool.Count -lt $TargetGallery) {
+    try {
+      $candidatePool += Get-WikipediaImageCandidates -Province $province
+    } catch {
+      # ignore and continue with what we have
+    }
+  }
+
+  $picked = @()
+  $seen = @{}
+
+  foreach ($candidate in $candidatePool) {
+    if ($picked.Count -ge $TargetGallery) { break }
+
+    $key = ([string]$candidate.title).ToLowerInvariant()
+    if (-not $key) { continue }
+    if ($seen.ContainsKey($key)) { continue }
+
+    # Do not reuse hero source/title for gallery items.
+    if ($heroSource -and ([string]$candidate.source -eq $heroSource)) { continue }
+
+    $seen[$key] = $true
+    $picked += $candidate
+  }
+
+  if ($picked.Count -lt $TargetGallery) {
+    $batchReport += [pscustomobject]@{
+      province = $province
+      slug = $slug
+      status = 'insufficient-unique-candidates'
+      curatedCount = $picked.Count
+    }
+    continue
+  }
+
+  $newGalleryPaths = @()
+  $newAttribution = @()
+
+  for ($i = 0; $i -lt $TargetGallery; $i++) {
+    $idx = $i + 1
+    $candidate = $picked[$i]
+
+    $galleryRel = "assets/images/provinces/$slug/gallery-$idx.webp"
+    $galleryPath = Join-Path $provinceDir "gallery-$idx.webp"
+    $tempPath = Join-Path $env:TEMP ("curate-{0}-{1}-{2}.jpg" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
+
+    if (-not $DryRun) {
+      Invoke-WithRetry -Action {
+        Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+      } | Out-Null
+      Start-Sleep -Milliseconds $RequestDelayMs
+      Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
+    }
+
+    if (Test-Path $tempPath) {
+      Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
+    }
+
+    $newGalleryPaths += $galleryRel
+    $newAttribution += [ordered]@{
+      province = $province
+      slug = $slug
+      role = "gallery-$idx"
+      file = $galleryRel
+      caption = [string]$candidate.caption
+      photoCredit = [string]$candidate.credit
+      imageSource = [string]$candidate.source
+      isFallback = $false
+    }
+  }
+
+  $provinceMeta.galleryImages = $newGalleryPaths
+
+  $heroRecord = if ($heroAttribution) {
+    [ordered]@{
+      province = $province
+      slug = $slug
+      role = 'hero'
+      file = [string]$heroAttribution.file
+      caption = [string]$heroAttribution.caption
+      photoCredit = [string]$heroAttribution.photoCredit
+      imageSource = [string]$heroAttribution.imageSource
+      isFallback = $false
+    }
+  } else {
+    [ordered]@{
+      province = $province
+      slug = $slug
+      role = 'hero'
+      file = "assets/images/provinces/$slug/hero.webp"
+      caption = "$province tourism hero"
+      photoCredit = 'Wikimedia Commons contributor'
+      imageSource = $heroSource
+      isFallback = $false
+    }
+  }
+
+  $provinceMeta.attribution = @($heroRecord) + $newAttribution
+
+  if (-not $DryRun) {
+    $metaPath = Join-Path $provinceDir 'metadata.json'
+    $provinceMeta | ConvertTo-Json -Depth 10 | Set-Content -Path $metaPath -Encoding UTF8
+  }
+
+  $batchReport += [pscustomobject]@{
+    province = $province
+    slug = $slug
+    status = 'curated'
+    curatedCount = $newGalleryPaths.Count
+  }
+
+  # Keep requests paced to reduce 429.
+  Start-Sleep -Milliseconds $RequestDelayMs
+}
+
+# Update aggregate files.
+if (-not $DryRun) {
+  $manifest | ConvertTo-Json -Depth 10 | Set-Content -Path $manifestPath -Encoding UTF8
+
+  $validationMap = @{}
+  foreach ($row in $validation) {
+    $validationMap[[string]$row.slug] = $row
+  }
+
+  foreach ($row in $batchReport) {
+    if ($validationMap.ContainsKey($row.slug)) {
+      $item = $validationMap[$row.slug]
+      if ($row.status -eq 'curated') {
+        $item.status = 'complete'
+        $item.galleryCount = $row.curatedCount
+        $item.fallbackCount = 0
+      } else {
+        $item.status = $row.status
+      }
+    }
+  }
+
+  $updatedValidation = @($validationMap.Values | Sort-Object slug)
+  $updatedValidation | ConvertTo-Json -Depth 8 | Set-Content -Path $validationPath -Encoding UTF8
+}
+
+$summary = [ordered]@{
+  batchIndex = $BatchIndex
+  batchSize = $BatchSize
+  provincesInBatch = $batch.Count
+  curated = (@($batchReport | Where-Object { $_.status -eq 'curated' })).Count
+  pending = (@($batchReport | Where-Object { $_.status -ne 'curated' })).Count
+  details = $batchReport
+}
+
+$summary | ConvertTo-Json -Depth 8 | Write-Output

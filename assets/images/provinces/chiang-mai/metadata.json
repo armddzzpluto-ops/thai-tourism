@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chiang Mai",
+    "slug":  "chiang-mai",
+    "heroImage":  "assets/images/provinces/chiang-mai/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chiang-mai/gallery-1.webp",
+                          "assets/images/provinces/chiang-mai/gallery-2.webp",
+                          "assets/images/provinces/chiang-mai/gallery-3.webp",
+                          "assets/images/provinces/chiang-mai/gallery-4.webp",
+                          "assets/images/provinces/chiang-mai/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chiang-mai/hero.webp",
+                            "caption":  "Chiang Mai tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chiang-mai/gallery-1.webp",
+                            "caption":  "Chiang Mai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chiang-mai/gallery-2.webp",
+                            "caption":  "Chiang Mai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chiang-mai/gallery-3.webp",
+                            "caption":  "Chiang Mai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chiang-mai/gallery-4.webp",
+                            "caption":  "Chiang Mai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chiang Mai",
+                            "slug":  "chiang-mai",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chiang-mai/gallery-5.webp",
+                            "caption":  "Chiang Mai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Near%20the%20Top%20of%20Doi%20Inthanon%202014.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phayao",
+    "slug":  "phayao",
+    "heroImage":  "assets/images/provinces/phayao/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phayao/gallery-1.webp",
+                          "assets/images/provinces/phayao/gallery-2.webp",
+                          "assets/images/provinces/phayao/gallery-3.webp",
+                          "assets/images/provinces/phayao/gallery-4.webp",
+                          "assets/images/provinces/phayao/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phayao/hero.webp",
+                            "caption":  "Phayao tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phayao/gallery-1.webp",
+                            "caption":  "Phayao tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phayao/gallery-2.webp",
+                            "caption":  "Phayao tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phayao/gallery-3.webp",
+                            "caption":  "Phayao tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phayao/gallery-4.webp",
+                            "caption":  "Phayao tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phayao",
+                            "slug":  "phayao",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phayao/gallery-5.webp",
+                            "caption":  "Phayao tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%282%29.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

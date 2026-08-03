@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chai Nat",
+    "slug":  "chai-nat",
+    "heroImage":  "assets/images/provinces/chai-nat/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chai-nat/gallery-1.webp",
+                          "assets/images/provinces/chai-nat/gallery-2.webp",
+                          "assets/images/provinces/chai-nat/gallery-3.webp",
+                          "assets/images/provinces/chai-nat/gallery-4.webp",
+                          "assets/images/provinces/chai-nat/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chai-nat/hero.webp",
+                            "caption":  "Chai Nat tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chai-nat/gallery-1.webp",
+                            "caption":  "Chai Nat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chai-nat/gallery-2.webp",
+                            "caption":  "Chai Nat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chai-nat/gallery-3.webp",
+                            "caption":  "Chai Nat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chai-nat/gallery-4.webp",
+                            "caption":  "Chai Nat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chai Nat",
+                            "slug":  "chai-nat",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chai-nat/gallery-5.webp",
+                            "caption":  "Chai Nat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

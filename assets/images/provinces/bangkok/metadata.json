@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Bangkok",
+    "slug":  "bangkok",
+    "heroImage":  "assets/images/provinces/bangkok/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/bangkok/gallery-1.webp",
+                          "assets/images/provinces/bangkok/gallery-2.webp",
+                          "assets/images/provinces/bangkok/gallery-3.webp",
+                          "assets/images/provinces/bangkok/gallery-4.webp",
+                          "assets/images/provinces/bangkok/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/bangkok/hero.webp",
+                            "caption":  "Bangkok tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/bangkok/gallery-1.webp",
+                            "caption":  "Bangkok tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/bangkok/gallery-2.webp",
+                            "caption":  "Bangkok tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/bangkok/gallery-3.webp",
+                            "caption":  "Bangkok tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/bangkok/gallery-4.webp",
+                            "caption":  "Bangkok tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bangkok",
+                            "slug":  "bangkok",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/bangkok/gallery-5.webp",
+                            "caption":  "Bangkok tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Sakon Nakhon",
+    "slug":  "sakon-nakhon",
+    "heroImage":  "assets/images/provinces/sakon-nakhon/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/sakon-nakhon/gallery-1.webp",
+                          "assets/images/provinces/sakon-nakhon/gallery-2.webp",
+                          "assets/images/provinces/sakon-nakhon/gallery-3.webp",
+                          "assets/images/provinces/sakon-nakhon/gallery-4.webp",
+                          "assets/images/provinces/sakon-nakhon/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/sakon-nakhon/hero.webp",
+                            "caption":  "Sakon Nakhon tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/sakon-nakhon/gallery-1.webp",
+                            "caption":  "Sakon Nakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/sakon-nakhon/gallery-2.webp",
+                            "caption":  "Sakon Nakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/sakon-nakhon/gallery-3.webp",
+                            "caption":  "Sakon Nakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/sakon-nakhon/gallery-4.webp",
+                            "caption":  "Sakon Nakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sakon Nakhon",
+                            "slug":  "sakon-nakhon",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/sakon-nakhon/gallery-5.webp",
+                            "caption":  "Sakon Nakhon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%99%20%E0%B8%AA%E0%B8%81%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%20-%20panoramio%20%281%29.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

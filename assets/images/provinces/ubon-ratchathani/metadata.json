@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Ubon Ratchathani",
+    "slug":  "ubon-ratchathani",
+    "heroImage":  "assets/images/provinces/ubon-ratchathani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
+                          "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
+                          "assets/images/provinces/ubon-ratchathani/gallery-3.webp",
+                          "assets/images/provinces/ubon-ratchathani/gallery-4.webp",
+                          "assets/images/provinces/ubon-ratchathani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/ubon-ratchathani/hero.webp",
+                            "caption":  "Ubon Ratchathani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
+                            "caption":  "Ubon Ratchathani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
+                            "caption":  "Ubon Ratchathani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/ubon-ratchathani/gallery-3.webp",
+                            "caption":  "Ubon Ratchathani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/ubon-ratchathani/gallery-4.webp",
+                            "caption":  "Ubon Ratchathani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Ubon Ratchathani",
+                            "slug":  "ubon-ratchathani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/ubon-ratchathani/gallery-5.webp",
+                            "caption":  "Ubon Ratchathani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B9%82%E0%B8%82%E0%B8%87%E0%B9%80%E0%B8%88%E0%B8%B5%E0%B8%A2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%20%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%A5%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5%20%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2%20-%20panoramio.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

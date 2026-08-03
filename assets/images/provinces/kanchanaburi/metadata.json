@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Kanchanaburi",
+    "slug":  "kanchanaburi",
+    "heroImage":  "assets/images/provinces/kanchanaburi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/kanchanaburi/gallery-1.webp",
+                          "assets/images/provinces/kanchanaburi/gallery-2.webp",
+                          "assets/images/provinces/kanchanaburi/gallery-3.webp",
+                          "assets/images/provinces/kanchanaburi/gallery-4.webp",
+                          "assets/images/provinces/kanchanaburi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/kanchanaburi/hero.webp",
+                            "caption":  "Kanchanaburi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/kanchanaburi/gallery-1.webp",
+                            "caption":  "Kanchanaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/kanchanaburi/gallery-2.webp",
+                            "caption":  "Kanchanaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/kanchanaburi/gallery-3.webp",
+                            "caption":  "Kanchanaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/kanchanaburi/gallery-4.webp",
+                            "caption":  "Kanchanaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Kanchanaburi",
+                            "slug":  "kanchanaburi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/kanchanaburi/gallery-5.webp",
+                            "caption":  "Kanchanaburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

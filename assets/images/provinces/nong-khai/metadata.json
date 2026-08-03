@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nong Khai",
+    "slug":  "nong-khai",
+    "heroImage":  "assets/images/provinces/nong-khai/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nong-khai/gallery-1.webp",
+                          "assets/images/provinces/nong-khai/gallery-2.webp",
+                          "assets/images/provinces/nong-khai/gallery-3.webp",
+                          "assets/images/provinces/nong-khai/gallery-4.webp",
+                          "assets/images/provinces/nong-khai/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nong-khai/hero.webp",
+                            "caption":  "Nong Khai tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nong-khai/gallery-1.webp",
+                            "caption":  "Nong Khai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nong-khai/gallery-2.webp",
+                            "caption":  "Nong Khai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nong-khai/gallery-3.webp",
+                            "caption":  "Nong Khai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nong-khai/gallery-4.webp",
+                            "caption":  "Nong Khai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nong Khai",
+                            "slug":  "nong-khai",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nong-khai/gallery-5.webp",
+                            "caption":  "Nong Khai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Mekong%20River%20View%20SkyWalk.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

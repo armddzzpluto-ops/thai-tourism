@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Mukdahan",
+    "slug":  "mukdahan",
+    "heroImage":  "assets/images/provinces/mukdahan/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/mukdahan/gallery-1.webp",
+                          "assets/images/provinces/mukdahan/gallery-2.webp",
+                          "assets/images/provinces/mukdahan/gallery-3.webp",
+                          "assets/images/provinces/mukdahan/gallery-4.webp",
+                          "assets/images/provinces/mukdahan/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/mukdahan/hero.webp",
+                            "caption":  "Mukdahan tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/mukdahan/gallery-1.webp",
+                            "caption":  "Mukdahan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/mukdahan/gallery-2.webp",
+                            "caption":  "Mukdahan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/mukdahan/gallery-3.webp",
+                            "caption":  "Mukdahan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/mukdahan/gallery-4.webp",
+                            "caption":  "Mukdahan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Mukdahan",
+                            "slug":  "mukdahan",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/mukdahan/gallery-5.webp",
+                            "caption":  "Mukdahan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Thai%E2%80%93Lao%20Friendship%20Bridge.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

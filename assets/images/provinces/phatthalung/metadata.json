@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Phatthalung",
+    "slug":  "phatthalung",
+    "heroImage":  "assets/images/provinces/phatthalung/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/phatthalung/gallery-1.webp",
+                          "assets/images/provinces/phatthalung/gallery-2.webp",
+                          "assets/images/provinces/phatthalung/gallery-3.webp",
+                          "assets/images/provinces/phatthalung/gallery-4.webp",
+                          "assets/images/provinces/phatthalung/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/phatthalung/hero.webp",
+                            "caption":  "Phatthalung tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/phatthalung/gallery-1.webp",
+                            "caption":  "Phatthalung tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/phatthalung/gallery-2.webp",
+                            "caption":  "Phatthalung tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/phatthalung/gallery-3.webp",
+                            "caption":  "Phatthalung tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/phatthalung/gallery-4.webp",
+                            "caption":  "Phatthalung tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Phatthalung",
+                            "slug":  "phatthalung",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/phatthalung/gallery-5.webp",
+                            "caption":  "Phatthalung tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

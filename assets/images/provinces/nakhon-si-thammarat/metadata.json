@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nakhon Si Thammarat",
+    "slug":  "nakhon-si-thammarat",
+    "heroImage":  "assets/images/provinces/nakhon-si-thammarat/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
+                          "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
+                          "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
+                          "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
+                          "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/hero.webp",
+                            "caption":  "Nakhon Si Thammarat tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
+                            "caption":  "Nakhon Si Thammarat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
+                            "caption":  "Nakhon Si Thammarat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
+                            "caption":  "Nakhon Si Thammarat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
+                            "caption":  "Nakhon Si Thammarat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Si Thammarat",
+                            "slug":  "nakhon-si-thammarat",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp",
+                            "caption":  "Nakhon Si Thammarat tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

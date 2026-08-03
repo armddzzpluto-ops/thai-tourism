@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Bueng Kan",
+    "slug":  "bueng-kan",
+    "heroImage":  "assets/images/provinces/bueng-kan/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/bueng-kan/gallery-1.webp",
+                          "assets/images/provinces/bueng-kan/gallery-2.webp",
+                          "assets/images/provinces/bueng-kan/gallery-3.webp",
+                          "assets/images/provinces/bueng-kan/gallery-4.webp",
+                          "assets/images/provinces/bueng-kan/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/bueng-kan/hero.webp",
+                            "caption":  "Bueng Kan tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/bueng-kan/gallery-1.webp",
+                            "caption":  "Bueng Kan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/bueng-kan/gallery-2.webp",
+                            "caption":  "Bueng Kan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/bueng-kan/gallery-3.webp",
+                            "caption":  "Bueng Kan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/bueng-kan/gallery-4.webp",
+                            "caption":  "Bueng Kan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Bueng Kan",
+                            "slug":  "bueng-kan",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/bueng-kan/gallery-5.webp",
+                            "caption":  "Bueng Kan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

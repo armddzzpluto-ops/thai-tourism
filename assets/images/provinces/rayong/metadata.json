@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Rayong",
+    "slug":  "rayong",
+    "heroImage":  "assets/images/provinces/rayong/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/rayong/gallery-1.webp",
+                          "assets/images/provinces/rayong/gallery-2.webp",
+                          "assets/images/provinces/rayong/gallery-3.webp",
+                          "assets/images/provinces/rayong/gallery-4.webp",
+                          "assets/images/provinces/rayong/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/rayong/hero.webp",
+                            "caption":  "Rayong tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/rayong/gallery-1.webp",
+                            "caption":  "Rayong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/rayong/gallery-2.webp",
+                            "caption":  "Rayong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/rayong/gallery-3.webp",
+                            "caption":  "Rayong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/rayong/gallery-4.webp",
+                            "caption":  "Rayong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Rayong",
+                            "slug":  "rayong",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/rayong/gallery-5.webp",
+                            "caption":  "Rayong tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Sukhothai",
+    "slug":  "sukhothai",
+    "heroImage":  "assets/images/provinces/sukhothai/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/sukhothai/gallery-1.webp",
+                          "assets/images/provinces/sukhothai/gallery-2.webp",
+                          "assets/images/provinces/sukhothai/gallery-3.webp",
+                          "assets/images/provinces/sukhothai/gallery-4.webp",
+                          "assets/images/provinces/sukhothai/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/sukhothai/hero.webp",
+                            "caption":  "Sukhothai tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/sukhothai/gallery-1.webp",
+                            "caption":  "Sukhothai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/sukhothai/gallery-2.webp",
+                            "caption":  "Sukhothai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/sukhothai/gallery-3.webp",
+                            "caption":  "Sukhothai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/sukhothai/gallery-4.webp",
+                            "caption":  "Sukhothai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sukhothai",
+                            "slug":  "sukhothai",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/sukhothai/gallery-5.webp",
+                            "caption":  "Sukhothai tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20in%20historical%20park%20of%20Sukhothai.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

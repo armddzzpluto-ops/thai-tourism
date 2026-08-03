@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Lop Buri",
+    "slug":  "lop-buri",
+    "heroImage":  "assets/images/provinces/lop-buri/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/lop-buri/gallery-1.webp",
+                          "assets/images/provinces/lop-buri/gallery-2.webp",
+                          "assets/images/provinces/lop-buri/gallery-3.webp",
+                          "assets/images/provinces/lop-buri/gallery-4.webp",
+                          "assets/images/provinces/lop-buri/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/lop-buri/hero.webp",
+                            "caption":  "Lop Buri tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/lop-buri/gallery-1.webp",
+                            "caption":  "Lop Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/lop-buri/gallery-2.webp",
+                            "caption":  "Lop Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/lop-buri/gallery-3.webp",
+                            "caption":  "Lop Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/lop-buri/gallery-4.webp",
+                            "caption":  "Lop Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Lop Buri",
+                            "slug":  "lop-buri",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/lop-buri/gallery-5.webp",
+                            "caption":  "Lop Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nakhon Sawan",
+    "slug":  "nakhon-sawan",
+    "heroImage":  "assets/images/provinces/nakhon-sawan/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nakhon-sawan/gallery-1.webp",
+                          "assets/images/provinces/nakhon-sawan/gallery-2.webp",
+                          "assets/images/provinces/nakhon-sawan/gallery-3.webp",
+                          "assets/images/provinces/nakhon-sawan/gallery-4.webp",
+                          "assets/images/provinces/nakhon-sawan/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nakhon-sawan/hero.webp",
+                            "caption":  "Nakhon Sawan tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nakhon-sawan/gallery-1.webp",
+                            "caption":  "Nakhon Sawan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nakhon-sawan/gallery-2.webp",
+                            "caption":  "Nakhon Sawan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nakhon-sawan/gallery-3.webp",
+                            "caption":  "Nakhon Sawan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nakhon-sawan/gallery-4.webp",
+                            "caption":  "Nakhon Sawan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Sawan",
+                            "slug":  "nakhon-sawan",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nakhon-sawan/gallery-5.webp",
+                            "caption":  "Nakhon Sawan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

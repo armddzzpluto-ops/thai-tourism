@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Yasothon",
+    "slug":  "yasothon",
+    "heroImage":  "assets/images/provinces/yasothon/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/yasothon/gallery-1.webp",
+                          "assets/images/provinces/yasothon/gallery-2.webp",
+                          "assets/images/provinces/yasothon/gallery-3.webp",
+                          "assets/images/provinces/yasothon/gallery-4.webp",
+                          "assets/images/provinces/yasothon/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/yasothon/hero.webp",
+                            "caption":  "Yasothon tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/yasothon/gallery-1.webp",
+                            "caption":  "Yasothon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/yasothon/gallery-2.webp",
+                            "caption":  "Yasothon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/yasothon/gallery-3.webp",
+                            "caption":  "Yasothon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/yasothon/gallery-4.webp",
+                            "caption":  "Yasothon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Yasothon",
+                            "slug":  "yasothon",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/yasothon/gallery-5.webp",
+                            "caption":  "Yasothon tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

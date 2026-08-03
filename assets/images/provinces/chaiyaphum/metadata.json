@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chaiyaphum",
+    "slug":  "chaiyaphum",
+    "heroImage":  "assets/images/provinces/chaiyaphum/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chaiyaphum/gallery-1.webp",
+                          "assets/images/provinces/chaiyaphum/gallery-2.webp",
+                          "assets/images/provinces/chaiyaphum/gallery-3.webp",
+                          "assets/images/provinces/chaiyaphum/gallery-4.webp",
+                          "assets/images/provinces/chaiyaphum/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chaiyaphum/hero.webp",
+                            "caption":  "Chaiyaphum tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chaiyaphum/gallery-1.webp",
+                            "caption":  "Chaiyaphum tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chaiyaphum/gallery-2.webp",
+                            "caption":  "Chaiyaphum tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chaiyaphum/gallery-3.webp",
+                            "caption":  "Chaiyaphum tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chaiyaphum/gallery-4.webp",
+                            "caption":  "Chaiyaphum tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chaiyaphum",
+                            "slug":  "chaiyaphum",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chaiyaphum/gallery-5.webp",
+                            "caption":  "Chaiyaphum tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Sing Buri",
+    "slug":  "sing-buri",
+    "heroImage":  "assets/images/provinces/sing-buri/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/sing-buri/gallery-1.webp",
+                          "assets/images/provinces/sing-buri/gallery-2.webp",
+                          "assets/images/provinces/sing-buri/gallery-3.webp",
+                          "assets/images/provinces/sing-buri/gallery-4.webp",
+                          "assets/images/provinces/sing-buri/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/sing-buri/hero.webp",
+                            "caption":  "Sing Buri tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/sing-buri/gallery-1.webp",
+                            "caption":  "Sing Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/sing-buri/gallery-2.webp",
+                            "caption":  "Sing Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/sing-buri/gallery-3.webp",
+                            "caption":  "Sing Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/sing-buri/gallery-4.webp",
+                            "caption":  "Sing Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Sing Buri",
+                            "slug":  "sing-buri",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/sing-buri/gallery-5.webp",
+                            "caption":  "Sing Buri tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bang%20Rachan%20monument.png",
+                            "isFallback":  true
+                        }
+                    ]
+}

@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Roi Et",
+    "slug":  "roi-et",
+    "heroImage":  "assets/images/provinces/roi-et/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/roi-et/gallery-1.webp",
+                          "assets/images/provinces/roi-et/gallery-2.webp",
+                          "assets/images/provinces/roi-et/gallery-3.webp",
+                          "assets/images/provinces/roi-et/gallery-4.webp",
+                          "assets/images/provinces/roi-et/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/roi-et/hero.webp",
+                            "caption":  "Roi Et tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/roi-et/gallery-1.webp",
+                            "caption":  "Roi Et tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/roi-et/gallery-2.webp",
+                            "caption":  "Roi Et tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/roi-et/gallery-3.webp",
+                            "caption":  "Roi Et tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/roi-et/gallery-4.webp",
+                            "caption":  "Roi Et tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Roi Et",
+                            "slug":  "roi-et",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/roi-et/gallery-5.webp",
+                            "caption":  "Roi Et tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

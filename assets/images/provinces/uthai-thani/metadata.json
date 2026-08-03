@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Uthai Thani",
+    "slug":  "uthai-thani",
+    "heroImage":  "assets/images/provinces/uthai-thani/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/uthai-thani/gallery-1.webp",
+                          "assets/images/provinces/uthai-thani/gallery-2.webp",
+                          "assets/images/provinces/uthai-thani/gallery-3.webp",
+                          "assets/images/provinces/uthai-thani/gallery-4.webp",
+                          "assets/images/provinces/uthai-thani/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/uthai-thani/hero.webp",
+                            "caption":  "Uthai Thani tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/uthai-thani/gallery-1.webp",
+                            "caption":  "Uthai Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/uthai-thani/gallery-2.webp",
+                            "caption":  "Uthai Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/uthai-thani/gallery-3.webp",
+                            "caption":  "Uthai Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/uthai-thani/gallery-4.webp",
+                            "caption":  "Uthai Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Uthai Thani",
+                            "slug":  "uthai-thani",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/uthai-thani/gallery-5.webp",
+                            "caption":  "Uthai Thani tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Chantaram02.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

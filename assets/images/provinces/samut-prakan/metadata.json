@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Samut Prakan",
+    "slug":  "samut-prakan",
+    "heroImage":  "assets/images/provinces/samut-prakan/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/samut-prakan/gallery-1.webp",
+                          "assets/images/provinces/samut-prakan/gallery-2.webp",
+                          "assets/images/provinces/samut-prakan/gallery-3.webp",
+                          "assets/images/provinces/samut-prakan/gallery-4.webp",
+                          "assets/images/provinces/samut-prakan/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/samut-prakan/hero.webp",
+                            "caption":  "Samut Prakan tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/samut-prakan/gallery-1.webp",
+                            "caption":  "Samut Prakan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/samut-prakan/gallery-2.webp",
+                            "caption":  "Samut Prakan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/samut-prakan/gallery-3.webp",
+                            "caption":  "Samut Prakan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/samut-prakan/gallery-4.webp",
+                            "caption":  "Samut Prakan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Samut Prakan",
+                            "slug":  "samut-prakan",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/samut-prakan/gallery-5.webp",
+                            "caption":  "Samut Prakan tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
+                            "isFallback":  true
+                        }
+                    ]
+}

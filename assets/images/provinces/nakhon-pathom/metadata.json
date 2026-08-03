@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Nakhon Pathom",
+    "slug":  "nakhon-pathom",
+    "heroImage":  "assets/images/provinces/nakhon-pathom/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/nakhon-pathom/gallery-1.webp",
+                          "assets/images/provinces/nakhon-pathom/gallery-2.webp",
+                          "assets/images/provinces/nakhon-pathom/gallery-3.webp",
+                          "assets/images/provinces/nakhon-pathom/gallery-4.webp",
+                          "assets/images/provinces/nakhon-pathom/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/nakhon-pathom/hero.webp",
+                            "caption":  "Nakhon Pathom tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/nakhon-pathom/gallery-1.webp",
+                            "caption":  "Nakhon Pathom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/nakhon-pathom/gallery-2.webp",
+                            "caption":  "Nakhon Pathom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/nakhon-pathom/gallery-3.webp",
+                            "caption":  "Nakhon Pathom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/nakhon-pathom/gallery-4.webp",
+                            "caption":  "Nakhon Pathom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Nakhon Pathom",
+                            "slug":  "nakhon-pathom",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/nakhon-pathom/gallery-5.webp",
+                            "caption":  "Nakhon Pathom tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
+                            "isFallback":  true
+                        }
+                    ]
+}

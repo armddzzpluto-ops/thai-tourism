@@ -1,0 +1,74 @@
+﻿{
+    "province":  "Chonburi",
+    "slug":  "chonburi",
+    "heroImage":  "assets/images/provinces/chonburi/hero.webp",
+    "galleryImages":  [
+                          "assets/images/provinces/chonburi/gallery-1.webp",
+                          "assets/images/provinces/chonburi/gallery-2.webp",
+                          "assets/images/provinces/chonburi/gallery-3.webp",
+                          "assets/images/provinces/chonburi/gallery-4.webp",
+                          "assets/images/provinces/chonburi/gallery-5.webp"
+                      ],
+    "attribution":  [
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "hero",
+                            "file":  "assets/images/provinces/chonburi/hero.webp",
+                            "caption":  "Chonburi tourism highlight",
+                            "photoCredit":  "Wikimedia Commons contributor",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  false
+                        },
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "gallery-1",
+                            "file":  "assets/images/provinces/chonburi/gallery-1.webp",
+                            "caption":  "Chonburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "gallery-2",
+                            "file":  "assets/images/provinces/chonburi/gallery-2.webp",
+                            "caption":  "Chonburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "gallery-3",
+                            "file":  "assets/images/provinces/chonburi/gallery-3.webp",
+                            "caption":  "Chonburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "gallery-4",
+                            "file":  "assets/images/provinces/chonburi/gallery-4.webp",
+                            "caption":  "Chonburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        },
+                        {
+                            "province":  "Chonburi",
+                            "slug":  "chonburi",
+                            "role":  "gallery-5",
+                            "file":  "assets/images/provinces/chonburi/gallery-5.webp",
+                            "caption":  "Chonburi tourism fallback image",
+                            "photoCredit":  "Fallback from hero image",
+                            "imageSource":  "local-fallback",
+                            "isFallback":  true
+                        }
+                    ]
+}
