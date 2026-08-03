@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
@@ -612,7 +612,7 @@ Discover The Land Of Smiles</span></div>
       </div>
     <div class="hero-stats">
       <div class="hero-stat-card">
-        <div class="stat-num">76+</div>
+        <div class="stat-num">77</div>
         <div class="stat-label">จังหวัดทั่วไทย</div>
       </div>
       <div class="hero-stat-card">
@@ -824,34 +824,13 @@ Discover The Land Of Smiles</span></div>
         <h2 class="section-title">ภาพสวยงาม<span class="gold">จากทั่วไทย</span></h2>
         <div class="divider"></div>
       </div>
-      <div class="gallery-grid fade-in" style="grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;">
-        <div class="gallery-item" onclick="showPage('gallery')" style="grid-column:span 2;grid-row:span 2;cursor:pointer;">
-          <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800&q=80" alt="ทะเลไทย" loading="lazy">
-          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
-          <div class="gallery-caption">ทะเลไทยยามเย็น</div>
-        </div>
-        <div class="gallery-item" onclick="showPage('gallery')" style="cursor:pointer;">
-          <img src="https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?w=800&q=80" alt="วัดเชียงใหม่" loading="lazy">
-          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
-          <div class="gallery-caption">วัดในเชียงใหม่</div>
-        </div>
-        <div class="gallery-item" onclick="showPage('gallery')" style="cursor:pointer;">
-          <img src="assets/images/destinations/chiang-rai.webp" alt="วัดร่องขุ่น" loading="lazy">
-          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
-          <div class="gallery-caption">วัดร่องขุ่น เชียงราย</div>
-        </div>
-        <div class="gallery-item" onclick="showPage('gallery')" style="cursor:pointer;">
-          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&q=80" alt="กระบี่" loading="lazy">
-          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
-          <div class="gallery-caption">หน้าผากระบี่</div>
-        </div>
-        <div class="gallery-item" onclick="showPage('gallery')" style="cursor:pointer;">
-          <img src="assets/images/destinations/bangkok.webp" alt="กรุงเทพ" loading="lazy">
-          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
-          <div class="gallery-caption">กรุงเทพยามค่ำ</div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:32px;">
+      <div
+        class="gallery-grid fade-in"
+        id="home-gallery-preview"
+        style="grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;"
+      >
+        <!-- Shared gallery preview injected by JS -->
+      </div>      <div style="text-align:center;margin-top:32px;">
         <button class="btn-outline" onclick="showPage('gallery')" style="border-color:var(--teal-mid);color:var(--teal-mid);">
           <i class="fas fa-images"></i> ดูรูปภาพทั้งหมด
         </button>
@@ -1787,6 +1766,43 @@ function buildGalleryFromDestinations() {
   return items;
 }
 
+function renderHomeGalleryPreview() {
+  const container = document.getElementById('home-gallery-preview');
+  if (!container) return;
+
+  const preview = galleryImages.slice(0, 5);
+
+  if (!preview.length) {
+    container.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1;">
+        <i class="fas fa-images"></i>
+        No gallery images are available.
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = preview.map((image, index) => {
+    const featuredStyle = index === 0
+      ? 'grid-column:span 2;grid-row:span 2;'
+      : '';
+    const caption = image.cap || 'Thailand destination';
+
+    return `
+      <button
+        class="gallery-item"
+        type="button"
+        onclick="showPage('gallery')"
+        style="${featuredStyle}cursor:pointer;border:0;padding:0;"
+        aria-label="Open gallery: ${caption}"
+      >
+        <img src="${image.src}" alt="${caption}" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fas fa-expand-alt"></i>
+        </div>
+        <div class="gallery-caption">${caption}</div>
+      </button>`;
+  }).join('');
+}
 function toPromoProvinceSlug(value) {
   return String(value || '')
     .toLowerCase()
@@ -1794,47 +1810,66 @@ function toPromoProvinceSlug(value) {
     .replace(/^-+|-+$/g, '');
 }
 
-function hydratePromotionsFromSharedData() {
-  const cards = document.querySelectorAll('#page-promotions .dest-card[data-promo-province]');
+function hydratePromotionCardsFromSharedData() {
+  const cards = document.querySelectorAll('.dest-card[data-promo-province]');
+
   cards.forEach(card => {
     const provinceSlug = card.getAttribute('data-promo-province');
     if (!provinceSlug) return;
-    const destination = destinations.find(item => toPromoProvinceSlug(item.province || item.name) === provinceSlug);
-    if (!destination) return;
 
-    const img = card.querySelector('.card-img-wrap img');
-    if (img && destination.img) {
-      img.src = destination.img;
-      img.alt = `${destination.name} ${destination.province || ''}`.trim();
+    const destination = destinations.find(item => {
+      const destinationSlug = item.slug ||
+        toPromoProvinceSlug(item.province || item.name);
+      return destinationSlug === provinceSlug;
+    });
+
+    if (!destination) {
+      console.warn(`Promotion destination not found: ${provinceSlug}`);
+      return;
     }
 
-    const regionEl = card.querySelector('.card-region');
-    if (regionEl) {
-      regionEl.textContent = `${destination.province || destination.name} • ${normalizeRegionLabel(destination.region)}`;
+    const image = card.querySelector('.card-img-wrap img');
+    const imageSource = destination.heroImage || destination.img;
+
+    if (image && imageSource) {
+      image.src = imageSource;
+      image.alt = `${destination.name} ${destination.province || ''}`.trim();
+    }
+
+    const regionElement = card.querySelector('.card-region');
+
+    if (regionElement) {
+      regionElement.textContent =
+        `${destination.province || destination.name} - ` +
+        normalizeRegionLabel(destination.region);
     }
   });
 }
-
 window.__hydrateTravelData = function hydrateTravelData() {
   if (Array.isArray(window.DESTINATIONS) && window.DESTINATIONS.length) {
-    destinations = window.DESTINATIONS.map(item => normalizeIndexDestination(item));
+    destinations = window.DESTINATIONS.map(item =>
+      normalizeIndexDestination(item)
+    );
     window.destinations = destinations;
-  }
-
-  if (Array.isArray(window.GALLERY) && window.GALLERY.length) {
-    galleryImages = window.GALLERY.map(item => ({ ...item }));
+  } else {
+    destinations = [];
+    galleryImages = [];
+    window.destinations = destinations;
     window.galleryImages = galleryImages;
+    console.error('Shared destination data is missing');
+    return;
   }
 
-  const curatedGallery = buildGalleryFromDestinations();
-  if (curatedGallery.length) {
-    galleryImages = curatedGallery;
-    window.galleryImages = galleryImages;
+  galleryImages = buildGalleryFromDestinations();
+  window.galleryImages = galleryImages;
+
+  if (!galleryImages.length) {
+    console.warn('No destination gallery images were generated');
   }
 
-  hydratePromotionsFromSharedData();
+  renderHomeGalleryPreview();
+  hydratePromotionCardsFromSharedData();
 };
-
 // ===== STATE =====
 let favorites = JSON.parse(localStorage.getItem('tt_favs') || '[]');
 let activeFilter = '';
@@ -2206,10 +2241,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-    <script src="js/enhancements.js"></script>
-    <script src="js/data.js"></script>
-    <script>
-      window.__hydrateTravelData && window.__hydrateTravelData();
-    </script>
+<script src="js/data.js"></script>
+<script>
+  if (typeof window.__hydrateTravelData === 'function') {
+    window.__hydrateTravelData();
+  } else {
+    console.error('Shared travel data hydration is unavailable');
+  }
+</script>
+<script src="js/enhancements.js"></script>
 </body>
 </html>
