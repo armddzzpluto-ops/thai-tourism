@@ -5,8 +5,18 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/enhancements.css">
+  <link rel="stylesheet" href="css/core-stability.css">
   <script>
-    (function(){try{var t=localStorage.getItem('tt_theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+    (function () {
+      try {
+        var theme = localStorage.getItem('tt_theme') || 'light';
+        var language = localStorage.getItem('tt_language') || 'th';
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.lang = language === 'en' ? 'en' : 'th';
+      } catch (error) {
+        document.documentElement.lang = 'th';
+      }
+    })();
   </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thailand Travel Guide | ท่องเที่ยวไทย</title>
@@ -515,11 +525,11 @@ Discover The Land Of Smiles</span></div>
           <i class="fas fa-search" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-light);"></i>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <button class="filter-btn active" onclick="setFilter('',this)">ทั้งหมด</button>
-          <button class="filter-btn" onclick="setFilter('ภาคเหนือ',this)">ภาคเหนือ</button>
-          <button class="filter-btn" onclick="setFilter('ภาคกลาง',this)">ภาคกลาง</button>
-          <button class="filter-btn" onclick="setFilter('ภาคใต้',this)">ภาคใต้</button>
-          <button class="filter-btn" onclick="setFilter('ภาคอีสาน',this)">ภาคอีสาน</button>
+          <button class="filter-btn active" data-filter-value="" onclick="setFilter('',this)">ทั้งหมด</button>
+          <button class="filter-btn" data-filter-value="ภาคเหนือ" onclick="setFilter('ภาคเหนือ',this)">ภาคเหนือ</button>
+          <button class="filter-btn" data-filter-value="ภาคกลาง" onclick="setFilter('ภาคกลาง',this)">ภาคกลาง</button>
+          <button class="filter-btn" data-filter-value="ภาคใต้" onclick="setFilter('ภาคใต้',this)">ภาคใต้</button>
+          <button class="filter-btn" data-filter-value="ภาคอีสาน" onclick="setFilter('ภาคอีสาน',this)">ภาคอีสาน</button>
         </div>
       </div>
 
@@ -1130,7 +1140,7 @@ Discover The Land Of Smiles</span></div>
 </div>
 
 <!-- IMAGE LIGHTBOX -->
-<div class="modal-overlay" id="lightbox" onclick="closeLightbox()">
+<div class="modal-overlay" id="lightbox" onclick="closeLightbox(event)">
   <div style="position:relative;max-width:90vw;max-height:90vh;">
     <button type="button" aria-label="Close image lightbox" onclick="closeLightbox()" style="position:absolute;top:-40px;right:0;background:none;border:none;color:white;font-size:2rem;cursor:pointer;"><i class="fas fa-times"></i></button>
     <img id="lightbox-img" src="assets/images/destinations/phuket.webp" alt="Gallery image preview" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;">
@@ -1214,7 +1224,7 @@ Discover The Land Of Smiles</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2567 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีสารสนเทศ</span>
+      <span>© 2026 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีสารสนเทศ</span>
       <span>สร้างด้วยใจในประเทศไทย ❤️</span>
     </div>
   </div>
@@ -1239,14 +1249,27 @@ function normalizeTagList(destination) {
 }
 
 function normalizeRegionLabel(region) {
-  const map = {
+  const keys = {
+    north: 'region.north',
+    central: 'region.central',
+    northeast: 'region.northeast',
+    east: 'region.east',
+    south: 'region.south'
+  };
+
+  const fallback = {
     north: 'ภาคเหนือ',
     central: 'ภาคกลาง',
     northeast: 'ภาคอีสาน',
     east: 'ภาคตะวันออก',
     south: 'ภาคใต้'
   };
-  return map[region] || region || '';
+
+  const key = keys[region];
+
+  return key
+    ? (window.I18N?.t(key) || fallback[region])
+    : (region || '');
 }
 
 function normalizeIndexDestination(destination) {
@@ -1440,17 +1463,34 @@ let chartsInit = false;
 function applyTheme(theme) {
   const next = theme === 'dark' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', next);
+
   const btn = document.getElementById('theme-toggle');
+
   if (btn) {
-    btn.innerHTML = next === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    btn.innerHTML = next === 'dark'
+      ? '<i class="fas fa-sun"></i>'
+      : '<i class="fas fa-moon"></i>';
+
     btn.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
   }
+
+  document.dispatchEvent(new CustomEvent('themechange', {
+    detail: { theme: next }
+  }));
+
+  window.I18N?.syncControls();
 }
 
 function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme') || 'light';
   const next = current === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('tt_theme', next);
+
+  try {
+    localStorage.setItem('tt_theme', next);
+  } catch (error) {
+    console.warn('Theme preference could not be saved', error);
+  }
+
   applyTheme(next);
 }
 
@@ -1625,31 +1665,43 @@ function toggleFav(id, btn) {
   if (idx === -1) {
     favorites.push(id);
     btn.innerHTML = '❤️'; btn.classList.add('liked');
-    Swal.fire({ toast:true, position:'top-end', icon:'success', title:'เพิ่มในรายการโปรดแล้ว!', showConfirmButton:false, timer:1800, timerProgressBar:true });
+    Swal.fire({ toast:true, position:'top-end', icon:'success', title:window.I18N?.t('favorite.added') || 'เพิ่มในรายการโปรดแล้ว!', showConfirmButton:false, timer:1800, timerProgressBar:true });
   } else {
     favorites.splice(idx,1);
     btn.innerHTML = '🤍'; btn.classList.remove('liked');
-    Swal.fire({ toast:true, position:'top-end', icon:'info', title:'นำออกจากรายการโปรดแล้ว', showConfirmButton:false, timer:1800 });
+    Swal.fire({ toast:true, position:'top-end', icon:'info', title:window.I18N?.t('favorite.removed') || 'นำออกจากรายการโปรดแล้ว', showConfirmButton:false, timer:1800 });
   }
-  localStorage.setItem('tt_favs', JSON.stringify(favorites));
+  try {
+    localStorage.setItem('tt_favs', JSON.stringify(favorites));
+  } catch (error) {
+    console.warn('Favorites could not be saved', error);
+  }
 }
 
 function openModal(id) {
-  const d = destinations.find(x=>x.id===id);
+  const d = destinations.find(item => item.id === id);
   if (!d) return;
-  document.getElementById('modal-img').src = d.img;
-  document.getElementById('modal-img').alt = d.name;
-  document.getElementById('modal-region').textContent = d.region;
+
+  const tr = (key, fallback) => window.I18N?.t(key) || fallback;
+  const image = document.getElementById('modal-img');
+
+  image.src = d.heroImage || d.img;
+  image.alt = d.name;
+
+  document.getElementById('modal-region').textContent = normalizeRegionLabel(d.region);
   document.getElementById('modal-title').textContent = d.name;
   document.getElementById('modal-desc').textContent = d.longDesc;
-  document.getElementById('modal-tags').innerHTML = d.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('');
+  document.getElementById('modal-tags').innerHTML =
+    d.tags.map(tag => `<span class="modal-tag">${tag}</span>`).join('');
+
   document.getElementById('modal-info').innerHTML = `
-    <div class="modal-info-item"><i class="fas fa-thermometer-half"></i> อุณหภูมิ: ${d.weather}</div>
-    <div class="modal-info-item"><i class="fas fa-calendar-alt"></i> ช่วงเวลาดีที่สุด: ${d.best}</div>
-    <div class="modal-info-item"><i class="fas fa-road"></i> ระยะทาง: ${d.distance}</div>
-    <div class="modal-info-item"><i class="fas fa-star"></i> คะแนน: ${d.rating}/5.0</div>
-    <div class="modal-info-item"><i class="fas fa-map-location-dot"></i> <a href="${d.googleMaps}" target="_blank" rel="noopener noreferrer">แผนที่ Google Maps</a></div>
-    <div class="modal-info-item"><i class="fas fa-globe"></i> <a href="${d.officialWebsite}" target="_blank" rel="noopener noreferrer">เว็บไซต์การท่องเที่ยวทางการ</a></div>`;
+    <div class="modal-info-item"><i class="fas fa-thermometer-half"></i> ${tr('dialog.temperature', 'อุณหภูมิ')}: ${d.weather}</div>
+    <div class="modal-info-item"><i class="fas fa-calendar-alt"></i> ${tr('dialog.bestTime', 'ช่วงเวลาดีที่สุด')}: ${d.best}</div>
+    <div class="modal-info-item"><i class="fas fa-road"></i> ${tr('dialog.distance', 'ระยะทาง')}: ${d.distance}</div>
+    <div class="modal-info-item"><i class="fas fa-star"></i> ${tr('dialog.rating', 'คะแนน')}: ${d.rating}/5.0</div>
+    <div class="modal-info-item"><i class="fas fa-map-location-dot"></i> <a href="${d.googleMaps}" target="_blank" rel="noopener noreferrer">${tr('dialog.maps', 'แผนที่ Google Maps')}</a></div>
+    <div class="modal-info-item"><i class="fas fa-globe"></i> <a href="${d.officialWebsite}" target="_blank" rel="noopener noreferrer">${tr('dialog.official', 'เว็บไซต์การท่องเที่ยวทางการ')}</a></div>`;
+
   document.getElementById('modal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1664,7 +1716,15 @@ function openLightbox(i) {
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow='hidden';
 }
-function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow=''; }
+function closeLightbox(event) {
+  if (event && event.target !== event.currentTarget) return;
+
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 function filterCards() {
   const q = document.getElementById('main-search').value;
@@ -1698,8 +1758,8 @@ function filterDest(cat) {
 
   document.querySelectorAll('.filter-btn').forEach(button => {
     const shouldActivate = next.filter
-      ? button.textContent.trim() === cat
-      : button.textContent.trim() === 'ทั้งหมด';
+      ? button.dataset.filterValue === cat
+      : button.dataset.filterValue === '';
 
     button.classList.toggle('active', shouldActivate);
   });
@@ -1727,7 +1787,7 @@ function doQuickSearch() {
 
   activeFilter = '';
   document.querySelectorAll('.filter-btn').forEach(button => {
-    button.classList.toggle('active', button.textContent.trim() === 'ทั้งหมด');
+    button.classList.toggle('active', button.dataset.filterValue === '');
   });
 
   if (destinationSearch) destinationSearch.value = query;
@@ -1750,7 +1810,7 @@ function showDest(name) {
   if (search) search.value = name;
 
   document.querySelectorAll('.filter-btn').forEach(button => {
-    button.classList.toggle('active', button.textContent.trim() === 'ทั้งหมด');
+    button.classList.toggle('active', button.dataset.filterValue === '');
   });
 
   showPage('destinations');
@@ -1888,7 +1948,7 @@ function showPage(page, options = {}) {
     }, 0);
   }
 
-  document.title = PAGE_META[page] || PAGE_META.home;
+  document.title = window.I18N?.pageTitle(page) || PAGE_META[page] || PAGE_META.home;
 
   if (updateHistory) {
     updatePageHistory(page, replaceHistory);
@@ -1912,8 +1972,9 @@ function setMobileMenuState(open) {
   menu.classList.toggle('open', open);
   menu.setAttribute('aria-hidden', String(!open));
   button.classList.toggle('open', open);
+  document.body.classList.toggle('mobile-menu-open', open);
   button.setAttribute('aria-expanded', String(open));
-  button.setAttribute('aria-label', open ? 'ปิดเมนู' : 'เปิดเมนู');
+  button.setAttribute('aria-label', window.I18N?.t(open ? 'menu.close' : 'menu.open') || (open ? 'ปิดเมนู' : 'เปิดเมนู'));
 }
 
 function toggleMobile() {
@@ -2149,6 +2210,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Shared travel data hydration is unavailable');
   }
 </script>
+<script src="js/i18n.js"></script>
 <script src="js/enhancements.js"></script>
+<script src="js/core-stability.js"></script>
 </body>
 </html>

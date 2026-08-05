@@ -12,6 +12,10 @@
     quoteIndex: "tt_daily_quote_index"
   };
 
+  function tr(key, fallback, variables = {}) {
+    return window.I18N?.t(key, variables) || fallback;
+  }
+
   function getSharedQuotes() {
     return Array.isArray(window.QUOTES) ? window.QUOTES : [];
   }
@@ -59,7 +63,15 @@
   }
 
   function regionLabel(region) {
-    const labels = {
+    const keys = {
+      north: "region.north",
+      central: "region.central",
+      northeast: "region.northeast",
+      east: "region.east",
+      south: "region.south"
+    };
+
+    const fallback = {
       north: "ภาคเหนือ",
       central: "ภาคกลาง",
       northeast: "ภาคอีสาน",
@@ -67,7 +79,11 @@
       south: "ภาคใต้"
     };
 
-    return labels[region] || region || "ไม่ระบุภูมิภาค";
+    const key = keys[region];
+
+    return key
+      ? tr(key, fallback[region])
+      : (region || tr("region.unknown", "ไม่ระบุภูมิภาค"));
   }
 
   document.addEventListener("DOMContentLoaded", initEnhancements);
@@ -193,6 +209,12 @@
   function initCounters() {
     const counters = document.querySelectorAll(".stat-num, .dash-num, .about-badge .big");
     if (!counters.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+      counters.forEach(animateCounter);
+      return;
+    }
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -200,6 +222,7 @@
         observer.unobserve(entry.target);
       });
     }, { threshold: 0.45 });
+
     counters.forEach(counter => observer.observe(counter));
   }
 
@@ -308,7 +331,7 @@
       input.value = term;
       onSelect(term);
       setOpen(false);
-      notify(`กำลังค้นหา: ${term}`, "info");
+      notify(tr("search.searching", `กำลังค้นหา: ${term}`, { term }), "info");
     };
 
     const render = () => {
@@ -338,7 +361,7 @@
         event.preventDefault();
         localStorage.removeItem(STORAGE.recent);
         render();
-        notify("ล้างประวัติการค้นหาแล้ว", "info");
+        notify(tr("search.cleared", "ล้างประวัติการค้นหาแล้ว"), "info");
       });
 
       setOpen(true);
@@ -410,9 +433,9 @@
 
   function renderMatches(matches) {
     if (!matches.length) {
-      return '<div class="empty-state"><i class="fas fa-search"></i>ยังไม่พบสถานที่ที่ตรงคำค้น</div>';
+      return `<div class="empty-state"><i class="fas fa-search"></i>${tr("search.noResults", "ยังไม่พบสถานที่ที่ตรงคำค้น")}</div>`;
     }
-    return '<div class="suggestion-label">คำแนะนำ</div>' + matches.map(d => `
+    return `<div class="suggestion-label">${tr("search.suggestions", "คำแนะนำ")}</div>` + matches.map(d => `
       <button class="suggestion-item" type="button" data-search-term="${escapeAttr(d.name)}">
         <span><i class="fas fa-location-dot"></i> ${d.name}</span>
         <small>${regionLabel(d.region)}</small>
@@ -424,10 +447,10 @@
     const recent = getRecentSearches();
     const popular = destinations.slice(0, 6).map(d => d.name);
     const recentHTML = recent.length ? `
-      <div class="suggestion-label">ค้นหาล่าสุด <button class="suggestion-clear" type="button" data-clear-recent>ล้าง</button></div>
+      <div class="suggestion-label">${tr("search.recent", "ค้นหาล่าสุด")} <button class="suggestion-clear" type="button" data-clear-recent>${tr("search.clear", "ล้าง")}</button></div>
       ${recent.map(term => `<button class="suggestion-item" type="button" data-search-term="${escapeAttr(term)}"><span><i class="fas fa-clock"></i> ${term}</span></button>`).join("")}
     ` : "";
-    return `${recentHTML}<div class="suggestion-label">จุดหมายยอดนิยม</div>
+    return `${recentHTML}<div class="suggestion-label">${tr("search.popular", "จุดหมายยอดนิยม")}</div>
       <div class="suggestion-chips">${popular.map(term => `<button class="suggestion-chip" type="button" data-search-term="${escapeAttr(term)}">${term}</button>`).join("")}</div>`;
   }
 
@@ -461,7 +484,7 @@
         window.showPage?.("destinations");
         requestAnimationFrame(() => window.openModal(pick.id));
       }
-      notify(`สุ่มได้: ${pick.name}`, "success");
+      notify(tr("action.randomResult", `สุ่มได้: ${pick.name}`, { name: pick.name }), "success");
     };
     document.getElementById("random-destination")?.addEventListener("click", run);
     document.getElementById("fab-random")?.addEventListener("click", () => { closeFab(); run(); });
@@ -493,7 +516,7 @@
       index = (index + 1 + Math.floor(Math.random() * (quotes.length - 1))) % quotes.length;
       localStorage.setItem(STORAGE.quoteIndex, String(index));
       show(index);
-      notify("เปลี่ยนคำคมท่องเที่ยวแล้ว", "info");
+      notify(tr("action.quoteChanged", "เปลี่ยนคำคมท่องเที่ยวแล้ว"), "info");
     };
     document.getElementById("refresh-quote")?.addEventListener("click", refresh);
     document.getElementById("fab-quote")?.addEventListener("click", () => {
@@ -541,7 +564,7 @@
         list.querySelectorAll(".region-button").forEach(btn => btn.classList.toggle("active", btn.dataset.region === region));
         const items = destinations.filter(d => d.region === region);
         title.textContent = regionLabel(region);
-        meta.textContent = `พบ ${items.length} สถานที่ในภูมิภาคนี้`;
+        meta.textContent = tr("region.found", `พบ ${items.length} สถานที่ในภูมิภาคนี้`, { count: items.length });
         panel.innerHTML = items.length ? `
           <div class="region-result-grid">
             ${items.map(d => `<button class="region-mini-card" type="button" data-destination-id="${d.id}">
@@ -550,10 +573,10 @@
           </div>
         ` : `<div class="region-empty-state">
           <i class="fas fa-map region-empty-icon"></i>
-          <p class="region-empty-title">ยังไม่พบสถานที่ในภูมิภาคนี้</p>
-          <p class="region-empty-desc">ลองเลือกภูมิภาคอื่น หรือรีเซ็ตตัวกรองเพื่อดูทั้งหมด</p>
+          <p class="region-empty-title">${tr("region.emptyTitle", "ยังไม่พบสถานที่ในภูมิภาคนี้")}</p>
+          <p class="region-empty-desc">${tr("region.emptyDescription", "ลองเลือกภูมิภาคอื่น หรือรีเซ็ตตัวกรองเพื่อดูทั้งหมด")}</p>
           <button type="button" class="region-reset-button">
-            <i class="fas fa-redo"></i> รีเซ็ตตัวกรอง
+            <i class="fas fa-redo"></i> ${tr("region.reset", "รีเซ็ตตัวกรอง")}
           </button>
         </div>`;
         panel.dataset.state = items.length ? "active" : "empty";
@@ -571,8 +594,8 @@
         panel.dataset.state = "error";
         panel.innerHTML = `<div class="region-empty-state">
           <i class="fas fa-triangle-exclamation region-empty-icon"></i>
-          <p class="region-empty-title">ไม่สามารถแสดงผลภูมิภาคได้</p>
-          <p class="region-empty-desc">ระบบแสดงผลเกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง</p>
+          <p class="region-empty-title">${tr("region.errorTitle", "ไม่สามารถแสดงผลภูมิภาคได้")}</p>
+          <p class="region-empty-desc">${tr("region.errorDescription", "ระบบแสดงผลเกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")}</p>
         </div>`;
       }
     }

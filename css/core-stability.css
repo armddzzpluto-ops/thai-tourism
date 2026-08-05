@@ -1,0 +1,125 @@
+﻿/* ==========================================================
+   Phase 1 — Shared bilingual controls and accessibility
+   ========================================================== */
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 999px;
+  background: var(--color-overlay-xs);
+}
+
+.language-switch button {
+  min-width: 34px;
+  min-height: 32px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: "Kanit", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.language-switch button:hover {
+  color: var(--color-text-primary);
+  background: var(--color-overlay-sm);
+}
+
+.language-switch button.active,
+.language-switch button[aria-pressed="true"] {
+  color: var(--color-text-inverse);
+  background: var(--color-primary);
+}
+
+.mobile-language-switch {
+  display: none;
+  width: max-content;
+  margin: 10px 16px 4px;
+}
+
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+.modal-overlay[aria-hidden="true"] {
+  pointer-events: none;
+}
+
+.modal-overlay[aria-hidden="false"] {
+  pointer-events: auto;
+}
+
+.modal-overlay :focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+[data-placeholder-link="true"] {
+  cursor: not-allowed;
+}
+
+html.is-offline::after {
+  content: "Offline";
+  position: fixed;
+  right: 14px;
+  bottom: 92px;
+  z-index: 4000;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--color-status-danger);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+html[lang="th"].is-offline::after {
+  content: "ออฟไลน์";
+}
+
+html[lang="en"] .nav-links {
+  gap: clamp(13px, 1.5vw, 23px);
+}
+
+html[lang="en"] .footer-bottom {
+  line-height: 1.55;
+}
+
+@media (max-width: 1024px) {
+  .nav-actions .nav-search-btn span {
+    display: none;
+  }
+
+  html[lang="en"] .nav-links {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-actions > .language-switch {
+    display: none;
+  }
+
+  .mobile-language-switch {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .language-switch button {
+    min-width: 42px;
+    min-height: 38px;
+  }
+
+  .mobile-menu a {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+  }
+}
