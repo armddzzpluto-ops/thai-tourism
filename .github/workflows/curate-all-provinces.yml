@@ -38,11 +38,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          Remove-Item assets/images/provinces/curation-error.txt -Force -ErrorAction SilentlyContinue
 
           1..77 | ForEach-Object {
             $batch = $_
             try {
-              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 1000
             } catch {
               $diagnostic = ($_ | Out-String) + [Environment]::NewLine + $_.ScriptStackTrace
               Set-Content -Path assets/images/provinces/curation-error.txt -Value $diagnostic -Encoding UTF8
