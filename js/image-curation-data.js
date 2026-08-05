@@ -372,11 +372,54 @@ window.IMAGE_CURATION = {
     ]
   },
   "chiang-rai": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chiang-rai/gallery-1.webp",
+      "assets/images/provinces/chiang-rai/gallery-2.webp",
+      "assets/images/provinces/chiang-rai/gallery-3.webp",
+      "assets/images/provinces/chiang-rai/gallery-4.webp",
+      "assets/images/provinces/chiang-rai/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Photo of Chiang Rai.",
+      "Chiang Rai Province, Golden Triangle",
+      "Burmese-Chiang Rai",
+      "Chiang Rai",
+      "Chiang Rai"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chiang-rai/gallery-1.webp",
+        "caption": "Photo of Chiang Rai.",
+        "photoCredit": "\u003cbdi>\u003ca href=\"https://en.wikipedia.org/wiki/en:Christopher_Michel\" class=\"extiw\" title=\"w:en:Christopher Michel\">\u003cspan title=\"American entrepreneur, photographer, and investor\">Christopher Michel\u003c/span>\u003c/a>\u003c/bdi>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20100228_chiang_rai3_7642_(4444147157).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-rai/gallery-2.webp",
+        "caption": "Chiang Rai Province, Golden Triangle",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Heiko_Trurnit&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Heiko Trurnit (page does not exist)\">Heiko Trurnit\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Akha_Village_in_the_1980ies.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-rai/gallery-3.webp",
+        "caption": "Burmese-Chiang Rai",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Photon34\" title=\"User:Photon34\">Photon34\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Burmese-Chiang_Rai.png"
+      },
+      {
+        "file": "assets/images/provinces/chiang-rai/gallery-4.webp",
+        "caption": "Chiang Rai",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497707213).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-rai/gallery-5.webp",
+        "caption": "Chiang Rai",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497708963).jpg"
+      }
+    ]
   },
   "chonburi": {
     "status": "needs-curation",

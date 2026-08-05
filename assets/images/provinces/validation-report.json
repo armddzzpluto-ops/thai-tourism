@@ -72,9 +72,9 @@
   {
     "province": "Chiang Rai",
     "slug": "chiang-rai",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Chonburi",
