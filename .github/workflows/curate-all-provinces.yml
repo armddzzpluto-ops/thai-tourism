@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - agent/image-phase-1-complete
+      - agent/image-phase-1-run
     paths:
       - .github/workflows/curate-all-provinces.yml
 
@@ -24,7 +24,7 @@ jobs:
       - name: Check out curation branch
         uses: actions/checkout@v4
         with:
-          ref: agent/image-phase-1-complete
+          ref: agent/image-phase-1-run
           fetch-depth: 0
 
       - name: Install WebP tools
@@ -54,7 +54,7 @@ jobs:
             echo "No curation changes produced"
           else
             git commit -m "feat(images): curate verified galleries for all provinces"
-            git push origin HEAD:agent/image-phase-1-complete
+            git push origin HEAD:agent/image-phase-1-run
           fi
 
       - name: Require all provinces to pass curation
