@@ -1290,6 +1290,8 @@ function normalizeIndexDestination(destination) {
   normalized.best = destination.best || destination.entry || destination.ticketInfo || 'ไม่ระบุ';
   normalized.distance = destination.distance || destination.province || destination.officialLocation || 'ไม่ระบุ';
   normalized.galleryImages = Array.isArray(destination.galleryImages) ? destination.galleryImages : [];
+  normalized.galleryCaptions = Array.isArray(destination.galleryCaptions) ? destination.galleryCaptions : [];
+  normalized.galleryCurated = destination.galleryCurated === true;
   normalized.searchKeywords = Array.isArray(destination.searchKeywords) ? destination.searchKeywords : [];
   normalized.keywords = Array.isArray(destination.keywords) ? destination.keywords : [];
   return normalized;
@@ -1305,15 +1307,23 @@ function buildGalleryFromDestinations() {
       ? destination.galleryImages
       : [];
 
-    gallery.forEach((src, index) => {
-      if (!src || src === hero || seen.has(src)) return;
+    const sources = gallery.length ? gallery : [hero];
+
+    sources.forEach((src, index) => {
+      if (!src || seen.has(src)) return;
+
+      const galleryCaption = index > 0
+        ? destination.galleryCaptions[index - 1]
+        : '';
 
       seen.add(src);
       items.push({
         src,
-        cap: `${destination.name} • จุดท่องเที่ยว ${index + 1}`,
+        cap: galleryCaption || destination.caption || destination.name,
         destinationId: destination.id,
-        region: destination.region
+        region: destination.region,
+        province: destination.province,
+        curated: destination.galleryCurated === true
       });
     });
   });
@@ -1417,7 +1427,7 @@ function hydratePromotionCardsFromSharedData() {
 
     if (image && imageSource) {
       image.src = imageSource;
-      image.alt = `${destination.name} ${destination.province || ''}`.trim();
+      image.alt = destination.caption || `${destination.name} ${destination.province || ''}`.trim();
     }
 
     const regionElement = card.querySelector('.card-region');
@@ -1515,7 +1525,7 @@ function renderCard(d, containerId) {
       <div class="card-img-wrap">
         <img
           src="${imageSource}"
-          alt="${d.name}${d.province ? ` จังหวัด${d.province}` : ''}"
+          alt="${d.caption || d.name}"
           loading="lazy"
           decoding="async"
           width="800"
@@ -1706,7 +1716,7 @@ function openModal(id) {
   const image = document.getElementById('modal-img');
 
   image.src = d.heroImage || d.img;
-  image.alt = d.name;
+  image.alt = d.caption || d.name;
 
   document.getElementById('modal-region').textContent = normalizeRegionLabel(d.region);
   document.getElementById('modal-title').textContent = d.name;

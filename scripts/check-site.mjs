@@ -79,6 +79,29 @@ try {
     if (uniqueProvinces.size !== 77) {
       warnings.push(`province names are not unique: ${uniqueProvinces.size}/77`);
     }
+
+    const uncuratedGalleryViolations = destinations.filter(item => {
+      if (item.galleryCurated === true) return false;
+      return !Array.isArray(item.galleryImages)
+        || item.galleryImages.length !== 1
+        || item.galleryImages[0] !== item.heroImage;
+    });
+
+    if (uncuratedGalleryViolations.length) {
+      failures.push(
+        `uncurated destinations must expose hero-only galleries: ${uncuratedGalleryViolations.length} violations`
+      );
+    }
+
+    const genericGalleryCaptions = destinations.filter(item =>
+      /tourism highlight|จุดท่องเที่ยว\s*\d+/i.test(String(item.caption || ""))
+    );
+
+    if (genericGalleryCaptions.length) {
+      warnings.push(
+        `generic destination image captions remain: ${genericGalleryCaptions.length}`
+      );
+    }
   }
 } catch (error) {
   failures.push(`js/data.js runtime check failed: ${error.message}`);
