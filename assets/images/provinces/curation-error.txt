@@ -1,0 +1,13 @@
+Exception: /home/runner/work/thai-tourism/thai-tourism/scripts/curate-province-gallery-batch.ps1:64
+Line |
+  64 |      throw "Failed converting to WebP: $InputPath"
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Failed converting to WebP:
+     | /tmp/curate-ang-thong-4-0d4ecd0e82f743be8f82039f9925870e.jpg
+
+
+at Convert-ToWebp, /home/runner/work/thai-tourism/thai-tourism/scripts/curate-province-gallery-batch.ps1: line 64
+at <ScriptBlock>, /home/runner/work/thai-tourism/thai-tourism/scripts/curate-province-gallery-batch.ps1: line 374
+at <ScriptBlock>, /home/runner/work/_temp/7aa922c6-81de-4ae2-9304-f47354f07fd6.ps1: line 9
+at <ScriptBlock>, /home/runner/work/_temp/7aa922c6-81de-4ae2-9304-f47354f07fd6.ps1: line 6
+at <ScriptBlock>, <No file>: line 1
