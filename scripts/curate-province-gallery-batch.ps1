@@ -146,8 +146,8 @@ function Get-CommonsFilesFromCategory {
     $source = [string]$info.descriptionurl
     if (-not $source) { $source = [string]$info.url }
 
-    $downloadUrl = [string]$info.url
-    if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
+    $downloadUrl = [string]$info.thumburl
+    if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
     if (-not $downloadUrl) { continue }
 
     $out += (New-CandidateObject -Title $title -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -213,8 +213,8 @@ function Get-WikipediaImageCandidates {
           if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
           $source = [string]$info.descriptionurl
           if (-not $source) { $source = [string]$info.url }
-          $downloadUrl = [string]$info.url
-          if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
+          $downloadUrl = [string]$info.thumburl
+          if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
           if (-not $downloadUrl) { continue }
 
           $result += (New-CandidateObject -Title ([string]$img.title) -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -369,7 +369,7 @@ foreach ($provinceMeta in $batch) {
     try {
       if (-not $DryRun) {
         Invoke-WithRetry -Action {
-          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
+          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -TimeoutSec 60 -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
         } | Out-Null
         Start-Sleep -Milliseconds $RequestDelayMs
         Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
