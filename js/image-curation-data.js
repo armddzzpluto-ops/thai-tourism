@@ -51,11 +51,54 @@ window.IMAGE_CURATION = {
     ]
   },
   "ang-thong": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/ang-thong/gallery-1.webp",
+      "assets/images/provinces/ang-thong/gallery-2.webp",
+      "assets/images/provinces/ang-thong/gallery-3.webp",
+      "assets/images/provinces/ang-thong/gallery-4.webp",
+      "assets/images/provinces/ang-thong/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "File:Ang Thong 100.45010E 14.58332N.jpg",
+      "Ang Thong Province Stadion",
+      "Ang Thong WV Banner",
+      "\u003cp>Hlwong Pi Pant tattooing a Yant in Ang Tong Province.\n\u003c/p>\nFotographer - Spencer Littlewood",
+      "Ang Thong City Pillar Shrine"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/ang-thong/gallery-1.webp",
+        "caption": "File:Ang Thong 100.45010E 14.58332N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_100.45010E_14.58332N.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ang-thong/gallery-2.webp",
+        "caption": "Ang Thong Province Stadion",
+        "photoCredit": "Pudt",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_Province_Stadion.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ang-thong/gallery-3.webp",
+        "caption": "Ang Thong WV Banner",
+        "photoCredit": "Missvain\u003cbr>Original author: \u003ca href=\"//commons.wikimedia.org/wiki/User:Kittipong_khunnen\" title=\"User:Kittipong khunnen\">User:Kittipong khunnen\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_WV_Banner.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ang-thong/gallery-4.webp",
+        "caption": "\u003cp>Hlwong Pi Pant tattooing a Yant in Ang Tong Province.\n\u003c/p>\nFotographer - Spencer Littlewood",
+        "photoCredit": "\u003ca href=\"https://en.wikipedia.org/wiki/User:Sakyant\" class=\"extiw\" title=\"wikipedia:User:Sakyant\">Sakyant\u003c/a> at \u003ca href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Hlwongpipant-josh.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ang-thong/gallery-5.webp",
+        "caption": "Ang Thong City Pillar Shrine",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_(2024)_-_Ang_Thong_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_(%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99).jpg"
+      }
+    ]
   },
   "bangkok": {
     "status": "needs-curation",

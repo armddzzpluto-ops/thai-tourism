@@ -9,9 +9,9 @@
   {
     "province": "Ang Thong",
     "slug": "ang-thong",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Bangkok",
