@@ -41,7 +41,16 @@ jobs:
 
           1..77 | ForEach-Object {
             $batch = $_
-            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+            try {
+              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+            } catch {
+              $diagnostic = ($_ | Out-String) + [Environment]::NewLine + $_.ScriptStackTrace
+              Set-Content -Path assets/images/provinces/curation-error.txt -Value $diagnostic -Encoding UTF8
+              git add assets/images/provinces/curation-error.txt
+              git commit -m "ci(images): record curation failure at item $batch"
+              git push origin HEAD:agent/image-phase-1-run
+              throw
+            }
             node scripts/sync-image-curation.mjs
             node scripts/check-site.mjs
 
