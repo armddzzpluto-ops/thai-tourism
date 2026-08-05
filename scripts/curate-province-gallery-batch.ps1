@@ -368,8 +368,8 @@ foreach ($provinceMeta in $batch) {
 
     try {
       if (-not $DryRun) {
-        Invoke-WithRetry -Action {
-          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -TimeoutSec 60 -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
+        Invoke-WithRetry -MaxAttempts 2 -InitialDelaySeconds 1 -Action {
+          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -TimeoutSec 20 -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
         } | Out-Null
         Start-Sleep -Milliseconds $RequestDelayMs
         Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
