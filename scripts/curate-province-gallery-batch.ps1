@@ -131,7 +131,7 @@ function Get-CommonsFilesFromCategory {
 
     $mime = [string]$info.mime
     if (-not $mime.StartsWith('image/')) { continue }
-    if ($mime -match 'svg|tiff') { continue }
+    if ($mime -match 'svg|tiff|gif|webp') { continue }
 
     $title = [string]$page.title
     if ($title -match '(?i)map|flag|coat of arms|emblem|logo|seal|locator|diagram|administrative|district map') { continue }
@@ -204,7 +204,7 @@ function Get-WikipediaImageCandidates {
           if (-not $info) { continue }
           $mime = [string]$info.mime
           if (-not $mime.StartsWith('image/')) { continue }
-          if ($mime -match 'svg|tiff') { continue }
+          if ($mime -match 'svg|tiff|gif|webp') { continue }
 
           $caption = [string]$info.extmetadata.ImageDescription.value
           if (-not $caption) { $caption = [string]$img.title }
