@@ -34,16 +34,20 @@ function Invoke-WithRetry {
 function Resolve-Cwebp {
   $cmd = Get-Command cwebp -ErrorAction SilentlyContinue
   if ($cmd) {
-    return $cmd.Source
+    if ($cmd.Path) { return $cmd.Path }
+    if ($cmd.Source) { return $cmd.Source }
   }
 
-  $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
-  $found = Get-ChildItem $wingetPackages -Recurse -Filter cwebp.exe -ErrorAction SilentlyContinue | Select-Object -First 1
-  if ($found) {
-    return $found.FullName
+  # WinGet fallback is Windows-only; LOCALAPPDATA is unset on Linux runners.
+  if ($env:LOCALAPPDATA) {
+    $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
+    $found = Get-ChildItem $wingetPackages -Recurse -Filter cwebp.exe -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($found) {
+      return $found.FullName
+    }
   }
 
-  throw 'cwebp.exe not found. Install Google.Libwebp first (winget install Google.Libwebp).'
+  throw 'cwebp was not found. Install the WebP command-line tools before running curation.'
 }
 
 function Convert-ToWebp {
