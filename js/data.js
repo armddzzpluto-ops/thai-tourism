@@ -507,10 +507,16 @@ function normalizeDestinationSchema(destination) {
   destination.openingHours = destination.openingHours || destination.hours || "ไม่ระบุ";
   destination.ticketInfo = destination.ticketInfo || destination.entry || "ไม่ระบุ";
   destination.heroImage = provinceImagePath;
-  destination.galleryImages = buildProvinceGalleryImages(destination);
-  if (!destination.galleryImages.includes(provinceImagePath)) {
-    destination.galleryImages = [provinceImagePath, ...destination.galleryImages].slice(0, 8);
-  }
+  destination.galleryCurated = destination.galleryCurated === true;
+
+  const provinceGalleryImages = buildProvinceGalleryImages(destination);
+  destination.galleryImages = destination.galleryCurated
+    ? [provinceImagePath, ...provinceGalleryImages.filter(src => src !== provinceImagePath)].slice(0, 8)
+    : [provinceImagePath];
+
+  destination.galleryCaptions = destination.galleryCurated && Array.isArray(destination.galleryCaptions)
+    ? destination.galleryCaptions
+    : [];
   destination.caption = destination.caption || buildImageCaption(destination);
   destination.photoCredit = destination.photoCredit || "Wikimedia Commons contributors";
   destination.imageSource = destination.imageSource || `assets/images/provinces/${provinceSlug}/metadata.json`;
