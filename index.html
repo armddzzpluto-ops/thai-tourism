@@ -826,10 +826,10 @@ Discover The Land Of Smiles</span></div>
     <div class="container">
       <div class="about-grid fade-in">
         <div class="about-img-wrap">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Thailand" class="about-img">
+          <img src="assets/images/provinces/chiang-mai/hero.webp" alt="ทิวทัศน์จังหวัดเชียงใหม่ ประเทศไทย" class="about-img" loading="lazy" decoding="async" width="800" height="600">
           <div class="about-badge">
-            <span class="big">20+</span>
-            <span class="small">ปีแห่งประสบการณ์</span>
+            <span class="big">ปวส.</span>
+            <span class="small">โครงงานเพื่อการศึกษา</span>
           </div>
         </div>
         <div class="about-text">
@@ -842,16 +842,16 @@ Discover The Land Of Smiles</span></div>
           <p class="about-desc">โครงการนี้จัดทำขึ้นเพื่อการศึกษา โดยนักศึกษาสาขาเทคโนโลยีสารสนเทศ เพื่อนำเสนอความเป็นไปได้ของเว็บไซต์การท่องเที่ยวที่ทันสมัย ใช้งานง่าย และสวยงาม</p>
           <div style="display:flex;gap:24px;flex-wrap:wrap;">
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
-              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--teal-deep);">200+</div>
-              <div style="font-size:0.82rem;color:var(--text-mid);">สถานที่รวบรวม</div>
+              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--teal-deep);">77</div>
+              <div style="font-size:0.82rem;color:var(--text-mid);">รายการจังหวัด</div>
             </div>
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
-              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--gold);">77</div>
-              <div style="font-size:0.82rem;color:var(--text-mid);">จังหวัดที่ครอบคลุม</div>
+              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--gold);">5</div>
+              <div style="font-size:0.82rem;color:var(--text-mid);">ภูมิภาคที่ครอบคลุม</div>
             </div>
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
-              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--coral);">5K+</div>
-              <div style="font-size:0.82rem;color:var(--text-mid);">ผู้เข้าชมต่อเดือน</div>
+              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--coral);">100%</div>
+              <div style="font-size:0.82rem;color:var(--text-mid);">Frontend แบบ Static</div>
             </div>
           </div>
         </div>
@@ -972,7 +972,7 @@ Discover The Land Of Smiles</span></div>
         <div style="background:var(--cream-dark);border-radius:var(--radius-sm);padding:14px 24px;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:10px;"><i class="fas fa-font" style="font-size:1.6rem;color:var(--teal-mid);"></i><span style="font-family:'Kanit',sans-serif;font-weight:600;color:var(--teal-deep);">Google Fonts</span></div>
       </div>
       <div style="text-align:center;margin-top:36px;">
-        <button class="btn-outline" onclick="showPage('dashboard')" style="border-color:var(--teal-mid);color:var(--teal-mid);">
+        <button type="button" class="btn-outline" onclick="showPage('dashboard')" style="border-color:var(--teal-mid);color:var(--teal-mid);">
           <i class="fas fa-chart-bar"></i> ดูแดชบอร์ดสถิติ
         </button>
       </div>
@@ -1027,21 +1027,22 @@ Discover The Land Of Smiles</span></div>
           </div>
         </div>
 
-        <div class="contact-form-wrap">
-          <h3 style="font-size:1.2rem;font-weight:700;color:var(--teal-deep);margin-bottom:24px;">กรอกแบบฟอร์มติดต่อ</h3>
+        <form class="contact-form-wrap" id="contact-form" novalidate onsubmit="submitContact(event)">
+          <h3 style="font-size:1.2rem;font-weight:700;color:var(--teal-deep);margin-bottom:8px;">กรอกแบบฟอร์มติดต่อ</h3>
+          <p class="section-desc" style="margin:0 0 24px;text-align:left;font-size:0.85rem;">แบบฟอร์มตัวอย่างสำหรับโครงงาน ข้อมูลจะไม่ถูกส่งไปยังเซิร์ฟเวอร์</p>
           <div class="form-row">
             <div class="form-group">
               <label for="cf-name">ชื่อ-นามสกุล *</label>
-              <input type="text" id="cf-name" placeholder="กรอกชื่อของคุณ">
+              <input type="text" id="cf-name" name="name" placeholder="กรอกชื่อของคุณ" autocomplete="name" maxlength="100" required>
             </div>
             <div class="form-group">
               <label for="cf-email">อีเมล *</label>
-              <input type="email" id="cf-email" placeholder="example@email.com">
+              <input type="email" id="cf-email" name="email" placeholder="example@email.com" autocomplete="email" maxlength="254" required>
             </div>
           </div>
           <div class="form-group">
             <label for="cf-subject">หัวข้อ</label>
-            <select id="cf-subject">
+            <select id="cf-subject" name="subject">
               <option value="">-- เลือกหัวข้อ --</option>
               <option>แนะนำสถานที่ท่องเที่ยว</option>
               <option>รายงานข้อมูลผิดพลาด</option>
@@ -1052,12 +1053,12 @@ Discover The Land Of Smiles</span></div>
           </div>
           <div class="form-group">
             <label for="cf-message">ข้อความ *</label>
-            <textarea id="cf-message" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+            <textarea id="cf-message" name="message" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..." maxlength="1000" required></textarea>
           </div>
-          <button class="form-submit" onclick="submitContact()">
+          <button class="form-submit" type="submit">
             <i class="fas fa-paper-plane"></i> ส่งข้อความ
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </section>
@@ -1145,7 +1146,9 @@ Discover The Land Of Smiles</span></div>
 <div class="modal-overlay" id="lightbox" onclick="closeLightbox(event)">
   <div style="position:relative;max-width:90vw;max-height:90vh;">
     <button type="button" aria-label="Close image lightbox" onclick="closeLightbox()" style="position:absolute;top:-40px;right:0;background:none;border:none;color:white;font-size:2rem;cursor:pointer;"><i class="fas fa-times"></i></button>
+    <button type="button" aria-label="Previous image" onclick="event.stopPropagation();lightboxNav(-1)" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,0.62);color:white;font-size:1.1rem;cursor:pointer;"><i class="fas fa-chevron-left"></i></button>
     <img id="lightbox-img" src="assets/images/destinations/phuket.webp" alt="Gallery image preview" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;">
+    <button type="button" aria-label="Next image" onclick="event.stopPropagation();lightboxNav(1)" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,0.62);color:white;font-size:1.1rem;cursor:pointer;"><i class="fas fa-chevron-right"></i></button>
     <p id="lightbox-cap" style="color:rgba(255,255,255,0.8);text-align:center;margin-top:12px;font-size:0.95rem;"></p>
   </div>
 </div>
@@ -1723,14 +1726,27 @@ function openModal(id) {
 function closeModal(e) { if (e.target.id==='modal') closeModalBtn(); }
 function closeModalBtn() { document.getElementById('modal').classList.remove('open'); document.body.style.overflow = ''; }
 
-function openLightbox(i) {
-  const img = galleryImages[i];
-  document.getElementById('lightbox-img').src = img.src;
-  document.getElementById('lightbox-img').alt = img.cap;
-  document.getElementById('lightbox-cap').textContent = img.cap;
+let currentLightboxIndex = 0;
+
+function openLightbox(index) {
+  if (!galleryImages.length) return;
+
+  currentLightboxIndex = ((index % galleryImages.length) + galleryImages.length) % galleryImages.length;
+  const image = galleryImages[currentLightboxIndex];
+  const preview = document.getElementById('lightbox-img');
+
+  preview.src = image.src;
+  preview.alt = image.cap;
+  document.getElementById('lightbox-cap').textContent =
+    `${image.cap} (${currentLightboxIndex + 1}/${galleryImages.length})`;
   document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow='hidden';
+  document.body.style.overflow = 'hidden';
 }
+
+function lightboxNav(step) {
+  openLightbox(currentLightboxIndex + step);
+}
+
 function closeLightbox(event) {
   if (event && event.target !== event.currentTarget) return;
 
@@ -2012,28 +2028,41 @@ function closeMobile() {
 }
 
 // ===== CONTACT =====
-function submitContact() {
-  const name = document.getElementById('cf-name').value.trim();
-  const email = document.getElementById('cf-email').value.trim();
-  const message = document.getElementById('cf-message').value.trim();
-  if (!name || !email || !message) {
-    Swal.fire({ icon:'warning', title:'กรุณากรอกข้อมูลให้ครบ', text:'ชื่อ, อีเมล และข้อความจำเป็นต้องกรอก', confirmButtonColor:'var(--teal-mid)' });
+function submitContact(event) {
+  event?.preventDefault();
+
+  const form = document.getElementById('contact-form');
+  const nameInput = document.getElementById('cf-name');
+  const emailInput = document.getElementById('cf-email');
+  const messageInput = document.getElementById('cf-message');
+  const fields = [nameInput, emailInput, messageInput];
+
+  fields.forEach(field => field.setAttribute('aria-invalid', String(!field.validity.valid)));
+
+  if (!form.checkValidity()) {
+    const firstInvalid = fields.find(field => !field.validity.valid);
+    firstInvalid?.focus();
+
+    Swal.fire({
+      icon: 'warning',
+      title: 'กรุณาตรวจสอบข้อมูล',
+      text: firstInvalid?.validity.typeMismatch
+        ? 'กรุณากรอกอีเมลให้ถูกต้อง'
+        : 'ชื่อ อีเมล และข้อความจำเป็นต้องกรอก',
+      confirmButtonColor: 'var(--teal-mid)'
+    });
     return;
   }
-  const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailReg.test(email)) {
-    Swal.fire({ icon:'error', title:'อีเมลไม่ถูกต้อง', text:'กรุณาตรวจสอบรูปแบบอีเมลอีกครั้ง', confirmButtonColor:'var(--teal-mid)' });
-    return;
-  }
+
   Swal.fire({
-    icon:'success', title:'ส่งข้อความสำเร็จ! 🎉',
-    html:`ขอบคุณ <strong>${name}</strong><br>เราจะติดต่อกลับทาง <strong>${email}</strong><br>ภายใน 1-2 วันทำการ`,
-    confirmButtonColor:'var(--teal-deep)', confirmButtonText:'รับทราบ'
+    icon: 'success',
+    title: 'ตรวจสอบแบบฟอร์มเรียบร้อย',
+    text: `ขอบคุณ ${nameInput.value.trim()} นี่เป็นแบบฟอร์มตัวอย่าง จึงยังไม่มีการส่งข้อมูลไปยังเซิร์ฟเวอร์`,
+    confirmButtonColor: 'var(--teal-deep)',
+    confirmButtonText: 'รับทราบ'
   }).then(() => {
-    document.getElementById('cf-name').value='';
-    document.getElementById('cf-email').value='';
-    document.getElementById('cf-subject').value='';
-    document.getElementById('cf-message').value='';
+    form.reset();
+    fields.forEach(field => field.removeAttribute('aria-invalid'));
   });
 }
 
@@ -2214,6 +2243,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeMobile();
+
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox?.classList.contains('open')) return;
+
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      lightboxNav(-1);
+    }
+
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      lightboxNav(1);
+    }
   });
 
   document.addEventListener('click', event => {
