@@ -507,15 +507,24 @@ function normalizeDestinationSchema(destination) {
   destination.openingHours = destination.openingHours || destination.hours || "ไม่ระบุ";
   destination.ticketInfo = destination.ticketInfo || destination.entry || "ไม่ระบุ";
   destination.heroImage = provinceImagePath;
-  destination.galleryCurated = destination.galleryCurated === true;
 
-  const provinceGalleryImages = buildProvinceGalleryImages(destination);
+  const curation = window.IMAGE_CURATION?.[provinceSlug] || {};
+  const curatedGalleryImages = Array.isArray(curation.galleryImages)
+    ? curation.galleryImages.filter(src => src && src !== provinceImagePath)
+    : [];
+  destination.galleryCurated =
+    curation.galleryCurated === true &&
+    curation.status === "complete" &&
+    curatedGalleryImages.length >= 5;
+
   destination.galleryImages = destination.galleryCurated
-    ? [provinceImagePath, ...provinceGalleryImages.filter(src => src !== provinceImagePath)].slice(0, 8)
+    ? [provinceImagePath, ...curatedGalleryImages].slice(0, 8)
     : [provinceImagePath];
-
-  destination.galleryCaptions = destination.galleryCurated && Array.isArray(destination.galleryCaptions)
-    ? destination.galleryCaptions
+  destination.galleryCaptions = destination.galleryCurated && Array.isArray(curation.galleryCaptions)
+    ? curation.galleryCaptions.slice(0, destination.galleryImages.length - 1)
+    : [];
+  destination.galleryAttribution = destination.galleryCurated && Array.isArray(curation.attribution)
+    ? curation.attribution
     : [];
   destination.caption = destination.caption || buildImageCaption(destination);
   destination.photoCredit = destination.photoCredit || "Wikimedia Commons contributors";
