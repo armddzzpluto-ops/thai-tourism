@@ -1,6 +1,6 @@
 name: Curate all province galleries
 
-# Full 77-province curation run — resumable batch commits
+# Full 77-province curation run — supported raster formats
 on:
   workflow_dispatch:
   push:
