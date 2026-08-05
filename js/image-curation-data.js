@@ -215,7 +215,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "chai-nat": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],
