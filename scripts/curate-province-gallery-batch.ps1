@@ -357,10 +357,10 @@ foreach ($provinceMeta in $batch) {
   $newGalleryPaths = @()
   $newAttribution = @()
 
-  for ($i = 0; $i -lt $picked.Count -and $newGalleryPaths.Count -lt $TargetGallery; $i++) {
-    $idx = $newGalleryPaths.Count + 1
-    $candidate = $picked[$i]
+  foreach ($candidate in $picked) {
+    if ($newGalleryPaths.Count -ge $TargetGallery) { break }
 
+    $idx = $newGalleryPaths.Count + 1
     $galleryRel = "assets/images/provinces/$slug/gallery-$idx.webp"
     $galleryPath = Join-Path $provinceDir "gallery-$idx.webp"
     $tempRoot = [System.IO.Path]::GetTempPath()
@@ -374,31 +374,37 @@ foreach ($provinceMeta in $batch) {
         Start-Sleep -Milliseconds $RequestDelayMs
         Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
       }
+
+      $newGalleryPaths += $galleryRel
+      $newAttribution += [ordered]@{
+        province = $province
+        slug = $slug
+        role = "gallery-$idx"
+        file = $galleryRel
+        caption = [string]$candidate.caption
+        photoCredit = [string]$candidate.credit
+        imageSource = [string]$candidate.source
+        isFallback = $false
+      }
     } catch {
+      # A single corrupt or unsupported Commons file must not fail the province.
       if (Test-Path $galleryPath) {
         Remove-Item $galleryPath -Force -ErrorAction SilentlyContinue
       }
-      continue
     } finally {
       if (Test-Path $tempPath) {
         Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
       }
     }
-
-    $newGalleryPaths += $galleryRel
-    $newAttribution += [ordered]@{
-      province = $province
-      slug = $slug
-      role = "gallery-$idx"
-      file = $galleryRel
-      caption = [string]$candidate.caption
-      photoCredit = [string]$candidate.credit
-      imageSource = [string]$candidate.source
-      isFallback = $false
-    }
   }
 
   if ($newGalleryPaths.Count -lt $TargetGallery) {
+    foreach ($partialPath in $newGalleryPaths) {
+      $absolutePartial = Join-Path $repoRoot $partialPath
+      if (Test-Path $absolutePartial) {
+        Remove-Item $absolutePartial -Force -ErrorAction SilentlyContinue
+      }
+    }
     $batchReport += [pscustomobject]@{
       province = $province
       slug = $slug
