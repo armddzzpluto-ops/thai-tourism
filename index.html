@@ -10,6 +10,10 @@
   </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thailand Travel Guide | ท่องเที่ยวไทย</title>
+<link rel="preload" as="image" href="assets/images/destinations/bangkok.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;900&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -77,7 +81,7 @@ Discover The Land Of Smiles</span></div>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
 
@@ -98,14 +102,14 @@ Discover The Land Of Smiles</span></div>
   </p>
 
   <div class="hero-btns">
-    <button class="btn-primary" onclick="showPage('destinations')">
+    <button class="btn-primary" type="button" onclick="showPage('destinations')">
       <i class="fas fa-compass"></i>
       เริ่มสำรวจ
     </button>
 
-    <button class="btn-outline" onclick="showPage('destinations')">
-      <i class="fas fa-route"></i>
-      วางแผนการเดินทาง
+    <button class="btn-outline" type="button" onclick="focusHomeSearch()">
+      <i class="fas fa-search"></i>
+      ค้นหาจุดหมาย
     </button>
   </div>
       </div>
@@ -133,17 +137,26 @@ Discover The Land Of Smiles</span></div>
   <div class="search-bar-wrap">
     <div class="search-bar-inner">
       <span class="search-label">🔍 ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ</span>
-      <div class="search-input-row">
-        <input type="text" id="quick-search" aria-label="ค้นหาสถานที่ท่องเที่ยวแบบด่วน" placeholder="เช่น ภูเก็ต, เชียงใหม่, หัวหิน...">
-        <button class="search-btn" onclick="doQuickSearch()"><i class="fas fa-search"></i> ค้นหา</button>
-      </div>
-      <div class="search-tags">
-        <span class="search-tag" onclick="quickFill('ภาคใต้')">ภาคใต้</span>
-        <span class="search-tag" onclick="quickFill('ภาคเหนือ')">ภาคเหนือ</span>
-        <span class="search-tag" onclick="quickFill('ภาคกลาง')">ภาคกลาง</span>
-        <span class="search-tag" onclick="quickFill('เที่ยวทะเล')">เที่ยวทะเล</span>
-        <span class="search-tag" onclick="quickFill('เที่ยวภูเขา')">เที่ยวภูเขา</span>
-        <span class="search-tag" onclick="quickFill('วัดวา')">วัดและวัฒนธรรม</span>
+      <form class="search-input-row" role="search" onsubmit="event.preventDefault();doQuickSearch()">
+        <input
+          type="search"
+          id="quick-search"
+          name="destination"
+          aria-label="ค้นหาสถานที่ท่องเที่ยวแบบด่วน"
+          placeholder="เช่น ภูเก็ต, เชียงใหม่, หัวหิน..."
+          autocomplete="off"
+          enterkeyhint="search"
+          maxlength="80"
+        >
+        <button class="search-btn" type="submit"><i class="fas fa-search"></i> ค้นหา</button>
+      </form>
+      <div class="search-tags" aria-label="ตัวกรองแนะนำ">
+        <button class="search-tag" type="button" onclick="filterDest('ภาคใต้')">ภาคใต้</button>
+        <button class="search-tag" type="button" onclick="filterDest('ภาคเหนือ')">ภาคเหนือ</button>
+        <button class="search-tag" type="button" onclick="filterDest('ภาคกลาง')">ภาคกลาง</button>
+        <button class="search-tag" type="button" onclick="filterDest('ทะเล')">เที่ยวทะเล</button>
+        <button class="search-tag" type="button" onclick="filterDest('ภูเขา')">เที่ยวภูเขา</button>
+        <button class="search-tag" type="button" onclick="filterDest('วัด')">วัดและวัฒนธรรม</button>
       </div>
     </div>
   </div>
@@ -254,7 +267,7 @@ Discover The Land Of Smiles</span></div>
       <div class="cards-grid fade-in">
         <div class="dest-card" data-promo-province="surat-thani">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="แพ็กเกจประหยัด" loading="lazy">
+            <img src="assets/images/destinations/gulf-beach.webp" alt="แพ็กเกจประหยัด" loading="lazy">
             <span class="card-badge">ประหยัด</span>
           </div>
           <div class="card-body">
@@ -272,7 +285,7 @@ Discover The Land Of Smiles</span></div>
         </div>
         <div class="dest-card" data-promo-province="chiang-mai">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=800&q=80" alt="แพ็กเกจครอบครัว" loading="lazy">
+            <img src="assets/images/destinations/chiang-mai.webp" alt="แพ็กเกจครอบครัว" loading="lazy">
             <span class="card-badge">ครอบครัว</span>
           </div>
           <div class="card-body">
@@ -290,7 +303,7 @@ Discover The Land Of Smiles</span></div>
         </div>
         <div class="dest-card" data-promo-province="phuket">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=800&q=80" alt="แพ็กเกจพรีเมียม" loading="lazy">
+            <img src="assets/images/destinations/phuket.webp" alt="แพ็กเกจพรีเมียม" loading="lazy">
             <span class="card-badge" style="background:var(--gold);color:var(--teal-deep);">หรูหรา</span>
           </div>
           <div class="card-body">
@@ -324,13 +337,15 @@ Discover The Land Of Smiles</span></div>
         <div class="divider"></div>
       </div>
       <div
-        class="gallery-grid fade-in"
+        class="gallery-grid home-gallery-preview fade-in"
         id="home-gallery-preview"
-        style="grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;"
+        aria-label="ตัวอย่างคลังรูปภาพจากหลายจังหวัด"
+        aria-live="polite"
       >
         <!-- Shared gallery preview injected by JS -->
-      </div>      <div style="text-align:center;margin-top:32px;">
-        <button class="btn-outline" onclick="showPage('gallery')" style="border-color:var(--teal-mid);color:var(--teal-mid);">
+      </div>
+      <div class="gallery-preview-actions">
+        <button class="btn-outline gallery-view-all" type="button" onclick="showPage('gallery')">
           <i class="fas fa-images"></i> ดูรูปภาพทั้งหมด
         </button>
       </div>
@@ -1253,49 +1268,89 @@ function normalizeIndexDestination(destination) {
 function buildGalleryFromDestinations() {
   const items = [];
   const seen = new Set();
+
   destinations.forEach(destination => {
     const hero = destination.heroImage || destination.img;
-    const gallery = Array.isArray(destination.galleryImages) ? destination.galleryImages : [];
+    const gallery = Array.isArray(destination.galleryImages)
+      ? destination.galleryImages
+      : [];
+
     gallery.forEach((src, index) => {
       if (!src || src === hero || seen.has(src)) return;
+
       seen.add(src);
-      items.push({ src, cap: `${destination.name} • จุดท่องเที่ยว ${index + 1}` });
+      items.push({
+        src,
+        cap: `${destination.name} • จุดท่องเที่ยว ${index + 1}`,
+        destinationId: destination.id,
+        region: destination.region
+      });
     });
   });
+
   return items;
+}
+
+function getHomeGalleryPreview(limit = 5) {
+  const selected = [];
+  const selectedDestinations = new Set();
+
+  for (const image of galleryImages) {
+    const destinationKey = image.destinationId || image.cap;
+
+    if (selectedDestinations.has(destinationKey)) continue;
+
+    selectedDestinations.add(destinationKey);
+    selected.push(image);
+
+    if (selected.length === limit) return selected;
+  }
+
+  for (const image of galleryImages) {
+    if (selected.includes(image)) continue;
+
+    selected.push(image);
+    if (selected.length === limit) break;
+  }
+
+  return selected;
 }
 
 function renderHomeGalleryPreview() {
   const container = document.getElementById('home-gallery-preview');
   if (!container) return;
 
-  const preview = galleryImages.slice(0, 5);
+  const preview = getHomeGalleryPreview(5);
 
   if (!preview.length) {
     container.innerHTML = `
-      <div class="empty-state" style="grid-column:1/-1;">
+      <div class="empty-state home-gallery-empty">
         <i class="fas fa-images"></i>
-        No gallery images are available.
+        ยังไม่มีรูปภาพสำหรับแสดง
       </div>`;
     return;
   }
 
   container.innerHTML = preview.map((image, index) => {
-    const featuredStyle = index === 0
-      ? 'grid-column:span 2;grid-row:span 2;'
-      : '';
-    const caption = image.cap || 'Thailand destination';
+    const caption = image.cap || 'สถานที่ท่องเที่ยวในประเทศไทย';
+    const featuredClass = index === 0 ? ' is-featured' : '';
 
     return `
       <button
-        class="gallery-item"
+        class="gallery-item${featuredClass}"
         type="button"
         onclick="showPage('gallery')"
-        style="${featuredStyle}cursor:pointer;border:0;padding:0;"
-        aria-label="Open gallery: ${caption}"
+        aria-label="เปิดคลังรูปภาพ: ${caption}"
       >
-        <img src="${image.src}" alt="${caption}" loading="lazy">
-        <div class="gallery-overlay">
+        <img
+          src="${image.src}"
+          alt="${caption}"
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="600"
+        >
+        <div class="gallery-overlay" aria-hidden="true">
           <i class="fas fa-expand-alt"></i>
         </div>
         <div class="gallery-caption">${caption}</div>
@@ -1402,31 +1457,48 @@ function toggleTheme() {
 // ===== RENDER FUNCTIONS =====
 function renderCard(d, containerId) {
   const isFav = favorites.includes(d.id);
-  const stars = '★'.repeat(Math.floor(d.rating)) + (d.rating % 1 >= 0.5 ? '½' : '');
+  const rating = Number(d.rating) || 0;
+  const reviews = Number(d.reviews) || 0;
+  const stars = '★'.repeat(Math.floor(rating)) + (rating % 1 >= 0.5 ? '½' : '');
+  const regionLabel = normalizeRegionLabel(d.region);
+  const imageSource = d.heroImage || d.img || 'assets/images/destinations/bangkok.webp';
+
   return `
-    <div class="dest-card fade-in" data-name="${d.name}" data-region="${d.region}" data-category="${d.category.join(',')}">
+    <article class="dest-card fade-in" data-name="${d.name}" data-region="${d.region}" data-category="${d.category.join(',')}">
       <div class="card-img-wrap">
-        <img src="${d.img}" alt="${d.name}" loading="lazy">
+        <img
+          src="${imageSource}"
+          alt="${d.name}${d.province ? ` จังหวัด${d.province}` : ''}"
+          loading="lazy"
+          decoding="async"
+          width="800"
+          height="520"
+        >
         <span class="card-badge">${d.badge}</span>
-        <button class="card-fav ${isFav ? 'liked' : ''}" onclick="toggleFav(${d.id},this)" title="บันทึกสถานที่">
+        <button
+          class="card-fav ${isFav ? 'liked' : ''}"
+          type="button"
+          onclick="toggleFav(${d.id},this)"
+          aria-label="${isFav ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด'}: ${d.name}"
+          title="บันทึกสถานที่"
+        >
           ${isFav ? '❤️' : '🤍'}
         </button>
       </div>
       <div class="card-body">
-        <div class="card-region">${d.region}</div>
+        <div class="card-region">${regionLabel}</div>
         <h3 class="card-title">${d.name}</h3>
         <p class="card-desc">${d.desc}</p>
         <div class="card-footer">
           <div class="card-rating">
-            <span class="stars">${stars}</span>
-            <span>${d.rating} (${d.reviews.toLocaleString()})</span>
+            <span class="stars" aria-hidden="true">${stars}</span>
+            <span>${rating.toFixed(1)} (${reviews.toLocaleString()})</span>
           </div>
-          <button class="card-cta" onclick="openModal(${d.id})">รายละเอียด</button>
+          <button class="card-cta" type="button" onclick="openModal(${d.id})">รายละเอียด</button>
         </div>
       </div>
-    </div>`;
+    </article>`;
 }
-
 function normalizeRegionFilter(region) {
   const map = {
     'ภาคเหนือ': 'north',
@@ -1458,13 +1530,49 @@ function matchesDestinationSearch(destination, query) {
   return values.filter(Boolean).some(value => String(value).toLowerCase().includes(q));
 }
 
-function renderHomeCards() {
-  const el = document.getElementById('home-cards');
-  if (!el) return;
-  el.innerHTML = destinations.slice(0,6).map(d => renderCard(d,'home-cards')).join('');
-  observeFade();
+function getFeaturedDestinations(limit = 6) {
+  const sorted = [...destinations].sort((a, b) => {
+    const ratingDifference = (Number(b.rating) || 0) - (Number(a.rating) || 0);
+    if (ratingDifference !== 0) return ratingDifference;
+    return (Number(b.reviews) || 0) - (Number(a.reviews) || 0);
+  });
+
+  const regionOrder = ['north', 'central', 'northeast', 'east', 'south'];
+  const selected = [];
+  const selectedIds = new Set();
+
+  regionOrder.forEach(region => {
+    const match = sorted.find(item =>
+      item.region === region && !selectedIds.has(item.id)
+    );
+
+    if (match) {
+      selected.push(match);
+      selectedIds.add(match.id);
+    }
+  });
+
+  for (const destination of sorted) {
+    if (selected.length >= limit) break;
+    if (selectedIds.has(destination.id)) continue;
+
+    selected.push(destination);
+    selectedIds.add(destination.id);
+  }
+
+  return selected.slice(0, limit);
 }
 
+function renderHomeCards() {
+  const container = document.getElementById('home-cards');
+  if (!container) return;
+
+  container.innerHTML = getFeaturedDestinations(6)
+    .map(destination => renderCard(destination, 'home-cards'))
+    .join('');
+
+  observeFade();
+}
 function renderDestCards(filter='', search='') {
   const el = document.getElementById('dest-cards');
   if (!el) return;
@@ -1582,17 +1690,38 @@ function filterDest(cat) {
   }, 100);
 }
 
+function focusHomeSearch() {
+  const search = document.getElementById('quick-search');
+  const searchSection = document.querySelector('#page-home > .search-bar-wrap');
+
+  if (searchSection) {
+    searchSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  setTimeout(() => search?.focus(), 450);
+}
+
 function doQuickSearch() {
-  const q = document.getElementById('quick-search').value;
+  const source = document.getElementById('quick-search');
+  const query = source ? source.value.trim() : '';
+
+  activeFilter = '';
   showPage('destinations');
+
   setTimeout(() => {
-    const el = document.getElementById('main-search');
-    if (el) { el.value = q; filterCards(); }
+    const destinationSearch = document.getElementById('main-search');
+
+    if (destinationSearch) {
+      destinationSearch.value = query;
+      filterCards();
+      destinationSearch.focus();
+    }
   }, 100);
 }
 
-function quickFill(v) {
-  document.getElementById('quick-search').value = v;
+function quickFill(value) {
+  const search = document.getElementById('quick-search');
+  if (search) search.value = value;
   doQuickSearch();
 }
 

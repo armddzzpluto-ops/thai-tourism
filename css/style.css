@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    THAILAND 2026 — UNIFIED DESIGN TOKENS  (single source of truth)
    Warm Editorial Luxury · Light default + Dark toggle
    ============================================================ */
@@ -518,7 +518,7 @@ html[data-theme="dark"] img{filter:brightness(.92) contrast(1.03)}
 .hero{position:relative;height:100vh;min-height:660px;display:flex;align-items:center;overflow:hidden}
 .hero-bg{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1920&q=85') center/cover no-repeat;
+  background:url('../assets/images/destinations/bangkok.webp') center/cover no-repeat;
   transition:transform 6s ease;will-change:transform;
 }
 .hero-overlay{position:absolute;inset:0;background:var(--g-hero)}
