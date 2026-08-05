@@ -222,11 +222,54 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "chaiyaphum": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chaiyaphum/gallery-1.webp",
+      "assets/images/provinces/chaiyaphum/gallery-2.webp",
+      "assets/images/provinces/chaiyaphum/gallery-3.webp",
+      "assets/images/provinces/chaiyaphum/gallery-4.webp",
+      "assets/images/provinces/chaiyaphum/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Local commons in Chaiyaphum, Thailand, offer a free common grass to villagers. This picture of water buffalos - Bos bubalus - was taken by TORIKAI Yukihiro, a Japanese economist, in Sept. 3rd 2003.",
+      "Bee Htaw Monzel (in the middle) with Nyah Kur people",
+      "\u003ci>Caleta elna noliteia\u003c/i>, male, set specimen, Thailand, Alan Cassidy photo.",
+      "File:Chaiyaphum 102.03069E 15.80519N.jpg",
+      "อนุสาวรีย์พระยาภักดีชุมพล (แล) ที่หน้าวงเวียนศูนย์ราชการจังหวัดชัยภูมิ"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chaiyaphum/gallery-1.webp",
+        "caption": "Local commons in Chaiyaphum, Thailand, offer a free common grass to villagers. This picture of water buffalos - Bos bubalus - was taken by TORIKAI Yukihiro, a Japanese economist, in Sept. 3rd 2003.",
+        "photoCredit": "No machine-readable author provided. \u003ca href=\"//commons.wikimedia.org/wiki/User:Chiba007~commonswiki\" title=\"User:Chiba007~commonswiki\">Chiba007~commonswiki\u003c/a> assumed (based on copyright claims).",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:2005-9usi-thai.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chaiyaphum/gallery-2.webp",
+        "caption": "Bee Htaw Monzel (in the middle) with Nyah Kur people",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Borainmonzel&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Borainmonzel (page does not exist)\">Borainmonzel\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bee_Htaw_Monzel_(in_the_middle)_with_Nyah_Kur_people.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chaiyaphum/gallery-3.webp",
+        "caption": "\u003ci>Caleta elna noliteia\u003c/i>, male, set specimen, Thailand, Alan Cassidy photo.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Accassidy\" title=\"User:Accassidy\">Accassidy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:CaletaElnaNoliteiaMUpUnAC1.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chaiyaphum/gallery-4.webp",
+        "caption": "File:Chaiyaphum 102.03069E 15.80519N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_102.03069E_15.80519N.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chaiyaphum/gallery-5.webp",
+        "caption": "อนุสาวรีย์พระยาภักดีชุมพล (แล) ที่หน้าวงเวียนศูนย์ราชการจังหวัดชัยภูมิ",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Ha6585&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ha6585 (page does not exist)\">Ha6585\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_City.jpg"
+      }
+    ]
   },
   "chanthaburi": {
     "status": "needs-curation",

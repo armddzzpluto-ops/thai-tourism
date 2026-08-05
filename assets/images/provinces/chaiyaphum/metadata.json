@@ -1,74 +1,74 @@
-﻿{
-    "province":  "Chaiyaphum",
-    "slug":  "chaiyaphum",
-    "heroImage":  "assets/images/provinces/chaiyaphum/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/chaiyaphum/gallery-1.webp",
-                          "assets/images/provinces/chaiyaphum/gallery-2.webp",
-                          "assets/images/provinces/chaiyaphum/gallery-3.webp",
-                          "assets/images/provinces/chaiyaphum/gallery-4.webp",
-                          "assets/images/provinces/chaiyaphum/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/chaiyaphum/hero.webp",
-                            "caption":  "Chaiyaphum tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/chaiyaphum/gallery-1.webp",
-                            "caption":  "Chaiyaphum tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/chaiyaphum/gallery-2.webp",
-                            "caption":  "Chaiyaphum tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/chaiyaphum/gallery-3.webp",
-                            "caption":  "Chaiyaphum tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/chaiyaphum/gallery-4.webp",
-                            "caption":  "Chaiyaphum tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Chaiyaphum",
-                            "slug":  "chaiyaphum",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/chaiyaphum/gallery-5.webp",
-                            "caption":  "Chaiyaphum tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Chaiyaphum",
+  "slug": "chaiyaphum",
+  "heroImage": "assets/images/provinces/chaiyaphum/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/chaiyaphum/gallery-1.webp",
+    "assets/images/provinces/chaiyaphum/gallery-2.webp",
+    "assets/images/provinces/chaiyaphum/gallery-3.webp",
+    "assets/images/provinces/chaiyaphum/gallery-4.webp",
+    "assets/images/provinces/chaiyaphum/gallery-5.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "hero",
+      "file": "assets/images/provinces/chaiyaphum/hero.webp",
+      "caption": "Chaiyaphum tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Chaiyaphum%20City%20Hall.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/chaiyaphum/gallery-1.webp",
+      "caption": "Local commons in Chaiyaphum, Thailand, offer a free common grass to villagers. This picture of water buffalos - Bos bubalus - was taken by TORIKAI Yukihiro, a Japanese economist, in Sept. 3rd 2003.",
+      "photoCredit": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:Chiba007~commonswiki\" title=\"User:Chiba007~commonswiki\">Chiba007~commonswiki</a> assumed (based on copyright claims).",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:2005-9usi-thai.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/chaiyaphum/gallery-2.webp",
+      "caption": "Bee Htaw Monzel (in the middle) with Nyah Kur people",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Borainmonzel&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Borainmonzel (page does not exist)\">Borainmonzel</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bee_Htaw_Monzel_(in_the_middle)_with_Nyah_Kur_people.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/chaiyaphum/gallery-3.webp",
+      "caption": "<i>Caleta elna noliteia</i>, male, set specimen, Thailand, Alan Cassidy photo.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Accassidy\" title=\"User:Accassidy\">Accassidy</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:CaletaElnaNoliteiaMUpUnAC1.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/chaiyaphum/gallery-4.webp",
+      "caption": "File:Chaiyaphum 102.03069E 15.80519N.jpg",
+      "photoCredit": "Rex",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_102.03069E_15.80519N.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chaiyaphum",
+      "slug": "chaiyaphum",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/chaiyaphum/gallery-5.webp",
+      "caption": "อนุสาวรีย์พระยาภักดีชุมพล (แล) ที่หน้าวงเวียนศูนย์ราชการจังหวัดชัยภูมิ",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ha6585&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ha6585 (page does not exist)\">Ha6585</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_City.jpg",
+      "isFallback": false
+    }
+  ]
 }
