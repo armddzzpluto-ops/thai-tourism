@@ -1,0 +1,62 @@
+name: Curate all province galleries
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - agent/image-phase-1-complete
+    paths:
+      - .github/workflows/curate-all-provinces.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: image-curation-all-provinces
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Check out curation branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/image-phase-1-complete
+          fetch-depth: 0
+
+      - name: Install WebP tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y webp
+
+      - name: Curate all 77 provinces in batches
+        shell: pwsh
+        run: |
+          1..8 | ForEach-Object {
+            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+          }
+
+      - name: Generate browser curation data
+        run: node scripts/sync-image-curation.mjs
+
+      - name: Run site checks
+        run: node scripts/check-site.mjs
+
+      - name: Commit curated images and metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/provinces js/image-curation-data.js
+          if git diff --cached --quiet; then
+            echo "No curation changes produced"
+          else
+            git commit -m "feat(images): curate verified galleries for all provinces"
+            git push origin HEAD:agent/image-phase-1-complete
+          fi
+
+      - name: Require all provinces to pass curation
+        run: |
+          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<5);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
