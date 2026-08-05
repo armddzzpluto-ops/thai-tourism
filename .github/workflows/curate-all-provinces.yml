@@ -1,6 +1,6 @@
 name: Curate all province galleries
 
-# Full 77-province curation run — supported raster formats
+# Full 77-province curation run — corrupt-source fallback
 on:
   workflow_dispatch:
   push:
