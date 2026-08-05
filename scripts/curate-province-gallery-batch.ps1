@@ -331,7 +331,7 @@ foreach ($provinceMeta in $batch) {
   $seen = @{}
 
   foreach ($candidate in $candidatePool) {
-    if ($picked.Count -ge $TargetGallery) { break }
+    if ($picked.Count -ge ($TargetGallery * 4)) { break }
 
     $key = ([string]$candidate.title).ToLowerInvariant()
     if (-not $key) { continue }
@@ -357,25 +357,32 @@ foreach ($provinceMeta in $batch) {
   $newGalleryPaths = @()
   $newAttribution = @()
 
-  for ($i = 0; $i -lt $TargetGallery; $i++) {
-    $idx = $i + 1
+  for ($i = 0; $i -lt $picked.Count -and $newGalleryPaths.Count -lt $TargetGallery; $i++) {
+    $idx = $newGalleryPaths.Count + 1
     $candidate = $picked[$i]
 
     $galleryRel = "assets/images/provinces/$slug/gallery-$idx.webp"
     $galleryPath = Join-Path $provinceDir "gallery-$idx.webp"
     $tempRoot = [System.IO.Path]::GetTempPath()
-    $tempPath = Join-Path $tempRoot ("curate-{0}-{1}-{2}.jpg" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
+    $tempPath = Join-Path $tempRoot ("curate-{0}-{1}-{2}.img" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
 
-    if (-not $DryRun) {
-      Invoke-WithRetry -Action {
-        Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
-      } | Out-Null
-      Start-Sleep -Milliseconds $RequestDelayMs
-      Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
-    }
-
-    if (Test-Path $tempPath) {
-      Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
+    try {
+      if (-not $DryRun) {
+        Invoke-WithRetry -Action {
+          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
+        } | Out-Null
+        Start-Sleep -Milliseconds $RequestDelayMs
+        Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
+      }
+    } catch {
+      if (Test-Path $galleryPath) {
+        Remove-Item $galleryPath -Force -ErrorAction SilentlyContinue
+      }
+      continue
+    } finally {
+      if (Test-Path $tempPath) {
+        Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
+      }
     }
 
     $newGalleryPaths += $galleryRel
@@ -389,6 +396,16 @@ foreach ($provinceMeta in $batch) {
       imageSource = [string]$candidate.source
       isFallback = $false
     }
+  }
+
+  if ($newGalleryPaths.Count -lt $TargetGallery) {
+    $batchReport += [pscustomobject]@{
+      province = $province
+      slug = $slug
+      status = 'insufficient-convertible-candidates'
+      curatedCount = $newGalleryPaths.Count
+    }
+    continue
   }
 
   $provinceMeta.galleryImages = $newGalleryPaths
