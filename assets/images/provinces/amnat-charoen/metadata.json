@@ -1,74 +1,74 @@
-﻿{
-    "province":  "Amnat Charoen",
-    "slug":  "amnat-charoen",
-    "heroImage":  "assets/images/provinces/amnat-charoen/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/amnat-charoen/gallery-1.webp",
-                          "assets/images/provinces/amnat-charoen/gallery-2.webp",
-                          "assets/images/provinces/amnat-charoen/gallery-3.webp",
-                          "assets/images/provinces/amnat-charoen/gallery-4.webp",
-                          "assets/images/provinces/amnat-charoen/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/amnat-charoen/hero.webp",
-                            "caption":  "Amnat Charoen tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/amnat-charoen/gallery-1.webp",
-                            "caption":  "Amnat Charoen tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/amnat-charoen/gallery-2.webp",
-                            "caption":  "Amnat Charoen tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/amnat-charoen/gallery-3.webp",
-                            "caption":  "Amnat Charoen tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/amnat-charoen/gallery-4.webp",
-                            "caption":  "Amnat Charoen tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Amnat Charoen",
-                            "slug":  "amnat-charoen",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/amnat-charoen/gallery-5.webp",
-                            "caption":  "Amnat Charoen tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Amnat Charoen",
+  "slug": "amnat-charoen",
+  "heroImage": "assets/images/provinces/amnat-charoen/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/amnat-charoen/gallery-1.webp",
+    "assets/images/provinces/amnat-charoen/gallery-2.webp",
+    "assets/images/provinces/amnat-charoen/gallery-3.webp",
+    "assets/images/provinces/amnat-charoen/gallery-4.webp",
+    "assets/images/provinces/amnat-charoen/gallery-5.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "hero",
+      "file": "assets/images/provinces/amnat-charoen/hero.webp",
+      "caption": "Amnat Charoen tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%20Amnat%20Charoen%20-Mukdahan%20rd.%20-%20panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/amnat-charoen/gallery-1.webp",
+      "caption": "Wat Tham Saeng Phet, Amnat Charoen Province",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:P.khiao&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:P.khiao (page does not exist)\">P.khiao</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Amnat_Charoen_Banner.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/amnat-charoen/gallery-2.webp",
+      "caption": "ภาพพระมงคลมิ่งเมือง",
+      "photoCredit": "นายพงษ์ศักดิ์ แก้วแสนเมือง",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mingmuang.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/amnat-charoen/gallery-3.webp",
+      "caption": "Voyage d'exploration en Indo-Chine (1873, Francis Garnier)",
+      "photoCredit": "Francis Garnier",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Voyage_d%27exploration_en_Indo-Chine_-_effectue_pendant_les_annees_1866_1867_et_1868_-_v_1_057.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/amnat-charoen/gallery-4.webp",
+      "caption": "จังหวัดอำนาจเจริญ  Amnat Charoen -Mukdahan rd.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010041106/http://www.panoramio.com/user/1465176?with_photo_id=8615389\">JAMRAT</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_Amnat_Charoen_-Mukdahan_rd._-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Amnat Charoen",
+      "slug": "amnat-charoen",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/amnat-charoen/gallery-5.webp",
+      "caption": "นายกรัฐมนตรี ปฏิบัติราชการจังหวัดอำนาจเจริญ 10ตุลาคม2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40561337@N07\">Government of Thailand</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5_%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_10%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B2%E0%B8%84%E0%B8%A12552_(The_Official_Site_of_-_Flickr_-_Abhisit_Vejjajiva_(25).jpg",
+      "isFallback": false
+    }
+  ]
 }
