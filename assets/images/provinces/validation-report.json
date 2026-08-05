@@ -86,9 +86,9 @@
   {
     "province": "Chumphon",
     "slug": "chumphon",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Kalasin",

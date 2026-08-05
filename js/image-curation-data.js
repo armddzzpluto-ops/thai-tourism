@@ -429,11 +429,54 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "chumphon": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chumphon/gallery-1.webp",
+      "assets/images/provinces/chumphon/gallery-2.webp",
+      "assets/images/provinces/chumphon/gallery-3.webp",
+      "assets/images/provinces/chumphon/gallery-4.webp",
+      "assets/images/provinces/chumphon/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Silnice v provincii Phato v jižním Thajsku",
+      "A road in Thailand",
+      "Chum Kho, Pathio District, Chumphon, Thailand",
+      "File:Chumphon 99.17953E 10.49579N.jpg",
+      "Damage of the typhoon Gay in November 1989 in the Thai province \u003ca href=\"//commons.wikimedia.org/wiki/Chumphon\" title=\"Chumphon\">Chumphon\u003c/a>.\nPhoto taken in Pathiu(?) by H. Pollmeier."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chumphon/gallery-1.webp",
+        "caption": "Silnice v provincii Phato v jižním Thajsku",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/4631368?with_photo_id=45305390\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2135).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chumphon/gallery-2.webp",
+        "caption": "A road in Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016235730/http://www.panoramio.com/user/4631368?with_photo_id=45305406\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2137).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chumphon/gallery-3.webp",
+        "caption": "Chum Kho, Pathio District, Chumphon, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102015659/http://www.panoramio.com/user/1429473?with_photo_id=124374399\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chum_Kho,_Pathio_District,_Chumphon,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chumphon/gallery-4.webp",
+        "caption": "File:Chumphon 99.17953E 10.49579N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_99.17953E_10.49579N.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chumphon/gallery-5.webp",
+        "caption": "Damage of the typhoon Gay in November 1989 in the Thai province \u003ca href=\"//commons.wikimedia.org/wiki/Chumphon\" title=\"Chumphon\">Chumphon\u003c/a>.\nPhoto taken in Pathiu(?) by H. Pollmeier.",
+        "photoCredit": "H. Pollmeier.",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_typhoon_damage_1.jpg"
+      }
+    ]
   },
   "kalasin": {
     "status": "needs-curation",
