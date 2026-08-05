@@ -37,9 +37,9 @@
   {
     "province": "Chachoengsao",
     "slug": "chachoengsao",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Chai Nat",

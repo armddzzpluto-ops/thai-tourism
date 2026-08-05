@@ -165,11 +165,54 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "chachoengsao": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chachoengsao/gallery-1.webp",
+      "assets/images/provinces/chachoengsao/gallery-2.webp",
+      "assets/images/provinces/chachoengsao/gallery-3.webp",
+      "assets/images/provinces/chachoengsao/gallery-4.webp",
+      "assets/images/provinces/chachoengsao/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Aranyaprathet to Bangkok",
+      "Aranyaprathet to Bangkok",
+      "Bang Kaeo, Mueang Chachoengsao District, Chachoengsao, Thailand",
+      "Depan SMP 1 Pakong",
+      "Flying foxes - Wat Pho Bangkla"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chachoengsao/gallery-1.webp",
+        "caption": "Aranyaprathet to Bangkok",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26781577@N07\">Clay Gilliland\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Aranyaprathet_to_Bangkok_(15038623533).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chachoengsao/gallery-2.webp",
+        "caption": "Aranyaprathet to Bangkok",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26781577@N07\">Clay Gilliland\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Aranyaprathet_to_Bangkok_(15658771865).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chachoengsao/gallery-3.webp",
+        "caption": "Bang Kaeo, Mueang Chachoengsao District, Chachoengsao, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024215438/http://www.panoramio.com/user/7039051?with_photo_id=87148356\">khanawoot\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bang_Kaeo,_Mueang_Chachoengsao_District,_Chachoengsao,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chachoengsao/gallery-4.webp",
+        "caption": "Depan SMP 1 Pakong",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161026173331/http://www.panoramio.com/user/5002713?with_photo_id=77569750\">Vebra\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Depan_SMP_1_Pakong_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chachoengsao/gallery-5.webp",
+        "caption": "Flying foxes - Wat Pho Bangkla",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025142829/http://www.panoramio.com/user/5109466?with_photo_id=77103203\">Thaweesak Churasri\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Flying_foxes_-_Wat_Pho_Bangkla_-_panoramio.jpg"
+      }
+    ]
   },
   "chai-nat": {
     "status": "needs-curation",
