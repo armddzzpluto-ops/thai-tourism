@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;900&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<!-- Chart.js is loaded on demand when the dashboard opens. -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.5/sweetalert2.all.min.js"></script>
 </head>
 <!-- Legacy styles moved to css/components.css. -->
@@ -80,7 +80,7 @@ Discover The Land Of Smiles</span></div>
 <div class="page active" id="page-home">
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero home-hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
@@ -134,7 +134,7 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- SEARCH -->
-  <div class="search-bar-wrap">
+  <div class="search-bar-wrap home-search-panel">
     <div class="search-bar-inner">
       <span class="search-label">🔍 ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ</span>
       <form class="search-input-row" role="search" onsubmit="event.preventDefault();doQuickSearch()">
@@ -162,7 +162,7 @@ Discover The Land Of Smiles</span></div>
   </div>
 
   <!-- FEATURED DESTINATIONS -->
-  <section class="section">
+  <section class="section home-featured-section">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-eyebrow">สถานที่แนะนำ</span>
@@ -173,8 +173,8 @@ Discover The Land Of Smiles</span></div>
       <div class="cards-grid" id="home-cards">
         <!-- Cards injected by JS -->
       </div>
-      <div style="text-align:center; margin-top:40px;">
-        <button class="btn-primary" onclick="showPage('destinations')">
+      <div class="home-section-actions">
+        <button class="btn-primary" type="button" onclick="showPage('destinations')">
           <i class="fas fa-th-large"></i> ดูทั้งหมด
         </button>
       </div>
@@ -182,7 +182,7 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- CATEGORIES STRIP -->
-  <section class="section-alt section">
+  <section class="section-alt section home-category-section">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-eyebrow">หมวดหมู่</span>
@@ -231,12 +231,12 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- INTERACTIVE REGION FILTER -->
-  <section class="section">
+  <section class="section home-region-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">สำรวจตามภูมิภาค</span>
-        <h2 class="section-title">สำรวจตามภูมิภาค</h2>
-        <p class="section-desc">เลือกภูมิภาคจากแถบควบคุม แล้วผลลัพธ์จะจัดวางในแผงด้านขวาแบบลำดับเดียว</p>
+        <span class="section-eyebrow">เลือกพื้นที่ที่สนใจ</span>
+        <h2 class="section-title">สำรวจประเทศไทยตามภูมิภาค</h2>
+        <p class="section-desc">เลือกภูมิภาคเพื่อดูจุดหมายเด่น บรรยากาศ และสถานที่แนะนำในพื้นที่นั้น</p>
       </div>
       <div class="region-explorer fade-in">
         <aside class="region-control-rail">
@@ -256,7 +256,7 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- TRAVEL PACKAGES -->
-  <section class="section-alt section">
+  <section class="section-alt section home-package-section">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-eyebrow">แพ็กเกจท่องเที่ยว</span>
@@ -329,7 +329,7 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- GALLERY PREVIEW -->
-  <section class="section">
+  <section class="section home-gallery-section">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-eyebrow">คลังรูปภาพ</span>
@@ -1734,6 +1734,32 @@ function showDest(name) {
 }
 
 // ===== NAVIGATION =====
+let chartLibraryPromise = null;
+
+function ensureChartLibrary() {
+  if (window.Chart) return Promise.resolve(window.Chart);
+  if (chartLibraryPromise) return chartLibraryPromise;
+
+  chartLibraryPromise = new Promise((resolve, reject) => {
+    const existing = document.querySelector('script[data-chart-loader]');
+
+    if (existing) {
+      existing.addEventListener('load', () => resolve(window.Chart), { once: true });
+      existing.addEventListener('error', reject, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
+    script.defer = true;
+    script.dataset.chartLoader = 'true';
+    script.onload = () => resolve(window.Chart);
+    script.onerror = () => reject(new Error('Unable to load Chart.js'));
+    document.head.appendChild(script);
+  });
+
+  return chartLibraryPromise;
+}
 function showPage(page) {
   const target = document.getElementById('page-' + page);
   if (!target) {
@@ -1757,9 +1783,14 @@ function showPage(page) {
   if (page === 'gallery') renderGallery();
 
   if (page === 'dashboard' && !chartsInit) {
-    setTimeout(() => {
-      chartsInit = initCharts() !== false;
-    }, 200);
+    setTimeout(async () => {
+      try {
+        await ensureChartLibrary();
+        chartsInit = initCharts() !== false;
+      } catch (error) {
+        console.error('Dashboard charts could not be loaded', error);
+      }
+    }, 120);
   }
 
   setTimeout(observeFade, 100);
