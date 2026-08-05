@@ -146,8 +146,8 @@ function Get-CommonsFilesFromCategory {
     $source = [string]$info.descriptionurl
     if (-not $source) { $source = [string]$info.url }
 
-    $downloadUrl = [string]$info.thumburl
-    if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+    $downloadUrl = [string]$info.url
+    if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
     if (-not $downloadUrl) { continue }
 
     $out += (New-CandidateObject -Title $title -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -213,8 +213,8 @@ function Get-WikipediaImageCandidates {
           if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
           $source = [string]$info.descriptionurl
           if (-not $source) { $source = [string]$info.url }
-          $downloadUrl = [string]$info.thumburl
-          if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+          $downloadUrl = [string]$info.url
+          if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
           if (-not $downloadUrl) { continue }
 
           $result += (New-CandidateObject -Title ([string]$img.title) -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
