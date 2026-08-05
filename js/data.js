@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    THAILAND TRAVEL GUIDE 2026 — Shared Data Store
    All mock data lives here so every page renders from one
    single source of truth. No database / backend required.
@@ -567,24 +567,7 @@ const REGIONS = [
   { key: "south",     label: "ภาคใต้",        icon: "🏝️", provinces: "ภูเก็ต · กระบี่ · สุราษฎร์ธานี" }
 ];
 
-/* ---------- GALLERY IMAGES (expanded) ---------- */
-const GALLERY = [
-  { src: "assets/images/destinations/andaman.webp", cap: "พระอาทิตย์ตกทะเลอันดามัน", tall: true, region: "south" },
-  { src: "assets/images/destinations/chiang-mai.webp", cap: "วัดในเชียงใหม่", region: "north" },
-  { src: "assets/images/destinations/krabi.webp", cap: "หน้าผาหินปูนกระบี่", region: "south" },
-  { src: "assets/images/destinations/bangkok.webp", cap: "กรุงเทพยามเย็น", tall: true, region: "central" },
-  { src: "assets/images/destinations/phuket.webp", cap: "ชายหาดภูเก็ต", region: "south" },
-  { src: "assets/images/destinations/gulf-beach.webp", cap: "ทะเลอ่าวไทย", region: "south" },
-  { src: "assets/images/destinations/historical.webp", cap: "เมืองเก่ามรดกโลก", tall: true, region: "central" },
-  { src: "assets/images/destinations/chiang-rai.webp", cap: "วัดร่องขุ่น เชียงราย", region: "north" },
-  { src: "assets/images/destinations/jungle.webp", cap: "ป่าดิบชื้นเขาใหญ่", region: "central" },
-  { src: "assets/images/destinations/tropical-coast.webp", cap: "ชายฝั่งเขตร้อนภาคตะวันออก", tall: true, region: "east" },
-  { src: "assets/images/destinations/mountain-valley.webp", cap: "หุบเขาและทะเลหมอกภาคเหนือ", region: "north" },
-  { src: "assets/images/destinations/mountain-temple.webp", cap: "วัดบนภูเขา", region: "north" },
-  { src: "assets/images/destinations/river-isan.webp", cap: "แม่น้ำสายสำคัญในอีสาน", region: "northeast" },
-  { src: "assets/images/destinations/floating-market.webp", cap: "วิถีตลาดน้ำภาคกลาง", region: "central" },
-  { src: "assets/images/destinations/beach-resort.webp", cap: "เมืองตากอากาศริมทะเล", region: "east" }
-];
+/* Gallery items are generated from DESTINATIONS[].galleryImages. */
 
 /* ---------- TESTIMONIALS / REVIEWS (10) ---------- */
 const REVIEWS = [
@@ -719,7 +702,6 @@ const QUOTES = [
 window.DESTINATIONS = DESTINATIONS;
 window.CATEGORIES = CATEGORIES;
 window.REGIONS = REGIONS;
-window.GALLERY = GALLERY;
 window.REVIEWS = REVIEWS;
 window.BLOG = BLOG;
 window.FAQ = FAQ;

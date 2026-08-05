@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    THAILAND TRAVEL GUIDE 2026 — Main Script
    Shared across every page. Each module checks for its target
    elements before running, so this single file works safely
@@ -51,10 +51,29 @@ const Theme = {
 function initLoadingScreen() {
   const screen = document.getElementById("loading-screen");
   if (!screen) return;
-  window.addEventListener("load", () => {
-    setTimeout(() => screen.classList.add("fade-out"), 600);
-    setTimeout(() => screen.remove(), 1300);
-  });
+
+  let closed = false;
+
+  const closeScreen = () => {
+    if (closed || !screen.isConnected) return;
+    closed = true;
+    screen.classList.add("fade-out");
+    setTimeout(() => screen.remove(), 700);
+  };
+
+  if (document.readyState === "complete") {
+    setTimeout(closeScreen, 120);
+  } else {
+    window.addEventListener("load", () => {
+      setTimeout(closeScreen, 120);
+    }, { once: true });
+  }
+
+  setTimeout(closeScreen, 2500);
+
+  window.addEventListener("pageshow", event => {
+    if (event.persisted) closeScreen();
+  }, { once: true });
 }
 
 /* ---------------------------------------------------------------
