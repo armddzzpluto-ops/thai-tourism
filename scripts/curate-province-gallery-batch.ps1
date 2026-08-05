@@ -282,6 +282,22 @@ foreach ($provinceMeta in $batch) {
   $province = [string]$provinceMeta.province
   $slug = [string]$provinceMeta.slug
   $heroImage = [string]$provinceMeta.heroImage
+
+  # Resume safely: do not download a province again after a verified batch commit.
+  $existingValidation = @($validation | Where-Object { [string]$_.slug -eq $slug }) | Select-Object -First 1
+  if ($existingValidation -and
+      [string]$existingValidation.status -eq 'complete' -and
+      [int]$existingValidation.fallbackCount -eq 0 -and
+      [int]$existingValidation.galleryCount -ge $TargetGallery) {
+    $batchReport += [pscustomobject]@{
+      province = $province
+      slug = $slug
+      status = 'curated'
+      curatedCount = [int]$existingValidation.galleryCount
+    }
+    continue
+  }
+
   $heroAttribution = @($provinceMeta.attribution | Where-Object { $_.role -eq 'hero' }) | Select-Object -First 1
   $heroSource = if ($heroAttribution) { [string]$heroAttribution.imageSource } else { '' }
 
