@@ -30,7 +30,7 @@
   {
     "province": "Buri Ram",
     "slug": "buri-ram",
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCount": 5,
     "fallbackCount": 5
   },

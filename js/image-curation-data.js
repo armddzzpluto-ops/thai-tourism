@@ -158,7 +158,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "buri-ram": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],
