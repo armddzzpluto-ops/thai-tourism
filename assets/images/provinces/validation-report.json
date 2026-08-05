@@ -58,9 +58,9 @@
   {
     "province": "Chanthaburi",
     "slug": "chanthaburi",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Chiang Mai",

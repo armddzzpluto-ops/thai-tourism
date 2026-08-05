@@ -272,11 +272,54 @@ window.IMAGE_CURATION = {
     ]
   },
   "chanthaburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chanthaburi/gallery-1.webp",
+      "assets/images/provinces/chanthaburi/gallery-2.webp",
+      "assets/images/provinces/chanthaburi/gallery-3.webp",
+      "assets/images/provinces/chanthaburi/gallery-4.webp",
+      "assets/images/provinces/chanthaburi/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)",
+      "Ban Hin Lad the road",
+      "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne",
+      "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
+      "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chanthaburi/gallery-1.webp",
+        "caption": "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:110203-M-9683P-245_(5428114119).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chanthaburi/gallery-2.webp",
+        "caption": "Ban Hin Lad the road",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024022819/http://www.panoramio.com/user/844057?with_photo_id=58605015\">Adriaan Castermans\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Hin_Lad_the_road_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chanthaburi/gallery-3.webp",
+        "caption": "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne",
+        "photoCredit": "Lance Cpl. Carl Payne",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Defense.gov_photo_essay_120119-M-HN458-013.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chanthaburi/gallery-4.webp",
+        "caption": "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
+        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"3\">\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cspan typeof=\"mw:File/Frameless\">\u003ca href=\"//commons.wikimedia.org/wiki/File:KMITL_Radio_Amateur_Club_Operator.jpg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/60px-KMITL_Radio_Amateur_Club_Operator.jpg\" decoding=\"async\" width=\"50\" height=\"28\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/120px-KMITL_Radio_Amateur_Club_Operator.jpg 2x\" data-file-width=\"5472\" data-file-height=\"3072\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd>This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">Adirach Toumlamoon\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">message.\u003c/a> \u003cbr> (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">ข้อความแจ้งด้วยก็ได้\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Crystal_128_mail.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/40px-Crystal_128_mail.png\" decoding=\"async\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/60px-Crystal_128_mail.png 2x\" data-file-width=\"128\" data-file-height=\"128\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\n\u003ctbody>\u003ctr>\n\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.\u003cbr>Otherwise you may upload an edited image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khirithan_Dam_1.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chanthaburi/gallery-5.webp",
+        "caption": "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
+        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"3\">\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cspan typeof=\"mw:File/Frameless\">\u003ca href=\"//commons.wikimedia.org/wiki/File:KMITL_Radio_Amateur_Club_Operator.jpg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/60px-KMITL_Radio_Amateur_Club_Operator.jpg\" decoding=\"async\" width=\"50\" height=\"28\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/120px-KMITL_Radio_Amateur_Club_Operator.jpg 2x\" data-file-width=\"5472\" data-file-height=\"3072\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd>This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">Adirach Toumlamoon\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">message.\u003c/a> \u003cbr> (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">ข้อความแจ้งด้วยก็ได้\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Crystal_128_mail.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/40px-Crystal_128_mail.png\" decoding=\"async\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/60px-Crystal_128_mail.png 2x\" data-file-width=\"128\" data-file-height=\"128\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\n\u003ctbody>\u003ctr>\n\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.\u003cbr>Otherwise you may upload an edited image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khirithan_Dam_2.jpg"
+      }
+    ]
   },
   "chiang-mai": {
     "status": "needs-curation",
