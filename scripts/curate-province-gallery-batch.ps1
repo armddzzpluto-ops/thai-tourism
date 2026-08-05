@@ -115,7 +115,7 @@ function Get-CommonsFilesFromCategory {
   $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
 
   $response = Invoke-WithRetry -Action {
-    Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+    Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
   }
 
   if (-not $response.query.pages) {
@@ -146,8 +146,8 @@ function Get-CommonsFilesFromCategory {
     $source = [string]$info.descriptionurl
     if (-not $source) { $source = [string]$info.url }
 
-    $downloadUrl = [string]$info.thumburl
-    if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+    $downloadUrl = [string]$info.url
+    if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
     if (-not $downloadUrl) { continue }
 
     $out += (New-CandidateObject -Title $title -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -177,7 +177,7 @@ function Get-WikipediaImageCandidates {
       }
       $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
       $response = Invoke-WithRetry -Action {
-        Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+        Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
       }
 
       $pages = $response.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
@@ -196,7 +196,7 @@ function Get-WikipediaImageCandidates {
         }
         $commonsApi = 'https://commons.wikimedia.org/w/api.php?' + (($commonsQuery.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
         $commonsRes = Invoke-WithRetry -Action {
-          Invoke-RestMethod -Method Get -Uri $commonsApi -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+          Invoke-RestMethod -Method Get -Uri $commonsApi -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
         }
         $commonsPages = $commonsRes.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
         foreach ($cp in $commonsPages) {
@@ -213,8 +213,8 @@ function Get-WikipediaImageCandidates {
           if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
           $source = [string]$info.descriptionurl
           if (-not $source) { $source = [string]$info.url }
-          $downloadUrl = [string]$info.thumburl
-          if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+          $downloadUrl = [string]$info.url
+          if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
           if (-not $downloadUrl) { continue }
 
           $result += (New-CandidateObject -Title ([string]$img.title) -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -368,7 +368,7 @@ foreach ($provinceMeta in $batch) {
 
     if (-not $DryRun) {
       Invoke-WithRetry -Action {
-        Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+        Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
       } | Out-Null
       Start-Sleep -Milliseconds $RequestDelayMs
       Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
