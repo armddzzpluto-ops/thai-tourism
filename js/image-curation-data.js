@@ -322,11 +322,54 @@ window.IMAGE_CURATION = {
     ]
   },
   "chiang-mai": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chiang-mai/gallery-1.webp",
+      "assets/images/provinces/chiang-mai/gallery-2.webp",
+      "assets/images/provinces/chiang-mai/gallery-3.webp",
+      "assets/images/provinces/chiang-mai/gallery-4.webp",
+      "assets/images/provinces/chiang-mai/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Buak Hard Park (Chiangmai)",
+      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
+      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.\nThere is much speculation about why the rings are worn by the women of this tribe, many will tell you it is simply tradition. They use to protect them from tiger attacks as the tiger will go for the neck. They start at a young age and add to the rings over time.",
+      "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
+      "Follow THE PEACK ATV adventure"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chiang-mai/gallery-1.webp",
+        "caption": "Buak Hard Park (Chiangmai)",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kawin_Jungsakulrujirek&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kawin Jungsakulrujirek (page does not exist)\">Kawin Jungsakulrujirek\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Buak_Hard_Park.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-mai/gallery-2.webp",
+        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
+        "photoCredit": "\u003cbdi>\u003ca href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\">\u003cspan title=\"photographer\">Dennis G. Jarvis\u003c/span>\u003c/a>\u003c/bdi>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4310_-_Long_Neck_Padong_Lady_(3731014077).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-mai/gallery-3.webp",
+        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.\nThere is much speculation about why the rings are worn by the women of this tribe, many will tell you it is simply tradition. They use to protect them from tiger attacks as the tiger will go for the neck. They start at a young age and add to the rings over time.",
+        "photoCredit": "\u003cbdi>\u003ca href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\">\u003cspan title=\"photographer\">Dennis G. Jarvis\u003c/span>\u003c/a>\u003c/bdi>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4321_-_Young_Lady_of_the_Long_Neck_Padong_(3732482202).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-mai/gallery-4.webp",
+        "caption": "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PhilipNalangan\" title=\"User:PhilipNalangan\">Philip Nalangan\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Saket_Temple_Chiang_Mai_Thailand_2.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chiang-mai/gallery-5.webp",
+        "caption": "Follow THE PEACK ATV adventure",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022132233/http://www.panoramio.com/user/5477602?with_photo_id=54469139\">Maxim Cruiser\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Follow_THE_PEACK_ATV_adventure_-_panoramio.jpg"
+      }
+    ]
   },
   "chiang-rai": {
     "status": "needs-curation",
