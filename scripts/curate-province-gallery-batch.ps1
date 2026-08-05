@@ -231,8 +231,8 @@ function Get-WikipediaImageCandidates {
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 Set-Location $repoRoot
 
-$manifestPath = Join-Path $repoRoot 'assets\images\provinces\manifest.json'
-$validationPath = Join-Path $repoRoot 'assets\images\provinces\validation-report.json'
+$manifestPath = Join-Path $repoRoot 'assets/images/provinces/manifest.json'
+$validationPath = Join-Path $repoRoot 'assets/images/provinces/validation-report.json'
 
 if (-not (Test-Path $manifestPath)) {
   throw "Missing manifest: $manifestPath"
@@ -281,8 +281,8 @@ foreach ($provinceMeta in $batch) {
   $heroAttribution = @($provinceMeta.attribution | Where-Object { $_.role -eq 'hero' }) | Select-Object -First 1
   $heroSource = if ($heroAttribution) { [string]$heroAttribution.imageSource } else { '' }
 
-  $provinceDir = Join-Path $repoRoot ('assets\\images\\provinces\\' + $slug)
-  $heroPath = Join-Path $repoRoot ($heroImage -replace '/', '\\')
+  $provinceDir = Join-Path $repoRoot ("assets/images/provinces/$slug")
+  $heroPath = Join-Path $repoRoot $heroImage
 
   if (-not (Test-Path $heroPath)) {
     $batchReport += [pscustomobject]@{ province = $province; slug = $slug; status = 'hero-missing'; curatedCount = 0 }
