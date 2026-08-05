@@ -519,24 +519,26 @@ Discover The Land Of Smiles</span></div>
       <!-- Search + Filter -->
       <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;align-items:center;">
         <div style="flex:1;min-width:240px;position:relative;">
-          <input type="text" id="main-search" aria-label="ค้นหาสถานที่ท่องเที่ยว" placeholder="ค้นหาสถานที่..." oninput="filterCards()"
+          <input type="search" id="main-search" aria-label="ค้นหาสถานที่ท่องเที่ยว" placeholder="ค้นหาสถานที่..." autocomplete="off" enterkeyhint="search" maxlength="80" oninput="filterCards()"
             style="width:100%;padding:12px 16px 12px 44px;border:1.5px solid var(--color-border-default);border-radius:50px;font-family:'Sarabun',sans-serif;font-size:0.95rem;outline:none;transition:var(--transition);"
             onfocus="this.style.borderColor='var(--teal-mid)'" onblur="this.style.borderColor='var(--color-border-default)'">
           <i class="fas fa-search" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-light);"></i>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <button class="filter-btn active" data-filter-value="" onclick="setFilter('',this)">ทั้งหมด</button>
-          <button class="filter-btn" data-filter-value="ภาคเหนือ" onclick="setFilter('ภาคเหนือ',this)">ภาคเหนือ</button>
-          <button class="filter-btn" data-filter-value="ภาคกลาง" onclick="setFilter('ภาคกลาง',this)">ภาคกลาง</button>
-          <button class="filter-btn" data-filter-value="ภาคใต้" onclick="setFilter('ภาคใต้',this)">ภาคใต้</button>
-          <button class="filter-btn" data-filter-value="ภาคอีสาน" onclick="setFilter('ภาคอีสาน',this)">ภาคอีสาน</button>
+          <button class="filter-btn active" data-filter-value="" aria-pressed="true" onclick="setFilter('',this)">ทั้งหมด</button>
+          <button class="filter-btn" data-filter-value="ภาคเหนือ" aria-pressed="false" onclick="setFilter('ภาคเหนือ',this)">ภาคเหนือ</button>
+          <button class="filter-btn" data-filter-value="ภาคกลาง" aria-pressed="false" onclick="setFilter('ภาคกลาง',this)">ภาคกลาง</button>
+          <button class="filter-btn" data-filter-value="ภาคใต้" aria-pressed="false" onclick="setFilter('ภาคใต้',this)">ภาคใต้</button>
+          <button class="filter-btn" data-filter-value="ภาคอีสาน" aria-pressed="false" onclick="setFilter('ภาคอีสาน',this)">ภาคอีสาน</button>
+          <button class="filter-btn" data-filter-value="ภาคตะวันออก" aria-pressed="false" onclick="setFilter('ภาคตะวันออก',this)">ภาคตะวันออก</button>
         </div>
       </div>
 
+      <p id="destination-results-status" class="section-desc" role="status" aria-live="polite" style="max-width:none;text-align:left;margin:0 0 18px;"></p>
       <div class="cards-grid" id="dest-cards">
         <!-- Cards injected by JS -->
       </div>
-      <div id="no-results">
+      <div id="no-results" role="status" aria-live="polite">
         <i class="fas fa-search-minus"></i>
         <p style="font-size:1.1rem;font-weight:600;color:var(--teal-deep);">ไม่พบสถานที่ที่ค้นหา</p>
         <p style="margin-top:8px;">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
@@ -588,7 +590,7 @@ Discover The Land Of Smiles</span></div>
       <div class="cards-grid fade-in">
         <div class="dest-card" data-promo-province="surat-thani">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=800&q=80" alt="เกาะสมุย รีสอร์ท" loading="lazy">
+            <img src="assets/images/provinces/surat-thani/hero.webp" alt="เกาะสมุย รีสอร์ท" loading="lazy">
             <span class="card-badge" style="background:#e74c3c;">ลด 30%</span>
           </div>
           <div class="card-body">
@@ -600,13 +602,13 @@ Discover The Land Of Smiles</span></div>
                 <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 4,500/คืน</span>
                 <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 3,150/คืน</span>
               </div>
-              <button class="card-cta" onclick="showPage('contact')">จองเลย</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
             </div>
           </div>
         </div>
         <div class="dest-card" data-promo-province="chiang-mai">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?w=800&q=80" alt="เชียงใหม่ บูติกโฮเทล" loading="lazy">
+            <img src="assets/images/provinces/chiang-mai/hero.webp" alt="เชียงใหม่ บูติกโฮเทล" loading="lazy">
             <span class="card-badge" style="background:#e74c3c;">ลด 25%</span>
           </div>
           <div class="card-body">
@@ -618,13 +620,13 @@ Discover The Land Of Smiles</span></div>
                 <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 2,800/คืน</span>
                 <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 2,100/คืน</span>
               </div>
-              <button class="card-cta" onclick="showPage('contact')">จองเลย</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
             </div>
           </div>
         </div>
         <div class="dest-card" data-promo-province="phuket">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=800&q=80" alt="ภูเก็ต รีสอร์ท" loading="lazy">
+            <img src="assets/images/provinces/phuket/hero.webp" alt="ภูเก็ต รีสอร์ท" loading="lazy">
             <span class="card-badge" style="background:var(--gold);color:var(--teal-deep);">Early Bird</span>
           </div>
           <div class="card-body">
@@ -636,7 +638,7 @@ Discover The Land Of Smiles</span></div>
                 <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 9,800/คืน</span>
                 <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 6,900/คืน</span>
               </div>
-              <button class="card-cta" onclick="showPage('contact')">จองเลย</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
             </div>
           </div>
         </div>
@@ -656,7 +658,7 @@ Discover The Land Of Smiles</span></div>
       <div class="cards-grid fade-in">
         <div class="dest-card" data-promo-province="krabi">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&q=80" alt="กระบี่แพ็กเกจ" loading="lazy">
+            <img src="assets/images/provinces/krabi/hero.webp" alt="กระบี่แพ็กเกจ" loading="lazy">
             <span class="card-badge">3 วัน 2 คืน</span>
           </div>
           <div class="card-body">
@@ -665,7 +667,7 @@ Discover The Land Of Smiles</span></div>
             <p class="card-desc">แพ็กเกจทะเลครบ รวมทัวร์เกาะพีพี ดำน้ำหมู่เกาะ อาหาร 3 มื้อ และที่พัก</p>
             <div class="card-footer">
               <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 5,990</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button class="card-cta" onclick="showPage('contact')">สอบถาม</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
             </div>
           </div>
         </div>
@@ -680,13 +682,13 @@ Discover The Land Of Smiles</span></div>
             <p class="card-desc">วัดร่องขุ่น วัดร่องเสือเต้น และดอยแม่สลอง พร้อมชิมชาและกาแฟท้องถิ่น</p>
             <div class="card-footer">
               <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 4,490</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button class="card-cta" onclick="showPage('contact')">สอบถาม</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
             </div>
           </div>
         </div>
         <div class="dest-card" data-promo-province="sukhothai">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="ประวัติศาสตร์แพ็กเกจ" loading="lazy">
+            <img src="assets/images/provinces/sukhothai/hero.webp" alt="ประวัติศาสตร์แพ็กเกจ" loading="lazy">
             <span class="card-badge">2 วัน 1 คืน</span>
           </div>
           <div class="card-body">
@@ -695,7 +697,7 @@ Discover The Land Of Smiles</span></div>
             <p class="card-desc">ล่องผ่านกาลเวลากับสุโขทัยและอยุธยา อุทยานประวัติศาสตร์ระดับมรดกโลก</p>
             <div class="card-footer">
               <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 2,990</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button class="card-cta" onclick="showPage('contact')">สอบถาม</button>
+              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
             </div>
           </div>
         </div>
@@ -717,21 +719,21 @@ Discover The Land Of Smiles</span></div>
           <span style="background:rgba(201,168,76,0.3);color:var(--gold);padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">พ.ย. – ก.พ.</span>
           <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">ฤดูกาลท่องเที่ยวสูงสุด</h3>
           <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">อากาศดีที่สุด ทะเลใส โปรโมชั่นพิเศษสำหรับการจองล่วงหน้า 60 วัน</p>
-          <button class="btn-primary" onclick="showPage('destinations')"><i class="fas fa-sun"></i> สำรวจเลย</button>
+          <button type="button" class="btn-primary" onclick="showPage('destinations')"><i class="fas fa-sun"></i> สำรวจเลย</button>
         </div>
         <div style="background:linear-gradient(135deg,#7c3aed,#5b21b6);border-radius:var(--radius);padding:32px;color:white;position:relative;overflow:hidden;">
           <div style="position:absolute;top:-20px;right:-20px;font-size:6rem;opacity:0.1;">🎆</div>
           <span style="background:rgba(255,255,255,0.2);color:white;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">เม.ย. – เทศกาล</span>
           <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">สงกรานต์ 2026</h3>
           <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">เทศกาลปีใหม่ไทย สาดน้ำสุดสนุก ดีลพิเศษสำหรับโรงแรมในกรุงเทพฯ และเชียงใหม่</p>
-          <button style="display:inline-flex;align-items:center;gap:8px;background:white;color:#7c3aed;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showPage('destinations')"><i class="fas fa-water"></i> ดูดีล</button>
+          <button type="button" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#7c3aed;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showPage('destinations')"><i class="fas fa-water"></i> ดูดีล</button>
         </div>
         <div style="background:linear-gradient(135deg,var(--gold),#b8860b);border-radius:var(--radius);padding:32px;color:white;position:relative;overflow:hidden;">
           <div style="position:absolute;top:-20px;right:-20px;font-size:6rem;opacity:0.1;">🏮</div>
           <span style="background:rgba(0,0,0,0.2);color:white;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">พ.ย. – ลอยกระทง</span>
           <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">ลอยกระทงสุโขทัย</h3>
           <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">งานลอยกระทงที่ยิ่งใหญ่ที่สุดในประเทศ ณ อุทยานประวัติศาสตร์สุโขทัย มรดกโลก</p>
-          <button style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-deep);color:white;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showDest('สุโขทัย')"><i class="fas fa-star"></i> ดูข้อมูล</button>
+          <button type="button" style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-deep);color:white;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showDest('สุโขทัย')"><i class="fas fa-star"></i> ดูข้อมูล</button>
         </div>
       </div>
     </div>
@@ -743,7 +745,7 @@ Discover The Land Of Smiles</span></div>
       <div class="fade-in">
         <h2 class="section-title">ต้องการความช่วยเหลือในการ<span class="gold">วางแผนการเดินทาง?</span></h2>
         <p class="section-desc" style="margin-bottom:32px;">ทีมงานของเรายินดีให้คำแนะนำและช่วยวางแผนทริปที่สมบูรณ์แบบสำหรับคุณ</p>
-        <button class="btn-primary" onclick="showPage('contact')">
+        <button type="button" class="btn-primary" onclick="showPage('contact')">
           <i class="fas fa-paper-plane"></i> ติดต่อทีมงาน
         </button>
       </div>
@@ -1619,24 +1621,37 @@ function renderHomeCards() {
   container.dataset.rendered = 'true';
   observeFade();
 }
-function renderDestCards(filter='', search='') {
+function renderDestCards(filter = '', search = '') {
   const el = document.getElementById('dest-cards');
   if (!el) return;
-  const q = search.toLowerCase().trim();
+
+  const q = String(search || '').toLowerCase().trim();
   const normalizedFilter = normalizeRegionFilter(filter);
-  const filtered = destinations.filter(d => {
-    const matchRegion = !normalizedFilter || d.region === normalizedFilter || String(d.region).toLowerCase().includes(String(filter).toLowerCase());
-    const matchSearch = matchesDestinationSearch(d, q);
+  const filtered = destinations.filter(destination => {
+    const matchRegion = !normalizedFilter || destination.region === normalizedFilter;
+    const matchSearch = matchesDestinationSearch(destination, q);
     return matchRegion && matchSearch;
   });
+
+  const status = document.getElementById('destination-results-status');
+  const noResults = document.getElementById('no-results');
+  const isEnglish = document.documentElement.lang === 'en';
+
+  if (status) {
+    status.textContent = isEnglish
+      ? `Showing ${filtered.length} of ${destinations.length} destinations`
+      : `แสดง ${filtered.length} จาก ${destinations.length} สถานที่`;
+  }
+
   if (filtered.length === 0) {
     el.innerHTML = '';
-    document.getElementById('no-results').style.display = 'block';
-  } else {
-    document.getElementById('no-results').style.display = 'none';
-    el.innerHTML = filtered.map(d => renderCard(d,'dest-cards')).join('');
-    observeFade();
+    if (noResults) noResults.style.display = 'block';
+    return;
   }
+
+  if (noResults) noResults.style.display = 'none';
+  el.innerHTML = filtered.map(destination => renderCard(destination, 'dest-cards')).join('');
+  observeFade();
 }
 
 function renderGallery() {
@@ -1733,8 +1748,13 @@ function filterCards() {
 
 function setFilter(region, btn) {
   activeFilter = region;
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    const active = button === btn;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+
   filterCards();
 }
 
@@ -1762,6 +1782,7 @@ function filterDest(cat) {
       : button.dataset.filterValue === '';
 
     button.classList.toggle('active', shouldActivate);
+    button.setAttribute('aria-pressed', String(shouldActivate));
   });
 
   const search = document.getElementById('main-search');
@@ -1787,7 +1808,9 @@ function doQuickSearch() {
 
   activeFilter = '';
   document.querySelectorAll('.filter-btn').forEach(button => {
-    button.classList.toggle('active', button.dataset.filterValue === '');
+    const active = button.dataset.filterValue === '';
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
   });
 
   if (destinationSearch) destinationSearch.value = query;
@@ -1810,7 +1833,9 @@ function showDest(name) {
   if (search) search.value = name;
 
   document.querySelectorAll('.filter-btn').forEach(button => {
-    button.classList.toggle('active', button.dataset.filterValue === '');
+    const active = button.dataset.filterValue === '';
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
   });
 
   showPage('destinations');
