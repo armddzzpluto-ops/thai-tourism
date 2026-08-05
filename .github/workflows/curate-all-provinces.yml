@@ -39,15 +39,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          1..8 | ForEach-Object {
+          1..77 | ForEach-Object {
             $batch = $_
-            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 10 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
             node scripts/sync-image-curation.mjs
             node scripts/check-site.mjs
 
             git add assets/images/provinces js/image-curation-data.js
             if (-not (git diff --cached --quiet)) {
-              git commit -m "feat(images): curate province gallery batch $batch"
+              git commit -m "feat(images): curate province gallery item $batch"
               git push origin HEAD:agent/image-phase-1-run
             } else {
               Write-Host "No changes for batch $batch"
