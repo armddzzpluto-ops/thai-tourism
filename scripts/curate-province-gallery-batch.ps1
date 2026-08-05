@@ -347,7 +347,8 @@ foreach ($provinceMeta in $batch) {
 
     $galleryRel = "assets/images/provinces/$slug/gallery-$idx.webp"
     $galleryPath = Join-Path $provinceDir "gallery-$idx.webp"
-    $tempPath = Join-Path $env:TEMP ("curate-{0}-{1}-{2}.jpg" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
+    $tempRoot = [System.IO.Path]::GetTempPath()
+    $tempPath = Join-Path $tempRoot ("curate-{0}-{1}-{2}.jpg" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
 
     if (-not $DryRun) {
       Invoke-WithRetry -Action {
