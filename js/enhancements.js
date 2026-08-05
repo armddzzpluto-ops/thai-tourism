@@ -58,6 +58,18 @@
     return Array.isArray(window.FAQ) ? window.FAQ : [];
   }
 
+  function regionLabel(region) {
+    const labels = {
+      north: "ภาคเหนือ",
+      central: "ภาคกลาง",
+      northeast: "ภาคอีสาน",
+      east: "ภาคตะวันออก",
+      south: "ภาคใต้"
+    };
+
+    return labels[region] || region || "ไม่ระบุภูมิภาค";
+  }
+
   document.addEventListener("DOMContentLoaded", initEnhancements);
 
   function initEnhancements() {
@@ -90,17 +102,6 @@
       };
     }
 
-    if (!window.Chart) {
-      window.Chart = function ChartFallback(canvas) {
-        const ctx = canvas && canvas.getContext && canvas.getContext("2d");
-        if (!ctx) return;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        const rootStyles = getComputedStyle(document.documentElement);
-        ctx.fillStyle = rootStyles.getPropertyValue("--color-accent").trim() || rootStyles.getPropertyValue("--accent").trim();
-        ctx.font = "16px sans-serif";
-        ctx.fillText("ไม่สามารถแสดงกราฟตัวอย่างในโหมดออฟไลน์", 24, 46);
-      };
-    }
   }
 
   function initLoader() {
@@ -252,29 +253,84 @@
 
   function wireSearch(inputId, onSelect) {
     const input = document.getElementById(inputId);
-    if (!input || !Array.isArray(window.destinations || destinations)) return;
+    const source = window.destinations;
+
+    if (!input || !Array.isArray(source)) return;
+
     const parent = input.parentElement;
     const box = document.createElement("div");
     box.className = "suggestion-box";
     box.id = `${inputId}-suggestions`;
+    box.setAttribute("role", "listbox");
+
+    input.setAttribute("aria-controls", box.id);
+    input.setAttribute("aria-expanded", "false");
+    input.setAttribute("autocomplete", "off");
+
     parent.appendChild(box);
 
-    const render = () => {
-      const q = input.value.trim().toLowerCase();
-      const matches = q
-        ? destinations.filter(d => matchesDestination(d, q)).slice(0, 6)
-        : [];
-      box.innerHTML = q ? renderMatches(matches) : renderRecentAndPopular();
-      box.classList.add("is-open");
+    let inputTimer = 0;
+    let activeIndex = -1;
 
-      box.querySelectorAll("[data-search-term]").forEach(btn => {
-        btn.addEventListener("mousedown", event => {
+    const options = () => [...box.querySelectorAll("[data-search-term]")];
+
+    const setOpen = open => {
+      box.classList.toggle("is-open", open);
+      input.setAttribute("aria-expanded", String(open));
+      if (!open) {
+        activeIndex = -1;
+        input.removeAttribute("aria-activedescendant");
+      }
+    };
+
+    const setActive = nextIndex => {
+      const items = options();
+      if (!items.length) return;
+
+      activeIndex = (nextIndex + items.length) % items.length;
+
+      items.forEach((item, index) => {
+        const active = index === activeIndex;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", String(active));
+      });
+
+      const activeItem = items[activeIndex];
+      activeItem.id ||= `${box.id}-option-${activeIndex}`;
+      input.setAttribute("aria-activedescendant", activeItem.id);
+      activeItem.scrollIntoView({ block: "nearest" });
+    };
+
+    const choose = button => {
+      const term = button?.getAttribute("data-search-term");
+      if (!term) return;
+
+      input.value = term;
+      onSelect(term);
+      setOpen(false);
+      notify(`กำลังค้นหา: ${term}`, "info");
+    };
+
+    const render = () => {
+      const query = input.value.trim().toLowerCase();
+      const matches = query
+        ? source.filter(destination => matchesDestination(destination, query)).slice(0, 6)
+        : [];
+
+      box.innerHTML = query
+        ? renderMatches(matches)
+        : renderRecentAndPopular();
+
+      activeIndex = -1;
+
+      options().forEach((button, index) => {
+        button.setAttribute("role", "option");
+        button.setAttribute("aria-selected", "false");
+        button.id = `${box.id}-option-${index}`;
+
+        button.addEventListener("mousedown", event => {
           event.preventDefault();
-          const term = btn.getAttribute("data-search-term");
-          input.value = term;
-          onSelect(term);
-          box.classList.remove("is-open");
-          notify(`กำลังค้นหา: ${term}`, "info");
+          choose(button);
         });
       });
 
@@ -284,23 +340,56 @@
         render();
         notify("ล้างประวัติการค้นหาแล้ว", "info");
       });
-    };
 
-    let inputTimer = 0;
+      setOpen(true);
+    };
 
     input.addEventListener("input", () => {
       clearTimeout(inputTimer);
       inputTimer = setTimeout(render, 70);
     });
+
     input.addEventListener("focus", render);
+
     input.addEventListener("keydown", event => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        if (!box.classList.contains("is-open")) render();
+        setActive(activeIndex + 1);
+        return;
+      }
+
+      if (event.key === "ArrowUp") {
+        event.preventDefault();
+        if (!box.classList.contains("is-open")) render();
+        setActive(activeIndex - 1);
+        return;
+      }
+
+      if (event.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+
       if (event.key !== "Enter") return;
+
+      const active = options()[activeIndex];
+
+      if (active) {
+        event.preventDefault();
+        choose(active);
+        return;
+      }
+
       const term = input.value.trim();
       if (term) addRecentSearch(term);
-      box.classList.remove("is-open");
+      setOpen(false);
     });
+
     document.addEventListener("click", event => {
-      if (!box.contains(event.target) && event.target !== input) box.classList.remove("is-open");
+      if (!box.contains(event.target) && event.target !== input) {
+        setOpen(false);
+      }
     });
   }
 
@@ -326,7 +415,7 @@
     return '<div class="suggestion-label">คำแนะนำ</div>' + matches.map(d => `
       <button class="suggestion-item" type="button" data-search-term="${escapeAttr(d.name)}">
         <span><i class="fas fa-location-dot"></i> ${d.name}</span>
-        <small>${d.region}</small>
+        <small>${regionLabel(d.region)}</small>
       </button>
     `).join("");
   }
@@ -343,8 +432,16 @@
   }
 
   function getRecentSearches() {
-    try { return JSON.parse(localStorage.getItem(STORAGE.recent) || "[]"); }
-    catch { return []; }
+    try {
+      const value = JSON.parse(localStorage.getItem(STORAGE.recent) || "[]");
+
+      return Array.isArray(value)
+        ? value.filter(item => typeof item === "string" && item.trim())
+        : [];
+    } catch {
+      localStorage.removeItem(STORAGE.recent);
+      return [];
+    }
   }
 
   function addRecentSearch(term) {
@@ -362,7 +459,7 @@
       const pick = list[Math.floor(Math.random() * list.length)];
       if (typeof window.openModal === "function") {
         window.showPage?.("destinations");
-        setTimeout(() => window.openModal(pick.id), 260);
+        requestAnimationFrame(() => window.openModal(pick.id));
       }
       notify(`สุ่มได้: ${pick.name}`, "success");
     };
@@ -434,7 +531,7 @@
     panel.dataset.state = "init";
     list.innerHTML = regions.map((region, index) => `
       <button class="region-button ${index === 0 ? "active" : ""}" type="button" data-region="${escapeAttr(region)}">
-        <span>${region}</span><small>${destinations.filter(d => d.region === region).length}</small>
+        <span>${regionLabel(region)}</span><small>${destinations.filter(d => d.region === region).length}</small>
       </button>
     `).join("");
 
@@ -443,7 +540,7 @@
         panel.dataset.state = "loading";
         list.querySelectorAll(".region-button").forEach(btn => btn.classList.toggle("active", btn.dataset.region === region));
         const items = destinations.filter(d => d.region === region);
-        title.textContent = region;
+        title.textContent = regionLabel(region);
         meta.textContent = `พบ ${items.length} สถานที่ในภูมิภาคนี้`;
         panel.innerHTML = items.length ? `
           <div class="region-result-grid">
@@ -517,7 +614,14 @@
     };
     document.getElementById("testimonial-prev")?.addEventListener("click", () => { index = Math.max(0, index - 1); render(); });
     document.getElementById("testimonial-next")?.addEventListener("click", () => { index = index >= max() ? 0 : index + 1; render(); });
-    window.addEventListener("resize", () => { index = Math.min(index, max()); render(); });
+    let resizeFrame = 0;
+    window.addEventListener("resize", () => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        index = Math.min(index, max());
+        render();
+      });
+    }, { passive: true });
     setInterval(() => { index = index >= max() ? 0 : index + 1; render(); }, 6500);
     render();
   }

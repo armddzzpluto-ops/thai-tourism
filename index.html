@@ -23,7 +23,7 @@
 <body>
 
 <!-- Enhancement layer: loader, progress, transition, and notifications -->
-<div id="loading-screen" aria-label="Loading Thailand Travel Guide">
+<div id="loading-screen" aria-label="Loading Thailand Travel Guide" hidden>
   <div class="loader-card">
     <div class="loader-logo">🌺</div>
     <div class="loader-title">Thailand 2026
@@ -56,10 +56,10 @@ Discover The Land Of Smiles</span></div>
       <button class="theme-toggle-btn" id="theme-toggle" type="button" aria-label="Toggle dark and light mode">
         <i class="fas fa-moon"></i>
       </button>
-      <button class="nav-search-btn" type="button" aria-label="Open destination search" onclick="showPage('destinations');setTimeout(()=>document.getElementById('main-search').focus(),300)">
+      <button class="nav-search-btn" type="button" aria-label="เปิดช่องค้นหาสถานที่" onclick="openDestinationSearch()">
         <i class="fas fa-search"></i><span>ค้นหา</span>
       </button>
-      <button class="hamburger" type="button" onclick="toggleMobile()" id="hamburger" aria-label="Open mobile menu">
+      <button class="hamburger" type="button" onclick="toggleMobile()" id="hamburger" aria-label="เปิดเมนู" aria-controls="mobileMenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -67,13 +67,13 @@ Discover The Land Of Smiles</span></div>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#" onclick="showPage('home');closeMobile()">🏠 หน้าแรก</a>
-  <a href="#" onclick="showPage('destinations');closeMobile()">📍 สถานที่ท่องเที่ยว</a>
-  <a href="#" onclick="showPage('promotions');closeMobile()">🎫 โปรโมชั่น</a>
-  <a href="#" onclick="showPage('gallery');closeMobile()">🖼 คลังรูปภาพ</a>
-  <a href="#" onclick="showPage('about');closeMobile()">👥 เกี่ยวกับเรา</a>
-  <a href="#" onclick="showPage('contact');closeMobile()">📬 ติดต่อ</a>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#home" data-page="home" onclick="showPage('home');closeMobile()">🏠 หน้าแรก</a>
+  <a href="#destinations" data-page="destinations" onclick="showPage('destinations');closeMobile()">📍 สถานที่ท่องเที่ยว</a>
+  <a href="#promotions" data-page="promotions" onclick="showPage('promotions');closeMobile()">🎫 โปรโมชั่น</a>
+  <a href="#gallery" data-page="gallery" onclick="showPage('gallery');closeMobile()">🖼 คลังรูปภาพ</a>
+  <a href="#about" data-page="about" onclick="showPage('about');closeMobile()">👥 เกี่ยวกับเรา</a>
+  <a href="#contact" data-page="contact" onclick="showPage('contact');closeMobile()">📬 ติดต่อ</a>
 </div>
 
 <!-- ===================== PAGE: HOME ===================== -->
@@ -1692,18 +1692,23 @@ function filterDest(cat) {
     'ภาคตะวันออก': { filter: 'ภาคตะวันออก' },
     '': { filter: '', search: '' }
   };
-  const next = map[cat] || { search: cat };
-  showPage('destinations');
-  activeFilter = next.filter ?? '';
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  const activeBtn = [...document.querySelectorAll('.filter-btn')].find(b => b.textContent.trim() === (next.filter ? cat : 'ทั้งหมด'));
-  if (activeBtn) activeBtn.classList.add('active');
-  setTimeout(() => {
-    const search = document.getElementById('main-search');
-    if (search) { search.value = next.search ?? ''; filterCards(); }
-  }, 100);
-}
 
+  const next = map[cat] || { search: cat };
+  activeFilter = next.filter ?? '';
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    const shouldActivate = next.filter
+      ? button.textContent.trim() === cat
+      : button.textContent.trim() === 'ทั้งหมด';
+
+    button.classList.toggle('active', shouldActivate);
+  });
+
+  const search = document.getElementById('main-search');
+  if (search) search.value = next.search ?? '';
+
+  showPage('destinations');
+}
 function focusHomeSearch() {
   const search = document.getElementById('quick-search');
   const searchSection = document.querySelector('#page-home > .search-bar-wrap');
@@ -1718,19 +1723,18 @@ function focusHomeSearch() {
 function doQuickSearch() {
   const source = document.getElementById('quick-search');
   const query = source ? source.value.trim() : '';
+  const destinationSearch = document.getElementById('main-search');
 
   activeFilter = '';
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.classList.toggle('active', button.textContent.trim() === 'ทั้งหมด');
+  });
+
+  if (destinationSearch) destinationSearch.value = query;
+
   showPage('destinations');
 
-  setTimeout(() => {
-    const destinationSearch = document.getElementById('main-search');
-
-    if (destinationSearch) {
-      destinationSearch.value = query;
-      filterCards();
-      destinationSearch.focus();
-    }
-  }, 100);
+  requestAnimationFrame(() => destinationSearch?.focus());
 }
 
 function quickFill(value) {
@@ -1740,61 +1744,138 @@ function quickFill(value) {
 }
 
 function showDest(name) {
+  activeFilter = '';
+
+  const search = document.getElementById('main-search');
+  if (search) search.value = name;
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.classList.toggle('active', button.textContent.trim() === 'ทั้งหมด');
+  });
+
   showPage('destinations');
-  setTimeout(() => {
-    const el = document.getElementById('main-search');
-    if (el) { el.value = name; filterCards(); }
-  }, 100);
 }
 
 // ===== NAVIGATION =====
+const PAGE_META = {
+  home: 'Thailand Travel Guide | ท่องเที่ยวไทย',
+  destinations: 'สถานที่ท่องเที่ยว | Thailand Travel Guide',
+  promotions: 'โปรโมชั่น | Thailand Travel Guide',
+  gallery: 'คลังรูปภาพ | Thailand Travel Guide',
+  about: 'เกี่ยวกับเรา | Thailand Travel Guide',
+  contact: 'ติดต่อ | Thailand Travel Guide',
+  dashboard: 'แดชบอร์ด | Thailand Travel Guide'
+};
+
 let chartLibraryPromise = null;
 
+function isRealChartLibrary() {
+  return typeof window.Chart === 'function'
+    && typeof window.Chart.getChart === 'function'
+    && typeof window.Chart.register === 'function';
+}
+
 function ensureChartLibrary() {
-  if (window.Chart) return Promise.resolve(window.Chart);
+  if (isRealChartLibrary()) return Promise.resolve(window.Chart);
   if (chartLibraryPromise) return chartLibraryPromise;
 
   chartLibraryPromise = new Promise((resolve, reject) => {
     const existing = document.querySelector('script[data-chart-loader]');
 
+    const finish = () => {
+      if (isRealChartLibrary()) {
+        resolve(window.Chart);
+      } else {
+        chartLibraryPromise = null;
+        reject(new Error('Chart.js loaded without a valid Chart API'));
+      }
+    };
+
     if (existing) {
-      existing.addEventListener('load', () => resolve(window.Chart), { once: true });
-      existing.addEventListener('error', reject, { once: true });
+      existing.addEventListener('load', finish, { once: true });
+      existing.addEventListener('error', () => {
+        chartLibraryPromise = null;
+        reject(new Error('Unable to load Chart.js'));
+      }, { once: true });
       return;
     }
 
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
-    script.defer = true;
+    script.async = true;
     script.dataset.chartLoader = 'true';
-    script.onload = () => resolve(window.Chart);
-    script.onerror = () => reject(new Error('Unable to load Chart.js'));
+    script.onload = finish;
+    script.onerror = () => {
+      chartLibraryPromise = null;
+      reject(new Error('Unable to load Chart.js'));
+    };
     document.head.appendChild(script);
   });
 
   return chartLibraryPromise;
 }
-function showPage(page) {
+
+function getPageFromHash() {
+  const page = window.location.hash.replace(/^#/, '').trim();
+  return PAGE_META[page] ? page : 'home';
+}
+
+function updatePageHistory(page, replace = false) {
+  const nextHash = `#${page}`;
+  const method = replace ? 'replaceState' : 'pushState';
+
+  if (window.location.hash !== nextHash || replace) {
+    window.history[method]({ page }, '', nextHash);
+  }
+}
+
+function showPage(page, options = {}) {
+  const {
+    updateHistory = true,
+    replaceHistory = false,
+    scrollToTop = true
+  } = options;
+
   const target = document.getElementById('page-' + page);
   if (!target) {
     console.warn(`Unknown page requested: ${page}`);
     return;
   }
 
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  target.classList.add('active');
+  document.querySelectorAll('.page').forEach(element => {
+    element.classList.toggle('active', element === target);
+  });
 
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.classList.toggle('active', a.dataset.page === page);
+  document.querySelectorAll('.nav-links a, .mobile-menu a[data-page]').forEach(link => {
+    const active = link.dataset.page === page;
+    link.classList.toggle('active', active);
+
+    if (active) {
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.removeAttribute('aria-current');
+    }
   });
 
   currentPage = page;
   closeMobile();
-  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 
-  if (page === 'home') renderHomeCards();
-  if (page === 'destinations') renderDestCards(activeFilter);
-  if (page === 'gallery') renderGallery();
+  if (scrollToTop) {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  if (page === 'home') {
+    renderHomeCards();
+  }
+
+  if (page === 'destinations') {
+    const search = document.getElementById('main-search')?.value || '';
+    renderDestCards(activeFilter, search);
+  }
+
+  if (page === 'gallery') {
+    renderGallery();
+  }
 
   if (page === 'dashboard' && !chartsInit) {
     setTimeout(async () => {
@@ -1804,21 +1885,44 @@ function showPage(page) {
       } catch (error) {
         console.error('Dashboard charts could not be loaded', error);
       }
-    }, 120);
+    }, 0);
   }
 
-  setTimeout(observeFade, 100);
+  document.title = PAGE_META[page] || PAGE_META.home;
+
+  if (updateHistory) {
+    updatePageHistory(page, replaceHistory);
+  }
+
+  requestAnimationFrame(observeFade);
+}
+
+function openDestinationSearch() {
+  showPage('destinations');
+  requestAnimationFrame(() => document.getElementById('main-search')?.focus());
 }
 
 // ===== MOBILE =====
+function setMobileMenuState(open) {
+  const menu = document.getElementById('mobileMenu');
+  const button = document.getElementById('hamburger');
+
+  if (!menu || !button) return;
+
+  menu.classList.toggle('open', open);
+  menu.setAttribute('aria-hidden', String(!open));
+  button.classList.toggle('open', open);
+  button.setAttribute('aria-expanded', String(open));
+  button.setAttribute('aria-label', open ? 'ปิดเมนู' : 'เปิดเมนู');
+}
+
 function toggleMobile() {
   const menu = document.getElementById('mobileMenu');
-  if (menu) menu.classList.toggle('open');
+  setMobileMenuState(!menu?.classList.contains('open'));
 }
 
 function closeMobile() {
-  const menu = document.getElementById('mobileMenu');
-  if (menu) menu.classList.remove('open');
+  setMobileMenuState(false);
 }
 
 // ===== CONTACT =====
@@ -1994,6 +2098,7 @@ function observeFade() {
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   applyTheme(localStorage.getItem('tt_theme') || 'light');
+
   const themeToggleBtn = document.getElementById('theme-toggle');
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', toggleTheme);
@@ -2002,9 +2107,37 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHomeCards();
   observeFade();
 
-  // Prevent default on nav links
-  document.querySelectorAll('a[onclick]').forEach(a => {
-    a.addEventListener('click', e => e.preventDefault());
+  document.querySelectorAll('a[onclick]').forEach(link => {
+    link.addEventListener('click', event => event.preventDefault());
+  });
+
+  const initialPage = getPageFromHash();
+
+  showPage(initialPage, {
+    updateHistory: true,
+    replaceHistory: true,
+    scrollToTop: false
+  });
+
+  window.addEventListener('popstate', () => {
+    showPage(getPageFromHash(), {
+      updateHistory: false,
+      scrollToTop: true
+    });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMobile();
+  });
+
+  document.addEventListener('click', event => {
+    const menu = document.getElementById('mobileMenu');
+    const button = document.getElementById('hamburger');
+
+    if (!menu?.classList.contains('open')) return;
+    if (menu.contains(event.target) || button?.contains(event.target)) return;
+
+    closeMobile();
   });
 });
 </script>

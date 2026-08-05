@@ -3277,3 +3277,31 @@ html[data-theme="dark"] .navbar {
     scroll-behavior: auto;
   }
 }
+/* ─── 54. ROUTING AND SEARCH RELIABILITY ──────────────── */
+.search-input-row {
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.search-input-row input {
+  min-width: 0;
+  border-radius: 999px 0 0 999px;
+}
+
+.search-input-row .search-btn {
+  border-radius: 0 999px 999px 0;
+}
+
+.mobile-menu a.active,
+.mobile-menu a[aria-current="page"] {
+  color: var(--color-secondary);
+  background: var(--color-overlay-sm);
+}
+
+@media (max-width: 480px) {
+  .search-input-row input,
+  .search-input-row .search-btn {
+    border-radius: var(--radius-sm);
+  }
+}

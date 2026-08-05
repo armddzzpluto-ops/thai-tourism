@@ -1275,3 +1275,19 @@ footer .footer-grid {
 #page-transition[hidden] {
   display: none;
 }
+/* ─── Accessible search suggestions ───────────────────── */
+.suggestion-box {
+  max-height: min(420px, 55vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.suggestion-item.is-active,
+.suggestion-item[aria-selected="true"],
+.suggestion-chip.is-active,
+.suggestion-chip[aria-selected="true"] {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: -2px;
+}
