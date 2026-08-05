@@ -1,4 +1,4 @@
-/* ==========================================================
+﻿/* ==========================================================
    Additive production UX layer for the existing Thailand guide.
    It depends only on the current page's inline data/functions.
    ========================================================== */
@@ -106,10 +106,29 @@
   function initLoader() {
     const loader = document.getElementById("loading-screen");
     if (!loader) return;
-    window.addEventListener("load", () => {
-      setTimeout(() => loader.classList.add("is-hidden"), 450);
-      setTimeout(() => loader.remove(), 1050);
-    });
+
+    let closed = false;
+
+    const closeLoader = () => {
+      if (closed || !loader.isConnected) return;
+      closed = true;
+      loader.classList.add("is-hidden");
+      setTimeout(() => loader.remove(), 600);
+    };
+
+    if (document.readyState === "complete") {
+      setTimeout(closeLoader, 120);
+    } else {
+      window.addEventListener("load", () => {
+        setTimeout(closeLoader, 120);
+      }, { once: true });
+    }
+
+    setTimeout(closeLoader, 2500);
+
+    window.addEventListener("pageshow", event => {
+      if (event.persisted) closeLoader();
+    }, { once: true });
   }
 
   function initTheme() {
