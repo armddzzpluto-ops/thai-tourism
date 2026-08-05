@@ -1,6 +1,6 @@
 name: Curate all province galleries
 
-# Full 77-province curation run — retry 2
+# Full 77-province curation run — retry 3
 on:
   workflow_dispatch:
   push:
