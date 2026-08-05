@@ -1,5 +1,6 @@
 name: Curate all province galleries
 
+# Full 77-province curation run — 2026-08-05
 on:
   workflow_dispatch:
   push:
