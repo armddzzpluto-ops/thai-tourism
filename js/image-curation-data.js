@@ -108,11 +108,54 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "bueng-kan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/bueng-kan/gallery-1.webp",
+      "assets/images/provinces/bueng-kan/gallery-2.webp",
+      "assets/images/provinces/bueng-kan/gallery-3.webp",
+      "assets/images/provinces/bueng-kan/gallery-4.webp",
+      "assets/images/provinces/bueng-kan/gallery-5.webp"
+    ],
+    "galleryCaptions": [
+      "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+      "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+      "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+      "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+      "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/bueng-kan/gallery-1.webp",
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104342/http://www.panoramio.com/user/1429473?with_photo_id=124374227\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(1).jpg"
+      },
+      {
+        "file": "assets/images/provinces/bueng-kan/gallery-2.webp",
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104319/http://www.panoramio.com/user/1429473?with_photo_id=124374224\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(2).jpg"
+      },
+      {
+        "file": "assets/images/provinces/bueng-kan/gallery-3.webp",
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031011157/http://www.panoramio.com/user/1429473?with_photo_id=124374242\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(3).jpg"
+      },
+      {
+        "file": "assets/images/provinces/bueng-kan/gallery-4.webp",
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173825/http://www.panoramio.com/user/1429473?with_photo_id=124374231\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(4).jpg"
+      },
+      {
+        "file": "assets/images/provinces/bueng-kan/gallery-5.webp",
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173833/http://www.panoramio.com/user/1429473?with_photo_id=124374233\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(5).jpg"
+      }
+    ]
   },
   "buri-ram": {
     "status": "needs-curation",

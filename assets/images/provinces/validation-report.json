@@ -23,9 +23,9 @@
   {
     "province": "Bueng Kan",
     "slug": "bueng-kan",
-    "status": "needs-curation",
+    "status": "complete",
     "galleryCount": 5,
-    "fallbackCount": 5
+    "fallbackCount": 0
   },
   {
     "province": "Buri Ram",

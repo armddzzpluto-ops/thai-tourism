@@ -174,50 +174,50 @@
         "slug": "bueng-kan",
         "role": "gallery-1",
         "file": "assets/images/provinces/bueng-kan/gallery-1.webp",
-        "caption": "Bueng Kan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
-        "isFallback": true
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104342/http://www.panoramio.com/user/1429473?with_photo_id=124374227\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(1).jpg",
+        "isFallback": false
       },
       {
         "province": "Bueng Kan",
         "slug": "bueng-kan",
         "role": "gallery-2",
         "file": "assets/images/provinces/bueng-kan/gallery-2.webp",
-        "caption": "Bueng Kan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
-        "isFallback": true
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104319/http://www.panoramio.com/user/1429473?with_photo_id=124374224\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(2).jpg",
+        "isFallback": false
       },
       {
         "province": "Bueng Kan",
         "slug": "bueng-kan",
         "role": "gallery-3",
         "file": "assets/images/provinces/bueng-kan/gallery-3.webp",
-        "caption": "Bueng Kan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
-        "isFallback": true
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031011157/http://www.panoramio.com/user/1429473?with_photo_id=124374242\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(3).jpg",
+        "isFallback": false
       },
       {
         "province": "Bueng Kan",
         "slug": "bueng-kan",
         "role": "gallery-4",
         "file": "assets/images/provinces/bueng-kan/gallery-4.webp",
-        "caption": "Bueng Kan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
-        "isFallback": true
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173825/http://www.panoramio.com/user/1429473?with_photo_id=124374231\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(4).jpg",
+        "isFallback": false
       },
       {
         "province": "Bueng Kan",
         "slug": "bueng-kan",
         "role": "gallery-5",
         "file": "assets/images/provinces/bueng-kan/gallery-5.webp",
-        "caption": "Bueng Kan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/What%20phu%20tok.JPG",
-        "isFallback": true
+        "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173833/http://www.panoramio.com/user/1429473?with_photo_id=124374233\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(5).jpg",
+        "isFallback": false
       }
     ]
   },
