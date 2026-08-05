@@ -3208,3 +3208,72 @@ html[data-theme="dark"] .gallery-view-all {
     grid-auto-rows: 142px;
   }
 }
+/* ─── 53. SMOOTHNESS AND INTERACTION FIXES ─────────────── */
+/* Avoid delayed section materialization and expensive blur during scroll. */
+
+#page-home > section:not(.hero) {
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
+}
+
+.navbar,
+#page-home > .home-search-panel .search-bar-inner,
+#page-home > .home-hero .hero-eyebrow,
+#page-home > .home-hero .hero-stat-card,
+#page-home > .home-hero .btn-outline {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+html[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.97);
+}
+
+html[data-theme="dark"] .navbar {
+  background: rgba(20, 24, 28, 0.97);
+}
+
+#page-home > .home-search-panel .search-bar-inner {
+  background: var(--color-bg-tertiary);
+  box-shadow: 0 18px 46px rgba(18, 38, 43, 0.12);
+}
+
+#page-home > .home-hero .hero-stat-card {
+  background: rgba(9, 37, 46, 0.82);
+}
+
+#page-home > .home-featured-section .dest-card,
+#page-home > .home-gallery-section .gallery-item {
+  will-change: auto;
+}
+
+.fade-in {
+  transform: translateY(10px);
+  transition: opacity 0.34s ease, transform 0.34s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #page-home > .home-featured-section .dest-card:hover {
+    transform: translateY(-4px);
+  }
+
+  #page-home > .home-category-section .experience-card:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-in,
+  .fade-in.visible,
+  #page-home *,
+  #scroll-progress {
+    animation-duration: 0.001ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.001ms;
+    scroll-behavior: auto;
+  }
+}

@@ -154,26 +154,39 @@
   function initScrollProgress() {
     const bar = document.getElementById("scroll-progress");
     if (!bar) return;
+
+    let frameRequested = false;
+
     const update = () => {
+      frameRequested = false;
       const max = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = max > 0 ? `${Math.min(100, (window.scrollY / max) * 100)}%` : "0%";
+      const progress = max > 0
+        ? Math.min(1, Math.max(0, window.scrollY / max))
+        : 0;
+
+      bar.style.transform = `scaleX(${progress})`;
     };
+
+    const requestUpdate = () => {
+      if (frameRequested) return;
+      frameRequested = true;
+      requestAnimationFrame(update);
+    };
+
     update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate, { passive: true });
   }
 
   function initPageTransitions() {
     const overlay = document.getElementById("page-transition");
-    if (!overlay || typeof window.showPage !== "function") return;
-    const originalShowPage = window.showPage;
-    window.showPage = function enhancedShowPage(page) {
-      overlay.classList.add("is-active");
-      setTimeout(() => {
-        originalShowPage(page);
-        setTimeout(() => overlay.classList.remove("is-active"), 160);
-      }, 140);
-    };
+    if (overlay) {
+      overlay.classList.remove("is-active");
+      overlay.setAttribute("hidden", "");
+    }
+
+    // This is a single-document app. Delaying every menu action with a
+    // full-screen overlay makes navigation feel unresponsive.
   }
 
   function initCounters() {
@@ -195,8 +208,14 @@
     if (Number.isNaN(numeric)) return;
     const suffix = raw.replace(/[0-9.,]/g, "");
     const decimals = raw.includes(".") ? 1 : 0;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      el.textContent = raw;
+      return;
+    }
+
     const start = performance.now();
-    const duration = 1300;
+    const duration = 700;
 
     function frame(now) {
       const progress = Math.min(1, (now - start) / duration);
@@ -267,7 +286,12 @@
       });
     };
 
-    input.addEventListener("input", render);
+    let inputTimer = 0;
+
+    input.addEventListener("input", () => {
+      clearTimeout(inputTimer);
+      inputTimer = setTimeout(render, 70);
+    });
     input.addEventListener("focus", render);
     input.addEventListener("keydown", event => {
       if (event.key !== "Enter") return;

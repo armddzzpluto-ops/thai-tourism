@@ -1,4 +1,4 @@
-/* ==========================================================
+﻿/* ==========================================================
    Enhancement layer — additive UX polish on top of components.css
    Uses design tokens from style.css; no color conflicts.
    ========================================================== */
@@ -1262,4 +1262,16 @@ footer .footer-grid {
   #page-home > section.section:nth-of-type(13) .fade-in > p {
     margin-bottom: var(--space-xl) !important;
   }
+}
+
+/* ─── Smooth scroll progress rendering ─────────────────── */
+#scroll-progress {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+#page-transition[hidden] {
+  display: none;
 }

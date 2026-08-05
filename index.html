@@ -1567,10 +1567,16 @@ function renderHomeCards() {
   const container = document.getElementById('home-cards');
   if (!container) return;
 
+  if (container.dataset.rendered === 'true' && container.children.length) {
+    observeFade();
+    return;
+  }
+
   container.innerHTML = getFeaturedDestinations(6)
     .map(destination => renderCard(destination, 'home-cards'))
     .join('');
 
+  container.dataset.rendered = 'true';
   observeFade();
 }
 function renderDestCards(filter='', search='') {
@@ -1596,12 +1602,20 @@ function renderDestCards(filter='', search='') {
 function renderGallery() {
   const el = document.getElementById('gallery-grid');
   if (!el) return;
+
+  if (el.dataset.rendered === 'true' && el.children.length) {
+    observeFade();
+    return;
+  }
+
   el.innerHTML = galleryImages.map((img,i) => `
-    <div class="gallery-item fade-in" onclick="openLightbox(${i})">
-      <img src="${img.src}" alt="${img.cap}" loading="lazy">
-      <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+    <button class="gallery-item fade-in" type="button" onclick="openLightbox(${i})" aria-label="เปิดรูปภาพ ${img.cap}">
+      <img src="${img.src}" alt="${img.cap}" loading="lazy" decoding="async">
+      <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
       <div class="gallery-caption">${img.cap}</div>
-    </div>`).join('');
+    </button>`).join('');
+
+  el.dataset.rendered = 'true';
   observeFade();
 }
 
@@ -1776,7 +1790,7 @@ function showPage(page) {
 
   currentPage = page;
   closeMobile();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 
   if (page === 'home') renderHomeCards();
   if (page === 'destinations') renderDestCards(activeFilter);
@@ -1950,6 +1964,8 @@ function initCharts() {
 }
 
 // ===== FADE IN OBSERVER =====
+let fadeObserver = null;
+
 function observeFade() {
   const pending = document.querySelectorAll('.fade-in:not(.visible)');
   if (!pending.length) return;
@@ -1959,16 +1975,20 @@ function observeFade() {
     return;
   }
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
+  if (!fadeObserver) {
+    fadeObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+        fadeObserver.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.06,
+      rootMargin: '0px 0px 100px 0px'
     });
-  }, { threshold: 0.1 });
+  }
 
-  pending.forEach(element => observer.observe(element));
+  pending.forEach(element => fadeObserver.observe(element));
 }
 
 // ===== INIT =====
