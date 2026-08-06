@@ -1561,7 +1561,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "prachin-buri": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],
