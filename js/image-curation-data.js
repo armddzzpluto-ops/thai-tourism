@@ -1772,11 +1772,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "sakon-nakhon": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/sakon-nakhon/gallery-1.webp",
+      "assets/images/provinces/sakon-nakhon/gallery-2.webp",
+      "assets/images/provinces/sakon-nakhon/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Big street in Sakon Nakhon, Thailand",
+      "Empty medium sized Songthaew, seen in Sakon Nakon, Thailand.",
+      "กองบัญชาการมณฑลทหารบกที่ 29 ค่ายกฤษณ์สีวะรา"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/sakon-nakhon/gallery-1.webp",
+        "caption": "Big street in Sakon Nakhon, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Big_street_in_Sakon_Nakhon.JPG"
+      },
+      {
+        "file": "assets/images/provinces/sakon-nakhon/gallery-2.webp",
+        "caption": "Empty medium sized Songthaew, seen in Sakon Nakon, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Empty_Songthaew-Sakon_Nakhon.JPG"
+      },
+      {
+        "file": "assets/images/provinces/sakon-nakhon/gallery-3.webp",
+        "caption": "กองบัญชาการมณฑลทหารบกที่ 29 ค่ายกฤษณ์สีวะรา",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mtb29&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mtb29 (page does not exist)\">Mtb29\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Mtb29-001.jpg"
+      }
+    ]
   },
   "samut-prakan": {
     "status": "needs-curation",
