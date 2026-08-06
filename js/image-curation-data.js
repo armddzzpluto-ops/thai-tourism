@@ -1874,11 +1874,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "samut-songkhram": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/samut-songkhram/gallery-1.webp",
+      "assets/images/provinces/samut-songkhram/gallery-2.webp",
+      "assets/images/provinces/samut-songkhram/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Making of coco sugar (on floating market road)",
+      "Coconut Avenue",
+      "couleur"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/samut-songkhram/gallery-1.webp",
+        "caption": "Making of coco sugar (on floating market road)",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:PA&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:PA (page does not exist)\">PA\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Coco_-_canal.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-songkhram/gallery-2.webp",
+        "caption": "Coconut Avenue",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021065808/http://www.panoramio.com/user/4366445?with_photo_id=66418355\">Phong  Phat G\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Coconut_Avenue_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-songkhram/gallery-3.webp",
+        "caption": "couleur",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/68509?with_photo_id=8605287\">phileon\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Couleur_-_panoramio.jpg"
+      }
+    ]
   },
   "saraburi": {
     "status": "needs-curation",
