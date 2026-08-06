@@ -1568,11 +1568,38 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "prachuap-khiri-khan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
+      "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
+      "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Crystal Lagoons",
+      "Harbour Bang Pu",
+      "Huai Sat Yai, Hua Hin Prachuap Khiri Khan"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
+        "caption": "Crystal Lagoons",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101183102/http://www.panoramio.com/user/5109466?with_photo_id=128056409\">Thaweesak Churasri\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Crystal_Lagoons_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
+        "caption": "Harbour Bang Pu",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011080520/http://www.panoramio.com/user/19953?with_photo_id=122492\">Andreas Hörstemeier\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Harbour_Bang_Pu_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
+        "caption": "Huai Sat Yai, Hua Hin Prachuap Khiri Khan",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014175639/http://www.panoramio.com/user/4312852?with_photo_id=39822121\">All Fronts Quiet\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Sat_Yai,_Hua_Hin_Prachuap_Khiri_Khan_-_panoramio.jpg"
+      }
+    ]
   },
   "ranong": {
     "status": "needs-curation",
