@@ -4110,9 +4110,7 @@
     "galleryImages": [
       "assets/images/provinces/chonburi/gallery-1.webp",
       "assets/images/provinces/chonburi/gallery-2.webp",
-      "assets/images/provinces/chonburi/gallery-3.webp",
-      "assets/images/provinces/chonburi/gallery-4.webp",
-      "assets/images/provinces/chonburi/gallery-5.webp"
+      "assets/images/provinces/chonburi/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -4130,50 +4128,30 @@
         "slug": "chonburi",
         "role": "gallery-1",
         "file": "assets/images/provinces/chonburi/gallery-1.webp",
-        "caption": "Chonburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:110211-M-JF183-033_(5448608116).jpg",
+        "isFallback": false
       },
       {
         "province": "Chonburi",
         "slug": "chonburi",
         "role": "gallery-2",
         "file": "assets/images/provinces/chonburi/gallery-2.webp",
-        "caption": "Chonburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "สวนนงนุช",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E0%B8%AD%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%A1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:อภิราม (page does not exist)\">อภิราม</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20190210_134122%E0%B8%84.jpg",
+        "isFallback": false
       },
       {
         "province": "Chonburi",
         "slug": "chonburi",
         "role": "gallery-3",
         "file": "assets/images/provinces/chonburi/gallery-3.webp",
-        "caption": "Chonburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
-      },
-      {
-        "province": "Chonburi",
-        "slug": "chonburi",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/chonburi/gallery-4.webp",
-        "caption": "Chonburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
-      },
-      {
-        "province": "Chonburi",
-        "slug": "chonburi",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/chonburi/gallery-5.webp",
-        "caption": "Chonburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "Amata City Chonburi",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Paulinski123&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paulinski123 (page does not exist)\">Paulinski123</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amata_City_Chonburi.jpg",
+        "isFallback": false
       }
     ]
   },

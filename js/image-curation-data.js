@@ -449,11 +449,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "chonburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chonburi/gallery-1.webp",
+      "assets/images/provinces/chonburi/gallery-2.webp",
+      "assets/images/provinces/chonburi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)",
+      "สวนนงนุช",
+      "Amata City Chonburi"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chonburi/gallery-1.webp",
+        "caption": "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:110211-M-JF183-033_(5448608116).jpg"
+      },
+      {
+        "file": "assets/images/provinces/chonburi/gallery-2.webp",
+        "caption": "สวนนงนุช",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:%E0%B8%AD%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%A1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:อภิราม (page does not exist)\">อภิราม\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20190210_134122%E0%B8%84.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chonburi/gallery-3.webp",
+        "caption": "Amata City Chonburi",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Paulinski123&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paulinski123 (page does not exist)\">Paulinski123\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amata_City_Chonburi.jpg"
+      }
+    ]
   },
   "chumphon": {
     "status": "complete",
