@@ -101,11 +101,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "bangkok": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/bangkok/gallery-1.webp",
+      "assets/images/provinces/bangkok/gallery-2.webp",
+      "assets/images/provinces/bangkok/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Petrol Station near Soi Ramintra 5",
+      "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
+      "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/bangkok/gallery-1.webp",
+        "caption": "Petrol Station near Soi Ramintra 5",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014201824/http://www.panoramio.com/user/1429473?with_photo_id=34915757\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Petrol_Station_near_Soi_Ramintra_5_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/bangkok/gallery-2.webp",
+        "caption": "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phahonyothin.jpg"
+      },
+      {
+        "file": "assets/images/provinces/bangkok/gallery-3.webp",
+        "caption": "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:GRAD_KU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GRAD KU (page does not exist)\">GRAD KU\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU001.jpg"
+      }
+    ]
   },
   "bueng-kan": {
     "status": "complete",
