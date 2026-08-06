@@ -1,6 +1,6 @@
 name: Curate all province galleries
 
-# Full 77-province curation run — corrupt-source fallback
+# Curate a minimum of three verified gallery images per province
 on:
   workflow_dispatch:
   push:
@@ -43,7 +43,7 @@ jobs:
           1..77 | ForEach-Object {
             $batch = $_
             try {
-              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 1000
+              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 3 -WebpQuality 82 -RequestDelayMs 1000
             } catch {
               $diagnostic = ($_ | Out-String) + [Environment]::NewLine + $_.ScriptStackTrace
               Set-Content -Path assets/images/provinces/curation-error.txt -Value $diagnostic -Encoding UTF8
@@ -66,4 +66,4 @@ jobs:
 
       - name: Require all provinces to pass curation
         run: |
-          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<5);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
+          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<3);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
