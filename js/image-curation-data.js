@@ -615,11 +615,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "krabi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/krabi/gallery-1.webp",
+      "assets/images/provinces/krabi/gallery-2.webp",
+      "assets/images/provinces/krabi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Transport of tourists and luggages from boat to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
+      "Tractor for the transport of tourists and luggages from boats to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
+      "Greetings from the cleaning service"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/krabi/gallery-1.webp",
+        "caption": "Transport of tourists and luggages from boat to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Karelj\" title=\"User:Karelj\">Karelj\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_6.jpg"
+      },
+      {
+        "file": "assets/images/provinces/krabi/gallery-2.webp",
+        "caption": "Tractor for the transport of tourists and luggages from boats to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Karelj\" title=\"User:Karelj\">Karelj\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_7.jpg"
+      },
+      {
+        "file": "assets/images/provinces/krabi/gallery-3.webp",
+        "caption": "Greetings from the cleaning service",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/97702840@N00\">Jukka\u003c/a> from HELSINKI, Finland",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Greetings_from_the_cleaning_service_(12359768683).jpg"
+      }
+    ]
   },
   "lampang": {
     "status": "needs-curation",
