@@ -731,11 +731,38 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "mae-hong-son": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/mae-hong-son/gallery-1.webp",
+      "assets/images/provinces/mae-hong-son/gallery-2.webp",
+      "assets/images/provinces/mae-hong-son/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "เสาธง โรงเรียนปายวิทยาคาร เมื่อปี พ.ศ. 2564",
+      "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the tribe's village. A woman with a handmade string instrument offered to play a soulful music while we rested.",
+      "File:Longneckkaren.jpg"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/mae-hong-son/gallery-1.webp",
+        "caption": "เสาธง โรงเรียนปายวิทยาคาร เมื่อปี พ.ศ. 2564",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Students_of_history&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Students of history (page does not exist)\">Students of history\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Feungfa_Building,_Pai_Wittayakarn_School.jpg"
+      },
+      {
+        "file": "assets/images/provinces/mae-hong-son/gallery-2.webp",
+        "caption": "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the tribe's village. A woman with a handmade string instrument offered to play a soulful music while we rested.",
+        "photoCredit": "Pithawat Vachiramon",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Karen_woman_playing_instrument_Mae_Hong_Son_Province_THAILAND_March_2012.jpg"
+      },
+      {
+        "file": "assets/images/provinces/mae-hong-son/gallery-3.webp",
+        "caption": "File:Longneckkaren.jpg",
+        "photoCredit": "Plenz",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Longneckkaren.jpg"
+      }
+    ]
   },
   "maha-sarakham": {
     "status": "needs-curation",
