@@ -1425,11 +1425,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phitsanulok": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phitsanulok/gallery-1.webp",
+      "assets/images/provinces/phitsanulok/gallery-2.webp",
+      "assets/images/provinces/phitsanulok/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Allison Bak, U.S. Marine Corps/Released)",
+      "In Naresuan University",
+      "Fay school"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phitsanulok/gallery-1.webp",
+        "caption": "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Allison Bak, U.S. Marine Corps/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:130220-M-NN153-052_(8510743972).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phitsanulok/gallery-2.webp",
+        "caption": "In Naresuan University",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:SemChamp1999&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:SemChamp1999 (page does not exist)\">SemChamp1999\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Champjg.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phitsanulok/gallery-3.webp",
+        "caption": "Fay school",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Noenmaprang\" title=\"User:Noenmaprang\">Noenmaprang\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Fairy-girl.jpg"
+      }
+    ]
   },
   "phra-nakhon-si-ayutthaya": {
     "status": "needs-curation",
