@@ -1153,11 +1153,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "pathum-thani": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/pathum-thani/gallery-1.webp",
+      "assets/images/provinces/pathum-thani/gallery-2.webp",
+      "assets/images/provinces/pathum-thani/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "100-Year Rahaeng Market",
+      "ทางหลวงแผ่นดินหมายเลข 307 บริเวณหน้าห้างสรรพสินค้าบิ๊กซี สาขาปทุมธานี",
+      "ทางหลวงแผ่นดินหมายเลข 3111 บริเวณด้านหน้าศาลากลางจังหวัดปทุมธานี"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/pathum-thani/gallery-1.webp",
+        "caption": "100-Year Rahaeng Market",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wittawat_earth&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wittawat earth (page does not exist)\">Wittawat earth\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:100year.jpg"
+      },
+      {
+        "file": "assets/images/provinces/pathum-thani/gallery-2.webp",
+        "caption": "ทางหลวงแผ่นดินหมายเลข 307 บริเวณหน้าห้างสรรพสินค้าบิ๊กซี สาขาปทุมธานี",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:307roadthai.jpg"
+      },
+      {
+        "file": "assets/images/provinces/pathum-thani/gallery-3.webp",
+        "caption": "ทางหลวงแผ่นดินหมายเลข 3111 บริเวณด้านหน้าศาลากลางจังหวัดปทุมธานี",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:3111_Roadthai.jpg"
+      }
+    ]
   },
   "pattani": {
     "status": "needs-curation",
