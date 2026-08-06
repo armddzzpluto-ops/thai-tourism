@@ -4162,9 +4162,7 @@
     "galleryImages": [
       "assets/images/provinces/loei/gallery-1.webp",
       "assets/images/provinces/loei/gallery-2.webp",
-      "assets/images/provinces/loei/gallery-3.webp",
-      "assets/images/provinces/loei/gallery-4.webp",
-      "assets/images/provinces/loei/gallery-5.webp"
+      "assets/images/provinces/loei/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -4182,50 +4180,30 @@
         "slug": "loei",
         "role": "gallery-1",
         "file": "assets/images/provinces/loei/gallery-1.webp",
-        "caption": "Loei tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "Attractions in Loei province",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kunkawee72308&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kunkawee72308 (page does not exist)\">Kunkawee72308</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Attractions_in_Loei_province.png",
+        "isFallback": false
       },
       {
         "province": "Loei",
         "slug": "loei",
         "role": "gallery-2",
         "file": "assets/images/provinces/loei/gallery-2.webp",
-        "caption": "Loei tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "Highway 21 Junction in Phu Rua, Loei",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Swtcha007&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Swtcha007 (page does not exist)\">Swtcha007</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Highway-21_Loei.jpg",
+        "isFallback": false
       },
       {
         "province": "Loei",
         "slug": "loei",
         "role": "gallery-3",
         "file": "assets/images/provinces/loei/gallery-3.webp",
-        "caption": "Loei tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
-      },
-      {
-        "province": "Loei",
-        "slug": "loei",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/loei/gallery-4.webp",
-        "caption": "Loei tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
-      },
-      {
-        "province": "Loei",
-        "slug": "loei",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/loei/gallery-5.webp",
-        "caption": "Loei tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "local-fallback",
-        "isFallback": true
+        "caption": "File:Loei 101.71354E 17.47772N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Loei_101.71354E_17.47772N.jpg",
+        "isFallback": false
       }
     ]
   },

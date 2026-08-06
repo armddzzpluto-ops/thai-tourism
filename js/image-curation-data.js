@@ -771,11 +771,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "loei": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/loei/gallery-1.webp",
+      "assets/images/provinces/loei/gallery-2.webp",
+      "assets/images/provinces/loei/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Attractions in Loei province",
+      "Highway 21 Junction in Phu Rua, Loei",
+      "File:Loei 101.71354E 17.47772N.jpg"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/loei/gallery-1.webp",
+        "caption": "Attractions in Loei province",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kunkawee72308&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kunkawee72308 (page does not exist)\">Kunkawee72308\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Attractions_in_Loei_province.png"
+      },
+      {
+        "file": "assets/images/provinces/loei/gallery-2.webp",
+        "caption": "Highway 21 Junction in Phu Rua, Loei",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Swtcha007&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Swtcha007 (page does not exist)\">Swtcha007\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Highway-21_Loei.jpg"
+      },
+      {
+        "file": "assets/images/provinces/loei/gallery-3.webp",
+        "caption": "File:Loei 101.71354E 17.47772N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Loei_101.71354E_17.47772N.jpg"
+      }
+    ]
   },
   "lop-buri": {
     "status": "needs-curation",
