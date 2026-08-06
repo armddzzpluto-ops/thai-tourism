@@ -72,7 +72,7 @@ function Resolve-WikimediaProvinceName {
     'Buri Ram' = 'Buriram'
     'Chai Nat' = 'Chainat'
     'Lop Buri' = 'Lopburi'
-    'Nong Bua Lamphu' = 'Nong Bua Lam Phu'
+    'Nong Bua Lamphu' = 'Nongbua Lamphu'
     'Prachin Buri' = 'Prachinburi'
     'Si Sa Ket' = 'Sisaket'
   }
