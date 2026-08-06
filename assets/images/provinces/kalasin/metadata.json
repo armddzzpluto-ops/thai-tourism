@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Kalasin",
-    "slug":  "kalasin",
-    "heroImage":  "assets/images/provinces/kalasin/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/kalasin/gallery-1.webp",
-                          "assets/images/provinces/kalasin/gallery-2.webp",
-                          "assets/images/provinces/kalasin/gallery-3.webp",
-                          "assets/images/provinces/kalasin/gallery-4.webp",
-                          "assets/images/provinces/kalasin/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/kalasin/hero.webp",
-                            "caption":  "Kalasin tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/kalasin/gallery-1.webp",
-                            "caption":  "Kalasin tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/kalasin/gallery-2.webp",
-                            "caption":  "Kalasin tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/kalasin/gallery-3.webp",
-                            "caption":  "Kalasin tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/kalasin/gallery-4.webp",
-                            "caption":  "Kalasin tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kalasin",
-                            "slug":  "kalasin",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/kalasin/gallery-5.webp",
-                            "caption":  "Kalasin tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Kalasin",
+  "slug": "kalasin",
+  "heroImage": "assets/images/provinces/kalasin/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/kalasin/gallery-1.webp",
+    "assets/images/provinces/kalasin/gallery-2.webp",
+    "assets/images/provinces/kalasin/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "hero",
+      "file": "assets/images/provinces/kalasin/hero.webp",
+      "caption": "Kalasin tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Phan%20Mountains%20-%20view%20from%20Wat%20Tham%20Kham.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/kalasin/gallery-1.webp",
+      "caption": "Dirt Bike Tuk-Tuk Conversion - Kalasin, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Dirt_Bike_Tuk-Tuk_Conversion_-_Kalasin_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/kalasin/gallery-2.webp",
+      "caption": "Drink Vendor Motorbike with Sidecar (Sign reads: \"Traditional Coffee\") - Temple on the Mountain, Kalasin, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Food_Vendor_Motorbike_with_Sidecar_-_Temple_on_the_Mountain_Kalasin_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/kalasin/gallery-3.webp",
+      "caption": "Gull Wing Door Soda Delivery Truck - Kalasin, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/15965815@N00\">Marshall Astor</a> from Olympia, WA, United States",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Gull_Wing_Door_Soda_Delivery_Truck_-_Kalasin,_Thailand_(2474152740).jpg",
+      "isFallback": false
+    }
+  ]
 }

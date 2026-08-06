@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Tak",
-    "slug":  "tak",
-    "heroImage":  "assets/images/provinces/tak/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/tak/gallery-1.webp",
-                          "assets/images/provinces/tak/gallery-2.webp",
-                          "assets/images/provinces/tak/gallery-3.webp",
-                          "assets/images/provinces/tak/gallery-4.webp",
-                          "assets/images/provinces/tak/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/tak/hero.webp",
-                            "caption":  "Tak tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/tak/gallery-1.webp",
-                            "caption":  "Tak tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/tak/gallery-2.webp",
-                            "caption":  "Tak tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/tak/gallery-3.webp",
-                            "caption":  "Tak tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/tak/gallery-4.webp",
-                            "caption":  "Tak tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Tak",
-                            "slug":  "tak",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/tak/gallery-5.webp",
-                            "caption":  "Tak tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Tak",
+  "slug": "tak",
+  "heroImage": "assets/images/provinces/tak/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/tak/gallery-1.webp",
+    "assets/images/provinces/tak/gallery-2.webp",
+    "assets/images/provinces/tak/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "hero",
+      "file": "assets/images/provinces/tak/hero.webp",
+      "caption": "Tak tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Tak%20of%20Ping%20river.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/tak/gallery-1.webp",
+      "caption": "<i>Bouganvillea glabra</i> flowers in Tak Province, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak_1.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/tak/gallery-2.webp",
+      "caption": "<i>Bouganvillea glabra</i> flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/tak/gallery-3.webp",
+      "caption": "Brahman cow in Tak Province, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Brahman_Thai_cow.jpg",
+      "isFallback": false
+    }
+  ]
 }

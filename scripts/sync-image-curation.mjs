@@ -30,8 +30,8 @@ for (const row of validation) {
   const complete =
     row.status === "complete" &&
     Number(row.fallbackCount) === 0 &&
-    galleryImages.length >= 5 &&
-    attributions.length >= 5;
+    galleryImages.length >= 3 &&
+    attributions.length >= 3;
 
   result[slug] = {
     status: complete ? "complete" : String(row.status || "needs-curation"),

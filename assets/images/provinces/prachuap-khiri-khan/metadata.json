@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Prachuap Khiri Khan",
-    "slug":  "prachuap-khiri-khan",
-    "heroImage":  "assets/images/provinces/prachuap-khiri-khan/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
-                          "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
-                          "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
-                          "assets/images/provinces/prachuap-khiri-khan/gallery-4.webp",
-                          "assets/images/provinces/prachuap-khiri-khan/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/hero.webp",
-                            "caption":  "Prachuap Khiri Khan tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
-                            "caption":  "Prachuap Khiri Khan tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
-                            "caption":  "Prachuap Khiri Khan tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
-                            "caption":  "Prachuap Khiri Khan tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/gallery-4.webp",
-                            "caption":  "Prachuap Khiri Khan tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Prachuap Khiri Khan",
-                            "slug":  "prachuap-khiri-khan",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/prachuap-khiri-khan/gallery-5.webp",
-                            "caption":  "Prachuap Khiri Khan tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Prachuap Khiri Khan",
+  "slug": "prachuap-khiri-khan",
+  "heroImage": "assets/images/provinces/prachuap-khiri-khan/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
+    "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
+    "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "hero",
+      "file": "assets/images/provinces/prachuap-khiri-khan/hero.webp",
+      "caption": "Prachuap Khiri Khan tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Hat%20Laem%20Sala.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
+      "caption": "Crystal Lagoons",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101183102/http://www.panoramio.com/user/5109466?with_photo_id=128056409\">Thaweesak Churasri</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Crystal_Lagoons_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
+      "caption": "Harbour Bang Pu",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011080520/http://www.panoramio.com/user/19953?with_photo_id=122492\">Andreas Hörstemeier</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Harbour_Bang_Pu_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
+      "caption": "Huai Sat Yai, Hua Hin Prachuap Khiri Khan",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014175639/http://www.panoramio.com/user/4312852?with_photo_id=39822121\">All Fronts Quiet</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Sat_Yai,_Hua_Hin_Prachuap_Khiri_Khan_-_panoramio.jpg",
+      "isFallback": false
+    }
+  ]
 }

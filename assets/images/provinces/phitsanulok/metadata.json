@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Phitsanulok",
-    "slug":  "phitsanulok",
-    "heroImage":  "assets/images/provinces/phitsanulok/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/phitsanulok/gallery-1.webp",
-                          "assets/images/provinces/phitsanulok/gallery-2.webp",
-                          "assets/images/provinces/phitsanulok/gallery-3.webp",
-                          "assets/images/provinces/phitsanulok/gallery-4.webp",
-                          "assets/images/provinces/phitsanulok/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/phitsanulok/hero.webp",
-                            "caption":  "Phitsanulok tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/phitsanulok/gallery-1.webp",
-                            "caption":  "Phitsanulok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/phitsanulok/gallery-2.webp",
-                            "caption":  "Phitsanulok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/phitsanulok/gallery-3.webp",
-                            "caption":  "Phitsanulok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/phitsanulok/gallery-4.webp",
-                            "caption":  "Phitsanulok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phitsanulok",
-                            "slug":  "phitsanulok",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/phitsanulok/gallery-5.webp",
-                            "caption":  "Phitsanulok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Phitsanulok",
+  "slug": "phitsanulok",
+  "heroImage": "assets/images/provinces/phitsanulok/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/phitsanulok/gallery-1.webp",
+    "assets/images/provinces/phitsanulok/gallery-2.webp",
+    "assets/images/provinces/phitsanulok/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "hero",
+      "file": "assets/images/provinces/phitsanulok/hero.webp",
+      "caption": "Phitsanulok tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B82%20-%20panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/phitsanulok/gallery-1.webp",
+      "caption": "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Allison Bak, U.S. Marine Corps/Released)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:130220-M-NN153-052_(8510743972).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/phitsanulok/gallery-2.webp",
+      "caption": "In Naresuan University",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:SemChamp1999&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:SemChamp1999 (page does not exist)\">SemChamp1999</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Champjg.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/phitsanulok/gallery-3.webp",
+      "caption": "Fay school",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Noenmaprang\" title=\"User:Noenmaprang\">Noenmaprang</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Fairy-girl.jpg",
+      "isFallback": false
+    }
+  ]
 }

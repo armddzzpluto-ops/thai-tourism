@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Buri Ram",
-    "slug":  "buri-ram",
-    "heroImage":  "assets/images/provinces/buri-ram/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/buri-ram/gallery-1.webp",
-                          "assets/images/provinces/buri-ram/gallery-2.webp",
-                          "assets/images/provinces/buri-ram/gallery-3.webp",
-                          "assets/images/provinces/buri-ram/gallery-4.webp",
-                          "assets/images/provinces/buri-ram/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/buri-ram/hero.webp",
-                            "caption":  "Buri Ram tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/buri-ram/gallery-1.webp",
-                            "caption":  "Buri Ram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/buri-ram/gallery-2.webp",
-                            "caption":  "Buri Ram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/buri-ram/gallery-3.webp",
-                            "caption":  "Buri Ram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/buri-ram/gallery-4.webp",
-                            "caption":  "Buri Ram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Buri Ram",
-                            "slug":  "buri-ram",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/buri-ram/gallery-5.webp",
-                            "caption":  "Buri Ram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Buri Ram",
+  "slug": "buri-ram",
+  "heroImage": "assets/images/provinces/buri-ram/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/buri-ram/gallery-1.webp",
+    "assets/images/provinces/buri-ram/gallery-2.webp",
+    "assets/images/provinces/buri-ram/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Buri Ram",
+      "slug": "buri-ram",
+      "role": "hero",
+      "file": "assets/images/provinces/buri-ram/hero.webp",
+      "caption": "Buri Ram tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phanom%20Rung%20Wikimedia%20Commons.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Buri Ram",
+      "slug": "buri-ram",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/buri-ram/gallery-1.webp",
+      "caption": "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Media_lib&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Media lib (page does not exist)\">Media lib</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Buriram_Bsp_1995-99.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Buri Ram",
+      "slug": "buri-ram",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/buri-ram/gallery-2.webp",
+      "caption": "Gross Provincial Product (GPP) der Provinz Buriram (in Mio. Baht, zum gültigen Marktpreis)",
+      "photoCredit": "World24",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:GPP_Buriram.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Buri Ram",
+      "slug": "buri-ram",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/buri-ram/gallery-3.webp",
+      "caption": "Aerial view inside Phutthaisong School",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wiraphat_Raksat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wiraphat Raksat (page does not exist)\">Wiraphat Raksat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B9%84%E0%B8%98%E0%B8%AA%E0%B8%87.jpg",
+      "isFallback": false
+    }
+  ]
 }

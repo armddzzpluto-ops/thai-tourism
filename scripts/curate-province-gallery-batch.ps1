@@ -2,7 +2,7 @@ param(
   [int]$BatchIndex = 1,
   [int]$BatchSize = 10,
   [string[]]$ProvinceSlugs = @(),
-  [int]$TargetGallery = 5,
+  [int]$TargetGallery = 3,
   [int]$WebpQuality = 82,
   [int]$RequestDelayMs = 900,
   [switch]$DryRun
@@ -34,16 +34,20 @@ function Invoke-WithRetry {
 function Resolve-Cwebp {
   $cmd = Get-Command cwebp -ErrorAction SilentlyContinue
   if ($cmd) {
-    return $cmd.Source
+    if ($cmd.Path) { return $cmd.Path }
+    if ($cmd.Source) { return $cmd.Source }
   }
 
-  $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
-  $found = Get-ChildItem $wingetPackages -Recurse -Filter cwebp.exe -ErrorAction SilentlyContinue | Select-Object -First 1
-  if ($found) {
-    return $found.FullName
+  # WinGet fallback is Windows-only; LOCALAPPDATA is unset on Linux runners.
+  if ($env:LOCALAPPDATA) {
+    $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
+    $found = Get-ChildItem $wingetPackages -Recurse -Filter cwebp.exe -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($found) {
+      return $found.FullName
+    }
   }
 
-  throw 'cwebp.exe not found. Install Google.Libwebp first (winget install Google.Libwebp).'
+  throw 'cwebp was not found. Install the WebP command-line tools before running curation.'
 }
 
 function Convert-ToWebp {
@@ -61,10 +65,28 @@ function Convert-ToWebp {
   }
 }
 
+function Resolve-WikimediaProvinceName {
+  param([string]$Province)
+
+  $aliases = @{
+    'Buri Ram' = 'Buriram'
+    'Chai Nat' = 'Chainat'
+    'Lop Buri' = 'Lopburi'
+    'Nong Bua Lamphu' = 'Nongbua Lamphu'
+    'Prachin Buri' = 'Prachinburi'
+    'Si Sa Ket' = 'Sisaket'
+  }
+
+  if ($aliases.ContainsKey($Province)) {
+    return $aliases[$Province]
+  }
+  return $Province
+}
+
 function Get-ProvinceCategoryCandidates {
   param([string]$Province)
 
-  $name = $Province.Trim()
+  $name = (Resolve-WikimediaProvinceName -Province $Province).Trim()
   $escaped = $name -replace ' ', '_'
   return @(
     "Category:Tourism_in_${escaped}_Province",
@@ -111,7 +133,7 @@ function Get-CommonsFilesFromCategory {
   $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
 
   $response = Invoke-WithRetry -Action {
-    Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+    Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
   }
 
   if (-not $response.query.pages) {
@@ -127,7 +149,7 @@ function Get-CommonsFilesFromCategory {
 
     $mime = [string]$info.mime
     if (-not $mime.StartsWith('image/')) { continue }
-    if ($mime -match 'svg|tiff') { continue }
+    if ($mime -match 'svg|tiff|gif|webp') { continue }
 
     $title = [string]$page.title
     if ($title -match '(?i)map|flag|coat of arms|emblem|logo|seal|locator|diagram|administrative|district map') { continue }
@@ -142,8 +164,8 @@ function Get-CommonsFilesFromCategory {
     $source = [string]$info.descriptionurl
     if (-not $source) { $source = [string]$info.url }
 
-    $downloadUrl = [string]$info.thumburl
-    if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+    $downloadUrl = [string]$info.url
+    if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
     if (-not $downloadUrl) { continue }
 
     $out += (New-CandidateObject -Title $title -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -155,7 +177,10 @@ function Get-CommonsFilesFromCategory {
 function Get-WikipediaImageCandidates {
   param([string]$Province)
 
+  $wikimediaProvince = Resolve-WikimediaProvinceName -Province $Province
   $pageCandidates = @(
+    "${wikimediaProvince} Province",
+    "$wikimediaProvince",
     "${Province} Province",
     "$Province"
   )
@@ -173,7 +198,7 @@ function Get-WikipediaImageCandidates {
       }
       $uri = $api + '?' + (($query.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
       $response = Invoke-WithRetry -Action {
-        Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+        Invoke-RestMethod -Method Get -Uri $uri -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
       }
 
       $pages = $response.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
@@ -192,7 +217,7 @@ function Get-WikipediaImageCandidates {
         }
         $commonsApi = 'https://commons.wikimedia.org/w/api.php?' + (($commonsQuery.GetEnumerator() | ForEach-Object { "{0}={1}" -f $_.Key, [uri]::EscapeDataString($_.Value) }) -join '&')
         $commonsRes = Invoke-WithRetry -Action {
-          Invoke-RestMethod -Method Get -Uri $commonsApi -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
+          Invoke-RestMethod -Method Get -Uri $commonsApi -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
         }
         $commonsPages = $commonsRes.query.pages.PSObject.Properties | ForEach-Object { $_.Value }
         foreach ($cp in $commonsPages) {
@@ -200,7 +225,7 @@ function Get-WikipediaImageCandidates {
           if (-not $info) { continue }
           $mime = [string]$info.mime
           if (-not $mime.StartsWith('image/')) { continue }
-          if ($mime -match 'svg|tiff') { continue }
+          if ($mime -match 'svg|tiff|gif|webp') { continue }
 
           $caption = [string]$info.extmetadata.ImageDescription.value
           if (-not $caption) { $caption = [string]$img.title }
@@ -209,8 +234,8 @@ function Get-WikipediaImageCandidates {
           if (-not $credit) { $credit = 'Wikimedia Commons contributor' }
           $source = [string]$info.descriptionurl
           if (-not $source) { $source = [string]$info.url }
-          $downloadUrl = [string]$info.thumburl
-          if (-not $downloadUrl) { $downloadUrl = [string]$info.url }
+          $downloadUrl = [string]$info.url
+          if (-not $downloadUrl) { $downloadUrl = [string]$info.thumburl }
           if (-not $downloadUrl) { continue }
 
           $result += (New-CandidateObject -Title ([string]$img.title) -Caption $caption -Credit $credit -Source $source -DownloadUrl $downloadUrl)
@@ -278,6 +303,22 @@ foreach ($provinceMeta in $batch) {
   $province = [string]$provinceMeta.province
   $slug = [string]$provinceMeta.slug
   $heroImage = [string]$provinceMeta.heroImage
+
+  # Resume safely: do not download a province again after a verified batch commit.
+  $existingValidation = @($validation | Where-Object { [string]$_.slug -eq $slug }) | Select-Object -First 1
+  if ($existingValidation -and
+      [string]$existingValidation.status -eq 'complete' -and
+      [int]$existingValidation.fallbackCount -eq 0 -and
+      [int]$existingValidation.galleryCount -ge $TargetGallery) {
+    $batchReport += [pscustomobject]@{
+      province = $province
+      slug = $slug
+      status = 'curated'
+      curatedCount = [int]$existingValidation.galleryCount
+    }
+    continue
+  }
+
   $heroAttribution = @($provinceMeta.attribution | Where-Object { $_.role -eq 'hero' }) | Select-Object -First 1
   $heroSource = if ($heroAttribution) { [string]$heroAttribution.imageSource } else { '' }
 
@@ -311,7 +352,7 @@ foreach ($provinceMeta in $batch) {
   $seen = @{}
 
   foreach ($candidate in $candidatePool) {
-    if ($picked.Count -ge $TargetGallery) { break }
+    if ($picked.Count -ge ($TargetGallery * 4)) { break }
 
     $key = ([string]$candidate.title).ToLowerInvariant()
     if (-not $key) { continue }
@@ -337,37 +378,61 @@ foreach ($provinceMeta in $batch) {
   $newGalleryPaths = @()
   $newAttribution = @()
 
-  for ($i = 0; $i -lt $TargetGallery; $i++) {
-    $idx = $i + 1
-    $candidate = $picked[$i]
+  foreach ($candidate in $picked) {
+    if ($newGalleryPaths.Count -ge $TargetGallery) { break }
 
+    $idx = $newGalleryPaths.Count + 1
     $galleryRel = "assets/images/provinces/$slug/gallery-$idx.webp"
     $galleryPath = Join-Path $provinceDir "gallery-$idx.webp"
-    $tempPath = Join-Path $env:TEMP ("curate-{0}-{1}-{2}.jpg" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
+    $tempRoot = [System.IO.Path]::GetTempPath()
+    $tempPath = Join-Path $tempRoot ("curate-{0}-{1}-{2}.img" -f $slug, $idx, [guid]::NewGuid().ToString('N'))
 
-    if (-not $DryRun) {
-      Invoke-WithRetry -Action {
-        Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -Headers @{ 'User-Agent' = 'ThailandTravelGuideCurator/1.0' }
-      } | Out-Null
-      Start-Sleep -Milliseconds $RequestDelayMs
-      Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
+    try {
+      if (-not $DryRun) {
+        Invoke-WithRetry -MaxAttempts 2 -InitialDelaySeconds 1 -Action {
+          Invoke-WebRequest -Uri $candidate.downloadUrl -OutFile $tempPath -TimeoutSec 20 -Headers @{ 'User-Agent' = 'ThaiTourismGalleryCurator/1.0 (https://github.com/armddzzpluto-ops/thai-tourism)' }
+        } | Out-Null
+        Start-Sleep -Milliseconds $RequestDelayMs
+        Convert-ToWebp -Cwebp $cwebp -InputPath $tempPath -OutputPath $galleryPath -Quality $WebpQuality
+      }
+
+      $newGalleryPaths += $galleryRel
+      $newAttribution += [ordered]@{
+        province = $province
+        slug = $slug
+        role = "gallery-$idx"
+        file = $galleryRel
+        caption = [string]$candidate.caption
+        photoCredit = [string]$candidate.credit
+        imageSource = [string]$candidate.source
+        isFallback = $false
+      }
+    } catch {
+      # A single corrupt or unsupported Commons file must not fail the province.
+      if (Test-Path $galleryPath) {
+        Remove-Item $galleryPath -Force -ErrorAction SilentlyContinue
+      }
+    } finally {
+      if (Test-Path $tempPath) {
+        Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
+      }
     }
+  }
 
-    if (Test-Path $tempPath) {
-      Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
+  if ($newGalleryPaths.Count -lt $TargetGallery) {
+    foreach ($partialPath in $newGalleryPaths) {
+      $absolutePartial = Join-Path $repoRoot $partialPath
+      if (Test-Path $absolutePartial) {
+        Remove-Item $absolutePartial -Force -ErrorAction SilentlyContinue
+      }
     }
-
-    $newGalleryPaths += $galleryRel
-    $newAttribution += [ordered]@{
+    $batchReport += [pscustomobject]@{
       province = $province
       slug = $slug
-      role = "gallery-$idx"
-      file = $galleryRel
-      caption = [string]$candidate.caption
-      photoCredit = [string]$candidate.credit
-      imageSource = [string]$candidate.source
-      isFallback = $false
+      status = 'insufficient-convertible-candidates'
+      curatedCount = $newGalleryPaths.Count
     }
+    continue
   }
 
   $provinceMeta.galleryImages = $newGalleryPaths

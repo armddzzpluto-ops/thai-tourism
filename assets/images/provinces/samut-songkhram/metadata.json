@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Samut Songkhram",
-    "slug":  "samut-songkhram",
-    "heroImage":  "assets/images/provinces/samut-songkhram/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/samut-songkhram/gallery-1.webp",
-                          "assets/images/provinces/samut-songkhram/gallery-2.webp",
-                          "assets/images/provinces/samut-songkhram/gallery-3.webp",
-                          "assets/images/provinces/samut-songkhram/gallery-4.webp",
-                          "assets/images/provinces/samut-songkhram/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/samut-songkhram/hero.webp",
-                            "caption":  "Samut Songkhram tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/samut-songkhram/gallery-1.webp",
-                            "caption":  "Samut Songkhram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/samut-songkhram/gallery-2.webp",
-                            "caption":  "Samut Songkhram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/samut-songkhram/gallery-3.webp",
-                            "caption":  "Samut Songkhram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/samut-songkhram/gallery-4.webp",
-                            "caption":  "Samut Songkhram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Samut Songkhram",
-                            "slug":  "samut-songkhram",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/samut-songkhram/gallery-5.webp",
-                            "caption":  "Samut Songkhram tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Samut Songkhram",
+  "slug": "samut-songkhram",
+  "heroImage": "assets/images/provinces/samut-songkhram/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/samut-songkhram/gallery-1.webp",
+    "assets/images/provinces/samut-songkhram/gallery-2.webp",
+    "assets/images/provinces/samut-songkhram/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "hero",
+      "file": "assets/images/provinces/samut-songkhram/hero.webp",
+      "caption": "Samut Songkhram tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Floating%20market.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/samut-songkhram/gallery-1.webp",
+      "caption": "Making of coco sugar (on floating market road)",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:PA&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:PA (page does not exist)\">PA</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Coco_-_canal.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/samut-songkhram/gallery-2.webp",
+      "caption": "Coconut Avenue",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021065808/http://www.panoramio.com/user/4366445?with_photo_id=66418355\">Phong  Phat G</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Coconut_Avenue_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/samut-songkhram/gallery-3.webp",
+      "caption": "couleur",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/68509?with_photo_id=8605287\">phileon</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Couleur_-_panoramio.jpg",
+      "isFallback": false
+    }
+  ]
 }

@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Roi Et",
-    "slug":  "roi-et",
-    "heroImage":  "assets/images/provinces/roi-et/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/roi-et/gallery-1.webp",
-                          "assets/images/provinces/roi-et/gallery-2.webp",
-                          "assets/images/provinces/roi-et/gallery-3.webp",
-                          "assets/images/provinces/roi-et/gallery-4.webp",
-                          "assets/images/provinces/roi-et/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/roi-et/hero.webp",
-                            "caption":  "Roi Et tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/roi-et/gallery-1.webp",
-                            "caption":  "Roi Et tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/roi-et/gallery-2.webp",
-                            "caption":  "Roi Et tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/roi-et/gallery-3.webp",
-                            "caption":  "Roi Et tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/roi-et/gallery-4.webp",
-                            "caption":  "Roi Et tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Roi Et",
-                            "slug":  "roi-et",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/roi-et/gallery-5.webp",
-                            "caption":  "Roi Et tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Roi Et",
+  "slug": "roi-et",
+  "heroImage": "assets/images/provinces/roi-et/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/roi-et/gallery-1.webp",
+    "assets/images/provinces/roi-et/gallery-2.webp",
+    "assets/images/provinces/roi-et/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "hero",
+      "file": "assets/images/provinces/roi-et/hero.webp",
+      "caption": "Roi Et tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20Phuttha%20Rattana.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/roi-et/gallery-1.webp",
+      "caption": "Bungfai Festival Photo in Suwannaphume , Roi ET",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Pleamir&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Pleamir (page does not exist)\">Pleamir</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bung_Fai_Sriphume_01.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/roi-et/gallery-2.webp",
+      "caption": "แปรขบวน",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Peerawit2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Peerawit2 (page does not exist)\">Peerawit2</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:DJI0020.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/roi-et/gallery-3.webp",
+      "caption": "<p>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n</p>\nPhoto: U.Schmidt, 2006",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30703260@N08\">Udo Schmidt</a> from Deutschland",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Enoplotrupes_sharpi_Rothschild_%26_Jordan,_1893_male_(3915826460).jpg",
+      "isFallback": false
+    }
+  ]
 }

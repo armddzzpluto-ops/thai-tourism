@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Surat Thani",
-    "slug":  "surat-thani",
-    "heroImage":  "assets/images/provinces/surat-thani/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/surat-thani/gallery-1.webp",
-                          "assets/images/provinces/surat-thani/gallery-2.webp",
-                          "assets/images/provinces/surat-thani/gallery-3.webp",
-                          "assets/images/provinces/surat-thani/gallery-4.webp",
-                          "assets/images/provinces/surat-thani/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/surat-thani/hero.webp",
-                            "caption":  "Surat Thani tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/surat-thani/gallery-1.webp",
-                            "caption":  "Surat Thani tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/surat-thani/gallery-2.webp",
-                            "caption":  "Surat Thani tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/surat-thani/gallery-3.webp",
-                            "caption":  "Surat Thani tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/surat-thani/gallery-4.webp",
-                            "caption":  "Surat Thani tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Surat Thani",
-                            "slug":  "surat-thani",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/surat-thani/gallery-5.webp",
-                            "caption":  "Surat Thani tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Surat Thani",
+  "slug": "surat-thani",
+  "heroImage": "assets/images/provinces/surat-thani/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/surat-thani/gallery-1.webp",
+    "assets/images/provinces/surat-thani/gallery-2.webp",
+    "assets/images/provinces/surat-thani/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "hero",
+      "file": "assets/images/provinces/surat-thani/hero.webp",
+      "caption": "Surat Thani tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Ao%20Thong%20Nai%20Pan%2C%20Koh%20Phangan%2C%20Thailand%2002-2003.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/surat-thani/gallery-1.webp",
+      "caption": "Chapthawi, Ban Na Doem District, Surat Thani 84240, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101121232/http://www.panoramio.com/user/6667993?with_photo_id=117504480\">กิตติ เลขะกุล</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chapthawi,_Ban_Na_Doem_District,_Surat_Thani_84240,_Thailand_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/surat-thani/gallery-2.webp",
+      "caption": "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_house,_Khao_Sok,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/surat-thani/gallery-3.webp",
+      "caption": "Cheow Lan (lake), Surat Thani, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_houses,_Khao_Sok,_Thailand.jpg",
+      "isFallback": false
+    }
+  ]
 }

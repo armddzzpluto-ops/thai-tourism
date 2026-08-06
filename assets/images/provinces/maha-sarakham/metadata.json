@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Maha Sarakham",
-    "slug":  "maha-sarakham",
-    "heroImage":  "assets/images/provinces/maha-sarakham/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/maha-sarakham/gallery-1.webp",
-                          "assets/images/provinces/maha-sarakham/gallery-2.webp",
-                          "assets/images/provinces/maha-sarakham/gallery-3.webp",
-                          "assets/images/provinces/maha-sarakham/gallery-4.webp",
-                          "assets/images/provinces/maha-sarakham/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/maha-sarakham/hero.webp",
-                            "caption":  "Maha Sarakham tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/maha-sarakham/gallery-1.webp",
-                            "caption":  "Maha Sarakham tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/maha-sarakham/gallery-2.webp",
-                            "caption":  "Maha Sarakham tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/maha-sarakham/gallery-3.webp",
-                            "caption":  "Maha Sarakham tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/maha-sarakham/gallery-4.webp",
-                            "caption":  "Maha Sarakham tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Maha Sarakham",
-                            "slug":  "maha-sarakham",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/maha-sarakham/gallery-5.webp",
-                            "caption":  "Maha Sarakham tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Maha Sarakham",
+  "slug": "maha-sarakham",
+  "heroImage": "assets/images/provinces/maha-sarakham/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/maha-sarakham/gallery-1.webp",
+    "assets/images/provinces/maha-sarakham/gallery-2.webp",
+    "assets/images/provinces/maha-sarakham/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "hero",
+      "file": "assets/images/provinces/maha-sarakham/hero.webp",
+      "caption": "Maha Sarakham tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Cultural%20heritage%20monuments%20at%20Kusuntararam%20Temple.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/maha-sarakham/gallery-1.webp",
+      "caption": "my home",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Rungdiaday&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Rungdiaday (page does not exist)\">Rungdiaday</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Herritage.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/maha-sarakham/gallery-2.webp",
+      "caption": "File:IsaanCow001.jpg",
+      "photoCredit": "Da~commonswiki",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:IsaanCow001.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/maha-sarakham/gallery-3.webp",
+      "caption": "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102124729/http://www.panoramio.com/user/6847270?with_photo_id=98140354\">TonG_CB</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kham_Riang,_Kantharawichai_District,_Maha_Sarakham_44150,_Thailand_-_panoramio_(11).jpg",
+      "isFallback": false
+    }
+  ]
 }

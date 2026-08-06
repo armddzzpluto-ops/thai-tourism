@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Uttaradit",
-    "slug":  "uttaradit",
-    "heroImage":  "assets/images/provinces/uttaradit/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/uttaradit/gallery-1.webp",
-                          "assets/images/provinces/uttaradit/gallery-2.webp",
-                          "assets/images/provinces/uttaradit/gallery-3.webp",
-                          "assets/images/provinces/uttaradit/gallery-4.webp",
-                          "assets/images/provinces/uttaradit/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/uttaradit/hero.webp",
-                            "caption":  "Uttaradit tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/uttaradit/gallery-1.webp",
-                            "caption":  "Uttaradit tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/uttaradit/gallery-2.webp",
-                            "caption":  "Uttaradit tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/uttaradit/gallery-3.webp",
-                            "caption":  "Uttaradit tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/uttaradit/gallery-4.webp",
-                            "caption":  "Uttaradit tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Uttaradit",
-                            "slug":  "uttaradit",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/uttaradit/gallery-5.webp",
-                            "caption":  "Uttaradit tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Uttaradit",
+  "slug": "uttaradit",
+  "heroImage": "assets/images/provinces/uttaradit/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/uttaradit/gallery-1.webp",
+    "assets/images/provinces/uttaradit/gallery-2.webp",
+    "assets/images/provinces/uttaradit/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "hero",
+      "file": "assets/images/provinces/uttaradit/hero.webp",
+      "caption": "Uttaradit tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phraya%20Phichai%20Dap%20Hak%20Monument.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/uttaradit/gallery-1.webp",
+      "caption": "Ban Nam Rid, Uttaradit",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_01.png",
+      "isFallback": false
+    },
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/uttaradit/gallery-2.webp",
+      "caption": "Ban Nam Rid, Uttaradit",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_02.png",
+      "isFallback": false
+    },
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/uttaradit/gallery-3.webp",
+      "caption": "Ban Wang Din",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_1.png",
+      "isFallback": false
+    }
+  ]
 }

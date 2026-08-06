@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Phetchabun",
-    "slug":  "phetchabun",
-    "heroImage":  "assets/images/provinces/phetchabun/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/phetchabun/gallery-1.webp",
-                          "assets/images/provinces/phetchabun/gallery-2.webp",
-                          "assets/images/provinces/phetchabun/gallery-3.webp",
-                          "assets/images/provinces/phetchabun/gallery-4.webp",
-                          "assets/images/provinces/phetchabun/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/phetchabun/hero.webp",
-                            "caption":  "Phetchabun tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/phetchabun/gallery-1.webp",
-                            "caption":  "Phetchabun tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/phetchabun/gallery-2.webp",
-                            "caption":  "Phetchabun tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/phetchabun/gallery-3.webp",
-                            "caption":  "Phetchabun tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/phetchabun/gallery-4.webp",
-                            "caption":  "Phetchabun tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phetchabun",
-                            "slug":  "phetchabun",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/phetchabun/gallery-5.webp",
-                            "caption":  "Phetchabun tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Phetchabun",
+  "slug": "phetchabun",
+  "heroImage": "assets/images/provinces/phetchabun/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/phetchabun/gallery-1.webp",
+    "assets/images/provinces/phetchabun/gallery-2.webp",
+    "assets/images/provinces/phetchabun/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "hero",
+      "file": "assets/images/provinces/phetchabun/hero.webp",
+      "caption": "Phetchabun tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phu%20Ruea%20View.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/phetchabun/gallery-1.webp",
+      "caption": "Thailand",
+      "photoCredit": "Kawin Harasai <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@kawin\">kawin</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Artsy_Tablescape_(Unsplash).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/phetchabun/gallery-2.webp",
+      "caption": "mini Big C. Opened in December 2019 on Route 21, in Ban Klang, Si Thep District, Phetchabun Province, Thailand",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:KusiD\" title=\"User:KusiD\">KusiD</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:AS_mini_Big_C.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/phetchabun/gallery-3.webp",
+      "caption": "Vietnam",
+      "photoCredit": "paul morris <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@oldskool2016\">oldskool2016</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Beans_and_Spices_(Unsplash).jpg",
+      "isFallback": false
+    }
+  ]
 }

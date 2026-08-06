@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Narathiwat",
-    "slug":  "narathiwat",
-    "heroImage":  "assets/images/provinces/narathiwat/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/narathiwat/gallery-1.webp",
-                          "assets/images/provinces/narathiwat/gallery-2.webp",
-                          "assets/images/provinces/narathiwat/gallery-3.webp",
-                          "assets/images/provinces/narathiwat/gallery-4.webp",
-                          "assets/images/provinces/narathiwat/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/narathiwat/hero.webp",
-                            "caption":  "Narathiwat tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/narathiwat/gallery-1.webp",
-                            "caption":  "Narathiwat tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/narathiwat/gallery-2.webp",
-                            "caption":  "Narathiwat tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/narathiwat/gallery-3.webp",
-                            "caption":  "Narathiwat tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/narathiwat/gallery-4.webp",
-                            "caption":  "Narathiwat tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Narathiwat",
-                            "slug":  "narathiwat",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/narathiwat/gallery-5.webp",
-                            "caption":  "Narathiwat tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Narathiwat",
+  "slug": "narathiwat",
+  "heroImage": "assets/images/provinces/narathiwat/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/narathiwat/gallery-1.webp",
+    "assets/images/provinces/narathiwat/gallery-2.webp",
+    "assets/images/provinces/narathiwat/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "hero",
+      "file": "assets/images/provinces/narathiwat/hero.webp",
+      "caption": "Narathiwat tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Fishing%20Village%20in%20Narathiwat.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/narathiwat/gallery-1.webp",
+      "caption": "Fishing Village in Narathiwat",
+      "photoCredit": "by preetamrai",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Fishing_Village_in_Narathiwat.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/narathiwat/gallery-2.webp",
+      "caption": "Kaluwo Nuea, Mueang Narathiwat District, Narathiwat 96000, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101231836/http://www.panoramio.com/user/6667993?with_photo_id=129775819\">กิตติ เลขะกุล</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kaluwo_Nuea,_Mueang_Narathiwat_District,_Narathiwat_96000,_Thailand_-_panoramio_(1).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/narathiwat/gallery-3.webp",
+      "caption": "Khok Khian, Mueang Narathiwat District, Narathiwat, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031052923/http://www.panoramio.com/user/6667993?with_photo_id=128164678\">กิตติ เลขะกุล</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Khian,_Mueang_Narathiwat_District,_Narathiwat,_Thailand_-_panoramio.jpg",
+      "isFallback": false
+    }
+  ]
 }
