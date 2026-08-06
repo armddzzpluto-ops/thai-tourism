@@ -1704,11 +1704,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "roi-et": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/roi-et/gallery-1.webp",
+      "assets/images/provinces/roi-et/gallery-2.webp",
+      "assets/images/provinces/roi-et/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Bungfai Festival Photo in Suwannaphume , Roi ET",
+      "แปรขบวน",
+      "\u003cp>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n\u003c/p>\nPhoto: U.Schmidt, 2006"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/roi-et/gallery-1.webp",
+        "caption": "Bungfai Festival Photo in Suwannaphume , Roi ET",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Pleamir&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Pleamir (page does not exist)\">Pleamir\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bung_Fai_Sriphume_01.jpg"
+      },
+      {
+        "file": "assets/images/provinces/roi-et/gallery-2.webp",
+        "caption": "แปรขบวน",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Peerawit2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Peerawit2 (page does not exist)\">Peerawit2\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:DJI0020.jpg"
+      },
+      {
+        "file": "assets/images/provinces/roi-et/gallery-3.webp",
+        "caption": "\u003cp>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n\u003c/p>\nPhoto: U.Schmidt, 2006",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30703260@N08\">Udo Schmidt\u003c/a> from Deutschland",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Enoplotrupes_sharpi_Rothschild_%26_Jordan,_1893_male_(3915826460).jpg"
+      }
+    ]
   },
   "sa-kaeo": {
     "status": "needs-curation",
