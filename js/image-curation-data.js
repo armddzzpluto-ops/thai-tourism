@@ -2187,11 +2187,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "tak": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/tak/gallery-1.webp",
+      "assets/images/provinces/tak/gallery-2.webp",
+      "assets/images/provinces/tak/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand.",
+      "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
+      "Brahman cow in Tak Province, Thailand."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/tak/gallery-1.webp",
+        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak_1.JPG"
+      },
+      {
+        "file": "assets/images/provinces/tak/gallery-2.webp",
+        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak.JPG"
+      },
+      {
+        "file": "assets/images/provinces/tak/gallery-3.webp",
+        "caption": "Brahman cow in Tak Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Brahman_Thai_cow.jpg"
+      }
+    ]
   },
   "trang": {
     "status": "needs-curation",
