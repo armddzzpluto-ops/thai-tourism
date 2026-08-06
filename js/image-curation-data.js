@@ -2221,11 +2221,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "trang": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/trang/gallery-1.webp",
+      "assets/images/provinces/trang/gallery-2.webp",
+      "assets/images/provinces/trang/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "4162, Tambon Mai Fat, Amphoe Sikao, Chang Wat Trang 92150, Thailand",
+      "Trang, Thailand",
+      "\u003cb>original flickr:\u003c/b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/trang/gallery-1.webp",
+        "caption": "4162, Tambon Mai Fat, Amphoe Sikao, Chang Wat Trang 92150, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030214651/http://www.panoramio.com/user/6667993?with_photo_id=114145573\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:4162,_Tambon_Mai_Fat,_Amphoe_Sikao,_Chang_Wat_Trang_92150,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/trang/gallery-2.webp",
+        "caption": "Trang, Thailand",
+        "photoCredit": "Sharon Hahn Darlin",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Yot,_Trang,_Thailand_in_the_rain.jpg"
+      },
+      {
+        "file": "assets/images/provinces/trang/gallery-3.webp",
+        "caption": "\u003cb>original flickr:\u003c/b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand.",
+        "photoCredit": "Sharon Hahn Darlin",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kheng_Chio_Cemetery,_Trang,_Thailand.jpg"
+      }
+    ]
   },
   "trat": {
     "status": "needs-curation",

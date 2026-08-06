@@ -3642,9 +3642,7 @@
     "galleryImages": [
       "assets/images/provinces/trang/gallery-1.webp",
       "assets/images/provinces/trang/gallery-2.webp",
-      "assets/images/provinces/trang/gallery-3.webp",
-      "assets/images/provinces/trang/gallery-4.webp",
-      "assets/images/provinces/trang/gallery-5.webp"
+      "assets/images/provinces/trang/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -3662,50 +3660,30 @@
         "slug": "trang",
         "role": "gallery-1",
         "file": "assets/images/provinces/trang/gallery-1.webp",
-        "caption": "Trang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
-        "isFallback": true
+        "caption": "4162, Tambon Mai Fat, Amphoe Sikao, Chang Wat Trang 92150, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030214651/http://www.panoramio.com/user/6667993?with_photo_id=114145573\">กิตติ เลขะกุล</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:4162,_Tambon_Mai_Fat,_Amphoe_Sikao,_Chang_Wat_Trang_92150,_Thailand_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Trang",
         "slug": "trang",
         "role": "gallery-2",
         "file": "assets/images/provinces/trang/gallery-2.webp",
-        "caption": "Trang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
-        "isFallback": true
+        "caption": "Trang, Thailand",
+        "photoCredit": "Sharon Hahn Darlin",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Yot,_Trang,_Thailand_in_the_rain.jpg",
+        "isFallback": false
       },
       {
         "province": "Trang",
         "slug": "trang",
         "role": "gallery-3",
         "file": "assets/images/provinces/trang/gallery-3.webp",
-        "caption": "Trang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Trang",
-        "slug": "trang",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/trang/gallery-4.webp",
-        "caption": "Trang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Trang",
-        "slug": "trang",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/trang/gallery-5.webp",
-        "caption": "Trang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/LaoLiangPhi.jpg",
-        "isFallback": true
+        "caption": "<b>original flickr:</b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand.",
+        "photoCredit": "Sharon Hahn Darlin",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kheng_Chio_Cemetery,_Trang,_Thailand.jpg",
+        "isFallback": false
       }
     ]
   },
