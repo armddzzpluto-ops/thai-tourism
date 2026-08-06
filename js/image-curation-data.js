@@ -1840,11 +1840,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "samut-sakhon": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/samut-sakhon/gallery-1.webp",
+      "assets/images/provinces/samut-sakhon/gallery-2.webp",
+      "assets/images/provinces/samut-sakhon/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "30/2 ซอย หมู่ 4 หมู่บ้านประมง Tambon Phanthai Norasing, Amphoe Mueang Samut Sakhon, Chang Wat Samut Sakhon 74000, Thailand",
+      "Plantations de bananiers et de cocotiers dans la province de Samut Sakhon en Thaïlande",
+      "Fish Market"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/samut-sakhon/gallery-1.webp",
+        "caption": "30/2 ซอย หมู่ 4 หมู่บ้านประมง Tambon Phanthai Norasing, Amphoe Mueang Samut Sakhon, Chang Wat Samut Sakhon 74000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030224546/http://www.panoramio.com/user/4366445?with_photo_id=117183692\">Phong Phat G\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:30-2_%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88_4_%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%87_Tambon_Phanthai_Norasing,_Amphoe_Mueang_Samut_Sakhon,_Chang_Wat_Samut_Sakhon_74000,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-sakhon/gallery-2.webp",
+        "caption": "Plantations de bananiers et de cocotiers dans la province de Samut Sakhon en Thaïlande",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bananiers_et_cocotiers.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-sakhon/gallery-3.webp",
+        "caption": "Fish Market",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031130736/http://www.panoramio.com/user/8375149?with_photo_id=121623461\">mohigan\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Fish_Market_-_panoramio_(3).jpg"
+      }
+    ]
   },
   "samut-songkhram": {
     "status": "needs-curation",
