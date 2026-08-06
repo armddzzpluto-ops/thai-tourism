@@ -338,9 +338,9 @@
   {
     "province": "Prachin Buri",
     "slug": "prachin-buri",
-    "status": "insufficient-unique-candidates",
-    "galleryCount": 5,
-    "fallbackCount": 5
+    "status": "complete",
+    "galleryCount": 3,
+    "fallbackCount": 0
   },
   {
     "province": "Prachuap Khiri Khan",

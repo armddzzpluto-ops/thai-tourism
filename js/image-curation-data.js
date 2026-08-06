@@ -1723,11 +1723,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "prachin-buri": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/prachin-buri/gallery-1.webp",
+      "assets/images/provinces/prachin-buri/gallery-2.webp",
+      "assets/images/provinces/prachin-buri/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "ซีเซียม-137 จากโรงไฟฟ้าไอน้ำ บริษัท เนชั่นแนล เพาเวอร์ แพลนท์ 5 เอ จำกัด อำเภอศรีมหาโพธิ จังหวัดปราจีนบุรี ที่สูญหายไป",
+      "Thailandia, visnu da provincia di prachinburi, vii-viii sec",
+      "กังหัน winxplus.com"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/prachin-buri/gallery-1.webp",
+        "caption": "ซีเซียม-137 จากโรงไฟฟ้าไอน้ำ บริษัท เนชั่นแนล เพาเวอร์ แพลนท์ 5 เอ จำกัด อำเภอศรีมหาโพธิ จังหวัดปราจีนบุรี ที่สูญหายไป",
+        "photoCredit": "Suppseak Tonyang",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Cs_137_Prachinburi.jpg"
+      },
+      {
+        "file": "assets/images/provinces/prachin-buri/gallery-2.webp",
+        "caption": "Thailandia, visnu da provincia di prachinburi, vii-viii sec",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Sailko\" title=\"User:Sailko\">sailko\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Thailandia,_visnu_da_provincia_di_prachinburi,_vii-viii_sec.JPG"
+      },
+      {
+        "file": "assets/images/provinces/prachin-buri/gallery-3.webp",
+        "caption": "กังหัน winxplus.com",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018004938/http://www.panoramio.com/user/5609015?with_photo_id=48827923\">Pump\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%99_winxplus.com_-_panoramio.jpg"
+      }
+    ]
   },
   "prachuap-khiri-khan": {
     "status": "complete",
