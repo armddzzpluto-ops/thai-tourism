@@ -1392,9 +1392,7 @@
     "galleryImages": [
       "assets/images/provinces/nakhon-pathom/gallery-1.webp",
       "assets/images/provinces/nakhon-pathom/gallery-2.webp",
-      "assets/images/provinces/nakhon-pathom/gallery-3.webp",
-      "assets/images/provinces/nakhon-pathom/gallery-4.webp",
-      "assets/images/provinces/nakhon-pathom/gallery-5.webp"
+      "assets/images/provinces/nakhon-pathom/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -1412,50 +1410,30 @@
         "slug": "nakhon-pathom",
         "role": "gallery-1",
         "file": "assets/images/provinces/nakhon-pathom/gallery-1.webp",
-        "caption": "Nakhon Pathom tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
-        "isFallback": true
+        "caption": "Aerial photograph of Amata B.Grimm's Yanhee solar power plant",
+        "photoCredit": "B.Grimm Group",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:B.Grimm_Yanhee_Solar_Power_Plant.jpg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Pathom",
         "slug": "nakhon-pathom",
         "role": "gallery-2",
         "file": "assets/images/provinces/nakhon-pathom/gallery-2.webp",
-        "caption": "Nakhon Pathom tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
-        "isFallback": true
+        "caption": "Use for suck up the liquid to the graduated pipette",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Paweena.S&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paweena.S (page does not exist)\">Paweena.S</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bulb_.jpg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Pathom",
         "slug": "nakhon-pathom",
         "role": "gallery-3",
         "file": "assets/images/provinces/nakhon-pathom/gallery-3.webp",
-        "caption": "Nakhon Pathom tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Pathom",
-        "slug": "nakhon-pathom",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/nakhon-pathom/gallery-4.webp",
-        "caption": "Nakhon Pathom tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Pathom",
-        "slug": "nakhon-pathom",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/nakhon-pathom/gallery-5.webp",
-        "caption": "Nakhon Pathom tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/0004932%20-%20%28Phra%20Pathom%20Chedi%20-%20002%29.jpg",
-        "isFallback": true
+        "caption": "From Mcdonal",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025035742/http://www.panoramio.com/user/4366445?with_photo_id=88888343\">Phong  Phat G</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:From_Mcdonal_-_panoramio.jpg",
+        "isFallback": false
       }
     ]
   },

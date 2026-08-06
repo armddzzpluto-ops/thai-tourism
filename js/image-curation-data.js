@@ -867,11 +867,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-pathom": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-pathom/gallery-1.webp",
+      "assets/images/provinces/nakhon-pathom/gallery-2.webp",
+      "assets/images/provinces/nakhon-pathom/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Aerial photograph of Amata B.Grimm's Yanhee solar power plant",
+      "Use for suck up the liquid to the graduated pipette",
+      "From Mcdonal"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-pathom/gallery-1.webp",
+        "caption": "Aerial photograph of Amata B.Grimm's Yanhee solar power plant",
+        "photoCredit": "B.Grimm Group",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:B.Grimm_Yanhee_Solar_Power_Plant.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-pathom/gallery-2.webp",
+        "caption": "Use for suck up the liquid to the graduated pipette",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Paweena.S&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paweena.S (page does not exist)\">Paweena.S\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bulb_.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-pathom/gallery-3.webp",
+        "caption": "From Mcdonal",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025035742/http://www.panoramio.com/user/4366445?with_photo_id=88888343\">Phong  Phat G\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:From_Mcdonal_-_panoramio.jpg"
+      }
+    ]
   },
   "nakhon-phanom": {
     "status": "needs-curation",
