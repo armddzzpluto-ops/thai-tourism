@@ -805,7 +805,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "lop-buri": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],
