@@ -1,6 +1,5 @@
 name: Curate all province galleries
 
-# Curate three verified gallery images per province — final alias
 on:
   workflow_dispatch:
   push:
@@ -14,7 +13,7 @@ permissions:
 
 concurrency:
   group: image-curation-all-provinces
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   curate:
@@ -26,44 +25,38 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: agent/image-phase-1-run
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Install WebP tools
         run: |
           sudo apt-get update
           sudo apt-get install -y webp
 
-      - name: Curate and commit all 77 provinces in resumable batches
+      - name: Curate all 77 provinces in batches
         shell: pwsh
+        run: |
+          1..8 | ForEach-Object {
+            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+          }
+
+      - name: Generate browser curation data
+        run: node scripts/sync-image-curation.mjs
+
+      - name: Run site checks
+        run: node scripts/check-site.mjs
+
+      - name: Commit curated images and metadata
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          Remove-Item assets/images/provinces/curation-error.txt -Force -ErrorAction SilentlyContinue
-
-          1..77 | ForEach-Object {
-            $batch = $_
-            try {
-              & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $batch -BatchSize 1 -TargetGallery 3 -WebpQuality 82 -RequestDelayMs 1000
-            } catch {
-              $diagnostic = ($_ | Out-String) + [Environment]::NewLine + $_.ScriptStackTrace
-              Set-Content -Path assets/images/provinces/curation-error.txt -Value $diagnostic -Encoding UTF8
-              git add assets/images/provinces/curation-error.txt
-              git commit -m "ci(images): record curation failure at item $batch"
-              git push origin HEAD:agent/image-phase-1-run
-              throw
-            }
-            node scripts/sync-image-curation.mjs
-            node scripts/check-site.mjs
-
-            git add assets/images/provinces js/image-curation-data.js
-            if (-not (git diff --cached --quiet)) {
-              git commit -m "feat(images): curate province gallery item $batch"
-              git push origin HEAD:agent/image-phase-1-run
-            } else {
-              Write-Host "No changes for batch $batch"
-            }
-          }
+          git add assets/images/provinces js/image-curation-data.js
+          if git diff --cached --quiet; then
+            echo "No curation changes produced"
+          else
+            git commit -m "feat(images): curate verified galleries for all provinces"
+            git push origin HEAD:agent/image-phase-1-run
+          fi
 
       - name: Require all provinces to pass curation
         run: |
-          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<3);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
+          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<5);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
