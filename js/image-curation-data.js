@@ -2459,10 +2459,37 @@ window.IMAGE_CURATION = {
     ]
   },
   "yasothon": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/yasothon/gallery-1.webp",
+      "assets/images/provinces/yasothon/gallery-2.webp",
+      "assets/images/provinces/yasothon/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Water buffalo ignores two diesel tillers in paddy by Wat Thung Sadao, Tambon Tadthong, Amphoe Meuang Yasothon TH",
+      "File:Yasothon 104.15067E 15.78554N.jpg",
+      "Yasothon Province Stadium"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/yasothon/gallery-1.webp",
+        "caption": "Water buffalo ignores two diesel tillers in paddy by Wat Thung Sadao, Tambon Tadthong, Amphoe Meuang Yasothon TH",
+        "photoCredit": "Pawyilee",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:E-Tak_and_Buffalo.JPG"
+      },
+      {
+        "file": "assets/images/provinces/yasothon/gallery-2.webp",
+        "caption": "File:Yasothon 104.15067E 15.78554N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon_104.15067E_15.78554N.jpg"
+      },
+      {
+        "file": "assets/images/provinces/yasothon/gallery-3.webp",
+        "caption": "Yasothon Province Stadium",
+        "photoCredit": "Pudt",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon_Province_Stadium.jpg"
+      }
+    ]
   }
 };

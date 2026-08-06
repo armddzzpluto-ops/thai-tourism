@@ -4006,9 +4006,7 @@
     "galleryImages": [
       "assets/images/provinces/yasothon/gallery-1.webp",
       "assets/images/provinces/yasothon/gallery-2.webp",
-      "assets/images/provinces/yasothon/gallery-3.webp",
-      "assets/images/provinces/yasothon/gallery-4.webp",
-      "assets/images/provinces/yasothon/gallery-5.webp"
+      "assets/images/provinces/yasothon/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -4026,50 +4024,30 @@
         "slug": "yasothon",
         "role": "gallery-1",
         "file": "assets/images/provinces/yasothon/gallery-1.webp",
-        "caption": "Yasothon tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
-        "isFallback": true
+        "caption": "Water buffalo ignores two diesel tillers in paddy by Wat Thung Sadao, Tambon Tadthong, Amphoe Meuang Yasothon TH",
+        "photoCredit": "Pawyilee",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:E-Tak_and_Buffalo.JPG",
+        "isFallback": false
       },
       {
         "province": "Yasothon",
         "slug": "yasothon",
         "role": "gallery-2",
         "file": "assets/images/provinces/yasothon/gallery-2.webp",
-        "caption": "Yasothon tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
-        "isFallback": true
+        "caption": "File:Yasothon 104.15067E 15.78554N.jpg",
+        "photoCredit": "Rex",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon_104.15067E_15.78554N.jpg",
+        "isFallback": false
       },
       {
         "province": "Yasothon",
         "slug": "yasothon",
         "role": "gallery-3",
         "file": "assets/images/provinces/yasothon/gallery-3.webp",
-        "caption": "Yasothon tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Yasothon",
-        "slug": "yasothon",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/yasothon/gallery-4.webp",
-        "caption": "Yasothon tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Yasothon",
-        "slug": "yasothon",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/yasothon/gallery-5.webp",
-        "caption": "Yasothon tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B8%AA%E0%B8%B9%E0%B8%87.jpg",
-        "isFallback": true
+        "caption": "Yasothon Province Stadium",
+        "photoCredit": "Pudt",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon_Province_Stadium.jpg",
+        "isFallback": false
       }
     ]
   },
