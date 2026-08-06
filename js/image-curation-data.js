@@ -1942,11 +1942,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "satun": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/satun/gallery-1.webp",
+      "assets/images/provinces/satun/gallery-2.webp",
+      "assets/images/provinces/satun/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Ko Hin Ngam",
+      "Langu 001",
+      "Pakbara 28"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/satun/gallery-1.webp",
+        "caption": "Ko Hin Ngam",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011122152/http://www.panoramio.com/user/19953?with_photo_id=197403\">Andreas Hörstemeier\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ko_Hin_Ngam_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/satun/gallery-2.webp",
+        "caption": "Langu 001",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101211810/http://www.panoramio.com/user/8391074?with_photo_id=110191881\">Nopphasin Suksawat\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Langu_001_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/satun/gallery-3.webp",
+        "caption": "Pakbara 28",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031215802/http://www.panoramio.com/user/8391074?with_photo_id=115234320\">Nopphasin Suksawat\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Pakbara_28_-_panoramio.jpg"
+      }
+    ]
   },
   "si-sa-ket": {
     "status": "needs-curation",
