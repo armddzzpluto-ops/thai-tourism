@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Nonthaburi",
-    "slug":  "nonthaburi",
-    "heroImage":  "assets/images/provinces/nonthaburi/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/nonthaburi/gallery-1.webp",
-                          "assets/images/provinces/nonthaburi/gallery-2.webp",
-                          "assets/images/provinces/nonthaburi/gallery-3.webp",
-                          "assets/images/provinces/nonthaburi/gallery-4.webp",
-                          "assets/images/provinces/nonthaburi/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/nonthaburi/hero.webp",
-                            "caption":  "Nonthaburi tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/nonthaburi/gallery-1.webp",
-                            "caption":  "Nonthaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/nonthaburi/gallery-2.webp",
-                            "caption":  "Nonthaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/nonthaburi/gallery-3.webp",
-                            "caption":  "Nonthaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/nonthaburi/gallery-4.webp",
-                            "caption":  "Nonthaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nonthaburi",
-                            "slug":  "nonthaburi",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/nonthaburi/gallery-5.webp",
-                            "caption":  "Nonthaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Nonthaburi",
+  "slug": "nonthaburi",
+  "heroImage": "assets/images/provinces/nonthaburi/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/nonthaburi/gallery-1.webp",
+    "assets/images/provinces/nonthaburi/gallery-2.webp",
+    "assets/images/provinces/nonthaburi/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Nonthaburi",
+      "slug": "nonthaburi",
+      "role": "hero",
+      "file": "assets/images/provinces/nonthaburi/hero.webp",
+      "caption": "Nonthaburi tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/IMPACT%20Arena.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nonthaburi",
+      "slug": "nonthaburi",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/nonthaburi/gallery-1.webp",
+      "caption": "ศาลากลางหลังเก่าจังหวัดนนทบุรีเป็นมนต์เสน่ห์ที่สวยงามมากจนถึงปัจจุบัน",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Saknirun&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Saknirun (page does not exist)\">Saknirun</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:1%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nonthaburi",
+      "slug": "nonthaburi",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/nonthaburi/gallery-2.webp",
+      "caption": "รถ Toyota Coaster สาย 356 รังสิต - ปากเกร็ด หมายเลข 356-23",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Red_Penguin2710&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Red Penguin2710 (page does not exist)\">Red Penguin2710</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:356-23_Coaster.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nonthaburi",
+      "slug": "nonthaburi",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/nonthaburi/gallery-3.webp",
+      "caption": "บิ๊กซี เอ็กซ์ตร้า บางใหญ่ อำเภอบางบัวทอง จังหวัดนนทบุรี",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:BigCExtraBangyai.jpg",
+      "isFallback": false
+    }
+  ]
 }

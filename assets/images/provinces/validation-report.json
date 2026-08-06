@@ -247,9 +247,9 @@
   {
     "province": "Nonthaburi",
     "slug": "nonthaburi",
-    "status": "needs-curation",
-    "galleryCount": 5,
-    "fallbackCount": 5
+    "status": "complete",
+    "galleryCount": 3,
+    "fallbackCount": 0
   },
   {
     "province": "Pathum Thani",
