@@ -2085,11 +2085,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "suphan-buri": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/suphan-buri/gallery-1.webp",
+      "assets/images/provinces/suphan-buri/gallery-2.webp",
+      "assets/images/provinces/suphan-buri/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Map of Suphanburi province, Thailand, highlighting Amphoe Mueang Suphanburi",
+      "Banharn-Jamsai Tower at Suphanburi, Thailand",
+      "Main Gate, City Pillar Shrine, Suphanburi Province, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/suphan-buri/gallery-1.webp",
+        "caption": "Map of Suphanburi province, Thailand, highlighting Amphoe Mueang Suphanburi",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ahoerstemeier\" title=\"User:Ahoerstemeier\">Ahoerstemeier\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_7201.png"
+      },
+      {
+        "file": "assets/images/provinces/suphan-buri/gallery-2.webp",
+        "caption": "Banharn-Jamsai Tower at Suphanburi, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:ScorpianPK&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ScorpianPK (page does not exist)\">ScorpianPK\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Banharn-Jamsai_Tower.jpg"
+      },
+      {
+        "file": "assets/images/provinces/suphan-buri/gallery-3.webp",
+        "caption": "Main Gate, City Pillar Shrine, Suphanburi Province, Thailand",
+        "photoCredit": "hkgalbert",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Gate_City_Pillar_Shrine_Suphanburi.jpg"
+      }
+    ]
   },
   "surat-thani": {
     "status": "needs-curation",

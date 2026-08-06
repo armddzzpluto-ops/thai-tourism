@@ -3434,9 +3434,7 @@
     "galleryImages": [
       "assets/images/provinces/suphan-buri/gallery-1.webp",
       "assets/images/provinces/suphan-buri/gallery-2.webp",
-      "assets/images/provinces/suphan-buri/gallery-3.webp",
-      "assets/images/provinces/suphan-buri/gallery-4.webp",
-      "assets/images/provinces/suphan-buri/gallery-5.webp"
+      "assets/images/provinces/suphan-buri/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -3454,50 +3452,30 @@
         "slug": "suphan-buri",
         "role": "gallery-1",
         "file": "assets/images/provinces/suphan-buri/gallery-1.webp",
-        "caption": "Suphan Buri tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
-        "isFallback": true
+        "caption": "Map of Suphanburi province, Thailand, highlighting Amphoe Mueang Suphanburi",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Ahoerstemeier\" title=\"User:Ahoerstemeier\">Ahoerstemeier</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_7201.png",
+        "isFallback": false
       },
       {
         "province": "Suphan Buri",
         "slug": "suphan-buri",
         "role": "gallery-2",
         "file": "assets/images/provinces/suphan-buri/gallery-2.webp",
-        "caption": "Suphan Buri tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
-        "isFallback": true
+        "caption": "Banharn-Jamsai Tower at Suphanburi, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:ScorpianPK&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ScorpianPK (page does not exist)\">ScorpianPK</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Banharn-Jamsai_Tower.jpg",
+        "isFallback": false
       },
       {
         "province": "Suphan Buri",
         "slug": "suphan-buri",
         "role": "gallery-3",
         "file": "assets/images/provinces/suphan-buri/gallery-3.webp",
-        "caption": "Suphan Buri tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Suphan Buri",
-        "slug": "suphan-buri",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/suphan-buri/gallery-4.webp",
-        "caption": "Suphan Buri tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Suphan Buri",
-        "slug": "suphan-buri",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/suphan-buri/gallery-5.webp",
-        "caption": "Suphan Buri tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg",
-        "isFallback": true
+        "caption": "Main Gate, City Pillar Shrine, Suphanburi Province, Thailand",
+        "photoCredit": "hkgalbert",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Gate_City_Pillar_Shrine_Suphanburi.jpg",
+        "isFallback": false
       }
     ]
   },
