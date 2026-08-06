@@ -833,11 +833,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-nayok": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-nayok/gallery-1.webp",
+      "assets/images/provinces/nakhon-nayok/gallery-2.webp",
+      "assets/images/provinces/nakhon-nayok/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Bridge on the way to waterfall",
+      "File:Flora of Thailand 7.JPG",
+      "Ganesha Statue Nakornnayok"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-nayok/gallery-1.webp",
+        "caption": "Bridge on the way to waterfall",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014080332/http://www.panoramio.com/user/1429473?with_photo_id=26740858\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bridge_on_the_way_to_waterfall_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-nayok/gallery-2.webp",
+        "caption": "File:Flora of Thailand 7.JPG",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tris_T7\" title=\"User:Tris T7\">Tris_T7\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Flora_of_Thailand_7.JPG"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-nayok/gallery-3.webp",
+        "caption": "Ganesha Statue Nakornnayok",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Ohmaphat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ohmaphat (page does not exist)\">Ohmaphat\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ganesha_Nakornnayok_1.jpg"
+      }
+    ]
   },
   "nakhon-pathom": {
     "status": "needs-curation",

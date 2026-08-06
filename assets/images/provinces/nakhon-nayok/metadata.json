@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Nakhon Nayok",
-    "slug":  "nakhon-nayok",
-    "heroImage":  "assets/images/provinces/nakhon-nayok/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/nakhon-nayok/gallery-1.webp",
-                          "assets/images/provinces/nakhon-nayok/gallery-2.webp",
-                          "assets/images/provinces/nakhon-nayok/gallery-3.webp",
-                          "assets/images/provinces/nakhon-nayok/gallery-4.webp",
-                          "assets/images/provinces/nakhon-nayok/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/nakhon-nayok/hero.webp",
-                            "caption":  "Nakhon Nayok tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/nakhon-nayok/gallery-1.webp",
-                            "caption":  "Nakhon Nayok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/nakhon-nayok/gallery-2.webp",
-                            "caption":  "Nakhon Nayok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/nakhon-nayok/gallery-3.webp",
-                            "caption":  "Nakhon Nayok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/nakhon-nayok/gallery-4.webp",
-                            "caption":  "Nakhon Nayok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Nayok",
-                            "slug":  "nakhon-nayok",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/nakhon-nayok/gallery-5.webp",
-                            "caption":  "Nakhon Nayok tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Nakhon Nayok",
+  "slug": "nakhon-nayok",
+  "heroImage": "assets/images/provinces/nakhon-nayok/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/nakhon-nayok/gallery-1.webp",
+    "assets/images/provinces/nakhon-nayok/gallery-2.webp",
+    "assets/images/provinces/nakhon-nayok/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Nakhon Nayok",
+      "slug": "nakhon-nayok",
+      "role": "hero",
+      "file": "assets/images/provinces/nakhon-nayok/hero.webp",
+      "caption": "Nakhon Nayok tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Hin%20Tung%2C%20Mueang%20Nakhon%20Nayok%20District%2C%20Nakhon%20Nayok%2026000%2C%20Thailand%20-%20panoramio%20%2811%29.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Nayok",
+      "slug": "nakhon-nayok",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/nakhon-nayok/gallery-1.webp",
+      "caption": "Bridge on the way to waterfall",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014080332/http://www.panoramio.com/user/1429473?with_photo_id=26740858\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bridge_on_the_way_to_waterfall_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Nayok",
+      "slug": "nakhon-nayok",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/nakhon-nayok/gallery-2.webp",
+      "caption": "File:Flora of Thailand 7.JPG",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tris_T7\" title=\"User:Tris T7\">Tris_T7</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Flora_of_Thailand_7.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Nayok",
+      "slug": "nakhon-nayok",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/nakhon-nayok/gallery-3.webp",
+      "caption": "Ganesha Statue Nakornnayok",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ohmaphat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ohmaphat (page does not exist)\">Ohmaphat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ganesha_Nakornnayok_1.jpg",
+      "isFallback": false
+    }
+  ]
 }
