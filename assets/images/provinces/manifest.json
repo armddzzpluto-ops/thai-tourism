@@ -1548,9 +1548,7 @@
     "galleryImages": [
       "assets/images/provinces/nakhon-sawan/gallery-1.webp",
       "assets/images/provinces/nakhon-sawan/gallery-2.webp",
-      "assets/images/provinces/nakhon-sawan/gallery-3.webp",
-      "assets/images/provinces/nakhon-sawan/gallery-4.webp",
-      "assets/images/provinces/nakhon-sawan/gallery-5.webp"
+      "assets/images/provinces/nakhon-sawan/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -1568,50 +1566,30 @@
         "slug": "nakhon-sawan",
         "role": "gallery-1",
         "file": "assets/images/provinces/nakhon-sawan/gallery-1.webp",
-        "caption": "Nakhon Sawan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
-        "isFallback": true
+        "caption": "<div class=\"description\">\n500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]</div>",
+        "photoCredit": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/albertlabermeier\">Albert Labermeier</a></div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20160405_Dsc01481_Jpg_(162967313).jpeg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Sawan",
         "slug": "nakhon-sawan",
         "role": "gallery-2",
         "file": "assets/images/provinces/nakhon-sawan/gallery-2.webp",
-        "caption": "Nakhon Sawan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
-        "isFallback": true
+        "caption": "Long-tailed macaque eating a peanut in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_eating_peanut.jpg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Sawan",
         "slug": "nakhon-sawan",
         "role": "gallery-3",
         "file": "assets/images/provinces/nakhon-sawan/gallery-3.webp",
-        "caption": "Nakhon Sawan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Sawan",
-        "slug": "nakhon-sawan",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/nakhon-sawan/gallery-4.webp",
-        "caption": "Nakhon Sawan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Sawan",
-        "slug": "nakhon-sawan",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/nakhon-sawan/gallery-5.webp",
-        "caption": "Nakhon Sawan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B9%87%E0%B8%94.jpg",
-        "isFallback": true
+        "caption": "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_with_infant.jpg",
+        "isFallback": false
       }
     ]
   },

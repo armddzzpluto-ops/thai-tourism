@@ -969,11 +969,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-sawan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-sawan/gallery-1.webp",
+      "assets/images/provinces/nakhon-sawan/gallery-2.webp",
+      "assets/images/provinces/nakhon-sawan/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "\u003cdiv class=\"description\">\n500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]\u003c/div>",
+      "Long-tailed macaque eating a peanut in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+      "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-sawan/gallery-1.webp",
+        "caption": "\u003cdiv class=\"description\">\n500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]\u003c/div>",
+        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/albertlabermeier\">Albert Labermeier\u003c/a>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20160405_Dsc01481_Jpg_(162967313).jpeg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-sawan/gallery-2.webp",
+        "caption": "Long-tailed macaque eating a peanut in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_eating_peanut.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-sawan/gallery-3.webp",
+        "caption": "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_with_infant.jpg"
+      }
+    ]
   },
   "nakhon-si-thammarat": {
     "status": "needs-curation",
