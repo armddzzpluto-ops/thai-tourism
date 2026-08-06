@@ -1738,11 +1738,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "sa-kaeo": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/sa-kaeo/gallery-1.webp",
+      "assets/images/provinces/sa-kaeo/gallery-2.webp",
+      "assets/images/provinces/sa-kaeo/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Found in marshland in Sa Kaeo, Thailand.",
+      "Found in marshland in Sa Kaeo, Thailand.",
+      "Found in marshland in Sa Kaeo, Thailand."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/sa-kaeo/gallery-1.webp",
+        "caption": "Found in marshland in Sa Kaeo, Thailand.",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Common_Toad_(Duttaphrynus_melanostictus).jpg"
+      },
+      {
+        "file": "assets/images/provinces/sa-kaeo/gallery-2.webp",
+        "caption": "Found in marshland in Sa Kaeo, Thailand.",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Common_Toad_(Duttaphrynus_melanostictus)2.jpg"
+      },
+      {
+        "file": "assets/images/provinces/sa-kaeo/gallery-3.webp",
+        "caption": "Found in marshland in Sa Kaeo, Thailand.",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Common_Tree_Frog_(Polypedates_leucomystax)10.jpg"
+      }
+    ]
   },
   "sakon-nakhon": {
     "status": "needs-curation",
