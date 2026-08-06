@@ -1044,11 +1044,38 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "narathiwat": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/narathiwat/gallery-1.webp",
+      "assets/images/provinces/narathiwat/gallery-2.webp",
+      "assets/images/provinces/narathiwat/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Fishing Village in Narathiwat",
+      "Kaluwo Nuea, Mueang Narathiwat District, Narathiwat 96000, Thailand",
+      "Khok Khian, Mueang Narathiwat District, Narathiwat, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/narathiwat/gallery-1.webp",
+        "caption": "Fishing Village in Narathiwat",
+        "photoCredit": "by preetamrai",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Fishing_Village_in_Narathiwat.jpg"
+      },
+      {
+        "file": "assets/images/provinces/narathiwat/gallery-2.webp",
+        "caption": "Kaluwo Nuea, Mueang Narathiwat District, Narathiwat 96000, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101231836/http://www.panoramio.com/user/6667993?with_photo_id=129775819\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kaluwo_Nuea,_Mueang_Narathiwat_District,_Narathiwat_96000,_Thailand_-_panoramio_(1).jpg"
+      },
+      {
+        "file": "assets/images/provinces/narathiwat/gallery-3.webp",
+        "caption": "Khok Khian, Mueang Narathiwat District, Narathiwat, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031052923/http://www.panoramio.com/user/6667993?with_photo_id=128164678\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Khian,_Mueang_Narathiwat_District,_Narathiwat,_Thailand_-_panoramio.jpg"
+      }
+    ]
   },
   "nong-bua-lamphu": {
     "status": "needs-curation",
