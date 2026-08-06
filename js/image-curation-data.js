@@ -1983,11 +1983,38 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "sing-buri": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/sing-buri/gallery-1.webp",
+      "assets/images/provinces/sing-buri/gallery-2.webp",
+      "assets/images/provinces/sing-buri/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Nanayontrakit",
+      "พระสังกัจจายนะ",
+      "ห้างหุ้นส่วนจำกัด นานายนตรกิจ"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/sing-buri/gallery-1.webp",
+        "caption": "Nanayontrakit",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161026010124/http://www.panoramio.com/user/4224728?with_photo_id=76965110\">jitruksing\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nanayontrakit_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/sing-buri/gallery-2.webp",
+        "caption": "พระสังกัจจายนะ",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitigor&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitigor (page does not exist)\">Nitigor\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:SANGAJAY.jpg"
+      },
+      {
+        "file": "assets/images/provinces/sing-buri/gallery-3.webp",
+        "caption": "ห้างหุ้นส่วนจำกัด นานายนตรกิจ",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022033436/http://www.panoramio.com/user/4224728?with_photo_id=52957820\">jitruksing\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94_%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B4%E0%B8%88_-_panoramio.jpg"
+      }
+    ]
   },
   "songkhla": {
     "status": "needs-curation",
