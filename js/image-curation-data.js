@@ -1267,11 +1267,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nong-bua-lamphu": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
+      "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
+      "assets/images/provinces/nong-bua-lamphu/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Leaving Suwan North bound",
+      "แผนที่ธงจังหวัดหนองบัวลำภู",
+      "Teak Tree close up"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
+        "caption": "Leaving Suwan North bound",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024123529/http://www.panoramio.com/user/3025878?with_photo_id=75960270\">scottylu\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Leaving_Suwan_North_bound_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
+        "caption": "แผนที่ธงจังหวัดหนองบัวลำภู",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Bua_Lam_Phu.png"
+      },
+      {
+        "file": "assets/images/provinces/nong-bua-lamphu/gallery-3.webp",
+        "caption": "Teak Tree close up",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161027062857/http://www.panoramio.com/user/3025878?with_photo_id=75960642\">scottylu\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Teak_Tree_close_up_-_panoramio.jpg"
+      }
+    ]
   },
   "nong-khai": {
     "status": "complete",
