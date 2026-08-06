@@ -1255,11 +1255,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phatthalung": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phatthalung/gallery-1.webp",
+      "assets/images/provinces/phatthalung/gallery-2.webp",
+      "assets/images/provinces/phatthalung/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Dálnice v Thajsku",
+      "Kopec v Jižním Thajsku, provincie Phatthalung",
+      "Krajina v jižním Thajsku"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phatthalung/gallery-1.webp",
+        "caption": "Dálnice v Thajsku",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023183522/http://www.panoramio.com/user/4631368?with_photo_id=51745600\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1738).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phatthalung/gallery-2.webp",
+        "caption": "Kopec v Jižním Thajsku, provincie Phatthalung",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021004852/http://www.panoramio.com/user/4631368?with_photo_id=51745691\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1740).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phatthalung/gallery-3.webp",
+        "caption": "Krajina v jižním Thajsku",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023223254/http://www.panoramio.com/user/4631368?with_photo_id=51745717\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1741).jpg"
+      }
+    ]
   },
   "phayao": {
     "status": "needs-curation",

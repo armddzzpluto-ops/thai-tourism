@@ -2038,9 +2038,7 @@
     "galleryImages": [
       "assets/images/provinces/phatthalung/gallery-1.webp",
       "assets/images/provinces/phatthalung/gallery-2.webp",
-      "assets/images/provinces/phatthalung/gallery-3.webp",
-      "assets/images/provinces/phatthalung/gallery-4.webp",
-      "assets/images/provinces/phatthalung/gallery-5.webp"
+      "assets/images/provinces/phatthalung/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2058,50 +2056,30 @@
         "slug": "phatthalung",
         "role": "gallery-1",
         "file": "assets/images/provinces/phatthalung/gallery-1.webp",
-        "caption": "Phatthalung tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
-        "isFallback": true
+        "caption": "Dálnice v Thajsku",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023183522/http://www.panoramio.com/user/4631368?with_photo_id=51745600\">Mozhar</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1738).jpg",
+        "isFallback": false
       },
       {
         "province": "Phatthalung",
         "slug": "phatthalung",
         "role": "gallery-2",
         "file": "assets/images/provinces/phatthalung/gallery-2.webp",
-        "caption": "Phatthalung tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
-        "isFallback": true
+        "caption": "Kopec v Jižním Thajsku, provincie Phatthalung",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021004852/http://www.panoramio.com/user/4631368?with_photo_id=51745691\">Mozhar</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1740).jpg",
+        "isFallback": false
       },
       {
         "province": "Phatthalung",
         "slug": "phatthalung",
         "role": "gallery-3",
         "file": "assets/images/provinces/phatthalung/gallery-3.webp",
-        "caption": "Phatthalung tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phatthalung",
-        "slug": "phatthalung",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/phatthalung/gallery-4.webp",
-        "caption": "Phatthalung tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phatthalung",
-        "slug": "phatthalung",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/phatthalung/gallery-5.webp",
-        "caption": "Phatthalung tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phatthalung%20Province.jpg",
-        "isFallback": true
+        "caption": "Krajina v jižním Thajsku",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023223254/http://www.panoramio.com/user/4631368?with_photo_id=51745717\">Mozhar</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1741).jpg",
+        "isFallback": false
       }
     ]
   },
