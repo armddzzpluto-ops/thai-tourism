@@ -872,9 +872,7 @@
     "galleryImages": [
       "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
       "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
-      "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
-      "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
-      "assets/images/provinces/kamphaeng-phet/gallery-5.webp"
+      "assets/images/provinces/kamphaeng-phet/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -892,50 +890,30 @@
         "slug": "kamphaeng-phet",
         "role": "gallery-1",
         "file": "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
-        "caption": "Kamphaeng Phet tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Biomass boiler, running on chaff (kamphaengphet plant,Thai)",
+        "photoCredit": "Ajinomoto",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Biomass_boiler,_running_on_chaff_(kamphaengphet_plant,Thai).jpg",
+        "isFallback": false
       },
       {
         "province": "Kamphaeng Phet",
         "slug": "kamphaeng-phet",
         "role": "gallery-2",
         "file": "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
-        "caption": "Kamphaeng Phet tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "<i>Bouganvillea glabra</i> flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Kamphaeng_Phet_Historical_Park.jpg",
+        "isFallback": false
       },
       {
         "province": "Kamphaeng Phet",
         "slug": "kamphaeng-phet",
         "role": "gallery-3",
         "file": "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
-        "caption": "Kamphaeng Phet tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Kamphaeng Phet",
-        "slug": "kamphaeng-phet",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
-        "caption": "Kamphaeng Phet tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Kamphaeng Phet",
-        "slug": "kamphaeng-phet",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/kamphaeng-phet/gallery-5.webp",
-        "caption": "Kamphaeng Phet tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%9D%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9B%E0%B8%B4%E0%B8%87%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Countryside shops 1956 Khamphang Phet",
+        "photoCredit": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Countryside_shops_1956_Khamphang_Phet.jpg",
+        "isFallback": false
       }
     ]
   },

@@ -513,11 +513,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "kamphaeng-phet": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
+      "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
+      "assets/images/provinces/kamphaeng-phet/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Biomass boiler, running on chaff (kamphaengphet plant,Thai)",
+      "\u003ci>Bouganvillea glabra\u003c/i> flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
+      "Countryside shops 1956 Khamphang Phet"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
+        "caption": "Biomass boiler, running on chaff (kamphaengphet plant,Thai)",
+        "photoCredit": "Ajinomoto",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Biomass_boiler,_running_on_chaff_(kamphaengphet_plant,Thai).jpg"
+      },
+      {
+        "file": "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
+        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Kamphaeng_Phet_Historical_Park.jpg"
+      },
+      {
+        "file": "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
+        "caption": "Countryside shops 1956 Khamphang Phet",
+        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Countryside_shops_1956_Khamphang_Phet.jpg"
+      }
+    ]
   },
   "kanchanaburi": {
     "status": "needs-curation",
