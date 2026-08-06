@@ -515,7 +515,7 @@ function normalizeDestinationSchema(destination) {
   destination.galleryCurated =
     curation.galleryCurated === true &&
     curation.status === "complete" &&
-    curatedGalleryImages.length >= 5;
+    curatedGalleryImages.length >= 3;
 
   destination.galleryImages = destination.galleryCurated
     ? [provinceImagePath, ...curatedGalleryImages].slice(0, 8)
