@@ -1602,11 +1602,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "ranong": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/ranong/gallery-1.webp",
+      "assets/images/provinces/ranong/gallery-2.webp",
+      "assets/images/provinces/ranong/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "แหล่งแร่หาดส้มแป้น",
+      "\u003cdiv class=\"description\">\n500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]\u003c/div>",
+      "Kamphuan, Suk Samran District, Ranong, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/ranong/gallery-1.webp",
+        "caption": "แหล่งแร่หาดส้มแป้น",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wikhanet&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wikhanet (page does not exist)\">Wikhanet\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Hadsompaen1.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ranong/gallery-2.webp",
+        "caption": "\u003cdiv class=\"description\">\n500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]\u003c/div>",
+        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/wolfseye_art\">Wolfseye Art\u003c/a>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Hat_Som_Paen_Mountains_(48635458).jpeg"
+      },
+      {
+        "file": "assets/images/provinces/ranong/gallery-3.webp",
+        "caption": "Kamphuan, Suk Samran District, Ranong, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031041506/http://www.panoramio.com/user/1429473?with_photo_id=124379143\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kamphuan,_Suk_Samran_District,_Ranong,_Thailand_-_panoramio_(2).jpg"
+      }
+    ]
   },
   "ratchaburi": {
     "status": "needs-curation",
