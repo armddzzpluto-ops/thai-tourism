@@ -2350,9 +2350,7 @@
     "galleryImages": [
       "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
       "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
-      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
-      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-4.webp",
-      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-5.webp"
+      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2370,50 +2368,30 @@
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-1",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
-        "caption": "Phra Nakhon Si Ayutthaya tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
-        "isFallback": true
+        "caption": "Balloon Festival @ Ayuthaya",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014042208/http://www.panoramio.com/user/96256?with_photo_id=29742692\">Boonchai C</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Balloon_Festival_@_Ayuthaya_-_panoramio_(46).jpg",
+        "isFallback": false
       },
       {
         "province": "Phra Nakhon Si Ayutthaya",
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-2",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
-        "caption": "Phra Nakhon Si Ayutthaya tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
-        "isFallback": true
+        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016233103/http://www.panoramio.com/user/3232473?with_photo_id=41182187\">obarber in thailand</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(1).jpg",
+        "isFallback": false
       },
       {
         "province": "Phra Nakhon Si Ayutthaya",
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-3",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
-        "caption": "Phra Nakhon Si Ayutthaya tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phra Nakhon Si Ayutthaya",
-        "slug": "phra-nakhon-si-ayutthaya",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-4.webp",
-        "caption": "Phra Nakhon Si Ayutthaya tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phra Nakhon Si Ayutthaya",
-        "slug": "phra-nakhon-si-ayutthaya",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-5.webp",
-        "caption": "Phra Nakhon Si Ayutthaya tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mercado%20flotante%2C%20Ayutthaya%2C%20Tailandia%2C%202013-08-23%2C%20DD%2003.jpg",
-        "isFallback": true
+        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018024750/http://www.panoramio.com/user/3232473?with_photo_id=41182225\">obarber in thailand</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(2).jpg",
+        "isFallback": false
       }
     ]
   },

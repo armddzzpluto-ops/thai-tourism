@@ -1459,11 +1459,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phra-nakhon-si-ayutthaya": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
+      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
+      "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Balloon Festival @ Ayuthaya",
+      "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+      "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
+        "caption": "Balloon Festival @ Ayuthaya",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014042208/http://www.panoramio.com/user/96256?with_photo_id=29742692\">Boonchai C\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Balloon_Festival_@_Ayuthaya_-_panoramio_(46).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
+        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016233103/http://www.panoramio.com/user/3232473?with_photo_id=41182187\">obarber in thailand\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(1).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
+        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018024750/http://www.panoramio.com/user/3232473?with_photo_id=41182225\">obarber in thailand\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(2).jpg"
+      }
+    ]
   },
   "phrae": {
     "status": "needs-curation",
