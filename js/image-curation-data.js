@@ -1289,11 +1289,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phayao": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phayao/gallery-1.webp",
+      "assets/images/provinces/phayao/gallery-2.webp",
+      "assets/images/provinces/phayao/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "File:Feel like in the avatar movie.jpg",
+      "King Ngam Mueang Monument at Phayao Lake",
+      "Phayao Lake's Market"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phayao/gallery-1.webp",
+        "caption": "File:Feel like in the avatar movie.jpg",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:HaRtist&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaRtist (page does not exist)\">hartist aqkaqzaq\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Feel_like_in_the_avatar_movie.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phayao/gallery-2.webp",
+        "caption": "King Ngam Mueang Monument at Phayao Lake",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phayao/gallery-3.webp",
+        "caption": "Phayao Lake's Market",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kwan_Phayao_Market_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
+      }
+    ]
   },
   "phetchabun": {
     "status": "needs-curation",
