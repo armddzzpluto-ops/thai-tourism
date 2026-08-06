@@ -1493,11 +1493,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phrae": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phrae/gallery-1.webp",
+      "assets/images/provinces/phrae/gallery-2.webp",
+      "assets/images/provinces/phrae/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "\"แพร่\" ในภาษาไทย (บน)\nและในคำเมืองอักษรธรรมล้านนา (ล่าง)",
+      "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - Dorsal side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
+      "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - △ Ventral side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phrae/gallery-1.webp",
+        "caption": "\"แพร่\" ในภาษาไทย (บน)\nและในคำเมืองอักษรธรรมล้านนา (ล่าง)",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Go_myongx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Go myongx (page does not exist)\">Go myongx\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lanna-Phrae2.png"
+      },
+      {
+        "file": "assets/images/provinces/phrae/gallery-2.webp",
+        "caption": "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - Dorsal side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
+        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens\u003c/a>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_dorsal.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phrae/gallery-3.webp",
+        "caption": "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - △ Ventral side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
+        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens\u003c/a>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_ventral.jpg"
+      }
+    ]
   },
   "phuket": {
     "status": "needs-curation",

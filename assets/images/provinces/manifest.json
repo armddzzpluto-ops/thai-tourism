@@ -2402,9 +2402,7 @@
     "galleryImages": [
       "assets/images/provinces/phrae/gallery-1.webp",
       "assets/images/provinces/phrae/gallery-2.webp",
-      "assets/images/provinces/phrae/gallery-3.webp",
-      "assets/images/provinces/phrae/gallery-4.webp",
-      "assets/images/provinces/phrae/gallery-5.webp"
+      "assets/images/provinces/phrae/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2422,50 +2420,30 @@
         "slug": "phrae",
         "role": "gallery-1",
         "file": "assets/images/provinces/phrae/gallery-1.webp",
-        "caption": "Phrae tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
-        "isFallback": true
+        "caption": "\"แพร่\" ในภาษาไทย (บน)\nและในคำเมืองอักษรธรรมล้านนา (ล่าง)",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Go_myongx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Go myongx (page does not exist)\">Go myongx</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lanna-Phrae2.png",
+        "isFallback": false
       },
       {
         "province": "Phrae",
         "slug": "phrae",
         "role": "gallery-2",
         "file": "assets/images/provinces/phrae/gallery-2.webp",
-        "caption": "Phrae tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
-        "isFallback": true
+        "caption": "<i><a href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia</a></i> - Dorsal side\n<dd>Collection of the Mathematician <a href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz</a></dd>",
+        "photoCredit": "<div class=\"fn value\">\n<a href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens</a></div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_dorsal.jpg",
+        "isFallback": false
       },
       {
         "province": "Phrae",
         "slug": "phrae",
         "role": "gallery-3",
         "file": "assets/images/provinces/phrae/gallery-3.webp",
-        "caption": "Phrae tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phrae",
-        "slug": "phrae",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/phrae/gallery-4.webp",
-        "caption": "Phrae tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Phrae",
-        "slug": "phrae",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/phrae/gallery-5.webp",
-        "caption": "Phrae tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Yom%20River%20in%20Phrae%20Province.jpg",
-        "isFallback": true
+        "caption": "<i><a href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia</a></i> - △ Ventral side\n<dd>Collection of the Mathematician <a href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz</a></dd>",
+        "photoCredit": "<div class=\"fn value\">\n<a href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens</a></div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_ventral.jpg",
+        "isFallback": false
       }
     ]
   },
