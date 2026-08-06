@@ -479,11 +479,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "kalasin": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/kalasin/gallery-1.webp",
+      "assets/images/provinces/kalasin/gallery-2.webp",
+      "assets/images/provinces/kalasin/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Dirt Bike Tuk-Tuk Conversion - Kalasin, Thailand",
+      "Drink Vendor Motorbike with Sidecar (Sign reads: \"Traditional Coffee\") - Temple on the Mountain, Kalasin, Thailand",
+      "Gull Wing Door Soda Delivery Truck - Kalasin, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/kalasin/gallery-1.webp",
+        "caption": "Dirt Bike Tuk-Tuk Conversion - Kalasin, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Dirt_Bike_Tuk-Tuk_Conversion_-_Kalasin_Thailand.jpg"
+      },
+      {
+        "file": "assets/images/provinces/kalasin/gallery-2.webp",
+        "caption": "Drink Vendor Motorbike with Sidecar (Sign reads: \"Traditional Coffee\") - Temple on the Mountain, Kalasin, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Food_Vendor_Motorbike_with_Sidecar_-_Temple_on_the_Mountain_Kalasin_Thailand.jpg"
+      },
+      {
+        "file": "assets/images/provinces/kalasin/gallery-3.webp",
+        "caption": "Gull Wing Door Soda Delivery Truck - Kalasin, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/15965815@N00\">Marshall Astor\u003c/a> from Olympia, WA, United States",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Gull_Wing_Door_Soda_Delivery_Truck_-_Kalasin,_Thailand_(2474152740).jpg"
+      }
+    ]
   },
   "kamphaeng-phet": {
     "status": "needs-curation",
