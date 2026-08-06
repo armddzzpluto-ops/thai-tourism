@@ -765,11 +765,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "maha-sarakham": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/maha-sarakham/gallery-1.webp",
+      "assets/images/provinces/maha-sarakham/gallery-2.webp",
+      "assets/images/provinces/maha-sarakham/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "my home",
+      "File:IsaanCow001.jpg",
+      "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/maha-sarakham/gallery-1.webp",
+        "caption": "my home",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Rungdiaday&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Rungdiaday (page does not exist)\">Rungdiaday\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Herritage.jpg"
+      },
+      {
+        "file": "assets/images/provinces/maha-sarakham/gallery-2.webp",
+        "caption": "File:IsaanCow001.jpg",
+        "photoCredit": "Da~commonswiki",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:IsaanCow001.jpg"
+      },
+      {
+        "file": "assets/images/provinces/maha-sarakham/gallery-3.webp",
+        "caption": "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102124729/http://www.panoramio.com/user/6847270?with_photo_id=98140354\">TonG_CB\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kham_Riang,_Kantharawichai_District,_Maha_Sarakham_44150,_Thailand_-_panoramio_(11).jpg"
+      }
+    ]
   },
   "mukdahan": {
     "status": "needs-curation",
