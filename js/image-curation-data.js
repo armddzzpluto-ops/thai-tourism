@@ -1118,11 +1118,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nan/gallery-1.webp",
+      "assets/images/provinces/nan/gallery-2.webp",
+      "assets/images/provinces/nan/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "ศาลหลวงปู่ภูคา",
+      "Historic Capitals of the Nan Kingdom",
+      "Montages of Nan Province, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nan/gallery-1.webp",
+        "caption": "ศาลหลวงปู่ภูคา",
+        "photoCredit": "\u003ca href=\"https://th.wikipedia.org/wiki/User:%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%87\" class=\"extiw\" title=\"th:User:กาหลง\">th:User:กาหลง\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Luang_Poo_Phu_Kha,_March_2002.JPG"
+      },
+      {
+        "file": "assets/images/provinces/nan/gallery-2.webp",
+        "caption": "Historic Capitals of the Nan Kingdom",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ubs6u!d-onstory\" title=\"User:Ubs6u!d-onstory\">Ubs6u!d-onstory\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nan_Kingdom_capitals.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nan/gallery-3.webp",
+        "caption": "Montages of Nan Province, Thailand",
+        "photoCredit": "\u003cul>\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Phumin_Temple2.jpg\" title=\"File:Phumin Temple2.jpg\">file:Phumin Temple2.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:LannaPhoto\" title=\"User:LannaPhoto\">User:LannaPhoto\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:SriNan9.jpg\" title=\"File:SriNan9.jpg\">file:SriNan9.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Toey19863&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Toey19863 (page does not exist)\">User:Toey19863\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Ferry_Sirikit_Dam_Nan_river_2014_a.jpg\" title=\"File:Ferry Sirikit Dam Nan river 2014 a.jpg\">file:Ferry Sirikit Dam Nan river 2014 a.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:Takeaway\" title=\"User:Takeaway\">User:Takeaway\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B9%81%E0%B8%8A%E0%B9%88%E0%B9%81%E0%B8%AB%E0%B9%89%E0%B8%87CAT_6579.jpg\" title=\"File:วัดพระธาตุแช่แห้งCAT 6579.jpg\">file:วัดพระธาตุแช่แห้งCAT 6579.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Cat2you&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Cat2you (page does not exist)\">User:Cat2you\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%99.jpg\" title=\"File:พิพิธภัณฑสถานแห่งชาติ เมืองน่าน.jpg\">file:พิพิธภัณฑสถานแห่งชาติ เมืองน่าน.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitipoom_Rungnava&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitipoom Rungnava (page does not exist)\">User:Nitipoom Rungnava\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:WatPhraThatChangKham7.jpg\" title=\"File:WatPhraThatChangKham7.jpg\">file:WatPhraThatChangKham7.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:Peerawat.b\" title=\"User:Peerawat.b\">User:Peerawat.b\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Prathat_khaonoi_03.jpg\" title=\"File:Prathat khaonoi 03.jpg\">file:Prathat khaonoi 03.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Khunkay&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Khunkay (page does not exist)\">User:Khunkay\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C030.jpg\" title=\"File:วัดภูมินทร์030.jpg\">file:วัดภูมินทร์030.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:CKasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:CKasa (page does not exist)\">User:CKasa\u003c/a>\u003c/li>\u003c/ul>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:NAN_PROVINCE_MONTAGES.jpg"
+      }
+    ]
   },
   "narathiwat": {
     "status": "complete",
