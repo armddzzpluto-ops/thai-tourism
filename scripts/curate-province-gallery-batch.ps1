@@ -2,7 +2,7 @@ param(
   [int]$BatchIndex = 1,
   [int]$BatchSize = 10,
   [string[]]$ProvinceSlugs = @(),
-  [int]$TargetGallery = 5,
+  [int]$TargetGallery = 3,
   [int]$WebpQuality = 82,
   [int]$RequestDelayMs = 900,
   [switch]$DryRun
