@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Phuket",
-    "slug":  "phuket",
-    "heroImage":  "assets/images/provinces/phuket/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/phuket/gallery-1.webp",
-                          "assets/images/provinces/phuket/gallery-2.webp",
-                          "assets/images/provinces/phuket/gallery-3.webp",
-                          "assets/images/provinces/phuket/gallery-4.webp",
-                          "assets/images/provinces/phuket/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/phuket/hero.webp",
-                            "caption":  "Phuket tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/phuket/gallery-1.webp",
-                            "caption":  "Phuket tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/phuket/gallery-2.webp",
-                            "caption":  "Phuket tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/phuket/gallery-3.webp",
-                            "caption":  "Phuket tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/phuket/gallery-4.webp",
-                            "caption":  "Phuket tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Phuket",
-                            "slug":  "phuket",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/phuket/gallery-5.webp",
-                            "caption":  "Phuket tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Phuket",
+  "slug": "phuket",
+  "heroImage": "assets/images/provinces/phuket/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/phuket/gallery-1.webp",
+    "assets/images/provinces/phuket/gallery-2.webp",
+    "assets/images/provinces/phuket/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "hero",
+      "file": "assets/images/provinces/phuket/hero.webp",
+      "caption": "Phuket tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Flickr%20-%20Shinrya%20-%20Paradise%20in%20Phuket.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/phuket/gallery-1.webp",
+      "caption": "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/72753560@N00\">jeff~</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%22%E6%95%99%E7%B7%B4%22_%E6%B2%92%E6%9C%89%E4%BB%BB%E4%BD%95%E5%AE%89%E5%85%A8%E9%85%8D%E5%82%99_%E7%9B%B4%E6%8E%A5%E7%AB%99%E5%9C%A8%E7%B9%A9%E7%B4%A2%E4%B8%8A%E5%B0%B1%E4%B8%8A%E5%B7%A5%E4%BA%86_(29354339061).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/phuket/gallery-2.webp",
+      "caption": "2014atPHUKET",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Santi13301&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Santi13301 (page does not exist)\">Santi13301</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:2014atPHUKET.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/phuket/gallery-3.webp",
+      "caption": "2018 Phuket capsized boat being lifted from the seabed",
+      "photoCredit": "ผู้จัดการ ออนไลน์ (Manager Online)",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:2018_Phuket_capsized_boat.jpg",
+      "isFallback": false
+    }
+  ]
 }

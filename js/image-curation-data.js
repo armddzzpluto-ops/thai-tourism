@@ -1527,11 +1527,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phuket": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phuket/gallery-1.webp",
+      "assets/images/provinces/phuket/gallery-2.webp",
+      "assets/images/provinces/phuket/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
+      "2014atPHUKET",
+      "2018 Phuket capsized boat being lifted from the seabed"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phuket/gallery-1.webp",
+        "caption": "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/72753560@N00\">jeff~\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:%22%E6%95%99%E7%B7%B4%22_%E6%B2%92%E6%9C%89%E4%BB%BB%E4%BD%95%E5%AE%89%E5%85%A8%E9%85%8D%E5%82%99_%E7%9B%B4%E6%8E%A5%E7%AB%99%E5%9C%A8%E7%B9%A9%E7%B4%A2%E4%B8%8A%E5%B0%B1%E4%B8%8A%E5%B7%A5%E4%BA%86_(29354339061).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phuket/gallery-2.webp",
+        "caption": "2014atPHUKET",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Santi13301&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Santi13301 (page does not exist)\">Santi13301\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:2014atPHUKET.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phuket/gallery-3.webp",
+        "caption": "2018 Phuket capsized boat being lifted from the seabed",
+        "photoCredit": "ผู้จัดการ ออนไลน์ (Manager Online)",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:2018_Phuket_capsized_boat.jpg"
+      }
+    ]
   },
   "prachin-buri": {
     "status": "needs-curation",
