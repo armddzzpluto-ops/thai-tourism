@@ -1003,11 +1003,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-si-thammarat": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
+      "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
+      "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "An Asian Giant Toad from Nakhon Si Thammarat, Thailand",
+      "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
+      "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
+        "caption": "An Asian Giant Toad from Nakhon Si Thammarat, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Psumuseum&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Psumuseum (page does not exist)\">Psumuseum\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Giant_Toad.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
+        "caption": "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Microhyla_berdmorei,_Berdmore%27s_chorus_frog_-_Khao_Luang_National_Park_(29853193736).jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
+        "caption": "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Micryletta_inornata,_Inornate_chorus_frog_-_Khao_Luang_National_Park_(29774376932).jpg"
+      }
+    ]
   },
   "nan": {
     "status": "needs-curation",

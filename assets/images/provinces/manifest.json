@@ -1600,9 +1600,7 @@
     "galleryImages": [
       "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
       "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
-      "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
-      "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
-      "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp"
+      "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -1620,50 +1618,30 @@
         "slug": "nakhon-si-thammarat",
         "role": "gallery-1",
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
-        "caption": "Nakhon Si Thammarat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
-        "isFallback": true
+        "caption": "An Asian Giant Toad from Nakhon Si Thammarat, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Psumuseum&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Psumuseum (page does not exist)\">Psumuseum</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Giant_Toad.jpg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Si Thammarat",
         "slug": "nakhon-si-thammarat",
         "role": "gallery-2",
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
-        "caption": "Nakhon Si Thammarat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
-        "isFallback": true
+        "caption": "<p>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n</p><p>Owner: Thai National Parks\n</p>\nLink: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park</a>",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Microhyla_berdmorei,_Berdmore%27s_chorus_frog_-_Khao_Luang_National_Park_(29853193736).jpg",
+        "isFallback": false
       },
       {
         "province": "Nakhon Si Thammarat",
         "slug": "nakhon-si-thammarat",
         "role": "gallery-3",
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
-        "caption": "Nakhon Si Thammarat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Si Thammarat",
-        "slug": "nakhon-si-thammarat",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
-        "caption": "Nakhon Si Thammarat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Nakhon Si Thammarat",
-        "slug": "nakhon-si-thammarat",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp",
-        "caption": "Nakhon Si Thammarat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Phra%20That%20Nakhon.jpg",
-        "isFallback": true
+        "caption": "<p>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n</p><p>Owner: Thai National Parks\n</p>\nLink: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park</a>",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Micryletta_inornata,_Inornate_chorus_frog_-_Khao_Luang_National_Park_(29774376932).jpg",
+        "isFallback": false
       }
     ]
   },
