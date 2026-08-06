@@ -2017,11 +2017,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "songkhla": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/songkhla/gallery-1.webp",
+      "assets/images/provinces/songkhla/gallery-2.webp",
+      "assets/images/provinces/songkhla/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "love",
+      "The view from the main gate of Thaksin University's Songkhla campus.",
+      "File:Unnamed2 - panoramio (1930).jpg"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/songkhla/gallery-1.webp",
+        "caption": "love",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitiphonbinsoh407&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitiphonbinsoh407 (page does not exist)\">Nitiphonbinsoh407\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Solle_2.jpg"
+      },
+      {
+        "file": "assets/images/provinces/songkhla/gallery-2.webp",
+        "caption": "The view from the main gate of Thaksin University's Songkhla campus.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Viola&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Viola (page does not exist)\">Kenichiro KUTSUNA\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:ThaksinUniv_songkhlacampus_eveningview.jpg"
+      },
+      {
+        "file": "assets/images/provinces/songkhla/gallery-3.webp",
+        "caption": "File:Unnamed2 - panoramio (1930).jpg",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101030217/http://www.panoramio.com/user/6667993?with_photo_id=111302110\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(1930).jpg"
+      }
+    ]
   },
   "sukhothai": {
     "status": "needs-curation",
