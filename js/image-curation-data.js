@@ -2391,11 +2391,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "uttaradit": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/uttaradit/gallery-1.webp",
+      "assets/images/provinces/uttaradit/gallery-2.webp",
+      "assets/images/provinces/uttaradit/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Ban Nam Rid, Uttaradit",
+      "Ban Nam Rid, Uttaradit",
+      "Ban Wang Din"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/uttaradit/gallery-1.webp",
+        "caption": "Ban Nam Rid, Uttaradit",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_01.png"
+      },
+      {
+        "file": "assets/images/provinces/uttaradit/gallery-2.webp",
+        "caption": "Ban Nam Rid, Uttaradit",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_02.png"
+      },
+      {
+        "file": "assets/images/provinces/uttaradit/gallery-3.webp",
+        "caption": "Ban Wang Din",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_1.png"
+      }
+    ]
   },
   "yala": {
     "status": "needs-curation",
