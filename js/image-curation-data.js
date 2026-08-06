@@ -581,11 +581,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "khon-kaen": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/khon-kaen/gallery-1.webp",
+      "assets/images/provinces/khon-kaen/gallery-2.webp",
+      "assets/images/provinces/khon-kaen/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the food stall - some appear to be customers waiting to order or be served, while others seem to be working at the cart preparing food.  The setting has the authentic atmosphere of a casual street food experience with simple plastic stools visible for customers to sit on. The warm glow from the food stall contrasts with the darker surroundings, creating that characteristic ambiance of night markets and street food culture that's so prevalent in Southeast Asia. This represents the vibrant street food culture that's an important part of everyday life and culinary traditions in Thailand.",
+      "Building 7, Khon Kaen Wittayayon School",
+      "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/khon-kaen/gallery-1.webp",
+        "caption": "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the food stall - some appear to be customers waiting to order or be served, while others seem to be working at the cart preparing food.  The setting has the authentic atmosphere of a casual street food experience with simple plastic stools visible for customers to sit on. The warm glow from the food stall contrasts with the darker surroundings, creating that characteristic ambiance of night markets and street food culture that's so prevalent in Southeast Asia. This represents the vibrant street food culture that's an important part of everyday life and culinary traditions in Thailand.",
+        "photoCredit": "Pattaya Patrol",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:A_woman_sitting_on_a_chair_next_to_a_food_cart_2025.jpg"
+      },
+      {
+        "file": "assets/images/provinces/khon-kaen/gallery-2.webp",
+        "caption": "Building 7, Khon Kaen Wittayayon School",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:JustRandomThai\" title=\"User:JustRandomThai\">JustRandomThai\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Building_7,_Khon_Kaen_Wittayayon_School.jpg"
+      },
+      {
+        "file": "assets/images/provinces/khon-kaen/gallery-3.webp",
+        "caption": "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter.",
+        "photoCredit": "Pattaya Patrol",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Burger_and_fries_on_a_wooden_plate.jpg"
+      }
+    ]
   },
   "krabi": {
     "status": "needs-curation",

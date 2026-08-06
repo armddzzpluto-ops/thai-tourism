@@ -976,9 +976,7 @@
     "galleryImages": [
       "assets/images/provinces/khon-kaen/gallery-1.webp",
       "assets/images/provinces/khon-kaen/gallery-2.webp",
-      "assets/images/provinces/khon-kaen/gallery-3.webp",
-      "assets/images/provinces/khon-kaen/gallery-4.webp",
-      "assets/images/provinces/khon-kaen/gallery-5.webp"
+      "assets/images/provinces/khon-kaen/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -996,50 +994,30 @@
         "slug": "khon-kaen",
         "role": "gallery-1",
         "file": "assets/images/provinces/khon-kaen/gallery-1.webp",
-        "caption": "Khon Kaen tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
-        "isFallback": true
+        "caption": "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the food stall - some appear to be customers waiting to order or be served, while others seem to be working at the cart preparing food.  The setting has the authentic atmosphere of a casual street food experience with simple plastic stools visible for customers to sit on. The warm glow from the food stall contrasts with the darker surroundings, creating that characteristic ambiance of night markets and street food culture that's so prevalent in Southeast Asia. This represents the vibrant street food culture that's an important part of everyday life and culinary traditions in Thailand.",
+        "photoCredit": "Pattaya Patrol",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:A_woman_sitting_on_a_chair_next_to_a_food_cart_2025.jpg",
+        "isFallback": false
       },
       {
         "province": "Khon Kaen",
         "slug": "khon-kaen",
         "role": "gallery-2",
         "file": "assets/images/provinces/khon-kaen/gallery-2.webp",
-        "caption": "Khon Kaen tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
-        "isFallback": true
+        "caption": "Building 7, Khon Kaen Wittayayon School",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:JustRandomThai\" title=\"User:JustRandomThai\">JustRandomThai</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Building_7,_Khon_Kaen_Wittayayon_School.jpg",
+        "isFallback": false
       },
       {
         "province": "Khon Kaen",
         "slug": "khon-kaen",
         "role": "gallery-3",
         "file": "assets/images/provinces/khon-kaen/gallery-3.webp",
-        "caption": "Khon Kaen tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Khon Kaen",
-        "slug": "khon-kaen",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/khon-kaen/gallery-4.webp",
-        "caption": "Khon Kaen tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Khon Kaen",
-        "slug": "khon-kaen",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/khon-kaen/gallery-5.webp",
-        "caption": "Khon Kaen tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9E%E0%B8%AD%E0%B8%87%20%E0%B8%88.%E0%B8%82%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99.jpg",
-        "isFallback": true
+        "caption": "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter.",
+        "photoCredit": "Pattaya Patrol",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Burger_and_fries_on_a_wooden_plate.jpg",
+        "isFallback": false
       }
     ]
   },
