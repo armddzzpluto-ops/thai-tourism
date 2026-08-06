@@ -1636,11 +1636,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "ratchaburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/ratchaburi/gallery-1.webp",
+      "assets/images/provinces/ratchaburi/gallery-2.webp",
+      "assets/images/provinces/ratchaburi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี     วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน์ วิมลรังครัตน์) @is50mm",
+      "Chet Samian, Photharam District, Ratchaburi 70120, Thailand",
+      "condom"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/ratchaburi/gallery-1.webp",
+        "caption": "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี     วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน์ วิมลรังครัตน์) @is50mm",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40561337@N07\">Government of Thailand\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Abhisit_Vejjajiva_(3).jpg"
+      },
+      {
+        "file": "assets/images/provinces/ratchaburi/gallery-2.webp",
+        "caption": "Chet Samian, Photharam District, Ratchaburi 70120, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031045929/http://www.panoramio.com/user/4366445?with_photo_id=117183717\">Phong Phat G\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Samian,_Photharam_District,_Ratchaburi_70120,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ratchaburi/gallery-3.webp",
+        "caption": "condom",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102214421/http://www.panoramio.com/user/8928001?with_photo_id=126545062\">Bundit Sincharoen\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Condom_-_panoramio.jpg"
+      }
+    ]
   },
   "rayong": {
     "status": "needs-curation",
