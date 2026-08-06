@@ -2255,11 +2255,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "trat": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/trat/gallery-1.webp",
+      "assets/images/provinces/trat/gallery-2.webp",
+      "assets/images/provinces/trat/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Matthew Troyer, U.S. Marine Corps/Released)",
+      "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Feb. 3, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
+      "3 shades of blue"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/trat/gallery-1.webp",
+        "caption": "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Matthew Troyer, U.S. Marine Corps/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:130123-M-IJ457-320_(8433207904).jpg"
+      },
+      {
+        "file": "assets/images/provinces/trat/gallery-2.webp",
+        "caption": "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Feb. 3, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:130203-M-IJ457-031_(8454296948).jpg"
+      },
+      {
+        "file": "assets/images/provinces/trat/gallery-3.webp",
+        "caption": "3 shades of blue",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/34907359@N08\">cloud.shepherd\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:3_shades_of_blue_(29416392316).jpg"
+      }
+    ]
   },
   "ubon-ratchathani": {
     "status": "needs-curation",
