@@ -3954,9 +3954,7 @@
     "galleryImages": [
       "assets/images/provinces/yala/gallery-1.webp",
       "assets/images/provinces/yala/gallery-2.webp",
-      "assets/images/provinces/yala/gallery-3.webp",
-      "assets/images/provinces/yala/gallery-4.webp",
-      "assets/images/provinces/yala/gallery-5.webp"
+      "assets/images/provinces/yala/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -3974,50 +3972,30 @@
         "slug": "yala",
         "role": "gallery-1",
         "file": "assets/images/provinces/yala/gallery-1.webp",
-        "caption": "Yala tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Bala, Kabang District, Yala 95120, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101004119/http://www.panoramio.com/user/6667993?with_photo_id=127352855\">กิตติ เลขะกุล</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bala,_Kabang_District,_Yala_95120,_Thailand_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Yala",
         "slug": "yala",
         "role": "gallery-2",
         "file": "assets/images/provinces/yala/gallery-2.webp",
-        "caption": "Yala tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Betong is a district of Yala Province, situated in the southernmost province of Thailand in Sankalakhiri mountain range.",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/leonlee28/\">leonlee28</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Betong.jpg",
+        "isFallback": false
       },
       {
         "province": "Yala",
         "slug": "yala",
         "role": "gallery-3",
         "file": "assets/images/provinces/yala/gallery-3.webp",
-        "caption": "Yala tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Yala",
-        "slug": "yala",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/yala/gallery-4.webp",
-        "caption": "Yala tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Yala",
-        "slug": "yala",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/yala/gallery-5.webp",
-        "caption": "Yala tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%9A%E0%B8%B6%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%20%E0%B8%95%E0%B8%B0%E0%B9%82%E0%B8%A5%E0%B9%8A%E0%B8%B0%E0%B8%AB%E0%B8%B0%E0%B8%A5%E0%B8%AD%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Budi, Mueang Yala District, Yala, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030100018/http://www.panoramio.com/user/6667993?with_photo_id=104885915\">กิตติ เลขะกุล</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Budi,_Mueang_Yala_District,_Yala,_Thailand_-_panoramio.jpg",
+        "isFallback": false
       }
     ]
   },

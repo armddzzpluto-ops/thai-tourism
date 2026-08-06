@@ -2425,11 +2425,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "yala": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/yala/gallery-1.webp",
+      "assets/images/provinces/yala/gallery-2.webp",
+      "assets/images/provinces/yala/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Bala, Kabang District, Yala 95120, Thailand",
+      "Betong is a district of Yala Province, situated in the southernmost province of Thailand in Sankalakhiri mountain range.",
+      "Budi, Mueang Yala District, Yala, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/yala/gallery-1.webp",
+        "caption": "Bala, Kabang District, Yala 95120, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101004119/http://www.panoramio.com/user/6667993?with_photo_id=127352855\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bala,_Kabang_District,_Yala_95120,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/yala/gallery-2.webp",
+        "caption": "Betong is a district of Yala Province, situated in the southernmost province of Thailand in Sankalakhiri mountain range.",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/leonlee28/\">leonlee28\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Betong.jpg"
+      },
+      {
+        "file": "assets/images/provinces/yala/gallery-3.webp",
+        "caption": "Budi, Mueang Yala District, Yala, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030100018/http://www.panoramio.com/user/6667993?with_photo_id=104885915\">กิตติ เลขะกุล\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Budi,_Mueang_Yala_District,_Yala,_Thailand_-_panoramio.jpg"
+      }
+    ]
   },
   "yasothon": {
     "status": "needs-curation",
