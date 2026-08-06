@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Kanchanaburi",
-    "slug":  "kanchanaburi",
-    "heroImage":  "assets/images/provinces/kanchanaburi/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/kanchanaburi/gallery-1.webp",
-                          "assets/images/provinces/kanchanaburi/gallery-2.webp",
-                          "assets/images/provinces/kanchanaburi/gallery-3.webp",
-                          "assets/images/provinces/kanchanaburi/gallery-4.webp",
-                          "assets/images/provinces/kanchanaburi/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/kanchanaburi/hero.webp",
-                            "caption":  "Kanchanaburi tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/kanchanaburi/gallery-1.webp",
-                            "caption":  "Kanchanaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/kanchanaburi/gallery-2.webp",
-                            "caption":  "Kanchanaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/kanchanaburi/gallery-3.webp",
-                            "caption":  "Kanchanaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/kanchanaburi/gallery-4.webp",
-                            "caption":  "Kanchanaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Kanchanaburi",
-                            "slug":  "kanchanaburi",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/kanchanaburi/gallery-5.webp",
-                            "caption":  "Kanchanaburi tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Kanchanaburi",
+  "slug": "kanchanaburi",
+  "heroImage": "assets/images/provinces/kanchanaburi/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/kanchanaburi/gallery-1.webp",
+    "assets/images/provinces/kanchanaburi/gallery-2.webp",
+    "assets/images/provinces/kanchanaburi/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "hero",
+      "file": "assets/images/provinces/kanchanaburi/hero.webp",
+      "caption": "Kanchanaburi tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20River%20Kwai.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/kanchanaburi/gallery-1.webp",
+      "caption": "This is the AMURTEL Children's and Mother's Home <i>Baan Unrak</i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Cornelius383\" title=\"User:Cornelius383\">Cornelius383</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:02-Ananda_Marga_Children%27s_School_Sangkhlaburi.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/kanchanaburi/gallery-2.webp",
+      "caption": "<div class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]</div>",
+      "photoCredit": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/AvisHek\">Avis Hek</a></div>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:500px_photo_(28391891).jpeg",
+      "isFallback": false
+    },
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/kanchanaburi/gallery-3.webp",
+      "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png",
+      "isFallback": false
+    }
+  ]
 }

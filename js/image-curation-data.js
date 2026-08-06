@@ -547,11 +547,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "kanchanaburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/kanchanaburi/gallery-1.webp",
+      "assets/images/provinces/kanchanaburi/gallery-2.webp",
+      "assets/images/provinces/kanchanaburi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "This is the AMURTEL Children's and Mother's Home \u003ci>Baan Unrak\u003c/i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
+      "\u003cdiv class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]\u003c/div>",
+      "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/kanchanaburi/gallery-1.webp",
+        "caption": "This is the AMURTEL Children's and Mother's Home \u003ci>Baan Unrak\u003c/i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Cornelius383\" title=\"User:Cornelius383\">Cornelius383\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:02-Ananda_Marga_Children%27s_School_Sangkhlaburi.JPG"
+      },
+      {
+        "file": "assets/images/provinces/kanchanaburi/gallery-2.webp",
+        "caption": "\u003cdiv class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]\u003c/div>",
+        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/AvisHek\">Avis Hek\u003c/a>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:500px_photo_(28391891).jpeg"
+      },
+      {
+        "file": "assets/images/provinces/kanchanaburi/gallery-3.webp",
+        "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png"
+      }
+    ]
   },
   "khon-kaen": {
     "status": "needs-curation",
