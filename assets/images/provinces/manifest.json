@@ -1132,9 +1132,7 @@
     "galleryImages": [
       "assets/images/provinces/lamphun/gallery-1.webp",
       "assets/images/provinces/lamphun/gallery-2.webp",
-      "assets/images/provinces/lamphun/gallery-3.webp",
-      "assets/images/provinces/lamphun/gallery-4.webp",
-      "assets/images/provinces/lamphun/gallery-5.webp"
+      "assets/images/provinces/lamphun/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -1152,50 +1150,30 @@
         "slug": "lamphun",
         "role": "gallery-1",
         "file": "assets/images/provinces/lamphun/gallery-1.webp",
-        "caption": "Lamphun tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "อนุสาวรีย์ครูบาศรีวิชัย สร้างขึ้น ณ จุดที่ขุดถนนจอบแรก เพื่อเป็นอนุสรน์สถานรำลึกถึงคุณของครูบาเจ้าศรีวิชัยในการนำกลุ่มชาวบ้าน ชาวเขา สร้างถนนขึ้นพระธาตุดอยสุเทพ",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kimtuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kimtuy (page does not exist)\">Kimtuy</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:AnuSawwaree_Khrubasriwichai.jpg",
+        "isFallback": false
       },
       {
         "province": "Lamphun",
         "slug": "lamphun",
         "role": "gallery-2",
         "file": "assets/images/provinces/lamphun/gallery-2.webp",
-        "caption": "Lamphun tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Mae Tha, Lamphun, THAILAND",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Jewel_Beetle_(Sternocera_ruficornis)_(8247653334).jpg",
+        "isFallback": false
       },
       {
         "province": "Lamphun",
         "slug": "lamphun",
         "role": "gallery-3",
         "file": "assets/images/provinces/lamphun/gallery-3.webp",
-        "caption": "Lamphun tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Lamphun",
-        "slug": "lamphun",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/lamphun/gallery-4.webp",
-        "caption": "Lamphun tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Lamphun",
-        "slug": "lamphun",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/lamphun/gallery-5.webp",
-        "caption": "Lamphun tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Khun%20Tan%20peak%2C%20Thailand%20-%20panoramio.jpg",
-        "isFallback": true
+        "caption": "Lamphun Province Stadium",
+        "photoCredit": "Pudt",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lamphun_Province_Stadium_2018.jpg",
+        "isFallback": false
       }
     ]
   },

@@ -683,11 +683,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "lamphun": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/lamphun/gallery-1.webp",
+      "assets/images/provinces/lamphun/gallery-2.webp",
+      "assets/images/provinces/lamphun/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "อนุสาวรีย์ครูบาศรีวิชัย สร้างขึ้น ณ จุดที่ขุดถนนจอบแรก เพื่อเป็นอนุสรน์สถานรำลึกถึงคุณของครูบาเจ้าศรีวิชัยในการนำกลุ่มชาวบ้าน ชาวเขา สร้างถนนขึ้นพระธาตุดอยสุเทพ",
+      "Mae Tha, Lamphun, THAILAND",
+      "Lamphun Province Stadium"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/lamphun/gallery-1.webp",
+        "caption": "อนุสาวรีย์ครูบาศรีวิชัย สร้างขึ้น ณ จุดที่ขุดถนนจอบแรก เพื่อเป็นอนุสรน์สถานรำลึกถึงคุณของครูบาเจ้าศรีวิชัยในการนำกลุ่มชาวบ้าน ชาวเขา สร้างถนนขึ้นพระธาตุดอยสุเทพ",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kimtuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kimtuy (page does not exist)\">Kimtuy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:AnuSawwaree_Khrubasriwichai.jpg"
+      },
+      {
+        "file": "assets/images/provinces/lamphun/gallery-2.webp",
+        "caption": "Mae Tha, Lamphun, THAILAND",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT\u003c/a> from FRANCE",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Jewel_Beetle_(Sternocera_ruficornis)_(8247653334).jpg"
+      },
+      {
+        "file": "assets/images/provinces/lamphun/gallery-3.webp",
+        "caption": "Lamphun Province Stadium",
+        "photoCredit": "Pudt",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lamphun_Province_Stadium_2018.jpg"
+      }
+    ]
   },
   "loei": {
     "status": "needs-curation",
