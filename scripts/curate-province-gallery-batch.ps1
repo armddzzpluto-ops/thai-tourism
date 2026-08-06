@@ -65,10 +65,28 @@ function Convert-ToWebp {
   }
 }
 
+function Resolve-WikimediaProvinceName {
+  param([string]$Province)
+
+  $aliases = @{
+    'Buri Ram' = 'Buriram'
+    'Chai Nat' = 'Chainat'
+    'Lop Buri' = 'Lopburi'
+    'Nong Bua Lamphu' = 'Nong Bua Lam Phu'
+    'Prachin Buri' = 'Prachinburi'
+    'Si Sa Ket' = 'Sisaket'
+  }
+
+  if ($aliases.ContainsKey($Province)) {
+    return $aliases[$Province]
+  }
+  return $Province
+}
+
 function Get-ProvinceCategoryCandidates {
   param([string]$Province)
 
-  $name = $Province.Trim()
+  $name = (Resolve-WikimediaProvinceName -Province $Province).Trim()
   $escaped = $name -replace ' ', '_'
   return @(
     "Category:Tourism_in_${escaped}_Province",
@@ -159,7 +177,10 @@ function Get-CommonsFilesFromCategory {
 function Get-WikipediaImageCandidates {
   param([string]$Province)
 
+  $wikimediaProvince = Resolve-WikimediaProvinceName -Province $Province
   $pageCandidates = @(
+    "${wikimediaProvince} Province",
+    "$wikimediaProvince",
     "${Province} Province",
     "$Province"
   )
