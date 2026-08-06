@@ -185,11 +185,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "buri-ram": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/buri-ram/gallery-1.webp",
+      "assets/images/provinces/buri-ram/gallery-2.webp",
+      "assets/images/provinces/buri-ram/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
+      "Gross Provincial Product (GPP) der Provinz Buriram (in Mio. Baht, zum gültigen Marktpreis)",
+      "Aerial view inside Phutthaisong School"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/buri-ram/gallery-1.webp",
+        "caption": "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Media_lib&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Media lib (page does not exist)\">Media lib\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Buriram_Bsp_1995-99.jpg"
+      },
+      {
+        "file": "assets/images/provinces/buri-ram/gallery-2.webp",
+        "caption": "Gross Provincial Product (GPP) der Provinz Buriram (in Mio. Baht, zum gültigen Marktpreis)",
+        "photoCredit": "World24",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:GPP_Buriram.jpg"
+      },
+      {
+        "file": "assets/images/provinces/buri-ram/gallery-3.webp",
+        "caption": "Aerial view inside Phutthaisong School",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wiraphat_Raksat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wiraphat Raksat (page does not exist)\">Wiraphat Raksat\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B9%84%E0%B8%98%E0%B8%AA%E0%B8%87.jpg"
+      }
+    ]
   },
   "chachoengsao": {
     "status": "complete",
