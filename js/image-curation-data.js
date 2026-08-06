@@ -799,11 +799,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "mukdahan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/mukdahan/gallery-1.webp",
+      "assets/images/provinces/mukdahan/gallery-2.webp",
+      "assets/images/provinces/mukdahan/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Mukdahan, Thailand",
+      "แผนที่ธงจังหวัดมุกดาหาร",
+      "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/mukdahan/gallery-1.webp",
+        "caption": "Mukdahan, Thailand",
+        "photoCredit": "NASA",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Mukdahan_104.72436E_16.54268N.jpg"
+      },
+      {
+        "file": "assets/images/provinces/mukdahan/gallery-2.webp",
+        "caption": "แผนที่ธงจังหวัดมุกดาหาร",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Mukdahan.png"
+      },
+      {
+        "file": "assets/images/provinces/mukdahan/gallery-3.webp",
+        "caption": "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031053702/http://www.panoramio.com/user/1429473?with_photo_id=124395859\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Na_Si_Nuan,_Mueang_Mukdahan_District,_Mukdahan,_Thailand_-_panoramio_(1).jpg"
+      }
+    ]
   },
   "nakhon-nayok": {
     "status": "needs-curation",
