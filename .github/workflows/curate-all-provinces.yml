@@ -1,6 +1,6 @@
 name: Curate all province galleries
 
-# Curate a minimum of three verified gallery images per province
+# Curate three verified gallery images per province — alias retry
 on:
   workflow_dispatch:
   push:
