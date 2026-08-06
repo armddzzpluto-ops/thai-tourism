@@ -2323,11 +2323,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "udon-thani": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/udon-thani/gallery-1.webp",
+      "assets/images/provinces/udon-thani/gallery-2.webp",
+      "assets/images/provinces/udon-thani/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "ท.6",
+      "Mobile lunch vendor at Udon station, circa 1948",
+      "Louis Marchadier, 3ième en haut en partant de la gauche"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/udon-thani/gallery-1.webp",
+        "caption": "ท.6",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:KFPTRK&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:KFPTRK (page does not exist)\">KFPTRK\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:101362957_lTJm_9caVgkMGWSPaBuF7NOYyIAPLL8dKja7eaOYrRI.jpg"
+      },
+      {
+        "file": "assets/images/provinces/udon-thani/gallery-2.webp",
+        "caption": "Mobile lunch vendor at Udon station, circa 1948",
+        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:1948-mobile-lunch-vendor-udon-thani.jpg"
+      },
+      {
+        "file": "assets/images/provinces/udon-thani/gallery-3.webp",
+        "caption": "Louis Marchadier, 3ième en haut en partant de la gauche",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Snails63700&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Snails63700 (page does not exist)\">Snails63700\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_g%C3%A9n%C3%A9rale_King%27s_cup.jpg"
+      }
+    ]
   },
   "uthai-thani": {
     "status": "needs-curation",
