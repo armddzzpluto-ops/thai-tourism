@@ -1085,11 +1085,38 @@ window.IMAGE_CURATION = {
     "attribution": []
   },
   "nong-khai": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nong-khai/gallery-1.webp",
+      "assets/images/provinces/nong-khai/gallery-2.webp",
+      "assets/images/provinces/nong-khai/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "วัดคาทอลิกที่โนนแก้ว\nภาพถ่ายจากอุโฆษสาร 1953",
+      "Agriculture in Nongkhai",
+      "Agriculture in Nongkhai"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nong-khai/gallery-1.webp",
+        "caption": "วัดคาทอลิกที่โนนแก้ว\nภาพถ่ายจากอุโฆษสาร 1953",
+        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:1953_Echoes_-_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%A5%E0%B8%B4%E0%B8%81_%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B9%82%E0%B8%99%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nong-khai/gallery-2.webp",
+        "caption": "Agriculture in Nongkhai",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102032545/http://www.panoramio.com/user/6767461?with_photo_id=92091540\">Udom PINTUWONG\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(1).jpg"
+      },
+      {
+        "file": "assets/images/provinces/nong-khai/gallery-3.webp",
+        "caption": "Agriculture in Nongkhai",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030130203/http://www.panoramio.com/user/6767461?with_photo_id=92091557\">Udom PINTUWONG\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(2).jpg"
+      }
+    ]
   },
   "nonthaburi": {
     "status": "needs-curation",
