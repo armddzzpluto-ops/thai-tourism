@@ -1976,7 +1976,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "si-sa-ket": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],

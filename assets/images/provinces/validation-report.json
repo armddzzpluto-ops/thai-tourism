@@ -429,7 +429,7 @@
   {
     "province": "Si Sa Ket",
     "slug": "si-sa-ket",
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCount": 5,
     "fallbackCount": 5
   },
