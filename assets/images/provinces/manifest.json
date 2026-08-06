@@ -3138,9 +3138,7 @@
     "galleryImages": [
       "assets/images/provinces/si-sa-ket/gallery-1.webp",
       "assets/images/provinces/si-sa-ket/gallery-2.webp",
-      "assets/images/provinces/si-sa-ket/gallery-3.webp",
-      "assets/images/provinces/si-sa-ket/gallery-4.webp",
-      "assets/images/provinces/si-sa-ket/gallery-5.webp"
+      "assets/images/provinces/si-sa-ket/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -3158,50 +3156,30 @@
         "slug": "si-sa-ket",
         "role": "gallery-1",
         "file": "assets/images/provinces/si-sa-ket/gallery-1.webp",
-        "caption": "Si Sa Ket tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "สภาพตัวอำเภอขุขันธ์",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:ChasingTheDragon&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ChasingTheDragon (page does not exist)\">ChasingTheDragon</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khukhan_town.jpg",
+        "isFallback": false
       },
       {
         "province": "Si Sa Ket",
         "slug": "si-sa-ket",
         "role": "gallery-2",
         "file": "assets/images/provinces/si-sa-ket/gallery-2.webp",
-        "caption": "Si Sa Ket tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "Location of Prang Ku and Prasat Hin Ban Samo in Amphoe Prang Ku",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Ddalbiez\" title=\"User:Ddalbiez\">Ddalbiez</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_Prang_Ku.jpg",
+        "isFallback": false
       },
       {
         "province": "Si Sa Ket",
         "slug": "si-sa-ket",
         "role": "gallery-3",
         "file": "assets/images/provinces/si-sa-ket/gallery-3.webp",
-        "caption": "Si Sa Ket tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Si Sa Ket",
-        "slug": "si-sa-ket",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/si-sa-ket/gallery-4.webp",
-        "caption": "Si Sa Ket tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Si Sa Ket",
-        "slug": "si-sa-ket",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/si-sa-ket/gallery-5.webp",
-        "caption": "Si Sa Ket tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Khok%20Tan%2C%20Phu%20Sing%20District%2C%20Si%20Sa%20Ket%2033140%2C%20Thailand%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "number 226 road (ubon - sisaket)",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161019212033/http://www.panoramio.com/user/4773955?with_photo_id=55182352\">มะเดื่อ แสลงหลวง</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Number_226_road_(ubon_-_sisaket)_-_panoramio.jpg",
+        "isFallback": false
       }
     ]
   },

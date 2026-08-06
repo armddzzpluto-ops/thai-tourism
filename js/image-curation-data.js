@@ -2165,11 +2165,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "si-sa-ket": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/si-sa-ket/gallery-1.webp",
+      "assets/images/provinces/si-sa-ket/gallery-2.webp",
+      "assets/images/provinces/si-sa-ket/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "สภาพตัวอำเภอขุขันธ์",
+      "Location of Prang Ku and Prasat Hin Ban Samo in Amphoe Prang Ku",
+      "number 226 road (ubon - sisaket)"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/si-sa-ket/gallery-1.webp",
+        "caption": "สภาพตัวอำเภอขุขันธ์",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:ChasingTheDragon&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ChasingTheDragon (page does not exist)\">ChasingTheDragon\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khukhan_town.jpg"
+      },
+      {
+        "file": "assets/images/provinces/si-sa-ket/gallery-2.webp",
+        "caption": "Location of Prang Ku and Prasat Hin Ban Samo in Amphoe Prang Ku",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ddalbiez\" title=\"User:Ddalbiez\">Ddalbiez\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_Prang_Ku.jpg"
+      },
+      {
+        "file": "assets/images/provinces/si-sa-ket/gallery-3.webp",
+        "caption": "number 226 road (ubon - sisaket)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161019212033/http://www.panoramio.com/user/4773955?with_photo_id=55182352\">มะเดื่อ แสลงหลวง\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Number_226_road_(ubon_-_sisaket)_-_panoramio.jpg"
+      }
+    ]
   },
   "sing-buri": {
     "status": "complete",
