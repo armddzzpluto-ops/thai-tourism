@@ -2357,11 +2357,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "uthai-thani": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/uthai-thani/gallery-1.webp",
+      "assets/images/provinces/uthai-thani/gallery-2.webp",
+      "assets/images/provinces/uthai-thani/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "This photograph shows the natural landscape inside Hup Pa Tat Cave in Uthai Thani Province, Thailand.",
+      "灰岩鷦鹛 Limestone Wren-babbler (Napothera crispifrons) — at Hup Pa Tat.",
+      "This photograph shows the Giant Tree and its surrounding natural environment in Uthai Thani Province, Thailand."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/uthai-thani/gallery-1.webp",
+        "caption": "This photograph shows the natural landscape inside Hup Pa Tat Cave in Uthai Thani Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Hup_Pa_Tat_Cave_in_Uthai_Thani.jpg"
+      },
+      {
+        "file": "assets/images/provinces/uthai-thani/gallery-2.webp",
+        "caption": "灰岩鷦鹛 Limestone Wren-babbler (Napothera crispifrons) — at Hup Pa Tat.",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/61860520@N07\">lonelyshrimp\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Limestone_wren-babbler_(37917483062).jpg"
+      },
+      {
+        "file": "assets/images/provinces/uthai-thani/gallery-3.webp",
+        "caption": "This photograph shows the Giant Tree and its surrounding natural environment in Uthai Thani Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:The_Giant_Tree_in_Uthai_Thani.jpg"
+      }
+    ]
   },
   "uttaradit": {
     "status": "needs-curation",
