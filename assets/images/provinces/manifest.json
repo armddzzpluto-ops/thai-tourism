@@ -2736,9 +2736,7 @@
     "galleryImages": [
       "assets/images/provinces/rayong/gallery-1.webp",
       "assets/images/provinces/rayong/gallery-2.webp",
-      "assets/images/provinces/rayong/gallery-3.webp",
-      "assets/images/provinces/rayong/gallery-4.webp",
-      "assets/images/provinces/rayong/gallery-5.webp"
+      "assets/images/provinces/rayong/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2756,50 +2754,30 @@
         "slug": "rayong",
         "role": "gallery-1",
         "file": "assets/images/provinces/rayong/gallery-1.webp",
-        "caption": "Rayong tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
-        "isFallback": true
+        "caption": "Watpapradoo School",
+        "photoCredit": "โรงเรียนวัดป่าประดู่",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:1000034545-removebg-preview.png",
+        "isFallback": false
       },
       {
         "province": "Rayong",
         "slug": "rayong",
         "role": "gallery-2",
         "file": "assets/images/provinces/rayong/gallery-2.webp",
-        "caption": "Rayong tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
-        "isFallback": true
+        "caption": "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along with sailors from the Royal Thai Navy to help paint murals as part of Cooperation Afloat Readiness and Training (CARAT) Thailand 2010. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-036_(4616427474).jpg",
+        "isFallback": false
       },
       {
         "province": "Rayong",
         "slug": "rayong",
         "role": "gallery-3",
         "file": "assets/images/provinces/rayong/gallery-3.webp",
-        "caption": "Rayong tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Rayong",
-        "slug": "rayong",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/rayong/gallery-4.webp",
-        "caption": "Rayong tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Rayong",
-        "slug": "rayong",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/rayong/gallery-5.webp",
-        "caption": "Rayong tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B9%87%E0%B8%944.jpg",
-        "isFallback": true
+        "caption": "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-232_(4616427974).jpg",
+        "isFallback": false
       }
     ]
   },

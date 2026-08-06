@@ -1670,11 +1670,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "rayong": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/rayong/gallery-1.webp",
+      "assets/images/provinces/rayong/gallery-2.webp",
+      "assets/images/provinces/rayong/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Watpapradoo School",
+      "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along with sailors from the Royal Thai Navy to help paint murals as part of Cooperation Afloat Readiness and Training (CARAT) Thailand 2010. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
+      "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/rayong/gallery-1.webp",
+        "caption": "Watpapradoo School",
+        "photoCredit": "โรงเรียนวัดป่าประดู่",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:1000034545-removebg-preview.png"
+      },
+      {
+        "file": "assets/images/provinces/rayong/gallery-2.webp",
+        "caption": "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along with sailors from the Royal Thai Navy to help paint murals as part of Cooperation Afloat Readiness and Training (CARAT) Thailand 2010. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-036_(4616427474).jpg"
+      },
+      {
+        "file": "assets/images/provinces/rayong/gallery-3.webp",
+        "caption": "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-232_(4616427974).jpg"
+      }
+    ]
   },
   "roi-et": {
     "status": "needs-curation",
