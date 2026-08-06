@@ -1323,11 +1323,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phetchabun": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phetchabun/gallery-1.webp",
+      "assets/images/provinces/phetchabun/gallery-2.webp",
+      "assets/images/provinces/phetchabun/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Thailand",
+      "mini Big C. Opened in December 2019 on Route 21, in Ban Klang, Si Thep District, Phetchabun Province, Thailand",
+      "Vietnam"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phetchabun/gallery-1.webp",
+        "caption": "Thailand",
+        "photoCredit": "Kawin Harasai \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@kawin\">kawin\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Artsy_Tablescape_(Unsplash).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phetchabun/gallery-2.webp",
+        "caption": "mini Big C. Opened in December 2019 on Route 21, in Ban Klang, Si Thep District, Phetchabun Province, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:KusiD\" title=\"User:KusiD\">KusiD\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:AS_mini_Big_C.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phetchabun/gallery-3.webp",
+        "caption": "Vietnam",
+        "photoCredit": "paul morris \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@oldskool2016\">oldskool2016\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Beans_and_Spices_(Unsplash).jpg"
+      }
+    ]
   },
   "phetchaburi": {
     "status": "needs-curation",
