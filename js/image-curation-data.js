@@ -1221,11 +1221,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phang-nga": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phang-nga/gallery-1.webp",
+      "assets/images/provinces/phang-nga/gallery-2.webp",
+      "assets/images/provinces/phang-nga/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "บางมาราฮิลล์ อีกหนึ่งสถานที่ท่องเที่ยวในประเทศไทย",
+      "Phang Nga Province, Thailand",
+      "Ban Khem"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phang-nga/gallery-1.webp",
+        "caption": "บางมาราฮิลล์ อีกหนึ่งสถานที่ท่องเที่ยวในประเทศไทย",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Andrewvgestel\" title=\"User:Andrewvgestel\">Andrewvgestel\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bangmarahill_,Phangnga_by_andrewvgestel.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phang-nga/gallery-2.webp",
+        "caption": "Phang Nga Province, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021153913/http://www.panoramio.com/user/4631368?with_photo_id=51455285\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1570).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phang-nga/gallery-3.webp",
+        "caption": "Ban Khem",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:BanKhem&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:BanKhem (page does not exist)\">BanKhem\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Khem_001.jpg"
+      }
+    ]
   },
   "phatthalung": {
     "status": "needs-curation",
