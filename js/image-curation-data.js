@@ -2289,11 +2289,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "ubon-ratchathani": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
+      "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
+      "assets/images/provinces/ubon-ratchathani/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "ชุมชนลูกหลานเจ้าคำผง จ.อุบลราชธานี",
+      "Ban Jamrat 300/34 M 11 Klang-Ar-Wuth road. Kham Yai. Ubon 34000 at UBISD",
+      "The Chong Mek Pass office in Amphoe Sirindhorn, under construction."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
+        "caption": "ชุมชนลูกหลานเจ้าคำผง จ.อุบลราชธานี",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:MEWNP&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:MEWNP (page does not exist)\">MEWNP\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20220731_Wiki_ARS_Work_Page_18.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
+        "caption": "Ban Jamrat 300/34 M 11 Klang-Ar-Wuth road. Kham Yai. Ubon 34000 at UBISD",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011070128/http://www.panoramio.com/user/1465176?with_photo_id=8594055\">JAMRAT\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Jamrat_300-34_M_11_Klang-Ar-Wuth_road._Kham_Yai._Ubon_34000_at_UBISD_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/ubon-ratchathani/gallery-3.webp",
+        "caption": "The Chong Mek Pass office in Amphoe Sirindhorn, under construction.",
+        "photoCredit": "No machine-readable author provided. \u003ca href=\"//commons.wikimedia.org/wiki/User:Oatz\" title=\"User:Oatz\">Oatz\u003c/a> assumed (based on copyright claims).",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chong_Mek_Pass_in_Ubon_Ratchathani.jpg"
+      }
+    ]
   },
   "udon-thani": {
     "status": "needs-curation",
