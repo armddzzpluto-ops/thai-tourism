@@ -1,74 +1,52 @@
-﻿{
-    "province":  "Nakhon Ratchasima",
-    "slug":  "nakhon-ratchasima",
-    "heroImage":  "assets/images/provinces/nakhon-ratchasima/hero.webp",
-    "galleryImages":  [
-                          "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
-                          "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
-                          "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
-                          "assets/images/provinces/nakhon-ratchasima/gallery-4.webp",
-                          "assets/images/provinces/nakhon-ratchasima/gallery-5.webp"
-                      ],
-    "attribution":  [
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "hero",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/hero.webp",
-                            "caption":  "Nakhon Ratchasima tourism highlight",
-                            "photoCredit":  "Wikimedia Commons contributor",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  false
-                        },
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "gallery-1",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
-                            "caption":  "Nakhon Ratchasima tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "gallery-2",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
-                            "caption":  "Nakhon Ratchasima tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "gallery-3",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
-                            "caption":  "Nakhon Ratchasima tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "gallery-4",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-4.webp",
-                            "caption":  "Nakhon Ratchasima tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  true
-                        },
-                        {
-                            "province":  "Nakhon Ratchasima",
-                            "slug":  "nakhon-ratchasima",
-                            "role":  "gallery-5",
-                            "file":  "assets/images/provinces/nakhon-ratchasima/gallery-5.webp",
-                            "caption":  "Nakhon Ratchasima tourism fallback image",
-                            "photoCredit":  "Fallback from hero image",
-                            "imageSource":  "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
-                            "isFallback":  true
-                        }
-                    ]
+{
+  "province": "Nakhon Ratchasima",
+  "slug": "nakhon-ratchasima",
+  "heroImage": "assets/images/provinces/nakhon-ratchasima/hero.webp",
+  "galleryImages": [
+    "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+    "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+    "assets/images/provinces/nakhon-ratchasima/gallery-3.webp"
+  ],
+  "attribution": [
+    {
+      "province": "Nakhon Ratchasima",
+      "slug": "nakhon-ratchasima",
+      "role": "hero",
+      "file": "assets/images/provinces/nakhon-ratchasima/hero.webp",
+      "caption": "Nakhon Ratchasima tourism highlight",
+      "photoCredit": "Wikimedia Commons contributor",
+      "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Thao%20Suranaree%20Statue%20Korat%20Thailand.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Ratchasima",
+      "slug": "nakhon-ratchasima",
+      "role": "gallery-1",
+      "file": "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+      "caption": "รูปปั้นไดโนเสาร์ที่จังหวัดนครราชสีมา",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.Conan&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.Conan (page does not exist)\">Mr.Conan</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:DinosaursKorat.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Ratchasima",
+      "slug": "nakhon-ratchasima",
+      "role": "gallery-2",
+      "file": "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+      "caption": "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District,  Nakhon Ratchasima Province, Thailand.",
+      "photoCredit": "<table class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n<tbody><tr class=\"plainlinks\">\n<td><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/60px-Flag_of_Thailand.svg.png\" decoding=\"async\" width=\"50\" height=\"33\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/120px-Flag_of_Thailand.svg.png 2x\" data-file-width=\"900\" data-file-height=\"600\"></a></span> This Photo was taken by <i><b><a href=\"//commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\" title=\"User:Supanut Arunoprayote\">Supanut Arunoprayote</a></b></i>.\n</td>\n<td align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a <a class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">message.</a> <br> (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง<a class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">ข้อความบอกกล่าวด้วย</a>) <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Contact_vmc2015.png\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/40px-Contact_vmc2015.png\" decoding=\"async\" width=\"40\" height=\"40\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/120px-Contact_vmc2015.png 2x\" data-file-width=\"940\" data-file-height=\"940\"></a></span>\n</td></tr></tbody></table>\n<div style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n<table><tbody><tr><td style=\"padding:4px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\"></a></span>\n</td><td style=\"padding:4px;\"><div style=\"margin-top:0.5em;\">Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.<br>Please if you think that any changes should be required, please inform the author.<br>Otherwise you can upload a new image with a new name. Please use one of the templates <a href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative</a> or <a href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract</a>.</div>\n</td></tr></tbody></table></div>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Khao_Yai_Tieng_(I).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Ratchasima",
+      "slug": "nakhon-ratchasima",
+      "role": "gallery-3",
+      "file": "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
+      "caption": "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pak Tong Chai, Nakhon Ratchasima province, Thailand, Jan. 24, 2012, during exercise Cobra Gold 2012. The foundation is part of a multipurpose building being constructed at the school. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:120124-M-IJ457-062_(6766192875).jpg",
+      "isFallback": false
+    }
+  ]
 }

@@ -935,11 +935,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-ratchasima": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+      "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+      "assets/images/provinces/nakhon-ratchasima/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "รูปปั้นไดโนเสาร์ที่จังหวัดนครราชสีมา",
+      "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District,  Nakhon Ratchasima Province, Thailand.",
+      "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pak Tong Chai, Nakhon Ratchasima province, Thailand, Jan. 24, 2012, during exercise Cobra Gold 2012. The foundation is part of a multipurpose building being constructed at the school. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
+        "caption": "รูปปั้นไดโนเสาร์ที่จังหวัดนครราชสีมา",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.Conan&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.Conan (page does not exist)\">Mr.Conan\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:DinosaursKorat.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
+        "caption": "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District,  Nakhon Ratchasima Province, Thailand.",
+        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n\u003ctbody>\u003ctr class=\"plainlinks\">\n\u003ctd>\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/60px-Flag_of_Thailand.svg.png\" decoding=\"async\" width=\"50\" height=\"33\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/120px-Flag_of_Thailand.svg.png 2x\" data-file-width=\"900\" data-file-height=\"600\">\u003c/a>\u003c/span> This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\" title=\"User:Supanut Arunoprayote\">Supanut Arunoprayote\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">message.\u003c/a> \u003cbr> (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง\u003ca class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">ข้อความบอกกล่าวด้วย\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Contact_vmc2015.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/40px-Contact_vmc2015.png\" decoding=\"async\" width=\"40\" height=\"40\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/120px-Contact_vmc2015.png 2x\" data-file-width=\"940\" data-file-height=\"940\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\u003ctbody>\u003ctr>\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.\u003cbr>Please if you think that any changes should be required, please inform the author.\u003cbr>Otherwise you can upload a new image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\u003c/div>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khao_Yai_Tieng_(I).jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
+        "caption": "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pak Tong Chai, Nakhon Ratchasima province, Thailand, Jan. 24, 2012, during exercise Cobra Gold 2012. The foundation is part of a multipurpose building being constructed at the school. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:120124-M-IJ457-062_(6766192875).jpg"
+      }
+    ]
   },
   "nakhon-sawan": {
     "status": "needs-curation",
