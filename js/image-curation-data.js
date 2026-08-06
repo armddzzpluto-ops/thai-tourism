@@ -1391,11 +1391,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phichit": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phichit/gallery-1.webp",
+      "assets/images/provinces/phichit/gallery-2.webp",
+      "assets/images/provinces/phichit/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Ban Nanuea Soi 1 (street) 06",
+      "Ban Nanuea Soi 1 (street) 07/ Soi",
+      "Ban Nanuea Soi 2 This is the local street from Thailand. IMG20240923183042."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phichit/gallery-1.webp",
+        "caption": "Ban Nanuea Soi 1 (street) 06",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_1_(street)_06.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phichit/gallery-2.webp",
+        "caption": "Ban Nanuea Soi 1 (street) 07/ Soi",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_1_(street)_07.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phichit/gallery-3.webp",
+        "caption": "Ban Nanuea Soi 2 This is the local street from Thailand. IMG20240923183042.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_2_(street)_01.jpg"
+      }
+    ]
   },
   "phitsanulok": {
     "status": "needs-curation",
