@@ -233,7 +233,7 @@
   {
     "province": "Nong Bua Lamphu",
     "slug": "nong-bua-lamphu",
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCount": 5,
     "fallbackCount": 5
   },

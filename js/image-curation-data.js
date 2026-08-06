@@ -1078,7 +1078,7 @@ window.IMAGE_CURATION = {
     ]
   },
   "nong-bua-lamphu": {
-    "status": "needs-curation",
+    "status": "insufficient-unique-candidates",
     "galleryCurated": false,
     "galleryImages": [],
     "galleryCaptions": [],
