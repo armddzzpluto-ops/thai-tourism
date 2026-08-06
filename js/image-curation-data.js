@@ -859,11 +859,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "lop-buri": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/lop-buri/gallery-1.webp",
+      "assets/images/provinces/lop-buri/gallery-2.webp",
+      "assets/images/provinces/lop-buri/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "This photograph shows Banana and Egg Cafe and its surroundings in Lopburi Province, Thailand.",
+      "File:IMG พุทธสถาน.jpg",
+      "ตัวอำเภอโคกสำโรง"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/lop-buri/gallery-1.webp",
+        "caption": "This photograph shows Banana and Egg Cafe and its surroundings in Lopburi Province, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Banana_and_Egg_Cafe_in_Lopburi.jpg"
+      },
+      {
+        "file": "assets/images/provinces/lop-buri/gallery-2.webp",
+        "caption": "File:IMG พุทธสถาน.jpg",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Thongdeethailand2531&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Thongdeethailand2531 (page does not exist)\">Thongdeethailand2531\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:IMG_%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99.jpg"
+      },
+      {
+        "file": "assets/images/provinces/lop-buri/gallery-3.webp",
+        "caption": "ตัวอำเภอโคกสำโรง",
+        "photoCredit": "\u003ca href=\"https://th.wikipedia.org/wiki/Thongdeethailand\" class=\"extiw\" title=\"th:Thongdeethailand\">th:Thongdeethailand\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Samrong_district_(2011).jpg"
+      }
+    ]
   },
   "mae-hong-son": {
     "status": "complete",
