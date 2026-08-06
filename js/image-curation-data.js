@@ -1187,11 +1187,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "pattani": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/pattani/gallery-1.webp",
+      "assets/images/provinces/pattani/gallery-2.webp",
+      "assets/images/provinces/pattani/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "'ออแร ตานิง ตาเละห์เอาะ' เยาวชนนัดแฟลชม็อบ 'ปาตานีจะไม่ทน' | 2 ส.ค. 63",
+      "A route direction in Don Yang Intersection.",
+      "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, Patani, he passed away on 27 Shawwal 1372/10 Jul 1953, in Kubur Padang, Keresik, Patani. His mother’s name was Hajah Halimah and she originated from Jambu, Patani. He studied in his early years under his father, Tok Chaok at the pondok bearing the same name and at Pondok Bendang Daya. Soon after, he went to study in Mecca for several years and finally at al-Azhar in Cairo.\nUpon his return to the peninsula, c. 1930, he took up his father’s former position as a teacher at Pondok Chaok. After three years, he moved to Keresik and opened a pondok at Kota Pepiri, where he was joined by another teacher named Haji Wan Su. Soon after, he opened another pondok at Istana Nilam, also in Keresik, named Madrasah al-Ma’arif al-Wataniah, where he was joined by teachers such as Ustaz Isma’il of Pendang, Kedah, Muhammad ‘Ali Don of Johor, and ‘Abd al-Majid Lubis of Sumatra. He became politically active from 1938 onwards and worked with Haji Sulong in the GEMPAR movement."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/pattani/gallery-1.webp",
+        "caption": "'ออแร ตานิง ตาเละห์เอาะ' เยาวชนนัดแฟลชม็อบ 'ปาตานีจะไม่ทน' | 2 ส.ค. 63",
+        "photoCredit": "Prachatai",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:%27%E0%B8%AD%E0%B8%AD%E0%B9%81%E0%B8%A3_%E0%B8%95%E0%B8%B2%E0%B8%99%E0%B8%B4%E0%B8%87_%E0%B8%95%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%B0%27_%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B8%8A%E0%B8%99%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%9F%E0%B8%A5%E0%B8%8A%E0%B8%A1%E0%B9%87%E0%B8%AD%E0%B8%9A_%27%E0%B8%9B%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%99%E0%B8%B5%E0%B8%88%E0%B8%B0%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%97%E0%B8%99.jpg"
+      },
+      {
+        "file": "assets/images/provinces/pattani/gallery-2.webp",
+        "caption": "A route direction in Don Yang Intersection.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:AHadi2021\" title=\"User:AHadi2021\">AHadi2021\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Don_Yang_Intersection.jpg"
+      },
+      {
+        "file": "assets/images/provinces/pattani/gallery-3.webp",
+        "caption": "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, Patani, he passed away on 27 Shawwal 1372/10 Jul 1953, in Kubur Padang, Keresik, Patani. His mother’s name was Hajah Halimah and she originated from Jambu, Patani. He studied in his early years under his father, Tok Chaok at the pondok bearing the same name and at Pondok Bendang Daya. Soon after, he went to study in Mecca for several years and finally at al-Azhar in Cairo.\nUpon his return to the peninsula, c. 1930, he took up his father’s former position as a teacher at Pondok Chaok. After three years, he moved to Keresik and opened a pondok at Kota Pepiri, where he was joined by another teacher named Haji Wan Su. Soon after, he opened another pondok at Istana Nilam, also in Keresik, named Madrasah al-Ma’arif al-Wataniah, where he was joined by teachers such as Ustaz Isma’il of Pendang, Kedah, Muhammad ‘Ali Don of Johor, and ‘Abd al-Majid Lubis of Sumatra. He became politically active from 1938 onwards and worked with Haji Sulong in the GEMPAR movement.",
+        "photoCredit": "Ahmad Fathy Al-Patani",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Haji_Abdul_Majid_Embong_(1898-1953.jpg"
+      }
+    ]
   },
   "phang-nga": {
     "status": "needs-curation",
