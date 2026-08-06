@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/prachin-buri/gallery-1.webp",
     "assets/images/provinces/prachin-buri/gallery-2.webp",
-    "assets/images/provinces/prachin-buri/gallery-3.webp"
+    "assets/images/provinces/prachin-buri/gallery-3.webp",
+    "assets/images/provinces/prachin-buri/gallery-4.webp",
+    "assets/images/provinces/prachin-buri/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "กังหัน winxplus.com",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018004938/http://www.panoramio.com/user/5609015?with_photo_id=48827923\">Pump</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%99_winxplus.com_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachin Buri",
+      "slug": "prachin-buri",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/prachin-buri/gallery-4.webp",
+      "caption": "กังหันสีขาว",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161114003314/http://www.panoramio.com/user/5609015?with_photo_id=48834567\">Pump</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachin Buri",
+      "slug": "prachin-buri",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/prachin-buri/gallery-5.webp",
+      "caption": "จุดบริการประชาชน เขานันทา สภ.ประจันตคาม",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023032634/http://www.panoramio.com/user/5995977?with_photo_id=66467505\">somsakga@gmail.com</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%8A%E0%B8%99_%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%99%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B2_%E0%B8%AA%E0%B8%A0.%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%84%E0%B8%B2%E0%B8%A1_-_panoramio.jpg",
       "isFallback": false
     }
   ]

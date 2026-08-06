@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phuket/gallery-1.webp",
     "assets/images/provinces/phuket/gallery-2.webp",
-    "assets/images/provinces/phuket/gallery-3.webp"
+    "assets/images/provinces/phuket/gallery-3.webp",
+    "assets/images/provinces/phuket/gallery-4.webp",
+    "assets/images/provinces/phuket/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "2018 Phuket capsized boat being lifted from the seabed",
       "photoCredit": "ผู้จัดการ ออนไลน์ (Manager Online)",
       "imageSource": "https://commons.wikimedia.org/wiki/File:2018_Phuket_capsized_boat.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phuket/gallery-4.webp",
+      "caption": "ตรีวนันดา จ.ภูเก็ต",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:MEWNP&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:MEWNP (page does not exist)\">MEWNP</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:20220731_Wiki_ARS_Work_Page_08.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phuket",
+      "slug": "phuket",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phuket/gallery-5.webp",
+      "caption": "4G 上網方案",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/72753560@N00\">jeff~</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:4G_%E4%B8%8A%E7%B6%B2%E6%96%B9%E6%A1%88_(29145863310).jpg",
       "isFallback": false
     }
   ]

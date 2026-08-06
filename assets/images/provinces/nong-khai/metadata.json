@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nong-khai/gallery-1.webp",
     "assets/images/provinces/nong-khai/gallery-2.webp",
-    "assets/images/provinces/nong-khai/gallery-3.webp"
+    "assets/images/provinces/nong-khai/gallery-3.webp",
+    "assets/images/provinces/nong-khai/gallery-4.webp",
+    "assets/images/provinces/nong-khai/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Agriculture in Nongkhai",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030130203/http://www.panoramio.com/user/6767461?with_photo_id=92091557\">Udom PINTUWONG</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nong Khai",
+      "slug": "nong-khai",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nong-khai/gallery-4.webp",
+      "caption": "Agriculture in Nongkhai",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030005902/http://www.panoramio.com/user/6767461?with_photo_id=92091565\">Udom PINTUWONG</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(3).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nong Khai",
+      "slug": "nong-khai",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nong-khai/gallery-5.webp",
+      "caption": "Agriculture in Nongkhai",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102143442/http://www.panoramio.com/user/6767461?with_photo_id=92091574\">Udom PINTUWONG</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(4).jpg",
       "isFallback": false
     }
   ]

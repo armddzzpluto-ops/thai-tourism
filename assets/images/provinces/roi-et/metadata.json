@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/roi-et/gallery-1.webp",
     "assets/images/provinces/roi-et/gallery-2.webp",
-    "assets/images/provinces/roi-et/gallery-3.webp"
+    "assets/images/provinces/roi-et/gallery-3.webp",
+    "assets/images/provinces/roi-et/gallery-4.webp",
+    "assets/images/provinces/roi-et/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "<p>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n</p>\nPhoto: U.Schmidt, 2006",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30703260@N08\">Udo Schmidt</a> from Deutschland",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Enoplotrupes_sharpi_Rothschild_%26_Jordan,_1893_male_(3915826460).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/roi-et/gallery-4.webp",
+      "caption": "Isan Modifide dressing for Bung Fai parade in Suwannaphume, Roi Et\nby Look Lanh Muang Sriphume club",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Pleamir&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Pleamir (page does not exist)\">Pleamir</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Isan_modifie_dressing.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Roi Et",
+      "slug": "roi-et",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/roi-et/gallery-5.webp",
+      "caption": "jedee",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tone5062&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tone5062 (page does not exist)\">Tone5062</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Jedee1.jpg",
       "isFallback": false
     }
   ]

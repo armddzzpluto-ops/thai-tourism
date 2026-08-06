@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/lampang/gallery-1.webp",
     "assets/images/provinces/lampang/gallery-2.webp",
-    "assets/images/provinces/lampang/gallery-3.webp"
+    "assets/images/provinces/lampang/gallery-3.webp",
+    "assets/images/provinces/lampang/gallery-4.webp",
+    "assets/images/provinces/lampang/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses.",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_1.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Lampang",
+      "slug": "lampang",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/lampang/gallery-4.webp",
+      "caption": "Statues d'éléphants protégeant l'entrée de la grotte sacrée avec colliers de fleurs",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_2.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Lampang",
+      "slug": "lampang",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/lampang/gallery-5.webp",
+      "caption": "Entrée de la grotte sacrée avec une statue de Bouddha doré",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_3.jpg",
       "isFallback": false
     }
   ]

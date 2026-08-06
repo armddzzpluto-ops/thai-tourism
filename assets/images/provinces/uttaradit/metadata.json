@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/uttaradit/gallery-1.webp",
     "assets/images/provinces/uttaradit/gallery-2.webp",
-    "assets/images/provinces/uttaradit/gallery-3.webp"
+    "assets/images/provinces/uttaradit/gallery-3.webp",
+    "assets/images/provinces/uttaradit/gallery-4.webp",
+    "assets/images/provinces/uttaradit/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Ban Wang Din",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_1.png",
+      "isFallback": false
+    },
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/uttaradit/gallery-4.webp",
+      "caption": "Ban Wang Din",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_2.png",
+      "isFallback": false
+    },
+    {
+      "province": "Uttaradit",
+      "slug": "uttaradit",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/uttaradit/gallery-5.webp",
+      "caption": "Ban Wang Din",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_3.png",
       "isFallback": false
     }
   ]

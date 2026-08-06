@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phetchabun/gallery-1.webp",
     "assets/images/provinces/phetchabun/gallery-2.webp",
-    "assets/images/provinces/phetchabun/gallery-3.webp"
+    "assets/images/provinces/phetchabun/gallery-3.webp",
+    "assets/images/provinces/phetchabun/gallery-4.webp",
+    "assets/images/provinces/phetchabun/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Vietnam",
       "photoCredit": "paul morris <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@oldskool2016\">oldskool2016</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Beans_and_Spices_(Unsplash).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phetchabun/gallery-4.webp",
+      "caption": "Bell UH-1 on display at the Khao Kho War Memorial Park, Khao Kho, Khao Kho District, Phetchabun province, Thailand.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/76052339@N05\">Alec Wilson</a> from Khon Kaen, Thailand",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bell_UH-1_on_display_at_the_Khao_Kho_War_Memorial_Park,Phetchabun_province_(8167721704).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchabun",
+      "slug": "phetchabun",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phetchabun/gallery-5.webp",
+      "caption": "mini Big C at the PT petrol station on Highway 21, at Ban Khok Sa-at, Si Thep District, Phetchabun Province, Thailand",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:KusiD\" title=\"User:KusiD\">KusiD</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Big_C_mini.jpg",
       "isFallback": false
     }
   ]

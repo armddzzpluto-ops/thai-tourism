@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phitsanulok/gallery-1.webp",
     "assets/images/provinces/phitsanulok/gallery-2.webp",
-    "assets/images/provinces/phitsanulok/gallery-3.webp"
+    "assets/images/provinces/phitsanulok/gallery-3.webp",
+    "assets/images/provinces/phitsanulok/gallery-4.webp",
+    "assets/images/provinces/phitsanulok/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Fay school",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Noenmaprang\" title=\"User:Noenmaprang\">Noenmaprang</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Fairy-girl.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phitsanulok/gallery-4.webp",
+      "caption": "นาในอำเภอบางระกำ จังหวัดพิษณุโลก",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%9E%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_%E0%B8%97%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%A2\" title=\"User:บุญพฤทธิ์ ทวนทัย\">บุญพฤทธิ์ ทวนทัย</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Field_in_Phitsanulok.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phitsanulok",
+      "slug": "phitsanulok",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phitsanulok/gallery-5.webp",
+      "caption": "ยามเช้าของอำเภอบางระกำ จังหวัดพิษณุโลก",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%9E%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_%E0%B8%97%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%A2\" title=\"User:บุญพฤทธิ์ ทวนทัย\">บุญพฤทธิ์ ทวนทัย</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:In_morning_at_Phitsanulok_provinice_in_November_18,_2017.jpg",
       "isFallback": false
     }
   ]

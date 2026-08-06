@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/kanchanaburi/gallery-1.webp",
     "assets/images/provinces/kanchanaburi/gallery-2.webp",
-    "assets/images/provinces/kanchanaburi/gallery-3.webp"
+    "assets/images/provinces/kanchanaburi/gallery-3.webp",
+    "assets/images/provinces/kanchanaburi/gallery-4.webp",
+    "assets/images/provinces/kanchanaburi/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png",
+      "isFallback": false
+    },
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/kanchanaburi/gallery-4.webp",
+      "caption": "Comsaed River Kwai Resort",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016155149/http://www.panoramio.com/user/1429473?with_photo_id=40514450\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Comsaed_River_Kwai_Resort_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kanchanaburi",
+      "slug": "kanchanaburi",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/kanchanaburi/gallery-5.webp",
+      "caption": "Entering Dan Makham Tia town from the south.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Xufanc\" title=\"User:Xufanc\">Xufanc</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Dan_Makham_Tia8151.JPG",
       "isFallback": false
     }
   ]

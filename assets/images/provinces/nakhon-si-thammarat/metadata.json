@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
     "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
-    "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp"
+    "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
+    "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
+    "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "<p>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n</p><p>Owner: Thai National Parks\n</p>\nLink: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park</a>",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Micryletta_inornata,_Inornate_chorus_frog_-_Khao_Luang_National_Park_(29774376932).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Si Thammarat",
+      "slug": "nakhon-si-thammarat",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nakhon-si-thammarat/gallery-4.webp",
+      "caption": "Thailand Story",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ebidarigh&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ebidarigh (page does not exist)\">Ebidarigh</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mojtaba_Rezvani_15.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Si Thammarat",
+      "slug": "nakhon-si-thammarat",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nakhon-si-thammarat/gallery-5.webp",
+      "caption": "Mainland Leopard Cat (<i>Prionailurus bengalensis</i>) in Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/796553\">Ian Dugdale</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Prionailurus_bengalensis_544308053.jpg",
       "isFallback": false
     }
   ]

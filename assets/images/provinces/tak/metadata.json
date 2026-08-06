@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/tak/gallery-1.webp",
     "assets/images/provinces/tak/gallery-2.webp",
-    "assets/images/provinces/tak/gallery-3.webp"
+    "assets/images/provinces/tak/gallery-3.webp",
+    "assets/images/provinces/tak/gallery-4.webp",
+    "assets/images/provinces/tak/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Brahman cow in Tak Province, Thailand.",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Brahman_Thai_cow.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/tak/gallery-4.webp",
+      "caption": "<i>Pyrops candelaria</i>, on a mango tree in Tak Province, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bug_on_mango_tree.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Tak",
+      "slug": "tak",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/tak/gallery-5.webp",
+      "caption": "Unidentified purple flower in Tak Province, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Catharanthus_roseus_-_periwikle_-_in_Thailand.jpg",
       "isFallback": false
     }
   ]

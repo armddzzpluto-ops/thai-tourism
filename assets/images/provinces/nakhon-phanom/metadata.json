@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nakhon-phanom/gallery-1.webp",
     "assets/images/provinces/nakhon-phanom/gallery-2.webp",
-    "assets/images/provinces/nakhon-phanom/gallery-3.webp"
+    "assets/images/provinces/nakhon-phanom/gallery-3.webp",
+    "assets/images/provinces/nakhon-phanom/gallery-4.webp",
+    "assets/images/provinces/nakhon-phanom/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "แผนที่ธงจังหวัดนครพนม",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Nakhon_Phanom.png",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Phanom",
+      "slug": "nakhon-phanom",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nakhon-phanom/gallery-4.webp",
+      "caption": "Mekong, view from Nakhon Phanom (Thailand) to Thakhek (Laos)",
+      "photoCredit": "<a href=\"https://en.wikipedia.org/wiki/vi:User:BacLuong\" class=\"extiw\" title=\"w:vi:User:BacLuong\">BacLuong</a> at <a href=\"https://en.wikipedia.org/wiki/vi:\" class=\"extiw\" title=\"w:vi:\">Vietnamese Wikipedia</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:NaKhonPhaNom_to_ThaKhek%272010.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Phanom",
+      "slug": "nakhon-phanom",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nakhon-phanom/gallery-5.webp",
+      "caption": "Rural street in the Isan region, Nakhon Phanom Province, Thailand",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Rural_street-Isan.JPG",
       "isFallback": false
     }
   ]

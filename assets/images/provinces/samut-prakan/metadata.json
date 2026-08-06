@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/samut-prakan/gallery-1.webp",
     "assets/images/provinces/samut-prakan/gallery-2.webp",
-    "assets/images/provinces/samut-prakan/gallery-3.webp"
+    "assets/images/provinces/samut-prakan/gallery-3.webp",
+    "assets/images/provinces/samut-prakan/gallery-4.webp",
+    "assets/images/provinces/samut-prakan/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "A Toad in Samut Prakarn, Thailand",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_2.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Prakan",
+      "slug": "samut-prakan",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/samut-prakan/gallery-4.webp",
+      "caption": "A Toad in Samut Prakarn, Thailand",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_3.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Prakan",
+      "slug": "samut-prakan",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/samut-prakan/gallery-5.webp",
+      "caption": "An illustration of the book mentioned below, depicting the following:\n<dl><dd>Construction of <a href=\"https://en.wikipedia.org/wiki/Samut_Prakan_province\" class=\"extiw\" title=\"w:Samut Prakan province\">Samut Prakan</a> in the year 2365 BE (1822/23 CE).</dd></dl>",
+      "photoCredit": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Hem_Vejakorn\" class=\"extiw\" title=\"w:en:Hem Vejakorn\"><span title=\"Thai author and artist\">Hem Vejakorn</span></a></bdi>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chintawannakhadi_(p_653).jpg",
       "isFallback": false
     }
   ]

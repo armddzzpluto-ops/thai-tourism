@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/samut-sakhon/gallery-1.webp",
     "assets/images/provinces/samut-sakhon/gallery-2.webp",
-    "assets/images/provinces/samut-sakhon/gallery-3.webp"
+    "assets/images/provinces/samut-sakhon/gallery-3.webp",
+    "assets/images/provinces/samut-sakhon/gallery-4.webp",
+    "assets/images/provinces/samut-sakhon/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Fish Market",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031130736/http://www.panoramio.com/user/8375149?with_photo_id=121623461\">mohigan</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Fish_Market_-_panoramio_(3).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Sakhon",
+      "slug": "samut-sakhon",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/samut-sakhon/gallery-4.webp",
+      "caption": "Fish Market",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101142245/http://www.panoramio.com/user/8375149?with_photo_id=121623700\">mohigan</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Fish_Market_-_panoramio_(4).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Sakhon",
+      "slug": "samut-sakhon",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/samut-sakhon/gallery-5.webp",
+      "caption": "Fish Market",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101133118/http://www.panoramio.com/user/8375149?with_photo_id=121623741\">mohigan</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Fish_Market_-_panoramio_(5).jpg",
       "isFallback": false
     }
   ]

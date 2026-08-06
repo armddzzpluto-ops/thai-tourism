@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/yala/gallery-1.webp",
     "assets/images/provinces/yala/gallery-2.webp",
-    "assets/images/provinces/yala/gallery-3.webp"
+    "assets/images/provinces/yala/gallery-3.webp",
+    "assets/images/provinces/yala/gallery-4.webp",
+    "assets/images/provinces/yala/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Budi, Mueang Yala District, Yala, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030100018/http://www.panoramio.com/user/6667993?with_photo_id=104885915\">กิตติ เลขะกุล</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Budi,_Mueang_Yala_District,_Yala,_Thailand_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Yala",
+      "slug": "yala",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/yala/gallery-4.webp",
+      "caption": "Bintang Lowland Bent-toed Gecko (Cyrtodactylus bintangrendah). Species of reptile.",
+      "photoCredit": "iNaturalist user: ian_dugdale",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cyrtodactylus_bintangrendah.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Yala",
+      "slug": "yala",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/yala/gallery-5.webp",
+      "caption": "Banded Forest Gecko (<i>Cyrtodactylus consobrinus</i>)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/2107812\">Wich'yanan L</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cyrtodactylus_consobrinus_190847784.jpg",
       "isFallback": false
     }
   ]

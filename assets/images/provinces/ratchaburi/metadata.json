@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/ratchaburi/gallery-1.webp",
     "assets/images/provinces/ratchaburi/gallery-2.webp",
-    "assets/images/provinces/ratchaburi/gallery-3.webp"
+    "assets/images/provinces/ratchaburi/gallery-3.webp",
+    "assets/images/provinces/ratchaburi/gallery-4.webp",
+    "assets/images/provinces/ratchaburi/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "condom",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102214421/http://www.panoramio.com/user/8928001?with_photo_id=126545062\">Bundit Sincharoen</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Condom_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ratchaburi",
+      "slug": "ratchaburi",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/ratchaburi/gallery-4.webp",
+      "caption": "Vendors in the Damnoen Saduak floating market, Thailand.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63234672@N04\">Joe deSousa</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Floating_Vendors_(32405585600).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ratchaburi",
+      "slug": "ratchaburi",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/ratchaburi/gallery-5.webp",
+      "caption": "From Kean Chandra Hill to Khao Ngu Hill",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023183353/http://www.panoramio.com/user/4366445?with_photo_id=54509328\">Phong  Phat G</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:From_Kean_Chandra_Hill_to_Khao_Ngu_Hill_-_panoramio.jpg",
       "isFallback": false
     }
   ]

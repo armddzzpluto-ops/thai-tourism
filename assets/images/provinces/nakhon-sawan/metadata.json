@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nakhon-sawan/gallery-1.webp",
     "assets/images/provinces/nakhon-sawan/gallery-2.webp",
-    "assets/images/provinces/nakhon-sawan/gallery-3.webp"
+    "assets/images/provinces/nakhon-sawan/gallery-3.webp",
+    "assets/images/provinces/nakhon-sawan/gallery-4.webp",
+    "assets/images/provinces/nakhon-sawan/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_with_infant.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Sawan",
+      "slug": "nakhon-sawan",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nakhon-sawan/gallery-4.webp",
+      "caption": "Long-tailed macaques feeding in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaques_feeding.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Sawan",
+      "slug": "nakhon-sawan",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nakhon-sawan/gallery-5.webp",
+      "caption": "Nakhon Sawan - Bangkok road.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010125347/http://www.panoramio.com/user/1465176?with_photo_id=9666261\">CHAMRAT CHAROENKHET</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Nakhon_Sawan_-_Bangkok_road._-_panoramio.jpg",
       "isFallback": false
     }
   ]

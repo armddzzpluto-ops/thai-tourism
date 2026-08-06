@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/sukhothai/gallery-1.webp",
     "assets/images/provinces/sukhothai/gallery-2.webp",
-    "assets/images/provinces/sukhothai/gallery-3.webp"
+    "assets/images/provinces/sukhothai/gallery-3.webp",
+    "assets/images/provinces/sukhothai/gallery-4.webp",
+    "assets/images/provinces/sukhothai/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Sukhothai",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37583176@N00\">Ninara</a> from Helsinki, Finland",
       "imageSource": "https://commons.wikimedia.org/wiki/File:4Y1A0672_Sukhothai_(33790505994).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Sukhothai",
+      "slug": "sukhothai",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/sukhothai/gallery-4.webp",
+      "caption": "<a href=\"https://en.wikipedia.org/wiki/Asian_openbill\" class=\"extiw\" title=\"wikipedia:Asian openbill\">Asian openbill</a> at <a href=\"https://en.wikipedia.org/wiki/Sukhothai_Thani\" class=\"extiw\" title=\"wikipedia:Sukhothai Thani\">Sukhothai</a>, <a href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"wikipedia:Thailand\">Thailand</a>",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Peterwchen\" title=\"User:Peterwchen\">Peterwchen</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Anastomus_oscitans-circling.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Sukhothai",
+      "slug": "sukhothai",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/sukhothai/gallery-5.webp",
+      "caption": "<a href=\"https://en.wikipedia.org/wiki/Calotropis_gigantea\" class=\"extiw\" title=\"w:Calotropis gigantea\">Crown flower</a> in <a href=\"https://en.wikipedia.org/wiki/Sukhothai_Thani\" class=\"extiw\" title=\"w:Sukhothai Thani\">Sukhothai</a>, <a href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand</a>",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Peterwchen\" title=\"User:Peterwchen\">Peterwchen</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Calotropis_gigantea-flower.jpg",
       "isFallback": false
     }
   ]

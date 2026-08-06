@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phetchaburi/gallery-1.webp",
     "assets/images/provinces/phetchaburi/gallery-2.webp",
-    "assets/images/provinces/phetchaburi/gallery-3.webp"
+    "assets/images/provinces/phetchaburi/gallery-3.webp",
+    "assets/images/provinces/phetchaburi/gallery-4.webp",
+    "assets/images/provinces/phetchaburi/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "CHA-AM FOREST PARK",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031064519/http://www.panoramio.com/user/5109466?with_photo_id=128056564\">Thaweesak Churasri</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio_(1).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchaburi",
+      "slug": "phetchaburi",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phetchaburi/gallery-4.webp",
+      "caption": "CHA-AM FOREST PARK",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031123213/http://www.panoramio.com/user/5109466?with_photo_id=128056559\">Thaweesak Churasri</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phetchaburi",
+      "slug": "phetchaburi",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phetchaburi/gallery-5.webp",
+      "caption": "CHA-AM FOREST PARK",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031064508/http://www.panoramio.com/user/5109466?with_photo_id=128056561\">Thaweesak Churasri</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio.jpg",
       "isFallback": false
     }
   ]

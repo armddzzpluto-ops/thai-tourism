@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phichit/gallery-1.webp",
     "assets/images/provinces/phichit/gallery-2.webp",
-    "assets/images/provinces/phichit/gallery-3.webp"
+    "assets/images/provinces/phichit/gallery-3.webp",
+    "assets/images/provinces/phichit/gallery-4.webp",
+    "assets/images/provinces/phichit/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Ban Nanuea Soi 2 This is the local street from Thailand. IMG20240923183042.",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_2_(street)_01.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phichit",
+      "slug": "phichit",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phichit/gallery-4.webp",
+      "caption": "น้ำท่วมนาที่พิจิตร พ.ศ. 2560",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B8%9E%E0%B8%A4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_%E0%B8%97%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%A2\" title=\"User:บุญพฤทธิ์ ทวนทัย\">บุญพฤทธิ์ ทวนทัย</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Flood_in_2017_at_Phichit_provinice.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phichit",
+      "slug": "phichit",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phichit/gallery-5.webp",
+      "caption": "File:Phichit 100.46546E 16.42219N.jpg",
+      "photoCredit": "Rex",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phichit_100.46546E_16.42219N.jpg",
       "isFallback": false
     }
   ]

@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/sakon-nakhon/gallery-1.webp",
     "assets/images/provinces/sakon-nakhon/gallery-2.webp",
-    "assets/images/provinces/sakon-nakhon/gallery-3.webp"
+    "assets/images/provinces/sakon-nakhon/gallery-3.webp",
+    "assets/images/provinces/sakon-nakhon/gallery-4.webp",
+    "assets/images/provinces/sakon-nakhon/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "กองบัญชาการมณฑลทหารบกที่ 29 ค่ายกฤษณ์สีวะรา",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mtb29&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mtb29 (page does not exist)\">Mtb29</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Mtb29-001.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Sakon Nakhon",
+      "slug": "sakon-nakhon",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/sakon-nakhon/gallery-4.webp",
+      "caption": "Nong Kham Hui, ตำบล ตองโขบ, Thailand",
+      "photoCredit": "Paul Hansa <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@bigcookie\">bigcookie</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Kham_Hui,_%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5_%E0%B8%95%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%82%E0%B8%9A,_Thailand_(Unsplash).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Sakon Nakhon",
+      "slug": "sakon-nakhon",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/sakon-nakhon/gallery-5.webp",
+      "caption": "Phang Kon",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161013094344/http://www.panoramio.com/user/1902102?with_photo_id=11385252\">Seksan Phonsuwan</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phang_Kon_-_panoramio.jpg",
       "isFallback": false
     }
   ]

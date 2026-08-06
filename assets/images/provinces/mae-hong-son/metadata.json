@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/mae-hong-son/gallery-1.webp",
     "assets/images/provinces/mae-hong-son/gallery-2.webp",
-    "assets/images/provinces/mae-hong-son/gallery-3.webp"
+    "assets/images/provinces/mae-hong-son/gallery-3.webp",
+    "assets/images/provinces/mae-hong-son/gallery-4.webp",
+    "assets/images/provinces/mae-hong-son/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "File:Longneckkaren.jpg",
       "photoCredit": "Plenz",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Longneckkaren.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Mae Hong Son",
+      "slug": "mae-hong-son",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/mae-hong-son/gallery-4.webp",
+      "caption": "Mae Hong Son gate",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016190232/http://www.panoramio.com/user/5494478?with_photo_id=47891721\">gary4now</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mae_Hong_Son_gate_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Mae Hong Son",
+      "slug": "mae-hong-son",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/mae-hong-son/gallery-5.webp",
+      "caption": "Mountains in Mae hong son",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:NorthThailander&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:NorthThailander (page does not exist)\">NorthThailander</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mae_hong_son_mountain.jpg",
       "isFallback": false
     }
   ]

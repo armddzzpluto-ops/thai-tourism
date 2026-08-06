@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/khon-kaen/gallery-1.webp",
     "assets/images/provinces/khon-kaen/gallery-2.webp",
-    "assets/images/provinces/khon-kaen/gallery-3.webp"
+    "assets/images/provinces/khon-kaen/gallery-3.webp",
+    "assets/images/provinces/khon-kaen/gallery-4.webp",
+    "assets/images/provinces/khon-kaen/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter.",
       "photoCredit": "Pattaya Patrol",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Burger_and_fries_on_a_wooden_plate.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Khon Kaen",
+      "slug": "khon-kaen",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/khon-kaen/gallery-4.webp",
+      "caption": "ความทรงจำที่ดีตลอกไป...เพื่อน...",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E0%B9%80%E0%B8%9A%E0%B8%8D%E0%B8%88%E0%B8%A1%E0%B8%B2%E0%B8%A8_%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%99&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:เบญจมาศ ดวงเทียน (page does not exist)\">เบญจมาศ ดวงเทียน</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:C360_2015-06-26-18-18-21-187.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Khon Kaen",
+      "slug": "khon-kaen",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/khon-kaen/gallery-5.webp",
+      "caption": "Fluke-infected fish are plentiful in the local rivers such as the Chi River in Khon Kaen province, Thailand.",
+      "photoCredit": "Banchob Sripa, Sasithorn Kaewkes, Paiboon Sithithaworn, Eimorn Mairiang, Thewarach Laha, Michael Smout, Chawalit Pairojkul, Vajaraphongsa Bhudhisawasdi, Smarn Tesana, Bandit Thinkamrop, Jeffrey M. Bethony, Alex Loukas &amp; Paul J. Brindley",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chi_River.jpg",
       "isFallback": false
     }
   ]

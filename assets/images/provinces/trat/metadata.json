@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/trat/gallery-1.webp",
     "assets/images/provinces/trat/gallery-2.webp",
-    "assets/images/provinces/trat/gallery-3.webp"
+    "assets/images/provinces/trat/gallery-3.webp",
+    "assets/images/provinces/trat/gallery-4.webp",
+    "assets/images/provinces/trat/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "3 shades of blue",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/34907359@N08\">cloud.shepherd</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:3_shades_of_blue_(29416392316).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Trat",
+      "slug": "trat",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/trat/gallery-4.webp",
+      "caption": "Coco the beagle at Chang Noi beach, Koh Chang during sunset",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Slyronit\" title=\"User:Slyronit\">Slyronit</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:A_beagle_at_Chang_Noi_beach,_Koh_Chang_during_sunset_2.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Trat",
+      "slug": "trat",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/trat/gallery-5.webp",
+      "caption": "Coco the beagle at Chang Noi beach, Koh Chang during sunset",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Slyronit\" title=\"User:Slyronit\">Slyronit</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:A_beagle_at_Chang_Noi_beach,_Koh_Chang_during_sunset.jpg",
       "isFallback": false
     }
   ]

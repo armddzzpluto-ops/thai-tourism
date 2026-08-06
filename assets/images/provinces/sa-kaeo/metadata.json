@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/sa-kaeo/gallery-1.webp",
     "assets/images/provinces/sa-kaeo/gallery-2.webp",
-    "assets/images/provinces/sa-kaeo/gallery-3.webp"
+    "assets/images/provinces/sa-kaeo/gallery-3.webp",
+    "assets/images/provinces/sa-kaeo/gallery-4.webp",
+    "assets/images/provinces/sa-kaeo/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Found in marshland in Sa Kaeo, Thailand.",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Common_Tree_Frog_(Polypedates_leucomystax)10.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Sa Kaeo",
+      "slug": "sa-kaeo",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/sa-kaeo/gallery-4.webp",
+      "caption": "Photograph showing the countryside and mountain range located in the Srakaeo Province of Thailand, along the Thai and Cambodian border, April 10, 2008.",
+      "photoCredit": "Jose A. Garcia, U.S. Marine Corps",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Countryside_in_the_Srakaeo_Province.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Sa Kaeo",
+      "slug": "sa-kaeo",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/sa-kaeo/gallery-5.webp",
+      "caption": "Found in marshland in Sa Kaeo, Thailand.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Dark-sided_Pygmy_Frog_(Microhyla_heymonsi)3.jpg",
       "isFallback": false
     }
   ]

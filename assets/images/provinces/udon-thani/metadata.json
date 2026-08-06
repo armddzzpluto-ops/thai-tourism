@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/udon-thani/gallery-1.webp",
     "assets/images/provinces/udon-thani/gallery-2.webp",
-    "assets/images/provinces/udon-thani/gallery-3.webp"
+    "assets/images/provinces/udon-thani/gallery-3.webp",
+    "assets/images/provinces/udon-thani/gallery-4.webp",
+    "assets/images/provinces/udon-thani/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Louis Marchadier, 3ième en haut en partant de la gauche",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Snails63700&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Snails63700 (page does not exist)\">Snails63700</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_g%C3%A9n%C3%A9rale_King%27s_cup.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Udon Thani",
+      "slug": "udon-thani",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/udon-thani/gallery-4.webp",
+      "caption": "Opening ceremony of the Voice of America relay station in Udon Thani Province in October 1991.",
+      "photoCredit": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Opening_ceremony_of_the_Voice_of_America_relay_station_in_Udon_Thani_Province_in_October_1991.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Udon Thani",
+      "slug": "udon-thani",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/udon-thani/gallery-5.webp",
+      "caption": "Show in Udon Thani",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8058098@N07\">nakhon100</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Show_in_Udon_Thani_(3722439997).jpg",
       "isFallback": false
     }
   ]

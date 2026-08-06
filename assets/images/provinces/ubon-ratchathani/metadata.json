@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
     "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
-    "assets/images/provinces/ubon-ratchathani/gallery-3.webp"
+    "assets/images/provinces/ubon-ratchathani/gallery-3.webp",
+    "assets/images/provinces/ubon-ratchathani/gallery-4.webp",
+    "assets/images/provinces/ubon-ratchathani/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "The Chong Mek Pass office in Amphoe Sirindhorn, under construction.",
       "photoCredit": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:Oatz\" title=\"User:Oatz\">Oatz</a> assumed (based on copyright claims).",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Chong_Mek_Pass_in_Ubon_Ratchathani.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ubon Ratchathani",
+      "slug": "ubon-ratchathani",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/ubon-ratchathani/gallery-4.webp",
+      "caption": "Dom Pradit, Nam Yuen District, Ubon Ratchathani, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031145606/http://www.panoramio.com/user/1429473?with_photo_id=124382011\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Dom_Pradit,_Nam_Yuen_District,_Ubon_Ratchathani,_Thailand_-_panoramio_(1).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ubon Ratchathani",
+      "slug": "ubon-ratchathani",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/ubon-ratchathani/gallery-5.webp",
+      "caption": "Dom Pradit, Nam Yuen District, Ubon Ratchathani, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031145614/http://www.panoramio.com/user/1429473?with_photo_id=124382014\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Dom_Pradit,_Nam_Yuen_District,_Ubon_Ratchathani,_Thailand_-_panoramio_(2).jpg",
       "isFallback": false
     }
   ]

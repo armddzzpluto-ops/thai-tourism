@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/samut-songkhram/gallery-1.webp",
     "assets/images/provinces/samut-songkhram/gallery-2.webp",
-    "assets/images/provinces/samut-songkhram/gallery-3.webp"
+    "assets/images/provinces/samut-songkhram/gallery-3.webp",
+    "assets/images/provinces/samut-songkhram/gallery-4.webp",
+    "assets/images/provinces/samut-songkhram/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "couleur",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/68509?with_photo_id=8605287\">phileon</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Couleur_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/samut-songkhram/gallery-4.webp",
+      "caption": "Beautiful place, natural. Bang Noi Market (ตลาดน้ำบางน้อย).",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Sittithai.Pim&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Sittithai.Pim (page does not exist)\">Sittithai.Pim</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Floating_market.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Samut Songkhram",
+      "slug": "samut-songkhram",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/samut-songkhram/gallery-5.webp",
+      "caption": "Lat Yai, Mueang Samut Songkhram District, Samut Songkhram 75000, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031174700/http://www.panoramio.com/user/8375149?with_photo_id=117229962\">mohigan</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Lat_Yai,_Mueang_Samut_Songkhram_District,_Samut_Songkhram_75000,_Thailand_-_panoramio_(4).jpg",
       "isFallback": false
     }
   ]

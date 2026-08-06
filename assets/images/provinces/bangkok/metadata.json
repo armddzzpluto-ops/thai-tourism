@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/bangkok/gallery-1.webp",
     "assets/images/provinces/bangkok/gallery-2.webp",
-    "assets/images/provinces/bangkok/gallery-3.webp"
+    "assets/images/provinces/bangkok/gallery-3.webp",
+    "assets/images/provinces/bangkok/gallery-4.webp",
+    "assets/images/provinces/bangkok/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:GRAD_KU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GRAD KU (page does not exist)\">GRAD KU</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU001.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Bangkok",
+      "slug": "bangkok",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/bangkok/gallery-4.webp",
+      "caption": "ความร่วมมือทางวิชาการ",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:GRAD_KU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GRAD KU (page does not exist)\">GRAD KU</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU002.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Bangkok",
+      "slug": "bangkok",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/bangkok/gallery-5.webp",
+      "caption": "Phaya Thai (พญาไท)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161028085341/http://www.panoramio.com/user/1496126?with_photo_id=105565875\">Tuderna</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phaya_Thai_(%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%84%E0%B8%97)_-_panoramio.jpg",
       "isFallback": false
     }
   ]

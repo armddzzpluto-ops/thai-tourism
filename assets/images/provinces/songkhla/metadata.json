@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/songkhla/gallery-1.webp",
     "assets/images/provinces/songkhla/gallery-2.webp",
-    "assets/images/provinces/songkhla/gallery-3.webp"
+    "assets/images/provinces/songkhla/gallery-3.webp",
+    "assets/images/provinces/songkhla/gallery-4.webp",
+    "assets/images/provinces/songkhla/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "File:Unnamed2 - panoramio (1930).jpg",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101030217/http://www.panoramio.com/user/6667993?with_photo_id=111302110\">กิตติ เลขะกุล</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(1930).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Songkhla",
+      "slug": "songkhla",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/songkhla/gallery-4.webp",
+      "caption": "nitiphon binsoh",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nitiphonbinsoh407&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitiphonbinsoh407 (page does not exist)\">Nitiphonbinsoh407</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Songkhla",
+      "slug": "songkhla",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/songkhla/gallery-5.webp",
+      "caption": "ลำธาร",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nitiphonbinsoh407&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitiphonbinsoh407 (page does not exist)\">Nitiphonbinsoh407</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%A2%E0%B8%B2%E0%B8%87_2.jpg",
       "isFallback": false
     }
   ]

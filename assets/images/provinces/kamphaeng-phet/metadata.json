@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/kamphaeng-phet/gallery-1.webp",
     "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
-    "assets/images/provinces/kamphaeng-phet/gallery-3.webp"
+    "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
+    "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
+    "assets/images/provinces/kamphaeng-phet/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Countryside shops 1956 Khamphang Phet",
       "photoCredit": "Unknown author<span style=\"display: none;\">Unknown author</span>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Countryside_shops_1956_Khamphang_Phet.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kamphaeng Phet",
+      "slug": "kamphaeng-phet",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/kamphaeng-phet/gallery-4.webp",
+      "caption": "File:Kamphaeng Phet 99.52524E 16.46924N.jpg",
+      "photoCredit": "Rex",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kamphaeng_Phet_99.52524E_16.46924N.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kamphaeng Phet",
+      "slug": "kamphaeng-phet",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/kamphaeng-phet/gallery-5.webp",
+      "caption": "พิพิธภัณฑสถานแห่งชาติ กำแพงเพชร",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Supakit_prem\" title=\"User:Supakit prem\">Supakit prem</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kamphaeng_Phet_National_Museum.jpg",
       "isFallback": false
     }
   ]

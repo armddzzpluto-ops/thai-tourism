@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/kalasin/gallery-1.webp",
     "assets/images/provinces/kalasin/gallery-2.webp",
-    "assets/images/provinces/kalasin/gallery-3.webp"
+    "assets/images/provinces/kalasin/gallery-3.webp",
+    "assets/images/provinces/kalasin/gallery-4.webp",
+    "assets/images/provinces/kalasin/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Gull Wing Door Soda Delivery Truck - Kalasin, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/15965815@N00\">Marshall Astor</a> from Olympia, WA, United States",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Gull_Wing_Door_Soda_Delivery_Truck_-_Kalasin,_Thailand_(2474152740).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/kalasin/gallery-4.webp",
+      "caption": "Large trucks seen around Thailand in 2007.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/15965815@N00\">Marshall Astor</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Hino_Truck_on_Highway_-_Kalasin,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Kalasin",
+      "slug": "kalasin",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/kalasin/gallery-5.webp",
+      "caption": "File:Kalasin 103.53339E 16.42208N.jpg",
+      "photoCredit": "Rex",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kalasin_103.53339E_16.42208N.jpg",
       "isFallback": false
     }
   ]

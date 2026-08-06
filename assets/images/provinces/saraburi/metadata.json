@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/saraburi/gallery-1.webp",
     "assets/images/provinces/saraburi/gallery-2.webp",
-    "assets/images/provinces/saraburi/gallery-3.webp"
+    "assets/images/provinces/saraburi/gallery-3.webp",
+    "assets/images/provinces/saraburi/gallery-4.webp",
+    "assets/images/provinces/saraburi/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010102123/http://www.panoramio.com/user/19953?with_photo_id=2564704\">Andreas Hörstemeier</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Saraburi",
+      "slug": "saraburi",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/saraburi/gallery-4.webp",
+      "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011040740/http://www.panoramio.com/user/19953?with_photo_id=2564680\">Andreas Hörstemeier</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Saraburi",
+      "slug": "saraburi",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/saraburi/gallery-5.webp",
+      "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011014334/http://www.panoramio.com/user/19953?with_photo_id=2564671\">Andreas Hörstemeier</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio.jpg",
       "isFallback": false
     }
   ]

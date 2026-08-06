@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/maha-sarakham/gallery-1.webp",
     "assets/images/provinces/maha-sarakham/gallery-2.webp",
-    "assets/images/provinces/maha-sarakham/gallery-3.webp"
+    "assets/images/provinces/maha-sarakham/gallery-3.webp",
+    "assets/images/provinces/maha-sarakham/gallery-4.webp",
+    "assets/images/provinces/maha-sarakham/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102124729/http://www.panoramio.com/user/6847270?with_photo_id=98140354\">TonG_CB</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Kham_Riang,_Kantharawichai_District,_Maha_Sarakham_44150,_Thailand_-_panoramio_(11).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/maha-sarakham/gallery-4.webp",
+      "caption": "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161028055636/http://www.panoramio.com/user/6847270?with_photo_id=98140104\">TonG_CB</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kham_Riang,_Kantharawichai_District,_Maha_Sarakham_44150,_Thailand_-_panoramio_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Maha Sarakham",
+      "slug": "maha-sarakham",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/maha-sarakham/gallery-5.webp",
+      "caption": "<p>หนึ่งในหลายป้ายทะเบียนเลขสวย ที่มีการประมูล จาก จ. มหาสารคาม (auctioned plate from Maha Sarakham, Thailand) (ไม่ใช่ป้ายของข้าพเจ้า - ไม่ทราบเจ้าของ - This is not my plates.) \n</p>\nThe auction plates/numbers (\"Super Number\") are movable to an another car. And it was moved.",
+      "photoCredit": "<p><a href=\"//commons.wikimedia.org/wiki/User:Love_Krittaya\" title=\"User:Love Krittaya\">Love Krittaya</a>\n</p>\n<b>I am not the owner of this Super Number plate.</b>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mahasarakham_plate.jpg",
       "isFallback": false
     }
   ]

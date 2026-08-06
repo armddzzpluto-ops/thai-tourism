@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/narathiwat/gallery-1.webp",
     "assets/images/provinces/narathiwat/gallery-2.webp",
-    "assets/images/provinces/narathiwat/gallery-3.webp"
+    "assets/images/provinces/narathiwat/gallery-3.webp",
+    "assets/images/provinces/narathiwat/gallery-4.webp",
+    "assets/images/provinces/narathiwat/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Khok Khian, Mueang Narathiwat District, Narathiwat, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031052923/http://www.panoramio.com/user/6667993?with_photo_id=128164678\">กิตติ เลขะกุล</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Khian,_Mueang_Narathiwat_District,_Narathiwat,_Thailand_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/narathiwat/gallery-4.webp",
+      "caption": "Lochut, Waeng District, Narathiwat 96160, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031174553/http://www.panoramio.com/user/6667993?with_photo_id=122929800\">กิตติ เลขะกุล</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Lochut,_Waeng_District,_Narathiwat_96160,_Thailand_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Narathiwat",
+      "slug": "narathiwat",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/narathiwat/gallery-5.webp",
+      "caption": "File:Narathiwat 101.81500E 6.33992N.jpg",
+      "photoCredit": "Rex",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Narathiwat_101.81500E_6.33992N.jpg",
       "isFallback": false
     }
   ]

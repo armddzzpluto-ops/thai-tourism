@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/satun/gallery-1.webp",
     "assets/images/provinces/satun/gallery-2.webp",
-    "assets/images/provinces/satun/gallery-3.webp"
+    "assets/images/provinces/satun/gallery-3.webp",
+    "assets/images/provinces/satun/gallery-4.webp",
+    "assets/images/provinces/satun/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Pakbara 28",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031215802/http://www.panoramio.com/user/8391074?with_photo_id=115234320\">Nopphasin Suksawat</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Pakbara_28_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Satun",
+      "slug": "satun",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/satun/gallery-4.webp",
+      "caption": "Pakbara 29",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101123924/http://www.panoramio.com/user/8391074?with_photo_id=115234330\">Nopphasin Suksawat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Pakbara_29_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Satun",
+      "slug": "satun",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/satun/gallery-5.webp",
+      "caption": "Petra 001",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101212202/http://www.panoramio.com/user/8391074?with_photo_id=110189675\">Nopphasin Suksawat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Petra_001_-_panoramio.jpg",
       "isFallback": false
     }
   ]

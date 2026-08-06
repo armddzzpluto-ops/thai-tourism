@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/chonburi/gallery-1.webp",
     "assets/images/provinces/chonburi/gallery-2.webp",
-    "assets/images/provinces/chonburi/gallery-3.webp"
+    "assets/images/provinces/chonburi/gallery-3.webp",
+    "assets/images/provinces/chonburi/gallery-4.webp",
+    "assets/images/provinces/chonburi/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Amata City Chonburi",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Paulinski123&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paulinski123 (page does not exist)\">Paulinski123</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Amata_City_Chonburi.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chonburi",
+      "slug": "chonburi",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/chonburi/gallery-4.webp",
+      "caption": "Amazing Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161019145101/http://www.panoramio.com/user/290009?with_photo_id=61575181\">likeacat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Amazing_Thailand_-_panoramio_(28).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chonburi",
+      "slug": "chonburi",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/chonburi/gallery-5.webp",
+      "caption": "Amazing Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161020193035/http://www.panoramio.com/user/290009?with_photo_id=61575221\">likeacat</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Amazing_Thailand_-_panoramio_(30).jpg",
       "isFallback": false
     }
   ]

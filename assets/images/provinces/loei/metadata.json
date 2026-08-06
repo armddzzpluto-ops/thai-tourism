@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/loei/gallery-1.webp",
     "assets/images/provinces/loei/gallery-2.webp",
-    "assets/images/provinces/loei/gallery-3.webp"
+    "assets/images/provinces/loei/gallery-3.webp",
+    "assets/images/provinces/loei/gallery-4.webp",
+    "assets/images/provinces/loei/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "File:Loei 101.71354E 17.47772N.jpg",
       "photoCredit": "Rex",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Loei_101.71354E_17.47772N.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Loei",
+      "slug": "loei",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/loei/gallery-4.webp",
+      "caption": "phukradung national park",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Surakrit&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Surakrit (page does not exist)\">Surakrit</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Loei_Banner.JPG",
+      "isFallback": false
+    },
+    {
+      "province": "Loei",
+      "slug": "loei",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/loei/gallery-5.webp",
+      "caption": "phukradung national park",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Surakrit&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Surakrit (page does not exist)\">Surakrit</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Loei.JPG",
       "isFallback": false
     }
   ]

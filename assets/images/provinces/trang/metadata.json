@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/trang/gallery-1.webp",
     "assets/images/provinces/trang/gallery-2.webp",
-    "assets/images/provinces/trang/gallery-3.webp"
+    "assets/images/provinces/trang/gallery-3.webp",
+    "assets/images/provinces/trang/gallery-4.webp",
+    "assets/images/provinces/trang/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "<b>original flickr:</b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand.",
       "photoCredit": "Sharon Hahn Darlin",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Kheng_Chio_Cemetery,_Trang,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Trang",
+      "slug": "trang",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/trang/gallery-4.webp",
+      "caption": "ร้านขนมจีบสังขยาป้าพิณลำภูรา (Aunt Pin's Steamed Dumplings and Custard Shop)",
+      "photoCredit": "Sharon Hahn Darlin",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Lam_Phura,_Trang,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Trang",
+      "slug": "trang",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/trang/gallery-5.webp",
+      "caption": "<div class=\"description\">\n500px provided description: One of the ubiquitous long-tailed boats sits in the morning sun on Koh Kradan island in southern Thailand. [#sky ,#boat ,#beach ,#vacation ,#sand ,#geotagged ,#fischerfotos ,#Thailand ,#Mark Fischer ,#Koh Kradan]</div>",
+      "photoCredit": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/FischerFotos\">Mark Fischer</a></div>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Long_Tailed_Boat_(87640163).jpeg",
       "isFallback": false
     }
   ]

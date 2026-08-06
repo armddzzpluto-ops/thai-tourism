@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nakhon-pathom/gallery-1.webp",
     "assets/images/provinces/nakhon-pathom/gallery-2.webp",
-    "assets/images/provinces/nakhon-pathom/gallery-3.webp"
+    "assets/images/provinces/nakhon-pathom/gallery-3.webp",
+    "assets/images/provinces/nakhon-pathom/gallery-4.webp",
+    "assets/images/provinces/nakhon-pathom/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "From Mcdonal",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025035742/http://www.panoramio.com/user/4366445?with_photo_id=88888343\">Phong  Phat G</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:From_Mcdonal_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Pathom",
+      "slug": "nakhon-pathom",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nakhon-pathom/gallery-4.webp",
+      "caption": "Boeing 747/2 formerly of Orient Thai on display at the intersection of highway 3036 &amp; 346 near Lam Luk Bua, Nakhon Pathom, Thailand, 13/11/15. (14°02'21.4\"N 100°05'39.0\"E)",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/76052339@N05\">Alec Wilson</a> from Khon Kaen, Thailand",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:HS-UTR_(23026300345).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nakhon Pathom",
+      "slug": "nakhon-pathom",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nakhon-pathom/gallery-5.webp",
+      "caption": "Drain-out pipette",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Paweena.S&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paweena.S (page does not exist)\">Paweena.S</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Mohr_pipette.jpg",
       "isFallback": false
     }
   ]

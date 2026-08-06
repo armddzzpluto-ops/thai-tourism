@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phatthalung/gallery-1.webp",
     "assets/images/provinces/phatthalung/gallery-2.webp",
-    "assets/images/provinces/phatthalung/gallery-3.webp"
+    "assets/images/provinces/phatthalung/gallery-3.webp",
+    "assets/images/provinces/phatthalung/gallery-4.webp",
+    "assets/images/provinces/phatthalung/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Krajina v jižním Thajsku",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023223254/http://www.panoramio.com/user/4631368?with_photo_id=51745717\">Mozhar</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1741).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phatthalung",
+      "slug": "phatthalung",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phatthalung/gallery-4.webp",
+      "caption": "A parade of the local people from different district in Phatthalung Province, celebrating the \"Ching Pretah\" ceremony.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jidapa_Promdech&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jidapa Promdech (page does not exist)\">Jidapa Promdech</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:A_parade_of_the_local_people.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phatthalung",
+      "slug": "phatthalung",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phatthalung/gallery-5.webp",
+      "caption": "เขาอกทะลุ สัญลักษณ์ประจำจังหวัดพัทลุง",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Ratchawangmueang\" title=\"User:Ratchawangmueang\">Ratchawangmueang</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:ANT00173.JPG",
       "isFallback": false
     }
   ]

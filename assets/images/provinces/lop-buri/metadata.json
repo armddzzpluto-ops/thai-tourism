@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/lop-buri/gallery-1.webp",
     "assets/images/provinces/lop-buri/gallery-2.webp",
-    "assets/images/provinces/lop-buri/gallery-3.webp"
+    "assets/images/provinces/lop-buri/gallery-3.webp",
+    "assets/images/provinces/lop-buri/gallery-4.webp",
+    "assets/images/provinces/lop-buri/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "ตัวอำเภอโคกสำโรง",
       "photoCredit": "<a href=\"https://th.wikipedia.org/wiki/Thongdeethailand\" class=\"extiw\" title=\"th:Thongdeethailand\">th:Thongdeethailand</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Samrong_district_(2011).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Lop Buri",
+      "slug": "lop-buri",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/lop-buri/gallery-4.webp",
+      "caption": "Khok Samrong Hospital Lopburi Province",
+      "photoCredit": "<a href=\"https://th.wikipedia.org/wiki/User:thongdee_saleema\" class=\"extiw\" title=\"th:User:thongdee saleema\">thongdee saleema</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Samrong_Hospital_Lopburi.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Lop Buri",
+      "slug": "lop-buri",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/lop-buri/gallery-5.webp",
+      "caption": "Lam Narai Market by the Train Tracks",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Petnog&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Petnog (page does not exist)\">Petnog</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Lam_Narai_market.jpg",
       "isFallback": false
     }
   ]

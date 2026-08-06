@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/chai-nat/gallery-1.webp",
     "assets/images/provinces/chai-nat/gallery-2.webp",
-    "assets/images/provinces/chai-nat/gallery-3.webp"
+    "assets/images/provinces/chai-nat/gallery-3.webp",
+    "assets/images/provinces/chai-nat/gallery-4.webp",
+    "assets/images/provinces/chai-nat/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "supphaya sunrise",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161012112107/http://www.panoramio.com/user/1429473?with_photo_id=17708602\">::::=UT=::::</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Supphaya_sunrise_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chai Nat",
+      "slug": "chai-nat",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/chai-nat/gallery-4.webp",
+      "caption": "supphaya-01/2009",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161013003637/http://www.panoramio.com/user/1429473?with_photo_id=17709051\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Supphaya-01-2009_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Chai Nat",
+      "slug": "chai-nat",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/chai-nat/gallery-5.webp",
+      "caption": "Traffic Hang Nam Sakhon Nakhon Sawan - Bangkok road.",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011233131/http://www.panoramio.com/user/1465176?with_photo_id=9666277\">CHAMRAT CHAROENKHET</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Traffic_Hang_Nam_Sakhon_Nakhon_Sawan_-_Bangkok_road._-_panoramio_-_CHAMRAT_CHAROENKHET_(1).jpg",
       "isFallback": false
     }
   ]

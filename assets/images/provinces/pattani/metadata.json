@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/pattani/gallery-1.webp",
     "assets/images/provinces/pattani/gallery-2.webp",
-    "assets/images/provinces/pattani/gallery-3.webp"
+    "assets/images/provinces/pattani/gallery-3.webp",
+    "assets/images/provinces/pattani/gallery-4.webp",
+    "assets/images/provinces/pattani/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, Patani, he passed away on 27 Shawwal 1372/10 Jul 1953, in Kubur Padang, Keresik, Patani. His mother’s name was Hajah Halimah and she originated from Jambu, Patani. He studied in his early years under his father, Tok Chaok at the pondok bearing the same name and at Pondok Bendang Daya. Soon after, he went to study in Mecca for several years and finally at al-Azhar in Cairo.\nUpon his return to the peninsula, c. 1930, he took up his father’s former position as a teacher at Pondok Chaok. After three years, he moved to Keresik and opened a pondok at Kota Pepiri, where he was joined by another teacher named Haji Wan Su. Soon after, he opened another pondok at Istana Nilam, also in Keresik, named Madrasah al-Ma’arif al-Wataniah, where he was joined by teachers such as Ustaz Isma’il of Pendang, Kedah, Muhammad ‘Ali Don of Johor, and ‘Abd al-Majid Lubis of Sumatra. He became politically active from 1938 onwards and worked with Haji Sulong in the GEMPAR movement.",
       "photoCredit": "Ahmad Fathy Al-Patani",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Haji_Abdul_Majid_Embong_(1898-1953.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Pattani",
+      "slug": "pattani",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/pattani/gallery-4.webp",
+      "caption": "Offroad",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/6667993?with_photo_id=88576020\">กิตติ เลขะกุล</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Offroad_-_panoramio_(1).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Pattani",
+      "slug": "pattani",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/pattani/gallery-5.webp",
+      "caption": "A group of Pattani Malay dancers performing Mak Yong during the 19th century.",
+      "photoCredit": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:ShowMakyonginRama5.jpg",
       "isFallback": false
     }
   ]

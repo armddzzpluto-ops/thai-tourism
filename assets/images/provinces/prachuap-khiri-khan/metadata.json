@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
     "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
-    "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp"
+    "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
+    "assets/images/provinces/prachuap-khiri-khan/gallery-4.webp",
+    "assets/images/provinces/prachuap-khiri-khan/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Huai Sat Yai, Hua Hin Prachuap Khiri Khan",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014175639/http://www.panoramio.com/user/4312852?with_photo_id=39822121\">All Fronts Quiet</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Sat_Yai,_Hua_Hin_Prachuap_Khiri_Khan_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/prachuap-khiri-khan/gallery-4.webp",
+      "caption": "<p>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n</p><p>Owner: Thai National Parks\n</p>\nLink: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/huai-yang-waterfall-national-park\">www.thainationalparks.com/huai-yang-waterfall-national-park</a>",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Hylarana_nigrovittata,_Dark-sided_frog_(male,_breeding_color)_-_Huai_Yang_Waterfall_National_Park_(29330342203).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Prachuap Khiri Khan",
+      "slug": "prachuap-khiri-khan",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/prachuap-khiri-khan/gallery-5.webp",
+      "caption": "<p>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n</p><p>Owner: Thai National Parks\n</p>\nLink: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/huai-yang-waterfall-national-park\">www.thainationalparks.com/huai-yang-waterfall-national-park</a>",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Hylarana_nigrovittata,_Dark-sided_frog_-_Huai_Yang_Waterfall_National_Park_(29956135995).jpg",
       "isFallback": false
     }
   ]

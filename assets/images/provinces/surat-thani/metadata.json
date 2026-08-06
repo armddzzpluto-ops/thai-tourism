@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/surat-thani/gallery-1.webp",
     "assets/images/provinces/surat-thani/gallery-2.webp",
-    "assets/images/provinces/surat-thani/gallery-3.webp"
+    "assets/images/provinces/surat-thani/gallery-3.webp",
+    "assets/images/provinces/surat-thani/gallery-4.webp",
+    "assets/images/provinces/surat-thani/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Cheow Lan (lake), Surat Thani, Thailand.",
       "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_houses,_Khao_Sok,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/surat-thani/gallery-4.webp",
+      "caption": "Most intact, undisturbed wild natural areas left in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Khao_Sok,_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Surat Thani",
+      "slug": "surat-thani",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/surat-thani/gallery-5.webp",
+      "caption": "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Most intact, undisturbed wild natural areas left in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Rainforest_on_the_lake,_Khao_Sok,_Thailand.jpg",
       "isFallback": false
     }
   ]

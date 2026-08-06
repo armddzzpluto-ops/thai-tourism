@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/mukdahan/gallery-1.webp",
     "assets/images/provinces/mukdahan/gallery-2.webp",
-    "assets/images/provinces/mukdahan/gallery-3.webp"
+    "assets/images/provinces/mukdahan/gallery-3.webp",
+    "assets/images/provinces/mukdahan/gallery-4.webp",
+    "assets/images/provinces/mukdahan/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031053702/http://www.panoramio.com/user/1429473?with_photo_id=124395859\">::::=UT=::::</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Na_Si_Nuan,_Mueang_Mukdahan_District,_Mukdahan,_Thailand_-_panoramio_(1).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Mukdahan",
+      "slug": "mukdahan",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/mukdahan/gallery-4.webp",
+      "caption": "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031233119/http://www.panoramio.com/user/1429473?with_photo_id=124395862\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Na_Si_Nuan,_Mueang_Mukdahan_District,_Mukdahan,_Thailand_-_panoramio_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Mukdahan",
+      "slug": "mukdahan",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/mukdahan/gallery-5.webp",
+      "caption": "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031233129/http://www.panoramio.com/user/1429473?with_photo_id=124395865\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Na_Si_Nuan,_Mueang_Mukdahan_District,_Mukdahan,_Thailand_-_panoramio_(3).jpg",
       "isFallback": false
     }
   ]

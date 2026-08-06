@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/yasothon/gallery-1.webp",
     "assets/images/provinces/yasothon/gallery-2.webp",
-    "assets/images/provinces/yasothon/gallery-3.webp"
+    "assets/images/provinces/yasothon/gallery-3.webp",
+    "assets/images/provinces/yasothon/gallery-4.webp",
+    "assets/images/provinces/yasothon/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Yasothon Province Stadium",
       "photoCredit": "Pudt",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon_Province_Stadium.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Yasothon",
+      "slug": "yasothon",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/yasothon/gallery-4.webp",
+      "caption": "แผนที่ธงจังหวัดยโสธร",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Yasothon.png",
+      "isFallback": false
+    },
+    {
+      "province": "Yasothon",
+      "slug": "yasothon",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/yasothon/gallery-5.webp",
+      "caption": "Behind the temple.",
+      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Phra_Woothtipong_Boontasin&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Phra Woothtipong Boontasin (page does not exist)\">Phra Woothtipong Boontasin</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94.jpg",
       "isFallback": false
     }
   ]

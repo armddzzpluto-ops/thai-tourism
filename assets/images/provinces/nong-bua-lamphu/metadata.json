@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
     "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
-    "assets/images/provinces/nong-bua-lamphu/gallery-3.webp"
+    "assets/images/provinces/nong-bua-lamphu/gallery-3.webp",
+    "assets/images/provinces/nong-bua-lamphu/gallery-4.webp",
+    "assets/images/provinces/nong-bua-lamphu/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Teak Tree close up",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161027062857/http://www.panoramio.com/user/3025878?with_photo_id=75960642\">scottylu</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Teak_Tree_close_up_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nong Bua Lamphu",
+      "slug": "nong-bua-lamphu",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/nong-bua-lamphu/gallery-4.webp",
+      "caption": "Teak Trees",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024225914/http://www.panoramio.com/user/3025878?with_photo_id=75960664\">scottylu</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Teak_Trees_-_panoramio.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Nong Bua Lamphu",
+      "slug": "nong-bua-lamphu",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/nong-bua-lamphu/gallery-5.webp",
+      "caption": "Working on the Buddha",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161027015937/http://www.panoramio.com/user/3025878?with_photo_id=75960333\">scottylu</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Working_on_the_Buddha_-_panoramio.jpg",
       "isFallback": false
     }
   ]

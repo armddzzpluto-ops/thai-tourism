@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/ranong/gallery-1.webp",
     "assets/images/provinces/ranong/gallery-2.webp",
-    "assets/images/provinces/ranong/gallery-3.webp"
+    "assets/images/provinces/ranong/gallery-3.webp",
+    "assets/images/provinces/ranong/gallery-4.webp",
+    "assets/images/provinces/ranong/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Kamphuan, Suk Samran District, Ranong, Thailand",
       "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031041506/http://www.panoramio.com/user/1429473?with_photo_id=124379143\">::::=UT=::::</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Kamphuan,_Suk_Samran_District,_Ranong,_Thailand_-_panoramio_(2).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ranong",
+      "slug": "ranong",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/ranong/gallery-4.webp",
+      "caption": "Pak Nam, Mueang Ranong District, Ranong, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101045939/http://www.panoramio.com/user/1429473?with_photo_id=124379104\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Pak_Nam,_Mueang_Ranong_District,_Ranong,_Thailand_-_panoramio_(10).jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Ranong",
+      "slug": "ranong",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/ranong/gallery-5.webp",
+      "caption": "Pak Nam, Mueang Ranong District, Ranong, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101045929/http://www.panoramio.com/user/1429473?with_photo_id=124379101\">::::=UT=::::</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Pak_Nam,_Mueang_Ranong_District,_Ranong,_Thailand_-_panoramio_(11).jpg",
       "isFallback": false
     }
   ]

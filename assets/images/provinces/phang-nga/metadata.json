@@ -5,7 +5,9 @@
   "galleryImages": [
     "assets/images/provinces/phang-nga/gallery-1.webp",
     "assets/images/provinces/phang-nga/gallery-2.webp",
-    "assets/images/provinces/phang-nga/gallery-3.webp"
+    "assets/images/provinces/phang-nga/gallery-3.webp",
+    "assets/images/provinces/phang-nga/gallery-4.webp",
+    "assets/images/provinces/phang-nga/gallery-5.webp"
   ],
   "attribution": [
     {
@@ -46,6 +48,26 @@
       "caption": "Ban Khem",
       "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:BanKhem&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:BanKhem (page does not exist)\">BanKhem</a>",
       "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Khem_001.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phang Nga",
+      "slug": "phang-nga",
+      "role": "gallery-4",
+      "file": "assets/images/provinces/phang-nga/gallery-4.webp",
+      "caption": "Bang Niang Village, Khao Lak Thailand",
+      "photoCredit": "Khao Lak Ausflüge",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bang_Niang_Village,_Khao_Lak_Thailand.jpg",
+      "isFallback": false
+    },
+    {
+      "province": "Phang Nga",
+      "slug": "phang-nga",
+      "role": "gallery-5",
+      "file": "assets/images/provinces/phang-nga/gallery-5.webp",
+      "caption": "Bang Thong, Thai Mueang District, Phang-nga, Thailand",
+      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161028073227/http://www.panoramio.com/user/5150817?with_photo_id=95273891\">Dirk Enthoven</a>",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Bang_Thong,_Thai_Mueang_District,_Phang-nga,_Thailand_-_panoramio_(1).jpg",
       "isFallback": false
     }
   ]
