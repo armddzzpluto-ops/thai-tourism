@@ -2051,11 +2051,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "sukhothai": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/sukhothai/gallery-1.webp",
+      "assets/images/provinces/sukhothai/gallery-2.webp",
+      "assets/images/provinces/sukhothai/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Rory Featherston, U.S. Army/Released)",
+      "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Luis A. Rodriguez III, U.S. Marine Corps/Released)",
+      "Sukhothai"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/sukhothai/gallery-1.webp",
+        "caption": "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Rory Featherston, U.S. Army/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:130221-A-KW167-305_(8506779927).jpg"
+      },
+      {
+        "file": "assets/images/provinces/sukhothai/gallery-2.webp",
+        "caption": "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Luis A. Rodriguez III, U.S. Marine Corps/Released)",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:140213-M-LT992-422_(12526334154).jpg"
+      },
+      {
+        "file": "assets/images/provinces/sukhothai/gallery-3.webp",
+        "caption": "Sukhothai",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37583176@N00\">Ninara\u003c/a> from Helsinki, Finland",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:4Y1A0672_Sukhothai_(33790505994).jpg"
+      }
+    ]
   },
   "suphan-buri": {
     "status": "needs-curation",
