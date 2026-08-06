@@ -901,11 +901,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "nakhon-phanom": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/nakhon-phanom/gallery-1.webp",
+      "assets/images/provinces/nakhon-phanom/gallery-2.webp",
+      "assets/images/provinces/nakhon-phanom/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Chinese New Year in Nakhon Phanom Province is a great and interesting traditional event.",
+      "Mobile shop selling fruit juice in Thailand.",
+      "แผนที่ธงจังหวัดนครพนม"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/nakhon-phanom/gallery-1.webp",
+        "caption": "Chinese New Year in Nakhon Phanom Province is a great and interesting traditional event.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:643010120500Dh&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:643010120500Dh (page does not exist)\">643010120500Dh\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chinese_New_Year_Festival,_Nakhon_Phanom_Province.jpg"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-phanom/gallery-2.webp",
+        "caption": "Mobile shop selling fruit juice in Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lot_ken_shop.JPG"
+      },
+      {
+        "file": "assets/images/provinces/nakhon-phanom/gallery-3.webp",
+        "caption": "แผนที่ธงจังหวัดนครพนม",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Nakhon_Phanom.png"
+      }
+    ]
   },
   "nakhon-ratchasima": {
     "status": "needs-curation",
