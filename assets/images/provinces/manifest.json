@@ -2944,9 +2944,7 @@
     "galleryImages": [
       "assets/images/provinces/samut-prakan/gallery-1.webp",
       "assets/images/provinces/samut-prakan/gallery-2.webp",
-      "assets/images/provinces/samut-prakan/gallery-3.webp",
-      "assets/images/provinces/samut-prakan/gallery-4.webp",
-      "assets/images/provinces/samut-prakan/gallery-5.webp"
+      "assets/images/provinces/samut-prakan/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2964,50 +2962,30 @@
         "slug": "samut-prakan",
         "role": "gallery-1",
         "file": "assets/images/provinces/samut-prakan/gallery-1.webp",
-        "caption": "Samut Prakan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
-        "isFallback": true
+        "caption": "BTS Samsong Station (E15), Samut Prakarn, Thailand.",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Sirakorn\" title=\"User:Sirakorn\">Sirakorn Lamyai</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:BTS_Samrong_station.jpg",
+        "isFallback": false
       },
       {
         "province": "Samut Prakan",
         "slug": "samut-prakan",
         "role": "gallery-2",
         "file": "assets/images/provinces/samut-prakan/gallery-2.webp",
-        "caption": "Samut Prakan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
-        "isFallback": true
+        "caption": "A Toad in Samut Prakarn, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_1.jpg",
+        "isFallback": false
       },
       {
         "province": "Samut Prakan",
         "slug": "samut-prakan",
         "role": "gallery-3",
         "file": "assets/images/provinces/samut-prakan/gallery-3.webp",
-        "caption": "Samut Prakan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
-        "isFallback": true
-      },
-      {
-        "province": "Samut Prakan",
-        "slug": "samut-prakan",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/samut-prakan/gallery-4.webp",
-        "caption": "Samut Prakan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
-        "isFallback": true
-      },
-      {
-        "province": "Samut Prakan",
-        "slug": "samut-prakan",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/samut-prakan/gallery-5.webp",
-        "caption": "Samut Prakan tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Samut%20Prakan%20-%20Klong.JPG",
-        "isFallback": true
+        "caption": "A Toad in Samut Prakarn, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_2.jpg",
+        "isFallback": false
       }
     ]
   },

@@ -1806,11 +1806,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "samut-prakan": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/samut-prakan/gallery-1.webp",
+      "assets/images/provinces/samut-prakan/gallery-2.webp",
+      "assets/images/provinces/samut-prakan/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "BTS Samsong Station (E15), Samut Prakarn, Thailand.",
+      "A Toad in Samut Prakarn, Thailand",
+      "A Toad in Samut Prakarn, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/samut-prakan/gallery-1.webp",
+        "caption": "BTS Samsong Station (E15), Samut Prakarn, Thailand.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Sirakorn\" title=\"User:Sirakorn\">Sirakorn Lamyai\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:BTS_Samrong_station.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-prakan/gallery-2.webp",
+        "caption": "A Toad in Samut Prakarn, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_1.jpg"
+      },
+      {
+        "file": "assets/images/provinces/samut-prakan/gallery-3.webp",
+        "caption": "A Toad in Samut Prakarn, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_2.jpg"
+      }
+    ]
   },
   "samut-sakhon": {
     "status": "needs-curation",
