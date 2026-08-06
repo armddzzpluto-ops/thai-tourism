@@ -2194,9 +2194,7 @@
     "galleryImages": [
       "assets/images/provinces/phetchaburi/gallery-1.webp",
       "assets/images/provinces/phetchaburi/gallery-2.webp",
-      "assets/images/provinces/phetchaburi/gallery-3.webp",
-      "assets/images/provinces/phetchaburi/gallery-4.webp",
-      "assets/images/provinces/phetchaburi/gallery-5.webp"
+      "assets/images/provinces/phetchaburi/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -2214,50 +2212,30 @@
         "slug": "phetchaburi",
         "role": "gallery-1",
         "file": "assets/images/provinces/phetchaburi/gallery-1.webp",
-        "caption": "Phetchaburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
-        "isFallback": true
+        "caption": "File:- panoramio (2464).jpg",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021151321/http://www.panoramio.com/user/4631368?with_photo_id=53111180\">Mozhar</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2464).jpg",
+        "isFallback": false
       },
       {
         "province": "Phetchaburi",
         "slug": "phetchaburi",
         "role": "gallery-2",
         "file": "assets/images/provinces/phetchaburi/gallery-2.webp",
-        "caption": "Phetchaburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
-        "isFallback": true
+        "caption": "Bypass Hua Hin  - Cha-am",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022121840/http://www.panoramio.com/user/4976518?with_photo_id=51432879\">easy4444</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bypass_Hua_Hin_-_Cha-am_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Phetchaburi",
         "slug": "phetchaburi",
         "role": "gallery-3",
         "file": "assets/images/provinces/phetchaburi/gallery-3.webp",
-        "caption": "Phetchaburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
-        "isFallback": true
-      },
-      {
-        "province": "Phetchaburi",
-        "slug": "phetchaburi",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/phetchaburi/gallery-4.webp",
-        "caption": "Phetchaburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
-        "isFallback": true
-      },
-      {
-        "province": "Phetchaburi",
-        "slug": "phetchaburi",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/phetchaburi/gallery-5.webp",
-        "caption": "Phetchaburi tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2003.JPG",
-        "isFallback": true
+        "caption": "CHA-AM FOREST PARK",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031064519/http://www.panoramio.com/user/5109466?with_photo_id=128056564\">Thaweesak Churasri</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio_(1).jpg",
+        "isFallback": false
       }
     ]
   },

@@ -296,9 +296,9 @@
   {
     "province": "Phetchaburi",
     "slug": "phetchaburi",
-    "status": "needs-curation",
-    "galleryCount": 5,
-    "fallbackCount": 5
+    "status": "complete",
+    "galleryCount": 3,
+    "fallbackCount": 0
   },
   {
     "province": "Phichit",

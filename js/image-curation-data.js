@@ -1357,11 +1357,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "phetchaburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/phetchaburi/gallery-1.webp",
+      "assets/images/provinces/phetchaburi/gallery-2.webp",
+      "assets/images/provinces/phetchaburi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "File:- panoramio (2464).jpg",
+      "Bypass Hua Hin  - Cha-am",
+      "CHA-AM FOREST PARK"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/phetchaburi/gallery-1.webp",
+        "caption": "File:- panoramio (2464).jpg",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021151321/http://www.panoramio.com/user/4631368?with_photo_id=53111180\">Mozhar\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2464).jpg"
+      },
+      {
+        "file": "assets/images/provinces/phetchaburi/gallery-2.webp",
+        "caption": "Bypass Hua Hin  - Cha-am",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022121840/http://www.panoramio.com/user/4976518?with_photo_id=51432879\">easy4444\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Bypass_Hua_Hin_-_Cha-am_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/phetchaburi/gallery-3.webp",
+        "caption": "CHA-AM FOREST PARK",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031064519/http://www.panoramio.com/user/5109466?with_photo_id=128056564\">Thaweesak Churasri\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio_(1).jpg"
+      }
+    ]
   },
   "phichit": {
     "status": "needs-curation",
