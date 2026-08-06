@@ -1908,11 +1908,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "saraburi": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/saraburi/gallery-1.webp",
+      "assets/images/provinces/saraburi/gallery-2.webp",
+      "assets/images/provinces/saraburi/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Cha Om, Kaeng Khoi District, Saraburi, Thailand",
+      "Chet Khot-Pong Kon Sao Nature Study Centre",
+      "Chet Khot-Pong Kon Sao Nature Study Centre"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/saraburi/gallery-1.webp",
+        "caption": "Cha Om, Kaeng Khoi District, Saraburi, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031085720/http://www.panoramio.com/user/5109466?with_photo_id=115433747\">Thaweesak Churasri\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Cha_Om,_Kaeng_Khoi_District,_Saraburi,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/saraburi/gallery-2.webp",
+        "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011230221/http://www.panoramio.com/user/19953?with_photo_id=2564694\">Andreas Hörstemeier\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier_(1).jpg"
+      },
+      {
+        "file": "assets/images/provinces/saraburi/gallery-3.webp",
+        "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010102123/http://www.panoramio.com/user/19953?with_photo_id=2564704\">Andreas Hörstemeier\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier_(2).jpg"
+      }
+    ]
   },
   "satun": {
     "status": "needs-curation",
