@@ -649,11 +649,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "lampang": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/lampang/gallery-1.webp",
+      "assets/images/provinces/lampang/gallery-2.webp",
+      "assets/images/provinces/lampang/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Ananas d'une plantation d'ananas dans les montagnes de la province de Lampang en Thaïlande en janvier 2023",
+      "Lampang, Thailand",
+      "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses."
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/lampang/gallery-1.webp",
+        "caption": "Ananas d'une plantation d'ananas dans les montagnes de la province de Lampang en Thaïlande en janvier 2023",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ananas_de_Tha%C3%AFlande.jpg"
+      },
+      {
+        "file": "assets/images/provinces/lampang/gallery-2.webp",
+        "caption": "Lampang, Thailand",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161111102734/http://www.panoramio.com/user/5494478?with_photo_id=47788018\">gary4now\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lampang,_Thailand_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/lampang/gallery-3.webp",
+        "caption": "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses.",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_1.jpg"
+      }
+    ]
   },
   "lamphun": {
     "status": "needs-curation",

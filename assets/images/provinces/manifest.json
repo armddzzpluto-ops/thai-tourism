@@ -1080,9 +1080,7 @@
     "galleryImages": [
       "assets/images/provinces/lampang/gallery-1.webp",
       "assets/images/provinces/lampang/gallery-2.webp",
-      "assets/images/provinces/lampang/gallery-3.webp",
-      "assets/images/provinces/lampang/gallery-4.webp",
-      "assets/images/provinces/lampang/gallery-5.webp"
+      "assets/images/provinces/lampang/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -1100,50 +1098,30 @@
         "slug": "lampang",
         "role": "gallery-1",
         "file": "assets/images/provinces/lampang/gallery-1.webp",
-        "caption": "Lampang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "Ananas d'une plantation d'ananas dans les montagnes de la province de Lampang en Thaïlande en janvier 2023",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ananas_de_Tha%C3%AFlande.jpg",
+        "isFallback": false
       },
       {
         "province": "Lampang",
         "slug": "lampang",
         "role": "gallery-2",
         "file": "assets/images/provinces/lampang/gallery-2.webp",
-        "caption": "Lampang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "Lampang, Thailand",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161111102734/http://www.panoramio.com/user/5494478?with_photo_id=47788018\">gary4now</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Lampang,_Thailand_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Lampang",
         "slug": "lampang",
         "role": "gallery-3",
         "file": "assets/images/provinces/lampang/gallery-3.webp",
-        "caption": "Lampang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Lampang",
-        "slug": "lampang",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/lampang/gallery-4.webp",
-        "caption": "Lampang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Lampang",
-        "slug": "lampang",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/lampang/gallery-5.webp",
-        "caption": "Lampang tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20-%20panoramio%20%281%29.jpg",
-        "isFallback": true
+        "caption": "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses.",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_1.jpg",
+        "isFallback": false
       }
     ]
   },
