@@ -269,11 +269,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "chai-nat": {
-    "status": "insufficient-unique-candidates",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/chai-nat/gallery-1.webp",
+      "assets/images/provinces/chai-nat/gallery-2.webp",
+      "assets/images/provinces/chai-nat/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Rice field@Chainat 09/2009",
+      "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
+      "supphaya sunrise"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/chai-nat/gallery-1.webp",
+        "caption": "Rice field@Chainat 09/2009",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014092255/http://www.panoramio.com/user/1429473?with_photo_id=26506162\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Rice_field@Chainat_09-2009_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chai-nat/gallery-2.webp",
+        "caption": "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161015055226/http://www.panoramio.com/user/1429473?with_photo_id=30589544\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Sunset@Thammamoon_,_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%95%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B8%88.%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio.jpg"
+      },
+      {
+        "file": "assets/images/provinces/chai-nat/gallery-3.webp",
+        "caption": "supphaya sunrise",
+        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161012112107/http://www.panoramio.com/user/1429473?with_photo_id=17708602\">::::=UT=::::\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Supphaya_sunrise_-_panoramio.jpg"
+      }
+    ]
   },
   "chaiyaphum": {
     "status": "complete",

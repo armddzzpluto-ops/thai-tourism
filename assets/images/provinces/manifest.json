@@ -354,9 +354,7 @@
     "galleryImages": [
       "assets/images/provinces/chai-nat/gallery-1.webp",
       "assets/images/provinces/chai-nat/gallery-2.webp",
-      "assets/images/provinces/chai-nat/gallery-3.webp",
-      "assets/images/provinces/chai-nat/gallery-4.webp",
-      "assets/images/provinces/chai-nat/gallery-5.webp"
+      "assets/images/provinces/chai-nat/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -374,50 +372,30 @@
         "slug": "chai-nat",
         "role": "gallery-1",
         "file": "assets/images/provinces/chai-nat/gallery-1.webp",
-        "caption": "Chai Nat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
-        "isFallback": true
+        "caption": "Rice field@Chainat 09/2009",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014092255/http://www.panoramio.com/user/1429473?with_photo_id=26506162\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Rice_field@Chainat_09-2009_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Chai Nat",
         "slug": "chai-nat",
         "role": "gallery-2",
         "file": "assets/images/provinces/chai-nat/gallery-2.webp",
-        "caption": "Chai Nat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
-        "isFallback": true
+        "caption": "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161015055226/http://www.panoramio.com/user/1429473?with_photo_id=30589544\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Sunset@Thammamoon_,_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%95%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B8%88.%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio.jpg",
+        "isFallback": false
       },
       {
         "province": "Chai Nat",
         "slug": "chai-nat",
         "role": "gallery-3",
         "file": "assets/images/provinces/chai-nat/gallery-3.webp",
-        "caption": "Chai Nat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Chai Nat",
-        "slug": "chai-nat",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/chai-nat/gallery-4.webp",
-        "caption": "Chai Nat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Chai Nat",
-        "slug": "chai-nat",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/chai-nat/gallery-5.webp",
-        "caption": "Chai Nat tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Wat%20Pak%20Klong%20MAKHAMTAO%2003.jpg",
-        "isFallback": true
+        "caption": "supphaya sunrise",
+        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161012112107/http://www.panoramio.com/user/1429473?with_photo_id=17708602\">::::=UT=::::</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Supphaya_sunrise_-_panoramio.jpg",
+        "isFallback": false
       }
     ]
   },
