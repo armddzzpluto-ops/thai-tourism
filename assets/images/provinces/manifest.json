@@ -3538,9 +3538,7 @@
     "galleryImages": [
       "assets/images/provinces/surin/gallery-1.webp",
       "assets/images/provinces/surin/gallery-2.webp",
-      "assets/images/provinces/surin/gallery-3.webp",
-      "assets/images/provinces/surin/gallery-4.webp",
-      "assets/images/provinces/surin/gallery-5.webp"
+      "assets/images/provinces/surin/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -3558,50 +3556,30 @@
         "slug": "surin",
         "role": "gallery-1",
         "file": "assets/images/provinces/surin/gallery-1.webp",
-        "caption": "Surin tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
-        "isFallback": true
+        "caption": "Adthaporn Singhawichai, Gouverneur der Provinz Surin (Thailand)",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:StagiaireMGIMO\" title=\"User:StagiaireMGIMO\">StagiaireMGIMO</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Adthaporn_Singhawichai_(2017).jpg",
+        "isFallback": false
       },
       {
         "province": "Surin",
         "slug": "surin",
         "role": "gallery-2",
         "file": "assets/images/provinces/surin/gallery-2.webp",
-        "caption": "Surin tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
-        "isFallback": true
+        "caption": "Chumphon Buri Surin, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_02.jpg",
+        "isFallback": false
       },
       {
         "province": "Surin",
         "slug": "surin",
         "role": "gallery-3",
         "file": "assets/images/provinces/surin/gallery-3.webp",
-        "caption": "Surin tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Surin",
-        "slug": "surin",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/surin/gallery-4.webp",
-        "caption": "Surin tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
-        "isFallback": true
-      },
-      {
-        "province": "Surin",
-        "slug": "surin",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/surin/gallery-5.webp",
-        "caption": "Surin tourism fallback image",
-        "photoCredit": "Fallback from hero image",
-        "imageSource": "http://commons.wikimedia.org/wiki/Special:FilePath/Mun%20River%20Mouth.jpg",
-        "isFallback": true
+        "caption": "Chumphon Buri Surin, Thailand",
+        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN</a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_03.jpg",
+        "isFallback": false
       }
     ]
   },

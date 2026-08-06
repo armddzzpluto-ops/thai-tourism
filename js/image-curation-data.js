@@ -2153,11 +2153,38 @@ window.IMAGE_CURATION = {
     ]
   },
   "surin": {
-    "status": "needs-curation",
-    "galleryCurated": false,
-    "galleryImages": [],
-    "galleryCaptions": [],
-    "attribution": []
+    "status": "complete",
+    "galleryCurated": true,
+    "galleryImages": [
+      "assets/images/provinces/surin/gallery-1.webp",
+      "assets/images/provinces/surin/gallery-2.webp",
+      "assets/images/provinces/surin/gallery-3.webp"
+    ],
+    "galleryCaptions": [
+      "Adthaporn Singhawichai, Gouverneur der Provinz Surin (Thailand)",
+      "Chumphon Buri Surin, Thailand",
+      "Chumphon Buri Surin, Thailand"
+    ],
+    "attribution": [
+      {
+        "file": "assets/images/provinces/surin/gallery-1.webp",
+        "caption": "Adthaporn Singhawichai, Gouverneur der Provinz Surin (Thailand)",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:StagiaireMGIMO\" title=\"User:StagiaireMGIMO\">StagiaireMGIMO\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Adthaporn_Singhawichai_(2017).jpg"
+      },
+      {
+        "file": "assets/images/provinces/surin/gallery-2.webp",
+        "caption": "Chumphon Buri Surin, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_02.jpg"
+      },
+      {
+        "file": "assets/images/provinces/surin/gallery-3.webp",
+        "caption": "Chumphon Buri Surin, Thailand",
+        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN\u003c/a>",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_03.jpg"
+      }
+    ]
   },
   "tak": {
     "status": "needs-curation",
