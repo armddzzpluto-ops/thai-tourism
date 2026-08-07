@@ -77,7 +77,7 @@ const retiredMockPatterns = [
   ["simulated tourism statistics", /ข้อมูลจำลอง|40\.2M|2\.1T|Visitors \(millions\)/],
   ["placeholder project people", /สมชาย ใจดี|สมหญิง สวยงาม|สมศักดิ์ เก่งมาก|อาจารย์ดีมาก/],
   ["placeholder contact details", /info@thailandtravel\.th|02-xxx-xxxx|10XXX/]
-  ,["fabricated destination metrics", /\b(?:rating|reviews|tourists|price)\s*:/]
+  ,["fabricated destination metrics", /\b(?:rating|reviews|tourists)\s*:/]
 ];
 const runtimeSources = `${index}\n${app}\n${data}\n${enhancements}`;
 for (const [label, pattern] of retiredMockPatterns) {
@@ -86,8 +86,8 @@ for (const [label, pattern] of retiredMockPatterns) {
 
 for (const containerId of [
   "home-trip-grid",
-  "promotion-featured-grid",
-  "promotion-region-grid",
+  "promotion-stay-grid",
+  "promotion-package-grid",
   "dashboard-stats"
 ]) {
   if (!index.includes(`id="${containerId}"`)) {
@@ -96,6 +96,12 @@ for (const containerId of [
 }
 if (!data.includes("window.CROSS_PAGE_DESTINATION_SLUGS =")) {
   failures.push("shared cross-page destination selection is not exported");
+}
+if (!data.includes("window.PROMOTIONS =") || !data.includes("window.BLOG_DESTINATION_SLUGS =")) {
+  failures.push("shared promotion or destination-guide data is not exported");
+}
+if (/images\.unsplash\.com/.test(data) || /const BLOG\s*=/.test(data)) {
+  failures.push("legacy standalone blog content or external blog imagery remains");
 }
 if (!app.includes("renderCrossPageDestinationGrids()")) {
   failures.push("cross-page destination grids are not rendered from shared data");

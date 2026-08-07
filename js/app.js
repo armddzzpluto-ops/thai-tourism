@@ -181,20 +181,51 @@ function renderCrossPageDestinationGrids() {
     : [];
   const selected = configured.map(getDestinationBySlug).filter(Boolean);
   const featured = selected.slice(0, 3);
-  const byRegion = [...new Set(destinations.map(item => item.region))]
-    .map(region => selected.find(item => item.region === region) || destinations.find(item => item.region === region))
-    .filter(Boolean);
+  const container = document.getElementById('home-trip-grid');
+  if (container) {
+    container.innerHTML = featured.map(item => renderCard(item, 'home-trip-grid')).join('');
+    container.dataset.rendered = 'true';
+  }
 
-  const grids = [
-    ['home-trip-grid', featured],
-    ['promotion-featured-grid', featured],
-    ['promotion-region-grid', byRegion]
-  ];
+  renderPromotionGrids();
+}
 
-  grids.forEach(([id, items]) => {
+function renderPromotionGrids() {
+  const promotions = Array.isArray(window.PROMOTIONS) ? window.PROMOTIONS : [];
+  const language = window.I18N?.getLanguage?.() || 'th';
+  const formatPrice = value => new Intl.NumberFormat(language === 'en' ? 'en-US' : 'th-TH').format(value);
+  const localized = (value) => value?.[language] || value?.th || '';
+
+  const renderPromotion = promotion => {
+    const destination = getDestinationBySlug(promotion.destinationSlug);
+    if (!destination) return '';
+    const original = promotion.originalPrice
+      ? `<span style="text-decoration:line-through;color:var(--text-light);font-size:0.78rem;">฿${formatPrice(promotion.originalPrice)}</span>`
+      : '';
+    const sampleLabel = language === 'en' ? 'Sample price' : 'ราคาตัวอย่าง';
+    const detailsLabel = language === 'en' ? 'View destination' : 'ดูสถานที่';
+
+    return `<article class="dest-card" data-promotion-id="${promotion.id}" data-destination-slug="${promotion.destinationSlug}">
+      <div class="card-img-wrap">
+        <img src="${destination.heroImage || destination.img}" alt="${localized(promotion.title)} — ${destination.name}" loading="lazy">
+        <span class="card-badge">${localized(promotion.badge)}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-region">${destination.province} • ${sampleLabel}</div>
+        <h3 class="card-title">${localized(promotion.title)}</h3>
+        <p class="card-desc">${localized(promotion.description)}</p>
+        <div class="card-footer">
+          <div class="card-rating">${original}<strong style="color:var(--teal-deep);margin-left:${original ? '6px' : '0'};">฿${formatPrice(promotion.price)}${localized(promotion.unit)}</strong></div>
+          <button type="button" class="card-cta" onclick='showDest(${JSON.stringify(destination.name)})'>${detailsLabel}</button>
+        </div>
+      </div>
+    </article>`;
+  };
+
+  [['promotion-stay-grid', 'stay'], ['promotion-package-grid', 'package']].forEach(([id, type]) => {
     const container = document.getElementById(id);
     if (!container) return;
-    container.innerHTML = items.map(item => renderCard(item, id)).join('');
+    container.innerHTML = promotions.filter(item => item.type === type).map(renderPromotion).join('');
     container.dataset.rendered = 'true';
   });
 }

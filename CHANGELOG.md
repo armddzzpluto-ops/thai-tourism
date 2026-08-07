@@ -3,7 +3,9 @@
 ## 2026-08-07 — Phase 3 cross-page data
 - Replaced hardcoded Home and Promotions cards with shared destination records and one renderer.
 - Rebuilt Dashboard metrics and charts from the live 77-province destination/gallery dataset.
-- Removed fabricated weather, traveler reviews, promotion prices, tourism totals, ratings and review counts.
+- Removed fabricated weather, traveler reviews, tourism totals, ratings and review counts.
+- Restored portfolio-sample promotion prices in one shared `PROMOTIONS` collection and clearly labels them as non-provider sample prices.
+- Replaced standalone legacy blog posts and external covers with destination guides generated from shared province records and curated images.
 - Removed placeholder team, adviser, phone, address, office and social-media content.
 - Kept only the verified GitHub repository as the project contact channel.
 - Added static and Playwright regression checks for cross-page record identity and derived dashboard values.

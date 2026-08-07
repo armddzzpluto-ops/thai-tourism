@@ -51,4 +51,4 @@
 ## Automated Phase Log
 - 2026-08-07 · Bilingual runtime audit · Seven routes, overlays and accessibility attributes verified in Thai and English · commit `a76c932`
 - 2026-08-07 · Repository cleanup · Removed 247 proven-unused files, aligned curation to three images and added anti-regression guards
-- 2026-08-07 · Phase 3 cross-page data · Unified page cards, derived Dashboard data and removed remaining fabricated content
+- 2026-08-07 · Phase 3 cross-page data · Unified page cards, derived Dashboard data, moved sample prices into shared promotion records and generated articles from destination data
