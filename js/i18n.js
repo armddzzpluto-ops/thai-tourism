@@ -683,6 +683,7 @@
     window.renderGallery?.();
     window.renderHomeGalleryPreview?.();
     window.hydratePromotionCardsFromSharedData?.();
+    window.initCharts?.();
   }
 
   function applyCompleteLanguage() {
