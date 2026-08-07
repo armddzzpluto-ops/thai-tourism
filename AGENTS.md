@@ -21,6 +21,8 @@ Maintain a presentation-ready, bilingual static tourism SPA covering all 77 Thai
 5. Never set `galleryCurated: true` unless the province has at least three verified curated gallery images.
 6. Preserve keyboard focus, visible focus, semantic controls, alt text and accessible labels.
 7. Do not duplicate data, translations, CSS selectors or render pipelines.
+8. Do not commit checkpoints, terminal probes, generated reports or source-format images that the site does not serve.
+9. Keep only runtime-referenced assets; Git history is the archive for retired files.
 
 ## Required verification
 - Run `npm run check`.
@@ -28,6 +30,7 @@ Maintain a presentation-ready, bilingual static tourism SPA covering all 77 Thai
 - Test Thai and English.
 - Test Desktop 1440×900, Notebook 1280×800, Tablet 768×1024 and Mobile 390×844.
 - Check console errors, failed local requests, broken links and broken images.
+- Confirm `npm run check` reports no retired artifacts or orphan extended-gallery assets.
 
 ## Delivery workflow
 1. Inspect current source and docs.

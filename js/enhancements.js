@@ -149,7 +149,7 @@
   }
 
   function initTheme() {
-    /* Theme handled by script.js Theme module */
+    /* Theme is handled by the core application runtime. */
   }
 
   function currentTheme() {
