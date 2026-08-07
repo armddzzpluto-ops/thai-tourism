@@ -21,17 +21,30 @@
   }
 
   function getSharedBlogPosts() {
-    if (!Array.isArray(window.BLOG)) return [];
-    return window.BLOG.map(item => ({
-      id: item.id,
-      category: item.cat,
-      title: item.title,
-      date: item.date,
-      read: item.readtime,
-      img: item.img,
-      excerpt: item.excerpt,
-      body: [String(item.body || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()]
-    }));
+    const slugs = Array.isArray(window.BLOG_DESTINATION_SLUGS)
+      ? window.BLOG_DESTINATION_SLUGS
+      : [];
+    const destinations = Array.isArray(window.DESTINATIONS) ? window.DESTINATIONS : [];
+    const language = window.I18N?.getLanguage?.() || "th";
+
+    return slugs.map((slug, index) => {
+      const item = destinations.find(destination =>
+        (destination.provinceSlug || destination.slug) === slug
+      );
+      if (!item) return null;
+      const activities = Array.isArray(item.activities) ? item.activities : [];
+      return {
+        id: index + 1,
+        destinationSlug: slug,
+        category: regionLabel(item.region),
+        title: language === "en" ? `${item.name} destination guide` : `คู่มือเที่ยว${item.name}`,
+        date: language === "en" ? item.province : `จังหวัด${item.province}`,
+        read: language === "en" ? `${activities.length} highlights` : `${activities.length} ไฮไลต์`,
+        img: item.heroImage || item.img,
+        excerpt: item.desc,
+        body: [item.longDesc || item.desc, ...activities]
+      };
+    }).filter(Boolean);
   }
 
   function getSharedFaqs() {
@@ -573,7 +586,7 @@
     const blogPosts = getSharedBlogPosts();
     if (!blogPosts.length) return;
     grid.innerHTML = blogPosts.map(post => `
-      <article class="blog-card-enhanced" tabindex="0" role="button" data-blog-id="${post.id}">
+      <article class="blog-card-enhanced" tabindex="0" role="button" data-blog-id="${post.id}" data-destination-slug="${post.destinationSlug}">
         <img src="${post.img}" alt="${post.title}" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-cat">${post.category}</div>

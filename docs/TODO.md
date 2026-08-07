@@ -12,7 +12,7 @@
 - [x] Add CI guards against missing runtime images and retired artifacts
 - [x] Connect Home, Destinations, Promotions, Gallery and Modal to destination-owned records
 - [x] Replace simulated tourism Dashboard values with metrics derived from live site data
-- [x] Remove fabricated weather, reviews, promotion prices, ratings and contact/team placeholders
+- [x] Remove fabricated weather, reviews, ratings and contact/team placeholders; isolate clearly labelled sample prices in shared promotion data
 
 ## Next phase
 - [ ] Verify destination-level official websites, maps and coordinates

@@ -595,87 +595,20 @@ const CROSS_PAGE_DESTINATION_SLUGS = [
   "sukhothai"
 ];
 
-/* ---------- BLOG ARTICLES (6) ---------- */
-const BLOG = [
-  {
-    id: 1, cat: "Beaches", title: "Best Beaches in Thailand for Every Type of Traveler",
-    img: "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=700&q=80",
-    excerpt: "From the party shores of Patong to the untouched sands of Koh Chang, here's how to pick the right beach for your style of trip.",
-    readtime: "6 min read", date: "May 2026",
-    body: `<p>Thailand's coastline stretches across two very different seas — the Andaman in the west and the Gulf of Thailand in the east — and each has its own personality.</p>
-    <h4>For nightlife lovers</h4>
-    <p>Patong Beach in Phuket and Pattaya's Jomtien strip deliver the liveliest beach scenes, with beach clubs running well past sunset.</p>
-    <h4>For quiet escapes</h4>
-    <p>Koh Chang and Koh Lanta remain comparatively undeveloped, with long stretches of sand that rarely feel crowded even in high season.</p>
-    <h4>For postcard scenery</h4>
-    <p>Railay Beach in Krabi is only reachable by longtail boat, hemmed in by limestone cliffs that make it one of the most photographed beaches in Southeast Asia.</p>`
-  },
-  {
-    id: 2, cat: "Mountains", title: "Top Mountains and Highlands Worth the Climb",
-    img: "https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?w=700&q=80",
-    excerpt: "Thailand's north isn't just temples — misty highland peaks, tea plantations and cool-season trekking await beyond Chiang Mai.",
-    readtime: "5 min read", date: "April 2026",
-    body: `<p>While Thailand is best known for its beaches, the northern highlands offer a completely different kind of adventure.</p>
-    <h4>Doi Inthanon</h4>
-    <p>Thailand's highest peak sits inside a national park filled with cloud forest trails, twin pagodas and dramatic waterfalls.</p>
-    <h4>Doi Mae Salong</h4>
-    <p>A former Kuomintang settlement turned tea-growing village, this ridge near Chiang Rai is at its best during the cool season from November to February.</p>
-    <h4>Doi Phu Kha, Nan</h4>
-    <p>Golden marigold fields blanket this remote mountain park each November, drawing photographers from across the country.</p>`
-  },
-  {
-    id: 3, cat: "Hidden Gems", title: "Hidden Gems: Provinces Most Tourists Skip",
-    img: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=700&q=80",
-    excerpt: "Skip the crowds entirely. These lesser-known provinces offer the same natural beauty without the queues.",
-    readtime: "7 min read", date: "March 2026",
-    body: `<p>Beyond the well-trodden Bangkok–Chiang Mai–Phuket triangle lies a quieter version of Thailand.</p>
-    <h4>Nan</h4>
-    <p>Tucked against the Laos border, Nan's old murals and mountain scenery rarely appear on first-time itineraries — which is exactly its appeal.</p>
-    <h4>Ubon Ratchathani</h4>
-    <p>Home to 3,000-year-old rock art at Pha Taem and the dramatic Sam Phan Bok canyon, this Isan province feels worlds away from the tourist trail.</p>
-    <h4>Trat & Koh Chang</h4>
-    <p>Thailand's second-largest island remains 70% jungle, with beaches that still feel genuinely undiscovered.</p>`
-  },
-  {
-    id: 4, cat: "Travel Tips", title: "Essential Travel Tips for First-Time Visitors",
-    img: "https://images.unsplash.com/photo-1508009603885-50cf7c8a4d60?w=700&q=80",
-    excerpt: "Practical advice on timing, transport and etiquette to help your first Thailand trip go smoothly.",
-    readtime: "8 min read", date: "February 2026",
-    body: `<p>A little preparation goes a long way when traveling around Thailand for the first time.</p>
-    <h4>Best time to visit</h4>
-    <p>November through February brings the coolest, driest weather across most of the country — the sweet spot for both beaches and temples.</p>
-    <h4>Getting around</h4>
-    <p>Domestic flights are cheap and frequent between major hubs; for shorter regional hops, overnight trains and buses are comfortable and scenic.</p>
-    <h4>Temple etiquette</h4>
-    <p>Cover shoulders and knees before entering any temple, and always remove shoes before stepping inside a main hall.</p>`
-  },
-  {
-    id: 5, cat: "Culture", title: "Understanding Thai Festivals Worth Planning Around",
-    img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80",
-    excerpt: "From floating lanterns to water fights, these festivals can turn a good trip into an unforgettable one.",
-    readtime: "5 min read", date: "January 2026",
-    body: `<p>Timing a trip around a major festival adds a layer of culture no regular sightseeing day can match.</p>
-    <h4>Loy Krathong</h4>
-    <p>Held on the full moon of the twelfth lunar month, this festival of floating lanterns is at its most magical in Sukhothai and Chiang Mai.</p>
-    <h4>Songkran</h4>
-    <p>Thai New Year in mid-April turns entire cities into good-natured water fights — pack a dry bag for your phone.</p>
-    <h4>Ubon Candle Festival</h4>
-    <p>Every July, Ubon Ratchathani parades enormous hand-carved wax sculptures through the streets.</p>`
-  },
-  {
-    id: 6, cat: "Food", title: "A Street Food Crawl Worth Building a Trip Around",
-    img: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=80",
-    excerpt: "Bangkok's street food scene is Michelin-recognized for good reason. Here's where to start.",
-    readtime: "6 min read", date: "December 2025",
-    body: `<p>Some of the best meals in Thailand cost less than a coffee back home and come from a cart, not a restaurant.</p>
-    <h4>Yaowarat, Chinatown</h4>
-    <p>Bangkok's Chinatown lights up after dark with seafood grills, noodle stalls and dessert carts lining the main strip.</p>
-    <h4>Chiang Mai's Sunday Walking Street</h4>
-    <p>Northern specialties like khao soi and sai oua sausage are easy to find amid the handicraft stalls.</p>
-    <h4>Local market mornings</h4>
-    <p>Arrive at any provincial market before 8am for the freshest fruit, coffee and breakfast noodle soups.</p>`
-  }
+/* Promotions are one shared collection. Prices are clearly identified in the
+   UI as portfolio samples and every visual/place reference resolves through
+   DESTINATIONS instead of being duplicated here. */
+const PROMOTIONS = [
+  { id: "samui-stay", type: "stay", destinationSlug: "surat-thani", badge: { th: "ลด 30%", en: "30% off" }, title: { th: "สมุย บีชฟรอนต์ รีสอร์ต", en: "Samui Beachfront Resort" }, description: { th: "แพ็กเกจที่พักริมทะเล พร้อมสระว่ายน้ำและบริการสปา", en: "Beachfront accommodation package with pool and spa access." }, originalPrice: 4500, price: 3150, unit: { th: "/คืน", en: "/night" } },
+  { id: "chiang-mai-stay", type: "stay", destinationSlug: "chiang-mai", badge: { th: "ลด 25%", en: "25% off" }, title: { th: "ลานนา บูติก โฮเทล", en: "Lanna Boutique Hotel" }, description: { th: "แพ็กเกจที่พักสไตล์ล้านนาในเขตเมืองเก่าเชียงใหม่", en: "Lanna-style accommodation package in Chiang Mai Old City." }, originalPrice: 2800, price: 2100, unit: { th: "/คืน", en: "/night" } },
+  { id: "phuket-stay", type: "stay", destinationSlug: "phuket", badge: { th: "จองล่วงหน้า", en: "Early bird" }, title: { th: "ภูเก็ต โอเชียนวิว วิลลา", en: "Phuket Oceanview Villa" }, description: { th: "แพ็กเกจวิลลาวิวทะเลอันดามันพร้อมสระว่ายน้ำส่วนตัว", en: "Andaman Sea-view villa package with a private pool." }, originalPrice: 9800, price: 6900, unit: { th: "/คืน", en: "/night" } },
+  { id: "krabi-package", type: "package", destinationSlug: "krabi", badge: { th: "3 วัน 2 คืน", en: "3 days, 2 nights" }, title: { th: "กระบี่และเกาะพีพี", en: "Krabi and Phi Phi" }, description: { th: "แพ็กเกจตัวอย่างรวมที่พัก อาหาร และกิจกรรมทางทะเล", en: "Sample package including accommodation, meals and sea activities." }, price: 5990, unit: { th: "/คน", en: "/person" } },
+  { id: "chiang-rai-package", type: "package", destinationSlug: "chiang-rai", badge: { th: "4 วัน 3 คืน", en: "4 days, 3 nights" }, title: { th: "เชียงราย 3 วัดเด่น", en: "Three Chiang Rai temples" }, description: { th: "แพ็กเกจตัวอย่างสำหรับวัดร่องขุ่น วัดร่องเสือเต้น และดอยแม่สลอง", en: "Sample itinerary for the White Temple, Blue Temple and Doi Mae Salong." }, price: 4490, unit: { th: "/คน", en: "/person" } },
+  { id: "sukhothai-package", type: "package", destinationSlug: "sukhothai", badge: { th: "2 วัน 1 คืน", en: "2 days, 1 night" }, title: { th: "มรดกโลกสุโขทัย", en: "Sukhothai World Heritage" }, description: { th: "แพ็กเกจตัวอย่างสำหรับสำรวจอุทยานประวัติศาสตร์สุโขทัย", en: "Sample package for exploring Sukhothai Historical Park." }, price: 2990, unit: { th: "/คน", en: "/person" } }
 ];
+
+/* Home articles are destination guides generated from these records. */
+const BLOG_DESTINATION_SLUGS = ["phuket", "chiang-mai", "krabi", "bangkok", "chiang-rai", "sukhothai"];
 
 /* ---------- FAQ (10) ---------- */
 const FAQ = [
@@ -707,7 +640,8 @@ window.DESTINATIONS = DESTINATIONS;
 window.CATEGORIES = CATEGORIES;
 window.REGIONS = REGIONS;
 window.CROSS_PAGE_DESTINATION_SLUGS = CROSS_PAGE_DESTINATION_SLUGS;
-window.BLOG = BLOG;
+window.PROMOTIONS = PROMOTIONS;
+window.BLOG_DESTINATION_SLUGS = BLOG_DESTINATION_SLUGS;
 window.FAQ = FAQ;
 window.QUOTES = QUOTES;
 

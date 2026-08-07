@@ -68,7 +68,7 @@ test("English accessibility attributes contain no Thai text", async ({ page }) =
   expect(leaks).toEqual([]);
 });
 
-test("Home and Promotions resolve the same destination records", async ({ page }) => {
+test("Promotions and articles resolve shared destination records", async ({ page }) => {
   await page.evaluate(() => window.I18N.setLanguage("en"));
   const result = await page.evaluate(() => {
     const slugs = window.CROSS_PAGE_DESTINATION_SLUGS.slice(0, 3);
@@ -81,19 +81,41 @@ test("Home and Promotions resolve the same destination records", async ({ page }
         image: item.heroImage || item.img
       };
     });
-    const readCards = id => [...document.querySelectorAll(`#${id} .dest-card`)].map(card => ({
-      name: card.querySelector(".card-title")?.textContent.trim(),
-      image: card.querySelector("img")?.getAttribute("src")
-    }));
+    const promotionCards = [...document.querySelectorAll("#promotion-stay-grid .dest-card, #promotion-package-grid .dest-card")]
+      .map(card => {
+        const promotion = window.PROMOTIONS.find(item => item.id === card.dataset.promotionId);
+        const destination = window.destinations.find(item =>
+          (item.provinceSlug || item.slug) === promotion.destinationSlug
+        );
+        return {
+          image: card.querySelector("img")?.getAttribute("src"),
+          expectedImage: destination.heroImage || destination.img,
+          hasPrice: /฿[\d,]+/.test(card.textContent)
+        };
+      });
+    const articleCards = [...document.querySelectorAll("#blog-grid [data-destination-slug]")]
+      .map(card => {
+        const destination = window.destinations.find(item =>
+          (item.provinceSlug || item.slug) === card.dataset.destinationSlug
+        );
+        return [card.querySelector("img")?.getAttribute("src"), destination.heroImage || destination.img];
+      });
     return {
       expected,
-      home: readCards("home-trip-grid"),
-      promotions: readCards("promotion-featured-grid")
+      home: [...document.querySelectorAll("#home-trip-grid .dest-card")].map(card => ({
+        name: card.querySelector(".card-title")?.textContent.trim(),
+        image: card.querySelector("img")?.getAttribute("src")
+      })),
+      promotionCards,
+      articleCards
     };
   });
 
   expect(result.home).toEqual(result.expected);
-  expect(result.promotions).toEqual(result.expected);
+  expect(result.promotionCards).toHaveLength(6);
+  expect(result.promotionCards.every(item => item.image === item.expectedImage && item.hasPrice)).toBe(true);
+  expect(result.articleCards).toHaveLength(6);
+  expect(result.articleCards.every(([image, expected]) => image === expected)).toBe(true);
 });
 
 test("Dashboard values are calculated from live shared data", async ({ page }) => {
