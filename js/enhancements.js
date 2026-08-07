@@ -276,9 +276,7 @@
 
   function wireSearch(inputId, onSelect) {
     const input = document.getElementById(inputId);
-    const source = window.destinations;
-
-    if (!input || !Array.isArray(source)) return;
+    if (!input || !Array.isArray(window.destinations)) return;
 
     const parent = input.parentElement;
     const box = document.createElement("div");
@@ -336,6 +334,7 @@
 
     const render = () => {
       const query = input.value.trim().toLowerCase();
+      const source = Array.isArray(window.destinations) ? window.destinations : [];
       const matches = query
         ? source.filter(destination => matchesDestination(destination, query)).slice(0, 6)
         : [];
@@ -359,7 +358,7 @@
 
       box.querySelector("[data-clear-recent]")?.addEventListener("mousedown", event => {
         event.preventDefault();
-        localStorage.removeItem(STORAGE.recent);
+        localStorage.removeItem(recentStorageKey());
         render();
         notify(tr("search.cleared", "ล้างประวัติการค้นหาแล้ว"), "info");
       });
@@ -454,15 +453,19 @@
       <div class="suggestion-chips">${popular.map(term => `<button class="suggestion-chip" type="button" data-search-term="${escapeAttr(term)}">${term}</button>`).join("")}</div>`;
   }
 
+  function recentStorageKey() {
+    return `${STORAGE.recent}:${window.I18N?.getLanguage?.() || "th"}`;
+  }
+
   function getRecentSearches() {
     try {
-      const value = JSON.parse(localStorage.getItem(STORAGE.recent) || "[]");
+      const value = JSON.parse(localStorage.getItem(recentStorageKey()) || "[]");
 
       return Array.isArray(value)
         ? value.filter(item => typeof item === "string" && item.trim())
         : [];
     } catch {
-      localStorage.removeItem(STORAGE.recent);
+      localStorage.removeItem(recentStorageKey());
       return [];
     }
   }
@@ -472,7 +475,7 @@
     if (!clean) return;
     const recent = getRecentSearches().filter(item => item.toLowerCase() !== clean.toLowerCase());
     recent.unshift(clean);
-    localStorage.setItem(STORAGE.recent, JSON.stringify(recent.slice(0, 6)));
+    localStorage.setItem(recentStorageKey(), JSON.stringify(recent.slice(0, 6)));
   }
 
   function initRandomDestination() {
@@ -688,6 +691,7 @@
     document.getElementById("blog-modal-title").textContent = post.title;
     document.getElementById("blog-modal-meta").textContent = `${post.date} · ${post.read}`;
     document.getElementById("blog-modal-content").innerHTML = post.body.map(p => `<p>${p}</p>`).join("");
+    modal.dataset.blogId = String(id);
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
   }
@@ -718,6 +722,59 @@
       });
     });
   }
+
+  function refreshLocalizedEnhancements() {
+    document.querySelectorAll(".suggestion-box").forEach(box => {
+      box.classList.remove("is-open");
+      box.replaceChildren();
+    });
+
+    initWeatherCards();
+    initRegionExplorer();
+    initBlog();
+    initFAQ();
+
+    const quotes = getSharedQuotes();
+    const quoteText = document.getElementById("daily-quote");
+    const quoteAuthor = document.getElementById("daily-quote-author");
+    const quoteIndex = Number(localStorage.getItem(STORAGE.quoteIndex)) || 0;
+    const quote = quotes[quoteIndex % Math.max(quotes.length, 1)];
+    if (quote && quoteText && quoteAuthor) {
+      quoteText.textContent = quote.text;
+      quoteAuthor.textContent = `- ${quote.author}`;
+    }
+
+    const track = document.getElementById("testimonial-track");
+    const testimonials = getSharedTestimonials();
+    if (track && testimonials.length) {
+      track.innerHTML = testimonials.map(item => `
+        <div class="testimonial-slide">
+          <article class="testimonial-card">
+            <div class="testimonial-head">
+              <img class="testimonial-avatar" src="${item.avatar}" alt="${item.name}" loading="lazy">
+              <div><div class="testimonial-name">${item.name}</div><div class="testimonial-loc">${item.location}</div></div>
+            </div>
+            <div class="testimonial-stars">${"★".repeat(item.rating)}${"☆".repeat(5 - item.rating)}</div>
+            <p class="testimonial-text">"${item.text}"</p>
+            <p class="testimonial-loc" style="margin-top:12px;"><i class="fas fa-location-dot"></i> ${item.destination}</p>
+          </article>
+        </div>
+      `).join("");
+      track.style.transform = "translateX(0px)";
+    }
+
+    document.querySelectorAll("#testimonial-dots button").forEach((button, index) => {
+      button.setAttribute("aria-label", tr("testimonial.show", `แสดงรีวิวที่ ${index + 1}`, { index: index + 1 }));
+    });
+
+    const blogModal = document.getElementById("blog-modal");
+    const blogId = Number(blogModal?.dataset.blogId);
+    if (blogModal?.classList.contains("open") && blogId) openBlogArticle(blogId);
+  }
+
+  document.addEventListener("languagechange", () => {
+    requestAnimationFrame(refreshLocalizedEnhancements);
+  });
 
   function initFloatingActions() {
     const top = document.getElementById("back-to-top");
