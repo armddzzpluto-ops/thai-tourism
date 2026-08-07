@@ -14,6 +14,7 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
     window.Chart = class {
       static getChart() { return null; }
+      static register() {}
       destroy() {}
     };
     window.Swal = { fire: () => Promise.resolve() };
