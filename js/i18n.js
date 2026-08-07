@@ -559,3 +559,173 @@
     init();
   }
 })();
+
+/* ==========================================================
+   Phase 2 — Complete bilingual content for all public pages
+   ========================================================== */
+(function () {
+  "use strict";
+
+  const PAGE_ROOTS = "#page-home,#page-destinations,#page-promotions,#page-gallery,#page-about,#page-contact,#modal,#lightbox,#blog-modal";
+  const pairs = [["ค้นพบเสน่ห์ของ","Discover the charm of"],["ประเทศไทย","Thailand"],["เริ่มสำรวจ","Start exploring"],["ค้นหาจุดหมาย","Find destinations"],["จังหวัดทั่วไทย","provinces nationwide"],["นักท่องเที่ยวต่อปี","visitors per year"],["เลื่อนลง","Scroll down"],["🔍 ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ","🔍 Search for a destination"],["ค้นหา","Search"],["สถานที่แนะนำ","Featured places"],["จุดหมายปลายทาง","Destinations"],["ยอดนิยม","Popular"],["ดูทั้งหมด","View all"],["หมวดหมู่","Categories"],["ค้นพบประสบการณ์","Discover experiences"],["หลากหลาย","for every interest"],["ชายหาด","Beaches"],["วัดวาอาราม","Temples"],["ธรรมชาติ","Nature"],["ภูเขา","Mountains"],["วัฒนธรรม","Culture"],["เลือกพื้นที่ที่สนใจ","Choose an area"],["สำรวจประเทศไทยตามภูมิภาค","Explore Thailand by region"],["แถบควบคุม","Controls"],["ผลลัพธ์","Results"],["แพ็กเกจท่องเที่ยว","Travel packages"],["เลือกแพ็กเกจ","Choose the package"],["ที่ใช่สำหรับคุณ","that suits you"],["ประหยัด","Budget"],["แพ็กเกจประหยัด","Budget package"],["ครอบครัว","Family"],["แพ็กเกจครอบครัว","Family package"],["หรูหรา","Luxury"],["แพ็กเกจพรีเมียม","Premium package"],["ดูรายละเอียด","View details"],["ดูโปรโมชั่นทั้งหมด","View all promotions"],["คลังรูปภาพ","Gallery"],["ภาพสวยงาม","Beautiful images"],["จากทั่วไทย","from across Thailand"],["ดูรูปภาพทั้งหมด","View all images"],["เคล็ดลับ","Travel"],["การเดินทาง","tips"],["เลือกช่วงเวลาที่เหมาะสม","Choose the right season"],["วางแผนงบประมาณ","Plan your budget"],["เคารพวัฒนธรรมท้องถิ่น","Respect local culture"],["ใช้การขนส่งท้องถิ่น","Use local transport"],["เครื่องมืออัจฉริยะ","Smart tools"],["กำลังโหลดคำคมท่องเที่ยวประจำวัน...","Loading today's travel quote..."],["คำคมใหม่","New quote"],["สุ่มจุดหมาย","Random destination"],["สุ่มให้เลย","Surprise me"],["สภาพอากาศท่องเที่ยว","Travel weather"],["สภาพอากาศ","Weather"],["เสียงจากนักเดินทาง","Traveler stories"],["รีวิวจาก","Reviews from"],["ผู้เข้าชม","visitors"],["บันทึกการเดินทาง","Travel journal"],["บทความ","Latest"],["ล่าสุด","articles"],["คำถาม","questions"],["เริ่มต้นการเดินทาง","Start your journey"],["พร้อมสำรวจ","Ready to explore"],["แล้วหรือยัง?","Thailand?"],["เริ่มสำรวจสถานที่","Explore destinations"],["ดูโปรโมชั่น","View promotions"],["สำรวจทั่วไทย","Explore Thailand"],["สถานที่ท่องเที่ยว","Destinations"],["ทั้งหมด","All"],["ภาคเหนือ","Northern region"],["ภาคกลาง","Central region"],["ภาคใต้","Southern region"],["ภาคอีสาน","Northeastern region"],["ภาคตะวันออก","Eastern region"],["ไม่พบสถานที่ที่ค้นหา","No destinations found"],["ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น","Try another search or category"],["ข้อเสนอพิเศษ","Special offers"],["โปรโมชั่น","Promotions"],["พิเศษ 2026","2026 specials"],["ดีลที่พัก","Accommodation deals"],["ดีล","Accommodation"],["ที่พัก","deals"],["จองเลย","Book now"],["ดีลแพ็กเกจ","Package deals"],["แพ็กเกจ","Complete"],["ครบวงจร","packages"],["สอบถาม","Enquire"],["แคมเปญตามฤดูกาล","Seasonal campaigns"],["แคมเปญ","Seasonal"],["ตามฤดูกาล","campaigns"],["ฤดูกาลท่องเที่ยวสูงสุด","Peak travel season"],["สำรวจเลย","Explore now"],["สงกรานต์ 2026","Songkran 2026"],["ดูดีล","View deals"],["ลอยกระทงสุโขทัย","Sukhothai Loy Krathong"],["ดูข้อมูล","Learn more"],["ต้องการความช่วยเหลือในการ","Need help"],["วางแผนการเดินทาง?","planning your trip?"],["ติดต่อทีมงาน","Contact our team"],["ข้อมูลสถิติ","Statistics"],["แดชบอร์ด","Tourism"],["การท่องเที่ยว","dashboard"],["นักท่องเที่ยวปีนี้","visitors this year"],["รายได้จากท่องเที่ยว (บาท)","tourism revenue (THB)"],["คะแนนความพึงพอใจ","satisfaction rating"],["แหล่งท่องเที่ยวยอดนิยม","popular attractions"],["คลัง","Photo"],["รูปภาพ","gallery"],["ภาพถ่ายอันงดงามจากสถานที่ท่องเที่ยวทั่วไทย","Beautiful photographs from destinations across Thailand"],["โครงงานเพื่อการศึกษา","Educational project"],["เกี่ยวกับเรา","About us"],["ทำไมต้อง","Why"],["โครงการนี้จัดทำขึ้นเพื่อการศึกษา โดยนักศึกษาสาขาเทคโนโลยีสารสนเทศ เพื่อนำเสนอความเป็นไปได้ของเว็บไซต์การท่องเที่ยวที่ทันสมัย ใช้งานง่าย และสวยงาม","This educational project was created by information technology students to demonstrate a modern, accessible and visually engaging travel website."],["รายการจังหวัด","provinces"],["ภูมิภาคที่ครอบคลุม","regions covered"],["พันธกิจและวิสัยทัศน์","Mission and vision"],["เป้าหมาย","Our"],["ของเรา","goals"],["พันธกิจ (Mission)","Mission"],["วิสัยทัศน์ (Vision)","Vision"],["ทำไมต้องเลือกเรา","Why choose us"],["ข้อได้เปรียบ","Advantages"],["ข้อมูลครบถ้วน","Complete information"],["ใช้งานง่ายทุกอุปกรณ์","Easy on every device"],["ค้นหาและกรองข้อมูล","Search and filters"],["Dashboard สถิติ","Statistics dashboard"],["ทีมงาน","Team"],["ผู้จัดทำ","Project"],["โครงงาน","contributors"],["นักศึกษา ปวส. ปีที่ 2","Second-year vocational student"],["ออกแบบและพัฒนา Frontend","Frontend design and development"],["รวบรวมข้อมูลและเนื้อหา","Research and content"],["ออกแบบ UI และ Dashboard","UI and dashboard design"],["ที่ปรึกษาโครงงาน","Project adviser"],["สาขาวิชาเทคโนโลยีสารสนเทศ","Information Technology program"],["เทคโนโลยี","Technology"],["ที่ใช้พัฒนา","used"],["ดูแดชบอร์ดสถิติ","View statistics dashboard"],["ติดต่อเรา","Contact us"],["ส่ง","Send a"],["ข้อความ","message"],["ถึงเรา","to us"],["มีคำถาม? เราพร้อมช่วยเหลือ","Questions? We are here to help."],["อีเมล","Email"],["โทรศัพท์","Phone"],["ที่อยู่","Address"],["เวลาทำการ","Business hours"],["กรอกแบบฟอร์มติดต่อ","Contact form"],["ชื่อ-นามสกุล *","Full name *"],["หัวข้อ","Subject"],["-- เลือกหัวข้อ --","-- Select a subject --"],["แนะนำสถานที่ท่องเที่ยว","Suggest a destination"],["รายงานข้อมูลผิดพลาด","Report incorrect information"],["ความร่วมมือ / สปอนเซอร์","Partnership / sponsorship"],["สอบถามข้อมูลทั่วไป","General enquiry"],["อื่นๆ","Other"],["ข้อความ *","Message *"],["ส่งข้อความ","Send message"],["แผนที่อ้างอิงการท่องเที่ยว","Tourism reference map"],["ติดตามเราบนโซเชียลมีเดีย","Follow us on social media"],["รับทราบ","OK"],["สุ่ม","Random"],["คำคม","Quote"],["ธีม","Theme"]];
+  const thToEn = new Map(pairs);
+  const enToTh = new Map(pairs.map(([th, en]) => [en, th]));
+  const extra = {"th":{"validation.title":"กรุณาตรวจสอบข้อมูล","validation.email":"กรุณากรอกอีเมลให้ถูกต้อง","validation.required":"ชื่อ อีเมล และข้อความจำเป็นต้องกรอก","validation.success":"ตรวจสอบแบบฟอร์มเรียบร้อย","validation.thanks":"ขอบคุณ {name} นี่เป็นแบบฟอร์มตัวอย่าง จึงยังไม่มีการส่งข้อมูลไปยังเซิร์ฟเวอร์","gallery.open":"เปิดรูปภาพ","gallery.openCollection":"เปิดคลังรูปภาพ","gallery.show":"แสดงรูป","empty.gallery":"ยังไม่มีรูปภาพสำหรับแสดง","dialog.ok":"รับทราบ"},"en":{"validation.title":"Please check your information","validation.email":"Please enter a valid email address","validation.required":"Name, email and message are required","validation.success":"Form checked successfully","validation.thanks":"Thank you, {name}. This is a demonstration form, so no data was sent to a server.","gallery.open":"Open image","gallery.openCollection":"Open gallery","gallery.show":"Show image","empty.gallery":"No images are available yet","dialog.ok":"OK"}};
+  const thaiNames = ["ภูเก็ต","เชียงใหม่","กระบี่","เกาะสมุย","กรุงเทพมหานคร","เชียงราย","พัทยา","สุโขทัย","เขาใหญ่","เกาะช้าง","น่าน","อุบลราชธานี","แม่ฮ่องสอน","ลำพูน","ลำปาง","พะเยา","แพร่","อุตรดิตถ์","เกาะเกร็ด","ปทุมธานี","สมุทรปราการ","พระนครศรีอยุธยา","อ่างทอง","สิงห์บุรี","ชัยนาท","ลพบุรี","สระบุรี","นครนายก","สุพรรณบุรี","นครปฐม","สมุทรสาคร","สมุทรสงคราม","กาญจนบุรี","ราชบุรี","เพชรบุรี","ประจวบคีรีขันธ์","กำแพงเพชร","พิจิตร","นครสวรรค์","อุทัยธานี","ตาก","พิษณุโลก","เพชรบูรณ์","ระยอง","จันทบุรี","ฉะเชิงเทรา","ปราจีนบุรี","สระแก้ว","บุรีรัมย์","สุรินทร์","ศรีสะเกษ","ยโสธร","อำนาจเจริญ","มุกดาหาร","นครพนม","สกลนคร","กาฬสินธุ์","ร้อยเอ็ด","มหาสารคาม","ขอนแก่น","อุดรธานี","หนองคาย","หนองบัวลำภู","เลย","ชัยภูมิ","บึงกาฬ","ชุมพร","นครศรีธรรมราช","พังงา","ตรัง","พัทลุง","สตูล","สงขลา","ปัตตานี","ยะลา","นราธิวาส","ระนอง"];
+  const provinceTh = {"Phuket":"ภูเก็ต","Chiang Mai":"เชียงใหม่","Krabi":"กระบี่","Surat Thani":"สุราษฎร์ธานี","Bangkok":"กรุงเทพมหานคร","Chiang Rai":"เชียงราย","Chonburi":"ชลบุรี","Sukhothai":"สุโขทัย","Nakhon Ratchasima":"นครราชสีมา","Trat":"ตราด","Nan":"น่าน","Ubon Ratchathani":"อุบลราชธานี","Mae Hong Son":"แม่ฮ่องสอน","Lamphun":"ลำพูน","Lampang":"ลำปาง","Phayao":"พะเยา","Phrae":"แพร่","Uttaradit":"อุตรดิตถ์","Nonthaburi":"นนทบุรี","Pathum Thani":"ปทุมธานี","Samut Prakan":"สมุทรปราการ","Phra Nakhon Si Ayutthaya":"พระนครศรีอยุธยา","Ang Thong":"อ่างทอง","Sing Buri":"สิงห์บุรี","Chai Nat":"ชัยนาท","Lop Buri":"ลพบุรี","Saraburi":"สระบุรี","Nakhon Nayok":"นครนายก","Suphan Buri":"สุพรรณบุรี","Nakhon Pathom":"นครปฐม","Samut Sakhon":"สมุทรสาคร","Samut Songkhram":"สมุทรสงคราม","Kanchanaburi":"กาญจนบุรี","Ratchaburi":"ราชบุรี","Phetchaburi":"เพชรบุรี","Prachuap Khiri Khan":"ประจวบคีรีขันธ์","Kamphaeng Phet":"กำแพงเพชร","Phichit":"พิจิตร","Nakhon Sawan":"นครสวรรค์","Uthai Thani":"อุทัยธานี","Tak":"ตาก","Phitsanulok":"พิษณุโลก","Phetchabun":"เพชรบูรณ์","Rayong":"ระยอง","Chanthaburi":"จันทบุรี","Chachoengsao":"ฉะเชิงเทรา","Prachin Buri":"ปราจีนบุรี","Sa Kaeo":"สระแก้ว","Buri Ram":"บุรีรัมย์","Surin":"สุรินทร์","Si Sa Ket":"ศรีสะเกษ","Yasothon":"ยโสธร","Amnat Charoen":"อำนาจเจริญ","Mukdahan":"มุกดาหาร","Nakhon Phanom":"นครพนม","Sakon Nakhon":"สกลนคร","Kalasin":"กาฬสินธุ์","Roi Et":"ร้อยเอ็ด","Maha Sarakham":"มหาสารคาม","Khon Kaen":"ขอนแก่น","Udon Thani":"อุดรธานี","Nong Khai":"หนองคาย","Nong Bua Lamphu":"หนองบัวลำภู","Loei":"เลย","Chaiyaphum":"ชัยภูมิ","Bueng Kan":"บึงกาฬ","Chumphon":"ชุมพร","Nakhon Si Thammarat":"นครศรีธรรมราช","Phang Nga":"พังงา","Trang":"ตรัง","Phatthalung":"พัทลุง","Satun":"สตูล","Songkhla":"สงขลา","Pattani":"ปัตตานี","Yala":"ยะลา","Narathiwat":"นราธิวาส","Ranong":"ระนอง"};
+  const categoryTh = {
+    beach: { label: "ทะเล", desc: "จุดหมายริมทะเลที่โดดเด่นด้วยชายหาด ทิวทัศน์ และกิจกรรมทางน้ำ", activities: ["ชมชายหาดและพระอาทิตย์ตก", "ล่องเรือชมทิวทัศน์", "ชิมอาหารท้องถิ่น", "ถ่ายภาพจุดชมวิว"] },
+    temple: { label: "วัดและวัฒนธรรม", desc: "จุดหมายทางประวัติศาสตร์และศาสนาที่สะท้อนศิลปวัฒนธรรมไทย", activities: ["เยี่ยมชมวัดสำคัญ", "เรียนรู้ประวัติศาสตร์ท้องถิ่น", "ชมสถาปัตยกรรม", "เดินชมย่านวัฒนธรรม"] },
+    nature: { label: "ธรรมชาติ", desc: "จุดหมายธรรมชาติที่เหมาะกับการพักผ่อน ชมทิวทัศน์ และเรียนรู้ระบบนิเวศ", activities: ["เดินชมธรรมชาติ", "เยี่ยมชมจุดชมวิว", "เรียนรู้ระบบนิเวศ", "ชิมอาหารท้องถิ่น"] },
+    mountain: { label: "ภูเขา", desc: "จุดหมายบนภูเขาที่มีอากาศสดชื่น เส้นทางธรรมชาติ และจุดชมวิว", activities: ["เดินป่า", "ชมพระอาทิตย์ขึ้น", "เยี่ยมชมชุมชนท้องถิ่น", "ถ่ายภาพทิวทัศน์"] },
+    culture: { label: "วัฒนธรรม", desc: "จุดหมายที่โดดเด่นด้านชุมชน วิถีชีวิต อาหาร และมรดกท้องถิ่น", activities: ["สำรวจชุมชน", "ชิมอาหารท้องถิ่น", "เยี่ยมชมพิพิธภัณฑ์", "เลือกซื้อสินค้าพื้นเมือง"] }
+  };
+  const snapshots = new Map();
+
+  const baseT = window.I18N.t.bind(window.I18N);
+  window.I18N.t = function (key) {
+    const language = window.I18N.getLanguage();
+    return extra[language]?.[key] || baseT(key);
+  };
+
+  function translateText(value, language) {
+    const trimmed = value.trim();
+    if (!trimmed) return value;
+    const translated = (language === "en" ? thToEn : enToTh).get(trimmed);
+    return translated ? value.replace(trimmed, translated) : value;
+  }
+
+  function translateTree(root, language) {
+    if (!root) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      if (node.parentElement?.closest("script,style")) return;
+      node.nodeValue = translateText(node.nodeValue, language);
+    });
+
+    root.querySelectorAll("[placeholder],[title],[aria-label]").forEach(element => {
+      ["placeholder", "title", "aria-label"].forEach(attribute => {
+        if (!element.hasAttribute(attribute)) return;
+        let value = element.getAttribute(attribute);
+        value = translateText(value, language);
+        if (language === "en") {
+          value = value
+            .replace(/^เปิดรูปภาพ\s*/, "Open image: ")
+            .replace(/^เปิดคลังรูปภาพ:\s*/, "Open gallery: ")
+            .replace(/^แสดงรูป\s*/, "Show image ");
+        } else {
+          value = value
+            .replace(/^Open image:\s*/, "เปิดรูปภาพ ")
+            .replace(/^Open gallery:\s*/, "เปิดคลังรูปภาพ: ")
+            .replace(/^Show image\s*/, "แสดงรูป ");
+        }
+        element.setAttribute(attribute, value);
+      });
+    });
+  }
+
+  function localizeDestinations(language) {
+    if (!Array.isArray(window.DESTINATIONS)) return;
+    window.DESTINATIONS.forEach((item, index) => {
+      if (!snapshots.has(item.id)) snapshots.set(item.id, structuredClone(item));
+      const original = snapshots.get(item.id);
+      Object.assign(item, structuredClone(original));
+      if (language !== "th") return;
+
+      const name = thaiNames[index] || original.name;
+      const category = categoryTh[original.category] || categoryTh.culture;
+      item.name = name;
+      item.province = provinceTh[original.province] || name;
+      item.desc = `${name} เป็น${category.desc}`;
+      item.longDesc = `${name} เป็น${category.desc} เหมาะสำหรับผู้เดินทางที่ต้องการสัมผัสเอกลักษณ์ของจังหวัดอย่างใกล้ชิด`;
+      item.categoryLabel = category.label;
+      item.tags = [category.label, "ท่องเที่ยวไทย", name];
+      item.activities = category.activities.slice();
+      item.hours = /24/.test(original.hours || "") ? "เปิดตลอด 24 ชั่วโมง" : "ตรวจสอบเวลาเปิดให้บริการก่อนเดินทาง";
+      item.entry = /free/i.test(original.entry || original.price || "") ? "เข้าชมฟรี" : "ตรวจสอบค่าบริการก่อนเดินทาง";
+      item.price = item.entry;
+      item.best = "ตรวจสอบฤดูกาลที่เหมาะสมก่อนเดินทาง";
+      item.distance = "ตรวจสอบเส้นทางจากตำแหน่งของคุณ";
+      item.weather = "ตรวจสอบพยากรณ์อากาศล่าสุด";
+      item.caption = `${name} จังหวัด${item.province}`;
+      item.galleryCaptions = (original.galleryImages || []).slice(1).map((_, imageIndex) => `${name} ภาพที่ ${imageIndex + 2}`);
+    });
+
+    if (typeof window.__hydrateTravelData === "function") window.__hydrateTravelData();
+  }
+
+  function rerender() {
+    ["home-cards", "gallery-grid", "home-gallery-preview"].forEach(id => {
+      const element = document.getElementById(id);
+      if (element) element.dataset.rendered = "false";
+    });
+    window.renderHomeCards?.();
+    window.renderDestCards?.(window.activeFilter || "", document.getElementById("main-search")?.value || "");
+    window.renderGallery?.();
+    window.renderHomeGalleryPreview?.();
+    window.hydratePromotionCardsFromSharedData?.();
+  }
+
+  function applyCompleteLanguage() {
+    const language = window.I18N.getLanguage();
+    localizeDestinations(language);
+    rerender();
+    document.querySelectorAll(PAGE_ROOTS).forEach(root => translateTree(root, language));
+  }
+
+  const originalSubmit = window.submitContact;
+  window.submitContact = function (event) {
+    event?.preventDefault();
+    const form = document.getElementById("contact-form");
+    const nameInput = document.getElementById("cf-name");
+    const emailInput = document.getElementById("cf-email");
+    const messageInput = document.getElementById("cf-message");
+    const fields = [nameInput, emailInput, messageInput].filter(Boolean);
+    fields.forEach(field => field.setAttribute("aria-invalid", String(!field.validity.valid)));
+
+    if (!form?.checkValidity()) {
+      const firstInvalid = fields.find(field => !field.validity.valid);
+      firstInvalid?.focus();
+      Swal.fire({
+        icon: "warning",
+        title: window.I18N.t("validation.title"),
+        text: firstInvalid?.validity.typeMismatch ? window.I18N.t("validation.email") : window.I18N.t("validation.required"),
+        confirmButtonText: window.I18N.t("dialog.ok"),
+        confirmButtonColor: "var(--teal-mid)"
+      });
+      return;
+    }
+
+    Swal.fire({
+      icon: "success",
+      title: window.I18N.t("validation.success"),
+      text: window.I18N.t("validation.thanks").replace("{name}", nameInput.value.trim()),
+      confirmButtonText: window.I18N.t("dialog.ok"),
+      confirmButtonColor: "var(--teal-deep)"
+    }).then(() => {
+      form.reset();
+      fields.forEach(field => field.removeAttribute("aria-invalid"));
+    });
+  };
+
+  document.addEventListener("languagechange", applyCompleteLanguage);
+  const observer = new MutationObserver(records => {
+    const language = window.I18N.getLanguage();
+    records.forEach(record => record.addedNodes.forEach(node => {
+      if (node.nodeType === Node.ELEMENT_NODE) translateTree(node, language);
+    }));
+  });
+
+  function initCompleteLanguage() {
+    applyCompleteLanguage();
+    document.querySelectorAll(PAGE_ROOTS).forEach(root => observer.observe(root, { childList: true, subtree: true }));
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initCompleteLanguage, { once: true });
+  } else {
+    initCompleteLanguage();
+  }
+})();
