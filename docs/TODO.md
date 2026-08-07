@@ -1,5 +1,14 @@
 # TODO
 
+## Developer foundation
+- [x] Add root AGENTS.md as the canonical agent guide
+- [x] Add repository-wide Copilot instructions
+- [x] Add Playwright E2E coverage for languages, routes, overlays, responsive projects and runtime errors
+- [x] Add automated AI memory checkpoint workflow
+- [x] Extract core SPA behavior from index.html into js/app.js
+- [x] Centralize translation data in js/translations.js
+
+
 ## Phase 1 Active
 - [x] Add official websites to destination records (fallback Tourism Thailand search links)
 - [x] Validate Google Maps links for all destinations (auto-repair invalid/missing links)
@@ -40,3 +49,4 @@
 - [ ] Nearby attractions (Phase 2)
 - [ ] Weather integration strategy (Phase 2)
 - [ ] Favorites persistence review (Phase 2)
+
