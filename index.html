@@ -1284,12 +1284,12 @@ function normalizeIndexDestination(destination) {
   const normalized = { ...destination };
   normalized.category = normalizeCategoryList(destination);
   normalized.tags = normalizeTagList(destination);
-  normalized.badge = destination.badge || normalizeRegionLabel(destination.region) || 'แนะนำ';
+  normalized.badge = destination.badge || normalizeRegionLabel(destination.region) || (window.I18N?.getLanguage() === 'en' ? 'Recommended' : 'แนะนำ');
   normalized.desc = destination.desc || destination.description || '';
   normalized.longDesc = destination.longDesc || destination.description || destination.desc || '';
-  normalized.weather = destination.weather || destination.openingHours || 'ไม่ระบุ';
-  normalized.best = destination.best || destination.entry || destination.ticketInfo || 'ไม่ระบุ';
-  normalized.distance = destination.distance || destination.province || destination.officialLocation || 'ไม่ระบุ';
+  normalized.weather = destination.weather || destination.openingHours || (window.I18N?.getLanguage() === 'en' ? 'Not specified' : 'ไม่ระบุ');
+  normalized.best = destination.best || destination.entry || destination.ticketInfo || (window.I18N?.getLanguage() === 'en' ? 'Not specified' : 'ไม่ระบุ');
+  normalized.distance = destination.distance || destination.province || destination.officialLocation || (window.I18N?.getLanguage() === 'en' ? 'Not specified' : 'ไม่ระบุ');
   normalized.galleryImages = Array.isArray(destination.galleryImages) ? destination.galleryImages : [];
   normalized.galleryCaptions = Array.isArray(destination.galleryCaptions) ? destination.galleryCaptions : [];
   normalized.galleryCurated = destination.galleryCurated === true;
@@ -1541,8 +1541,8 @@ function renderCard(d, containerId) {
           class="card-fav ${isFav ? 'liked' : ''}"
           type="button"
           onclick="toggleFav(${d.id},this)"
-          aria-label="${isFav ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด'}: ${d.name}"
-          title="บันทึกสถานที่"
+          aria-label="${window.I18N?.t(isFav ? 'favorite.removeLabel' : 'favorite.saveLabel') || (isFav ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด')}: ${d.name}"
+          title="${window.I18N?.t('favorite.saveLabel') || 'บันทึกสถานที่'}"
         >
           ${isFav ? '❤️' : '🤍'}
         </button>
@@ -1556,7 +1556,7 @@ function renderCard(d, containerId) {
             <span class="stars" aria-hidden="true">${stars}</span>
             <span>${rating.toFixed(1)} (${reviews.toLocaleString()})</span>
           </div>
-          <button class="card-cta" type="button" onclick="openModal(${d.id})">รายละเอียด</button>
+          <button class="card-cta" type="button" onclick="openModal(${d.id})">${window.I18N?.getLanguage() === 'en' ? 'Details' : 'รายละเอียด'}</button>
         </div>
       </div>
     </article>`;
