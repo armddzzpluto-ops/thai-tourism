@@ -115,7 +115,7 @@ if (!index.includes("item.provinceSlug || item.slug")) {
   failures.push("promotion hydration does not use the stable province slug");
 }
 
-const pairMatch = i18n.match(/const pairs = (\[\[.*?\]\]);\n  const thToEn/s);
+const pairMatch = i18n.match(/const pairs = (\[\[.*?\]\]);/s);
 if (!pairMatch) {
   failures.push("unable to parse static bilingual text pairs");
 } else {
