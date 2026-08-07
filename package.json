@@ -1,0 +1,14 @@
+{
+  "name": "thailand-travel-guide-2026",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-site.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "memory:update": "node scripts/update-ai-memory.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0"
+  }
+}
