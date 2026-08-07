@@ -95,12 +95,37 @@ if (!index.includes("lightbox.dataset.imageIndex")) {
   failures.push("lightbox cannot refresh its open caption after a language change");
 }
 
+if (!/Object\.keys\(item\)\.forEach\(key => delete item\[key\]\)/.test(i18n)) {
+  failures.push("destination language reset does not remove fields added by the previous language");
+}
+
+if (!i18n.includes("baseT(key, variables)")) {
+  failures.push("extended translations do not forward interpolation variables");
+}
+
+if (!i18n.includes("item.provinceSlug =")) {
+  failures.push("localized destinations do not preserve a stable province slug");
+}
+
+if (!i18n.includes("translateTree(document.body, language)")) {
+  failures.push("language application does not cover global controls and accessibility attributes");
+}
+
+if (!index.includes("item.provinceSlug || item.slug")) {
+  failures.push("promotion hydration does not use the stable province slug");
+}
+
 const pairMatch = i18n.match(/const pairs = (\[\[.*?\]\]);\n  const thToEn/s);
 if (!pairMatch) {
   failures.push("unable to parse static bilingual text pairs");
 } else {
   try {
-    const translatedThai = new Set(JSON.parse(pairMatch[1]).map(pair => pair[0]));
+    const parsedPairs = JSON.parse(pairMatch[1]);
+    const pushedPairs = i18n.match(/pairs\.push\(([\s\S]*?)\);\n  const thToEn/);
+    if (pushedPairs) {
+      parsedPairs.push(...vm.runInNewContext(`[${pushedPairs[1]}]`));
+    }
+    const translatedThai = new Set(parsedPairs.map(pair => pair[0]));
     const staticMarkup = index
       .replace(/<script\b[\s\S]*?<\/script>/gi, "")
       .replace(/<style\b[\s\S]*?<\/style>/gi, "");
