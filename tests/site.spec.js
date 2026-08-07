@@ -75,8 +75,10 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
   page.on("console", message => {
     if (message.type() === "error") errors.push(message.text());
   });
-  page.on("requestfailed", request => {
-    if (request.url().startsWith("http://127.0.0.1:4173")) failedLocal.push(request.url());
+  page.on("response", response => {
+    if (response.url().startsWith("http://127.0.0.1:4173") && response.status() >= 400) {
+      failedLocal.push(`${response.status()} ${response.url()}`);
+    }
   });
 
   for (const name of pages) {
