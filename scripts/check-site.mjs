@@ -13,6 +13,8 @@ const read = relative =>
 
 const index = read("index.html");
 const data = read("js/data.js");
+const i18n = read("js/i18n.js");
+const enhancements = read("js/enhancements.js");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -27,12 +29,17 @@ for (const source of new Set(scriptSources)) {
 }
 
 const dataIndex = scriptSources.indexOf("js/data.js");
+const i18nIndex = scriptSources.indexOf("js/i18n.js");
 const enhancementsIndex = scriptSources.indexOf("js/enhancements.js");
 
 if (dataIndex === -1) failures.push("index.html does not load js/data.js");
+if (i18nIndex === -1) failures.push("index.html does not load js/i18n.js");
 if (enhancementsIndex === -1) failures.push("index.html does not load js/enhancements.js");
-if (dataIndex !== -1 && enhancementsIndex !== -1 && dataIndex > enhancementsIndex) {
-  failures.push("js/data.js must load before js/enhancements.js");
+if (dataIndex !== -1 && i18nIndex !== -1 && dataIndex > i18nIndex) {
+  failures.push("js/data.js must load before js/i18n.js");
+}
+if (i18nIndex !== -1 && enhancementsIndex !== -1 && i18nIndex > enhancementsIndex) {
+  failures.push("js/i18n.js must load before js/enhancements.js");
 }
 
 if ((index.match(/let destinations\s*=\s*\[\]/g) || []).length !== 1) {
@@ -49,6 +56,72 @@ if (/const GALLERY\s*=\s*\[/.test(data) || /window\.GALLERY\s*=/.test(data)) {
 
 if (/new Chart\(document\.getElementById/.test(index)) {
   failures.push("index.html creates a chart without checking the canvas first");
+}
+
+
+const requiredLanguageRoots = [
+  "page-home",
+  "page-destinations",
+  "page-promotions",
+  "page-gallery",
+  "page-dashboard",
+  "page-about",
+  "page-contact"
+];
+
+for (const pageId of requiredLanguageRoots) {
+  if (!i18n.includes(`#${pageId}`)) {
+    failures.push(`i18n page coverage is missing #${pageId}`);
+  }
+}
+
+if (!/addEventListener\(["']languagechange["']/.test(enhancements)) {
+  failures.push("enhancements.js does not refresh widgets on language changes");
+}
+
+if (/const source\s*=\s*window\.destinations/.test(enhancements)) {
+  failures.push("search suggestions capture a stale destination array");
+}
+
+if (!enhancements.includes("recentStorageKey()")) {
+  failures.push("recent searches are not scoped by language");
+}
+
+if (!index.includes("modal.dataset.destinationId")) {
+  failures.push("destination modal cannot refresh its open content after a language change");
+}
+
+if (!index.includes("lightbox.dataset.imageIndex")) {
+  failures.push("lightbox cannot refresh its open caption after a language change");
+}
+
+const pairMatch = i18n.match(/const pairs = (\[\[.*?\]\]);\n  const thToEn/s);
+if (!pairMatch) {
+  failures.push("unable to parse static bilingual text pairs");
+} else {
+  try {
+    const translatedThai = new Set(JSON.parse(pairMatch[1]).map(pair => pair[0]));
+    const staticMarkup = index
+      .replace(/<script\b[\s\S]*?<\/script>/gi, "")
+      .replace(/<style\b[\s\S]*?<\/style>/gi, "");
+    const pageMarkup = staticMarkup.slice(
+      staticMarkup.indexOf('id="page-home"'),
+      staticMarkup.indexOf('id="modal"')
+    );
+    const thaiTextNodes = [...pageMarkup.matchAll(/>([^<>]+)</g)]
+      .map(match => match[1].replace(/\s+/g, " ").trim())
+      .filter(value => /[ก-๙]/.test(value))
+      .filter(value => !/^฿[\d\s,./]+$/.test(value));
+
+    const unmapped = [...new Set(thaiTextNodes)]
+      .filter(value => !translatedThai.has(value));
+
+    if (unmapped.length) {
+      failures.push(`unmapped static Thai UI text: ${unmapped.slice(0, 8).join(" | ")}`);
+    }
+  } catch (error) {
+    failures.push(`static bilingual pair audit failed: ${error.message}`);
+  }
 }
 
 const context = {
@@ -170,3 +243,4 @@ if (failures.length) {
 console.log(`PASS: ${jsFiles.length} JavaScript files checked`);
 console.log(`PASS: ${inlineScripts.length} inline scripts checked`);
 console.log("PASS: shared data order and duplicate guards checked");
+console.log("PASS: bilingual page coverage and language-change lifecycle checked");

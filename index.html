@@ -1717,6 +1717,9 @@ function openModal(id) {
   const d = destinations.find(item => item.id === id);
   if (!d) return;
 
+  const modal = document.getElementById('modal');
+  if (modal) modal.dataset.destinationId = String(id);
+
   const tr = (key, fallback) => window.I18N?.t(key) || fallback;
   const image = document.getElementById('modal-img');
 
@@ -1773,7 +1776,7 @@ function openModal(id) {
     <div class="modal-info-item"><i class="fas fa-map-location-dot"></i> <a href="${d.googleMaps}" target="_blank" rel="noopener noreferrer">${tr('dialog.maps', 'แผนที่ Google Maps')}</a></div>
     <div class="modal-info-item"><i class="fas fa-globe"></i> <a href="${d.officialWebsite}" target="_blank" rel="noopener noreferrer">${tr('dialog.official', 'เว็บไซต์การท่องเที่ยวทางการ')}</a></div>`;
 
-  document.getElementById('modal').classList.add('open');
+  modal?.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function closeModal(e) { if (e.target.id==='modal') closeModalBtn(); }
@@ -1786,13 +1789,15 @@ function openLightbox(index) {
 
   currentLightboxIndex = ((index % galleryImages.length) + galleryImages.length) % galleryImages.length;
   const image = galleryImages[currentLightboxIndex];
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox) lightbox.dataset.imageIndex = String(currentLightboxIndex);
   const preview = document.getElementById('lightbox-img');
 
   preview.src = image.src;
   preview.alt = image.cap;
   document.getElementById('lightbox-cap').textContent =
     `${image.cap} (${currentLightboxIndex + 1}/${galleryImages.length})`;
-  document.getElementById('lightbox').classList.add('open');
+  lightbox?.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
