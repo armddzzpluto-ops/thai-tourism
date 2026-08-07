@@ -41,11 +41,14 @@
     } else if (activeDialog === dialog) {
       activeDialog = null;
 
-      if (previousFocus instanceof HTMLElement) {
-        requestAnimationFrame(() => previousFocus.focus());
-      }
-
+      const focusTarget = previousFocus;
       previousFocus = null;
+
+      if (focusTarget instanceof HTMLElement) {
+        requestAnimationFrame(() => {
+          if (focusTarget.isConnected) focusTarget.focus();
+        });
+      }
     }
   }
 
