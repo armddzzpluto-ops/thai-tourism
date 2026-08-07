@@ -165,7 +165,7 @@
       toggle.innerHTML = next === "dark" ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
       toggle.setAttribute("aria-pressed", next === "dark");
     }
-    if (showMessage) notify(next === "dark" ? "เปิดโหมดมืดแล้ว" : "เปิดโหมดสว่างแล้ว", "info");
+    if (showMessage) notify(tr(next === "dark" ? "theme.darkEnabled" : "theme.lightEnabled", next === "dark" ? "เปิดโหมดมืดแล้ว" : "เปิดโหมดสว่างแล้ว"), "info");
   }
 
   function initScrollProgress() {
@@ -533,7 +533,7 @@
     grid.innerHTML = weatherSamples.map(item => `
       <article class="weather-card">
         <div class="weather-city">${item.city}</div>
-        <div class="weather-condition">${item.region} ประเทศไทย</div>
+        <div class="weather-condition">${item.region}${window.I18N?.getLanguage() === "en" ? "" : " ประเทศไทย"}</div>
         <div class="weather-temp">${item.temp}</div>
         <div class="weather-condition">${item.condition}</div>
         <div class="weather-meta">
@@ -632,7 +632,7 @@
     const render = () => {
       const width = track.querySelector(".testimonial-slide")?.getBoundingClientRect().width || 0;
       track.style.transform = `translateX(-${index * width}px)`;
-      dots.innerHTML = Array.from({ length: max() + 1 }, (_, i) => `<button type="button" class="${i === index ? "active" : ""}" aria-label="แสดงรีวิวที่ ${i + 1}"></button>`).join("");
+      dots.innerHTML = Array.from({ length: max() + 1 }, (_, i) => `<button type="button" class="${i === index ? "active" : ""}" aria-label="${tr("testimonial.show", `แสดงรีวิวที่ ${i + 1}`, { index: i + 1 })}"></button>`).join("");
       dots.querySelectorAll("button").forEach((btn, i) => btn.addEventListener("click", () => { index = i; render(); }));
     };
     document.getElementById("testimonial-prev")?.addEventListener("click", () => { index = Math.max(0, index - 1); render(); });
