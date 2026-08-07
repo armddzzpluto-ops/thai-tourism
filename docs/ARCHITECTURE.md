@@ -35,3 +35,6 @@
 - Language changes dispatch `languagechange` and update mounted/open UI without reload.
 - Runtime images are limited to optimized WebP assets referenced by destination/curation data.
 - Raw province JPG sources, checkpoints and retired application bundles are not stored in the working tree.
+- `CROSS_PAGE_DESTINATION_SLUGS` contains selection IDs only; every card still resolves its content from `DESTINATIONS`.
+- Dashboard values and charts are derived from current destination, category, region and gallery records.
+- The static project must not present fabricated prices, ratings, reviews, weather, people or contact channels as real data.

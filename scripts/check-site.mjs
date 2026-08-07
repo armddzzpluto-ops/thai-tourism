@@ -70,6 +70,40 @@ if (/const GALLERY\s*=\s*\[/.test(data) || /window\.GALLERY\s*=/.test(data)) {
   failures.push("legacy GALLERY data still exists in js/data.js");
 }
 
+const retiredMockPatterns = [
+  ["fabricated reviews", /\bREVIEWS\b|testimonial-(?:track|dots|prev|next)/],
+  ["fabricated weather", /\bWEATHER\b|weather-cards/],
+  ["legacy promotion hydration", /data-promo-province|hydratePromotionCardsFromSharedData/],
+  ["simulated tourism statistics", /ข้อมูลจำลอง|40\.2M|2\.1T|Visitors \(millions\)/],
+  ["placeholder project people", /สมชาย ใจดี|สมหญิง สวยงาม|สมศักดิ์ เก่งมาก|อาจารย์ดีมาก/],
+  ["placeholder contact details", /info@thailandtravel\.th|02-xxx-xxxx|10XXX/]
+  ,["fabricated destination metrics", /\b(?:rating|reviews|tourists|price)\s*:/]
+];
+const runtimeSources = `${index}\n${app}\n${data}\n${enhancements}`;
+for (const [label, pattern] of retiredMockPatterns) {
+  if (pattern.test(runtimeSources)) failures.push(`retired mock content remains: ${label}`);
+}
+
+for (const containerId of [
+  "home-trip-grid",
+  "promotion-featured-grid",
+  "promotion-region-grid",
+  "dashboard-stats"
+]) {
+  if (!index.includes(`id="${containerId}"`)) {
+    failures.push(`cross-page data container is missing: #${containerId}`);
+  }
+}
+if (!data.includes("window.CROSS_PAGE_DESTINATION_SLUGS =")) {
+  failures.push("shared cross-page destination selection is not exported");
+}
+if (!app.includes("renderCrossPageDestinationGrids()")) {
+  failures.push("cross-page destination grids are not rendered from shared data");
+}
+if (!app.includes('data-source="destinations"')) {
+  failures.push("dashboard cards are not marked as derived from destination data");
+}
+
 if (/new Chart\(document\.getElementById/.test(app)) {
   failures.push("js/app.js creates a chart without checking the canvas first");
 }
@@ -188,6 +222,15 @@ try {
 
     const ids = destinations.map(item => item.id);
     if (new Set(ids).size !== ids.length) failures.push("duplicate destination IDs found");
+
+    const selectedSlugs = context.window.CROSS_PAGE_DESTINATION_SLUGS;
+    const destinationSlugs = new Set(destinations.map(item => item.provinceSlug || item.slug));
+    if (!Array.isArray(selectedSlugs) || selectedSlugs.length < 5) {
+      failures.push("cross-page destination selection must contain at least five slugs");
+    } else {
+      const unresolved = selectedSlugs.filter(slug => !destinationSlugs.has(slug));
+      if (unresolved.length) failures.push(`unresolved cross-page destination slugs: ${unresolved.join(", ")}`);
+    }
 
     const provinces = destinations.map(item => item.province).filter(Boolean);
     const uniqueProvinces = new Set(provinces);

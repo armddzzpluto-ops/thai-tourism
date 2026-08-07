@@ -20,30 +20,6 @@
     return Array.isArray(window.QUOTES) ? window.QUOTES : [];
   }
 
-  function getSharedWeatherSamples() {
-    if (!Array.isArray(window.WEATHER)) return [];
-    return window.WEATHER.map(item => ({
-      city: item.city,
-      region: item.province,
-      temp: `${item.tempC}°C`,
-      condition: item.condition,
-      humidity: item.humidity,
-      season: item.wind
-    }));
-  }
-
-  function getSharedTestimonials() {
-    if (!Array.isArray(window.REVIEWS)) return [];
-    return window.REVIEWS.map(item => ({
-      name: item.name,
-      location: item.loc,
-      rating: item.rating,
-      destination: item.place,
-      avatar: item.avatar,
-      text: item.text
-    }));
-  }
-
   function getSharedBlogPosts() {
     if (!Array.isArray(window.BLOG)) return [];
     return window.BLOG.map(item => ({
@@ -97,9 +73,7 @@
     initSearchSuggestions();
     initRandomDestination();
     initDailyQuote();
-    initWeatherCards();
     initRegionExplorer();
-    initTestimonials();
     initBlog();
     initFAQ();
     initFloatingActions();
@@ -207,7 +181,9 @@
   }
 
   function initCounters() {
-    const counters = document.querySelectorAll(".stat-num, .dash-num, .about-badge .big");
+    // Dashboard numbers are live data-quality indicators. Keep them exact instead
+    // of briefly presenting partial values while a decorative counter runs.
+    const counters = document.querySelectorAll(".stat-num, .about-badge .big");
     if (!counters.length) return;
 
     if (!("IntersectionObserver" in window)) {
@@ -529,24 +505,6 @@
     });
   }
 
-  function initWeatherCards() {
-    const grid = document.getElementById("weather-cards");
-    if (!grid) return;
-    const weatherSamples = getSharedWeatherSamples();
-    grid.innerHTML = weatherSamples.map(item => `
-      <article class="weather-card">
-        <div class="weather-city">${item.city}</div>
-        <div class="weather-condition">${item.region}${window.I18N?.getLanguage() === "en" ? "" : " ประเทศไทย"}</div>
-        <div class="weather-temp">${item.temp}</div>
-        <div class="weather-condition">${item.condition}</div>
-        <div class="weather-meta">
-          <span><i class="fas fa-droplet"></i> ${item.humidity}</span>
-          <span><i class="fas fa-route"></i> ${item.season}</span>
-        </div>
-      </article>
-    `).join("");
-  }
-
   function initRegionExplorer() {
     const list = document.getElementById("region-filter-list");
     const panel = document.getElementById("region-result-panel");
@@ -607,49 +565,6 @@
       btn.addEventListener("click", () => select(btn.dataset.region));
     });
     select(regions[0]);
-  }
-
-  function initTestimonials() {
-    const track = document.getElementById("testimonial-track");
-    const dots = document.getElementById("testimonial-dots");
-    if (!track || !dots) return;
-    const testimonials = getSharedTestimonials();
-    if (!testimonials.length) return;
-    track.innerHTML = testimonials.map(item => `
-      <div class="testimonial-slide">
-        <article class="testimonial-card">
-          <div class="testimonial-head">
-            <img class="testimonial-avatar" src="${item.avatar}" alt="${item.name}" loading="lazy">
-            <div><div class="testimonial-name">${item.name}</div><div class="testimonial-loc">${item.location}</div></div>
-          </div>
-          <div class="testimonial-stars">${"★".repeat(item.rating)}${"☆".repeat(5 - item.rating)}</div>
-          <p class="testimonial-text">"${item.text}"</p>
-          <p class="testimonial-loc" style="margin-top:12px;"><i class="fas fa-location-dot"></i> ${item.destination}</p>
-        </article>
-      </div>
-    `).join("");
-
-    let index = 0;
-    const visible = () => window.innerWidth < 641 ? 1 : window.innerWidth < 921 ? 2 : 3;
-    const max = () => Math.max(0, testimonials.length - visible());
-    const render = () => {
-      const width = track.querySelector(".testimonial-slide")?.getBoundingClientRect().width || 0;
-      track.style.transform = `translateX(-${index * width}px)`;
-      dots.innerHTML = Array.from({ length: max() + 1 }, (_, i) => `<button type="button" class="${i === index ? "active" : ""}" aria-label="${tr("testimonial.show", `แสดงรีวิวที่ ${i + 1}`, { index: i + 1 })}"></button>`).join("");
-      dots.querySelectorAll("button").forEach((btn, i) => btn.addEventListener("click", () => { index = i; render(); }));
-    };
-    document.getElementById("testimonial-prev")?.addEventListener("click", () => { index = Math.max(0, index - 1); render(); });
-    document.getElementById("testimonial-next")?.addEventListener("click", () => { index = index >= max() ? 0 : index + 1; render(); });
-    let resizeFrame = 0;
-    window.addEventListener("resize", () => {
-      cancelAnimationFrame(resizeFrame);
-      resizeFrame = requestAnimationFrame(() => {
-        index = Math.min(index, max());
-        render();
-      });
-    }, { passive: true });
-    setInterval(() => { index = index >= max() ? 0 : index + 1; render(); }, 6500);
-    render();
   }
 
   function initBlog() {
@@ -729,7 +644,6 @@
       box.replaceChildren();
     });
 
-    initWeatherCards();
     initRegionExplorer();
     initBlog();
     initFAQ();
@@ -743,29 +657,6 @@
       quoteText.textContent = quote.text;
       quoteAuthor.textContent = `- ${quote.author}`;
     }
-
-    const track = document.getElementById("testimonial-track");
-    const testimonials = getSharedTestimonials();
-    if (track && testimonials.length) {
-      track.innerHTML = testimonials.map(item => `
-        <div class="testimonial-slide">
-          <article class="testimonial-card">
-            <div class="testimonial-head">
-              <img class="testimonial-avatar" src="${item.avatar}" alt="${item.name}" loading="lazy">
-              <div><div class="testimonial-name">${item.name}</div><div class="testimonial-loc">${item.location}</div></div>
-            </div>
-            <div class="testimonial-stars">${"★".repeat(item.rating)}${"☆".repeat(5 - item.rating)}</div>
-            <p class="testimonial-text">"${item.text}"</p>
-            <p class="testimonial-loc" style="margin-top:12px;"><i class="fas fa-location-dot"></i> ${item.destination}</p>
-          </article>
-        </div>
-      `).join("");
-      track.style.transform = "translateX(0px)";
-    }
-
-    document.querySelectorAll("#testimonial-dots button").forEach((button, index) => {
-      button.setAttribute("aria-label", tr("testimonial.show", `แสดงรีวิวที่ ${index + 1}`, { index: index + 1 }));
-    });
 
     const blogModal = document.getElementById("blog-modal");
     const blogId = Number(blogModal?.dataset.blogId);
