@@ -588,7 +588,9 @@
       const collection = window[key];
       if (!Array.isArray(collection)) return;
       if (!sharedSnapshots[key]) sharedSnapshots[key] = structuredClone(collection);
-      const source = language === "th" ? translated : sharedSnapshots[key];
+      const source = language === "th"
+        ? sharedSnapshots[key].map((item, index) => ({ ...item, ...(translated[index] || {}) }))
+        : sharedSnapshots[key];
       collection.splice(0, collection.length, ...structuredClone(source));
     });
   }
