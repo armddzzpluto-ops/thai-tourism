@@ -1,88 +1,47 @@
 # AI Memory
 
-## Project Identity
+## Project identity
 - Project: Thailand Travel Guide 2026
-- Current Version: v1.0
-- Mode: Incremental Workspace Mode
+- Type: Static bilingual SPA
+- Production branch: `main`
+- Current architecture policy: shell + modules + single-source data/translations
 
-## Production Rules
-- Keep edits minimal and patch-based.
-- Do not rewrite architecture.
-- Do not refactor completed systems unless a bug is reported.
-- Preserve theme system, navigation, dashboard, gallery, accessibility, and layout.
-- Validate only incremental impact: syntax, missing variables/imports, runtime errors, broken references.
+## Current production status
+- Seven routes: Home, Destinations, Promotions, Gallery, Dashboard, About and Contact
+- Thai/English live switching covers static UI, shared data, open overlays and accessibility attributes
+- Shared destination source contains all 77 provinces
+- Gallery uses destination-owned image records; curated provinces require at least three verified gallery images
+- Light/Dark mode, history navigation, responsive layouts and keyboard interactions are active
+- Static GitHub Actions checks are active
+- Playwright coverage is the required browser regression layer
 
-## Definition of Done
-- Feature works
-- No console errors
-- No broken links
-- No missing assets
-- Responsive behavior verified
-- Dark mode verified
-- Accessibility preserved
-- PROJECT_STATUS updated
-- TODO updated
-- CHANGELOG updated
+## Source-of-truth map
+- `AGENTS.md`: agent rules and definition of done
+- `js/data.js`: destinations and shared content
+- `js/translations.js`: Thai/English copy
+- `js/i18n.js`: language state/runtime
+- `js/app.js`: core SPA behavior
+- `tests/site.spec.js`: browser acceptance tests
 
-## Current Status
-### Completed
-- GitHub Pages deployed
-- Light/Dark theme completed
-- Theme toggle working
-- Navigation completed
-- Hero completed
-- Gallery completed
-- Dashboard completed
-- Accessibility improved
-- Runtime errors fixed
-- Production audit passed
+## Current priorities
+1. Keep all 77 destination/gallery records accurate and attributed.
+2. Replace placeholder contact/team/project information before presentation.
+3. Continue modularization without changing public selectors or behavior.
+4. Improve performance and local asset coverage.
 
-### Current Priority
-- Expand destination database
+## Known acceptable English in Thai mode
+- Personal names and brand names
+- Email addresses and social-network names
+- Units and technology names such as HTML, CSS, JavaScript and Chart.js
 
-### Remaining Tasks
-- Complete all 77 provinces with 10-30 attractions each
-- Replace inaccurate images
-- Add Google Maps links
-- Add official websites
-- Improve image quality
-- Improve search
-- Improve SEO
-- Lazy loading
-- Optimize assets
+## Definition of done
+- Static audit passes
+- Playwright passes on Desktop, Notebook, Tablet and Mobile
+- No console errors or failed local requests
+- Thai/English and Light/Dark verified
+- Direct URL, refresh and back/forward verified
+- Mouse, touch and keyboard verified
+- Memory, TODO and changelog updated for completed phases
 
-## Phase Plan Snapshot
-### Phase 1
-- Complete destination database
-- Ensure: 77 provinces, 10-30 attractions each, correct images, Google Maps, official websites, search keywords, categories
-
-### Phase 2
-- Province pages
-- Travel planner
-- Nearby attractions
-- Weather
-- Favorites
-
-### Phase 3
-- SEO
-- Performance
-- PWA
-- Accessibility
-
-### Phase 4
-- AI Travel Planner
-- Multilingual
-- Offline support
-
-## Latest Incremental Changes
-- Added destination metadata enrichment in data layer for all entries:
-  - googleMaps
-  - officialLocation
-  - searchKeywords
-- Expanded search matching to use richer destination metadata in enhancement and main search flows.
-
-## Safe Next Focus
-- Continue Phase 1 data completion only:
-  - Add verified official websites per destination/province
-  - Improve image accuracy and quality
-  - Increase attractions toward 10-30 per province
+## Automated Phase Log
+- 2026-08-07 · Bilingual runtime audit · Seven routes, overlays and accessibility attributes verified in Thai and English · commit `a76c932`

@@ -12,7 +12,9 @@ const read = relative =>
   fs.readFileSync(path.join(root, relative), "utf8").replace(/^\uFEFF/, "");
 
 const index = read("index.html");
+const app = read("js/app.js");
 const data = read("js/data.js");
+const translations = read("js/translations.js");
 const i18n = read("js/i18n.js");
 const enhancements = read("js/enhancements.js");
 
@@ -29,21 +31,34 @@ for (const source of new Set(scriptSources)) {
 }
 
 const dataIndex = scriptSources.indexOf("js/data.js");
+const appIndex = scriptSources.indexOf("js/app.js");
+const translationsIndex = scriptSources.indexOf("js/translations.js");
 const i18nIndex = scriptSources.indexOf("js/i18n.js");
 const enhancementsIndex = scriptSources.indexOf("js/enhancements.js");
 
 if (dataIndex === -1) failures.push("index.html does not load js/data.js");
+if (appIndex === -1) failures.push("index.html does not load js/app.js");
+if (translationsIndex === -1) failures.push("index.html does not load js/translations.js");
 if (i18nIndex === -1) failures.push("index.html does not load js/i18n.js");
 if (enhancementsIndex === -1) failures.push("index.html does not load js/enhancements.js");
 if (dataIndex !== -1 && i18nIndex !== -1 && dataIndex > i18nIndex) {
   failures.push("js/data.js must load before js/i18n.js");
 }
+if (translationsIndex !== -1 && i18nIndex !== -1 && translationsIndex > i18nIndex) {
+  failures.push("js/translations.js must load before js/i18n.js");
+}
+if (!translations.includes("window.TRANSLATIONS =")) {
+  failures.push("js/translations.js does not export the translation source");
+}
+if (/const dictionary\s*=\s*\{/.test(i18n) || /const sharedThai\s*=\s*\{/.test(i18n)) {
+  failures.push("translation data leaked back into js/i18n.js");
+}
 if (i18nIndex !== -1 && enhancementsIndex !== -1 && i18nIndex > enhancementsIndex) {
   failures.push("js/i18n.js must load before js/enhancements.js");
 }
 
-if ((index.match(/let destinations\s*=\s*\[\]/g) || []).length !== 1) {
-  failures.push("index.html must declare the runtime destinations array exactly once");
+if ((app.match(/let destinations\s*=\s*\[\]/g) || []).length !== 1) {
+  failures.push("js/app.js must declare the runtime destinations array exactly once");
 }
 
 if ((data.match(/const DESTINATIONS\s*=\s*\[/g) || []).length !== 1) {
@@ -54,8 +69,8 @@ if (/const GALLERY\s*=\s*\[/.test(data) || /window\.GALLERY\s*=/.test(data)) {
   failures.push("legacy GALLERY data still exists in js/data.js");
 }
 
-if (/new Chart\(document\.getElementById/.test(index)) {
-  failures.push("index.html creates a chart without checking the canvas first");
+if (/new Chart\(document\.getElementById/.test(app)) {
+  failures.push("js/app.js creates a chart without checking the canvas first");
 }
 
 
@@ -87,11 +102,11 @@ if (!enhancements.includes("recentStorageKey()")) {
   failures.push("recent searches are not scoped by language");
 }
 
-if (!index.includes("modal.dataset.destinationId")) {
+if (!app.includes("modal.dataset.destinationId")) {
   failures.push("destination modal cannot refresh its open content after a language change");
 }
 
-if (!index.includes("lightbox.dataset.imageIndex")) {
+if (!app.includes("lightbox.dataset.imageIndex")) {
   failures.push("lightbox cannot refresh its open caption after a language change");
 }
 
@@ -111,17 +126,17 @@ if (!i18n.includes("translateTree(document.body, language)")) {
   failures.push("language application does not cover global controls and accessibility attributes");
 }
 
-if (!index.includes("item.provinceSlug || item.slug")) {
+if (!app.includes("item.provinceSlug || item.slug")) {
   failures.push("promotion hydration does not use the stable province slug");
 }
 
-const pairMatch = i18n.match(/const pairs = (\[\[.*?\]\]);/s);
+const pairMatch = translations.match(/const staticPairs = (\[\[.*?\]\]);/s);
 if (!pairMatch) {
   failures.push("unable to parse static bilingual text pairs");
 } else {
   try {
     const parsedPairs = JSON.parse(pairMatch[1]);
-    const pushedPairs = i18n.match(/pairs\.push\(([\s\S]*?)\);\n  const thToEn/);
+    const pushedPairs = translations.match(/staticPairs\.push\(([\s\S]*?)\);\n\n  window\.TRANSLATIONS/);
     if (pushedPairs) {
       parsedPairs.push(...vm.runInNewContext(`[${pushedPairs[1]}]`));
     }

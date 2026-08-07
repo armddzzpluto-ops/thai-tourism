@@ -1,0 +1,34 @@
+name: Update AI memory
+
+on:
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: Completed phase name
+        required: true
+      summary:
+        description: Concise completed-work summary
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  checkpoint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Update memory
+        run: node scripts/update-ai-memory.mjs "${{ inputs.phase }}" "${{ inputs.summary }}"
+      - name: Commit checkpoint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/AI_MEMORY.md
+          git diff --cached --quiet || git commit -m "docs(memory): checkpoint ${{ inputs.phase }}"
+          git push
