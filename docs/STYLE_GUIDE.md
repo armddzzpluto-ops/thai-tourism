@@ -1,27 +1,26 @@
-# Style Guide
-
-## Editing Mode
-- Use incremental edits.
-- Keep diffs minimal.
-- Preserve existing naming and structure.
+# Style guide
 
 ## HTML
-- Do not move sections.
-- Do not rename IDs/classes.
-- Modify attributes only when necessary.
+- Keep `index.html` semantic and focused on document/page components.
+- Preserve public IDs, classes, hashes and accessible relationships.
+- Visible copy must have a translation entry.
 
 ## CSS
-- Reuse existing design tokens.
-- Do not hardcode new colors when tokens exist.
-- Do not duplicate selectors/classes.
-- Preserve responsive behavior and animation patterns.
+- Reuse tokens from `css/style.css`.
+- Keep component rules in `css/components.css` and optional UX rules in `css/enhancements.css`.
+- Do not duplicate selectors or hardcode colors when a token exists.
+- Verify Light/Dark and all four supported viewport profiles.
 
 ## JavaScript
-- Patch existing functions instead of replacing working systems.
-- Reuse existing globals and data objects.
-- Avoid duplicate logic.
+- Core SPA behavior belongs in `js/app.js`.
+- Shared tourism content belongs in `js/data.js`.
+- Translation content belongs only in `js/translations.js`.
+- Language mechanics belong in `js/i18n.js`.
+- Optional widgets belong in `js/enhancements.js`.
+- Preserve keyboard behavior and mounted/open UI across live language changes.
 
 ## Accessibility
-- Images require alt text.
-- Buttons require aria-label.
-- Maintain keyboard support and visible focus.
+- Images require meaningful localized alt text.
+- Icon-only buttons require localized accessible names.
+- Dialogs require focus management, Escape support and focus restoration.
+- Focus must remain visible in both themes.
