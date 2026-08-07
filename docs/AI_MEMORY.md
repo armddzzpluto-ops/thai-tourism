@@ -14,6 +14,7 @@
 - Light/Dark mode, history navigation, responsive layouts and keyboard interactions are active
 - Static GitHub Actions checks are active
 - Playwright coverage is the required browser regression layer
+- Working tree cleanup reduced tracked content from about 290 MB to 72 MB without removing runtime-referenced assets
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -42,6 +43,8 @@
 - Direct URL, refresh and back/forward verified
 - Mouse, touch and keyboard verified
 - Memory, TODO and changelog updated for completed phases
+- No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
 - 2026-08-07 · Bilingual runtime audit · Seven routes, overlays and accessibility attributes verified in Thai and English · commit `a76c932`
+- 2026-08-07 · Repository cleanup · Removed 247 proven-unused files, aligned curation to three images and added anti-regression guards

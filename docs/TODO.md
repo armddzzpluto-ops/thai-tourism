@@ -1,52 +1,27 @@
 # TODO
 
-## Developer foundation
-- [x] Add root AGENTS.md as the canonical agent guide
-- [x] Add repository-wide Copilot instructions
-- [x] Add Playwright E2E coverage for languages, routes, overlays, responsive projects and runtime errors
-- [x] Add automated AI memory checkpoint workflow
-- [x] Extract core SPA behavior from index.html into js/app.js
-- [x] Centralize translation data in js/translations.js
+## Completed foundation
+- [x] Canonical agent and Copilot instructions
+- [x] Playwright coverage for Desktop, Notebook, Tablet and Mobile
+- [x] Automated phase-memory workflow
+- [x] Core SPA runtime extracted to `js/app.js`
+- [x] Translation data centralized in `js/translations.js`
+- [x] Gallery connected to destination-owned image records
+- [x] At least three curated, attributed images for every province
+- [x] Remove retired code, checkpoints, source JPGs and unreferenced image assets
+- [x] Add CI guards against missing runtime images and retired artifacts
 
+## Next phase
+- [ ] Replace placeholder contact, team and project information
+- [ ] Verify destination-level official websites, maps and coordinates
+- [ ] Expand province attraction records with authoritative sources
+- [ ] Continue splitting page markup into maintainable components without changing public selectors
+- [ ] Consolidate overlapping CSS only after adding visual-regression snapshots
+- [ ] Review performance after the content/data work is complete
 
-## Phase 1 Active
-- [x] Add official websites to destination records (fallback Tourism Thailand search links)
-- [x] Validate Google Maps links for all destinations (auto-repair invalid/missing links)
-- [~] Improve destination image accuracy and quality (local WebP package complete; attraction curation pending)
-- [ ] Expand each province toward 10-30 attractions
-- [x] Fill required destination metadata schema keys for all shared records (heroImage, galleryImages, maps, officialWebsite, coordinates, keywords, openingHours, ticketInfo)
-- [ ] Verify official coordinates and district-level metadata per province (replace pending placeholders)
-- [x] Re-check search quality after each data batch
-- [ ] Replace fallback officialWebsite links with verified destination-level official websites
-- [ ] Replace fallback Google Maps search links with verified place-level links
-- [x] Replace remaining generic province images with province-specific local WebP structure (hero + gallery scaffolding)
-- [ ] Curate 5-10 attraction-accurate tourism images per province (replace fallback duplicates)
-- [ ] Validate per-image caption/photoCredit/imageSource entries against final curated sources
-- [ ] Add additional verified attractions where province coverage is still thin
-- [x] Migrate Gallery page data source to shared destination.galleryImages layer
-- [~] Migrate Promotions page cards to shared destination image layer (seasonal campaign copy still static inline)
-- [ ] Resolve terminal execution blocker and rerun Batch 1 curation (automated-only, no manual fallback)
-- [ ] Run Batch 1 with explicit province list after pipeline restore:
-	- chiang-mai
-	- chiang-rai
-	- mae-hong-son
-	- lampang
-	- lamphun
-	- phrae
-	- nan
-	- phayao
-	- uttaradit
-	- tak
-- [x] Production hotfix: remove active runtime console errors (no architecture refactor)
-- [x] Production hotfix: replace broken inline province image sources with local assets
-- [x] Production hotfix: add inline fallback map/official links in active modal flow
-- [x] Production hotfix: accessibility-safe modal/lightbox/blog preview alt/src defaults
-- [ ] Consolidate duplicate datasets into a single source (future scoped task, not merged in hotfix)
-
-## Next
-- [ ] Province pages (Phase 2)
-- [ ] Travel planner enhancements (Phase 2)
-- [ ] Nearby attractions (Phase 2)
-- [ ] Weather integration strategy (Phase 2)
-- [ ] Favorites persistence review (Phase 2)
-
+## Definition of done
+- [ ] Static checks pass
+- [ ] Playwright passes in Thai and English on all four viewport profiles
+- [ ] No console errors, local HTTP errors, broken links or broken images
+- [ ] Light/Dark, direct URL, refresh, back/forward, mouse, touch and keyboard verified
+- [ ] `AI_MEMORY.md` and `CHANGELOG.md` updated

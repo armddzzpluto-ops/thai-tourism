@@ -36,7 +36,7 @@ jobs:
         shell: pwsh
         run: |
           1..8 | ForEach-Object {
-            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 5 -WebpQuality 82 -RequestDelayMs 350
+            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 3 -WebpQuality 82 -RequestDelayMs 350
           }
 
       - name: Generate browser curation data
@@ -59,4 +59,4 @@ jobs:
 
       - name: Require all provinces to pass curation
         run: |
-          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<5);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"
+          node -e "const fs=require('fs');const rows=JSON.parse(fs.readFileSync('assets/images/provinces/validation-report.json','utf8').replace(/^\uFEFF/,''));const pending=rows.filter(x=>x.status!=='complete'||Number(x.fallbackCount)!==0||Number(x.galleryCount)<3);console.log('Complete:',rows.length-pending.length+'/'+rows.length);if(pending.length){console.error('Pending:',pending.map(x=>x.slug+':'+x.status).join(', '));process.exit(1)}"

@@ -17,6 +17,7 @@ const data = read("js/data.js");
 const translations = read("js/translations.js");
 const i18n = read("js/i18n.js");
 const enhancements = read("js/enhancements.js");
+const curationData = read("js/image-curation-data.js");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -174,6 +175,7 @@ const context = {
 vm.createContext(context);
 
 try {
+  vm.runInContext(curationData, context, { filename: "js/image-curation-data.js" });
   vm.runInContext(data, context, { filename: "js/data.js" });
   const destinations = context.window.DESTINATIONS;
 
@@ -215,12 +217,81 @@ try {
         `generic destination image captions remain: ${genericGalleryCaptions.length}`
       );
     }
+
+    const runtimeImagePaths = destinations.flatMap(item => {
+      const sources = [item.heroImage, ...(Array.isArray(item.galleryImages) ? item.galleryImages : [])];
+      return sources
+        .filter(source => typeof source === "string" && !/^https?:\/\//.test(source))
+        .map(source => ({ owner: item.provinceSlug || item.slug, source }));
+    });
+    const missingRuntimeImages = runtimeImagePaths
+      .filter(({ source }) => !fs.existsSync(path.join(root, source)))
+      .map(({ owner, source }) => `${owner}: ${source}`);
+
+    if (missingRuntimeImages.length) {
+      failures.push(`missing runtime destination images: ${missingRuntimeImages.slice(0, 8).join(" | ")}`);
+    }
+
+    const invalidWebpImages = [...new Set(runtimeImagePaths.map(({ source }) => source))]
+      .filter(source => source.endsWith(".webp") && fs.existsSync(path.join(root, source)))
+      .filter(source => {
+        const header = fs.readFileSync(path.join(root, source)).subarray(0, 12);
+        return header.length < 12
+          || header.toString("ascii", 0, 4) !== "RIFF"
+          || header.toString("ascii", 8, 12) !== "WEBP";
+      });
+    if (invalidWebpImages.length) {
+      failures.push(`invalid runtime WebP files: ${invalidWebpImages.slice(0, 8).join(" | ")}`);
+    }
   }
 } catch (error) {
   failures.push(`js/data.js runtime check failed: ${error.message}`);
 }
 
-const skipDirs = new Set([".git", ".backup", ".checkpoints", "node_modules"]);
+const forbiddenLegacyPaths = [
+  ".checkpoints",
+  ".terminal_sanity.txt",
+  "docs/terminal-write-check.txt",
+  "docs/batch1-curation-log.json",
+  "js/script.js",
+  "js/dashboard.js",
+  "js/destinations.js",
+  "assets/images/gallery",
+  "scripts/build-province-image-pack.ps1",
+  "scripts/download-province-images.ps1"
+];
+
+for (const legacyPath of forbiddenLegacyPaths) {
+  if (fs.existsSync(path.join(root, legacyPath))) {
+    failures.push(`retired project artifact returned: ${legacyPath}`);
+  }
+}
+
+const provinceRoot = path.join(root, "assets", "images", "provinces");
+const legacyProvinceJpgs = fs.readdirSync(provinceRoot)
+  .filter(name => name.endsWith(".jpg"));
+if (legacyProvinceJpgs.length) {
+  failures.push(`legacy province JPG sources returned: ${legacyProvinceJpgs.length}`);
+}
+
+const referencedCurationImages = new Set(
+  [...curationData.matchAll(/assets\/images\/provinces\/[^"'\s]+\/gallery-\d+\.webp/g)]
+    .map(match => match[0])
+);
+const orphanExtendedGallery = [];
+for (const entry of fs.readdirSync(provinceRoot, { withFileTypes: true })) {
+  if (!entry.isDirectory()) continue;
+  for (const name of fs.readdirSync(path.join(provinceRoot, entry.name))) {
+    if (!/^gallery-[45]\.webp$/.test(name)) continue;
+    const relative = `assets/images/provinces/${entry.name}/${name}`;
+    if (!referencedCurationImages.has(relative)) orphanExtendedGallery.push(relative);
+  }
+}
+if (orphanExtendedGallery.length) {
+  failures.push(`unreferenced gallery-4/5 assets: ${orphanExtendedGallery.length}`);
+}
+
+const skipDirs = new Set([".git", ".backup", "node_modules"]);
 const jsFiles = [];
 
 function walk(dir) {

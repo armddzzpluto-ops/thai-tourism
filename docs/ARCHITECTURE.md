@@ -16,6 +16,8 @@
 - `js/i18n.js`: translation runtime and language lifecycle
 - `js/enhancements.js`: search suggestions, region explorer, reviews, blog and FAQ
 - `js/core-stability.js`: focus/history/runtime stability guards
+- `scripts/curate-province-gallery-batch.ps1`: canonical Wikimedia curation pipeline
+- `scripts/sync-image-curation.mjs`: metadata-to-browser curation synchronizer
 
 ## Load order
 1. Page shell and core app definitions
@@ -31,3 +33,5 @@
 - `window.DESTINATIONS` is the source consumed by renderers.
 - `window.TRANSLATIONS` is the only translation data source.
 - Language changes dispatch `languagechange` and update mounted/open UI without reload.
+- Runtime images are limited to optimized WebP assets referenced by destination/curation data.
+- Raw province JPG sources, checkpoints and retired application bundles are not stored in the working tree.
