@@ -265,76 +265,17 @@ Discover The Land Of Smiles</span></div>
     </div>
   </section>
 
-  <!-- TRAVEL PACKAGES -->
+  <!-- DATA-LINKED TRIP IDEAS -->
   <section class="section-alt section home-package-section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">แพ็กเกจท่องเที่ยว</span>
-        <h2 class="section-title">เลือกแพ็กเกจ<span class="gold">ที่ใช่สำหรับคุณ</span></h2>
+        <span class="section-eyebrow">จุดหมายแนะนำ</span>
+        <h2 class="section-title">ไอเดียจาก<span class="gold">ข้อมูลสถานที่จริง</span></h2>
         <div class="divider"></div>
-        <p class="section-desc">แพ็กเกจท่องเที่ยวคัดสรรสำหรับทุกสไตล์การเดินทาง</p>
+        <p class="section-desc">รายการนี้ใช้ชื่อ จังหวัด รูป และรายละเอียดชุดเดียวกับหน้า Destinations และ Modal</p>
       </div>
-      <div class="cards-grid fade-in">
-        <div class="dest-card" data-promo-province="surat-thani">
-          <div class="card-img-wrap">
-            <img src="assets/images/destinations/gulf-beach.webp" alt="แพ็กเกจประหยัด" loading="lazy">
-            <span class="card-badge">ประหยัด</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">แพ็กเกจประหยัด</div>
-            <h3 class="card-title">เที่ยวไทยประหยัด 3 วัน 2 คืน</h3>
-            <p class="card-desc">แพ็กเกจสำหรับนักเดินทางงบน้อย ครอบคลุมที่พัก อาหาร และกิจกรรมหลัก</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);">฿ 2,990</span>
-                <span style="font-size:0.8rem;color:var(--text-light);">/คน</span>
-              </div>
-              <button class="card-cta" onclick="showPage('promotions')">ดูรายละเอียด</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="chiang-mai">
-          <div class="card-img-wrap">
-            <img src="assets/images/destinations/chiang-mai.webp" alt="แพ็กเกจครอบครัว" loading="lazy">
-            <span class="card-badge">ครอบครัว</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">แพ็กเกจครอบครัว</div>
-            <h3 class="card-title">แพ็กเกจครอบครัว 5 วัน 4 คืน</h3>
-            <p class="card-desc">เที่ยวสนุกทั้งครอบครัว พร้อมกิจกรรมสำหรับเด็กและผู้ใหญ่ ณ เกาะสมุย</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);">฿ 8,990</span>
-                <span style="font-size:0.8rem;color:var(--text-light);">/ครอบครัว</span>
-              </div>
-              <button class="card-cta" onclick="showPage('promotions')">ดูรายละเอียด</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="phuket">
-          <div class="card-img-wrap">
-            <img src="assets/images/destinations/phuket.webp" alt="แพ็กเกจพรีเมียม" loading="lazy">
-            <span class="card-badge" style="background:var(--gold);color:var(--teal-deep);">หรูหรา</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">แพ็กเกจพรีเมียม</div>
-            <h3 class="card-title">แพ็กเกจระดับพรีเมียม 7 วัน 6 คืน</h3>
-            <p class="card-desc">ประสบการณ์การเดินทางระดับลักชัวรี พร้อมรีสอร์ท 5 ดาว สปา และรถรับส่งส่วนตัว</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);">฿ 24,900</span>
-                <span style="font-size:0.8rem;color:var(--text-light);">/คน</span>
-              </div>
-              <button class="card-cta" onclick="showPage('promotions')">ดูรายละเอียด</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:40px;">
-        <button class="btn-primary" onclick="showPage('promotions')">
-          <i class="fas fa-tags"></i> ดูโปรโมชั่นทั้งหมด
-        </button>
-      </div>
+      <div class="cards-grid fade-in" id="home-trip-grid"></div>
+      <div style="text-align:center;margin-top:40px;"><button class="btn-primary" onclick="showPage('promotions')"><i class="fas fa-compass"></i> ดูไอเดียเพิ่มเติม</button></div>
     </div>
   </section>
 
@@ -422,41 +363,6 @@ Discover The Land Of Smiles</span></div>
           </button>
         </article>
       </div>
-    </div>
-  </section>
-
-  <!-- WEATHER CARDS -->
-  <section class="section-alt section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-eyebrow">สภาพอากาศท่องเที่ยว</span>
-        <h2 class="section-title" style="font-size:clamp(1.4rem,2.5vw,1.9rem);">สภาพอากาศ<span class="gold">จุดหมายปลายทาง</span></h2>
-        <div class="divider"></div>
-      </div>
-      <div class="weather-cards-grid fade-in" id="weather-cards"></div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-eyebrow">เสียงจากนักเดินทาง</span>
-        <h2 class="section-title">รีวิวจาก<span class="gold">ผู้เข้าชม</span></h2>
-        <div class="divider"></div>
-      </div>
-      <div class="testimonial-slider fade-in" id="testimonial-slider">
-        <button class="slider-arrow" type="button" id="testimonial-prev" aria-label="Previous testimonial">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <div class="testimonial-window">
-          <div class="testimonial-track" id="testimonial-track"></div>
-        </div>
-        <button class="slider-arrow" type="button" id="testimonial-next" aria-label="Next testimonial">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-      <div class="testimonial-dots" id="testimonial-dots"></div>
     </div>
   </section>
 
@@ -568,190 +474,28 @@ Discover The Land Of Smiles</span></div>
 <!-- ===================== PAGE: PROMOTIONS ===================== -->
 <div class="page" id="page-promotions">
   <div style="height:64px;"></div>
-
-  <!-- Promotions Hero -->
-  <div style="background:linear-gradient(135deg,var(--teal-deep) 0%,#0A3A45 100%);padding:60px 0;">
-    <div class="container" style="text-align:center;">
-      <span style="display:inline-block;background:rgba(201,168,76,0.2);border:1px solid rgba(201,168,76,0.4);color:var(--gold);padding:6px 18px;border-radius:20px;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;">ข้อเสนอพิเศษ</span>
-      <h1 style="font-family:'Kanit',sans-serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:var(--white);margin-bottom:16px;">โปรโมชั่น<span style="color:var(--gold);"> พิเศษ 2026</span></h1>
-      <p style="color:rgba(255,255,255,0.75);font-size:1.05rem;max-width:500px;margin:0 auto;">ดีลพิเศษโรงแรม แพ็กเกจท่องเที่ยว และแคมเปญตามฤดูกาล</p>
-    </div>
-  </div>
-
-  <!-- ดีลที่พัก -->
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">ดีลที่พัก</span>
-        <h2 class="section-title">ดีล<span class="gold">ที่พัก</span></h2>
+        <span class="section-eyebrow">ไอเดียการเดินทาง</span>
+        <h1 class="section-title">สถานที่เด่นจาก<span class="gold">ข้อมูลชุดเดียวกัน</span></h1>
         <div class="divider"></div>
-        <p class="section-desc">โรงแรมและรีสอร์ทราคาพิเศษ คัดสรรจากทั่วประเทศไทย</p>
+        <p class="section-desc">หน้านี้แนะนำจุดหมายจากฐานข้อมูลสถานที่เดียวกับหน้าแรก คลังภาพ และหน้ารายละเอียด โดยไม่แสดงราคาและข้อเสนอที่ไม่ได้เชื่อมกับผู้ให้บริการจริง</p>
       </div>
-      <div class="cards-grid fade-in">
-        <div class="dest-card" data-promo-province="surat-thani">
-          <div class="card-img-wrap">
-            <img src="assets/images/provinces/surat-thani/hero.webp" alt="เกาะสมุย รีสอร์ท" loading="lazy">
-            <span class="card-badge" style="background:#e74c3c;">ลด 30%</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">เกาะสมุย • ภาคใต้</div>
-            <h3 class="card-title">สมุย บีชฟรอนต์ รีสอร์ต</h3>
-            <p class="card-desc">รีสอร์ทระดับ 5 ดาว วิวทะเลสวยงาม พร้อมสระว่ายน้ำอินฟินิตีและสปาชั้นนำ</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 4,500/คืน</span>
-                <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 3,150/คืน</span>
-              </div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="chiang-mai">
-          <div class="card-img-wrap">
-            <img src="assets/images/provinces/chiang-mai/hero.webp" alt="เชียงใหม่ บูติกโฮเทล" loading="lazy">
-            <span class="card-badge" style="background:#e74c3c;">ลด 25%</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">เชียงใหม่ • ภาคเหนือ</div>
-            <h3 class="card-title">ลานนา บูติก โฮเทล</h3>
-            <p class="card-desc">บูติกโฮเทลสไตล์ล้านนา ใจกลางเมืองเก่าเชียงใหม่ ใกล้วัดพระธาตุดอยสุเทพ</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 2,800/คืน</span>
-                <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 2,100/คืน</span>
-              </div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="phuket">
-          <div class="card-img-wrap">
-            <img src="assets/images/provinces/phuket/hero.webp" alt="ภูเก็ต รีสอร์ท" loading="lazy">
-            <span class="card-badge" style="background:var(--gold);color:var(--teal-deep);">Early Bird</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">ภูเก็ต • ภาคใต้</div>
-            <h3 class="card-title">ภูเก็ต โอเชียนวิว วิลลา</h3>
-            <p class="card-desc">วิลล่าส่วนตัวบนเนินเขา วิวทะเลอันดามัน พร้อมสระว่ายน้ำส่วนตัวและบัตเลอร์</p>
-            <div class="card-footer">
-              <div class="card-rating">
-                <span style="text-decoration:line-through;color:var(--text-light);font-size:0.82rem;">฿ 9,800/คืน</span>
-                <span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-left:6px;">฿ 6,900/คืน</span>
-              </div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">จองเลย</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="cards-grid fade-in" id="promotion-featured-grid"></div>
     </div>
   </section>
-
-  <!-- ดีลแพ็กเกจ -->
   <section class="section-alt section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">ดีลแพ็กเกจ</span>
-        <h2 class="section-title">แพ็กเกจ<span class="gold">ครบวงจร</span></h2>
+        <span class="section-eyebrow">สำรวจตามภูมิภาค</span>
+        <h2 class="section-title">ตัวแทน<span class="gold">ทั้งห้าภูมิภาค</span></h2>
         <div class="divider"></div>
-        <p class="section-desc">แพ็กเกจรวมที่พัก อาหาร กิจกรรม และรถรับส่ง</p>
+        <p class="section-desc">เลือกสถานที่เพื่อเปิดรายละเอียด รูปภาพ แผนที่ และแหล่งอ้างอิงจากข้อมูลกลาง</p>
       </div>
-      <div class="cards-grid fade-in">
-        <div class="dest-card" data-promo-province="krabi">
-          <div class="card-img-wrap">
-            <img src="assets/images/provinces/krabi/hero.webp" alt="กระบี่แพ็กเกจ" loading="lazy">
-            <span class="card-badge">3 วัน 2 คืน</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">กระบี่ • ภาคใต้</div>
-            <h3 class="card-title">กระบี่ เกาะพีพี ดำน้ำ</h3>
-            <p class="card-desc">แพ็กเกจทะเลครบ รวมทัวร์เกาะพีพี ดำน้ำหมู่เกาะ อาหาร 3 มื้อ และที่พัก</p>
-            <div class="card-footer">
-              <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 5,990</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="chiang-rai">
-          <div class="card-img-wrap">
-            <img src="assets/images/destinations/chiang-rai.webp" alt="เชียงรายแพ็กเกจ" loading="lazy">
-            <span class="card-badge">4 วัน 3 คืน</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">เชียงราย • ภาคเหนือ</div>
-            <h3 class="card-title">เชียงราย 3 วัดไฮไลต์</h3>
-            <p class="card-desc">วัดร่องขุ่น วัดร่องเสือเต้น และดอยแม่สลอง พร้อมชิมชาและกาแฟท้องถิ่น</p>
-            <div class="card-footer">
-              <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 4,490</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
-            </div>
-          </div>
-        </div>
-        <div class="dest-card" data-promo-province="sukhothai">
-          <div class="card-img-wrap">
-            <img src="assets/images/provinces/sukhothai/hero.webp" alt="ประวัติศาสตร์แพ็กเกจ" loading="lazy">
-            <span class="card-badge">2 วัน 1 คืน</span>
-          </div>
-          <div class="card-body">
-            <div class="card-region">สุโขทัย–อยุธยา • ภาคกลาง</div>
-            <h3 class="card-title">มรดกโลก 2 เมืองเก่า</h3>
-            <p class="card-desc">ล่องผ่านกาลเวลากับสุโขทัยและอยุธยา อุทยานประวัติศาสตร์ระดับมรดกโลก</p>
-            <div class="card-footer">
-              <div class="card-rating"><span style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);">฿ 2,990</span><span style="font-size:0.8rem;color:var(--text-light);">/คน</span></div>
-              <button type="button" class="card-cta" onclick="showPage('contact')">สอบถาม</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="cards-grid fade-in" id="promotion-region-grid"></div>
     </div>
   </section>
-
-  <!-- แคมเปญตามฤดูกาล -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-eyebrow">แคมเปญตามฤดูกาล</span>
-        <h2 class="section-title">แคมเปญ<span class="gold">ตามฤดูกาล</span></h2>
-        <div class="divider"></div>
-      </div>
-      <div class="fade-in" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;">
-        <div style="background:linear-gradient(135deg,var(--teal-deep),#0A3A45);border-radius:var(--radius);padding:32px;color:white;position:relative;overflow:hidden;">
-          <div style="position:absolute;top:-20px;right:-20px;font-size:6rem;opacity:0.1;">🌺</div>
-          <span style="background:rgba(201,168,76,0.3);color:var(--gold);padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">พ.ย. – ก.พ.</span>
-          <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">ฤดูกาลท่องเที่ยวสูงสุด</h3>
-          <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">อากาศดีที่สุด ทะเลใส โปรโมชั่นพิเศษสำหรับการจองล่วงหน้า 60 วัน</p>
-          <button type="button" class="btn-primary" onclick="showPage('destinations')"><i class="fas fa-sun"></i> สำรวจเลย</button>
-        </div>
-        <div style="background:linear-gradient(135deg,#7c3aed,#5b21b6);border-radius:var(--radius);padding:32px;color:white;position:relative;overflow:hidden;">
-          <div style="position:absolute;top:-20px;right:-20px;font-size:6rem;opacity:0.1;">🎆</div>
-          <span style="background:rgba(255,255,255,0.2);color:white;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">เม.ย. – เทศกาล</span>
-          <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">สงกรานต์ 2026</h3>
-          <p style="color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">เทศกาลปีใหม่ไทย สาดน้ำสุดสนุก ดีลพิเศษสำหรับโรงแรมในกรุงเทพฯ และเชียงใหม่</p>
-          <button type="button" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#7c3aed;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showPage('destinations')"><i class="fas fa-water"></i> ดูดีล</button>
-        </div>
-        <div style="background:linear-gradient(135deg,var(--gold),#b8860b);border-radius:var(--radius);padding:32px;color:white;position:relative;overflow:hidden;">
-          <div style="position:absolute;top:-20px;right:-20px;font-size:6rem;opacity:0.1;">🏮</div>
-          <span style="background:rgba(0,0,0,0.2);color:white;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">พ.ย. – ลอยกระทง</span>
-          <h3 style="font-family:'Kanit',sans-serif;font-size:1.4rem;font-weight:700;margin:14px 0 10px;">ลอยกระทงสุโขทัย</h3>
-          <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;line-height:1.6;margin-bottom:20px;">งานลอยกระทงที่ยิ่งใหญ่ที่สุดในประเทศ ณ อุทยานประวัติศาสตร์สุโขทัย มรดกโลก</p>
-          <button type="button" style="display:inline-flex;align-items:center;gap:8px;background:var(--teal-deep);color:white;padding:12px 24px;border-radius:50px;border:none;cursor:pointer;font-family:'Kanit',sans-serif;font-weight:600;font-size:0.9rem;" onclick="showDest('สุโขทัย')"><i class="fas fa-star"></i> ดูข้อมูล</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Promotions CTA -->
-  <section class="section-alt section">
-    <div class="container" style="text-align:center;">
-      <div class="fade-in">
-        <h2 class="section-title">ต้องการความช่วยเหลือในการ<span class="gold">วางแผนการเดินทาง?</span></h2>
-        <p class="section-desc" style="margin-bottom:32px;">ทีมงานของเรายินดีให้คำแนะนำและช่วยวางแผนทริปที่สมบูรณ์แบบสำหรับคุณ</p>
-        <button type="button" class="btn-primary" onclick="showPage('contact')">
-          <i class="fas fa-paper-plane"></i> ติดต่อทีมงาน
-        </button>
-      </div>
-    </div>
-  </section>
-
 </div>
 
 <!-- ===================== PAGE: DASHBOARD ===================== -->
@@ -760,58 +504,23 @@ Discover The Land Of Smiles</span></div>
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">ข้อมูลสถิติ</span>
-        <h2 class="section-title">แดชบอร์ด <span class="gold">การท่องเที่ยว</span></h2>
+        <span class="section-eyebrow">ความครอบคลุมของข้อมูล</span>
+        <h1 class="section-title">แดชบอร์ด<span class="gold">ข้อมูลเว็บไซต์</span></h1>
         <div class="divider"></div>
-        <p class="section-desc">ข้อมูลสถิติการท่องเที่ยวประเทศไทย (ข้อมูลจำลอง)</p>
+        <p class="section-desc">ทุกตัวเลขคำนวณจากรายการสถานที่และคลังภาพที่เว็บไซต์ใช้งานอยู่ ไม่ใช่สถิตินักท่องเที่ยวจำลอง</p>
       </div>
-
-      <div class="dashboard-grid fade-in">
-        <div class="dash-stat">
-          <div class="dash-icon"><i class="fas fa-users"></i></div>
-          <div>
-            <div class="dash-num">40.2M</div>
-            <div class="dash-label">นักท่องเที่ยวปีนี้</div>
-            <div class="dash-change">↑ 12.4% จากปีที่แล้ว</div>
-          </div>
-        </div>
-        <div class="dash-stat">
-          <div class="dash-icon"><i class="fas fa-baht-sign"></i></div>
-          <div>
-            <div class="dash-num">2.1T</div>
-            <div class="dash-label">รายได้จากท่องเที่ยว (บาท)</div>
-            <div class="dash-change">↑ 8.7% จากปีที่แล้ว</div>
-          </div>
-        </div>
-        <div class="dash-stat">
-          <div class="dash-icon"><i class="fas fa-star"></i></div>
-          <div>
-            <div class="dash-num">4.8</div>
-            <div class="dash-label">คะแนนความพึงพอใจ</div>
-            <div class="dash-change">↑ 0.2 จากปีที่แล้ว</div>
-          </div>
-        </div>
-        <div class="dash-stat">
-          <div class="dash-icon"><i class="fas fa-map-marked-alt"></i></div>
-          <div>
-            <div class="dash-num">156</div>
-            <div class="dash-label">แหล่งท่องเที่ยวยอดนิยม</div>
-            <div class="dash-change">↑ 14 แห่งใหม่ปีนี้</div>
-          </div>
-        </div>
-      </div>
-
+      <div class="dashboard-grid fade-in" id="dashboard-stats"></div>
       <div class="charts-grid fade-in">
         <div class="chart-card">
-          <div class="chart-title">📈 จำนวนนักท่องเที่ยวรายเดือน (ปี 2567)</div>
+          <div class="chart-title" id="region-chart-title">จำนวนจังหวัดแยกตามภูมิภาค</div>
           <div class="chart-wrap"><canvas id="lineChart"></canvas></div>
         </div>
         <div class="chart-card">
-          <div class="chart-title">🗺️ นักท่องเที่ยวแยกตามภูมิภาค</div>
+          <div class="chart-title" id="category-chart-title">จำนวนจังหวัดแยกตามหมวดหมู่</div>
           <div class="chart-wrap"><canvas id="doughnutChart"></canvas></div>
         </div>
         <div class="chart-card" style="grid-column:1/-1;">
-          <div class="chart-title">🏆 8 จังหวัดยอดนิยม (จำนวนผู้เยี่ยมชม ล้านคน)</div>
+          <div class="chart-title" id="gallery-chart-title">จำนวนภาพที่เชื่อมกับแต่ละภูมิภาค</div>
           <div class="chart-wrap"><canvas id="barChart"></canvas></div>
         </div>
       </div>
@@ -838,15 +547,15 @@ Discover The Land Of Smiles</span></div>
             <h2 class="section-title">ทำไมต้อง<span class="gold">Thailand Travel</span></h2>
             <div class="divider"></div>
           </div>
-          <p class="about-desc">เราคือแหล่งรวมข้อมูลการท่องเที่ยวในประเทศไทยที่ครบครัน ก่อตั้งขึ้นด้วยความรักและหลงใหลในความงามของแผ่นดินไทย ตั้งแต่ทะเลฟ้าใสทางใต้ ไปจนถึงขุนเขาสูงทางเหนือ เรานำเสนอข้อมูลที่เป็นประโยชน์สำหรับนักท่องเที่ยวทุกกลุ่ม</p>
-          <p class="about-desc">โครงการนี้จัดทำขึ้นเพื่อการศึกษา โดยนักศึกษาสาขาเทคโนโลยีสารสนเทศ เพื่อนำเสนอความเป็นไปได้ของเว็บไซต์การท่องเที่ยวที่ทันสมัย ใช้งานง่าย และสวยงาม</p>
+          <p class="about-desc">เว็บไซต์โครงงานนี้รวบรวมข้อมูลตัวแทนการท่องเที่ยวครบ 77 จังหวัด โดยเชื่อมชื่อ จังหวัด รูปภาพ คลังภาพ และหน้ารายละเอียดผ่านชุดข้อมูลกลางเดียวกัน</p>
+          <p class="about-desc">โครงการนี้จัดทำขึ้นเพื่อการศึกษา โดยนักศึกษาสาขาเทคโนโลยีธุรกิจดิจิทัล เพื่อนำเสนอความเป็นไปได้ของเว็บไซต์การท่องเที่ยวที่ทันสมัย ใช้งานง่าย และสวยงาม</p>
           <div style="display:flex;gap:24px;flex-wrap:wrap;">
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
-              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--teal-deep);">77</div>
+              <div id="about-destination-count" style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--teal-deep);">77</div>
               <div style="font-size:0.82rem;color:var(--text-mid);">รายการจังหวัด</div>
             </div>
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
-              <div style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--gold);">5</div>
+              <div id="about-region-count" style="font-family:'Kanit',sans-serif;font-size:1.8rem;font-weight:700;color:var(--gold);">5</div>
               <div style="font-size:0.82rem;color:var(--text-mid);">ภูมิภาคที่ครอบคลุม</div>
             </div>
             <div style="text-align:center;padding:16px;background:var(--cream-dark);border-radius:var(--radius-sm);min-width:100px;">
@@ -873,14 +582,14 @@ Discover The Land Of Smiles</span></div>
             <div style="width:44px;height:44px;background:rgba(13,79,92,0.08);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--teal-mid);font-size:1.2rem;"><i class="fas fa-bullseye"></i></div>
             <h3 style="font-family:'Kanit',sans-serif;font-size:1.15rem;font-weight:700;color:var(--teal-deep);">พันธกิจ</h3>
           </div>
-          <p style="color:var(--text-mid);line-height:1.75;font-size:0.95rem;">นำเสนอข้อมูลการท่องเที่ยวในประเทศไทยที่ครบถ้วน ถูกต้อง และเข้าถึงง่าย เพื่อช่วยให้นักท่องเที่ยวทุกกลุ่มสามารถวางแผนการเดินทางได้อย่างมั่นใจและสนุกสนาน</p>
+          <p style="color:var(--text-mid);line-height:1.75;font-size:0.95rem;">จัดโครงสร้างข้อมูลท่องเที่ยวให้ค้นหา เปรียบเทียบ และตรวจสอบแหล่งอ้างอิงได้ง่าย พร้อมรักษาความสอดคล้องระหว่างทุกหน้า</p>
         </div>
         <div style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border-left:4px solid var(--gold);">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
             <div style="width:44px;height:44px;background:rgba(201,168,76,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.2rem;"><i class="fas fa-eye"></i></div>
             <h3 style="font-family:'Kanit',sans-serif;font-size:1.15rem;font-weight:700;color:var(--teal-deep);">วิสัยทัศน์</h3>
           </div>
-          <p style="color:var(--text-mid);line-height:1.75;font-size:0.95rem;">เป็นแพลตฟอร์มท่องเที่ยวดิจิทัลชั้นนำของประเทศไทย ที่รวบรวมข้อมูลสถานที่ท่องเที่ยวครบ 77 จังหวัด และเชื่อมโยงนักท่องเที่ยวกับวัฒนธรรมไทยอย่างยั่งยืน</p>
+          <p style="color:var(--text-mid);line-height:1.75;font-size:0.95rem;">พัฒนาโครงงานเว็บท่องเที่ยวสองภาษาที่ดูแลต่อได้ มีข้อมูลครบทั้ง 77 จังหวัด และทดสอบการใช้งานได้บนอุปกรณ์ทุกขนาด</p>
         </div>
       </div>
     </div>
@@ -913,47 +622,12 @@ Discover The Land Of Smiles</span></div>
         <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;box-shadow:var(--shadow-sm);text-align:center;transition:var(--transition);" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
           <div style="width:60px;height:60px;background:rgba(46,173,192,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.6rem;color:var(--teal-light);"><i class="fas fa-chart-bar"></i></div>
           <h4 style="font-family:'Kanit',sans-serif;font-weight:700;color:var(--teal-deep);margin-bottom:8px;">แดชบอร์ดสถิติ</h4>
-          <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.6;">แสดงผลสถิติการท่องเที่ยวแบบโต้ตอบด้วย Chart.js</p>
+          <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.6;">แสดงความครอบคลุมของข้อมูลเว็บไซต์แบบโต้ตอบด้วย Chart.js</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-alt section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-eyebrow">ทีมงาน</span>
-        <h2 class="section-title">ผู้จัดทำ<span class="gold">โครงงาน</span></h2>
-        <div class="divider"></div>
-        <p class="section-desc">รายชื่อบุคคลในส่วนนี้เป็นข้อมูลตัวอย่างสำหรับโครงงาน กรุณาแทนที่ด้วยชื่อผู้จัดทำและอาจารย์ที่ปรึกษาจริงก่อนนำเสนอ</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card fade-in">
-          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4" class="team-avatar" alt="สมชาย">
-          <div class="team-name">นายสมชาย ใจดี</div>
-          <div class="team-role">นักศึกษา ปวส. ปีที่ 2</div>
-          <div style="margin-top:10px;color:var(--text-light);font-size:0.82rem;">ออกแบบและพัฒนาส่วนหน้าเว็บไซต์</div>
-        </div>
-        <div class="team-card fade-in">
-          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lily&backgroundColor=ffd5dc" class="team-avatar" alt="สมหญิง">
-          <div class="team-name">นางสาวสมหญิง สวยงาม</div>
-          <div class="team-role">นักศึกษา ปวส. ปีที่ 2</div>
-          <div style="margin-top:10px;color:var(--text-light);font-size:0.82rem;">รวบรวมข้อมูลและเนื้อหา</div>
-        </div>
-        <div class="team-card fade-in">
-          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&backgroundColor=c0aede" class="team-avatar" alt="สมศักดิ์">
-          <div class="team-name">นายสมศักดิ์ เก่งมาก</div>
-          <div class="team-role">นักศึกษา ปวส. ปีที่ 2</div>
-          <div style="margin-top:10px;color:var(--text-light);font-size:0.82rem;">ออกแบบส่วนติดต่อผู้ใช้และแดชบอร์ด</div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:32px;padding:24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm);">
-        <div style="font-size:0.9rem;color:var(--text-mid);">ที่ปรึกษาโครงงาน</div>
-        <div style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);margin-top:4px;">อาจารย์ดีมาก มีความรู้</div>
-        <div style="font-size:0.85rem;color:var(--teal-mid);">สาขาวิชาเทคโนโลยีสารสนเทศ</div>
-      </div>
-    </div>
-  </section>
 
   <!-- TECHNOLOGIES USED -->
   <section class="section">
@@ -988,138 +662,44 @@ Discover The Land Of Smiles</span></div>
   <section class="section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">ติดต่อเรา</span>
-        <h2 class="section-title">ส่ง<span class="gold">ข้อความ</span>ถึงเรา</h2>
+        <span class="section-eyebrow">ติดต่อโครงงาน</span>
+        <h1 class="section-title">ข้อเสนอแนะและ<span class="gold">รายงานข้อมูล</span></h1>
         <div class="divider"></div>
+        <p class="section-desc">เว็บไซต์นี้เป็นโครงงานแบบ Static จึงไม่มีฝ่ายจอง โทรศัพท์ สำนักงาน หรือบัญชีโซเชียลมีเดียของบริการท่องเที่ยว</p>
       </div>
       <div class="contact-grid fade-in">
         <div class="contact-info">
-          <h3>มีคำถาม? เราพร้อมช่วยเหลือ</h3>
-          <p>หากคุณมีคำแนะนำ ข้อสงสัย หรืออยากแนะนำสถานที่ท่องเที่ยวใหม่ๆ สามารถทดลองกรอกแบบฟอร์มของโครงงานได้</p>
-          <p class="section-desc" style="margin:12px 0 20px;text-align:left;font-size:0.84rem;">อีเมล โทรศัพท์ ที่อยู่ และเวลาทำการด้านล่างเป็นข้อมูลตัวอย่าง ยังไม่ใช่ช่องทางติดต่อจริง</p>
+          <h3>ช่องทางที่ตรวจสอบได้</h3>
+          <p>ตรวจสอบซอร์สโค้ด ประวัติการแก้ไข และส่งข้อเสนอแนะผ่าน Repository ของโครงงานบน GitHub</p>
           <div class="contact-items">
+            <a class="contact-item" href="https://github.com/armddzzpluto-ops/thai-tourism" target="_blank" rel="noopener noreferrer">
+              <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-item-text"><strong>GitHub Repository</strong><span>armddzzpluto-ops/thai-tourism</span></div>
+            </a>
             <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-item-text">
-                <strong>อีเมล</strong>
-                <span>info@thailandtravel.th</span>
-              </div>
+              <div class="contact-item-icon"><i class="fas fa-code"></i></div>
+              <div class="contact-item-text"><strong>ประเภทระบบ</strong><span>Static bilingual tourism SPA</span></div>
             </div>
             <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-item-text">
-                <strong>โทรศัพท์</strong>
-                <span>02-xxx-xxxx</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-item-text">
-                <strong>ที่อยู่</strong>
-                <span>กรุงเทพมหานคร ประเทศไทย 10XXX</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
-              <div class="contact-item-text">
-                <strong>เวลาทำการ</strong>
-                <span>จันทร์-ศุกร์ 08:00 - 17:00 น.</span>
-              </div>
+              <div class="contact-item-icon"><i class="fas fa-database"></i></div>
+              <div class="contact-item-text"><strong>ขอบเขตข้อมูล</strong><span id="contact-data-scope">77 จังหวัด</span></div>
             </div>
           </div>
         </div>
-
         <form class="contact-form-wrap" id="contact-form" novalidate onsubmit="submitContact(event)">
-          <h3 style="font-size:1.2rem;font-weight:700;color:var(--teal-deep);margin-bottom:8px;">กรอกแบบฟอร์มติดต่อ</h3>
-          <p class="section-desc" style="margin:0 0 24px;text-align:left;font-size:0.85rem;">แบบฟอร์มตัวอย่างสำหรับโครงงาน ข้อมูลจะไม่ถูกส่งไปยังเซิร์ฟเวอร์</p>
+          <h3>ตรวจสอบแบบฟอร์มตัวอย่าง</h3>
+          <p class="section-desc" style="margin:0 0 24px;text-align:left;font-size:0.85rem;">แบบฟอร์มนี้ใช้สาธิต Validation เท่านั้น ข้อมูลจะไม่ถูกส่งหรือบันทึก</p>
           <div class="form-row">
-            <div class="form-group">
-              <label for="cf-name">ชื่อ-นามสกุล *</label>
-              <input type="text" id="cf-name" name="name" placeholder="กรอกชื่อของคุณ" autocomplete="name" maxlength="100" required>
-            </div>
-            <div class="form-group">
-              <label for="cf-email">อีเมล *</label>
-              <input type="email" id="cf-email" name="email" placeholder="example@email.com" autocomplete="email" maxlength="254" required>
-            </div>
+            <div class="form-group"><label for="cf-name">ชื่อ-นามสกุล *</label><input type="text" id="cf-name" name="name" placeholder="กรอกชื่อของคุณ" autocomplete="name" maxlength="100" required></div>
+            <div class="form-group"><label for="cf-email">อีเมล *</label><input type="email" id="cf-email" name="email" placeholder="example.com" autocomplete="email" maxlength="254" required></div>
           </div>
-          <div class="form-group">
-            <label for="cf-subject">หัวข้อ</label>
-            <select id="cf-subject" name="subject">
-              <option value="">-- เลือกหัวข้อ --</option>
-              <option>แนะนำสถานที่ท่องเที่ยว</option>
-              <option>รายงานข้อมูลผิดพลาด</option>
-              <option>ความร่วมมือ / สปอนเซอร์</option>
-              <option>สอบถามข้อมูลทั่วไป</option>
-              <option>อื่นๆ</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="cf-message">ข้อความ *</label>
-            <textarea id="cf-message" name="message" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..." maxlength="1000" required></textarea>
-          </div>
-          <button class="form-submit" type="submit">
-            <i class="fas fa-paper-plane"></i> ส่งข้อความ
-          </button>
+          <div class="form-group"><label for="cf-subject">หัวข้อ</label><select id="cf-subject" name="subject"><option value="">-- เลือกหัวข้อ --</option><option>แนะนำสถานที่ท่องเที่ยว</option><option>รายงานข้อมูลผิดพลาด</option><option>ข้อเสนอแนะเกี่ยวกับเว็บไซต์</option><option>อื่นๆ</option></select></div>
+          <div class="form-group"><label for="cf-message">ข้อความ *</label><textarea id="cf-message" name="message" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..." maxlength="1000" required></textarea></div>
+          <button class="form-submit" type="submit"><i class="fas fa-check-circle"></i> ตรวจสอบข้อมูล</button>
         </form>
       </div>
     </div>
   </section>
-
-  <!-- MAP & SOCIAL MEDIA -->
-  <section class="section-alt section">
-    <div class="container">
-      <div class="contact-map-grid">
-
-        <!-- แผนที่จริง -->
-        <div class="fade-in">
-          <h3 style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);margin-bottom:16px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--teal-mid);"></i>แผนที่อ้างอิงการท่องเที่ยว</h3>
-          <div style="background:var(--white);border-radius:var(--radius);height:280px;overflow:hidden;box-shadow:var(--shadow-sm);">
-            <iframe
-              title="แผนที่การท่องเที่ยวแห่งประเทศไทย"
-              src="https://www.google.com/maps?q=Tourism+Authority+of+Thailand+Bangkok&output=embed"
-              width="100%"
-              height="280"
-              style="border:0;display:block;"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-
-        <!-- Social Media -->
-        <div class="fade-in">
-          <h3 style="font-family:'Kanit',sans-serif;font-size:1.1rem;font-weight:700;color:var(--teal-deep);margin-bottom:16px;display:flex;align-items:center;gap:8px;"><i class="fas fa-share-alt" style="color:var(--teal-mid);"></i>ติดตามเราบนโซเชียลมีเดีย</h3>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-facebook-f" style="font-size:1.6rem;color:#1877f2;"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">Facebook</span>
-            </a>
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-instagram" style="font-size:1.6rem;color:#c13584;"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">Instagram</span>
-            </a>
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-youtube" style="font-size:1.6rem;color:#ff0000;"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">YouTube</span>
-            </a>
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-tiktok" style="font-size:1.6rem;color:var(--text-dark);"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">TikTok</span>
-            </a>
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-line" style="font-size:1.6rem;color:#06c755;"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">LINE</span>
-            </a>
-            <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 12px;background:var(--white);border-radius:var(--radius-sm);text-decoration:none;box-shadow:var(--shadow-sm);transition:var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
-              <i class="fab fa-twitter" style="font-size:1.6rem;color:#1da1f2;"></i>
-              <span style="font-size:0.78rem;color:var(--text-mid);font-weight:500;">Twitter / X</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
 </div>
 
 <!-- ===================== MODAL ===================== -->
@@ -1232,7 +812,7 @@ Discover The Land Of Smiles</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีสารสนเทศ</span>
+      <span>© 2026 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีธุรกิจดิจิทัล</span>
       <span>สร้างด้วยใจในประเทศไทย ❤️</span>
     </div>
   </div>

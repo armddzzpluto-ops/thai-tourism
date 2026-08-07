@@ -162,47 +162,71 @@ function renderHomeGalleryPreview() {
       </button>`;
   }).join('');
 }
-function toPromoProvinceSlug(value) {
+function toDestinationSlug(value) {
   return String(value || '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
 
-function hydratePromotionCardsFromSharedData() {
-  const cards = document.querySelectorAll('.dest-card[data-promo-province]');
+function getDestinationBySlug(slug) {
+  return destinations.find(item =>
+    (item.provinceSlug || item.slug || toDestinationSlug(item.province || item.name)) === slug
+  );
+}
 
-  cards.forEach(card => {
-    const provinceSlug = card.getAttribute('data-promo-province');
-    if (!provinceSlug) return;
+function renderCrossPageDestinationGrids() {
+  const configured = Array.isArray(window.CROSS_PAGE_DESTINATION_SLUGS)
+    ? window.CROSS_PAGE_DESTINATION_SLUGS
+    : [];
+  const selected = configured.map(getDestinationBySlug).filter(Boolean);
+  const featured = selected.slice(0, 3);
+  const byRegion = [...new Set(destinations.map(item => item.region))]
+    .map(region => selected.find(item => item.region === region) || destinations.find(item => item.region === region))
+    .filter(Boolean);
 
-    const destination = destinations.find(item => {
-      const destinationSlug = item.provinceSlug || item.slug ||
-        toPromoProvinceSlug(item.province || item.name);
-      return destinationSlug === provinceSlug;
-    });
+  const grids = [
+    ['home-trip-grid', featured],
+    ['promotion-featured-grid', featured],
+    ['promotion-region-grid', byRegion]
+  ];
 
-    if (!destination) {
-      console.warn(`Promotion destination not found: ${provinceSlug}`);
-      return;
-    }
-
-    const image = card.querySelector('.card-img-wrap img');
-    const imageSource = destination.heroImage || destination.img;
-
-    if (image && imageSource) {
-      image.src = imageSource;
-      image.alt = destination.caption || `${destination.name} ${destination.province || ''}`.trim();
-    }
-
-    const regionElement = card.querySelector('.card-region');
-
-    if (regionElement) {
-      regionElement.textContent =
-        `${destination.province || destination.name} - ` +
-        normalizeRegionLabel(destination.region);
-    }
+  grids.forEach(([id, items]) => {
+    const container = document.getElementById(id);
+    if (!container) return;
+    container.innerHTML = items.map(item => renderCard(item, id)).join('');
+    container.dataset.rendered = 'true';
   });
+}
+
+function renderDataCoverage() {
+  const uniqueRegions = new Set(destinations.map(item => item.region).filter(Boolean));
+  const curatedCount = destinations.filter(item => item.galleryCurated === true).length;
+  const stats = [
+    ['fa-map-marked-alt', destinations.length, window.I18N?.t('dashboard.destinations') || 'จังหวัดในฐานข้อมูล'],
+    ['fa-images', galleryImages.length, window.I18N?.t('dashboard.images') || 'ภาพที่เชื่อมกับสถานที่'],
+    ['fa-circle-check', curatedCount, window.I18N?.t('dashboard.curated') || 'จังหวัดที่คัดภาพแล้ว'],
+    ['fa-layer-group', uniqueRegions.size, window.I18N?.t('dashboard.regions') || 'ภูมิภาคที่ครอบคลุม']
+  ];
+  const container = document.getElementById('dashboard-stats');
+  if (container) {
+    container.innerHTML = stats.map(([icon, value, label]) => `
+      <article class="dash-stat" data-source="destinations">
+        <div class="dash-icon"><i class="fas ${icon}"></i></div>
+        <div><div class="dash-num">${value}</div><div class="dash-label">${label}</div></div>
+      </article>`).join('');
+  }
+
+  const aboutDestinations = document.getElementById('about-destination-count');
+  const aboutRegions = document.getElementById('about-region-count');
+  const contactScope = document.getElementById('contact-data-scope');
+  if (aboutDestinations) aboutDestinations.textContent = String(destinations.length);
+  if (aboutRegions) aboutRegions.textContent = String(uniqueRegions.size);
+  if (contactScope) {
+    contactScope.textContent = window.I18N?.getLanguage() === 'en'
+      ? `${destinations.length} provinces`
+      : `${destinations.length} จังหวัด`;
+  }
 }
 window.__hydrateTravelData = function hydrateTravelData() {
   if (Array.isArray(window.DESTINATIONS) && window.DESTINATIONS.length) {
@@ -227,7 +251,11 @@ window.__hydrateTravelData = function hydrateTravelData() {
   }
 
   renderHomeGalleryPreview();
-  hydratePromotionCardsFromSharedData();
+  renderCrossPageDestinationGrids();
+  renderDataCoverage();
+  if (currentPage === 'dashboard' && typeof window.Chart === 'function') {
+    chartsInit = initCharts() !== false;
+  }
 };
 // ===== STATE =====
 let favorites = [];
@@ -279,9 +307,6 @@ function toggleTheme() {
 // ===== RENDER FUNCTIONS =====
 function renderCard(d, containerId) {
   const isFav = favorites.includes(d.id);
-  const rating = Number(d.rating) || 0;
-  const reviews = Number(d.reviews) || 0;
-  const stars = '★'.repeat(Math.floor(rating)) + (rating % 1 >= 0.5 ? '½' : '');
   const regionLabel = normalizeRegionLabel(d.region);
   const imageSource = d.heroImage || d.img || 'assets/images/destinations/bangkok.webp';
 
@@ -313,8 +338,8 @@ function renderCard(d, containerId) {
         <p class="card-desc">${d.desc}</p>
         <div class="card-footer">
           <div class="card-rating">
-            <span class="stars" aria-hidden="true">${stars}</span>
-            <span>${rating.toFixed(1)} (${reviews.toLocaleString()})</span>
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <span>${d.province || d.name}</span>
           </div>
           <button class="card-cta" type="button" onclick="openModal(${d.id})">${window.I18N?.getLanguage() === 'en' ? 'Details' : 'รายละเอียด'}</button>
         </div>
@@ -353,11 +378,7 @@ function matchesDestinationSearch(destination, query) {
 }
 
 function getFeaturedDestinations(limit = 6) {
-  const sorted = [...destinations].sort((a, b) => {
-    const ratingDifference = (Number(b.rating) || 0) - (Number(a.rating) || 0);
-    if (ratingDifference !== 0) return ratingDifference;
-    return (Number(b.reviews) || 0) - (Number(a.reviews) || 0);
-  });
+  const sorted = [...destinations].sort((a, b) => Number(a.id) - Number(b.id));
 
   const regionOrder = ['north', 'central', 'northeast', 'east', 'south'];
   const selected = [];
@@ -532,7 +553,7 @@ function openModal(id) {
     <div class="modal-info-item"><i class="fas fa-thermometer-half"></i> ${tr('dialog.temperature', 'อุณหภูมิ')}: ${d.weather}</div>
     <div class="modal-info-item"><i class="fas fa-calendar-alt"></i> ${tr('dialog.bestTime', 'ช่วงเวลาดีที่สุด')}: ${d.best}</div>
     <div class="modal-info-item"><i class="fas fa-road"></i> ${tr('dialog.distance', 'ระยะทาง')}: ${d.distance}</div>
-    <div class="modal-info-item"><i class="fas fa-star"></i> ${tr('dialog.rating', 'คะแนน')}: ${d.rating}/5.0</div>
+    <div class="modal-info-item"><i class="fas fa-layer-group"></i> ${tr('dashboard.regions', 'ภูมิภาคที่ครอบคลุม')}: ${normalizeRegionLabel(d.region)}</div>
     <div class="modal-info-item"><i class="fas fa-map-location-dot"></i> <a href="${d.googleMaps}" target="_blank" rel="noopener noreferrer">${tr('dialog.maps', 'แผนที่ Google Maps')}</a></div>
     <div class="modal-info-item"><i class="fas fa-globe"></i> <a href="${d.officialWebsite}" target="_blank" rel="noopener noreferrer">${tr('dialog.official', 'เว็บไซต์การท่องเที่ยวทางการ')}</a></div>`;
 
@@ -886,27 +907,37 @@ function submitContact(event) {
 
 // ===== CHARTS =====
 function initCharts() {
-  if (typeof window.Chart === 'undefined') {
-    console.warn('Chart.js is unavailable; dashboard charts were skipped.');
+  if (typeof window.Chart === "undefined") {
+    console.warn("Chart.js is unavailable; dashboard charts were skipped.");
     return false;
   }
 
-  const teal = '#1A7A8A';
-  const gold = '#C9A84C';
-  const coral = '#E8694A';
-  const tealL = '#2EADC0';
-  const isEnglish = document.documentElement.lang === 'en';
-  const months = isEnglish ? ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] : ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+  const colors = ["#1A7A8A", "#C9A84C", "#E8694A", "#2EADC0", "#8FAAB2"];
+  const regionOrder = ["north", "central", "northeast", "east", "south"];
+  const regionRows = regionOrder.map(region => {
+    const items = destinations.filter(item => item.region === region);
+    return {
+      label: normalizeRegionLabel(region),
+      destinations: items.length,
+      images: items.reduce((total, item) => total + (Array.isArray(item.galleryImages) ? item.galleryImages.length : 0), 0)
+    };
+  });
+  const categoryCounts = new Map();
+  destinations.forEach(item => {
+    normalizeCategoryList(item).forEach(category => {
+      categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+    });
+  });
+  const categoryRows = [...categoryCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6);
 
   const createChart = (canvasId, config) => {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return null;
-
-    if (typeof window.Chart.getChart === 'function') {
-      const existing = window.Chart.getChart(canvas);
-      if (existing) existing.destroy();
+    if (typeof window.Chart.getChart === "function") {
+      window.Chart.getChart(canvas)?.destroy();
     }
-
     try {
       return new window.Chart(canvas, config);
     } catch (error) {
@@ -915,74 +946,14 @@ function initCharts() {
     }
   };
 
-  createChart('lineChart', {
-    type: 'line',
+  createChart("lineChart", {
+    type: "bar",
     data: {
-      labels: months,
+      labels: regionRows.map(row => row.label),
       datasets: [{
-        label: isEnglish ? 'Visitors (millions)' : 'จำนวนนักท่องเที่ยว (ล้านคน)',
-        data: [2.8,2.4,3.1,3.8,2.9,2.1,2.3,2.5,2.7,4.2,4.8,4.6],
-        borderColor: teal,
-        backgroundColor: 'rgba(26,122,138,0.08)',
-        borderWidth: 2.5,
-        pointRadius: 5,
-        pointBackgroundColor: teal,
-        tension: 0.4,
-        fill: true
-      }, {
-        label: isEnglish ? 'Previous year' : 'ปีก่อนหน้า',
-        data: [2.2,2.0,2.7,3.2,2.5,1.8,2.0,2.2,2.4,3.8,4.2,4.1],
-        borderColor: gold,
-        backgroundColor: 'transparent',
-        borderWidth: 2,
-        pointRadius: 4,
-        borderDash: [5,5],
-        tension: 0.4
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: { legend: { position: 'top' } },
-      scales: {
-        y: { beginAtZero: false, grid: { color: 'rgba(0,0,0,0.05)' } },
-        x: { grid: { display: false } }
-      }
-    }
-  });
-
-  createChart('doughnutChart', {
-    type: 'doughnut',
-    data: {
-      labels: isEnglish ? ['South','Central','North','Northeast','East'] : ['ภาคใต้','ภาคกลาง','ภาคเหนือ','ภาคอีสาน','ภาคตะวันออก'],
-      datasets: [{
-        data: [42,28,18,7,5],
-        backgroundColor: [teal,gold,coral,tealL,'#8FAAB2'],
-        borderWidth: 2,
-        borderColor: '#fff'
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: { padding: 16, font: { family: 'Sarabun' } }
-        }
-      },
-      cutout: '65%'
-    }
-  });
-
-  createChart('barChart', {
-    type: 'bar',
-    data: {
-      labels: isEnglish ? ['Bangkok','Phuket','Chiang Mai','Pattaya','Krabi','Koh Samui','Hua Hin','Kanchanaburi'] : ['กรุงเทพฯ','ภูเก็ต','เชียงใหม่','พัทยา','กระบี่','เกาะสมุย','หัวหิน','กาญจนบุรี'],
-      datasets: [{
-        label: isEnglish ? 'Visitors (millions)' : 'ผู้เยี่ยมชม (ล้านคน)',
-        data: [22.5,14.2,11.8,8.4,6.9,5.3,4.1,3.7],
-        backgroundColor: [teal,gold,coral,tealL,teal,gold,coral,tealL],
+        label: window.I18N?.t("dashboard.destinations") || "จังหวัดในฐานข้อมูล",
+        data: regionRows.map(row => row.destinations),
+        backgroundColor: colors,
         borderRadius: 8,
         borderSkipped: false
       }]
@@ -991,10 +962,46 @@ function initCharts() {
       responsive: true,
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
-      scales: {
-        y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } },
-        x: { grid: { display: false }, ticks: { font: { family: 'Sarabun' } } }
-      }
+      scales: { y: { beginAtZero: true, ticks: { precision: 0 } } }
+    }
+  });
+
+  createChart("doughnutChart", {
+    type: "doughnut",
+    data: {
+      labels: categoryRows.map(([category]) => category),
+      datasets: [{
+        data: categoryRows.map(([, count]) => count),
+        backgroundColor: categoryRows.map((_, index) => colors[index % colors.length]),
+        borderWidth: 2,
+        borderColor: "#fff"
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: "bottom", labels: { padding: 16, font: { family: "Sarabun" } } } },
+      cutout: "65%"
+    }
+  });
+
+  createChart("barChart", {
+    type: "bar",
+    data: {
+      labels: regionRows.map(row => row.label),
+      datasets: [{
+        label: window.I18N?.t("dashboard.images") || "ภาพที่เชื่อมกับสถานที่",
+        data: regionRows.map(row => row.images),
+        backgroundColor: colors,
+        borderRadius: 8,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, ticks: { precision: 0 } } }
     }
   });
 

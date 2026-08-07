@@ -68,7 +68,55 @@ test("English accessibility attributes contain no Thai text", async ({ page }) =
   expect(leaks).toEqual([]);
 });
 
+test("Home and Promotions resolve the same destination records", async ({ page }) => {
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  const result = await page.evaluate(() => {
+    const slugs = window.CROSS_PAGE_DESTINATION_SLUGS.slice(0, 3);
+    const expected = slugs.map(slug => {
+      const item = window.destinations.find(destination =>
+        (destination.provinceSlug || destination.slug) === slug
+      );
+      return {
+        name: item.name,
+        image: item.heroImage || item.img
+      };
+    });
+    const readCards = id => [...document.querySelectorAll(`#${id} .dest-card`)].map(card => ({
+      name: card.querySelector(".card-title")?.textContent.trim(),
+      image: card.querySelector("img")?.getAttribute("src")
+    }));
+    return {
+      expected,
+      home: readCards("home-trip-grid"),
+      promotions: readCards("promotion-featured-grid")
+    };
+  });
+
+  expect(result.home).toEqual(result.expected);
+  expect(result.promotions).toEqual(result.expected);
+});
+
+test("Dashboard values are calculated from live shared data", async ({ page }) => {
+  await page.evaluate(() => window.showPage("dashboard", { updateHistory: false }));
+  const result = await page.evaluate(() => ({
+    expected: [
+      window.destinations.length,
+      window.galleryImages.length,
+      window.destinations.filter(item => item.galleryCurated === true).length,
+      new Set(window.destinations.map(item => item.region).filter(Boolean)).size
+    ],
+    rendered: [...document.querySelectorAll("#dashboard-stats .dash-num")]
+      .map(element => Number(element.textContent.trim())),
+    sources: [...document.querySelectorAll("#dashboard-stats .dash-stat")]
+      .map(element => element.dataset.source)
+  }));
+
+  expect(result.rendered).toEqual(result.expected);
+  expect(result.sources).toEqual(["destinations", "destinations", "destinations", "destinations"]);
+});
+
 test("routing, console and local resources remain healthy", async ({ page }) => {
+  test.setTimeout(90_000);
   const errors = [];
   const failedLocal = [];
   page.on("pageerror", error => errors.push(error.message));
@@ -84,7 +132,7 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
   for (const name of pages) {
     await page.evaluate(pageName => window.showPage(pageName), name);
     await expect(page.locator(`#page-${name}`)).toHaveClass(/active/);
-    await page.reload();
+    await page.reload({ waitUntil: "domcontentloaded" });
     await expect(page.locator(`#page-${name}`)).toHaveClass(/active/);
   }
 

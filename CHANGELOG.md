@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-07 — Phase 3 cross-page data
+- Replaced hardcoded Home and Promotions cards with shared destination records and one renderer.
+- Rebuilt Dashboard metrics and charts from the live 77-province destination/gallery dataset.
+- Removed fabricated weather, traveler reviews, promotion prices, tourism totals, ratings and review counts.
+- Removed placeholder team, adviser, phone, address, office and social-media content.
+- Kept only the verified GitHub repository as the project contact channel.
+- Added static and Playwright regression checks for cross-page record identity and derived dashboard values.
+
 ## 2026-08-07 — Repository cleanup
 - Removed 247 proven-unused files and reduced the tracked working tree from about 290 MB to 72 MB.
 - Removed legacy JavaScript bundles, checkpoints, terminal probes and duplicate status documents.
