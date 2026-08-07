@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
     const url = request.url();
     if (url.startsWith("http://127.0.0.1:4173")) return route.continue();
     if (request.resourceType() === "document") return route.continue();
-    return route.abort();
+    return route.fulfill({ status: 204, body: "" });
   });
   await page.addInitScript(() => {
     window.Chart = class {
