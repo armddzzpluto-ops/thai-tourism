@@ -151,8 +151,9 @@ test("province and verified attraction records remain separate", async ({ page }
 
   await page.evaluate(() => window.openModal(5));
   await expect(page.locator("#modal-info")).toContainText("พระบรมมหาราชวัง");
-  await expect(page.locator("#modal-info a[href*='google.com/maps/search']")).toHaveCount(2);
+  await expect(page.locator("#modal-info a[href*='google.com/maps/search']")).toHaveCount(1);
   await expect(page.locator("#modal-info a[href*='agoda.com/search']")).toHaveCount(1);
+  await expect(page.locator("#modal-info .modal-info-item")).toHaveCount(3);
 
   await page.evaluate(() => window.openModal(6));
   await expect(page.locator("#modal-info")).toContainText("กำลังรอตรวจสอบ");

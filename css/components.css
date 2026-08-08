@@ -822,9 +822,8 @@ html[data-theme="dark"] .mobile-menu a {
 }
 
 .modal-info {
-  display: flex;
-  gap: var(--space-xl);
-  flex-wrap: wrap;
+  display: grid;
+  gap: var(--space-md);
   margin: var(--space-xl) 0;
   padding: var(--space-xl);
   background: var(--color-bg-secondary);
@@ -841,6 +840,34 @@ html[data-theme="dark"] .mobile-menu a {
 }
 
 .modal-info-item i { color: var(--color-accent); }
+
+.modal-info-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.modal-info-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 999px;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-size: var(--type-caption);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.modal-info-actions a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
 
 .modal-close {
   position: absolute;
