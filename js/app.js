@@ -373,7 +373,7 @@ function renderCard(d, containerId) {
             <i class="fas fa-location-dot" aria-hidden="true"></i>
             <span>${d.province || d.name}</span>
           </div>
-          <button class="card-cta" type="button" onclick="openModal(${d.id})">${window.I18N?.getLanguage() === 'en' ? 'Details' : 'รายละเอียด'}</button>
+          <a class="card-cta" href="destinations/${d.provinceSlug || d.slug}/">${window.I18N?.getLanguage() === 'en' ? 'Details' : 'รายละเอียด'}</a>
         </div>
       </div>
     </article>`;

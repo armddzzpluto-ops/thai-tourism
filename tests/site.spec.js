@@ -116,6 +116,25 @@ test("Budget calculator uses user inputs and articles resolve shared destination
   await expect(page.locator("#page-promotions")).not.toContainText("Sample price");
 });
 
+test("destination cards use real, refreshable and navigable URLs", async ({ page }) => {
+  await page.goto("/#destinations");
+  const detailLink = page.locator("#dest-cards .card-cta").first();
+  await expect(detailLink).toHaveAttribute("href", /^destinations\/[a-z0-9-]+\/$/);
+  await detailLink.click();
+  await expect(page).toHaveURL(/\/destinations\/[a-z0-9-]+\/$/);
+  await expect(page.locator("h1")).toBeVisible();
+  await expect(page.locator('link[rel="canonical"]')).toHaveCount(1);
+  await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(1);
+  const detailUrl = page.url();
+  await page.reload();
+  await expect(page).toHaveURL(detailUrl);
+  await expect(page.locator("h1")).toBeVisible();
+  await page.goBack();
+  await expect(page).toHaveURL(/#destinations$/);
+  await page.goForward();
+  await expect(page).toHaveURL(/\/destinations\/[a-z0-9-]+\/$/);
+});
+
 test("Dashboard values are calculated from live shared data", async ({ page }) => {
   await page.evaluate(() => window.showPage("dashboard", { updateHistory: false }));
   const result = await page.evaluate(() => ({

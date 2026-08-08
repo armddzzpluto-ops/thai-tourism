@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-08 — Real destination detail URLs
+- Added pre-rendered `/destinations/<province-slug>/` pages for all 77 province records.
+- Changed destination cards and discovery widgets to navigate to shareable URLs instead of relying only on a modal.
+- Added canonical, Open Graph, JSON-LD and sitemap metadata for search discovery.
+- Added bilingual detail controls, saved-theme support and direct URL/refresh/Back/Forward tests.
+
 ## 2026-08-08 — User-input trip budget calculator
 - Replaced all fabricated promotion cards and provider-style prices with a practical budget calculator.
 - Calculates accommodation, food, transport, activities and other costs from user-entered values only.

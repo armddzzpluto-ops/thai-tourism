@@ -16,6 +16,7 @@
 - [x] Replace sample promotions with a user-input trip budget calculator
 - [x] Group quality, curation and maintenance tooling into responsibility-based script folders
 - [x] Remove bilingual mobile overflow, normalize route headings and touch targets, and support reduced motion
+- [x] Generate real detail URLs for all 77 destinations with canonical, Open Graph, JSON-LD and sitemap coverage
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

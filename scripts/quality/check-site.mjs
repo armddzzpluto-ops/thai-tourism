@@ -10,6 +10,7 @@ const warnings = [];
 
 const expectedScriptLayout = [
   "scripts/quality/check-site.mjs",
+  "scripts/build/generate-destination-pages.mjs",
   "scripts/curation/curate-province-gallery-batch.ps1",
   "scripts/curation/sync-image-curation.mjs",
   "scripts/maintenance/update-ai-memory.mjs"
@@ -262,6 +263,24 @@ try {
 
     const selectedSlugs = context.window.CROSS_PAGE_DESTINATION_SLUGS;
     const destinationSlugs = new Set(destinations.map(item => item.provinceSlug || item.slug));
+    const generatedDetailPages = destinations.filter(item =>
+      fs.existsSync(path.join(root, "destinations", item.provinceSlug || item.slug, "index.html"))
+    );
+    if (generatedDetailPages.length !== destinations.length) {
+      failures.push(`generated destination pages are incomplete: ${generatedDetailPages.length}/${destinations.length}`);
+    }
+    for (const destination of destinations) {
+      const slug = destination.provinceSlug || destination.slug;
+      const detailPath = path.join(root, "destinations", slug, "index.html");
+      if (!fs.existsSync(detailPath)) continue;
+      const detailHtml = fs.readFileSync(detailPath, "utf8");
+      if (!detailHtml.includes(`<link rel="canonical" href="https://armddzzpluto-ops.github.io/thai-tourism/destinations/${slug}/">`)
+        || !detailHtml.includes('type="application/ld+json"')
+        || !detailHtml.includes('property="og:title"')) {
+        failures.push(`destination detail metadata is incomplete: ${slug}`);
+      }
+    }
+    if (!fs.existsSync(path.join(root, "sitemap.xml"))) failures.push("sitemap.xml is missing");
     if (!Array.isArray(selectedSlugs) || selectedSlugs.length < 5) {
       failures.push("cross-page destination selection must contain at least five slugs");
     } else {
