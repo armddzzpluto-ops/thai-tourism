@@ -518,7 +518,7 @@ html[data-theme="dark"] img{filter:brightness(.92) contrast(1.03)}
 .hero{position:relative;height:100vh;min-height:660px;display:flex;align-items:center;overflow:hidden}
 .hero-bg{
   position:absolute;inset:0;
-  background:url('../assets/images/destinations/bangkok.webp') center/cover no-repeat;
+  background:url('../assets/images/provinces/bangkok/hero.webp') center/cover no-repeat;
   transition:transform 6s ease;will-change:transform;
 }
 .hero-overlay{position:absolute;inset:0;background:var(--g-hero)}
@@ -918,18 +918,6 @@ html[data-theme="dark"] img{filter:brightness(.92) contrast(1.03)}
   background:var(--glass);border:1px solid var(--glass-b);
   font-size: var(--type-caption);color:var(--text2);
 }
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
-.team-card{
-  background:var(--glass);border:1px solid var(--glass-b);
-  border-radius:var(--r2);padding:28px;text-align:center;
-  transition:transform var(--t2),border-color var(--t2);
-}
-.team-card:hover{transform:translateY(-5px);border-color:var(--accent-30)}
-.team-avatar{width:88px;height:88px;border-radius:50%;object-fit:cover;margin: 0 auto var(--space-lg);border:3px solid var(--accent-30)}
-.team-name{font-size: var(--type-body);font-weight: var(--fw-bold);margin-bottom: var(--space-xs)}
-.team-role{font-size:.78rem;color:var(--accent)}
-.team-id{font-size: var(--type-caption);color:var(--text3);margin-top: var(--space-xs)}
-
 /* ─── 17. CONTACT ───────────────────────────────────────── */
 .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
 .contact-lede h3{font-size: var(--type-h2);font-weight: var(--fw-bold);margin-bottom: var(--space-lg)}
@@ -1239,24 +1227,6 @@ select:focus-visible,
 .reveal-zoom{opacity:0;transform:scale(.88);transition:opacity .6s var(--e),transform .6s var(--e)}
 .reveal-zoom.visible{opacity:1;transform:scale(1)}
 
-/* ─── 34. WEATHER WIDGET ────────────────────────────────── */
-.weather-unit-toggle{display:flex;justify-content:center;gap: var(--space-sm);margin-bottom: var(--space-2xl)}
-.wu-btn{padding:7px 18px;border-radius:50px;background:var(--glass);border:1px solid var(--glass-b);font-size:.8rem;font-weight:600;color:var(--text2);transition:all .2s}
-.wu-btn.active{background:var(--g1);color:var(--color-text-inverse);border-color:transparent}
-.weather-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.weather-card{
-  background:var(--glass);border:1px solid var(--glass-b);border-radius:var(--r2);
-  padding:24px 18px;text-align:center;transition:transform var(--t2),border-color var(--t2);
-}
-.weather-card:hover{transform:translateY(-6px);border-color:var(--accent-25)}
-.weather-city{font-weight:700;font-size:.98rem}
-.weather-prov{font-size: var(--type-caption);color:var(--text3);margin-bottom: var(--space-lg)}
-.weather-icon{font-size:2.7rem;display:inline-block;margin-bottom: var(--space-md);animation:floatY 3.2s ease-in-out infinite}
-.weather-temp{font-family:'Kanit',sans-serif;font-size: var(--type-h2);font-weight: var(--fw-black);line-height: var(--lh-tight);margin-bottom: var(--space-sm)}
-.weather-desc{font-size: var(--type-caption);color:var(--text2);margin-bottom: var(--space-lg)}
-.weather-meta{display:flex;justify-content:center;gap:16px;font-size:.74rem;color:var(--text3);border-top:1px solid var(--glass-b);padding-top:13px}
-.weather-meta span{display:flex;align-items:center;gap:5px}
-
 /* ─── 35. INTERACTIVE MAP ───────────────────────────────── */
 .map-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
 .map-visual{display:flex;justify-content:center;position:relative}
@@ -1287,31 +1257,6 @@ select:focus-visible,
 .mr-count{font-size:.78rem;color:var(--accent);font-weight:700;border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);padding:4px 11px;border-radius:50px}
 .map-results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap: var(--space-lg);margin-top: var(--space-2xl)}
 
-/* ─── 36. TRAVEL PLANNER ────────────────────────────────── */
-.planner-form-card{background:var(--glass);border:1px solid var(--glass-b);border-radius:var(--r2);padding:34px;max-width:760px;margin:0 auto}
-.planner-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
-.style-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:11px;margin-top:8px}
-.style-opt{padding:16px 10px;text-align:center;border-radius:var(--r);background:var(--glass);border:1.5px solid var(--glass-b);cursor:pointer;transition:all .2s var(--e);font-size:.82rem;color:var(--text2)}
-.style-opt .so-ico{font-size:1.6rem;display:block;margin-bottom:7px}
-.style-opt:hover{border-color:var(--accent-30)}
-.style-opt.selected{border-color:var(--accent);border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);color:var(--accent)}
-.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
-.budget-opt{padding:13px;text-align:center;border-radius:var(--r);background:var(--glass);border:1.5px solid var(--glass-b);cursor:pointer;transition:all .2s;font-size:.84rem}
-.budget-opt.selected{border-color:var(--gold);background:var(--gold-10);color:var(--gold)}
-.itinerary-result{margin-top:40px;display:none}
-.itinerary-result.show{display:block;animation:fadeUp .55s var(--e)}
-.itin-summary{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:26px;padding:20px 24px;background:var(--glass-h);border:1px solid var(--glass-b);border-radius:var(--r2)}
-.itin-summary-item b{display:block;font-size: var(--type-h3);font-family:'Kanit',sans-serif;color:var(--accent)}
-.itin-summary-item span{font-size:.78rem;color:var(--text3)}
-.itin-day{background:var(--glass);border:1px solid var(--glass-b);border-left:3px solid var(--accent);border-radius:var(--r);padding:22px;margin-bottom:15px}
-.itin-day-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-.itin-day-num{font-family:'Kanit',sans-serif;font-weight: var(--fw-black);color:var(--accent);font-size: var(--type-small);letter-spacing:.07em;text-transform:uppercase}
-.itin-day-theme{font-size:.78rem;color:var(--text3)}
-.itin-slot{display:flex;gap:16px;padding:10px 0;border-top:1px dashed var(--glass-b)}
-.itin-slot:first-of-type{border-top:none;padding-top:0}
-.itin-time{font-size:.78rem;color:var(--gold);min-width:62px;font-weight:700}
-.itin-activity{font-size:.88rem;color:var(--text2);line-height:1.6}
-
 /* ─── 37. FAQ ACCORDION ─────────────────────────────────── */
 .faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .faq-item{background:var(--glass);border:1px solid var(--glass-b);border-radius:var(--r);overflow:hidden;transition:border-color .25s}
@@ -1322,29 +1267,10 @@ select:focus-visible,
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--e)}
 .faq-a-inner{padding:0 22px 20px;color:var(--text2);font-size:.86rem;line-height:1.85}
 
-/* ─── 38. TESTIMONIAL SLIDER ────────────────────────────── */
-.test-slider{position:relative;max-width:1180px;margin:0 auto;overflow:hidden}
-.test-track{display:flex;transition:transform .55s var(--e)}
-.test-slide{min-width:33.333%;padding:0 11px;flex-shrink:0}
-.test-arrows{display:flex;justify-content:center;gap:13px;margin-top:24px}
-.test-arrow{
-  width:42px;height:42px;border-radius:50%;background:var(--glass);border:1px solid var(--glass-b);
-  display:flex;align-items:center;justify-content:center;color:var(--text2);transition:all .2s;cursor:pointer;
-}
-.test-arrow:hover{background:var(--g1);color:var(--color-text-inverse);border-color:transparent}
-.test-dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
-.test-dot{width:8px;height:8px;border-radius:50%;background:var(--glass-b);cursor:pointer;transition:all .25s}
-.test-dot.active{background:var(--accent);width:26px;border-radius:5px}
-@media(max-width:900px){.test-slide{min-width:50%}}
-@media(max-width:600px){.test-slide{min-width:100%}}
-
 /* ─── 39. BLOG SECTION ──────────────────────────────────── */
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
-.blog-card{background:var(--glass);border:1px solid var(--glass-b);border-radius:var(--r2);overflow:hidden;cursor:pointer;transition:transform var(--t2),box-shadow var(--t2),border-color var(--t2)}
-.blog-card:hover{transform:translateY(-7px);box-shadow:var(--s2);border-color:var(--accent-20)}
 .blog-img{height:185px;overflow:hidden;position:relative}
 .blog-img img{width:100%;height:100%;object-fit:cover;transition:transform var(--t3) var(--e)}
-.blog-card:hover .blog-img img{transform:scale(1.1)}
 .blog-readtime{position:absolute;bottom:11px;right:11px;background:var(--scrim);backdrop-filter:blur(6px);color:var(--color-text-inverse);font-size:.7rem;padding:4px 10px;border-radius:50px}
 .blog-body{padding:19px}
 .blog-cat{font-size:.7rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:9px}
@@ -1384,15 +1310,12 @@ select:focus-visible,
 @media(max-width:1100px){
   .map-grid{grid-template-columns:1fr}
   .map-visual{order:-1;margin-bottom:10px}
-  .weather-grid{grid-template-columns:repeat(2,1fr)}
   .charts-grid-2{grid-template-columns:1fr}
 }
 @media(max-width:900px){
-  .planner-grid{grid-template-columns:1fr}
   .test-slide{min-width:50%}
 }
 @media(max-width:600px){
-  .weather-grid{grid-template-columns:1fr 1fr}
   .budget-grid{grid-template-columns:1fr}
   .fab-wrap{bottom:20px;right:20px}
   .back-top{bottom:20px;left:20px;width:42px;height:42px}

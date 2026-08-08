@@ -214,7 +214,7 @@ html[data-theme="dark"] .mobile-menu a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../assets/images/destinations/bangkok.webp') center/cover no-repeat;
+  background: url('../assets/images/provinces/bangkok/hero.webp') center/cover no-repeat;
   opacity: 0.32;
 }
 
@@ -2610,7 +2610,7 @@ a:focus-visible {
 
 /* ─── 51. HOMEPAGE AUDIT FIXES ─────────────────────────── */
 #page-home > .hero .hero-bg {
-  background-image: url('../assets/images/destinations/bangkok.webp');
+  background-image: url('../assets/images/provinces/bangkok/hero.webp');
   background-position: 54% center;
   will-change: auto;
 }

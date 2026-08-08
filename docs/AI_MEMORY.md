@@ -49,6 +49,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-08 · Deep safe cleanup · Removed duplicate image/data contracts, 14 legacy images, retired planner/weather/testimonial/team code and unreferenced translations; 24 browser checks passed
 - 2026-08-07 · Bilingual runtime audit · Seven routes, overlays and accessibility attributes verified in Thai and English · commit `a76c932`
 - 2026-08-07 · Repository cleanup · Removed 247 proven-unused files, aligned curation to three images and added anti-regression guards
 - 2026-08-07 · Phase 3 cross-page data · Unified page cards, derived Dashboard data, moved sample prices into shared promotion records and generated articles from destination data

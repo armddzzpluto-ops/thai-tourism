@@ -63,7 +63,7 @@ function buildGalleryFromDestinations() {
   const seen = new Set();
 
   destinations.forEach(destination => {
-    const hero = destination.heroImage || destination.img;
+    const hero = destination.heroImage;
     const gallery = Array.isArray(destination.galleryImages)
       ? destination.galleryImages
       : [];
@@ -207,7 +207,7 @@ function renderPromotionGrids() {
 
     return `<article class="dest-card" data-promotion-id="${promotion.id}" data-destination-slug="${promotion.destinationSlug}">
       <div class="card-img-wrap">
-        <img src="${destination.heroImage || destination.img}" alt="${localized(promotion.title)} — ${destination.name}" loading="lazy">
+        <img src="${destination.heroImage}" alt="${localized(promotion.title)} — ${destination.name}" loading="lazy">
         <span class="card-badge">${localized(promotion.badge)}</span>
       </div>
       <div class="card-body">
@@ -339,7 +339,7 @@ function toggleTheme() {
 function renderCard(d, containerId) {
   const isFav = favorites.includes(d.id);
   const regionLabel = normalizeRegionLabel(d.region);
-  const imageSource = d.heroImage || d.img || 'assets/images/destinations/bangkok.webp';
+  const imageSource = d.heroImage || 'assets/images/provinces/bangkok/hero.webp';
 
   return `
     <article class="dest-card fade-in" data-name="${d.name}" data-region="${d.region}" data-category="${d.category.join(',')}">
@@ -537,7 +537,7 @@ function openModal(id) {
 
   const modalImages = Array.isArray(d.galleryImages) && d.galleryImages.length
     ? d.galleryImages
-    : [d.heroImage || d.img];
+    : [d.heroImage];
 
   image.src = modalImages[0];
   image.alt = d.caption || d.name;

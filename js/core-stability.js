@@ -5,7 +5,7 @@
   "use strict";
 
   const dialogIds = ["modal", "lightbox", "blog-modal"];
-  const fallbackImage = "assets/images/destinations/bangkok.webp";
+  const fallbackImage = "assets/images/provinces/bangkok/hero.webp";
 
   let activeDialog = null;
   let previousFocus = null;
