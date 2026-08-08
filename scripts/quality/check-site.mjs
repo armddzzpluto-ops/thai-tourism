@@ -8,6 +8,25 @@ const root = process.cwd();
 const failures = [];
 const warnings = [];
 
+const expectedScriptLayout = [
+  "scripts/quality/check-site.mjs",
+  "scripts/curation/curate-province-gallery-batch.ps1",
+  "scripts/curation/sync-image-curation.mjs",
+  "scripts/maintenance/update-ai-memory.mjs"
+];
+
+for (const scriptPath of expectedScriptLayout) {
+  if (!fs.existsSync(path.join(root, scriptPath))) {
+    failures.push(`project script is missing from its responsibility folder: ${scriptPath}`);
+  }
+}
+
+const looseScripts = fs.readdirSync(path.join(root, "scripts"), { withFileTypes: true })
+  .filter(entry => entry.isFile() && /\.(?:mjs|ps1)$/.test(entry.name));
+if (looseScripts.length) {
+  failures.push(`project scripts must be grouped by responsibility: ${looseScripts.map(entry => entry.name).join(", ")}`);
+}
+
 const read = relative =>
   fs.readFileSync(path.join(root, relative), "utf8").replace(/^\uFEFF/, "");
 

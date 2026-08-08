@@ -10,7 +10,7 @@ Maintain a presentation-ready, bilingual static tourism SPA covering all 77 Thai
 - `js/translations.js`: every Thai/English UI and content translation.
 - `js/i18n.js`: language runtime only; do not add copy here.
 - `js/enhancements.js`: optional UX widgets that consume current shared data.
-- `scripts/check-site.mjs`: fast structural regression checks.
+- `scripts/quality/check-site.mjs`: fast structural regression checks.
 - `tests/`: browser-level acceptance tests.
 
 ## Non-negotiable rules

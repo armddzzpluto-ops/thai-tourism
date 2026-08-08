@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-08 — Project structure organization
+- Grouped operational scripts by responsibility under `scripts/quality`, `scripts/curation` and `scripts/maintenance`.
+- Updated npm commands, GitHub Actions, documentation and generated-file ownership references to the new paths.
+- Added a scripts directory guide and a structural guard that rejects loose executable scripts.
+- Preserved browser-facing HTML, CSS, JavaScript and province asset paths to avoid unnecessary runtime churn.
+- Verified all 24 Playwright scenarios across Desktop, Notebook, Tablet and Mobile after the moves.
+
 ## 2026-08-08 — Deep safe cleanup
 - Removed 14 legacy destination images after migrating every runtime, placeholder and test reference to the 77-province image source.
 - Removed the duplicate `img` destination field and retained `heroImage` as the single primary-image contract.

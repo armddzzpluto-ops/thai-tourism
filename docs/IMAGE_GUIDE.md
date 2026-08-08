@@ -30,7 +30,7 @@ Prefer images from:
 - Image curation must never be performed manually when the automated pipeline is unavailable.
 - If the pipeline cannot execute: stop the batch, report the blocking issue, and do not partially curate metadata.
 - Resume curation only after the pipeline is restored.
-- The canonical pipeline is `scripts/curate-province-gallery-batch.ps1`; do not reintroduce retired download/build scripts.
+- The canonical pipeline is `scripts/curation/curate-province-gallery-batch.ps1`; do not reintroduce retired download/build scripts.
 
 Reason:
 - Prevent inconsistent province data and duplicate work.

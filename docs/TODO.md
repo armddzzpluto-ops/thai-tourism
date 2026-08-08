@@ -13,6 +13,7 @@
 - [x] Connect Home, Destinations, Promotions, Gallery and Modal to destination-owned records
 - [x] Replace simulated tourism Dashboard values with metrics derived from live site data
 - [x] Remove fabricated weather, reviews, ratings and contact/team placeholders; isolate clearly labelled sample prices in shared promotion data
+- [x] Group quality, curation and maintenance tooling into responsibility-based script folders
 
 ## Next phase
 - [ ] Verify destination-level official websites, maps and coordinates
