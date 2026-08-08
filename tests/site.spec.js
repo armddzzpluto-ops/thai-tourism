@@ -78,7 +78,7 @@ test("Promotions and articles resolve shared destination records", async ({ page
       );
       return {
         name: item.name,
-        image: item.heroImage || item.img
+        image: item.heroImage
       };
     });
     const promotionCards = [...document.querySelectorAll("#promotion-stay-grid .dest-card, #promotion-package-grid .dest-card")]
@@ -89,7 +89,7 @@ test("Promotions and articles resolve shared destination records", async ({ page
         );
         return {
           image: card.querySelector("img")?.getAttribute("src"),
-          expectedImage: destination.heroImage || destination.img,
+          expectedImage: destination.heroImage,
           hasPrice: /฿[\d,]+/.test(card.textContent)
         };
       });
@@ -98,7 +98,7 @@ test("Promotions and articles resolve shared destination records", async ({ page
         const destination = window.destinations.find(item =>
           (item.provinceSlug || item.slug) === card.dataset.destinationSlug
         );
-        return [card.querySelector("img")?.getAttribute("src"), destination.heroImage || destination.img];
+        return [card.querySelector("img")?.getAttribute("src"), destination.heroImage];
       });
     return {
       expected,

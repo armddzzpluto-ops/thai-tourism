@@ -103,6 +103,12 @@ if (!data.includes("window.PROMOTIONS =") || !data.includes("window.BLOG_DESTINA
 if (/images\.unsplash\.com/.test(data) || /const BLOG\s*=/.test(data)) {
   failures.push("legacy standalone blog content or external blog imagery remains");
 }
+if (/assets\/images\/destinations\//.test(runtimeSources)) {
+  failures.push("legacy destination image paths remain; use province hero/gallery assets");
+}
+if (/\b(?:CATEGORIES|REGIONS|TRAVEL_STYLES|BUDGET_OPTIONS|ITINERARY_BANK|MEAL_SUGGESTIONS)\b/.test(data)) {
+  failures.push("retired standalone category, region or planner data remains");
+}
 if (!app.includes("renderCrossPageDestinationGrids()")) {
   failures.push("cross-page destination grids are not rendered from shared data");
 }

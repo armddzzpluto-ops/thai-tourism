@@ -6,16 +6,13 @@
 /* ─── Theme-aware surfaces (no !important wars) ─────────── */
 html[data-theme="dark"] .quote-panel,
 html[data-theme="dark"] .random-panel,
-html[data-theme="dark"] .weather-card,
 html[data-theme="dark"] .region-explorer,
-html[data-theme="dark"] .testimonial-card,
 html[data-theme="dark"] .blog-card-enhanced,
 html[data-theme="dark"] .faq-item-enhanced,
 html[data-theme="dark"] .dest-card,
 html[data-theme="dark"] .modal,
 html[data-theme="dark"] .chart-card,
-html[data-theme="dark"] .contact-form-wrap,
-html[data-theme="dark"] .team-card {
+html[data-theme="dark"] .contact-form-wrap {
   background: var(--color-bg-tertiary);
   border-color: var(--color-border-light);
 }
@@ -261,9 +258,7 @@ html[data-theme="light"] .theme-toggle-btn {
 
 .quote-panel,
 .random-panel,
-.weather-card,
 .region-explorer,
-.testimonial-card,
 .blog-card-enhanced,
 .faq-item-enhanced {
   background: var(--color-bg-tertiary);
@@ -336,50 +331,6 @@ html[data-theme="light"] .theme-toggle-btn {
 }
 
 .mini-action-btn:hover { background: var(--color-bg-primary); }
-
-/* ─── Weather ───────────────────────────────────────────── */
-.weather-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-xl);
-}
-
-.weather-cards-grid .weather-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius);
-  padding: var(--space-xl);
-  transition: transform var(--timing-fast), border-color var(--timing-fast);
-}
-
-.weather-cards-grid .weather-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--color-border-default);
-  box-shadow: var(--shadow-sm);
-}
-
-.weather-cards-grid .weather-city {
-  color: var(--color-text-primary);
-  font-weight: var(--fw-bold);
-  font-family: 'Kanit', sans-serif;
-}
-
-.weather-cards-grid .weather-condition { color: var(--color-text-tertiary); font-size: var(--type-small); }
-
-.weather-cards-grid .weather-temp {
-  font-family: 'Kanit', sans-serif;
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin: var(--space-md) 0;
-}
-
-.weather-cards-grid .weather-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-  color: var(--color-text-secondary);
-  font-size: var(--type-caption);
-}
 
 /* ─── Region explorer ───────────────────────────────────── */
 #page-home > section.section:nth-of-type(4) > .container {
@@ -547,79 +498,6 @@ html[data-theme="light"] .theme-toggle-btn {
   color: var(--color-text-inverse);
   font-family: 'Kanit', sans-serif;
   cursor: pointer;
-}
-
-/* ─── Testimonials ──────────────────────────────────────── */
-.testimonial-slider {
-  display: grid;
-  grid-template-columns: 44px 1fr 44px;
-  gap: var(--space-md);
-  align-items: center;
-}
-
-.testimonial-window { overflow: hidden; }
-.testimonial-track { display: flex; transition: transform 0.4s ease; }
-.testimonial-slide { flex: 0 0 33.333%; padding: 0 var(--space-sm); }
-
-.testimonial-card {
-  height: 100%;
-  border-radius: var(--radius);
-  padding: var(--space-xl);
-}
-
-.testimonial-head {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-md);
-}
-
-.testimonial-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.testimonial-card .testimonial-name { color: var(--color-text-primary); font-weight: var(--fw-bold); }
-.testimonial-card .testimonial-loc { color: var(--color-text-tertiary); font-size: var(--type-caption); }
-.testimonial-card .testimonial-stars { color: var(--color-secondary); margin-bottom: var(--space-sm); }
-.testimonial-card .testimonial-text { color: var(--color-text-secondary); line-height: var(--lh-relaxed); }
-
-.slider-arrow {
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--color-border-light);
-  border-radius: 50%;
-  color: var(--color-text-primary);
-  background: var(--color-bg-tertiary);
-  cursor: pointer;
-  transition: background var(--timing-fast);
-  box-shadow: none;
-}
-
-.slider-arrow:hover { background: var(--color-bg-secondary); }
-
-.testimonial-dots {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-sm);
-  margin-top: var(--space-xl);
-}
-
-.testimonial-dots button {
-  width: 8px;
-  height: 8px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--color-text-tertiary);
-  cursor: pointer;
-  transition: width var(--transition), background var(--transition);
-}
-
-.testimonial-dots button.active {
-  width: 24px;
-  background: var(--color-accent);
 }
 
 /* ─── Blog & FAQ ────────────────────────────────────────── */
@@ -902,17 +780,12 @@ html[data-theme="light"] .theme-toggle-btn {
   .region-control-rail,
   .region-results-engine,
   .region-mini-card { grid-column: auto; }
-  .weather-cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .testimonial-slide { flex-basis: 50%; }
 }
 
 @media (max-width: 640px) {
   .theme-toggle-btn { width: 36px; height: 36px; }
   .tools-grid { gap: var(--space-lg); }
-  .weather-cards-grid { grid-template-columns: 1fr; }
-  .testimonial-slider { grid-template-columns: 1fr; }
   .slider-arrow { display: none; }
-  .testimonial-slide { flex-basis: 100%; }
   .fab-menu-wrap { right: var(--space-lg); bottom: var(--space-lg); }
   .back-to-top { right: var(--space-lg); bottom: 88px; }
   #toast-stack {
@@ -1091,24 +964,6 @@ html[data-theme="light"] .theme-toggle-btn {
   margin-top: var(--space-sm);
 }
 
-/* Home section 9: weather */
-#page-home > section.section-alt.section:nth-of-type(9) .section-header {
-  margin-bottom: var(--space-xl);
-}
-
-#page-home > section.section-alt.section:nth-of-type(9) .weather-cards-grid {
-  margin-top: var(--space-sm);
-}
-
-/* Home section 10: testimonials */
-#page-home > section.section:nth-of-type(10) .section-header {
-  margin-bottom: var(--space-xl);
-}
-
-#page-home > section.section:nth-of-type(10) .testimonial-dots {
-  margin-top: var(--space-lg);
-}
-
 /* Home section 11: blog */
 #page-home > section.section:nth-of-type(11) .section-header {
   margin-bottom: var(--space-xl);
@@ -1193,10 +1048,6 @@ html[data-theme="light"] .theme-toggle-btn {
 #page-about > section.section-alt.section:nth-of-type(4) .section-header,
 #page-about > section.section:nth-of-type(5) .section-header {
   margin-bottom: var(--space-2xl);
-}
-
-#page-about > section.section-alt.section:nth-of-type(4) .team-grid {
-  margin-top: var(--space-xl);
 }
 
 #page-about > section.section:nth-of-type(5) .fade-in[style*="display:flex;flex-wrap:wrap"] {

@@ -514,10 +514,7 @@
         : "สำรวจทะเลสวย วัดโบราณ ภูเขา วัฒนธรรม และจุดหมายปลายทางที่น่าสนใจทั่วประเทศไทย ผ่านคู่มือท่องเที่ยวดิจิทัลที่ออกแบบมาเพื่อปี 2026";
     }
     const localizedAlts = [
-      ["#page-about .about-img", "ทิวทัศน์จังหวัดเชียงใหม่ ประเทศไทย", "Chiang Mai landscape, Thailand"],
-      ['#page-about .team-avatar[alt="สมชาย"], #page-about .team-avatar[alt="Somchai"]', "สมชาย", "Somchai"],
-      ['#page-about .team-avatar[alt="สมหญิง"], #page-about .team-avatar[alt="Somying"]', "สมหญิง", "Somying"],
-      ['#page-about .team-avatar[alt="สมศักดิ์"], #page-about .team-avatar[alt="Somsak"]', "สมศักดิ์", "Somsak"]
+      ["#page-about .about-img", "ทิวทัศน์จังหวัดเชียงใหม่ ประเทศไทย", "Chiang Mai landscape, Thailand"]
     ];
     localizedAlts.forEach(([selector, thai, english]) => {
       document.querySelector(selector)?.setAttribute("alt", language === "en" ? english : thai);

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-08 — Deep safe cleanup
+- Removed 14 legacy destination images after migrating every runtime, placeholder and test reference to the 77-province image source.
+- Removed the duplicate `img` destination field and retained `heroImage` as the single primary-image contract.
+- Removed unused category, region and retired travel-planner datasets, plus the stale planner reference in FAQ copy.
+- Removed retired weather, testimonial, team and planner styles from active style layers.
+- Pruned unreferenced translation pairs and stale mock-person accessibility mappings.
+- Added static guards that reject legacy destination paths and retired standalone datasets.
+- Verified all 24 Playwright scenarios across Desktop, Notebook, Tablet and Mobile.
+
 ## 2026-08-07 — Phase 3 cross-page data
 - Replaced hardcoded Home and Promotions cards with shared destination records and one renderer.
 - Rebuilt Dashboard metrics and charts from the live 77-province destination/gallery dataset.

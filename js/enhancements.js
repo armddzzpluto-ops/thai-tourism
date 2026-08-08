@@ -40,7 +40,7 @@
         title: language === "en" ? `${item.name} destination guide` : `คู่มือเที่ยว${item.name}`,
         date: language === "en" ? item.province : `จังหวัด${item.province}`,
         read: language === "en" ? `${activities.length} highlights` : `${activities.length} ไฮไลต์`,
-        img: item.heroImage || item.img,
+        img: item.heroImage,
         excerpt: item.desc,
         body: [item.longDesc || item.desc, ...activities]
       };
