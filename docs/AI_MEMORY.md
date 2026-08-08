@@ -5,6 +5,7 @@
 - Type: Static bilingual SPA
 - Production branch: `main`
 - Current architecture policy: shell + modules + single-source data/translations
+- Destination detail policy: generate all `destinations/<province-slug>/` pages and `sitemap.xml` from shared data with `npm run build:destinations`
 
 ## Current production status
 - Seven routes: Home, Destinations, Promotions, Gallery, Dashboard, About and Contact
@@ -14,6 +15,7 @@
 - Light/Dark mode, history navigation, responsive layouts and keyboard interactions are active
 - Static GitHub Actions checks are active
 - Playwright coverage is the required browser regression layer
+- All 77 destination cards have pre-rendered, shareable detail URLs with canonical and structured metadata
 - Working tree cleanup reduced tracked content from about 290 MB to 72 MB without removing runtime-referenced assets
 - Home, Destinations, Promotions, Gallery and Modal resolve destination identity, names and images from `window.DESTINATIONS`
 - Dashboard displays dataset coverage computed from live destination/gallery records; it does not claim tourism totals

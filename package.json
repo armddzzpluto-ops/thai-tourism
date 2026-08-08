@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:destinations": "node scripts/build/generate-destination-pages.mjs",
     "check": "node scripts/quality/check-site.mjs",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",

@@ -20,6 +20,7 @@
 - `scripts/curation/curate-province-gallery-batch.ps1`: canonical Wikimedia curation pipeline
 - `scripts/curation/sync-image-curation.mjs`: metadata-to-browser curation synchronizer
 - `scripts/maintenance/`: documentation and repository housekeeping
+- `scripts/build/generate-destination-pages.mjs`: pre-renders all destination detail URLs and the sitemap from shared data
 
 ## Load order
 1. Page shell and core app definitions
@@ -41,3 +42,4 @@
 - Dashboard values and charts are derived from current destination, category, region and gallery records.
 - The static project must not present fabricated ratings, reviews, weather, people, contact channels or provider prices as real data. The budget calculator only computes values entered by the user.
 - Home destination guides resolve their copy and imagery from `DESTINATIONS`; a separate standalone blog dataset is not allowed.
+- Destination cards link to pre-rendered `destinations/<province-slug>/index.html` pages generated from `DESTINATIONS`, providing refreshable URLs and indexable metadata without duplicating authored data.

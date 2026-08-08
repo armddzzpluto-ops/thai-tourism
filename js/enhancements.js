@@ -474,7 +474,7 @@
       const pick = list[Math.floor(Math.random() * list.length)];
       if (typeof window.openModal === "function") {
         window.showPage?.("destinations");
-        requestAnimationFrame(() => window.openModal(pick.id));
+        requestAnimationFrame(() => window.location.assign(`destinations/${pick.provinceSlug || pick.slug}/`));
       }
       notify(tr("action.randomResult", `สุ่มได้: ${pick.name}`, { name: pick.name }), "success");
     };
@@ -555,7 +555,10 @@
         </div>`;
         panel.dataset.state = items.length ? "active" : "empty";
         panel.querySelectorAll("[data-destination-id]").forEach(card => {
-          card.addEventListener("click", () => window.openModal?.(Number(card.dataset.destinationId)));
+          card.addEventListener("click", () => {
+            const destination = window.DESTINATIONS?.find(item => item.id === Number(card.dataset.destinationId));
+            if (destination) window.location.assign(`destinations/${destination.provinceSlug || destination.slug}/`);
+          });
         });
         const resetButton = panel.querySelector(".region-reset-button");
         if (resetButton) {
