@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node scripts/check-site.mjs",
+    "check": "node scripts/quality/check-site.mjs",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
-    "memory:update": "node scripts/update-ai-memory.mjs"
+    "memory:update": "node scripts/maintenance/update-ai-memory.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"

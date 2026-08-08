@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: "22"
       - name: Update memory
-        run: node scripts/update-ai-memory.mjs "${{ inputs.phase }}" "${{ inputs.summary }}"
+        run: node scripts/maintenance/update-ai-memory.mjs "${{ inputs.phase }}" "${{ inputs.summary }}"
       - name: Commit checkpoint
         run: |
           git config user.name "github-actions[bot]"

@@ -16,8 +16,10 @@
 - `js/i18n.js`: translation runtime and language lifecycle
 - `js/enhancements.js`: search suggestions, region explorer, reviews, blog and FAQ
 - `js/core-stability.js`: focus/history/runtime stability guards
-- `scripts/curate-province-gallery-batch.ps1`: canonical Wikimedia curation pipeline
-- `scripts/sync-image-curation.mjs`: metadata-to-browser curation synchronizer
+- `scripts/quality/`: read-only repository and site checks
+- `scripts/curation/curate-province-gallery-batch.ps1`: canonical Wikimedia curation pipeline
+- `scripts/curation/sync-image-curation.mjs`: metadata-to-browser curation synchronizer
+- `scripts/maintenance/`: documentation and repository housekeeping
 
 ## Load order
 1. Page shell and core app definitions

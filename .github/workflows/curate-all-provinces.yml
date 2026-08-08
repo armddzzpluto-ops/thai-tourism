@@ -36,14 +36,14 @@ jobs:
         shell: pwsh
         run: |
           1..8 | ForEach-Object {
-            & ./scripts/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 3 -WebpQuality 82 -RequestDelayMs 350
+            & ./scripts/curation/curate-province-gallery-batch.ps1 -BatchIndex $_ -BatchSize 10 -TargetGallery 3 -WebpQuality 82 -RequestDelayMs 350
           }
 
       - name: Generate browser curation data
-        run: node scripts/sync-image-curation.mjs
+        run: node scripts/curation/sync-image-curation.mjs
 
       - name: Run site checks
-        run: node scripts/check-site.mjs
+        run: node scripts/quality/check-site.mjs
 
       - name: Commit curated images and metadata
         run: |
