@@ -17,8 +17,9 @@
 - [x] Remove bilingual mobile overflow, normalize route headings and touch targets, and support reduced motion
 
 ## Next phase
-- [ ] Verify destination-level official websites, maps and coordinates
-- [ ] Expand province attraction records with authoritative sources
+- [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
+- [ ] Add authoritative numeric coordinates where an official source publishes them
+- [ ] Confirm that each province hero/gallery depicts the selected primary attraction before linking it to that attraction
 - [ ] Continue splitting page markup into maintainable components without changing public selectors
 - [ ] Consolidate overlapping CSS only after adding visual-regression snapshots
 - [ ] Review performance after the content/data work is complete

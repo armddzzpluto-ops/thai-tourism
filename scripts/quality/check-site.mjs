@@ -269,6 +269,33 @@ try {
       warnings.push(`province names are not unique: ${uniqueProvinces.size}/77`);
     }
 
+    const attractionRecords = context.window.VERIFIED_ATTRACTIONS;
+    if (!attractionRecords || typeof attractionRecords !== "object") {
+      failures.push("verified attraction collection is missing");
+    } else {
+      const verified = Object.values(attractionRecords);
+      if (verified.length < 5) failures.push("verified attraction foundation must include the first five records");
+      const invalidAttractions = verified.filter(item =>
+        !item.id || !item.name?.th || !item.name?.en ||
+        !item.hours?.th || !item.hours?.en ||
+        !item.admission?.th || !item.admission?.en ||
+        !/^https:\/\//.test(item.officialSource || "") ||
+        !/^https:\/\/www\.google\.com\/maps\/search\//.test(item.googleMaps || "") ||
+        !/^https:\/\/www\.agoda\.com\/search/.test(item.agoda || "") ||
+        !/^\d{4}-\d{2}-\d{2}$/.test(item.verifiedOn || "")
+      );
+      if (invalidAttractions.length) {
+        failures.push(`verified attraction records have incomplete provenance: ${invalidAttractions.map(item => item.id).join(", ")}`);
+      }
+    }
+
+    const activityPromotion = destinations.filter(item =>
+      item.primaryAttraction === null && Array.isArray(item.attractions) && item.attractions.length
+    );
+    if (activityPromotion.length) {
+      failures.push("unverified activity suggestions were promoted to attraction records");
+    }
+
     const uncuratedGalleryViolations = destinations.filter(item => {
       if (item.galleryCurated === true) return false;
       return !Array.isArray(item.galleryImages)
