@@ -14,6 +14,7 @@
 - [x] Replace simulated tourism Dashboard values with metrics derived from live site data
 - [x] Remove fabricated weather, reviews, ratings and contact/team placeholders; isolate clearly labelled sample prices in shared promotion data
 - [x] Group quality, curation and maintenance tooling into responsibility-based script folders
+- [x] Remove bilingual mobile overflow, normalize route headings and touch targets, and support reduced motion
 
 ## Next phase
 - [ ] Verify destination-level official websites, maps and coordinates
@@ -24,7 +25,7 @@
 
 ## Definition of done
 - [x] Static checks pass
-- [ ] Playwright passes in Thai and English on all four viewport profiles
-- [ ] No console errors, local HTTP errors, broken links or broken images
-- [ ] Light/Dark, direct URL, refresh, back/forward, mouse, touch and keyboard verified
-- [ ] `AI_MEMORY.md` and `CHANGELOG.md` updated
+- [x] Playwright passes in Thai and English on all four viewport profiles
+- [x] No console errors, local HTTP errors, broken links or broken images
+- [x] Light/Dark, direct URL, refresh, back/forward, mouse, touch and keyboard verified
+- [x] `AI_MEMORY.md` and `CHANGELOG.md` updated

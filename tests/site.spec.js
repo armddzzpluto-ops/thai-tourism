@@ -137,6 +137,55 @@ test("Dashboard values are calculated from live shared data", async ({ page }) =
   expect(result.sources).toEqual(["destinations", "destinations", "destinations", "destinations"]);
 });
 
+test("page semantics, mobile layout and primary tap targets stay accessible", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+
+  for (const language of ["th", "en"]) {
+    await page.evaluate(lang => window.I18N.setLanguage(lang), language);
+
+    for (const name of pages) {
+      await page.evaluate(pageName => window.showPage(pageName, {
+        updateHistory: false,
+        scrollToTop: false
+      }), name);
+
+      const result = await page.locator(`#page-${name}`).evaluate(root => ({
+        h1Count: root.querySelectorAll("h1").length,
+        overflow: Math.max(document.documentElement.scrollWidth - window.innerWidth, 0)
+      }));
+
+      expect(result.h1Count, `${language}/${name} must have one primary heading`).toBe(1);
+      expect(result.overflow, `${language}/${name} must not overflow horizontally`).toBe(0);
+    }
+  }
+
+  await page.evaluate(() => window.showPage("home", { updateHistory: false }));
+  const undersized = await page.locator(".card-fav, .search-tag, .region-mini-card").evaluateAll(elements =>
+    elements.filter(element => {
+      const rect = element.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 && (rect.width < 40 || rect.height < 40);
+    }).map(element => element.className)
+  );
+  expect(undersized).toEqual([]);
+});
+
+test("reduced-motion users receive visible content without reveal transitions", async ({ browser }) => {
+  const context = await browser.newContext({
+    reducedMotion: "reduce",
+    viewport: { width: 390, height: 844 }
+  });
+  const reducedPage = await context.newPage();
+  await reducedPage.goto("/");
+  await reducedPage.waitForFunction(() => window.showPage);
+  await reducedPage.evaluate(() => window.showPage("gallery", { updateHistory: false }));
+
+  const hidden = await reducedPage.locator("#page-gallery .fade-in, #page-gallery .reveal").evaluateAll(elements =>
+    elements.filter(element => Number(getComputedStyle(element).opacity) === 0).length
+  );
+  expect(hidden).toBe(0);
+  await context.close();
+});
+
 test("routing, console and local resources remain healthy", async ({ page }) => {
   test.setTimeout(90_000);
   const errors = [];

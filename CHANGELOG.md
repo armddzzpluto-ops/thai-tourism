@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-08 — Responsive and accessibility polish
+- Fixed the mobile region explorer and About mission grid so bilingual content no longer causes horizontal overflow.
+- Added one primary heading to every route and preserved the existing visual hierarchy.
+- Increased favorite, search-tag, language and navigation controls to reliable touch-target sizes.
+- Ensured reveal content remains visible when the operating system requests reduced motion.
+- Improved the contact email field hint and mobile keyboard behavior.
+- Added browser regressions for bilingual heading structure, mobile overflow, touch targets and reduced motion; all 32 Playwright scenarios pass.
+
 ## 2026-08-08 — Project structure organization
 - Grouped operational scripts by responsibility under `scripts/quality`, `scripts/curation` and `scripts/maintenance`.
 - Updated npm commands, GitHub Actions, documentation and generated-file ownership references to the new paths.

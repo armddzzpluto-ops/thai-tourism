@@ -681,7 +681,7 @@ html[data-theme="dark"] img{filter:brightness(.92) contrast(1.03)}
 }
 .card-fav{
   position:absolute;top: var(--space-lg);right: var(--space-lg);
-  width:34px;height:34px;border-radius:50%;
+  width:44px;height:44px;border-radius:50%;
   background:var(--glass);border:1px solid var(--glass-b);
   backdrop-filter:blur(8px);
   display:flex;align-items:center;justify-content:center;
