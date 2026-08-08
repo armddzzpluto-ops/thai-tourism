@@ -105,8 +105,8 @@ for (const [label, pattern] of retiredMockPatterns) {
 
 for (const containerId of [
   "home-trip-grid",
-  "promotion-stay-grid",
-  "promotion-package-grid",
+  "budget-form",
+  "budget-summary",
   "dashboard-stats"
 ]) {
   if (!index.includes(`id="${containerId}"`)) {
@@ -116,8 +116,14 @@ for (const containerId of [
 if (!data.includes("window.CROSS_PAGE_DESTINATION_SLUGS =")) {
   failures.push("shared cross-page destination selection is not exported");
 }
-if (!data.includes("window.PROMOTIONS =") || !data.includes("window.BLOG_DESTINATION_SLUGS =")) {
-  failures.push("shared promotion or destination-guide data is not exported");
+if (!data.includes("window.BLOG_DESTINATION_SLUGS =")) {
+  failures.push("shared destination-guide data is not exported");
+}
+if (/\bPROMOTIONS\b|promotion-(?:stay|package)-grid|Sample price|ราคาตัวอย่าง/.test(runtimeSources)) {
+  failures.push("retired sample promotion data or UI remains");
+}
+if (!app.includes("renderBudgetCalculator()") || !index.includes('id="budget-total"')) {
+  failures.push("trip budget calculator is incomplete");
 }
 if (/images\.unsplash\.com/.test(data) || /const BLOG\s*=/.test(data)) {
   failures.push("legacy standalone blog content or external blog imagery remains");
@@ -217,7 +223,7 @@ if (!pairMatch) {
     const thaiTextNodes = [...pageMarkup.matchAll(/>([^<>]+)</g)]
       .map(match => match[1].replace(/\s+/g, " ").trim())
       .filter(value => /[ก-๙]/.test(value))
-      .filter(value => !/^฿[\d\s,./]+$/.test(value));
+      .filter(value => !/^฿(?:[\d\s,./]+)?$/.test(value));
 
     const unmapped = [...new Set(thaiTextNodes)]
       .filter(value => !translatedThai.has(value));

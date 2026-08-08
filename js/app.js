@@ -187,47 +187,48 @@ function renderCrossPageDestinationGrids() {
     container.dataset.rendered = 'true';
   }
 
-  renderPromotionGrids();
+  renderBudgetCalculator();
 }
 
-function renderPromotionGrids() {
-  const promotions = Array.isArray(window.PROMOTIONS) ? window.PROMOTIONS : [];
-  const language = window.I18N?.getLanguage?.() || 'th';
-  const formatPrice = value => new Intl.NumberFormat(language === 'en' ? 'en-US' : 'th-TH').format(value);
-  const localized = (value) => value?.[language] || value?.th || '';
+function renderBudgetCalculator() {
+  const form = document.getElementById('budget-form');
+  if (!form) return;
 
-  const renderPromotion = promotion => {
-    const destination = getDestinationBySlug(promotion.destinationSlug);
-    if (!destination) return '';
-    const original = promotion.originalPrice
-      ? `<span style="text-decoration:line-through;color:var(--text-light);font-size:0.78rem;">฿${formatPrice(promotion.originalPrice)}</span>`
-      : '';
-    const sampleLabel = language === 'en' ? 'Sample price' : 'ราคาตัวอย่าง';
-    const detailsLabel = language === 'en' ? 'View destination' : 'ดูสถานที่';
+  const read = name => Math.max(0, Number(form.elements[name]?.value) || 0);
+  const calculate = () => {
+    const travelers = Math.max(1, Math.round(read('travelers')));
+    const days = Math.max(1, Math.round(read('days')));
+    const nights = Math.round(read('nights'));
+    const accommodation = read('room') * nights;
+    const food = read('food') * travelers * days;
+    const transport = read('transport') * travelers * days;
+    const activities = read('activities') * travelers;
+    const other = read('other');
+    const total = accommodation + food + transport + activities + other;
+    const language = window.I18N?.getLanguage?.() === 'en' ? 'en' : 'th';
+    const format = value => new Intl.NumberFormat(language === 'en' ? 'en-US' : 'th-TH', {
+      style: 'currency', currency: 'THB', maximumFractionDigits: 0
+    }).format(value);
+    const label = key => window.I18N?.t(key) || key;
 
-    return `<article class="dest-card" data-promotion-id="${promotion.id}" data-destination-slug="${promotion.destinationSlug}">
-      <div class="card-img-wrap">
-        <img src="${destination.heroImage}" alt="${localized(promotion.title)} — ${destination.name}" loading="lazy">
-        <span class="card-badge">${localized(promotion.badge)}</span>
-      </div>
-      <div class="card-body">
-        <div class="card-region">${destination.province} • ${sampleLabel}</div>
-        <h3 class="card-title">${localized(promotion.title)}</h3>
-        <p class="card-desc">${localized(promotion.description)}</p>
-        <div class="card-footer">
-          <div class="card-rating">${original}<strong style="color:var(--teal-deep);margin-left:${original ? '6px' : '0'};">฿${formatPrice(promotion.price)}${localized(promotion.unit)}</strong></div>
-          <button type="button" class="card-cta" onclick='showDest(${JSON.stringify(destination.name)})'>${detailsLabel}</button>
-        </div>
-      </div>
-    </article>`;
+    document.getElementById('budget-total').textContent = format(total);
+    document.getElementById('budget-per-person').textContent = `${format(total / travelers)} ${label('budget.perPerson')}`;
+    document.getElementById('budget-breakdown').innerHTML = [
+      ['budget.accommodation', accommodation],
+      ['budget.food', food],
+      ['budget.transport', transport],
+      ['budget.activities', activities],
+      ['budget.other', other]
+    ].map(([key, value]) => `<div><span>${label(key)}</span><strong>${format(value)}</strong></div>`).join('');
   };
 
-  [['promotion-stay-grid', 'stay'], ['promotion-package-grid', 'package']].forEach(([id, type]) => {
-    const container = document.getElementById(id);
-    if (!container) return;
-    container.innerHTML = promotions.filter(item => item.type === type).map(renderPromotion).join('');
-    container.dataset.rendered = 'true';
-  });
+  if (form.dataset.bound !== 'true') {
+    form.addEventListener('submit', event => { event.preventDefault(); calculate(); });
+    form.addEventListener('input', calculate);
+    form.addEventListener('reset', () => requestAnimationFrame(calculate));
+    form.dataset.bound = 'true';
+  }
+  calculate();
 }
 
 function renderDataCoverage() {
@@ -738,7 +739,7 @@ function showDest(name) {
 const PAGE_META = {
   home: 'Thailand Travel Guide | ท่องเที่ยวไทย',
   destinations: 'สถานที่ท่องเที่ยว | Thailand Travel Guide',
-  promotions: 'โปรโมชั่น | Thailand Travel Guide',
+  promotions: 'เครื่องคำนวณงบเดินทาง | Thailand Travel Guide',
   gallery: 'คลังรูปภาพ | Thailand Travel Guide',
   about: 'เกี่ยวกับเรา | Thailand Travel Guide',
   contact: 'ติดต่อ | Thailand Travel Guide',

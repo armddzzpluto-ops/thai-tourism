@@ -39,5 +39,5 @@
 - Raw province JPG sources, checkpoints and retired application bundles are not stored in the working tree.
 - `CROSS_PAGE_DESTINATION_SLUGS` contains selection IDs only; every card still resolves its content from `DESTINATIONS`.
 - Dashboard values and charts are derived from current destination, category, region and gallery records.
-- The static project must not present fabricated ratings, reviews, weather, people or contact channels as real data. Demonstration prices must live in `PROMOTIONS` and be visibly labelled as portfolio samples.
+- The static project must not present fabricated ratings, reviews, weather, people, contact channels or provider prices as real data. The budget calculator only computes values entered by the user.
 - Home destination guides resolve their copy and imagery from `DESTINATIONS`; a separate standalone blog dataset is not allowed.
