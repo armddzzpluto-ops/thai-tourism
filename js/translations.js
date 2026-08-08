@@ -84,6 +84,9 @@
       "dialog.source": "แหล่งข้อมูล",
       "dialog.agoda": "ค้นหาที่พักใกล้เคียงบน Agoda",
       "dialog.pendingAttraction": "ข้อมูลสถานที่เฉพาะกำลังรอตรวจสอบจากแหล่งทางการ",
+      "dialog.mapsShort": "แผนที่",
+      "dialog.sourceShort": "ข้อมูลอ้างอิง",
+      "dialog.staysShort": "ที่พัก",
 
       "favorite.added": "เพิ่มในรายการโปรดแล้ว!",
       "favorite.removed": "นำออกจากรายการโปรดแล้ว",
@@ -208,6 +211,9 @@
       "dialog.source": "Source",
       "dialog.agoda": "Find nearby stays on Agoda",
       "dialog.pendingAttraction": "Attraction-level information is awaiting verification from an authoritative source",
+      "dialog.mapsShort": "Map",
+      "dialog.sourceShort": "Source",
+      "dialog.staysShort": "Stays",
 
       "favorite.added": "Added to favorites",
       "favorite.removed": "Removed from favorites",

@@ -586,20 +586,14 @@ function openModal(id) {
     <div class="modal-info-item"><i class="fas fa-location-dot"></i> ${tr('dialog.attraction', 'สถานที่ท่องเที่ยว')}: ${attraction.name[language]}</div>
     <div class="modal-info-item"><i class="fas fa-clock"></i> ${tr('dialog.hours', 'เวลาเปิด–ปิด')}: ${attraction.hours[language]}</div>
     <div class="modal-info-item"><i class="fas fa-ticket"></i> ${tr('dialog.admission', 'ค่าเข้าชม')}: ${attraction.admission[language]}</div>
-    <div class="modal-info-item"><i class="fas fa-circle-check"></i> ${tr('dialog.verified', 'ตรวจสอบล่าสุด')}: ${attraction.verifiedOn}</div>
-    <div class="modal-info-item"><i class="fas fa-map-location-dot"></i> <a href="${attraction.googleMaps}" target="_blank" rel="noopener noreferrer">${tr('dialog.attractionMaps', 'พิกัดสถานที่บน Google Maps')}</a></div>
-    <div class="modal-info-item"><i class="fas fa-building-columns"></i> <a href="${attraction.officialSource}" target="_blank" rel="noopener noreferrer">${tr('dialog.source', 'แหล่งข้อมูล')}: ${attraction.sourceLabel}</a></div>
-    <div class="modal-info-item"><i class="fas fa-hotel"></i> <a href="${attraction.agoda}" target="_blank" rel="sponsored noopener noreferrer">${tr('dialog.agoda', 'ค้นหาที่พักใกล้เคียงบน Agoda')}</a></div>` : `
+    <div class="modal-info-actions">
+      <a href="${attraction.googleMaps}" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-location-dot"></i> ${tr('dialog.mapsShort', 'แผนที่')}</a>
+      <a href="${attraction.officialSource}" target="_blank" rel="noopener noreferrer" title="${attraction.sourceLabel} · ${attraction.verifiedOn}"><i class="fas fa-circle-check"></i> ${tr('dialog.sourceShort', 'ข้อมูลอ้างอิง')}</a>
+      <a href="${attraction.agoda}" target="_blank" rel="sponsored noopener noreferrer"><i class="fas fa-hotel"></i> ${tr('dialog.staysShort', 'ที่พัก')}</a>
+    </div>` : `
     <div class="modal-info-item"><i class="fas fa-circle-info"></i> ${tr('dialog.pendingAttraction', 'ข้อมูลสถานที่เฉพาะกำลังรอตรวจสอบจากแหล่งทางการ')}</div>`;
 
-  document.getElementById('modal-info').innerHTML = `
-    ${attractionDetails}
-    <div class="modal-info-item"><i class="fas fa-thermometer-half"></i> ${tr('dialog.temperature', 'อุณหภูมิ')}: ${d.weather}</div>
-    <div class="modal-info-item"><i class="fas fa-calendar-alt"></i> ${tr('dialog.bestTime', 'ช่วงเวลาดีที่สุด')}: ${d.best}</div>
-    <div class="modal-info-item"><i class="fas fa-road"></i> ${tr('dialog.distance', 'ระยะทาง')}: ${d.distance}</div>
-    <div class="modal-info-item"><i class="fas fa-layer-group"></i> ${tr('dashboard.regions', 'ภูมิภาคที่ครอบคลุม')}: ${normalizeRegionLabel(d.region)}</div>
-    <div class="modal-info-item"><i class="fas fa-map"></i> <a href="${d.googleMaps}" target="_blank" rel="noopener noreferrer">${tr('dialog.maps', 'แผนที่ภาพรวมจังหวัด')}</a></div>
-    <div class="modal-info-item"><i class="fas fa-globe"></i> <a href="${d.officialWebsite}" target="_blank" rel="noopener noreferrer">${tr('dialog.official', 'ข้อมูลท่องเที่ยวระดับจังหวัด')}</a></div>`;
+  document.getElementById('modal-info').innerHTML = attractionDetails;
 
   modal?.classList.add('open');
   document.body.style.overflow = 'hidden';
