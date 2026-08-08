@@ -13,8 +13,8 @@
 }
 
 .language-switch button {
-  min-width: 34px;
-  min-height: 32px;
+  min-width: 40px;
+  min-height: 40px;
   padding: 0 9px;
   border: 0;
   border-radius: 999px;
@@ -24,6 +24,24 @@
   font-size: 0.76rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.nav-search-btn,
+.theme-toggle-btn,
+.hamburger {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-zoom {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .language-switch button:hover {
@@ -113,8 +131,8 @@ html[lang="en"] .footer-bottom {
 
 @media (max-width: 768px) {
   .language-switch button {
-    min-width: 42px;
-    min-height: 38px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .mobile-menu a {

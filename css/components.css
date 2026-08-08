@@ -648,8 +648,8 @@ html[data-theme="dark"] .mobile-menu a {
   position: absolute;
   top: var(--space-md);
   right: var(--space-md);
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--color-bg-tertiary);
   border: 1px solid var(--color-border-light);
@@ -2976,7 +2976,7 @@ html[data-theme="dark"] .gallery-view-all {
   background: var(--color-bg-secondary);
   color: var(--color-text-secondary);
   border-color: var(--color-border-default);
-  min-height: 34px;
+  min-height: 44px;
 }
 
 #page-home > .home-search-panel .search-tag:hover {
