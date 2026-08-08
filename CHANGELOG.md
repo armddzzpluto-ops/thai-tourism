@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-08 — Verified attraction data foundation (batch 1)
+- Separated all 77 province records from attraction records instead of promoting activity suggestions into places.
+- Added sourced bilingual attraction records for Phuket, Chiang Mai, Krabi, Surat Thani and Bangkok.
+- Added attraction-specific hours, admission guidance, verification dates, Google Maps links, official sources and Agoda accommodation searches.
+- Updated the destination modal to show verified attraction facts or an explicit pending-verification state.
+- Added static provenance guards and browser regressions; all 36 Playwright scenarios pass.
+
 ## 2026-08-08 — Responsive and accessibility polish
 - Fixed the mobile region explorer and About mission grid so bilingual content no longer causes horizontal overflow.
 - Added one primary heading to every route and preserved the existing visual hierarchy.

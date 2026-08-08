@@ -137,6 +137,27 @@ test("Dashboard values are calculated from live shared data", async ({ page }) =
   expect(result.sources).toEqual(["destinations", "destinations", "destinations", "destinations"]);
 });
 
+test("province and verified attraction records remain separate", async ({ page }) => {
+  const result = await page.evaluate(() => ({
+    provinces: window.destinations.length,
+    verified: Object.keys(window.VERIFIED_ATTRACTIONS).length,
+    wrongTypes: window.destinations.filter(item => item.recordType !== "province").length,
+    promotedActivities: window.destinations.filter(item =>
+      !item.primaryAttraction && Array.isArray(item.attractions) && item.attractions.length
+    ).length
+  }));
+
+  expect(result).toEqual({ provinces: 77, verified: 5, wrongTypes: 0, promotedActivities: 0 });
+
+  await page.evaluate(() => window.openModal(5));
+  await expect(page.locator("#modal-info")).toContainText("พระบรมมหาราชวัง");
+  await expect(page.locator("#modal-info a[href*='google.com/maps/search']")).toHaveCount(2);
+  await expect(page.locator("#modal-info a[href*='agoda.com/search']")).toHaveCount(1);
+
+  await page.evaluate(() => window.openModal(6));
+  await expect(page.locator("#modal-info")).toContainText("กำลังรอตรวจสอบ");
+});
+
 test("page semantics, mobile layout and primary tap targets stay accessible", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
 

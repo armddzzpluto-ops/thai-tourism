@@ -327,6 +327,55 @@ const DESTINATIONS = [
     activities: ["Punyaban waterfall swim", "Ranong hot springs soak", "Victoria Point Myanmar day trip", "Laem Son National Park mangroves"] }
 ];
 
+/* ---------- VERIFIED ATTRACTIONS ----------
+   Province records describe a province. Attraction records describe one
+   visitable place and carry their own hours, admission and sources. Never
+   promote an activity suggestion into this collection without verification. */
+const VERIFIED_ATTRACTIONS = {
+  phuket: {
+    id: "phuket-old-town", name: { th: "ย่านเมืองเก่าภูเก็ต", en: "Phuket Old Town" },
+    hours: { th: "พื้นที่สาธารณะเปิดตลอดวัน; ถนนคนเดินวันอาทิตย์ 16:00–22:00 น.", en: "Public streets are open all day; Sunday Walking Street runs 16:00–22:00." },
+    admission: { th: "เข้าชมพื้นที่สาธารณะฟรี", en: "Free public-area access" },
+    officialSource: "https://www.tourismthailand.org/Attraction/phuket-old-town", sourceLabel: "Tourism Authority of Thailand", verifiedOn: "2026-08-08"
+  },
+  "chiang-mai": {
+    id: "wat-phra-that-doi-suthep", name: { th: "วัดพระธาตุดอยสุเทพราชวรวิหาร", en: "Wat Phra That Doi Suthep" },
+    hours: { th: "เปิดทุกวัน; แหล่งข้อมูล ททท. ระบุช่วงเข้าชม 06:00–18:00 น.", en: "Open daily; TAT lists visiting hours of 06:00–18:00." },
+    admission: { th: "โปรดตรวจสอบค่าธรรมเนียมล่าสุดจากสถานที่ก่อนเดินทาง", en: "Confirm the latest admission charge with the venue before visiting." },
+    officialSource: "https://www.tourismthailand.org/Attraction/wat-phra-that-doi-suthep", sourceLabel: "Tourism Authority of Thailand", verifiedOn: "2026-08-08"
+  },
+  krabi: {
+    id: "ao-railay", name: { th: "อ่าวไร่เลย์", en: "Ao Railay (Railay Bay)" },
+    hours: { th: "พื้นที่ชายหาดเปิดตลอดวัน; เวลาเรือขึ้นอยู่กับผู้ให้บริการและสภาพอากาศ", en: "Beach area is open all day; boat times depend on operators and weather." },
+    admission: { th: "เข้าชมหาดฟรี; ค่าเรือและค่าธรรมเนียมพื้นที่คุ้มครองอาจแยกต่างหาก", en: "Free beach access; boat fares and protected-area fees may apply separately." },
+    officialSource: "https://www.tourismthailand.org/Trip-Planner/Suggestion-Detail/ao-railay-railay-bay-tham-phra-nang-beach-phra-nang-cave-beach-thale-waek-separated-sea-ko-po-da-khao-khanap-nam-viewpoint-tha-pom-khlang-cave", sourceLabel: "Tourism Authority of Thailand", verifiedOn: "2026-08-08"
+  },
+  "surat-thani": {
+    id: "muko-ang-thong", name: { th: "อุทยานแห่งชาติหมู่เกาะอ่างทอง", en: "Mu Ko Ang Thong National Park" },
+    hours: { th: "เวลาเดินทางขึ้นอยู่กับเรือนำเที่ยวและประกาศของอุทยาน", en: "Access times depend on tour boats and current park notices." },
+    admission: { th: "โปรดตรวจสอบค่าธรรมเนียมอุทยานล่าสุดก่อนเดินทาง", en: "Confirm the latest national-park fee before visiting." },
+    officialSource: "https://www.tourismthailand.org/Attraction/muko-ang-thong-marine-national-park", sourceLabel: "Tourism Authority of Thailand", verifiedOn: "2026-08-08"
+  },
+  bangkok: {
+    id: "grand-palace", name: { th: "พระบรมมหาราชวังและวัดพระศรีรัตนศาสดาราม", en: "The Grand Palace and Temple of the Emerald Buddha" },
+    hours: { th: "เปิดทุกวัน 08:30–16:30 น.; จำหน่ายบัตรถึง 15:30 น.", en: "Open daily 08:30–16:30; tickets are sold until 15:30." },
+    admission: { th: "คนไทยเข้าฟรีเมื่อแสดงบัตรประชาชน; ชาวต่างชาติ 500 บาท", en: "Free for Thai citizens with ID; THB 500 for foreign visitors." },
+    officialSource: "https://www.royalgrandpalace.th/en/visit/practical-information", sourceLabel: "Bureau of the Royal Household", verifiedOn: "2026-08-08"
+  }
+};
+
+function buildAttractionLink(attraction, provider) {
+  const query = `${attraction.name.en}, Thailand`;
+  return provider === "agoda"
+    ? `https://www.agoda.com/search?text=${encodeURIComponent(query)}`
+    : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
+Object.values(VERIFIED_ATTRACTIONS).forEach(attraction => {
+  attraction.googleMaps = buildAttractionLink(attraction, "maps");
+  attraction.agoda = buildAttractionLink(attraction, "agoda");
+});
+
 /* ---------- DESTINATION METADATA ENRICHMENT (non-breaking) ---------- */
 function buildGoogleMapsLink(destination) {
   const attraction = Array.isArray(destination.activities) && destination.activities.length
@@ -455,13 +504,17 @@ function normalizeDestinationSchema(destination) {
   destination.searchKeywords = ensureArray(destination.searchKeywords, destination.keywords);
   destination.category = destination.category || "nature";
   destination.categories = ensureArray(destination.categories, [destination.category]);
-  destination.attractions = ensureArray(destination.attractions, destination.activities || []);
+  const verifiedAttraction = VERIFIED_ATTRACTIONS[provinceSlug] || null;
+  destination.recordType = "province";
+  destination.primaryAttraction = verifiedAttraction;
+  destination.attractions = verifiedAttraction ? [verifiedAttraction] : [];
   destination.coordinates = destination.coordinates || buildProvinceCoordinates(destination);
   destination.dataCompleteness = {
     coordinatesVerified: Boolean(destination.coordinates && destination.coordinates.lat !== null && destination.coordinates.lng !== null),
     officialImageVerified: Boolean(destination.heroImage && !String(destination.heroImage).includes("/destinations/") ? true : false),
     officialWebsiteVerified: Boolean(destination.officialWebsite),
-    mapsVerified: Boolean(destination.googleMaps)
+    mapsVerified: Boolean(destination.googleMaps),
+    attractionVerified: Boolean(verifiedAttraction)
   };
 }
 
@@ -542,6 +595,7 @@ const QUOTES = [
 window.DESTINATIONS = DESTINATIONS;
 window.CROSS_PAGE_DESTINATION_SLUGS = CROSS_PAGE_DESTINATION_SLUGS;
 window.PROMOTIONS = PROMOTIONS;
+window.VERIFIED_ATTRACTIONS = VERIFIED_ATTRACTIONS;
 window.BLOG_DESTINATION_SLUGS = BLOG_DESTINATION_SLUGS;
 window.FAQ = FAQ;
 window.QUOTES = QUOTES;
