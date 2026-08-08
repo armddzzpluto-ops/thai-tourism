@@ -4,6 +4,30 @@
 
   const staticPairs = [["ค้นพบเสน่ห์ของ","Discover the charm of"],["ประเทศไทย","Thailand"],["เริ่มสำรวจ","Start exploring"],["ค้นหาจุดหมาย","Find destinations"],["จังหวัดทั่วไทย","provinces nationwide"],["นักท่องเที่ยวต่อปี","visitors per year"],["เลื่อนลง","Scroll down"],["🔍 ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ","🔍 Search for a destination"],["ค้นหา","Search"],["สถานที่แนะนำ","Featured places"],["จุดหมายปลายทาง","Destinations"],["ยอดนิยม","Popular"],["ดูทั้งหมด","View all"],["หมวดหมู่","Categories"],["ค้นพบประสบการณ์","Discover experiences"],["หลากหลาย","for every interest"],["ชายหาด","Beaches"],["วัดวาอาราม","Temples"],["ธรรมชาติ","Nature"],["ภูเขา","Mountains"],["วัฒนธรรม","Culture"],["เลือกพื้นที่ที่สนใจ","Choose an area"],["สำรวจประเทศไทยตามภูมิภาค","Explore Thailand by region"],["แถบควบคุม","Controls"],["ผลลัพธ์","Results"],["ประหยัด","Budget"],["คลังรูปภาพ","Gallery"],["ภาพสวยงาม","Beautiful images"],["จากทั่วไทย","from across Thailand"],["ดูรูปภาพทั้งหมด","View all images"],["เคล็ดลับ","Travel"],["การเดินทาง","tips"],["เลือกช่วงเวลาที่เหมาะสม","Choose the right season"],["วางแผนงบประมาณ","Plan your budget"],["เคารพวัฒนธรรมท้องถิ่น","Respect local culture"],["ใช้การขนส่งท้องถิ่น","Use local transport"],["เครื่องมืออัจฉริยะ","Smart tools"],["กำลังโหลดคำคมท่องเที่ยวประจำวัน...","Loading today's travel quote..."],["คำคมใหม่","New quote"],["สุ่มจุดหมาย","Random destination"],["สุ่มให้เลย","Surprise me"],["ผู้เข้าชม","visitors"],["บันทึกการเดินทาง","Travel journal"],["บทความ","Latest"],["ล่าสุด","articles"],["คำถาม","questions"],["เริ่มต้นการเดินทาง","Start your journey"],["พร้อมสำรวจ","Ready to explore"],["แล้วหรือยัง?","Thailand?"],["เริ่มสำรวจสถานที่","Explore destinations"],["ดูโปรโมชั่น","View promotions"],["สำรวจทั่วไทย","Explore Thailand"],["สถานที่ท่องเที่ยว","Destinations"],["ทั้งหมด","All"],["ภาคเหนือ","Northern region"],["ภาคกลาง","Central region"],["ภาคใต้","Southern region"],["ภาคอีสาน","Northeastern region"],["ภาคตะวันออก","Eastern region"],["ไม่พบสถานที่ที่ค้นหา","No destinations found"],["ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น","Try another search or category"],["โปรโมชั่น","Promotions"],["ดีลที่พัก","Accommodation deals"],["ดีล","Accommodation"],["ที่พัก","deals"],["ดีลแพ็กเกจ","Package deals"],["แพ็กเกจ","Complete"],["แดชบอร์ด","Tourism"],["การท่องเที่ยว","dashboard"],["คลัง","Photo"],["รูปภาพ","gallery"],["ภาพถ่ายอันงดงามจากสถานที่ท่องเที่ยวทั่วไทย","Beautiful photographs from destinations across Thailand"],["โครงงานเพื่อการศึกษา","Educational project"],["เกี่ยวกับเรา","About us"],["ทำไมต้อง","Why"],["รายการจังหวัด","provinces"],["ภูมิภาคที่ครอบคลุม","regions covered"],["พันธกิจและวิสัยทัศน์","Mission and vision"],["เป้าหมาย","Our"],["ของเรา","goals"],["ทำไมต้องเลือกเรา","Why choose us"],["ข้อได้เปรียบ","Advantages"],["ข้อมูลครบถ้วน","Complete information"],["ใช้งานง่ายทุกอุปกรณ์","Easy on every device"],["ค้นหาและกรองข้อมูล","Search and filters"],["โครงงาน","contributors"],["เทคโนโลยี","Technology"],["ที่ใช้พัฒนา","used"],["ดูแดชบอร์ดสถิติ","View statistics dashboard"],["ส่ง","Send a"],["ข้อความ","message"],["อีเมล","Email"],["โทรศัพท์","Phone"],["ชื่อ-นามสกุล *","Full name *"],["หัวข้อ","Subject"],["-- เลือกหัวข้อ --","-- Select a subject --"],["แนะนำสถานที่ท่องเที่ยว","Suggest a destination"],["รายงานข้อมูลผิดพลาด","Report incorrect information"],["อื่นๆ","Other"],["ข้อความ *","Message *"],["รับทราบ","OK"],["สุ่ม","Random"],["คำคม","Quote"],["ธีม","Theme"],["วางแผนด้วย","Plan with"],["แรงบันดาลใจเพิ่มเติม","Extra Inspiration"],["คำถามที่พบบ่อย","FAQ"],["จองล่วงหน้า","Early Bird"],["สำรวจทะเลสวย วัดโบราณ ภูเขา วัฒนธรรม และจุดหมายปลายทางที่น่าสนใจทั่วประเทศไทย ผ่านคู่มือท่องเที่ยวดิจิทัลที่ออกแบบมาเพื่อปี 2026","Explore beautiful seas, ancient temples, mountains, culture and remarkable destinations across Thailand with a digital guide designed for 2026."],["กม. ชายฝั่งทะเล","km of coastline"],["เที่ยวทะเล","Beach trips"],["เที่ยวภูเขา","Mountain trips"],["วัดและวัฒนธรรม","Temples and culture"],["คัดสรรสถานที่ท่องเที่ยวที่ดีที่สุดจากทั่วทุกภาคของประเทศไทย","A curated selection of outstanding destinations from every region of Thailand."],["เลือกภูมิภาคเพื่อดูจุดหมายเด่น บรรยากาศ และสถานที่แนะนำในพื้นที่นั้น","Choose a region to see its highlights, atmosphere and recommended places."],["/คน","/person"],["คำแนะนำจากนักเดินทางผู้มีประสบการณ์เพื่อให้ทริปของคุณสมบูรณ์แบบ","Advice from experienced travelers to make your trip even better."],["ฤดูกาลท่องเที่ยวของแต่ละภูมิภาคแตกต่างกัน วางแผนล่วงหน้าเพื่อหลีกเลี่ยงช่วงมรสุม","Travel seasons vary by region. Plan ahead to avoid monsoon periods."],["ประเทศไทยรองรับนักท่องเที่ยวทุกระดับงบ ตั้งแต่โฮสเทลราคาประหยัดจนถึงรีสอร์ทระดับโลก","Thailand welcomes every budget, from affordable hostels to world-class resorts."],["แต่งกายสุภาพเมื่อเข้าวัด ถอดรองเท้าก่อนเข้าบ้าน และทักทายด้วยการไหว้","Dress respectfully at temples, remove shoes before entering homes and greet people with a wai."],["รถตุ๊กตุ๊ก สองแถว และเรือหางยาว คือประสบการณ์ท่องเที่ยวที่ไม่ควรพลาด","Tuk-tuks, songthaews and long-tail boats are local experiences not to miss."],["ยังไม่รู้จะเริ่มตรงไหน? ให้ระบบสุ่มสถานที่ท่องเที่ยวให้จากรายการทั้งหมด","Not sure where to begin? Let the site choose a destination for you."],["ค้นพบข้อมูลท่องเที่ยวครบทั้ง 77 จังหวัด แพ็กเกจตัวอย่าง และเคล็ดลับเที่ยวไทยที่คุณไม่ควรพลาด","Discover travel information for all 77 provinces, sample packages and essential Thailand tips."],["ลด 30%","30% off"],["ลด 25%","25% off"],["3 วัน 2 คืน","3 days, 2 nights"],["4 วัน 3 คืน","4 days, 3 nights"],["2 วัน 1 คืน","2 days, 1 night"],["ปวส.","Higher Vocational Certificate"],["ครอบคลุมข้อมูลตัวแทนของทั้ง 77 จังหวัด พร้อมคะแนนและข้อมูลสำคัญ","Representative information, ratings and key details for all 77 provinces."],["ระบบค้นหาและกรองสถานที่ตามภูมิภาค หมวดหมู่ และความสนใจ","Search and filter destinations by region, category and interest."],["อีเมล *","Email *"],["เปิดช่องค้นหาสถานที่","Open destination search"],["เปิดเมนู","Open menu"],["ค้นหาสถานที่ท่องเที่ยวแบบด่วน","Quick destination search"],["เช่น ภูเก็ต, เชียงใหม่, หัวหิน...","e.g. Phuket, Chiang Mai, Hua Hin..."],["ตัวกรองแนะนำ","Suggested filters"],["หมวดหมู่ประสบการณ์ท่องเที่ยว","Travel experience categories"],["ตัวอย่างคลังรูปภาพจากหลายจังหวัด","Gallery preview from multiple provinces"],["ค้นหาสถานที่ท่องเที่ยว","Search destinations"],["ค้นหาสถานที่...","Search destinations..."],["กรอกชื่อของคุณ","Enter your name"],["พิมพ์ข้อความของคุณที่นี่...","Type your message here..."],["รูปภาพสถานที่","Destination image"],["ปิดรูปภาพ","Close image"],["ภาพก่อนหน้า","Previous image"],["ภาพถัดไป","Next image"],["สุ่มสถานที่","Random destination"],["แสดงคำคมประจำวัน","Show daily quote"],["สลับธีม","Toggle theme"],["เปิดการค้นหาสถานที่","Open destination search"],["เปิดเมนูลัด","Open quick menu"],["บันทึกสถานที่","Save destination"],["รายละเอียด","Details"],["แนะนำ","Recommended"],["ไม่ระบุ","Not specified"],["นำออกจากรายการโปรด","Remove from favorites"],["บันทึกเป็นรายการโปรด","Save to favorites"],["เพิ่มในรายการโปรดแล้ว!","Added to favorites!"],["นำออกจากรายการโปรดแล้ว","Removed from favorites"],["เปิดโหมดมืดแล้ว","Dark mode enabled"],["เปิดโหมดสว่างแล้ว","Light mode enabled"],["สถานที่ท่องเที่ยวในประเทศไทย","Destination in Thailand"],["ท่องเที่ยว","Travel"],["ราคาในหน้านี้เป็นข้อมูลตัวอย่างสำหรับโครงงาน ไม่ใช่ข้อเสนอจากผู้ให้บริการจริง ส่วนชื่อจังหวัดและรูปภาพเชื่อมจากข้อมูลสถานที่ชุดกลาง","Prices on this page are portfolio samples, not real provider offers. Province names and images come from the shared destination data."],["แพ็กเกจและราคาเป็นตัวอย่างสำหรับแสดงการทำงานของเว็บไซต์ โดยสถานที่ รายละเอียด และภาพอ้างอิงจากฐานข้อมูลจังหวัดเดียวกัน","Packages and prices demonstrate the website. Places, details and images resolve from the same province records."],["สมุย บีชฟรอนต์ รีสอร์ต","Samui Beachfront Resort"],["ลานนา บูติก โฮเทล","Lanna Boutique Hotel"],["ภูเก็ต โอเชียนวิว วิลลา","Phuket Oceanview Villa"],["ฟรอนต์เอนด์แบบสแตติก","Static frontend"],["พันธกิจ","Mission"],["วิสัยทัศน์","Vision"],["ออกแบบให้ปรับตามหน้าจอ รองรับมือถือ แท็บเล็ต และคอมพิวเตอร์","Responsive design for mobile, tablet and desktop."],["แดชบอร์ดสถิติ","Statistics dashboard"],["ทิวทัศน์จังหวัดเชียงใหม่ ประเทศไทย","Chiang Mai landscape, Thailand"],["จุดหมายแนะนำ","Recommended destinations"],["ไอเดียจาก","Ideas from"],["ข้อมูลสถานที่จริง","shared destination data"],["รายการนี้ใช้ชื่อ จังหวัด รูป และรายละเอียดชุดเดียวกับหน้า Destinations และ Modal","These cards use the same names, provinces, images and details as Destinations and the detail modal."],["ดูไอเดียเพิ่มเติม","View more ideas"],["ตัวแทน","Representatives of"],["ความครอบคลุมของข้อมูล","Data coverage"],["ข้อมูลเว็บไซต์","website data"],["ทุกตัวเลขคำนวณจากรายการสถานที่และคลังภาพที่เว็บไซต์ใช้งานอยู่ ไม่ใช่สถิตินักท่องเที่ยวจำลอง","Every number is calculated from the destinations and images used by this website, not simulated tourism statistics."],["จำนวนจังหวัดแยกตามภูมิภาค","Provinces by region"],["จำนวนจังหวัดแยกตามหมวดหมู่","Provinces by category"],["จำนวนภาพที่เชื่อมกับแต่ละภูมิภาค","Linked images by region"],["เว็บไซต์โครงงานนี้รวบรวมข้อมูลตัวแทนการท่องเที่ยวครบ 77 จังหวัด โดยเชื่อมชื่อ จังหวัด รูปภาพ คลังภาพ และหน้ารายละเอียดผ่านชุดข้อมูลกลางเดียวกัน","This project covers all 77 provinces and connects names, provinces, images, galleries and details through one shared dataset."],["โครงการนี้จัดทำขึ้นเพื่อการศึกษา โดยนักศึกษาสาขาเทคโนโลยีธุรกิจดิจิทัล เพื่อนำเสนอความเป็นไปได้ของเว็บไซต์การท่องเที่ยวที่ทันสมัย ใช้งานง่าย และสวยงาม","This educational project was created by a Digital Business Technology student to demonstrate a modern, accessible and visually engaging travel website."],["จัดโครงสร้างข้อมูลท่องเที่ยวให้ค้นหา เปรียบเทียบ และตรวจสอบแหล่งอ้างอิงได้ง่าย พร้อมรักษาความสอดคล้องระหว่างทุกหน้า","Structure tourism information for easy search, comparison and source review while keeping every page consistent."],["พัฒนาโครงงานเว็บท่องเที่ยวสองภาษาที่ดูแลต่อได้ มีข้อมูลครบทั้ง 77 จังหวัด และทดสอบการใช้งานได้บนอุปกรณ์ทุกขนาด","Build a maintainable bilingual tourism project covering all 77 provinces and tested across device sizes."],["แสดงความครอบคลุมของข้อมูลเว็บไซต์แบบโต้ตอบด้วย Chart.js","Show interactive website data coverage with Chart.js."],["ติดต่อโครงงาน","Project contact"],["ข้อเสนอแนะและ","Feedback and"],["รายงานข้อมูล","data reports"],["เว็บไซต์นี้เป็นโครงงานแบบ Static จึงไม่มีฝ่ายจอง โทรศัพท์ สำนักงาน หรือบัญชีโซเชียลมีเดียของบริการท่องเที่ยว","This is a static project, so it has no booking desk, phone, office or tourism-service social accounts."],["ช่องทางที่ตรวจสอบได้","Verified channel"],["ตรวจสอบซอร์สโค้ด ประวัติการแก้ไข และส่งข้อเสนอแนะผ่าน Repository ของโครงงานบน GitHub","Review source code and change history, or submit feedback through the project repository on GitHub."],["ประเภทระบบ","System type"],["ขอบเขตข้อมูล","Data scope"],["77 จังหวัด","77 provinces"],["ตรวจสอบแบบฟอร์มตัวอย่าง","Demo form validation"],["แบบฟอร์มนี้ใช้สาธิต Validation เท่านั้น ข้อมูลจะไม่ถูกส่งหรือบันทึก","This form demonstrates validation only. No data is sent or stored."],["ข้อเสนอแนะเกี่ยวกับเว็บไซต์","Website feedback"],["ตรวจสอบข้อมูล","Check information"]];
 
+  staticPairs.push(
+    ["วางแผนก่อนเดินทาง", "Plan before you travel"],
+    ["เครื่องคำนวณ", "Trip budget"],
+    ["งบเดินทาง", "calculator"],
+    ["กรอกค่าใช้จ่ายที่คุณคาดไว้ ระบบจะคำนวณงบรวมและงบต่อคนโดยไม่อ้างว่าเป็นราคาจากผู้ให้บริการ", "Enter your own estimates to calculate a trip total and per-person budget without presenting provider prices."],
+    ["จำนวนผู้เดินทาง", "Travelers"],
+    ["จำนวนวัน", "Days"],
+    ["จำนวนคืน", "Nights"],
+    ["ค่าที่พักต่อคืน", "Accommodation per night"],
+    ["ค่าอาหารต่อคน/วัน", "Food per person/day"],
+    ["ค่าเดินทางต่อคน/วัน", "Transport per person/day"],
+    ["ค่ากิจกรรมต่อคน/ทริป", "Activities per person/trip"],
+    ["ค่าใช้จ่ายอื่น ๆ รวม", "Other costs total"],
+    ["คำนวณงบประมาณ", "Calculate budget"],
+    ["ล้างข้อมูล", "Reset"],
+    ["งบประมาณรวม", "Estimated total"],
+    ["฿0 ต่อคน", "THB 0 per person"],
+    ["ผลลัพธ์เป็นการคำนวณจากตัวเลขที่ผู้ใช้กรอก ไม่ใช่ใบเสนอราคาหรือราคาจองจริง", "Results use only the numbers you enter and are not a quote or live booking price."],
+    ["ค้นพบข้อมูลท่องเที่ยวครบทั้ง 77 จังหวัด วางแผนงบประมาณ และเตรียมทริปได้อย่างมั่นใจ", "Explore all 77 provinces, plan your budget and prepare your trip with confidence."],
+    ["คำนวณงบเดินทาง", "Calculate trip budget"],
+    ["คำนวณงบ", "Budget calculator"],
+    ["🧮 คำนวณงบ", "🧮 Budget calculator"]
+  );
+
   window.TRANSLATIONS = {
     dictionary: {
     th: {
@@ -13,7 +37,7 @@
 
       "nav.home": "หน้าแรก",
       "nav.destinations": "สถานที่ท่องเที่ยว",
-      "nav.promotions": "โปรโมชั่น",
+      "nav.promotions": "คำนวณงบ",
       "nav.gallery": "คลังรูปภาพ",
       "nav.about": "เกี่ยวกับเรา",
       "nav.contact": "ติดต่อ",
@@ -22,7 +46,7 @@
 
       "mobile.home": "🏠 หน้าแรก",
       "mobile.destinations": "📍 สถานที่ท่องเที่ยว",
-      "mobile.promotions": "🎫 โปรโมชั่น",
+      "mobile.promotions": "🧮 คำนวณงบ",
       "mobile.gallery": "🖼 คลังรูปภาพ",
       "mobile.about": "👥 เกี่ยวกับเรา",
       "mobile.contact": "📬 ติดต่อ",
@@ -120,7 +144,7 @@
 
       "page.home.title": "Thailand Travel Guide | ท่องเที่ยวไทย",
       "page.destinations.title": "สถานที่ท่องเที่ยว | Thailand Travel Guide",
-      "page.promotions.title": "โปรโมชั่น | Thailand Travel Guide",
+      "page.promotions.title": "เครื่องคำนวณงบเดินทาง | Thailand Travel Guide",
       "page.gallery.title": "คลังรูปภาพ | Thailand Travel Guide",
       "page.about.title": "เกี่ยวกับเรา | Thailand Travel Guide",
       "page.contact.title": "ติดต่อ | Thailand Travel Guide",
@@ -131,6 +155,12 @@
       "dashboard.images": "ภาพที่เชื่อมกับสถานที่",
       "dashboard.curated": "จังหวัดที่คัดภาพแล้ว",
       "dashboard.regions": "ภูมิภาคที่ครอบคลุม"
+      ,"budget.perPerson": "ต่อคน"
+      ,"budget.accommodation": "ที่พัก"
+      ,"budget.food": "อาหาร"
+      ,"budget.transport": "การเดินทาง"
+      ,"budget.activities": "กิจกรรม"
+      ,"budget.other": "อื่น ๆ"
     },
 
     en: {
@@ -140,7 +170,7 @@
 
       "nav.home": "Home",
       "nav.destinations": "Destinations",
-      "nav.promotions": "Promotions",
+      "nav.promotions": "Budget calculator",
       "nav.gallery": "Gallery",
       "nav.about": "About",
       "nav.contact": "Contact",
@@ -149,7 +179,7 @@
 
       "mobile.home": "🏠 Home",
       "mobile.destinations": "📍 Destinations",
-      "mobile.promotions": "🎫 Promotions",
+      "mobile.promotions": "🧮 Budget calculator",
       "mobile.gallery": "🖼 Gallery",
       "mobile.about": "👥 About",
       "mobile.contact": "📬 Contact",
@@ -247,7 +277,7 @@
 
       "page.home.title": "Thailand Travel Guide | Home",
       "page.destinations.title": "Destinations | Thailand Travel Guide",
-      "page.promotions.title": "Promotions | Thailand Travel Guide",
+      "page.promotions.title": "Trip Budget Calculator | Thailand Travel Guide",
       "page.gallery.title": "Gallery | Thailand Travel Guide",
       "page.about.title": "About | Thailand Travel Guide",
       "page.contact.title": "Contact | Thailand Travel Guide",
@@ -258,6 +288,12 @@
       "dashboard.images": "images linked to destinations",
       "dashboard.curated": "provinces with curated galleries",
       "dashboard.regions": "regions covered"
+      ,"budget.perPerson": "per person"
+      ,"budget.accommodation": "Accommodation"
+      ,"budget.food": "Food"
+      ,"budget.transport": "Transport"
+      ,"budget.activities": "Activities"
+      ,"budget.other": "Other"
     }
   },
     staticPairs,

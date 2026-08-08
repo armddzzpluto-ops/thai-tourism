@@ -19,6 +19,7 @@
 - Dashboard displays dataset coverage computed from live destination/gallery records; it does not claim tourism totals
 - Fabricated weather, traveler reviews, prices, ratings, people and contact channels have been removed
 - Province and attraction records are separate; 5/77 provinces currently have one sourced attraction record and all others expose an honest pending-verification state
+- The legacy Promotions route now hosts a user-input trip budget calculator; sample packages and provider-style prices have been removed
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -50,6 +51,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-08 · Trip budget calculator · Replaced sample promotions with user-entered cost calculations and retained the existing route for compatibility
 - 2026-08-08 · Verified attraction foundation batch 1 · Separated province/place contracts and sourced Phuket, Chiang Mai, Krabi, Surat Thani and Bangkok; 36 browser checks passed
 - 2026-08-08 · Responsive and accessibility polish · Removed bilingual mobile overflow, normalized route headings and touch targets, supported reduced motion and passed 32 browser checks
 - 2026-08-08 · Project structure organization · Grouped quality, curation and maintenance scripts; updated all callers and passed 24 browser checks

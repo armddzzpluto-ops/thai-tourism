@@ -551,18 +551,6 @@ const CROSS_PAGE_DESTINATION_SLUGS = [
   "sukhothai"
 ];
 
-/* Promotions are one shared collection. Prices are clearly identified in the
-   UI as portfolio samples and every visual/place reference resolves through
-   DESTINATIONS instead of being duplicated here. */
-const PROMOTIONS = [
-  { id: "samui-stay", type: "stay", destinationSlug: "surat-thani", badge: { th: "ลด 30%", en: "30% off" }, title: { th: "สมุย บีชฟรอนต์ รีสอร์ต", en: "Samui Beachfront Resort" }, description: { th: "แพ็กเกจที่พักริมทะเล พร้อมสระว่ายน้ำและบริการสปา", en: "Beachfront accommodation package with pool and spa access." }, originalPrice: 4500, price: 3150, unit: { th: "/คืน", en: "/night" } },
-  { id: "chiang-mai-stay", type: "stay", destinationSlug: "chiang-mai", badge: { th: "ลด 25%", en: "25% off" }, title: { th: "ลานนา บูติก โฮเทล", en: "Lanna Boutique Hotel" }, description: { th: "แพ็กเกจที่พักสไตล์ล้านนาในเขตเมืองเก่าเชียงใหม่", en: "Lanna-style accommodation package in Chiang Mai Old City." }, originalPrice: 2800, price: 2100, unit: { th: "/คืน", en: "/night" } },
-  { id: "phuket-stay", type: "stay", destinationSlug: "phuket", badge: { th: "จองล่วงหน้า", en: "Early bird" }, title: { th: "ภูเก็ต โอเชียนวิว วิลลา", en: "Phuket Oceanview Villa" }, description: { th: "แพ็กเกจวิลลาวิวทะเลอันดามันพร้อมสระว่ายน้ำส่วนตัว", en: "Andaman Sea-view villa package with a private pool." }, originalPrice: 9800, price: 6900, unit: { th: "/คืน", en: "/night" } },
-  { id: "krabi-package", type: "package", destinationSlug: "krabi", badge: { th: "3 วัน 2 คืน", en: "3 days, 2 nights" }, title: { th: "กระบี่และเกาะพีพี", en: "Krabi and Phi Phi" }, description: { th: "แพ็กเกจตัวอย่างรวมที่พัก อาหาร และกิจกรรมทางทะเล", en: "Sample package including accommodation, meals and sea activities." }, price: 5990, unit: { th: "/คน", en: "/person" } },
-  { id: "chiang-rai-package", type: "package", destinationSlug: "chiang-rai", badge: { th: "4 วัน 3 คืน", en: "4 days, 3 nights" }, title: { th: "เชียงราย 3 วัดเด่น", en: "Three Chiang Rai temples" }, description: { th: "แพ็กเกจตัวอย่างสำหรับวัดร่องขุ่น วัดร่องเสือเต้น และดอยแม่สลอง", en: "Sample itinerary for the White Temple, Blue Temple and Doi Mae Salong." }, price: 4490, unit: { th: "/คน", en: "/person" } },
-  { id: "sukhothai-package", type: "package", destinationSlug: "sukhothai", badge: { th: "2 วัน 1 คืน", en: "2 days, 1 night" }, title: { th: "มรดกโลกสุโขทัย", en: "Sukhothai World Heritage" }, description: { th: "แพ็กเกจตัวอย่างสำหรับสำรวจอุทยานประวัติศาสตร์สุโขทัย", en: "Sample package for exploring Sukhothai Historical Park." }, price: 2990, unit: { th: "/คน", en: "/person" } }
-];
-
 /* Home articles are destination guides generated from these records. */
 const BLOG_DESTINATION_SLUGS = ["phuket", "chiang-mai", "krabi", "bangkok", "chiang-rai", "sukhothai"];
 
@@ -594,7 +582,6 @@ const QUOTES = [
 
 window.DESTINATIONS = DESTINATIONS;
 window.CROSS_PAGE_DESTINATION_SLUGS = CROSS_PAGE_DESTINATION_SLUGS;
-window.PROMOTIONS = PROMOTIONS;
 window.VERIFIED_ATTRACTIONS = VERIFIED_ATTRACTIONS;
 window.BLOG_DESTINATION_SLUGS = BLOG_DESTINATION_SLUGS;
 window.FAQ = FAQ;

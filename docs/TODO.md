@@ -12,7 +12,8 @@
 - [x] Add CI guards against missing runtime images and retired artifacts
 - [x] Connect Home, Destinations, Promotions, Gallery and Modal to destination-owned records
 - [x] Replace simulated tourism Dashboard values with metrics derived from live site data
-- [x] Remove fabricated weather, reviews, ratings and contact/team placeholders; isolate clearly labelled sample prices in shared promotion data
+- [x] Remove fabricated weather, reviews, ratings and contact/team placeholders
+- [x] Replace sample promotions with a user-input trip budget calculator
 - [x] Group quality, curation and maintenance tooling into responsibility-based script folders
 - [x] Remove bilingual mobile overflow, normalize route headings and touch targets, and support reduced motion
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-08 — User-input trip budget calculator
+- Replaced all fabricated promotion cards and provider-style prices with a practical budget calculator.
+- Calculates accommodation, food, transport, activities and other costs from user-entered values only.
+- Shows trip total, per-person cost and a transparent category breakdown in Thai and English.
+- Preserved the existing `#promotions` route so bookmarks and browser navigation continue to work.
+- Added static guards against sample promotions and browser coverage for calculation accuracy.
+
 ## 2026-08-08 — Verified attraction data foundation (batch 1)
 - Separated all 77 province records from attraction records instead of promoting activity suggestions into places.
 - Added sourced bilingual attraction records for Phuket, Chiang Mai, Krabi, Surat Thani and Bangkok.
