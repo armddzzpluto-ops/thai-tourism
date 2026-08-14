@@ -25,6 +25,7 @@
 - The Destinations route can filter the existing local favorites list, updates saved counts live and provides bilingual empty states
 - A project-local maintainer skill and `npm run verify` encode the repository workflow for compatible AI agents and contributors
 - The repository README presents the live site, real responsive screenshots, architecture, verification workflow and honest 5/77 attraction-verification status
+- Light and Dark Mode now share one emerald-and-temple-gold identity; Dark Mode uses deep emerald ink surfaces and warm readable foregrounds instead of the former blue/navy remap
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -56,6 +57,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-15 · Unified two-mode color system · Aligned both themes to emerald/gold, fixed dark-on-dark Navbar/Hero text and passed 48 browser checks
 - 2026-08-15 · Portfolio README · Added real Desktop/Mobile screenshots, live demo, feature/technology/setup documentation and transparent coverage status
 - 2026-08-14 · Project intelligence and saved destinations · Added a project-local maintainer skill, full verification command and bilingual favorites filter; 44 browser checks passed
 - 2026-08-08 · Trip budget calculator · Replaced sample promotions with user-entered cost calculations and retained the existing route for compatibility
