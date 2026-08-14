@@ -17,6 +17,8 @@
 - [x] Group quality, curation and maintenance tooling into responsibility-based script folders
 - [x] Remove bilingual mobile overflow, normalize route headings and touch targets, and support reduced motion
 - [x] Generate real detail URLs for all 77 destinations with canonical, Open Graph, JSON-LD and sitemap coverage
+- [x] Add a bilingual saved-destination filter backed by the existing favorites storage
+- [x] Add a project-local AI skill and one-command full verification workflow
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

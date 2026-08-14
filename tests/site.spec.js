@@ -135,6 +135,31 @@ test("destination cards use real, refreshable and navigable URLs", async ({ page
   await expect(page).toHaveURL(/\/destinations\/[a-z0-9-]+\/$/);
 });
 
+test("saved destinations can be filtered and stay bilingual", async ({ page }) => {
+  await page.evaluate(() => localStorage.setItem("tt_favs", JSON.stringify([1, 2])));
+  await page.reload();
+  await page.waitForFunction(() => window.I18N && window.showPage);
+  await page.evaluate(() => window.showPage("destinations", { updateHistory: false }));
+
+  const filter = page.locator("#favorites-filter");
+  await expect(filter).toContainText("รายการโปรด (2)");
+  await filter.click();
+  await expect(filter).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#dest-cards .dest-card")).toHaveCount(2);
+
+  await page.locator("#dest-cards .card-fav").first().click();
+  await expect(filter).toContainText("รายการโปรด (1)");
+  await expect(page.locator("#dest-cards .dest-card")).toHaveCount(1);
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(filter).toContainText("Favorites (1)");
+  expect(await page.locator("#page-destinations").innerText()).not.toMatch(thaiPattern);
+
+  await page.locator("#dest-cards .card-fav").click();
+  await expect(page.locator("#no-results")).toBeVisible();
+  await expect(page.locator("#no-results-title")).toHaveText("No saved destinations match these filters");
+});
+
 test("Dashboard values are calculated from live shared data", async ({ page }) => {
   await page.evaluate(() => window.showPage("dashboard", { updateHistory: false }));
   const result = await page.evaluate(() => ({

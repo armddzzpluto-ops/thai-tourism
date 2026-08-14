@@ -125,7 +125,7 @@
   function bindFilterValues() {
     const values = ["", "ภาคเหนือ", "ภาคกลาง", "ภาคใต้", "ภาคอีสาน", "ภาคตะวันออก"];
 
-    document.querySelectorAll(".filter-btn").forEach((button, index) => {
+    document.querySelectorAll(".filter-btn:not(.favorites-filter)").forEach((button, index) => {
       if (values[index] !== undefined) {
         button.dataset.filterValue = values[index];
       }
