@@ -38,13 +38,13 @@
   --chart-blue:           var(--blue);
 
   /* ======= TIER 3: SURFACES (backgrounds & containers) ======= */
-  --color-bg-primary:     #F9F8F6;   /* page background */
-  --color-bg-secondary:   #F1EFEB;   /* sections/alt areas */
-  --color-bg-tertiary:    #FFFFFF;   /* cards/modals */
+  --color-bg-primary:     #F6F3ED;   /* warm page canvas */
+  --color-bg-secondary:   #ECE7DE;   /* clearly separated alternate sections */
+  --color-bg-tertiary:    #FFFDFC;   /* softly warm raised cards/modals */
 
   /* RGB variants for rgba() usage */
-  --color-bg-primary-rgb:   249,248,246;
-  --color-bg-tertiary-rgb:  255,255,255;
+  --color-bg-primary-rgb:   246,243,237;
+  --color-bg-tertiary-rgb:  255,253,252;
 
   /* ======= TIER 4: TEXT & FOREGROUND (improved contrast) ======= */
   /* Light mode text hierarchy — stronger contrast for accessibility */
@@ -68,8 +68,8 @@
   --color-scrim-lg:       rgba(11,15,25,.90);
 
   /* ======= TIER 6: BORDERS & INTERACTIVE STATES ======= */
-  --color-border-default: var(--color-overlay-md);
-  --color-border-light:   var(--color-overlay-sm);
+  --color-border-default: #CEC8BE;
+  --color-border-light:   #E0DBD2;
   --color-border-focus:   var(--color-primary);
 
   --color-focus-ring:     rgba(11,107,102,.20);

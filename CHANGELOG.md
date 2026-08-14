@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-15 — Light Mode surface definition
+- Increased the visual separation between the warm page canvas, alternate sections and raised cards without changing the emerald-and-gold identity.
+- Replaced extremely faint translucent Light Mode borders with restrained warm-gray border tokens so cards, fields and dividers remain visible on bright displays.
+- Kept Dark Mode values and the existing theme architecture unchanged, and extended the browser theme regression to cover both surface and border tokens.
+
 ## 2026-08-15 — Unified two-mode color system
 - Unified Light and Dark Mode around one emerald-and-temple-gold identity instead of switching the dark theme to an unrelated blue palette.
 - Replaced navy Dark Mode surfaces with deep emerald ink, warm neutral text and emerald-tinted interactive overlays.
