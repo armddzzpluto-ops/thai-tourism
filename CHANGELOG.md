@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-15 — UI detail polish
+- Added theme-aware emerald-and-gold ambient gradients so page and alternate-section backgrounds have restrained depth in both Light and Dark Mode.
+- Rebuilt the Travel Tips, About metrics, mission, advantages and technology groups as reusable aligned components instead of inline styles and mouse handlers.
+- Standardized small icons and floating controls around bordered squircle containers, optical centering and consistent spacing.
+- Added responsive one-column card composition for small screens and a browser regression for ambient surfaces, icon geometry and removal of inline hover behavior.
+- Verified all 52 Playwright scenarios across Desktop, Notebook, Tablet and Mobile.
+
 ## 2026-08-15 — Light Mode surface definition
 - Increased the visual separation between the warm page canvas, alternate sections and raised cards without changing the emerald-and-gold identity.
 - Replaced extremely faint translucent Light Mode borders with restrained warm-gray border tokens so cards, fields and dividers remain visible on bright displays.
