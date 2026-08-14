@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-15 — Unified two-mode color system
+- Unified Light and Dark Mode around one emerald-and-temple-gold identity instead of switching the dark theme to an unrelated blue palette.
+- Replaced navy Dark Mode surfaces with deep emerald ink, warm neutral text and emerald-tinted interactive overlays.
+- Fixed the Dark Mode inverse-text token that made the Navbar and Hero text render dark on dark backgrounds.
+- Aligned hardcoded Home hero, statistic-card, navigation and shadow colors with the shared semantic palette.
+- Added a four-viewport Playwright regression for both theme palettes and key Navbar/Hero foreground colors; all 48 browser checks pass.
+- Refreshed the README screenshots to show the corrected Desktop Dark Mode and Mobile Light Mode.
+
 ## 2026-08-15 — Portfolio README
 - Added a portfolio-grade repository README with the live site, project scope, feature summary, technology stack, local setup and verification commands.
 - Added real Desktop Dark Mode and Mobile Light Mode screenshots captured from the current site.

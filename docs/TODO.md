@@ -20,6 +20,7 @@
 - [x] Add a bilingual saved-destination filter backed by the existing favorites storage
 - [x] Add a project-local AI skill and one-command full verification workflow
 - [x] Add a portfolio-grade README with real Desktop/Mobile screenshots, live demo, setup guide and transparent data status
+- [x] Unify Light/Dark colors around one emerald-and-gold identity and lock key theme foregrounds with browser regression tests
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

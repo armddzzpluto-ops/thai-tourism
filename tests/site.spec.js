@@ -23,6 +23,42 @@ test.beforeEach(async ({ page }) => {
   await page.waitForFunction(() => window.I18N && window.showPage);
 });
 
+test("light and dark themes keep one emerald-and-gold identity", async ({ page }) => {
+  const snapshot = theme => page.evaluate(selectedTheme => {
+    window.applyTheme(selectedTheme);
+    const root = getComputedStyle(document.documentElement);
+    const read = token => root.getPropertyValue(token).trim().toUpperCase();
+    return {
+      primary: read("--color-emerald-dark"),
+      gold: read("--color-gold-base"),
+      surface: read("--color-bg-primary"),
+      inverse: read("--color-text-inverse"),
+      navColor: getComputedStyle(document.querySelector(".nav-logo")).color,
+      heroColor: getComputedStyle(document.querySelector(".hero-title")).color
+    };
+  }, theme);
+
+  const light = await snapshot("light");
+  expect(light).toEqual({
+    primary: "#0B6B66",
+    gold: "#D4A373",
+    surface: "#F9F8F6",
+    inverse: "#FFFFFF",
+    navColor: "rgb(26, 28, 30)",
+    heroColor: "rgb(255, 255, 255)"
+  });
+
+  const dark = await snapshot("dark");
+  expect(dark).toEqual({
+    primary: "#238F82",
+    gold: "#E9C46A",
+    surface: "#071512",
+    inverse: "#F5F2E9",
+    navColor: "rgb(245, 242, 233)",
+    heroColor: "rgb(245, 242, 233)"
+  });
+});
+
 test("all pages stay English after a live language switch", async ({ page }) => {
   await page.evaluate(() => window.I18N.setLanguage("en"));
 

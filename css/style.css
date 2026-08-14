@@ -6,9 +6,9 @@
 /* ─── ROOT: LIGHT THEME (default) ──────────────────────────── */
 :root {
   /* ======= TIER 1: BRAND PRIMITIVES (immutable) ======= */
-  --color-emerald-dark:   #0A9396;
-  --color-emerald-base:   #18A7AA;
-  --color-emerald-light:  #57C6C8;
+  --color-emerald-dark:   #0B6B66;
+  --color-emerald-base:   #0F8179;
+  --color-emerald-light:  #68BBB0;
 
   --color-gold-base:      #D4A373;
   --color-gold-light:     #E2B88F;
@@ -49,19 +49,19 @@
   /* ======= TIER 4: TEXT & FOREGROUND (improved contrast) ======= */
   /* Light mode text hierarchy — stronger contrast for accessibility */
   --color-text-primary:   #1A1C1E;   /* HIGH CONTRAST */
-  --color-text-secondary: #454B52;   /* body/support */
-  --color-text-tertiary:  #76808A;   /* subtle labels */
+  --color-text-secondary: #3F4B49;   /* body/support */
+  --color-text-tertiary:  #66736F;   /* subtle labels */
 
-  --color-text-disabled:  #B2BAC4;   /* New: subtle interactive disabled state */
+  --color-text-disabled:  #98A39F;   /* New: subtle interactive disabled state */
   --color-text-inverse:   #FFFFFF;   /* New: text on dark backgrounds */
 
   /* ======= TIER 5: OVERLAYS & GLASS EFFECTS ======= */
   /* Theme-aware glass effects (emerald-tinted light) */
-  --color-overlay-xs:     rgba(10,147,150,.04);
-  --color-overlay-sm:     rgba(10,147,150,.08);
-  --color-overlay-md:     rgba(10,147,150,.14);
-  --color-overlay-lg:     rgba(10,147,150,.22);
-  --color-overlay-xl:     rgba(10,147,150,.35);
+  --color-overlay-xs:     rgba(11,107,102,.04);
+  --color-overlay-sm:     rgba(11,107,102,.08);
+  --color-overlay-md:     rgba(11,107,102,.14);
+  --color-overlay-lg:     rgba(11,107,102,.22);
+  --color-overlay-xl:     rgba(11,107,102,.35);
 
   /* Scrim/darkening overlays */
   --color-scrim-md:       rgba(11,15,25,.65);
@@ -72,12 +72,12 @@
   --color-border-light:   var(--color-overlay-sm);
   --color-border-focus:   var(--color-primary);
 
-  --color-focus-ring:     rgba(10,147,150,.20);
+  --color-focus-ring:     rgba(11,107,102,.20);
 
   /* ======= TIER 7: GRADIENTS ======= */
-  --gradient-primary:     linear-gradient(135deg, #0A9396 0%, #18A7AA 55%, #57C6C8 100%);
+  --gradient-primary:     linear-gradient(135deg, #0B6B66 0%, #0F8179 55%, #68BBB0 100%);
   --gradient-secondary:   linear-gradient(135deg, #E2B88F 0%, #D4A373 100%);
-  --gradient-hero-overlay: linear-gradient(135deg, rgba(11,15,25,.80) 0%, rgba(11,15,25,.45) 55%, rgba(10,147,150,.20) 100%);
+  --gradient-hero-overlay: linear-gradient(135deg, rgba(7,24,21,.84) 0%, rgba(7,24,21,.50) 55%, rgba(11,107,102,.20) 100%);
   --gradient-card-overlay: linear-gradient(180deg, transparent 18%, rgba(11,15,25,.88) 100%);
 
   /* ======= TIER 8: SHADOWS ======= */
@@ -93,8 +93,8 @@
   --shadow-xl:    var(--shadow-5);
 
   /* Glow effects for interactive elements */
-  --shadow-focus: 0 0 0 3px rgba(10,147,150,.16);
-  --shadow-glow:  0 8px 24px rgba(10,147,150,.18);
+  --shadow-focus: 0 0 0 3px rgba(11,107,102,.16);
+  --shadow-glow:  0 8px 24px rgba(11,107,102,.18);
 
   /* ======= TIER 9: RADIUS & LAYOUT ======= */
   --radius-2xs: 2px;
@@ -245,18 +245,18 @@
   --scrim-lg:       var(--color-scrim-lg);
 
   /* Color-specific rgba helpers for components */
-  --accent-04:  rgba(10,147,150,.04);
-  --accent-07:  rgba(10,147,150,.07);
-  --accent-08:  rgba(10,147,150,.08);
-  --accent-12:  rgba(10,147,150,.12);
-  --accent-14:  rgba(10,147,150,.14);
-  --accent-20:  rgba(10,147,150,.20);
-  --accent-25:  rgba(10,147,150,.25);
-  --accent-28:  rgba(10,147,150,.28);
-  --accent-30:  rgba(10,147,150,.30);
-  --accent-35:  rgba(10,147,150,.35);
-  --accent-40:  rgba(10,147,150,.40);
-  --accent-45:  rgba(10,147,150,.45);
+  --accent-04:  rgba(11,107,102,.04);
+  --accent-07:  rgba(11,107,102,.07);
+  --accent-08:  rgba(11,107,102,.08);
+  --accent-12:  rgba(11,107,102,.12);
+  --accent-14:  rgba(11,107,102,.14);
+  --accent-20:  rgba(11,107,102,.20);
+  --accent-25:  rgba(11,107,102,.25);
+  --accent-28:  rgba(11,107,102,.28);
+  --accent-30:  rgba(11,107,102,.30);
+  --accent-35:  rgba(11,107,102,.35);
+  --accent-40:  rgba(11,107,102,.40);
+  --accent-45:  rgba(11,107,102,.45);
 
   --blue:           #4EA8DE;
   --blue-14:        rgba(78,168,222,.14);
@@ -281,10 +281,10 @@
 
 /* ─── DARK THEME ─────────────────────────────────────────── */
 html[data-theme="dark"] {
-  /* ======= BRAND COLORS: brightened for dark context ======= */
-  --color-emerald-dark:   #4EA8DE;
-  --color-emerald-base:   #70BCE7;
-  --color-emerald-light:  #9ED4EF;
+  /* ======= BRAND COLORS: emerald remains the identity in both modes ======= */
+  --color-emerald-dark:   #238F82;
+  --color-emerald-base:   #49B9A9;
+  --color-emerald-light:  #8BD8CC;
 
   --color-gold-base:      #E9C46A;
   --color-gold-light:     #F1D38F;
@@ -314,27 +314,27 @@ html[data-theme="dark"] {
   --chart-blue:           var(--blue);
 
   /* ======= DARK SURFACES ======= */
-  --color-bg-primary:     #0B0F19;   /* dark page bg */
-  --color-bg-secondary:   #10182A;   /* dark sections */
-  --color-bg-tertiary:    #161F30;   /* dark cards */
+  --color-bg-primary:     #071512;   /* deep emerald ink */
+  --color-bg-secondary:   #0C1E1A;   /* dark sections */
+  --color-bg-tertiary:    #132A24;   /* dark cards */
 
-  --color-bg-primary-rgb:   11,15,25;
-  --color-bg-tertiary-rgb:  22,31,48;
+  --color-bg-primary-rgb:   7,21,18;
+  --color-bg-tertiary-rgb:  19,42,36;
 
   /* ======= DARK TEXT (light on dark) ======= */
-  --color-text-primary:   #F4F6F9;   /* HIGH CONTRAST light text */
-  --color-text-secondary: #C9D2E1;   /* muted body text */
-  --color-text-tertiary:  #9FAEC3;   /* subtle labels */
+  --color-text-primary:   #F5F2E9;   /* warm high-contrast text */
+  --color-text-secondary: #CED8D2;   /* muted body text */
+  --color-text-tertiary:  #99ADA6;   /* subtle labels */
 
-  --color-text-disabled:  #6F7E94;   /* disabled state */
-  --color-text-inverse:   #0B0F19;   /* text on light backgrounds */
+  --color-text-disabled:  #647B73;   /* disabled state */
+  --color-text-inverse:   #F5F2E9;   /* text on imagery and deep brand surfaces */
 
   /* ======= DARK OVERLAYS (light tinted) ======= */
-  --color-overlay-xs:     rgba(255,255,255,.04);
-  --color-overlay-sm:     rgba(255,255,255,.07);
-  --color-overlay-md:     rgba(255,255,255,.12);
-  --color-overlay-lg:     rgba(255,255,255,.18);
-  --color-overlay-xl:     rgba(255,255,255,.25);
+  --color-overlay-xs:     rgba(139,216,204,.04);
+  --color-overlay-sm:     rgba(139,216,204,.07);
+  --color-overlay-md:     rgba(139,216,204,.12);
+  --color-overlay-lg:     rgba(139,216,204,.18);
+  --color-overlay-xl:     rgba(139,216,204,.25);
 
   /* Dark scrims */
   --color-scrim-md:       rgba(4,9,8,.75);
@@ -345,13 +345,13 @@ html[data-theme="dark"] {
   --color-border-light:   var(--color-overlay-sm);
   --color-border-focus:   var(--color-primary);
 
-  --color-focus-ring:     rgba(78,168,222,.24);
+  --color-focus-ring:     rgba(73,185,169,.24);
 
   /* ======= DARK GRADIENTS ======= */
-  --gradient-primary:     linear-gradient(135deg, #4EA8DE 0%, #70BCE7 55%, #9ED4EF 100%);
+  --gradient-primary:     linear-gradient(135deg, #238F82 0%, #49B9A9 55%, #8BD8CC 100%);
   --gradient-secondary:   linear-gradient(135deg, #F1D38F 0%, #E9C46A 100%);
-  --gradient-hero-overlay: linear-gradient(135deg, rgba(11,15,25,.88) 0%, rgba(11,15,25,.55) 55%, rgba(78,168,222,.18) 100%);
-  --gradient-card-overlay: linear-gradient(180deg, transparent 18%, rgba(11,15,25,.90) 100%);
+  --gradient-hero-overlay: linear-gradient(135deg, rgba(7,21,18,.90) 0%, rgba(7,21,18,.60) 55%, rgba(35,143,130,.18) 100%);
+  --gradient-card-overlay: linear-gradient(180deg, transparent 18%, rgba(7,21,18,.92) 100%);
 
   /* ======= DARK SHADOWS ======= */
   --shadow-1:     0 2px 6px rgba(0,0,0,.35);
@@ -365,22 +365,22 @@ html[data-theme="dark"] {
   --shadow-lg:    var(--shadow-4);
   --shadow-xl:    var(--shadow-5);
 
-  --shadow-focus: 0 0 0 3px rgba(78,168,222,.22);
-  --shadow-glow:  0 8px 24px rgba(78,168,222,.24);
+  --shadow-focus: 0 0 0 3px rgba(73,185,169,.22);
+  --shadow-glow:  0 8px 24px rgba(73,185,169,.24);
 
   /* Update re-calibrated accent-rgba helpers for dark context */
-  --accent-04:  rgba(78,168,222,.04);
-  --accent-07:  rgba(78,168,222,.07);
-  --accent-08:  rgba(78,168,222,.08);
-  --accent-12:  rgba(78,168,222,.12);
-  --accent-14:  rgba(78,168,222,.14);
-  --accent-20:  rgba(78,168,222,.20);
-  --accent-25:  rgba(78,168,222,.25);
-  --accent-28:  rgba(78,168,222,.28);
-  --accent-30:  rgba(78,168,222,.30);
-  --accent-35:  rgba(78,168,222,.35);
-  --accent-40:  rgba(78,168,222,.40);
-  --accent-45:  rgba(78,168,222,.45);
+  --accent-04:  rgba(73,185,169,.04);
+  --accent-07:  rgba(73,185,169,.07);
+  --accent-08:  rgba(73,185,169,.08);
+  --accent-12:  rgba(73,185,169,.12);
+  --accent-14:  rgba(73,185,169,.14);
+  --accent-20:  rgba(73,185,169,.20);
+  --accent-25:  rgba(73,185,169,.25);
+  --accent-28:  rgba(73,185,169,.28);
+  --accent-30:  rgba(73,185,169,.30);
+  --accent-35:  rgba(73,185,169,.35);
+  --accent-40:  rgba(73,185,169,.40);
+  --accent-45:  rgba(73,185,169,.45);
 
   --blue:           #4EA8DE;
   --blue-14:        rgba(78,168,222,.14);

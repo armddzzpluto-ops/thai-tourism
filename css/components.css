@@ -2621,7 +2621,7 @@ a:focus-visible {
 }
 
 #page-home > .hero .stat-label {
-  color: color-mix(in srgb, var(--color-text-primary) 72%, transparent);
+  color: color-mix(in srgb, var(--color-text-inverse) 72%, transparent);
 }
 
 /* ─── 49. EXPERIENCE EXPLORER ART DIRECTION (CATEGORIES ONLY) ─── */
@@ -2986,8 +2986,8 @@ html[data-theme="dark"] .gallery-view-all {
 
 #page-home > .home-hero .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(7, 24, 31, 0.92) 0%, rgba(7, 24, 31, 0.75) 46%, rgba(7, 24, 31, 0.28) 76%, rgba(7, 24, 31, 0.2) 100%),
-    linear-gradient(0deg, rgba(7, 24, 31, 0.42), transparent 48%);
+    linear-gradient(90deg, rgba(7, 21, 18, 0.94) 0%, rgba(7, 21, 18, 0.78) 46%, rgba(7, 21, 18, 0.32) 76%, rgba(7, 21, 18, 0.22) 100%),
+    linear-gradient(0deg, rgba(7, 21, 18, 0.46), transparent 48%);
 }
 
 #page-home > .home-hero .hero-content {
@@ -3050,7 +3050,7 @@ html[data-theme="dark"] .gallery-view-all {
   align-items: center;
   gap: 14px;
   padding: 20px 22px;
-  background: rgba(9, 37, 46, 0.58);
+  background: rgba(12, 46, 40, 0.62);
   border-color: rgba(255, 255, 255, 0.14);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
 }
@@ -3085,7 +3085,7 @@ html[data-theme="dark"] .gallery-view-all {
   border-radius: 24px;
   background: color-mix(in srgb, var(--color-bg-tertiary) 95%, transparent);
   border: 1px solid var(--color-border-default);
-  box-shadow: 0 24px 65px rgba(18, 38, 43, 0.16);
+  box-shadow: 0 24px 65px rgba(7, 21, 18, 0.16);
   backdrop-filter: blur(20px);
 }
 
@@ -3376,16 +3376,16 @@ html[data-theme="light"] .navbar {
 }
 
 html[data-theme="dark"] .navbar {
-  background: rgba(20, 24, 28, 0.97);
+  background: rgba(7, 21, 18, 0.97);
 }
 
 #page-home > .home-search-panel .search-bar-inner {
   background: var(--color-bg-tertiary);
-  box-shadow: 0 18px 46px rgba(18, 38, 43, 0.12);
+  box-shadow: 0 18px 46px rgba(7, 21, 18, 0.12);
 }
 
 #page-home > .home-hero .hero-stat-card {
-  background: rgba(9, 37, 46, 0.82);
+  background: rgba(12, 46, 40, 0.86);
 }
 
 #page-home > .home-featured-section .dest-card,
