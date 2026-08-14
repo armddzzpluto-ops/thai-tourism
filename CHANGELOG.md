@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-15 — Portfolio README
+- Added a portfolio-grade repository README with the live site, project scope, feature summary, technology stack, local setup and verification commands.
+- Added real Desktop Dark Mode and Mobile Light Mode screenshots captured from the current site.
+- Documented the 77-province coverage and the 5/77 sourced-attraction status without presenting pending records as verified.
+- Added a concise architecture map and roadmap for contributors and portfolio reviewers.
+
 ## 2026-08-14 — Project intelligence and saved destinations
 - Added a project-local AI maintainer skill that points contributors to the canonical architecture, data, verification and PR rules.
 - Added `npm run verify` to run structural and browser checks as one delivery command.
