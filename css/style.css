@@ -79,6 +79,12 @@
   --gradient-secondary:   linear-gradient(135deg, #E2B88F 0%, #D4A373 100%);
   --gradient-hero-overlay: linear-gradient(135deg, rgba(7,24,21,.84) 0%, rgba(7,24,21,.50) 55%, rgba(11,107,102,.20) 100%);
   --gradient-card-overlay: linear-gradient(180deg, transparent 18%, rgba(11,15,25,.88) 100%);
+  --gradient-page-ambient:
+    radial-gradient(circle at 8% 8%, rgba(15,129,121,.10) 0, transparent 28rem),
+    radial-gradient(circle at 92% 16%, rgba(212,163,115,.13) 0, transparent 26rem);
+  --gradient-section-ambient:
+    radial-gradient(circle at 14% 0%, rgba(15,129,121,.06) 0, transparent 22rem),
+    radial-gradient(circle at 88% 100%, rgba(212,163,115,.08) 0, transparent 24rem);
 
   /* ======= TIER 8: SHADOWS ======= */
   --shadow-1:     0 2px 6px rgba(26,28,30,.06);
@@ -352,6 +358,12 @@ html[data-theme="dark"] {
   --gradient-secondary:   linear-gradient(135deg, #F1D38F 0%, #E9C46A 100%);
   --gradient-hero-overlay: linear-gradient(135deg, rgba(7,21,18,.90) 0%, rgba(7,21,18,.60) 55%, rgba(35,143,130,.18) 100%);
   --gradient-card-overlay: linear-gradient(180deg, transparent 18%, rgba(7,21,18,.92) 100%);
+  --gradient-page-ambient:
+    radial-gradient(circle at 8% 8%, rgba(73,185,169,.10) 0, transparent 30rem),
+    radial-gradient(circle at 92% 16%, rgba(233,196,106,.08) 0, transparent 28rem);
+  --gradient-section-ambient:
+    radial-gradient(circle at 14% 0%, rgba(73,185,169,.06) 0, transparent 24rem),
+    radial-gradient(circle at 88% 100%, rgba(233,196,106,.05) 0, transparent 26rem);
 
   /* ======= DARK SHADOWS ======= */
   --shadow-1:     0 2px 6px rgba(0,0,0,.35);

@@ -68,6 +68,36 @@ test("light and dark themes keep one emerald-and-gold identity", async ({ page }
   });
 });
 
+test("ambient surfaces and detail icons stay consistent across themes", async ({ page }) => {
+  const inspectTheme = theme => page.evaluate(selectedTheme => {
+    window.applyTheme(selectedTheme);
+    window.showPage("about", { updateHistory: false, scrollToTop: false });
+    const detailCard = document.querySelector("#page-about .detail-card");
+    const detailIcon = detailCard.querySelector(".detail-icon");
+    const floatingButton = document.querySelector(".fab-main-btn");
+    return {
+      bodyBackground: getComputedStyle(document.body).backgroundImage,
+      cardBorder: getComputedStyle(detailCard).borderTopStyle,
+      viewportWidth: window.innerWidth,
+      iconSize: [detailIcon.offsetWidth, detailIcon.offsetHeight],
+      iconRadius: getComputedStyle(detailIcon).borderRadius,
+      floatingRadius: getComputedStyle(floatingButton).borderRadius,
+      inlineHoverHandlers: document.querySelectorAll("[onmouseover], [onmouseout]").length
+    };
+  }, theme);
+
+  for (const theme of ["light", "dark"]) {
+    const snapshot = await inspectTheme(theme);
+    const compact = snapshot.viewportWidth <= 640;
+    expect(snapshot.bodyBackground).toContain("radial-gradient");
+    expect(snapshot.cardBorder).toBe("solid");
+    expect(snapshot.iconSize).toEqual(compact ? [48, 48] : [54, 54]);
+    expect(snapshot.iconRadius).toBe(compact ? "14px" : "16px");
+    expect(snapshot.floatingRadius).toBe("13px");
+    expect(snapshot.inlineHoverHandlers).toBe(0);
+  }
+});
+
 test("all pages stay English after a live language switch", async ({ page }) => {
   await page.evaluate(() => window.I18N.setLanguage("en"));
 
