@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-14 — Project intelligence and saved destinations
+- Added a project-local AI maintainer skill that points contributors to the canonical architecture, data, verification and PR rules.
+- Added `npm run verify` to run structural and browser checks as one delivery command.
+- Added a bilingual Favorites filter to the Destinations route using the existing `tt_favs` local storage contract.
+- Added live saved counts, combined region/search filtering and an honest empty state when no saved destination matches.
+- Added Playwright coverage for persistence, filtering, live removal and Thai/English switching.
+
 ## 2026-08-08 — Real destination detail URLs
 - Added pre-rendered `/destinations/<province-slug>/` pages for all 77 province records.
 - Changed destination cards and discovery widgets to navigate to shareable URLs instead of relying only on a modal.

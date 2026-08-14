@@ -5,6 +5,7 @@
   "scripts": {
     "build:destinations": "node scripts/build/generate-destination-pages.mjs",
     "check": "node scripts/quality/check-site.mjs",
+    "verify": "npm run check && npm run test:e2e",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "memory:update": "node scripts/maintenance/update-ai-memory.mjs"

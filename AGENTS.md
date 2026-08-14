@@ -27,6 +27,7 @@ Maintain a presentation-ready, bilingual static tourism SPA covering all 77 Thai
 ## Required verification
 - Run `npm run check`.
 - Run `npm run test:e2e` for changes affecting UI, routing, responsive layout, data rendering or language.
+- Run `npm run verify` before delivery when a change requires both structural and browser checks.
 - Test Thai and English.
 - Test Desktop 1440×900, Notebook 1280×800, Tablet 768×1024 and Mobile 390×844.
 - Check console errors, failed local requests, broken links and broken images.

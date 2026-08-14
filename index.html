@@ -437,6 +437,10 @@ Discover The Land Of Smiles</span></div>
           <button class="filter-btn" data-filter-value="ภาคใต้" aria-pressed="false" onclick="setFilter('ภาคใต้',this)">ภาคใต้</button>
           <button class="filter-btn" data-filter-value="ภาคอีสาน" aria-pressed="false" onclick="setFilter('ภาคอีสาน',this)">ภาคอีสาน</button>
           <button class="filter-btn" data-filter-value="ภาคตะวันออก" aria-pressed="false" onclick="setFilter('ภาคตะวันออก',this)">ภาคตะวันออก</button>
+          <button id="favorites-filter" class="filter-btn favorites-filter" type="button" aria-pressed="false" aria-label="แสดงเฉพาะรายการโปรด" onclick="toggleFavoritesFilter()">
+            <i class="fas fa-heart" aria-hidden="true"></i>
+            <span id="favorites-filter-label">รายการโปรด (0)</span>
+          </button>
         </div>
       </div>
 
@@ -446,8 +450,8 @@ Discover The Land Of Smiles</span></div>
       </div>
       <div id="no-results" role="status" aria-live="polite">
         <i class="fas fa-search-minus"></i>
-        <p style="font-size:1.1rem;font-weight:600;color:var(--teal-deep);">ไม่พบสถานที่ที่ค้นหา</p>
-        <p style="margin-top:8px;">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
+        <p id="no-results-title" style="font-size:1.1rem;font-weight:600;color:var(--teal-deep);">ไม่พบสถานที่ที่ค้นหา</p>
+        <p id="no-results-description" style="margin-top:8px;">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
       </div>
     </div>
   </section>

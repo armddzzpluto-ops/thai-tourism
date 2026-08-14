@@ -265,6 +265,8 @@ window.__hydrateTravelData = function hydrateTravelData() {
     destinations = window.DESTINATIONS.map(item =>
       normalizeIndexDestination(item)
     );
+    const validDestinationIds = new Set(destinations.map(item => item.id));
+    favorites = favorites.filter(id => validDestinationIds.has(id));
     window.destinations = destinations;
   } else {
     destinations = [];
@@ -293,12 +295,15 @@ window.__hydrateTravelData = function hydrateTravelData() {
 let favorites = [];
 try {
   const savedFavorites = JSON.parse(localStorage.getItem('tt_favs') || '[]');
-  favorites = Array.isArray(savedFavorites) ? savedFavorites : [];
+  favorites = Array.isArray(savedFavorites)
+    ? [...new Set(savedFavorites.map(Number).filter(Number.isInteger))]
+    : [];
 } catch (error) {
   localStorage.removeItem('tt_favs');
   console.warn('Invalid favorites data was cleared', error);
 }
 let activeFilter = '';
+let showFavoritesOnly = false;
 let currentPage = 'home';
 let chartsInit = false;
 
@@ -357,9 +362,10 @@ function renderCard(d, containerId) {
         <button
           class="card-fav ${isFav ? 'liked' : ''}"
           type="button"
+          data-destination-id="${d.id}"
           onclick="toggleFav(${d.id},this)"
           aria-label="${window.I18N?.t(isFav ? 'favorite.removeLabel' : 'favorite.saveLabel') || (isFav ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด')}: ${d.name}"
-          title="${window.I18N?.t('favorite.saveLabel') || 'บันทึกสถานที่'}"
+          title="${window.I18N?.t(isFav ? 'favorite.removeLabel' : 'favorite.saveLabel') || (isFav ? 'นำออกจากรายการโปรด' : 'บันทึกสถานที่')}"
         >
           ${isFav ? '❤️' : '🤍'}
         </button>
@@ -463,22 +469,35 @@ function renderDestCards(filter = '', search = '') {
   const filtered = destinations.filter(destination => {
     const matchRegion = !normalizedFilter || destination.region === normalizedFilter;
     const matchSearch = matchesDestinationSearch(destination, q);
-    return matchRegion && matchSearch;
+    const matchFavorite = !showFavoritesOnly || favorites.includes(destination.id);
+    return matchRegion && matchSearch && matchFavorite;
   });
 
   const status = document.getElementById('destination-results-status');
   const noResults = document.getElementById('no-results');
-  const isEnglish = document.documentElement.lang === 'en';
+  const tr = (key, variables, fallback) => window.I18N?.t(key, variables) || fallback;
 
   if (status) {
-    status.textContent = isEnglish
-      ? `Showing ${filtered.length} of ${destinations.length} destinations`
-      : `แสดง ${filtered.length} จาก ${destinations.length} สถานที่`;
+    status.textContent = showFavoritesOnly
+      ? tr('favorite.status', { count: filtered.length, saved: favorites.length }, `แสดงรายการโปรด ${filtered.length} จาก ${favorites.length} รายการ`)
+      : tr('destination.status', { count: filtered.length, total: destinations.length }, `แสดง ${filtered.length} จาก ${destinations.length} สถานที่`);
   }
+
+  syncFavoritesFilterControl();
 
   if (filtered.length === 0) {
     el.innerHTML = '';
-    if (noResults) noResults.style.display = 'block';
+    if (noResults) {
+      noResults.style.display = 'block';
+      const title = document.getElementById('no-results-title');
+      const description = document.getElementById('no-results-description');
+      if (title) title.textContent = showFavoritesOnly
+        ? tr('favorite.emptyTitle', {}, 'ยังไม่มีสถานที่โปรดที่ตรงกับตัวกรอง')
+        : tr('destination.emptyTitle', {}, 'ไม่พบสถานที่ที่ค้นหา');
+      if (description) description.textContent = showFavoritesOnly
+        ? tr('favorite.emptyDescription', {}, 'กดรูปหัวใจบนการ์ดสถานที่เพื่อบันทึกไว้ดูภายหลัง')
+        : tr('destination.emptyDescription', {}, 'ลองค้นหาด้วยคำอื่น หรือเลือกภูมิภาคอื่น');
+    }
     return;
   }
 
@@ -508,15 +527,44 @@ function renderGallery() {
 }
 
 // ===== INTERACTIONS =====
-function toggleFav(id, btn) {
+function syncFavoritesFilterControl() {
+  const button = document.getElementById('favorites-filter');
+  const label = document.getElementById('favorites-filter-label');
+  if (!button || !label) return;
+
+  label.textContent = window.I18N?.t('favorite.filter', { count: favorites.length }) || `รายการโปรด (${favorites.length})`;
+  button.classList.toggle('active', showFavoritesOnly);
+  button.setAttribute('aria-pressed', String(showFavoritesOnly));
+  button.setAttribute('aria-label', window.I18N?.t('favorite.filterLabel') || 'แสดงเฉพาะรายการโปรด');
+}
+
+function syncFavoriteButtons(id) {
+  const selector = id === undefined ? '.card-fav[data-destination-id]' : `.card-fav[data-destination-id="${id}"]`;
+  document.querySelectorAll(selector).forEach(button => {
+    const destinationId = Number(button.dataset.destinationId);
+    const destination = destinations.find(item => item.id === destinationId);
+    const liked = favorites.includes(destinationId);
+    const label = window.I18N?.t(liked ? 'favorite.removeLabel' : 'favorite.saveLabel') || (liked ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด');
+    button.innerHTML = liked ? '❤️' : '🤍';
+    button.classList.toggle('liked', liked);
+    button.setAttribute('aria-label', `${label}: ${destination?.name || ''}`.trim());
+    button.setAttribute('title', label);
+  });
+}
+
+function toggleFavoritesFilter() {
+  showFavoritesOnly = !showFavoritesOnly;
+  syncFavoritesFilterControl();
+  filterCards();
+}
+
+function toggleFav(id) {
   const idx = favorites.indexOf(id);
   if (idx === -1) {
     favorites.push(id);
-    btn.innerHTML = '❤️'; btn.classList.add('liked');
     Swal.fire({ toast:true, position:'top-end', icon:'success', title:window.I18N?.t('favorite.added') || 'เพิ่มในรายการโปรดแล้ว!', showConfirmButton:false, timer:1800, timerProgressBar:true });
   } else {
     favorites.splice(idx,1);
-    btn.innerHTML = '🤍'; btn.classList.remove('liked');
     Swal.fire({ toast:true, position:'top-end', icon:'info', title:window.I18N?.t('favorite.removed') || 'นำออกจากรายการโปรดแล้ว', showConfirmButton:false, timer:1800 });
   }
   try {
@@ -524,6 +572,9 @@ function toggleFav(id, btn) {
   } catch (error) {
     console.warn('Favorites could not be saved', error);
   }
+  syncFavoriteButtons(id);
+  syncFavoritesFilterControl();
+  if (currentPage === 'destinations' && showFavoritesOnly) filterCards();
 }
 
 function openModal(id) {
@@ -636,14 +687,14 @@ function closeLightbox(event) {
 }
 
 function filterCards() {
-  const q = document.getElementById('main-search').value;
+  const q = document.getElementById('main-search')?.value || '';
   renderDestCards(activeFilter, q);
 }
 
 function setFilter(region, btn) {
   activeFilter = region;
 
-  document.querySelectorAll('.filter-btn').forEach(button => {
+  document.querySelectorAll('.filter-btn:not(.favorites-filter)').forEach(button => {
     const active = button === btn;
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
@@ -670,7 +721,7 @@ function filterDest(cat) {
   const next = map[cat] || { search: cat };
   activeFilter = next.filter ?? '';
 
-  document.querySelectorAll('.filter-btn').forEach(button => {
+  document.querySelectorAll('.filter-btn:not(.favorites-filter)').forEach(button => {
     const shouldActivate = next.filter
       ? button.dataset.filterValue === cat
       : button.dataset.filterValue === '';
@@ -701,7 +752,7 @@ function doQuickSearch() {
   const destinationSearch = document.getElementById('main-search');
 
   activeFilter = '';
-  document.querySelectorAll('.filter-btn').forEach(button => {
+  document.querySelectorAll('.filter-btn:not(.favorites-filter)').forEach(button => {
     const active = button.dataset.filterValue === '';
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
@@ -726,7 +777,7 @@ function showDest(name) {
   const search = document.getElementById('main-search');
   if (search) search.value = name;
 
-  document.querySelectorAll('.filter-btn').forEach(button => {
+  document.querySelectorAll('.filter-btn:not(.favorites-filter)').forEach(button => {
     const active = button.dataset.filterValue === '';
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
