@@ -19,6 +19,7 @@
 - [x] Generate real detail URLs for all 77 destinations with canonical, Open Graph, JSON-LD and sitemap coverage
 - [x] Add a bilingual saved-destination filter backed by the existing favorites storage
 - [x] Add a project-local AI skill and one-command full verification workflow
+- [x] Add a portfolio-grade README with real Desktop/Mobile screenshots, live demo, setup guide and transparent data status
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
