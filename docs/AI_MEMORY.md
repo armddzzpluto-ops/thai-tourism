@@ -31,6 +31,7 @@
 - Home hero metrics now come from the live province, verified-attraction and gallery datasets; unsupported tourism totals are blocked by the structural audit
 - Destination, gallery and article overlays share accessible dialog state, keyboard focus containment, Escape-to-close and focus restoration
 - The Home Hero uses the sharper existing Chiang Mai landscape through one shared image token, with theme-safe scrims and a seamless transition into the first content surface
+- Buttons now follow one control hierarchy: 12px squircle actions, pill filters/chips and accessible 44px squircle icon-only targets with stable hover/focus feedback
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -62,6 +63,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-16 · Button and icon control consistency · Normalized shared button geometry, icon targets and interaction feedback across Light/Dark and responsive layouts
 - 2026-08-16 · Homepage visual depth and Hero clarity · Replaced the compressed Hero source, consolidated its art direction and removed the fixed first-viewport background seam
 - 2026-08-15 · Runtime trust and dialog consistency · Replaced unsupported hero claims with live data and unified keyboard-safe overlay behavior
 - 2026-08-15 · UI detail polish · Added ambient theme surfaces, reusable aligned detail cards and a unified squircle icon treatment; 52 browser checks passed
