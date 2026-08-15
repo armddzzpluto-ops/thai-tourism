@@ -143,6 +143,63 @@ test("Home hero uses the sharp local artwork and blends into the page surface", 
   }
 });
 
+test("buttons and icon controls use one stable geometry system", async ({ page }) => {
+  for (const theme of ["light", "dark"]) {
+    const snapshot = await page.evaluate(selectedTheme => {
+      window.applyTheme(selectedTheme);
+      window.showPage("home", { updateHistory: false, scrollToTop: false });
+      const geometry = selector => {
+        const element = document.querySelector(selector);
+        const style = getComputedStyle(element);
+        return {
+          width: element.getBoundingClientRect().width,
+          height: element.getBoundingClientRect().height,
+          cssWidth: Number.parseFloat(style.width),
+          cssHeight: Number.parseFloat(style.height),
+          radius: style.borderRadius
+        };
+      };
+
+      const primary = geometry("#page-home .btn-primary");
+      window.showPage("destinations", { updateHistory: false, scrollToTop: false });
+      window.openModal(window.destinations[0].id);
+      const close = geometry(".modal-close");
+      window.closeModalBtn();
+
+      return {
+        primary,
+        filter: geometry("#page-destinations .filter-btn"),
+        navSearch: geometry(".nav-search-btn"),
+        theme: geometry(".theme-toggle-btn"),
+        favorite: geometry(".card-fav"),
+        close,
+        social: geometry(".social-btn"),
+        hamburger: geometry(".hamburger"),
+        isCompact: window.innerWidth <= 640
+      };
+    }, theme);
+
+    expect(snapshot.primary.height).toBeGreaterThanOrEqual(46);
+    expect(snapshot.primary.radius).toBe("12px");
+    expect(snapshot.filter.height).toBeGreaterThanOrEqual(44);
+    expect(snapshot.filter.radius).toBe("999px");
+    expect(snapshot.navSearch.height).toBeGreaterThanOrEqual(44);
+    expect(snapshot.navSearch.radius).toBe("12px");
+
+    for (const control of [snapshot.theme, snapshot.favorite, snapshot.close, snapshot.social]) {
+      expect(control.cssWidth).toBeGreaterThanOrEqual(44);
+      expect(control.cssHeight).toBeGreaterThanOrEqual(44);
+      expect(control.radius).toBe("12px");
+    }
+
+    if (snapshot.isCompact) {
+      expect(snapshot.hamburger.width).toBeGreaterThanOrEqual(44);
+      expect(snapshot.hamburger.height).toBeGreaterThanOrEqual(44);
+      expect(snapshot.hamburger.radius).toBe("12px");
+    }
+  }
+});
+
 test("overlays expose dialog state, close with Escape and restore focus", async ({ page }) => {
   await page.evaluate(() => window.showPage("gallery", { updateHistory: false }));
   const trigger = page.locator("#gallery-grid .gallery-item").first();

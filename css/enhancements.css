@@ -1574,3 +1574,192 @@ body {
     gap: var(--space-sm);
   }
 }
+
+/* ─── CONTROL AND ICON POLISH: ONE CLEAR INTERACTION SYSTEM ── */
+/* Text actions use a restrained squircle; compact filters remain pills. */
+.btn-primary,
+.btn-outline,
+.form-submit,
+.card-cta,
+.mini-action-btn,
+.region-reset-button,
+.budget-reset,
+.gallery-view-all {
+  min-height: var(--control-height);
+  border-radius: var(--control-radius);
+  padding-inline: clamp(18px, 2vw, 26px);
+  line-height: 1.2;
+  transition:
+    transform var(--timing-fast),
+    background-color var(--timing-fast),
+    border-color var(--timing-fast),
+    color var(--timing-fast),
+    box-shadow var(--timing-fast);
+}
+
+.filter-btn,
+.suggestion-chip,
+.language-switch,
+.language-switch button {
+  border-radius: var(--radius-pill);
+}
+
+.filter-btn,
+.suggestion-chip {
+  min-height: 44px;
+}
+
+/* Navigation and floating-menu actions follow the same compact geometry. */
+.nav-search-btn,
+.fab-menu-panel button {
+  min-height: var(--control-icon-size);
+  border-radius: var(--control-radius);
+}
+
+.nav-search-btn {
+  padding-inline: 14px;
+  background: color-mix(in srgb, var(--color-bg-tertiary) 8%, transparent);
+}
+
+.fab-menu-panel button {
+  padding: 5px var(--space-lg) 5px 6px;
+}
+
+/* Icon-only controls share a reliable target and optical center. */
+.theme-toggle-btn,
+.hamburger,
+.card-fav,
+.modal-close,
+.social-btn {
+  width: var(--control-icon-size);
+  height: var(--control-icon-size);
+  min-width: var(--control-icon-size);
+  min-height: var(--control-icon-size);
+  padding: 0;
+  border-radius: var(--control-radius);
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn,
+.card-fav,
+.social-btn,
+.hamburger {
+  border: 1px solid var(--color-border-default);
+  background: color-mix(in srgb, var(--color-bg-tertiary) 92%, transparent);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.hamburger {
+  padding-inline: 10px;
+}
+
+.modal-close {
+  background: rgba(7, 21, 18, 0.76);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.back-to-top {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--control-radius);
+}
+
+.btn-primary > i,
+.btn-outline > i,
+.form-submit > i,
+.card-cta > i,
+.search-btn > i,
+.mini-action-btn > i,
+.region-reset-button > i,
+.budget-reset > i,
+.nav-search-btn > i,
+.theme-toggle-btn > i,
+.card-fav > i,
+.modal-close > i,
+.social-btn > i,
+.back-to-top > i,
+.fab-main-btn > i {
+  width: 18px;
+  height: 18px;
+  display: inline-grid;
+  flex: 0 0 18px;
+  place-items: center;
+  line-height: 1;
+}
+
+.region-button {
+  min-height: 48px;
+}
+
+.region-button.active {
+  border-color: color-mix(in srgb, var(--color-accent) 52%, var(--color-border-default));
+  box-shadow: inset 3px 0 0 var(--color-accent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover,
+  .btn-outline:hover,
+  .form-submit:hover,
+  .card-cta:hover,
+  .mini-action-btn:hover,
+  .region-reset-button:hover,
+  .budget-reset:hover,
+  .gallery-view-all:hover,
+  .nav-search-btn:hover,
+  .theme-toggle-btn:hover,
+  .social-btn:hover,
+  .back-to-top:hover {
+    transform: translateY(-1px);
+  }
+
+  .card-fav:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--color-status-danger) 40%, var(--color-border-default));
+  }
+
+  .modal-close:hover {
+    transform: translateY(-1px);
+    background: color-mix(in srgb, var(--color-status-danger) 32%, rgba(7, 21, 18, 0.84));
+    border-color: color-mix(in srgb, var(--color-status-danger) 52%, transparent);
+  }
+}
+
+.btn-primary:active,
+.btn-outline:active,
+.form-submit:active,
+.card-cta:active,
+.mini-action-btn:active,
+.region-reset-button:active,
+.budget-reset:active,
+.gallery-view-all:active,
+.nav-search-btn:active,
+.theme-toggle-btn:active,
+.card-fav:active,
+.modal-close:active,
+.social-btn:active,
+.back-to-top:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-primary:focus-visible,
+.btn-outline:focus-visible,
+.form-submit:focus-visible,
+.card-cta:focus-visible,
+.mini-action-btn:focus-visible,
+.region-reset-button:focus-visible,
+.budget-reset:focus-visible,
+.gallery-view-all:focus-visible,
+.nav-search-btn:focus-visible,
+.theme-toggle-btn:focus-visible,
+.hamburger:focus-visible,
+.card-fav:focus-visible,
+.modal-close:focus-visible,
+.social-btn:focus-visible,
+.back-to-top:focus-visible,
+.fab-main-btn:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}

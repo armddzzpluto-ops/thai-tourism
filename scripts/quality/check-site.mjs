@@ -128,6 +128,12 @@ if (enhancementStyles.includes("background-size: 100% min(920px, 100vh)")) {
 if (/body\s*\{[^}]*background-size:[^;}]*\b\d+px\b/s.test(enhancementStyles)) {
   failures.push("Page ambient background must not reintroduce a fixed-height mobile seam");
 }
+for (const token of ["--control-height", "--control-icon-size", "--control-radius"]) {
+  if (!style.includes(token)) failures.push(`shared control token is missing: ${token}`);
+}
+for (const selector of [".theme-toggle-btn", ".card-fav", ".modal-close", ".social-btn"]) {
+  if (!enhancementStyles.includes(selector)) failures.push(`icon-control polish is missing: ${selector}`);
+}
 for (const overlayId of ["modal", "lightbox", "blog-modal"]) {
   const overlayPattern = new RegExp(`<div[^>]+id=["']${overlayId}["'][^>]+role=["']dialog["'][^>]+aria-hidden=["']true["']`);
   if (!overlayPattern.test(index)) failures.push(`accessible dialog state is missing: #${overlayId}`);

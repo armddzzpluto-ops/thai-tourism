@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-16 — Button and icon control consistency
+- Organized controls into three intentional shapes: squircle text actions, pill filters/chips and 44px squircle icon controls.
+- Normalized icon centering, tap targets, borders, hover/pressed motion and focus rings across navigation, cards, dialogs, footer and floating actions.
+- Replaced the harsh modal-close and scaling favorite interactions with restrained theme-aware feedback that does not visually jump.
+- Added structural tokens and browser regressions for control sizing and geometry in Light/Dark Mode across all responsive profiles.
+
 ## 2026-08-16 — Homepage visual depth and hero clarity
 - Replaced the visibly compressed Bangkok skyline Hero with the sharper existing Chiang Mai landscape and preloaded the exact rendered asset.
 - Centralized the homepage image path as a design token and removed superseded Hero image/overlay overrides from older refinement layers.

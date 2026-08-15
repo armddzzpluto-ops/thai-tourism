@@ -133,6 +133,9 @@
   /* Shared vertical/horizontal padding for all button variants */
   --btn-py:    14px;
   --btn-px:    var(--space-2xl);   /* 32px */
+  --control-height: 46px;
+  --control-icon-size: 44px;
+  --control-radius: var(--radius-sm);
   /* Shared padding for all text inputs / selects / textareas */
   --input-py:  var(--space-md);    /* 12px */
   --input-px:  var(--space-lg);    /* 16px */
