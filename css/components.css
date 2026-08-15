@@ -214,7 +214,7 @@ html[data-theme="dark"] .mobile-menu a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../assets/images/provinces/bangkok/hero.webp') center/cover no-repeat;
+  background: var(--image-home-hero) center/cover no-repeat;
   opacity: 0.32;
 }
 
@@ -2553,20 +2553,6 @@ a:focus-visible {
 }
 
 /* ─── 48. HERO ART DIRECTION (COMPOSITION-ONLY, PRODUCTION) ─── */
-#page-home > .hero .hero-bg {
-  background-position: 58% center;
-  opacity: 0.29;
-}
-
-#page-home > .hero .hero-overlay {
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--color-primary) 94%, transparent) 0%,
-    color-mix(in srgb, var(--color-primary) 86%, transparent) 44%,
-    color-mix(in srgb, var(--color-primary) 34%, transparent) 100%
-  );
-}
-
 #page-home > .hero .hero-content {
   padding-top: calc(var(--nav-h) + 6px);
   padding-bottom: 8px;
@@ -2755,12 +2741,6 @@ a:focus-visible {
 }
 
 /* ─── 51. HOMEPAGE AUDIT FIXES ─────────────────────────── */
-#page-home > .hero .hero-bg {
-  background-image: url('../assets/images/provinces/bangkok/hero.webp');
-  background-position: 54% center;
-  will-change: auto;
-}
-
 #page-home > .hero .hero-content {
   max-width: min(1180px, 100%);
 }
@@ -2968,26 +2948,45 @@ html[data-theme="dark"] .gallery-view-all {
 /* Full homepage pass: desktop, tablet, mobile, hierarchy and performance. */
 
 #page-home {
+  --home-hero-scrim: linear-gradient(90deg, rgba(5, 18, 15, 0.92) 0%, rgba(7, 31, 26, 0.78) 43%, rgba(7, 31, 26, 0.32) 73%, rgba(7, 31, 26, 0.16) 100%);
+  --home-hero-depth: linear-gradient(0deg, rgba(4, 16, 13, 0.64) 0%, transparent 42%);
+  position: relative;
+  isolation: isolate;
   background:
-    radial-gradient(circle at 12% 22%, var(--accent-04), transparent 26rem),
+    radial-gradient(circle at 12% 18%, var(--accent-04), transparent 28rem),
+    radial-gradient(circle at 90% 36%, color-mix(in srgb, var(--color-secondary) 7%, transparent), transparent 32rem),
     var(--color-bg-primary);
 }
 
 #page-home > .home-hero {
   min-height: clamp(680px, 88vh, 820px);
   isolation: isolate;
+  background: #071512;
 }
 
 #page-home > .home-hero .hero-bg {
-  opacity: 0.58;
-  transform: scale(1.015);
-  background-position: 58% center;
+  background-image: var(--image-home-hero);
+  background-position: 50% center;
+  background-size: cover;
+  opacity: 1;
+  transform: none;
+  will-change: auto;
 }
 
 #page-home > .home-hero .hero-overlay {
-  background:
-    linear-gradient(90deg, rgba(7, 21, 18, 0.94) 0%, rgba(7, 21, 18, 0.78) 46%, rgba(7, 21, 18, 0.32) 76%, rgba(7, 21, 18, 0.22) 100%),
-    linear-gradient(0deg, rgba(7, 21, 18, 0.46), transparent 48%);
+  background: var(--home-hero-depth), var(--home-hero-scrim);
+}
+
+#page-home > .home-hero::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: clamp(120px, 18vh, 190px);
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--color-bg-primary) 42%, transparent) 62%, var(--color-bg-primary) 100%);
 }
 
 #page-home > .home-hero .hero-content {
@@ -3292,6 +3291,16 @@ html[data-theme="dark"] .gallery-view-all {
   #page-home > .home-hero .hero-title {
     max-width: 11ch;
     font-size: clamp(2.55rem, 10vw, 4rem);
+  }
+
+  #page-home > .home-hero .hero-bg {
+    background-position: 40% center;
+  }
+
+  #page-home > .home-hero .hero-overlay {
+    background:
+      linear-gradient(0deg, rgba(4, 16, 13, 0.72) 0%, transparent 48%),
+      linear-gradient(90deg, rgba(5, 18, 15, 0.88) 0%, rgba(7, 31, 26, 0.58) 76%, rgba(7, 31, 26, 0.34) 100%);
   }
 
   #page-home > .home-search-panel {

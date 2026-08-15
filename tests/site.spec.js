@@ -117,6 +117,32 @@ test("Home hero reports live project coverage instead of unsupported tourism tot
   expect(coverage.heroText).not.toMatch(/3,200|40M\+|นักท่องเที่ยวต่อปี/);
 });
 
+test("Home hero uses the sharp local artwork and blends into the page surface", async ({ page }) => {
+  for (const theme of ["light", "dark"]) {
+    const snapshot = await page.evaluate(selectedTheme => {
+      window.applyTheme(selectedTheme);
+      const hero = document.querySelector("#page-home > .home-hero");
+      const media = hero.querySelector(".hero-bg");
+      return {
+        media: getComputedStyle(media).backgroundImage,
+        size: getComputedStyle(media).backgroundSize,
+        opacity: getComputedStyle(media).opacity,
+        transition: getComputedStyle(hero, "::after").backgroundImage,
+        bodySize: getComputedStyle(document.body).backgroundSize,
+        overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth
+      };
+    }, theme);
+
+    expect(snapshot.media).toContain("assets/images/provinces/chiang-mai/hero.webp");
+    expect(snapshot.size).toBe("cover");
+    expect(snapshot.opacity).toBe("1");
+    expect(snapshot.transition).toContain("linear-gradient");
+    expect(snapshot.bodySize).not.toContain("px");
+    expect(snapshot.bodySize.split(", ").every(size => size.endsWith(" 100%"))).toBe(true);
+    expect(snapshot.overflow).toBe(0);
+  }
+});
+
 test("overlays expose dialog state, close with Escape and restore focus", async ({ page }) => {
   await page.evaluate(() => window.showPage("gallery", { updateHistory: false }));
   const trigger = page.locator("#gallery-grid .gallery-item").first();

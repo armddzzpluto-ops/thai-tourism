@@ -25,6 +25,7 @@
 - [x] Add theme-aware ambient backgrounds and unify detail-card, icon and micro-alignment treatments
 - [x] Replace unsupported Home hero tourism claims with live project coverage values
 - [x] Unify modal, lightbox and article keyboard/focus behavior
+- [x] Replace the compressed Home Hero source and blend the first screen into the page without a fixed background seam
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

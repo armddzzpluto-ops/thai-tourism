@@ -1157,7 +1157,7 @@ body {
   background-color: var(--color-bg-primary);
   background-image: var(--gradient-page-ambient);
   background-repeat: no-repeat;
-  background-size: 100% min(920px, 100vh);
+  background-size: 100% 100%;
 }
 
 .section-alt {
@@ -1510,7 +1510,7 @@ body {
 
 @media (max-width: 640px) {
   body {
-    background-size: 150% 760px;
+    background-size: 150% 100%;
   }
 
   .page:not(#page-home) > .section:first-of-type::before {
