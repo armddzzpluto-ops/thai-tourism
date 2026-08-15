@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-16 — Homepage visual depth and hero clarity
+- Replaced the visibly compressed Bangkok skyline Hero with the sharper existing Chiang Mai landscape and preloaded the exact rendered asset.
+- Centralized the homepage image path as a design token and removed superseded Hero image/overlay overrides from older refinement layers.
+- Rebuilt the Hero scrim, bottom transition, page ambience and search-panel boundary so the first screen blends into the content without a hard background seam.
+- Added structural and browser regressions for the Hero asset, full-quality rendering, theme transition layer and horizontal overflow.
+
 ## 2026-08-15 — Runtime trust and dialog consistency
 - Replaced unsupported coastline and annual-visitor hero claims with province, verified-attraction and linked-image counts derived from the live project data.
 - Kept live coverage values exact on first paint by excluding them from the decorative counter animation.

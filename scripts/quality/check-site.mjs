@@ -38,6 +38,9 @@ const translations = read("js/translations.js");
 const i18n = read("js/i18n.js");
 const enhancements = read("js/enhancements.js");
 const curationData = read("js/image-curation-data.js");
+const style = read("css/style.css");
+const components = read("css/components.css");
+const enhancementStyles = read("css/enhancements.css");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -109,6 +112,21 @@ if (/3,200|40M\+|นักท่องเที่ยวต่อปี/.test(in
 }
 if ((index.match(/data-live-metric/g) || []).length !== 3) {
   failures.push("Home live coverage metrics must opt out of decorative counter animation");
+}
+if (!index.includes('href="assets/images/provinces/chiang-mai/hero.webp" fetchpriority="high"')) {
+  failures.push("Home hero must preload its current sharp local image");
+}
+if (!style.includes("--image-home-hero: url('../assets/images/provinces/chiang-mai/hero.webp')")) {
+  failures.push("Home hero image must stay centralized in the shared design tokens");
+}
+if (!components.includes("background-image: var(--image-home-hero)")) {
+  failures.push("Home hero art direction must use the shared image token");
+}
+if (enhancementStyles.includes("background-size: 100% min(920px, 100vh)")) {
+  failures.push("Page ambient background must not end at a fixed first-viewport seam");
+}
+if (/body\s*\{[^}]*background-size:[^;}]*\b\d+px\b/s.test(enhancementStyles)) {
+  failures.push("Page ambient background must not reintroduce a fixed-height mobile seam");
 }
 for (const overlayId of ["modal", "lightbox", "blog-modal"]) {
   const overlayPattern = new RegExp(`<div[^>]+id=["']${overlayId}["'][^>]+role=["']dialog["'][^>]+aria-hidden=["']true["']`);
