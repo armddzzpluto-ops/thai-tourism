@@ -98,6 +98,42 @@ test("ambient surfaces and detail icons stay consistent across themes", async ({
   }
 });
 
+test("Home hero reports live project coverage instead of unsupported tourism totals", async ({ page }) => {
+  const coverage = await page.evaluate(() => ({
+    rendered: [
+      Number(document.getElementById("hero-province-count")?.textContent),
+      Number(document.getElementById("hero-verified-count")?.textContent),
+      Number(document.getElementById("hero-gallery-count")?.textContent)
+    ],
+    expected: [
+      window.destinations.length,
+      Object.keys(window.VERIFIED_ATTRACTIONS).length,
+      window.galleryImages.length
+    ],
+    heroText: document.querySelector(".hero-stats")?.textContent || ""
+  }));
+
+  expect(coverage.rendered).toEqual(coverage.expected);
+  expect(coverage.heroText).not.toMatch(/3,200|40M\+|นักท่องเที่ยวต่อปี/);
+});
+
+test("overlays expose dialog state, close with Escape and restore focus", async ({ page }) => {
+  await page.evaluate(() => window.showPage("gallery", { updateHistory: false }));
+  const trigger = page.locator("#gallery-grid .gallery-item").first();
+  await trigger.focus();
+  await trigger.click();
+
+  const lightbox = page.locator("#lightbox");
+  await expect(lightbox).toHaveAttribute("role", "dialog");
+  await expect(lightbox).toHaveAttribute("aria-hidden", "false");
+  await expect(lightbox.locator("button").first()).toBeFocused();
+
+  await page.keyboard.press("Escape");
+  await expect(lightbox).toHaveAttribute("aria-hidden", "true");
+  await expect(trigger).toBeFocused();
+  await expect(page.locator("body")).not.toHaveCSS("overflow", "hidden");
+});
+
 test("all pages stay English after a live language switch", async ({ page }) => {
   await page.evaluate(() => window.I18N.setLanguage("en"));
 

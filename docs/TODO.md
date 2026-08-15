@@ -23,6 +23,8 @@
 - [x] Unify Light/Dark colors around one emerald-and-gold identity and lock key theme foregrounds with browser regression tests
 - [x] Improve Light Mode canvas/card separation and border visibility on bright displays
 - [x] Add theme-aware ambient backgrounds and unify detail-card, icon and micro-alignment treatments
+- [x] Replace unsupported Home hero tourism claims with live project coverage values
+- [x] Unify modal, lightbox and article keyboard/focus behavior
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

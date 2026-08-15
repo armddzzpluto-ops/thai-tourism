@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-15 — Runtime trust and dialog consistency
+- Replaced unsupported coastline and annual-visitor hero claims with province, verified-attraction and linked-image counts derived from the live project data.
+- Kept live coverage values exact on first paint by excluding them from the decorative counter animation.
+- Unified the destination modal, gallery lightbox and article modal as accessible dialogs with explicit open/closed state, initial focus, focus containment, Escape-to-close and focus restoration.
+- Preserved body scroll locking until every overlay is closed instead of allowing one close action to unlock the page behind another dialog.
+- Added structural guards and browser regressions for honest hero coverage and keyboard-safe overlay behavior.
+
 ## 2026-08-15 — UI detail polish
 - Added theme-aware emerald-and-gold ambient gradients so page and alternate-section backgrounds have restrained depth in both Light and Dark Mode.
 - Rebuilt the Travel Tips, About metrics, mission, advantages and technology groups as reusable aligned components instead of inline styles and mouse handlers.

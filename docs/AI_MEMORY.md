@@ -28,6 +28,8 @@
 - Light and Dark Mode now share one emerald-and-temple-gold identity; Dark Mode uses deep emerald ink surfaces and warm readable foregrounds instead of the former blue/navy remap
 - Light Mode uses a warm cream canvas, softly raised cards and visible warm-gray borders so boundaries remain legible on bright displays
 - Shared Light/Dark ambient gradients, squircle icon containers and reusable detail-card layouts now provide consistent background depth, alignment and micro-spacing across Home and About content
+- Home hero metrics now come from the live province, verified-attraction and gallery datasets; unsupported tourism totals are blocked by the structural audit
+- Destination, gallery and article overlays share accessible dialog state, keyboard focus containment, Escape-to-close and focus restoration
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -59,6 +61,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-15 · Runtime trust and dialog consistency · Replaced unsupported hero claims with live data and unified keyboard-safe overlay behavior
 - 2026-08-15 · UI detail polish · Added ambient theme surfaces, reusable aligned detail cards and a unified squircle icon treatment; 52 browser checks passed
 - 2026-08-15 · Light Mode surface definition · Increased canvas/card separation and made card, field and divider borders visible without changing Dark Mode
 - 2026-08-15 · Unified two-mode color system · Aligned both themes to emerald/gold, fixed dark-on-dark Navbar/Hero text and passed 48 browser checks

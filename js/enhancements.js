@@ -196,7 +196,7 @@
   function initCounters() {
     // Dashboard numbers are live data-quality indicators. Keep them exact instead
     // of briefly presenting partial values while a decorative counter runs.
-    const counters = document.querySelectorAll(".stat-num, .about-badge .big");
+    const counters = document.querySelectorAll(".stat-num:not([data-live-metric]), .about-badge .big");
     if (!counters.length) return;
 
     if (!("IntersectionObserver" in window)) {
@@ -623,8 +623,7 @@
     document.getElementById("blog-modal-meta").textContent = `${post.date} · ${post.read}`;
     document.getElementById("blog-modal-content").innerHTML = post.body.map(p => `<p>${p}</p>`).join("");
     modal.dataset.blogId = String(id);
-    modal.classList.add("open");
-    document.body.style.overflow = "hidden";
+    window.openAccessibleOverlay?.(modal, ".modal-close");
   }
 
   function initFAQ() {
@@ -736,8 +735,13 @@
   }
 
   function closeBlogArticleBtn() {
-    document.getElementById("blog-modal")?.classList.remove("open");
-    document.body.style.overflow = "";
+    const modal = document.getElementById("blog-modal");
+    if (window.closeAccessibleOverlay) window.closeAccessibleOverlay(modal);
+    else {
+      modal?.classList.remove("open");
+      modal?.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
   }
 
   function escapeAttr(value) {

@@ -104,6 +104,17 @@ for (const [label, pattern] of retiredMockPatterns) {
   if (pattern.test(runtimeSources)) failures.push(`retired mock content remains: ${label}`);
 }
 
+if (/3,200|40M\+|นักท่องเที่ยวต่อปี/.test(index)) {
+  failures.push("unsupported tourism totals remain visible in the Home hero");
+}
+if ((index.match(/data-live-metric/g) || []).length !== 3) {
+  failures.push("Home live coverage metrics must opt out of decorative counter animation");
+}
+for (const overlayId of ["modal", "lightbox", "blog-modal"]) {
+  const overlayPattern = new RegExp(`<div[^>]+id=["']${overlayId}["'][^>]+role=["']dialog["'][^>]+aria-hidden=["']true["']`);
+  if (!overlayPattern.test(index)) failures.push(`accessible dialog state is missing: #${overlayId}`);
+}
+
 for (const containerId of [
   "home-trip-grid",
   "budget-form",
