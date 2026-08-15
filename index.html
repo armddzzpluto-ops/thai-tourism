@@ -125,16 +125,16 @@ Discover The Land Of Smiles</span></div>
       </div>
     <div class="hero-stats">
       <div class="hero-stat-card">
-        <div class="stat-num">77</div>
+        <div class="stat-num" id="hero-province-count" data-live-metric>77</div>
         <div class="stat-label">จังหวัดทั่วไทย</div>
       </div>
       <div class="hero-stat-card">
-        <div class="stat-num">3,200</div>
-        <div class="stat-label">กม. ชายฝั่งทะเล</div>
+        <div class="stat-num" id="hero-verified-count" data-live-metric>5</div>
+        <div class="stat-label">จังหวัดที่ตรวจสอบสถานที่แล้ว</div>
       </div>
       <div class="hero-stat-card">
-        <div class="stat-num">40M+</div>
-        <div class="stat-label">นักท่องเที่ยวต่อปี</div>
+        <div class="stat-num" id="hero-gallery-count" data-live-metric>0</div>
+        <div class="stat-label">ภาพที่เชื่อมกับข้อมูล</div>
       </div>
     </div>
     <div class="hero-scroll">
@@ -715,7 +715,7 @@ Discover The Land Of Smiles</span></div>
 </div>
 
 <!-- ===================== MODAL ===================== -->
-<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title" onclick="closeModal(event)">
   <div class="modal">
     <div class="modal-inner">
       <button class="modal-close" type="button" aria-label="Close destination details" onclick="closeModalBtn()"><i class="fas fa-times"></i></button>
@@ -738,7 +738,7 @@ Discover The Land Of Smiles</span></div>
 </div>
 
 <!-- IMAGE LIGHTBOX -->
-<div class="modal-overlay" id="lightbox" onclick="closeLightbox(event)">
+<div class="modal-overlay" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-cap" onclick="closeLightbox(event)">
   <div style="position:relative;max-width:90vw;max-height:90vh;">
     <button type="button" aria-label="ปิดรูปภาพ" onclick="closeLightbox()" style="position:absolute;z-index:2;top:-40px;right:0;background:none;border:none;color:white;font-size:2rem;cursor:pointer;"><i class="fas fa-times"></i></button>
     <button type="button" aria-label="ภาพก่อนหน้า" onclick="event.stopPropagation();lightboxNav(-1)" style="position:absolute;z-index:2;left:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,0.62);color:white;font-size:1.1rem;cursor:pointer;"><i class="fas fa-chevron-left"></i></button>
@@ -749,7 +749,7 @@ Discover The Land Of Smiles</span></div>
 </div>
 
 <!-- BLOG ARTICLE MODAL -->
-<div class="modal-overlay" id="blog-modal" onclick="closeBlogArticle(event)">
+<div class="modal-overlay" id="blog-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="blog-modal-title" onclick="closeBlogArticle(event)">
   <div class="modal blog-modal-box">
     <div class="modal-inner">
       <button class="modal-close" type="button" aria-label="Close blog article" onclick="closeBlogArticleBtn()"><i class="fas fa-times"></i></button>

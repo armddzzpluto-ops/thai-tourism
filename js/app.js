@@ -234,6 +234,7 @@ function renderBudgetCalculator() {
 function renderDataCoverage() {
   const uniqueRegions = new Set(destinations.map(item => item.region).filter(Boolean));
   const curatedCount = destinations.filter(item => item.galleryCurated === true).length;
+  const verifiedCount = Object.keys(window.VERIFIED_ATTRACTIONS || {}).length;
   const stats = [
     ['fa-map-marked-alt', destinations.length, window.I18N?.t('dashboard.destinations') || 'จังหวัดในฐานข้อมูล'],
     ['fa-images', galleryImages.length, window.I18N?.t('dashboard.images') || 'ภาพที่เชื่อมกับสถานที่'],
@@ -259,6 +260,13 @@ function renderDataCoverage() {
       ? `${destinations.length} provinces`
       : `${destinations.length} จังหวัด`;
   }
+
+  const heroProvinceCount = document.getElementById('hero-province-count');
+  const heroVerifiedCount = document.getElementById('hero-verified-count');
+  const heroGalleryCount = document.getElementById('hero-gallery-count');
+  if (heroProvinceCount) heroProvinceCount.textContent = String(destinations.length);
+  if (heroVerifiedCount) heroVerifiedCount.textContent = String(verifiedCount);
+  if (heroGalleryCount) heroGalleryCount.textContent = String(galleryImages.length);
 }
 window.__hydrateTravelData = function hydrateTravelData() {
   if (Array.isArray(window.DESTINATIONS) && window.DESTINATIONS.length) {
@@ -647,11 +655,10 @@ function openModal(id) {
 
   document.getElementById('modal-info').innerHTML = attractionDetails;
 
-  modal?.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  openAccessibleOverlay(modal, '.modal-close');
 }
 function closeModal(e) { if (e.target.id==='modal') closeModalBtn(); }
-function closeModalBtn() { document.getElementById('modal').classList.remove('open'); document.body.style.overflow = ''; }
+function closeModalBtn() { closeAccessibleOverlay(document.getElementById('modal')); }
 
 let currentLightboxIndex = 0;
 
@@ -668,8 +675,7 @@ function openLightbox(index) {
   preview.alt = image.cap;
   document.getElementById('lightbox-cap').textContent =
     `${image.cap} (${currentLightboxIndex + 1}/${galleryImages.length})`;
-  lightbox?.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  openAccessibleOverlay(lightbox, 'button');
 }
 
 function lightboxNav(step) {
@@ -682,9 +688,68 @@ function closeLightbox(event) {
   const lightbox = document.getElementById('lightbox');
   if (!lightbox) return;
 
-  lightbox.classList.remove('open');
-  document.body.style.overflow = '';
+  closeAccessibleOverlay(lightbox);
 }
+
+const overlayOpeners = new WeakMap();
+
+function getOverlayFocusables(overlay) {
+  if (!overlay) return [];
+  return [...overlay.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  )].filter(element => !element.hidden && element.getClientRects().length > 0);
+}
+
+function syncOverlayScrollLock() {
+  document.body.style.overflow = document.querySelector('.modal-overlay.open') ? 'hidden' : '';
+}
+
+function openAccessibleOverlay(overlay, initialFocusSelector) {
+  if (!overlay) return;
+  if (!overlay.classList.contains('open')) {
+    overlayOpeners.set(overlay, document.activeElement);
+  }
+  overlay.classList.add('open');
+  overlay.setAttribute('aria-hidden', 'false');
+  syncOverlayScrollLock();
+
+  requestAnimationFrame(() => {
+    const initial = overlay.querySelector(initialFocusSelector) || getOverlayFocusables(overlay)[0];
+    initial?.focus();
+  });
+}
+
+function closeAccessibleOverlay(overlay) {
+  if (!overlay?.classList.contains('open')) return;
+  overlay.classList.remove('open');
+  overlay.setAttribute('aria-hidden', 'true');
+  syncOverlayScrollLock();
+
+  const opener = overlayOpeners.get(overlay);
+  overlayOpeners.delete(overlay);
+  if (opener?.isConnected) requestAnimationFrame(() => opener.focus());
+}
+
+function trapOverlayFocus(event, overlay) {
+  const focusables = getOverlayFocusables(overlay);
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+
+  if (!overlay.contains(document.activeElement)) {
+    event.preventDefault();
+    (event.shiftKey ? last : first).focus();
+  } else if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
+window.openAccessibleOverlay = openAccessibleOverlay;
+window.closeAccessibleOverlay = closeAccessibleOverlay;
 
 function filterCards() {
   const q = document.getElementById('main-search')?.value || '';
@@ -1158,10 +1223,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeMobile();
+    const openOverlays = [...document.querySelectorAll('.modal-overlay.open')];
+    const overlay = openOverlays[openOverlays.length - 1];
 
-    const lightbox = document.getElementById('lightbox');
-    if (!lightbox?.classList.contains('open')) return;
+    if (event.key === 'Escape') {
+      if (overlay?.id === 'modal') closeModalBtn();
+      else if (overlay?.id === 'lightbox') closeLightbox();
+      else if (overlay?.id === 'blog-modal') window.closeBlogArticleBtn?.();
+      else closeMobile();
+      return;
+    }
+
+    if (event.key === 'Tab' && overlay) {
+      trapOverlayFocus(event, overlay);
+      return;
+    }
+
+    if (overlay?.id !== 'lightbox') return;
 
     if (event.key === 'ArrowLeft') {
       event.preventDefault();
