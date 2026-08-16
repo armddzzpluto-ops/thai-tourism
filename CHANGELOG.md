@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-17 — Loader deadlock prevention
+- Removed the decorative full-screen loader that could cover every SPA route when its optional closing script failed or was delayed.
+- Kept the non-blocking scroll progress and route behavior while allowing the first usable page to render immediately.
+- Removed duplicate legacy loader CSS and JavaScript instead of adding another timeout override.
+- Added structural and browser regressions that reject any full-screen loader reintroduction across route reloads.
+
 ## 2026-08-16 — Button and icon control consistency
 - Organized controls into three intentional shapes: squircle text actions, pill filters/chips and 44px squircle icon controls.
 - Normalized icon centering, tap targets, borders, hover/pressed motion and focus rings across navigation, cards, dialogs, footer and floating actions.

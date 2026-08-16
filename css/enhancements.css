@@ -31,75 +31,7 @@ html[data-theme="light"] .navbar.scrolled {
   box-shadow: var(--shadow-xs);
 }
 
-/* ─── Loading & transitions ─────────────────────────────── */
-#loading-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 3000;
-  display: grid;
-  place-items: center;
-  background:
-    radial-gradient(circle at top, var(--gold-10), transparent 38%),
-    var(--gradient-primary);
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-#loading-screen.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.loader-card {
-  text-align: center;
-  color: var(--color-text-inverse);
-  animation: loaderRise 0.7s ease both;
-}
-
-.loader-logo {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto var(--space-lg);
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius);
-  background: var(--color-secondary);
-  color: var(--color-primary);
-  font-size: 2rem;
-  box-shadow: var(--shadow-sm);
-  animation: logoFloat 1.7s ease-in-out infinite;
-}
-
-.loader-title {
-  font-family: 'Kanit', sans-serif;
-  font-size: var(--type-h2);
-  font-weight: var(--fw-bold);
-}
-
-.loader-subtitle {
-  margin: var(--space-sm) 0 var(--space-2xl);
-  color: color-mix(in srgb, var(--color-text-inverse) 68%, transparent);
-  letter-spacing: 0.04em;
-  font-size: var(--type-small);
-}
-
-.loader-track {
-  width: 220px;
-  height: 3px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 999px;
-  background: var(--color-overlay-md);
-}
-
-.loader-track span {
-  display: block;
-  height: 100%;
-  width: 45%;
-  border-radius: inherit;
-  background: var(--gradient-secondary);
-  animation: loaderTrack 1.2s ease-in-out infinite;
-}
+/* ─── Progress & transitions ────────────────────────────── */
 
 #page-transition {
   position: fixed;
@@ -760,21 +692,6 @@ html[data-theme="light"] .theme-toggle-btn {
 ::-webkit-scrollbar-thumb:hover { background: var(--color-text-tertiary); }
 
 /* ─── Keyframes ─────────────────────────────────────────── */
-@keyframes loaderRise {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes logoFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-@keyframes loaderTrack {
-  0% { transform: translateX(-110%); }
-  100% { transform: translateX(250%); }
-}
-
 @keyframes toastIn {
   to { opacity: 1; transform: translateX(0); }
 }
