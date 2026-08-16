@@ -112,6 +112,14 @@ if (/loading-screen|loader-(?:card|logo|title|subtitle|track)|initLoader/.test(r
   failures.push("retired full-screen loader can block the SPA runtime");
 }
 
+for (const page of ["destinations", "gallery", "promotions", "dashboard", "about", "contact"]) {
+  const pageStart = index.indexOf(`id="page-${page}"`);
+  const nextPageStart = index.indexOf('<!-- ===================== PAGE:', pageStart + 1);
+  const pageMarkup = index.slice(pageStart, nextPageStart === -1 ? undefined : nextPageStart);
+  const routeHeader = pageMarkup.match(/<div class="section-header route-header">/)?.[0] || "";
+  if (!routeHeader) failures.push(`${page} route header must render without fade-in gating`);
+}
+
 if (/3,200|40M\+|นักท่องเที่ยวต่อปี/.test(index)) {
   failures.push("unsupported tourism totals remain visible in the Home hero");
 }

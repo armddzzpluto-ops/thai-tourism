@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-17 — Route header visibility
+- Removed `fade-in` gating from the primary heading group on every non-Home SPA route.
+- Fixed the intermittent state where a route opened with only its decorative accent line, search controls and result count visible.
+- Kept reveal motion on supporting content while making route identity synchronous for direct links, refresh and History navigation.
+- Added structural and browser guards for immediate route-header opacity and transform state.
+
 ## 2026-08-17 — Loader deadlock prevention
 - Removed the decorative full-screen loader that could cover every SPA route when its optional closing script failed or was delayed.
 - Kept the non-blocking scroll progress and route behavior while allowing the first usable page to render immediately.
