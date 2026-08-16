@@ -102,12 +102,13 @@ for (const [index, destination] of destinations.entries()) {
   <meta property="og:image" content="${siteRoot}/${escapeHtml(destination.heroImage)}">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/destination-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script type="application/ld+json">${jsonLd}</script>
   <script defer src="../../js/destination-detail.js"></script>
 </head>
 <body class="destination-detail-page">
   <header class="detail-header">
-    <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home">🌺 Thailand<span>Travel</span></a>
+    <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
     <nav aria-label="Destination navigation">
       <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
       <button id="detail-language" type="button" aria-label="Switch language">EN</button>

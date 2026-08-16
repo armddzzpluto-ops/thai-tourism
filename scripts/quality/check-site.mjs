@@ -151,6 +151,20 @@ for (const token of ["--control-height", "--control-icon-size", "--control-radiu
 for (const selector of [".theme-toggle-btn", ".card-fav", ".modal-close", ".social-btn"]) {
   if (!enhancementStyles.includes(selector)) failures.push(`icon-control polish is missing: ${selector}`);
 }
+const userFacingIconSources = `${index}\n${app}\n${read("scripts/build/generate-destination-pages.mjs")}`;
+if (/[\u{1F000}-\u{1FAFF}\u2764\u26F0\u26F1\u26E9]/u.test(userFacingIconSources)) {
+  failures.push("user-facing system emoji must use the shared Font Awesome icon system");
+}
+for (const iconClass of [
+  "fa-umbrella-beach",
+  "fa-place-of-worship",
+  "fa-leaf",
+  "fa-mountain-sun",
+  "fa-masks-theater",
+  "fa-map-location-dot"
+]) {
+  if (!index.includes(iconClass)) failures.push(`Home experience icon is missing: ${iconClass}`);
+}
 for (const overlayId of ["modal", "lightbox", "blog-modal"]) {
   const overlayPattern = new RegExp(`<div[^>]+id=["']${overlayId}["'][^>]+role=["']dialog["'][^>]+aria-hidden=["']true["']`);
   if (!overlayPattern.test(index)) failures.push(`accessible dialog state is missing: #${overlayId}`);

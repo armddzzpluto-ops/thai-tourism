@@ -200,6 +200,59 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
   }
 });
 
+test("user-facing emoji are replaced by one stable icon system", async ({ page }) => {
+  for (const theme of ["light", "dark"]) {
+    const snapshot = await page.evaluate(selectedTheme => {
+      window.applyTheme(selectedTheme);
+      window.showPage("home", { updateHistory: false, scrollToTop: false });
+
+      const experienceIcons = [...document.querySelectorAll(".home-category-section .experience-icon")];
+      const iconGeometry = experienceIcons.map(element => {
+        const style = getComputedStyle(element);
+        return {
+          width: element.offsetWidth,
+          height: element.offsetHeight,
+          radius: style.borderRadius,
+          border: style.borderTopStyle,
+          iconCount: element.querySelectorAll("i[class*='fa-']").length
+        };
+      });
+
+      return {
+        visibleEmoji: (document.body.innerText.match(/[\u{1F000}-\u{1FAFF}\u2764\u26F0\u26F1\u26E9]/gu) || []),
+        experienceIcons: iconGeometry,
+        logoUsesIcon: Boolean(document.querySelector(".nav-logo .logo-icon .fa-spa")),
+        searchUsesIcon: Boolean(document.querySelector(".search-label .fa-magnifying-glass")),
+        favoriteUsesIcon: Boolean(document.querySelector(".card-fav .fa-heart"))
+      };
+    }, theme);
+
+    expect(snapshot.visibleEmoji).toEqual([]);
+    expect(snapshot.logoUsesIcon).toBe(true);
+    expect(snapshot.searchUsesIcon).toBe(true);
+    expect(snapshot.favoriteUsesIcon).toBe(true);
+    expect(snapshot.experienceIcons).toHaveLength(6);
+    snapshot.experienceIcons.forEach(icon => {
+      expect(icon).toEqual({
+        width: 48,
+        height: 48,
+        radius: "14px",
+        border: "solid",
+        iconCount: 1
+      });
+    });
+  }
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(page.locator(".mobile-menu a[data-page] > i")).toHaveCount(6);
+  await expect(page.locator(".mobile-menu a[data-page] > [data-i18n-label]").first()).toHaveText("Home");
+
+  const favorite = page.locator("#home-cards .card-fav").first();
+  await expect(favorite.locator("i")).toHaveClass(/far/);
+  await favorite.click();
+  await expect(favorite.locator("i")).toHaveClass(/fas/);
+});
+
 test("overlays expose dialog state, close with Escape and restore focus", async ({ page }) => {
   await page.evaluate(() => window.showPage("gallery", { updateHistory: false }));
   const trigger = page.locator("#gallery-grid .gallery-item").first();

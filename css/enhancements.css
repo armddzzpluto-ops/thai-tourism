@@ -815,10 +815,22 @@ html[data-theme="light"] .theme-toggle-btn {
   border-color: color-mix(in srgb, var(--color-secondary) 36%, transparent);
 }
 
-#page-home > section.section-alt.section:nth-of-type(3) .experience-icon {
-  font-size: 2rem;
+#page-home > .home-category-section .experience-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 22%, var(--color-border-light));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-bg-secondary));
+  color: var(--color-accent);
+  font-size: 1.22rem;
   line-height: 1;
   margin: 0;
+}
+
+#page-home > .home-category-section .experience-icon > i {
+  line-height: 1;
 }
 
 #page-home > section.section-alt.section:nth-of-type(3) .experience-title {
@@ -840,8 +852,10 @@ html[data-theme="light"] .theme-toggle-btn {
   color: var(--color-text-tertiary);
 }
 
-#page-home > section.section-alt.section:nth-of-type(3) .experience-card-primary .experience-icon {
-  transform: translateY(-1px);
+#page-home > .home-category-section .experience-card-primary .experience-icon {
+  border-color: color-mix(in srgb, var(--color-secondary) 34%, var(--color-border-light));
+  background: color-mix(in srgb, var(--color-secondary) 12%, var(--color-bg-secondary));
+  color: var(--color-secondary);
 }
 
 /* Home section 4: region explorer */

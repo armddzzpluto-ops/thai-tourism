@@ -375,7 +375,7 @@ function renderCard(d, containerId) {
           aria-label="${window.I18N?.t(isFav ? 'favorite.removeLabel' : 'favorite.saveLabel') || (isFav ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด')}: ${d.name}"
           title="${window.I18N?.t(isFav ? 'favorite.removeLabel' : 'favorite.saveLabel') || (isFav ? 'นำออกจากรายการโปรด' : 'บันทึกสถานที่')}"
         >
-          ${isFav ? '❤️' : '🤍'}
+          <i class="${isFav ? 'fas' : 'far'} fa-heart" aria-hidden="true"></i>
         </button>
       </div>
       <div class="card-body">
@@ -553,7 +553,7 @@ function syncFavoriteButtons(id) {
     const destination = destinations.find(item => item.id === destinationId);
     const liked = favorites.includes(destinationId);
     const label = window.I18N?.t(liked ? 'favorite.removeLabel' : 'favorite.saveLabel') || (liked ? 'นำออกจากรายการโปรด' : 'บันทึกเป็นรายการโปรด');
-    button.innerHTML = liked ? '❤️' : '🤍';
+    button.innerHTML = `<i class="${liked ? 'fas' : 'far'} fa-heart" aria-hidden="true"></i>`;
     button.classList.toggle('liked', liked);
     button.setAttribute('aria-label', `${label}: ${destination?.name || ''}`.trim());
     button.setAttribute('title', label);
