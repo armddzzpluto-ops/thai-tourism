@@ -29,6 +29,7 @@
 - [x] Normalize button shapes, icon-only tap targets and interaction feedback across shared controls
 - [x] Remove the decorative full-screen loader and prevent route-blocking loader regressions
 - [x] Keep every route heading visible without depending on hidden-page intersection observers
+- [x] Remove the detached green-gold route accent that resembled a loading bar
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

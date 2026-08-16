@@ -112,6 +112,10 @@ if (/loading-screen|loader-(?:card|logo|title|subtitle|track)|initLoader/.test(r
   failures.push("retired full-screen loader can block the SPA runtime");
 }
 
+if (/\.page:not\(#page-home\)[^{]*first-of-type::before/.test(enhancementStyles)) {
+  failures.push("retired orphan page accent can be mistaken for a loading indicator");
+}
+
 for (const page of ["destinations", "gallery", "promotions", "dashboard", "about", "contact"]) {
   const pageStart = index.indexOf(`id="page-${page}"`);
   const nextPageStart = index.indexOf('<!-- ===================== PAGE:', pageStart + 1);

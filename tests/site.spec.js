@@ -464,13 +464,18 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
     await page.evaluate(pageName => window.showPage(pageName), name);
     await expect(page.locator(`#page-${name}`)).toHaveClass(/active/);
     if (name !== "home") {
-      const headerState = await page.locator(`#page-${name} .route-header`).evaluate(element => ({
-        opacity: getComputedStyle(element).opacity,
-        transform: getComputedStyle(element).transform
-      }));
+      const headerState = await page.locator(`#page-${name} .route-header`).evaluate(element => {
+        const firstSection = element.closest(".page")?.querySelector(".section:first-of-type");
+        return {
+          opacity: getComputedStyle(element).opacity,
+          transform: getComputedStyle(element).transform,
+          pageAccentContent: firstSection ? getComputedStyle(firstSection, "::before").content : null
+        };
+      });
       expect(headerState, `${name} route header must not wait for an observer`).toEqual({
         opacity: "1",
-        transform: "none"
+        transform: "none",
+        pageAccentContent: "none"
       });
     }
     await page.reload({ waitUntil: "domcontentloaded" });
