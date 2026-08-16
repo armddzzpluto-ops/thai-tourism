@@ -444,27 +444,7 @@ small,.small{font-size: var(--type-small);line-height: var(--lh-normal)}
 button,input,textarea,select{font-size: inherit;line-height: inherit;letter-spacing: inherit}
 html[data-theme="dark"] img{filter:brightness(.92) contrast(1.03)}
 
-/* ─── 3. LOADING SCREEN ─────────────────────────────────── */
-#loading-screen{
-  position:fixed;inset:0;z-index:9999;
-  background:var(--bg);
-  display:flex;align-items:center;justify-content:center;
-  transition:opacity .6s var(--e),visibility .6s var(--e);
-}
-#loading-screen.fade-out{opacity:0;visibility:hidden;pointer-events:none}
-.loader-wrap{text-align:center;animation:fadeUp .6s var(--e) both}
-.loader-planet{font-size:3.8rem;display:block;margin-bottom: var(--space-xl);animation:floatY 2s ease-in-out infinite}
-.loader-brand{
-  font-family:'Kanit',sans-serif;font-size: var(--type-h2);font-weight: var(--fw-black);
-  background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  margin-bottom: var(--space-sm);
-}
-.loader-sub{color:var(--text2);font-size: var(--type-small);margin-bottom: var(--space-4xl);letter-spacing:.06em}
-.loader-bar{width:200px;height:3px;background:var(--glass-b);border-radius:3px;margin:0 auto;overflow:hidden}
-.loader-fill{height:100%;background:var(--g1);border-radius:3px;animation:fillBar 1.6s var(--e) forwards}
-@keyframes fillBar{to{width:100%}}
-
-/* ─── 4. NAVBAR ─────────────────────────────────────────── */
+/* ─── 3. NAVBAR ─────────────────────────────────────────── */
 .navbar{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   height:var(--nav-h);

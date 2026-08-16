@@ -458,11 +458,14 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
     }
   });
 
+  await expect(page.locator("#loading-screen")).toHaveCount(0);
+
   for (const name of pages) {
     await page.evaluate(pageName => window.showPage(pageName), name);
     await expect(page.locator(`#page-${name}`)).toHaveClass(/active/);
     await page.reload({ waitUntil: "domcontentloaded" });
     await expect(page.locator(`#page-${name}`)).toHaveClass(/active/);
+    await expect(page.locator("#loading-screen")).toHaveCount(0);
   }
 
   expect(errors).toEqual([]);

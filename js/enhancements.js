@@ -79,7 +79,6 @@
 
   function initEnhancements() {
     installFallbacks();
-    initLoader();
     initScrollProgress();
     initPageTransitions();
     initCounters();
@@ -105,34 +104,6 @@
       };
     }
 
-  }
-
-  function initLoader() {
-    const loader = document.getElementById("loading-screen");
-    if (!loader) return;
-
-    let closed = false;
-
-    const closeLoader = () => {
-      if (closed || !loader.isConnected) return;
-      closed = true;
-      loader.classList.add("is-hidden");
-      setTimeout(() => loader.remove(), 600);
-    };
-
-    if (document.readyState === "complete") {
-      setTimeout(closeLoader, 120);
-    } else {
-      window.addEventListener("load", () => {
-        setTimeout(closeLoader, 120);
-      }, { once: true });
-    }
-
-    setTimeout(closeLoader, 2500);
-
-    window.addEventListener("pageshow", event => {
-      if (event.persisted) closeLoader();
-    }, { once: true });
   }
 
   function initTheme() {
