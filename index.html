@@ -48,7 +48,7 @@ Discover The Land Of Smiles</span></div>
     <ul class="nav-links">
       <li><a href="#" onclick="showPage('home')" data-page="home" class="active">หน้าแรก</a></li>
       <li><a href="#" onclick="showPage('destinations')" data-page="destinations">สถานที่ท่องเที่ยว</a></li>
-      <li><a href="#" onclick="showPage('promotions')" data-page="promotions">คำนวณงบ</a></li>
+      <li><a href="#" onclick="showPage('promotions')" data-page="promotions">วางแผนทริป</a></li>
       <li><a href="#" onclick="showPage('gallery')" data-page="gallery">คลังรูปภาพ</a></li>
       <li><a href="#" onclick="showPage('about')" data-page="about">เกี่ยวกับเรา</a></li>
       <li><a href="#" onclick="showPage('contact')" data-page="contact">ติดต่อ</a></li>
@@ -71,7 +71,7 @@ Discover The Land Of Smiles</span></div>
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="#home" data-page="home" onclick="showPage('home');closeMobile()"><i class="fas fa-house" aria-hidden="true"></i><span data-i18n-label>หน้าแรก</span></a>
   <a href="#destinations" data-page="destinations" onclick="showPage('destinations');closeMobile()"><i class="fas fa-location-dot" aria-hidden="true"></i><span data-i18n-label>สถานที่ท่องเที่ยว</span></a>
-  <a href="#promotions" data-page="promotions" onclick="showPage('promotions');closeMobile()"><i class="fas fa-calculator" aria-hidden="true"></i><span data-i18n-label>คำนวณงบ</span></a>
+  <a href="#promotions" data-page="promotions" onclick="showPage('promotions');closeMobile()"><i class="fas fa-route" aria-hidden="true"></i><span data-i18n-label>วางแผนทริป</span></a>
   <a href="#gallery" data-page="gallery" onclick="showPage('gallery');closeMobile()"><i class="fas fa-images" aria-hidden="true"></i><span data-i18n-label>คลังรูปภาพ</span></a>
   <a href="#about" data-page="about" onclick="showPage('about');closeMobile()"><i class="fas fa-circle-info" aria-hidden="true"></i><span data-i18n-label>เกี่ยวกับเรา</span></a>
   <a href="#contact" data-page="contact" onclick="showPage('contact');closeMobile()"><i class="fas fa-envelope" aria-hidden="true"></i><span data-i18n-label>ติดต่อ</span></a>
@@ -266,7 +266,7 @@ Discover The Land Of Smiles</span></div>
         <p class="section-desc">รายการนี้ใช้ชื่อ จังหวัด รูป และรายละเอียดชุดเดียวกับหน้า Destinations และ Modal</p>
       </div>
       <div class="cards-grid fade-in" id="home-trip-grid"></div>
-      <div style="text-align:center;margin-top:40px;"><button class="btn-primary" onclick="showPage('promotions')"><i class="fas fa-calculator"></i> คำนวณงบเดินทาง</button></div>
+      <div style="text-align:center;margin-top:40px;"><button class="btn-primary" onclick="showPage('promotions')"><i class="fas fa-route"></i> ให้ผู้ช่วยวางแผนทริป</button></div>
     </div>
   </section>
 
@@ -393,7 +393,7 @@ Discover The Land Of Smiles</span></div>
             <i class="fas fa-compass"></i> เริ่มสำรวจสถานที่
           </button>
           <button class="btn-outline" onclick="showPage('promotions')">
-            <i class="fas fa-calculator"></i> คำนวณงบเดินทาง
+            <i class="fas fa-route"></i> ให้ผู้ช่วยวางแผนทริป
           </button>
         </div>
       </div>
@@ -473,9 +473,40 @@ Discover The Land Of Smiles</span></div>
     <div class="container">
       <div class="section-header route-header">
         <span class="section-eyebrow">วางแผนก่อนเดินทาง</span>
-        <h1 class="section-title">เครื่องคำนวณ<span class="gold">งบเดินทาง</span></h1>
+        <h1 class="section-title">ผู้ช่วยวางแผน<span class="gold">ทริปไทย</span></h1>
         <div class="divider"></div>
-        <p class="section-desc">กรอกค่าใช้จ่ายที่คุณคาดไว้ ระบบจะคำนวณงบรวมและงบต่อคนโดยไม่อ้างว่าเป็นราคาจากผู้ให้บริการ</p>
+        <p class="section-desc">พิมพ์ภูมิภาค จำนวนวัน และความสนใจ ระบบจะจัดเส้นทางจากข้อมูลโครงการพร้อมบอกแหล่งอ้างอิงอย่างโปร่งใส</p>
+      </div>
+      <section class="trip-assistant fade-in" aria-labelledby="trip-assistant-title">
+        <div class="trip-assistant-heading">
+          <span class="trip-assistant-icon" aria-hidden="true"><i class="fas fa-route"></i></span>
+          <div>
+            <span class="trip-assistant-kicker">ทำงานบนอุปกรณ์ของคุณ</span>
+            <h2 id="trip-assistant-title">Smart Trip Assistant</h2>
+            <p>ไม่ใช้ API ภายนอกและไม่ส่งข้อความออกจากเว็บไซต์</p>
+          </div>
+        </div>
+        <div id="trip-assistant-messages" class="trip-assistant-messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
+        <div class="trip-assistant-suggestions" aria-label="ตัวอย่างคำถาม">
+          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคอีสาน 5 วัน" data-prompt-en="Plan a 5-day Northeast trip"></button>
+          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ" data-prompt-en="Plan a 3-day nature trip in the North"></button>
+          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวทะเลภาคใต้ 4 วัน" data-prompt-en="Plan a 4-day beach trip in the South"></button>
+        </div>
+        <form id="trip-assistant-form" class="trip-assistant-form">
+          <label class="sr-only" for="trip-assistant-input">บอกทริปที่ต้องการ</label>
+          <div class="trip-assistant-input-wrap">
+            <i class="fas fa-message" aria-hidden="true"></i>
+            <input id="trip-assistant-input" name="tripRequest" type="text" maxlength="180" autocomplete="off" placeholder="เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ" required>
+          </div>
+          <button class="btn-primary" type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>วางแผนให้ฉัน</span></button>
+        </form>
+        <p class="trip-assistant-disclosure"><i class="fas fa-circle-info" aria-hidden="true"></i><span>เป็นระบบวางแผนจากกฎและข้อมูลในเว็บ ไม่ใช่ AI ภายนอก กรุณาตรวจสอบเวลาเปิด ค่าเข้าชม การเดินทาง และประกาศล่าสุดก่อนออกเดินทางจริง</span></p>
+      </section>
+
+      <div class="budget-section-heading">
+        <span class="section-eyebrow">คำนวณต่อจากแผน</span>
+        <h2>เครื่องคำนวณงบเดินทาง</h2>
+        <p>กรอกค่าใช้จ่ายที่คุณคาดไว้ ระบบจะคำนวณงบรวมและงบต่อคนโดยไม่อ้างว่าเป็นราคาจากผู้ให้บริการ</p>
       </div>
       <div class="budget-calculator fade-in">
         <form id="budget-form" class="budget-form">
@@ -800,7 +831,7 @@ Discover The Land Of Smiles</span></div>
         <h4>ลิงก์ด่วน</h4>
         <a href="#" onclick="showPage('home')">หน้าแรก</a>
         <a href="#" onclick="showPage('destinations')">สถานที่ท่องเที่ยว</a>
-        <a href="#" onclick="showPage('promotions')">คำนวณงบ</a>
+        <a href="#" onclick="showPage('promotions')">วางแผนทริป</a>
         <a href="#" onclick="showPage('gallery')">คลังรูปภาพ</a>
         <a href="#" onclick="showPage('dashboard')"><i class="fas fa-chart-column" aria-hidden="true"></i><span data-i18n-label>แดชบอร์ด</span></a>
         <a href="#" onclick="showPage('contact')">ติดต่อ</a>

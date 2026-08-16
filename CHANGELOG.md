@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-17 — Local Smart Trip Assistant
+- Evolved the backward-compatible `#promotions` route into a combined conversational trip planner and user-input budget calculator.
+- Added safe natural-language parsing for region, trip length, interests and optional budget without an external AI API or exposed key.
+- Added a bilingual five-day Buri Ram–Si Sa Ket–Ubon Ratchathani itinerary with a dated official Tourism Authority of Thailand source.
+- Linked every planner day to the project’s province guides and kept unverified generic suggestions at province level instead of inventing attraction facts, prices or opening hours.
+- Added responsive, keyboard-accessible chat controls plus structural and browser regressions for five-day output, bilingual rerendering, XSS-safe text and budget handoff.
+
 ## 2026-08-17 — Site-wide icon consistency
 - Replaced operating-system Emoji in the brand, mobile navigation, Home search, experience cards, favorites and footer with the existing Font Awesome system.
 - Rebuilt the six Home experience icons as equal 48px themed squircle marks instead of platform-dependent colorful glyphs.

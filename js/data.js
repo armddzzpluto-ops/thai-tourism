@@ -554,6 +554,75 @@ const CROSS_PAGE_DESTINATION_SLUGS = [
 /* Home articles are destination guides generated from these records. */
 const BLOG_DESTINATION_SLUGS = ["phuket", "chiang-mai", "krabi", "bangkok", "chiang-rai", "sukhothai"];
 
+/* ---------- TRIP PLANNER TEMPLATES ----------
+   Curated itinerary templates carry one route-level authoritative source.
+   They intentionally omit opening hours, admission prices and live travel
+   times, which must be confirmed with the venue before a real trip. */
+const TRIP_PLANNER_TEMPLATES = [{
+  id: "northeast-5-days",
+  region: "northeast",
+  days: 5,
+  title: {
+    th: "อีสานใต้ 5 วัน: บุรีรัมย์–ศรีสะเกษ–อุบลราชธานี",
+    en: "5-day Lower Northeast: Buri Ram–Si Sa Ket–Ubon Ratchathani"
+  },
+  source: {
+    name: {
+      th: "การท่องเที่ยวแห่งประเทศไทย (ททท.)",
+      en: "Tourism Authority of Thailand"
+    },
+    url: "https://www.tourismthailand.org/Trip-Planner/Suggestion-Detail/buri-ram-si-sa-ket-ubon-ratchathani-5-days",
+    verifiedOn: "2026-08-17"
+  },
+  itinerary: [
+    {
+      day: 1,
+      provinceSlug: "buri-ram",
+      province: { th: "บุรีรัมย์", en: "Buri Ram" },
+      stops: {
+        th: ["อุทยานประวัติศาสตร์พนมรุ้ง", "อ่างเก็บน้ำทุ่งแหลม", "ศูนย์วัฒนธรรมอีสานใต้"],
+        en: ["Phanom Rung Historical Park", "Thung Laem Reservoir", "Centre of Southern Northeast Culture"]
+      }
+    },
+    {
+      day: 2,
+      provinceSlug: "buri-ram",
+      province: { th: "บุรีรัมย์", en: "Buri Ram" },
+      stops: {
+        th: ["ปราสาทเมืองต่ำ", "ปราสาทวัดโคกงิ้ว", "ปราสาทหนองหงส์", "พระสุภัทรบพิตร เขากระโดง"],
+        en: ["Prasat Muang Tam", "Prasat Wat Khok Ngio", "Nong Hong Sanctuary", "Big Buddha Image on Khao Kradong"]
+      }
+    },
+    {
+      day: 3,
+      provinceSlug: "si-sa-ket",
+      province: { th: "ศรีสะเกษ", en: "Si Sa Ket" },
+      stops: {
+        th: ["ปราสาทห้วยทับทัน", "อุทยานแห่งชาติเขาพระวิหาร", "วัดมหาพุทธาราม"],
+        en: ["Huai Thap Than Khmer Ruins", "Khao Phra Wihan National Park", "Wat Maha Phuttharam"]
+      }
+    },
+    {
+      day: 4,
+      provinceSlug: "ubon-ratchathani",
+      province: { th: "อุบลราชธานี", en: "Ubon Ratchathani" },
+      stops: {
+        th: ["เขื่อนสิรินธร", "เขื่อนปากมูล", "อุทยานแห่งชาติแก่งตะนะ"],
+        en: ["Sirindhorn Dam", "Pak Mun Dam", "Kaeng Tana National Park"]
+      }
+    },
+    {
+      day: 5,
+      provinceSlug: "ubon-ratchathani",
+      province: { th: "อุบลราชธานี", en: "Ubon Ratchathani" },
+      stops: {
+        th: ["สามพันโบก", "อุทยานแห่งชาติผาแต้ม", "หาดสลึง", "วัดศรีอุบลรัตนาราม"],
+        en: ["Sam Phan Bok", "Pha Taem National Park", "Hat Salueng", "Wat Si Ubon Rattanaram"]
+      }
+    }
+  ]
+}];
+
 /* ---------- FAQ (10) ---------- */
 const FAQ = [
   { q: "Do I need a visa to visit Thailand?", a: "Many nationalities can enter Thailand visa-free for stays of up to 30–60 days depending on country of origin. Always check the latest requirements with the Thai embassy before booking, as policies change periodically." },
@@ -584,5 +653,6 @@ window.DESTINATIONS = DESTINATIONS;
 window.CROSS_PAGE_DESTINATION_SLUGS = CROSS_PAGE_DESTINATION_SLUGS;
 window.VERIFIED_ATTRACTIONS = VERIFIED_ATTRACTIONS;
 window.BLOG_DESTINATION_SLUGS = BLOG_DESTINATION_SLUGS;
+window.TRIP_PLANNER_TEMPLATES = TRIP_PLANNER_TEMPLATES;
 window.FAQ = FAQ;
 window.QUOTES = QUOTES;

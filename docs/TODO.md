@@ -31,6 +31,7 @@
 - [x] Keep every route heading visible without depending on hidden-page intersection observers
 - [x] Remove the detached green-gold route accent that resembled a loading bar
 - [x] Replace platform-dependent Emoji with one accessible icon system across the SPA and generated destination pages
+- [x] Add a bilingual local Smart Trip Assistant with a sourced Northeast five-day route and budget-calculator handoff
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

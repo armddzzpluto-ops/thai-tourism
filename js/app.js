@@ -188,6 +188,7 @@ function renderCrossPageDestinationGrids() {
   }
 
   renderBudgetCalculator();
+  renderTripAssistant();
 }
 
 function renderBudgetCalculator() {
@@ -230,6 +231,291 @@ function renderBudgetCalculator() {
   }
   calculate();
 }
+
+const TRIP_ASSISTANT_COPY = {
+  th: {
+    welcomeTitle: 'ลองบอกทริปที่อยากได้',
+    welcomeBody: 'เช่น “เที่ยวภาคอีสาน 5 วัน” ระบบจะแปลงคำถามเป็นแผนรายวันและเชื่อมไปยังข้อมูลจังหวัดในเว็บไซต์',
+    inputLabel: 'บอกทริปที่ต้องการ',
+    inputPlaceholder: 'เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ',
+    submit: 'วางแผนให้ฉัน', suggestions: 'ตัวอย่างคำถาม', day: 'วันที่',
+    details: 'เปิดคู่มือจังหวัด', source: 'เส้นทางอ้างอิง', verified: 'ตรวจสอบแหล่งข้อมูลเมื่อ',
+    exactMeta: 'เส้นทางแนะนำจากแหล่งทางการ',
+    generatedMeta: 'แผนระดับจังหวัดจากข้อมูล 77 จังหวัดในโครงการ',
+    pending: 'จังหวัดนี้ยังไม่มีข้อมูลสถานที่ย่อยที่ตรวจสอบแหล่งอ้างอิงแล้ว เปิดคู่มือจังหวัดเพื่อสำรวจภาพรวมและติดตามสถานะข้อมูล',
+    verifiedStop: 'สถานที่ที่มีข้อมูลอ้างอิงในโครงการ',
+    genericTitle: 'แผนเที่ยว {region} {days} วัน', allRegions: 'ประเทศไทย',
+    budget: 'คุณระบุงบประมาณประมาณ {budget} บาท ระบบไม่เดาราคาให้ และได้ตั้งจำนวนวันในเครื่องคำนวณงบด้านล่างไว้แล้ว',
+    noBudget: 'ระบบตั้งจำนวนวันในเครื่องคำนวณงบด้านล่างให้แล้ว คุณสามารถกรอกค่าใช้จ่ายจริงของตัวเองต่อได้',
+    disclaimer: 'แผนนี้เป็นจุดเริ่มต้น ไม่ใช่การจองหรือข้อมูลแบบเรียลไทม์ โปรดตรวจเวลาเปิด ค่าเข้าชม สภาพอากาศ และการเดินทางล่าสุดก่อนออกเดินทาง',
+    localOnly: 'ข้อความนี้ประมวลผลในเบราว์เซอร์และไม่ถูกส่งไปยังบริการ AI ภายนอก'
+  },
+  en: {
+    welcomeTitle: 'Describe the trip you want',
+    welcomeBody: 'Try “Plan a 5-day Northeast trip.” The planner turns your request into a day-by-day route linked to this site’s province guides.',
+    inputLabel: 'Describe your trip',
+    inputPlaceholder: 'e.g. Plan a 5-day nature trip in the Northeast',
+    submit: 'Build my plan', suggestions: 'Example questions', day: 'Day',
+    details: 'Open province guide', source: 'Route source', verified: 'Source checked',
+    exactMeta: 'Suggested route adapted from an official source',
+    generatedMeta: 'Province-level plan generated from the project’s 77-province dataset',
+    pending: 'This province does not yet have a source-verified attraction record. Open its guide for an overview and transparent data status.',
+    verifiedStop: 'Source-verified attraction in this project',
+    genericTitle: '{days}-day {region} trip', allRegions: 'Thailand',
+    budget: 'You mentioned a budget of about THB {budget}. The planner does not invent prices, and the trip length is ready in the budget calculator below.',
+    noBudget: 'The trip length is ready in the budget calculator below, where you can enter your own real estimates.',
+    disclaimer: 'This plan is a starting point, not a booking or live information. Confirm opening hours, admission, weather and current transport before travelling.',
+    localOnly: 'Your message is processed in this browser and is not sent to an external AI service.'
+  }
+};
+
+let lastTripAssistantQuery = '';
+
+function getTripAssistantLanguage() {
+  return window.I18N?.getLanguage?.() === 'en' || document.documentElement.lang === 'en' ? 'en' : 'th';
+}
+
+function formatTripCopy(template, variables = {}) {
+  return String(template).replace(/\{(\w+)\}/g, (_, key) => variables[key] ?? `{${key}}`);
+}
+
+function parseTripPlannerRequest(value) {
+  const normalized = String(value || '')
+    .replace(/[๐-๙]/g, digit => String('๐๑๒๓๔๕๖๗๘๙'.indexOf(digit)))
+    .toLowerCase()
+    .trim();
+  const dayMatch = normalized.match(/(\d{1,2})\s*(?:วัน|days?|d\b)/i);
+  const budgetMatch = normalized.match(/(?:งบ(?:ประมาณ)?|budget(?:\s+of)?)\s*(?:ประมาณ|ราว|about)?\s*(?:฿|thb)?\s*([\d,]+)/i);
+  const regionPatterns = [
+    ['northeast', /อีสาน|ตะวันออกเฉียงเหนือ|north\s*east|northeast/],
+    ['north', /ภาคเหนือ|ทางเหนือ|\bnorth(?:ern)?\b/],
+    ['south', /ภาคใต้|ทางใต้|\bsouth(?:ern)?\b/],
+    ['east', /ภาคตะวันออก|ทางตะวันออก|\beast(?:ern)?\b/],
+    ['central', /ภาคกลาง|กรุงเทพ|\bcentral\b|bangkok/]
+  ];
+  const interestPatterns = [
+    ['beach', /ทะเล|ชายหาด|เกาะ|beach|island|sea/],
+    ['mountain', /ภูเขา|ดอย|mountain|hiking/],
+    ['temple', /วัด|โบราณ|ประวัติศาสตร์|temple|history|historic/],
+    ['nature', /ธรรมชาติ|น้ำตก|อุทยาน|nature|waterfall|park/],
+    ['culture', /วัฒนธรรม|ชุมชน|อาหาร|culture|community|food/]
+  ];
+
+  return {
+    raw: String(value || '').trim(),
+    days: Math.min(10, Math.max(1, Number(dayMatch?.[1]) || 3)),
+    region: regionPatterns.find(([, pattern]) => pattern.test(normalized))?.[0] || null,
+    interest: interestPatterns.find(([, pattern]) => pattern.test(normalized))?.[0] || null,
+    budget: budgetMatch ? Number(budgetMatch[1].replace(/,/g, '')) : null
+  };
+}
+
+function getTripTemplate(request) {
+  const templates = Array.isArray(window.TRIP_PLANNER_TEMPLATES) ? window.TRIP_PLANNER_TEMPLATES : [];
+  return templates.find(template => template.region === request.region && template.days === request.days) || null;
+}
+
+function buildGenericTripDays(request, language) {
+  const inRegion = destinations.filter(destination => !request.region || destination.region === request.region);
+  const interestMatches = request.interest
+    ? inRegion.filter(destination => normalizeCategoryList(destination).includes(request.interest))
+    : [];
+  const candidates = [...interestMatches, ...inRegion.filter(destination => !interestMatches.includes(destination))];
+  const fallback = candidates.length ? candidates : destinations;
+
+  return Array.from({ length: request.days }, (_, index) => {
+    const destination = fallback[index % fallback.length];
+    const attraction = destination?.primaryAttraction || null;
+    return {
+      day: index + 1,
+      provinceSlug: destination?.provinceSlug || destination?.slug || '',
+      province: destination?.province || destination?.name || '',
+      stops: attraction?.name?.[language] ? [attraction.name[language]] : [],
+      verifiedAttraction: Boolean(attraction)
+    };
+  });
+}
+
+function buildTripPlan(request) {
+  const language = getTripAssistantLanguage();
+  const copy = TRIP_ASSISTANT_COPY[language];
+  const template = getTripTemplate(request);
+
+  if (template) {
+    return {
+      title: template.title[language], meta: copy.exactMeta,
+      days: template.itinerary.map(item => ({
+        day: item.day, provinceSlug: item.provinceSlug, province: item.province[language],
+        stops: item.stops[language], verifiedAttraction: true
+      })),
+      source: template.source, request
+    };
+  }
+
+  const region = request.region ? normalizeRegionLabel(request.region) : copy.allRegions;
+  return {
+    title: formatTripCopy(copy.genericTitle, { region, days: request.days }),
+    meta: copy.generatedMeta,
+    days: buildGenericTripDays(request, language), source: null, request
+  };
+}
+
+function createTripTextElement(tag, className, text) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  element.textContent = text;
+  return element;
+}
+
+function createTripMessage(kind) {
+  const message = document.createElement('article');
+  message.className = `trip-message trip-message-${kind}`;
+  return message;
+}
+
+function renderTripAssistantWelcome(container, copy) {
+  const message = createTripMessage('assistant');
+  const icon = document.createElement('span');
+  icon.className = 'trip-message-avatar';
+  icon.setAttribute('aria-hidden', 'true');
+  icon.innerHTML = '<i class="fas fa-compass"></i>';
+  const content = document.createElement('div');
+  content.append(createTripTextElement('h3', '', copy.welcomeTitle));
+  content.append(createTripTextElement('p', '', copy.welcomeBody));
+  message.append(icon, content);
+  container.replaceChildren(message);
+}
+
+function syncTripDaysToBudget(days) {
+  const form = document.getElementById('budget-form');
+  if (!form) return;
+  form.elements.days.value = String(days);
+  form.elements.nights.value = String(Math.max(0, days - 1));
+  form.dispatchEvent(new Event('input', { bubbles: true }));
+}
+
+function renderTripPlan(plan) {
+  const container = document.getElementById('trip-assistant-messages');
+  if (!container) return;
+  const language = getTripAssistantLanguage();
+  const copy = TRIP_ASSISTANT_COPY[language];
+  const userMessage = createTripMessage('user');
+  userMessage.append(createTripTextElement('p', '', plan.request.raw));
+  const response = createTripMessage('assistant');
+  const icon = document.createElement('span');
+  icon.className = 'trip-message-avatar';
+  icon.setAttribute('aria-hidden', 'true');
+  icon.innerHTML = '<i class="fas fa-route"></i>';
+  const content = document.createElement('div');
+  content.className = 'trip-plan-response';
+  content.append(createTripTextElement('h3', '', plan.title));
+  content.append(createTripTextElement('p', 'trip-plan-meta', plan.meta));
+  const grid = document.createElement('div');
+  grid.className = 'trip-day-grid';
+
+  plan.days.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'trip-day-card';
+    card.append(createTripTextElement('span', 'trip-day-number', `${copy.day} ${item.day}`));
+    card.append(createTripTextElement('h4', '', item.province));
+    if (item.stops.length) {
+      const list = document.createElement('ul');
+      item.stops.forEach(stop => {
+        const listItem = document.createElement('li');
+        const marker = document.createElement('i');
+        marker.className = 'fas fa-location-dot';
+        marker.setAttribute('aria-hidden', 'true');
+        listItem.append(marker, document.createTextNode(stop));
+        list.append(listItem);
+      });
+      card.append(list);
+      if (!plan.source && item.verifiedAttraction) card.append(createTripTextElement('p', 'trip-day-verification', copy.verifiedStop));
+    } else {
+      card.append(createTripTextElement('p', 'trip-day-pending', copy.pending));
+    }
+    if (item.provinceSlug) {
+      const link = document.createElement('a');
+      link.className = 'trip-day-link';
+      link.href = `destinations/${item.provinceSlug}/`;
+      link.append(document.createTextNode(copy.details));
+      const arrow = document.createElement('i');
+      arrow.className = 'fas fa-arrow-right';
+      arrow.setAttribute('aria-hidden', 'true');
+      link.append(arrow);
+      card.append(link);
+    }
+    grid.append(card);
+  });
+  content.append(grid);
+
+  if (plan.source) {
+    const source = document.createElement('p');
+    source.className = 'trip-plan-source';
+    source.append(document.createTextNode(`${copy.source}: `));
+    const link = document.createElement('a');
+    link.href = plan.source.url;
+    link.target = '_blank'; link.rel = 'noopener noreferrer';
+    link.textContent = plan.source.name[language];
+    source.append(link, document.createTextNode(` · ${copy.verified} ${plan.source.verifiedOn}`));
+    content.append(source);
+  }
+
+  const budgetText = plan.request.budget
+    ? formatTripCopy(copy.budget, { budget: new Intl.NumberFormat(language === 'en' ? 'en-US' : 'th-TH').format(plan.request.budget) })
+    : copy.noBudget;
+  content.append(createTripTextElement('p', 'trip-plan-budget', budgetText));
+  content.append(createTripTextElement('p', 'trip-plan-disclaimer', copy.disclaimer));
+  content.append(createTripTextElement('p', 'trip-plan-local', copy.localOnly));
+  response.append(icon, content);
+  container.replaceChildren(userMessage, response);
+  syncTripDaysToBudget(plan.request.days);
+}
+
+function renderTripAssistant() {
+  const form = document.getElementById('trip-assistant-form');
+  const container = document.getElementById('trip-assistant-messages');
+  const input = document.getElementById('trip-assistant-input');
+  if (!form || !container || !input) return;
+  const language = getTripAssistantLanguage();
+  const copy = TRIP_ASSISTANT_COPY[language];
+  const label = form.querySelector('label[for="trip-assistant-input"]');
+  const buttonLabel = form.querySelector('button[type="submit"] span');
+  if (label) label.textContent = copy.inputLabel;
+  input.placeholder = copy.inputPlaceholder;
+  if (buttonLabel) buttonLabel.textContent = copy.submit;
+  document.querySelector('.trip-assistant-suggestions')?.setAttribute('aria-label', copy.suggestions);
+  document.querySelectorAll('.trip-suggestion').forEach(button => {
+    button.textContent = language === 'en' ? button.dataset.promptEn : button.dataset.promptTh;
+  });
+
+  if (lastTripAssistantQuery) {
+    input.value = lastTripAssistantQuery;
+    renderTripPlan(buildTripPlan(parseTripPlannerRequest(lastTripAssistantQuery)));
+  } else {
+    renderTripAssistantWelcome(container, copy);
+  }
+
+  if (form.dataset.bound === 'true') return;
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const query = input.value.trim();
+    if (!query) { input.focus(); return; }
+    lastTripAssistantQuery = query;
+    renderTripPlan(buildTripPlan(parseTripPlannerRequest(query)));
+  });
+  document.querySelectorAll('.trip-suggestion').forEach(button => {
+    button.addEventListener('click', () => {
+      input.value = getTripAssistantLanguage() === 'en' ? button.dataset.promptEn : button.dataset.promptTh;
+      form.requestSubmit();
+    });
+  });
+  form.dataset.bound = 'true';
+}
+
+window.parseTripPlannerRequest = parseTripPlannerRequest;
+window.buildTripPlan = buildTripPlan;
+window.renderTripAssistant = renderTripAssistant;
+document.addEventListener('languagechange', renderTripAssistant);
 
 function renderDataCoverage() {
   const uniqueRegions = new Set(destinations.map(item => item.region).filter(Boolean));
@@ -855,7 +1141,7 @@ function showDest(name) {
 const PAGE_META = {
   home: 'Thailand Travel Guide | ท่องเที่ยวไทย',
   destinations: 'สถานที่ท่องเที่ยว | Thailand Travel Guide',
-  promotions: 'เครื่องคำนวณงบเดินทาง | Thailand Travel Guide',
+  promotions: 'ผู้ช่วยวางแผนทริป | Thailand Travel Guide',
   gallery: 'คลังรูปภาพ | Thailand Travel Guide',
   about: 'เกี่ยวกับเรา | Thailand Travel Guide',
   contact: 'ติดต่อ | Thailand Travel Guide',
