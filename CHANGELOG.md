@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-17 — Orphan route accent removal
+- Removed the detached green-gold pseudo-element above non-Home route headings that visually resembled a stuck loading bar.
+- Removed its separate mobile positioning rule instead of hiding it with another override.
+- Preserved the heading-owned divider so route hierarchy remains intentional and aligned with its title.
+- Added structural and browser guards that require the retired pseudo-element content to remain absent.
+
 ## 2026-08-17 — Route header visibility
 - Removed `fade-in` gating from the primary heading group on every non-Home SPA route.
 - Fixed the intermittent state where a route opened with only its decorative accent line, search controls and result count visible.
