@@ -28,6 +28,7 @@
 - [x] Replace the compressed Home Hero source and blend the first screen into the page without a fixed background seam
 - [x] Normalize button shapes, icon-only tap targets and interaction feedback across shared controls
 - [x] Remove the decorative full-screen loader and prevent route-blocking loader regressions
+- [x] Keep every route heading visible without depending on hidden-page intersection observers
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
