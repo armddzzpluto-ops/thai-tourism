@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-17 — Site-wide icon consistency
+- Replaced operating-system Emoji in the brand, mobile navigation, Home search, experience cards, favorites and footer with the existing Font Awesome system.
+- Rebuilt the six Home experience icons as equal 48px themed squircle marks instead of platform-dependent colorful glyphs.
+- Updated all 77 generated destination pages to use the same brand mark as the SPA shell.
+- Added structural and browser guards for icon presence, geometry, bilingual labels and Emoji-free visible UI.
+
 ## 2026-08-17 — Orphan route accent removal
 - Removed the detached green-gold pseudo-element above non-Home route headings that visually resembled a stuck loading bar.
 - Removed its separate mobile positioning rule instead of hiding it with another override.

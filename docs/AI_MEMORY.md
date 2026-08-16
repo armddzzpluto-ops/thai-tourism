@@ -35,6 +35,7 @@
 - The decorative full-screen loader has been removed so no optional script, image or load event can block access to SPA routes
 - Route headings render synchronously instead of depending on IntersectionObserver state from pages that begin hidden
 - Non-Home routes no longer draw the detached green-gold pseudo-element that resembled a stuck loading bar
+- User-facing operating-system Emoji have been replaced by the existing Font Awesome icon system across the SPA shell, dynamic favorites and all generated destination pages
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -66,6 +67,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-17 · Site-wide icon consistency · Unified brand, navigation, category, search, favorite and footer symbols with responsive bilingual regression coverage
 - 2026-08-17 · Orphan page accent removal · Removed the detached route pseudo-element and locked its absence with structural/browser checks
 - 2026-08-17 · Route header visibility · Removed animation gating from every route-critical heading so direct links and SPA navigation cannot leave an orphan accent line
 - 2026-08-17 · Loader deadlock prevention · Removed the decorative full-screen loader and added structural/browser guards so every route remains immediately accessible

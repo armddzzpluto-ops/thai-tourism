@@ -83,6 +83,11 @@ html[data-theme="light"] .hamburger span {
   text-shadow: none;
 }
 
+.nav-logo .logo-icon i {
+  color: var(--color-primary);
+  line-height: 1;
+}
+
 .nav-links {
   display: flex;
   gap: var(--space-xs);
@@ -178,13 +183,22 @@ html[data-theme="dark"] .mobile-menu {
 .mobile-menu.open { display: block; }
 
 .mobile-menu a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
   color: var(--color-text-secondary);
   text-decoration: none;
   font-family: 'Kanit', sans-serif;
   border-radius: var(--radius-sm);
   transition: background var(--timing-fast), color var(--timing-fast);
+}
+
+.mobile-menu a > i {
+  width: 20px;
+  flex: 0 0 20px;
+  color: var(--color-accent);
+  text-align: center;
 }
 
 html[data-theme="dark"] .mobile-menu a {
@@ -527,8 +541,15 @@ html[data-theme="dark"] .mobile-menu a {
   color: color-mix(in srgb, var(--color-text-inverse) 72%, transparent);
   font-size: var(--type-small);
   margin-bottom: var(--space-md);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
   text-align: center;
+}
+
+.search-label > i {
+  color: var(--color-accent);
 }
 
 .search-input-row {
@@ -1669,6 +1690,13 @@ html[data-theme="dark"] footer .social-btn {
 
 .footer-col a:hover { color: var(--color-secondary); }
 
+.footer-col a > i {
+  width: 18px;
+  margin-right: 6px;
+  color: var(--color-accent);
+  text-align: center;
+}
+
 .footer-bottom {
   border-top: 1px solid var(--color-border-light);
   padding-top: var(--space-2xl);
@@ -1688,6 +1716,17 @@ html[data-theme="dark"] .footer-bottom {
 }
 
 .footer-bottom a { color: var(--color-secondary); }
+
+.footer-bottom > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer-heart {
+  color: var(--color-status-danger);
+  font-size: 0.88rem;
+}
 
 /* ─── ANIMATIONS ─────────────────────────────────────────── */
 .fade-in {

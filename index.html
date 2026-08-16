@@ -42,7 +42,7 @@ Discover The Land Of Smiles</span></div>
 <nav class="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo" onclick="showPage('home')">
-      <div class="logo-icon">🌺</div>
+      <div class="logo-icon" aria-hidden="true"><i class="fas fa-spa"></i></div>
       Thailand<span>Travel</span>
     </a>
     <ul class="nav-links">
@@ -69,12 +69,12 @@ Discover The Land Of Smiles</span></div>
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#home" data-page="home" onclick="showPage('home');closeMobile()">🏠 หน้าแรก</a>
-  <a href="#destinations" data-page="destinations" onclick="showPage('destinations');closeMobile()">📍 สถานที่ท่องเที่ยว</a>
-  <a href="#promotions" data-page="promotions" onclick="showPage('promotions');closeMobile()">🧮 คำนวณงบ</a>
-  <a href="#gallery" data-page="gallery" onclick="showPage('gallery');closeMobile()">🖼 คลังรูปภาพ</a>
-  <a href="#about" data-page="about" onclick="showPage('about');closeMobile()">👥 เกี่ยวกับเรา</a>
-  <a href="#contact" data-page="contact" onclick="showPage('contact');closeMobile()">📬 ติดต่อ</a>
+  <a href="#home" data-page="home" onclick="showPage('home');closeMobile()"><i class="fas fa-house" aria-hidden="true"></i><span data-i18n-label>หน้าแรก</span></a>
+  <a href="#destinations" data-page="destinations" onclick="showPage('destinations');closeMobile()"><i class="fas fa-location-dot" aria-hidden="true"></i><span data-i18n-label>สถานที่ท่องเที่ยว</span></a>
+  <a href="#promotions" data-page="promotions" onclick="showPage('promotions');closeMobile()"><i class="fas fa-calculator" aria-hidden="true"></i><span data-i18n-label>คำนวณงบ</span></a>
+  <a href="#gallery" data-page="gallery" onclick="showPage('gallery');closeMobile()"><i class="fas fa-images" aria-hidden="true"></i><span data-i18n-label>คลังรูปภาพ</span></a>
+  <a href="#about" data-page="about" onclick="showPage('about');closeMobile()"><i class="fas fa-circle-info" aria-hidden="true"></i><span data-i18n-label>เกี่ยวกับเรา</span></a>
+  <a href="#contact" data-page="contact" onclick="showPage('contact');closeMobile()"><i class="fas fa-envelope" aria-hidden="true"></i><span data-i18n-label>ติดต่อ</span></a>
 </div>
 
 <!-- ===================== PAGE: HOME ===================== -->
@@ -137,7 +137,7 @@ Discover The Land Of Smiles</span></div>
   <!-- SEARCH -->
   <div class="search-bar-wrap home-search-panel">
     <div class="search-bar-inner">
-      <span class="search-label">🔍 ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ</span>
+      <span class="search-label"><i class="fas fa-magnifying-glass" aria-hidden="true"></i><span data-i18n-label>ค้นหาสถานที่ท่องเที่ยวที่คุณสนใจ</span></span>
       <form class="search-input-row" role="search" onsubmit="event.preventDefault();doQuickSearch()">
         <input
           type="search"
@@ -193,37 +193,37 @@ Discover The Land Of Smiles</span></div>
       <ul class="experience-grid" role="list" aria-label="หมวดหมู่ประสบการณ์ท่องเที่ยว">
         <li>
           <button class="experience-card" type="button" onclick="filterDest('ทะเล')">
-            <span class="experience-icon" aria-hidden="true">🏖️</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-umbrella-beach"></i></span>
             <span class="experience-title">ชายหาด</span>
           </button>
         </li>
         <li>
           <button class="experience-card" type="button" onclick="filterDest('วัด')">
-            <span class="experience-icon" aria-hidden="true">⛩️</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-place-of-worship"></i></span>
             <span class="experience-title">วัดวาอาราม</span>
           </button>
         </li>
         <li>
           <button class="experience-card" type="button" onclick="filterDest('ธรรมชาติ')">
-            <span class="experience-icon" aria-hidden="true">🏞️</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-leaf"></i></span>
             <span class="experience-title">ธรรมชาติ</span>
           </button>
         </li>
         <li>
           <button class="experience-card" type="button" onclick="filterDest('ภูเขา')">
-            <span class="experience-icon" aria-hidden="true">⛰️</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-mountain-sun"></i></span>
             <span class="experience-title">ภูเขา</span>
           </button>
         </li>
         <li>
           <button class="experience-card" type="button" onclick="filterDest('วัฒนธรรม')">
-            <span class="experience-icon" aria-hidden="true">🎭</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-masks-theater"></i></span>
             <span class="experience-title">วัฒนธรรม</span>
           </button>
         </li>
         <li>
           <button class="experience-card experience-card-primary" type="button" onclick="filterDest('')">
-            <span class="experience-icon" aria-hidden="true">🗺️</span>
+            <span class="experience-icon" aria-hidden="true"><i class="fas fa-map-location-dot"></i></span>
             <span class="experience-title">ดูทั้งหมด</span>
           </button>
         </li>
@@ -777,7 +777,7 @@ Discover The Land Of Smiles</span></div>
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="nav-logo" style="font-size:1.2rem;" onclick="showPage('home')">
-          <div class="logo-icon" style="width:32px;height:32px;">🌺</div>
+          <div class="logo-icon" style="width:32px;height:32px;" aria-hidden="true"><i class="fas fa-spa"></i></div>
           Thailand<span>Travel</span>
         </a>
         <p>แหล่งรวมข้อมูลการท่องเที่ยวในประเทศไทย ครบครันทุกภูมิภาค จัดทำโดยนักศึกษา ปวส.</p>
@@ -802,7 +802,7 @@ Discover The Land Of Smiles</span></div>
         <a href="#" onclick="showPage('destinations')">สถานที่ท่องเที่ยว</a>
         <a href="#" onclick="showPage('promotions')">คำนวณงบ</a>
         <a href="#" onclick="showPage('gallery')">คลังรูปภาพ</a>
-        <a href="#" onclick="showPage('dashboard')">📊 แดชบอร์ด</a>
+        <a href="#" onclick="showPage('dashboard')"><i class="fas fa-chart-column" aria-hidden="true"></i><span data-i18n-label>แดชบอร์ด</span></a>
         <a href="#" onclick="showPage('contact')">ติดต่อ</a>
       </div>
       <div class="footer-col">
@@ -816,7 +816,7 @@ Discover The Land Of Smiles</span></div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีธุรกิจดิจิทัล</span>
-      <span>สร้างด้วยใจในประเทศไทย ❤️</span>
+      <span><span data-i18n-label>สร้างด้วยใจในประเทศไทย</span><i class="fas fa-heart footer-heart" aria-hidden="true"></i></span>
     </div>
   </div>
 </footer>

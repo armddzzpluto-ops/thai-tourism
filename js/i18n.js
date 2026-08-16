@@ -17,15 +17,15 @@
     [".nav-links a[data-page='about']", "nav.about"],
     [".nav-links a[data-page='contact']", "nav.contact"],
 
-    [".mobile-menu a[data-page='home']", "mobile.home"],
-    [".mobile-menu a[data-page='destinations']", "mobile.destinations"],
-    [".mobile-menu a[data-page='promotions']", "mobile.promotions"],
-    [".mobile-menu a[data-page='gallery']", "mobile.gallery"],
-    [".mobile-menu a[data-page='about']", "mobile.about"],
-    [".mobile-menu a[data-page='contact']", "mobile.contact"],
+    [".mobile-menu a[data-page='home'] [data-i18n-label]", "mobile.home"],
+    [".mobile-menu a[data-page='destinations'] [data-i18n-label]", "mobile.destinations"],
+    [".mobile-menu a[data-page='promotions'] [data-i18n-label]", "mobile.promotions"],
+    [".mobile-menu a[data-page='gallery'] [data-i18n-label]", "mobile.gallery"],
+    [".mobile-menu a[data-page='about'] [data-i18n-label]", "mobile.about"],
+    [".mobile-menu a[data-page='contact'] [data-i18n-label]", "mobile.contact"],
 
     [".nav-search-btn span", "nav.search"],
-    [".search-label", "search.quickLabel"],
+    [".search-label [data-i18n-label]", "search.quickLabel"],
     ["#quick-search", "search.placeholder", "placeholder"],
     ["#main-search", "search.mainPlaceholder", "placeholder"],
 
@@ -58,7 +58,7 @@
     [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(2)", "nav.destinations"],
     [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(3)", "nav.promotions"],
     [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(4)", "nav.gallery"],
-    [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(5)", "nav.dashboard"],
+    [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(5) [data-i18n-label]", "nav.dashboard"],
     [".footer-grid > .footer-col:nth-child(3) a:nth-of-type(6)", "nav.contact"],
 
     [".footer-grid > .footer-col:nth-child(4) a:nth-of-type(1)", "search.north"],
@@ -68,7 +68,7 @@
     [".footer-grid > .footer-col:nth-child(4) a:nth-of-type(5)", "search.east"],
 
     [".footer-bottom span:nth-child(1)", "footer.copyright"],
-    [".footer-bottom span:nth-child(2)", "footer.made"]
+    [".footer-bottom > span:nth-child(2) [data-i18n-label]", "footer.made"]
   ];
 
   function normalizeLanguage(value) {
