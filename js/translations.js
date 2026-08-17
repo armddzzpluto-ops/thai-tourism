@@ -29,7 +29,21 @@
     ["ค้นพบข้อมูลท่องเที่ยวครบทั้ง 77 จังหวัด วางแผนงบประมาณ และเตรียมทริปได้อย่างมั่นใจ", "Explore all 77 provinces, plan your budget and prepare your trip with confidence."],
     ["คำนวณงบเดินทาง", "Calculate trip budget"],
     ["คำนวณงบ", "Budget calculator"],
-    ["คำนวณงบ", "Budget calculator"]
+    ["คำนวณงบ", "Budget calculator"],
+    ["วางแผนทริป", "Trip planner"],
+    ["ให้ผู้ช่วยวางแผนทริป", "Plan a trip"],
+    ["ผู้ช่วยวางแผน", "Smart trip"],
+    ["ทริปไทย", "assistant"],
+    ["พิมพ์ภูมิภาค จำนวนวัน และความสนใจ ระบบจะจัดเส้นทางจากข้อมูลโครงการพร้อมบอกแหล่งอ้างอิงอย่างโปร่งใส", "Enter a region, number of days and interests to create a route from project data with transparent sources."],
+    ["ทำงานบนอุปกรณ์ของคุณ", "Runs on your device"],
+    ["ไม่ใช้ API ภายนอกและไม่ส่งข้อความออกจากเว็บไซต์", "No external API is used and your message never leaves the site."],
+    ["ตัวอย่างคำถาม", "Example questions"],
+    ["บอกทริปที่ต้องการ", "Describe your trip"],
+    ["เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ", "e.g. Plan a 5-day nature trip in the Northeast"],
+    ["วางแผนให้ฉัน", "Build my plan"],
+    ["เป็นระบบวางแผนจากกฎและข้อมูลในเว็บ ไม่ใช่ AI ภายนอก กรุณาตรวจสอบเวลาเปิด ค่าเข้าชม การเดินทาง และประกาศล่าสุดก่อนออกเดินทางจริง", "This rule-based planner uses only site data, not an external AI. Confirm opening hours, admission, transport and current notices before travelling."],
+    ["คำนวณต่อจากแผน", "Budget your plan"],
+    ["เครื่องคำนวณงบเดินทาง", "Trip budget calculator"]
   );
 
   window.TRANSLATIONS = {
@@ -41,7 +55,7 @@
 
       "nav.home": "หน้าแรก",
       "nav.destinations": "สถานที่ท่องเที่ยว",
-      "nav.promotions": "คำนวณงบ",
+      "nav.promotions": "วางแผนทริป",
       "nav.gallery": "คลังรูปภาพ",
       "nav.about": "เกี่ยวกับเรา",
       "nav.contact": "ติดต่อ",
@@ -50,7 +64,7 @@
 
       "mobile.home": "หน้าแรก",
       "mobile.destinations": "สถานที่ท่องเที่ยว",
-      "mobile.promotions": "คำนวณงบ",
+      "mobile.promotions": "วางแผนทริป",
       "mobile.gallery": "คลังรูปภาพ",
       "mobile.about": "เกี่ยวกับเรา",
       "mobile.contact": "ติดต่อ",
@@ -156,7 +170,7 @@
 
       "page.home.title": "Thailand Travel Guide | ท่องเที่ยวไทย",
       "page.destinations.title": "สถานที่ท่องเที่ยว | Thailand Travel Guide",
-      "page.promotions.title": "เครื่องคำนวณงบเดินทาง | Thailand Travel Guide",
+      "page.promotions.title": "ผู้ช่วยวางแผนทริป | Thailand Travel Guide",
       "page.gallery.title": "คลังรูปภาพ | Thailand Travel Guide",
       "page.about.title": "เกี่ยวกับเรา | Thailand Travel Guide",
       "page.contact.title": "ติดต่อ | Thailand Travel Guide",
@@ -182,7 +196,7 @@
 
       "nav.home": "Home",
       "nav.destinations": "Destinations",
-      "nav.promotions": "Budget calculator",
+      "nav.promotions": "Trip planner",
       "nav.gallery": "Gallery",
       "nav.about": "About",
       "nav.contact": "Contact",
@@ -191,7 +205,7 @@
 
       "mobile.home": "Home",
       "mobile.destinations": "Destinations",
-      "mobile.promotions": "Budget calculator",
+      "mobile.promotions": "Trip planner",
       "mobile.gallery": "Gallery",
       "mobile.about": "About",
       "mobile.contact": "Contact",
@@ -297,7 +311,7 @@
 
       "page.home.title": "Thailand Travel Guide | Home",
       "page.destinations.title": "Destinations | Thailand Travel Guide",
-      "page.promotions.title": "Trip Budget Calculator | Thailand Travel Guide",
+      "page.promotions.title": "Smart Trip Planner | Thailand Travel Guide",
       "page.gallery.title": "Gallery | Thailand Travel Guide",
       "page.about.title": "About | Thailand Travel Guide",
       "page.contact.title": "Contact | Thailand Travel Guide",

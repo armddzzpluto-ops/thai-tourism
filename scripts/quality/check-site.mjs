@@ -172,6 +172,9 @@ for (const overlayId of ["modal", "lightbox", "blog-modal"]) {
 
 for (const containerId of [
   "home-trip-grid",
+  "trip-assistant-form",
+  "trip-assistant-input",
+  "trip-assistant-messages",
   "budget-form",
   "budget-summary",
   "dashboard-stats"
@@ -185,6 +188,15 @@ if (!data.includes("window.CROSS_PAGE_DESTINATION_SLUGS =")) {
 }
 if (!data.includes("window.BLOG_DESTINATION_SLUGS =")) {
   failures.push("shared destination-guide data is not exported");
+}
+if (!data.includes("window.TRIP_PLANNER_TEMPLATES =")) {
+  failures.push("sourced trip-planner templates are not exported");
+}
+if (!app.includes("parseTripPlannerRequest") || !app.includes("renderTripAssistant()")) {
+  failures.push("local smart trip assistant is incomplete");
+}
+if (/api\.openai\.com|generativelanguage\.googleapis\.com|api\.anthropic\.com/.test(runtimeSources)) {
+  failures.push("static trip assistant must not expose or call an external AI endpoint");
 }
 if (/\bPROMOTIONS\b|promotion-(?:stay|package)-grid|Sample price|ราคาตัวอย่าง/.test(runtimeSources)) {
   failures.push("retired sample promotion data or UI remains");
@@ -377,6 +389,25 @@ try {
       );
       if (invalidAttractions.length) {
         failures.push(`verified attraction records have incomplete provenance: ${invalidAttractions.map(item => item.id).join(", ")}`);
+      }
+    }
+
+    const tripTemplates = context.window.TRIP_PLANNER_TEMPLATES;
+    const northeastFiveDay = Array.isArray(tripTemplates)
+      ? tripTemplates.find(item => item.id === "northeast-5-days")
+      : null;
+    if (!northeastFiveDay || northeastFiveDay.days !== 5 || northeastFiveDay.itinerary?.length !== 5) {
+      failures.push("official Northeast five-day planner template is incomplete");
+    } else {
+      const invalidPlannerDays = northeastFiveDay.itinerary.filter(item =>
+        !item.provinceSlug || !item.province?.th || !item.province?.en ||
+        !Array.isArray(item.stops?.th) || !item.stops.th.length ||
+        !Array.isArray(item.stops?.en) || item.stops.en.length !== item.stops.th.length
+      );
+      if (invalidPlannerDays.length) failures.push("Northeast planner days need matching bilingual stops");
+      if (!/^https:\/\/www\.tourismthailand\.org\/Trip-Planner\//.test(northeastFiveDay.source?.url || "") ||
+          !/^\d{4}-\d{2}-\d{2}$/.test(northeastFiveDay.source?.verifiedOn || "")) {
+        failures.push("Northeast planner template needs a dated official TAT source");
       }
     }
 

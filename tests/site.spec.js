@@ -363,6 +363,43 @@ test("Budget calculator uses user inputs and articles resolve shared destination
   await expect(page.locator("#page-promotions")).not.toContainText("Sample price");
 });
 
+test("Smart Trip Assistant builds the sourced Northeast five-day plan safely", async ({ page }) => {
+  await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  await page.locator("#trip-assistant-input").fill('<img src=x onerror="window.tripXss=true"> อาจารย์อยากเที่ยวภาคอีสาน 5 วัน งบ 8,000 บาท');
+  await page.locator("#trip-assistant-form button[type='submit']").click();
+
+  const cards = page.locator("#trip-assistant-messages .trip-day-card");
+  await expect(cards).toHaveCount(5);
+  await expect(cards.nth(0)).toContainText("บุรีรัมย์");
+  await expect(cards.nth(1)).toContainText("บุรีรัมย์");
+  await expect(cards.nth(2)).toContainText("ศรีสะเกษ");
+  await expect(cards.nth(3)).toContainText("อุบลราชธานี");
+  await expect(cards.nth(4)).toContainText("อุบลราชธานี");
+  await expect(page.locator(".trip-plan-source a")).toHaveAttribute("href", /^https:\/\/www\.tourismthailand\.org\/Trip-Planner\//);
+  await expect(page.locator("#budget-days")).toHaveValue("5");
+  await expect(page.locator("#budget-nights")).toHaveValue("4");
+  await expect(page.locator("#trip-assistant-messages img")).toHaveCount(0);
+  expect(await page.evaluate(() => window.tripXss === true)).toBe(false);
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(page.locator(".trip-plan-response h3")).toContainText("5-day Lower Northeast");
+  await expect(page.locator(".trip-plan-response")).not.toContainText(thaiPattern);
+  await expect(page.locator(".trip-plan-source a")).toContainText("Tourism Authority of Thailand");
+});
+
+test("Smart Trip Assistant suggestion chips and generic province plans remain useful", async ({ page }) => {
+  await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  await page.locator(".trip-suggestion").first().click();
+  await expect(page.locator(".trip-day-card")).toHaveCount(5);
+
+  await page.locator("#trip-assistant-input").fill("เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ");
+  await page.locator("#trip-assistant-form button[type='submit']").click();
+  await expect(page.locator(".trip-day-card")).toHaveCount(3);
+  await expect(page.locator(".trip-plan-meta")).toContainText("77 จังหวัด");
+  await expect(page.locator(".trip-day-link")).toHaveCount(3);
+  await expect(page.locator("#budget-days")).toHaveValue("3");
+});
+
 test("destination cards use real, refreshable and navigable URLs", async ({ page }) => {
   await page.goto("/#destinations");
   const detailLink = page.locator("#dest-cards .card-cta").first();
