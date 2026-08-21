@@ -102,7 +102,7 @@ for (const [index, destination] of destinations.entries()) {
   <meta property="og:image" content="${siteRoot}/${escapeHtml(destination.heroImage)}">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/destination-detail.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script type="application/ld+json">${jsonLd}</script>
   <script defer src="../../js/destination-detail.js"></script>
 </head>

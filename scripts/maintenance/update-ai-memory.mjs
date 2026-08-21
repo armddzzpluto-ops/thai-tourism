@@ -9,6 +9,11 @@ if (!phase || !summary) {
   process.exit(1);
 }
 
+if (phase.length > 120 || summary.length > 500 || /[\r\n\0]/.test(`${phase}${summary}`)) {
+  console.error("Phase and summary must be single-line text within the supported length limits");
+  process.exit(1);
+}
+
 const sha = execFileSync("git", ["rev-parse", "--short", "HEAD"], { encoding: "utf8" }).trim();
 const date = new Date().toISOString().slice(0, 10);
 const path = "docs/AI_MEMORY.md";

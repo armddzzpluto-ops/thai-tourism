@@ -25,9 +25,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;900&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <!-- Chart.js is loaded on demand when the dashboard opens. -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.5/sweetalert2.all.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.5/sweetalert2.all.min.js" integrity="sha512-cAiOMQ6IleoiPyH2UGR2k9OCclUh6tFL6RMnFsH26pntGnKyNtjwFpD7CodlP/TvYz+F7vLoBJQmIgSvScdzQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <!-- Legacy styles moved to css/components.css. -->
 <body>
@@ -113,21 +113,30 @@ Discover The Land Of Smiles</span></div>
       ค้นหาจุดหมาย
     </button>
   </div>
-      </div>
-    <div class="hero-stats">
+    <div class="hero-stats" aria-label="ขอบเขตข้อมูลโปรเจกต์">
       <div class="hero-stat-card">
-        <div class="stat-num" id="hero-province-count" data-live-metric>77</div>
-        <div class="stat-label">จังหวัดทั่วไทย</div>
-      </div>
-      <div class="hero-stat-card">
-        <div class="stat-num" id="hero-verified-count" data-live-metric>5</div>
-        <div class="stat-label">จังหวัดที่ตรวจสอบสถานที่แล้ว</div>
+        <span class="hero-stat-icon" aria-hidden="true"><i class="fas fa-map-location-dot"></i></span>
+        <div class="hero-stat-copy">
+          <div class="stat-num" id="hero-province-count" data-live-metric>77</div>
+          <div class="stat-label">จังหวัดทั่วไทย</div>
+        </div>
       </div>
       <div class="hero-stat-card">
-        <div class="stat-num" id="hero-gallery-count" data-live-metric>0</div>
-        <div class="stat-label">ภาพที่เชื่อมกับข้อมูล</div>
+        <span class="hero-stat-icon" aria-hidden="true"><i class="fas fa-shield-halved"></i></span>
+        <div class="hero-stat-copy">
+          <div class="stat-num" id="hero-verified-count" data-live-metric>5</div>
+          <div class="stat-label">จังหวัดที่ตรวจสอบสถานที่แล้ว</div>
+        </div>
+      </div>
+      <div class="hero-stat-card">
+        <span class="hero-stat-icon" aria-hidden="true"><i class="fas fa-images"></i></span>
+        <div class="hero-stat-copy">
+          <div class="stat-num" id="hero-gallery-count" data-live-metric>0</div>
+          <div class="stat-label">ภาพที่เชื่อมกับข้อมูล</div>
+        </div>
       </div>
     </div>
+      </div>
     <div class="hero-scroll">
       <span>เลื่อนลง</span>
       <div class="scroll-dot"></div>
@@ -266,7 +275,7 @@ Discover The Land Of Smiles</span></div>
         <p class="section-desc">รายการนี้ใช้ชื่อ จังหวัด รูป และรายละเอียดชุดเดียวกับหน้า Destinations และ Modal</p>
       </div>
       <div class="cards-grid fade-in" id="home-trip-grid"></div>
-      <div style="text-align:center;margin-top:40px;"><button class="btn-primary" onclick="showPage('promotions')"><i class="fas fa-route"></i> ให้ผู้ช่วยวางแผนทริป</button></div>
+      <div class="home-section-actions"><button class="btn-primary" onclick="showPage('promotions')"><i class="fas fa-route"></i> ให้ผู้ช่วยวางแผนทริป</button></div>
     </div>
   </section>
 
@@ -295,10 +304,10 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- TRAVEL TIPS -->
-  <section class="section-alt section">
+  <section class="section-alt section home-tips-section">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-eyebrow">Tips &amp; Guide</span>
+        <span class="section-eyebrow">คำแนะนำการเดินทาง</span>
         <h2 class="section-title">เคล็ดลับ<span class="gold">การเดินทาง</span></h2>
         <div class="divider"></div>
         <p class="section-desc">คำแนะนำจากนักเดินทางผู้มีประสบการณ์เพื่อให้ทริปของคุณสมบูรณ์แบบ</p>
@@ -333,7 +342,7 @@ Discover The Land Of Smiles</span></div>
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-eyebrow">เครื่องมืออัจฉริยะ</span>
-        <h2 class="section-title" style="font-size:clamp(1.4rem,2.5vw,1.9rem);">Plan with <span class="gold">Extra Inspiration</span></h2>
+        <h2 class="section-title smart-tools-title">วางแผนด้วย <span class="gold">แรงบันดาลใจเพิ่มเติม</span></h2>
         <div class="divider"></div>
       </div>
       <div class="tools-grid fade-in">
@@ -382,13 +391,13 @@ Discover The Land Of Smiles</span></div>
   </section>
 
   <!-- CALL TO ACTION -->
-  <section class="section" style="background:linear-gradient(135deg,var(--teal-deep) 0%,#0A3A45 100%);padding:80px 0;">
-    <div class="container" style="text-align:center;">
-      <div class="fade-in">
-        <span style="display:inline-block;background:rgba(201,168,76,0.2);border:1px solid rgba(201,168,76,0.4);color:var(--gold);padding:6px 18px;border-radius:20px;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;">เริ่มต้นการเดินทาง</span>
-        <h2 style="font-family:'Kanit',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--white);margin-bottom:16px;">พร้อมสำรวจ<span style="color:var(--gold);"> ประเทศไทย</span> แล้วหรือยัง?</h2>
-        <p style="color:rgba(255,255,255,0.75);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7;">ค้นพบข้อมูลท่องเที่ยวครบทั้ง 77 จังหวัด วางแผนงบประมาณ และเตรียมทริปได้อย่างมั่นใจ</p>
-        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+  <section class="section home-cta">
+    <div class="container home-cta-inner">
+      <div class="fade-in home-cta-content">
+        <span class="home-cta-eyebrow">เริ่มต้นการเดินทาง</span>
+        <h2 class="home-cta-title">พร้อมสำรวจ<span class="home-cta-accent"> ประเทศไทย</span> แล้วหรือยัง?</h2>
+        <p class="home-cta-description">ค้นพบข้อมูลท่องเที่ยวครบทั้ง 77 จังหวัด วางแผนงบประมาณ และเตรียมทริปได้อย่างมั่นใจ</p>
+        <div class="home-cta-actions">
           <button class="btn-primary" onclick="showPage('destinations')">
             <i class="fas fa-compass"></i> เริ่มสำรวจสถานที่
           </button>
@@ -404,7 +413,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- ===================== PAGE: DESTINATIONS ===================== -->
 <div class="page" id="page-destinations">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="section-header route-header">
@@ -414,14 +423,13 @@ Discover The Land Of Smiles</span></div>
       </div>
 
       <!-- Search + Filter -->
-      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;align-items:center;">
-        <div style="flex:1;min-width:240px;position:relative;">
+      <div class="destination-toolbar">
+        <div class="destination-search-field">
           <input type="search" id="main-search" aria-label="ค้นหาสถานที่ท่องเที่ยว" placeholder="ค้นหาสถานที่..." autocomplete="off" enterkeyhint="search" maxlength="80" oninput="filterCards()"
-            style="width:100%;padding:12px 16px 12px 44px;border:1.5px solid var(--color-border-default);border-radius:50px;font-family:'Sarabun',sans-serif;font-size:0.95rem;outline:none;transition:var(--transition);"
-            onfocus="this.style.borderColor='var(--teal-mid)'" onblur="this.style.borderColor='var(--color-border-default)'">
-          <i class="fas fa-search" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-light);"></i>
+            class="destination-search-input">
+          <i class="fas fa-search destination-search-icon" aria-hidden="true"></i>
         </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <div class="destination-filters" aria-label="ตัวกรองภูมิภาค">
           <button class="filter-btn active" data-filter-value="" aria-pressed="true" onclick="setFilter('',this)">ทั้งหมด</button>
           <button class="filter-btn" data-filter-value="ภาคเหนือ" aria-pressed="false" onclick="setFilter('ภาคเหนือ',this)">ภาคเหนือ</button>
           <button class="filter-btn" data-filter-value="ภาคกลาง" aria-pressed="false" onclick="setFilter('ภาคกลาง',this)">ภาคกลาง</button>
@@ -435,14 +443,14 @@ Discover The Land Of Smiles</span></div>
         </div>
       </div>
 
-      <p id="destination-results-status" class="section-desc" role="status" aria-live="polite" style="max-width:none;text-align:left;margin:0 0 18px;"></p>
+      <p id="destination-results-status" class="section-desc destination-results-status" role="status" aria-live="polite"></p>
       <div class="cards-grid" id="dest-cards">
         <!-- Cards injected by JS -->
       </div>
       <div id="no-results" role="status" aria-live="polite">
         <i class="fas fa-search-minus"></i>
-        <p id="no-results-title" style="font-size:1.1rem;font-weight:600;color:var(--teal-deep);">ไม่พบสถานที่ที่ค้นหา</p>
-        <p id="no-results-description" style="margin-top:8px;">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
+        <p id="no-results-title" class="no-results-title">ไม่พบสถานที่ที่ค้นหา</p>
+        <p id="no-results-description" class="no-results-description">ลองค้นหาด้วยคำอื่น หรือเลือกหมวดหมู่อื่น</p>
       </div>
     </div>
   </section>
@@ -450,7 +458,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- ===================== PAGE: GALLERY ===================== -->
 <div class="page" id="page-gallery">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="section-header route-header">
@@ -468,7 +476,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- Route kept as #promotions for backward-compatible bookmarks. -->
 <div class="page" id="page-promotions">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="section-header route-header">
@@ -477,12 +485,12 @@ Discover The Land Of Smiles</span></div>
         <div class="divider"></div>
         <p class="section-desc">พิมพ์ภูมิภาค จำนวนวัน และความสนใจ ระบบจะจัดเส้นทางจากข้อมูลโครงการพร้อมบอกแหล่งอ้างอิงอย่างโปร่งใส</p>
       </div>
-      <section class="trip-assistant fade-in" aria-labelledby="trip-assistant-title">
+      <section class="trip-assistant" aria-labelledby="trip-assistant-title">
         <div class="trip-assistant-heading">
           <span class="trip-assistant-icon" aria-hidden="true"><i class="fas fa-route"></i></span>
           <div>
             <span class="trip-assistant-kicker">ทำงานบนอุปกรณ์ของคุณ</span>
-            <h2 id="trip-assistant-title">Smart Trip Assistant</h2>
+            <h2 id="trip-assistant-title">ผู้ช่วยวางแผนทริปอัจฉริยะ</h2>
             <p>ไม่ใช้ API ภายนอกและไม่ส่งข้อความออกจากเว็บไซต์</p>
           </div>
         </div>
@@ -534,7 +542,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- ===================== PAGE: DASHBOARD ===================== -->
 <div class="page" id="page-dashboard">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="section-header route-header">
@@ -553,7 +561,7 @@ Discover The Land Of Smiles</span></div>
           <div class="chart-title" id="category-chart-title">จำนวนจังหวัดแยกตามหมวดหมู่</div>
           <div class="chart-wrap"><canvas id="doughnutChart"></canvas></div>
         </div>
-        <div class="chart-card" style="grid-column:1/-1;">
+        <div class="chart-card chart-card-wide">
           <div class="chart-title" id="gallery-chart-title">จำนวนภาพที่เชื่อมกับแต่ละภูมิภาค</div>
           <div class="chart-wrap"><canvas id="barChart"></canvas></div>
         </div>
@@ -564,7 +572,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- ===================== PAGE: ABOUT ===================== -->
 <div class="page" id="page-about">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="about-grid fade-in">
@@ -692,7 +700,7 @@ Discover The Land Of Smiles</span></div>
 
 <!-- ===================== PAGE: CONTACT ===================== -->
 <div class="page" id="page-contact">
-  <div style="height:64px;"></div>
+  <div class="route-spacer" aria-hidden="true"></div>
   <section class="section">
     <div class="container">
       <div class="section-header route-header">
@@ -722,7 +730,7 @@ Discover The Land Of Smiles</span></div>
         </div>
         <form class="contact-form-wrap" id="contact-form" novalidate onsubmit="submitContact(event)">
           <h3>ตรวจสอบแบบฟอร์มตัวอย่าง</h3>
-          <p class="section-desc" style="margin:0 0 24px;text-align:left;font-size:0.85rem;">แบบฟอร์มนี้ใช้สาธิต Validation เท่านั้น ข้อมูลจะไม่ถูกส่งหรือบันทึก</p>
+          <p class="section-desc contact-form-note">แบบฟอร์มนี้ใช้สาธิต Validation เท่านั้น ข้อมูลจะไม่ถูกส่งหรือบันทึก</p>
           <div class="form-row">
             <div class="form-group"><label for="cf-name">ชื่อ-นามสกุล *</label><input type="text" id="cf-name" name="name" placeholder="กรอกชื่อของคุณ" autocomplete="name" maxlength="100" required></div>
             <div class="form-group"><label for="cf-email">อีเมล *</label><input type="email" id="cf-email" name="email" placeholder="name@example.com" autocomplete="email" inputmode="email" maxlength="254" required></div>
@@ -749,8 +757,8 @@ Discover The Land Of Smiles</span></div>
         <div class="modal-tags" id="modal-tags"></div>
         <p class="modal-desc" id="modal-desc"></p>
         <div class="modal-info" id="modal-info"></div>
-        <div style="display:flex;gap:12px;margin-top:16px;">
-          <button class="btn-primary" style="flex:1;justify-content:center;" onclick="closeModalBtn()">
+        <div class="modal-actions">
+          <button class="btn-primary modal-primary-action" onclick="closeModalBtn()">
             <i class="fas fa-check"></i> รับทราบ
           </button>
         </div>
@@ -761,12 +769,12 @@ Discover The Land Of Smiles</span></div>
 
 <!-- IMAGE LIGHTBOX -->
 <div class="modal-overlay" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-cap" onclick="closeLightbox(event)">
-  <div style="position:relative;max-width:90vw;max-height:90vh;">
-    <button type="button" aria-label="ปิดรูปภาพ" onclick="closeLightbox()" style="position:absolute;z-index:2;top:-40px;right:0;background:none;border:none;color:white;font-size:2rem;cursor:pointer;"><i class="fas fa-times"></i></button>
-    <button type="button" aria-label="ภาพก่อนหน้า" onclick="event.stopPropagation();lightboxNav(-1)" style="position:absolute;z-index:2;left:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,0.62);color:white;font-size:1.1rem;cursor:pointer;"><i class="fas fa-chevron-left"></i></button>
-    <img id="lightbox-img" src="assets/images/provinces/phuket/hero.webp" alt="Gallery image preview" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;">
-    <button type="button" aria-label="ภาพถัดไป" onclick="event.stopPropagation();lightboxNav(1)" style="position:absolute;z-index:2;right:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,0.62);color:white;font-size:1.1rem;cursor:pointer;"><i class="fas fa-chevron-right"></i></button>
-    <p id="lightbox-cap" style="color:rgba(255,255,255,0.8);text-align:center;margin-top:12px;font-size:0.95rem;"></p>
+  <div class="lightbox-panel">
+    <button type="button" class="lightbox-close" aria-label="ปิดรูปภาพ" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <button type="button" class="lightbox-nav lightbox-nav-prev" aria-label="ภาพก่อนหน้า" onclick="event.stopPropagation();lightboxNav(-1)"><i class="fas fa-chevron-left"></i></button>
+    <img id="lightbox-img" class="lightbox-image" src="assets/images/provinces/phuket/hero.webp" alt="Gallery image preview">
+    <button type="button" class="lightbox-nav lightbox-nav-next" aria-label="ภาพถัดไป" onclick="event.stopPropagation();lightboxNav(1)"><i class="fas fa-chevron-right"></i></button>
+    <p id="lightbox-cap" class="lightbox-caption"></p>
   </div>
 </div>
 
@@ -807,8 +815,8 @@ Discover The Land Of Smiles</span></div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="nav-logo" style="font-size:1.2rem;" onclick="showPage('home')">
-          <div class="logo-icon" style="width:32px;height:32px;" aria-hidden="true"><i class="fas fa-spa"></i></div>
+        <a href="#" class="nav-logo footer-logo" onclick="showPage('home')">
+          <div class="logo-icon footer-logo-icon" aria-hidden="true"><i class="fas fa-spa"></i></div>
           Thailand<span>Travel</span>
         </a>
         <p>แหล่งรวมข้อมูลการท่องเที่ยวในประเทศไทย ครบครันทุกภูมิภาค จัดทำโดยนักศึกษา ปวส.</p>

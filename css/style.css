@@ -54,6 +54,7 @@
 
   --color-text-disabled:  #98A39F;   /* New: subtle interactive disabled state */
   --color-text-inverse:   #FFFFFF;   /* New: text on dark backgrounds */
+  --color-on-secondary:   #143B36;   /* accessible foreground on warm gold */
 
   /* ======= TIER 5: OVERLAYS & GLASS EFFECTS ======= */
   /* Theme-aware glass effects (emerald-tinted light) */
@@ -338,6 +339,7 @@ html[data-theme="dark"] {
 
   --color-text-disabled:  #647B73;   /* disabled state */
   --color-text-inverse:   #F5F2E9;   /* text on imagery and deep brand surfaces */
+  --color-on-secondary:   #071512;   /* accessible foreground on bright gold */
 
   /* ======= DARK OVERLAYS (light tinted) ======= */
   --color-overlay-xs:     rgba(139,216,204,.04);
@@ -431,7 +433,8 @@ body{
   -moz-osx-font-smoothing: grayscale;
   transition:background .45s var(--e),color .45s var(--e);
 }
-body.theme-switching *{transition:background .45s var(--e),color .45s var(--e),border-color .45s var(--e) !important}
+html.theme-switching *,
+html.theme-switching body{transition:none !important}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}

@@ -38,6 +38,11 @@
 - User-facing operating-system Emoji have been replaced by the existing Font Awesome icon system across the SPA shell, dynamic favorites and all generated destination pages
 - The backward-compatible `#promotions` route now combines a local bilingual Smart Trip Assistant with the existing budget calculator; it parses region, days, interests and budget without an external AI API
 - The exact Northeast five-day request resolves to a dated TAT-sourced Buri Ram–Si Sa Ket–Ubon Ratchathani itinerary, while other requests stay at province level unless attraction data is source-verified
+- Route-critical hero and planner controls now render immediately, theme changes apply atomically, and semantic classes replace the remaining SPA inline presentation styles
+- CDN-hosted Font Awesome, SweetAlert2 and Chart.js bytes are version-pinned with reviewed SRI; persisted recent searches and manual memory-workflow inputs are treated as untrusted text
+- The Home Hero uses a landmark-safe editorial split on wide screens, icon-backed live coverage metrics and a simpler responsive fallback without duplicating data claims
+- Wikimedia gallery captions are normalized to bounded plain text, image paths are locally allowlisted and both SPA gallery renderers contextually escape metadata before `innerHTML`
+- Persisted search history and quote indexes are size/type bounded, and all GitHub Actions run from reviewed immutable commit SHAs
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -69,6 +74,9 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-08-22 · Cinematic Home composition · Reframed the Chiang Mai Hero, live metric panel and search/category transition for a richer but responsive first impression
+- 2026-08-22 · Gallery and workflow trust boundaries · Kept external image metadata inert, bounded persisted UI state and pinned GitHub Actions to immutable commits
+- 2026-08-22 · Visual consistency and trust hardening · Removed remaining inline presentation styles, tightened critical rendering and bilingual headings, pinned CDN assets with SRI, and hardened persisted/workflow inputs
 - 2026-08-17 · Local Smart Trip Assistant · Added safe bilingual text-to-itinerary planning, an official-source Northeast five-day route and budget handoff without a backend or external AI API
 - 2026-08-17 · Site-wide icon consistency · Unified brand, navigation, category, search, favorite and footer symbols with responsive bilingual regression coverage
 - 2026-08-17 · Orphan page accent removal · Removed the detached route pseudo-element and locked its absence with structural/browser checks
