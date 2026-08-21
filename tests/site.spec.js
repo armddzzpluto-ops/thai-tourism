@@ -491,14 +491,14 @@ test("gallery metadata remains inert across initial preview and gallery renderin
   await expect(galleryItem).toHaveCount(1);
   await expect(page.locator('[onpointerenter*="galleryMetadataXss"]')).toHaveCount(0);
   await expect(page.locator('[onerror*="gallerySourceXss"]')).toHaveCount(0);
-  expect(await page.evaluate(() => ({
+  expect(await page.evaluate(value => ({
     metadata: window.galleryMetadataXss === true,
     source: window.gallerySourceXss === true,
     homeSource: [...document.querySelectorAll("#home-gallery-preview .gallery-item")]
-      .find(item => item.textContent.includes(payload))?.querySelector("img")?.getAttribute("src"),
+      .find(item => item.textContent.includes(value))?.querySelector("img")?.getAttribute("src"),
     gallerySource: [...document.querySelectorAll("#gallery-grid .gallery-item")]
-      .find(item => item.textContent.includes(payload))?.querySelector("img")?.getAttribute("src")
-  }))).toEqual({
+      .find(item => item.textContent.includes(value))?.querySelector("img")?.getAttribute("src")
+  }), payload)).toEqual({
     metadata: false,
     source: false,
     homeSource: "assets/images/provinces/bangkok/hero.webp",
