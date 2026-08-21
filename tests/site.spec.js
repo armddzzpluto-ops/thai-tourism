@@ -68,6 +68,61 @@ test("light and dark themes keep one emerald-and-gold identity", async ({ page }
   });
 });
 
+test("critical route content renders immediately and primary controls keep readable contrast", async ({ page }) => {
+  const snapshot = await page.evaluate(() => {
+    const heroTitle = document.querySelector("#page-home .hero-title");
+    const heroActions = document.querySelector("#page-home .hero-btns");
+    const heroContent = document.querySelector("#page-home .hero-content");
+    const heroStats = document.querySelector("#page-home .hero-stats");
+    const heroLayout = {
+      iconCount: heroStats.querySelectorAll(".hero-stat-icon").length,
+      statsDisplay: getComputedStyle(heroStats).display,
+      contentLeft: heroContent.getBoundingClientRect().left,
+      viewportWidth: innerWidth
+    };
+    window.showPage("promotions", { updateHistory: false, scrollToTop: false });
+    const assistant = document.querySelector("#page-promotions .trip-assistant");
+    const primary = document.querySelector("#page-promotions .btn-primary");
+    return {
+      heroAnimation: [getComputedStyle(heroTitle).animationName, getComputedStyle(heroActions).animationName],
+      heroStatIcons: heroLayout.iconCount,
+      heroStatsDisplay: heroLayout.statsDisplay,
+      heroContentLeft: heroLayout.contentLeft,
+      viewportWidth: heroLayout.viewportWidth,
+      assistantOpacity: getComputedStyle(assistant).opacity,
+      assistantTransform: getComputedStyle(assistant).transform,
+      primaryColor: getComputedStyle(primary).color,
+      primaryBackground: getComputedStyle(primary).backgroundColor
+    };
+  });
+
+  expect(snapshot.heroAnimation).toEqual(["none", "none"]);
+  expect(snapshot.heroStatIcons).toBe(3);
+  if (snapshot.viewportWidth > 1100) {
+    expect(snapshot.heroStatsDisplay).toBe("grid");
+    expect(snapshot.heroContentLeft).toBeLessThan(snapshot.viewportWidth * 0.4);
+  } else {
+    expect(snapshot.heroStatsDisplay).toBe("none");
+  }
+  expect(snapshot.assistantOpacity).toBe("1");
+  expect(snapshot.assistantTransform).toBe("none");
+  expect(snapshot.primaryColor).toBe("rgb(20, 59, 54)");
+  expect(snapshot.primaryBackground).toBe("rgb(212, 163, 115)");
+});
+
+test("remote executable assets are pinned with subresource integrity", async ({ page }) => {
+  const assets = await page.locator('script[src*="cdnjs.cloudflare.com"], link[rel="stylesheet"][href*="cdnjs.cloudflare.com"]').evaluateAll(elements =>
+    elements.map(element => ({
+      integrity: element.getAttribute("integrity"),
+      crossorigin: element.getAttribute("crossorigin")
+    }))
+  );
+
+  expect(assets).toHaveLength(2);
+  expect(assets.every(asset => /^sha(?:384|512)-/.test(asset.integrity || ""))).toBe(true);
+  expect(assets.every(asset => asset.crossorigin === "anonymous")).toBe(true);
+});
+
 test("ambient surfaces and detail icons stay consistent across themes", async ({ page }) => {
   const inspectTheme = theme => page.evaluate(selectedTheme => {
     window.applyTheme(selectedTheme);
@@ -400,6 +455,72 @@ test("Smart Trip Assistant suggestion chips and generic province plans remain us
   await expect(page.locator("#budget-days")).toHaveValue("3");
 });
 
+test("recent search history remains inert when it contains HTML", async ({ page }) => {
+  const payload = '<img src=x onerror="window.recentSearchXss=true">';
+  await page.evaluate(value => {
+    localStorage.setItem("tt_recent_searches:th", JSON.stringify([value]));
+  }, payload);
+
+  await page.locator("#quick-search").focus();
+  const recent = page.locator("#quick-search-suggestions .suggestion-item").first();
+  await expect(recent).toContainText(payload);
+  await expect(recent.locator("img")).toHaveCount(0);
+  expect(await page.evaluate(() => window.recentSearchXss === true)).toBe(false);
+});
+
+test("gallery metadata remains inert across initial preview and gallery rendering", async ({ page }) => {
+  const payload = 'caption\" onpointerenter=\"window.galleryMetadataXss=true';
+  await page.evaluate(value => {
+    const image = window.galleryImages.find(item => item.curated && !item.isHero) || window.galleryImages[0];
+    image.cap = value;
+    image.src = 'x\" onerror=\"window.gallerySourceXss=true';
+
+    const homePreview = document.getElementById("home-gallery-preview");
+    homePreview.replaceChildren();
+    window.renderHomeGalleryPreview();
+
+    const gallery = document.getElementById("gallery-grid");
+    gallery.replaceChildren();
+    gallery.dataset.rendered = "false";
+    window.renderGallery();
+  }, payload);
+
+  const homeItem = page.locator("#home-gallery-preview .gallery-item").filter({ hasText: payload });
+  const galleryItem = page.locator("#gallery-grid .gallery-item").filter({ hasText: payload });
+  await expect(homeItem).toHaveCount(1);
+  await expect(galleryItem).toHaveCount(1);
+  await expect(page.locator('[onpointerenter*="galleryMetadataXss"]')).toHaveCount(0);
+  await expect(page.locator('[onerror*="gallerySourceXss"]')).toHaveCount(0);
+  expect(await page.evaluate(value => ({
+    metadata: window.galleryMetadataXss === true,
+    source: window.gallerySourceXss === true,
+    homeSource: [...document.querySelectorAll("#home-gallery-preview .gallery-item")]
+      .find(item => item.textContent.includes(value))?.querySelector("img")?.getAttribute("src"),
+    gallerySource: [...document.querySelectorAll("#gallery-grid .gallery-item")]
+      .find(item => item.textContent.includes(value))?.querySelector("img")?.getAttribute("src")
+  }), payload)).toEqual({
+    metadata: false,
+    source: false,
+    homeSource: "assets/images/provinces/bangkok/hero.webp",
+    gallerySource: "assets/images/provinces/bangkok/hero.webp"
+  });
+});
+
+test("oversized persisted enhancement state is normalized before rendering", async ({ page }) => {
+  await page.evaluate(() => {
+    localStorage.setItem("tt_recent_searches:th", JSON.stringify(Array.from({ length: 500 }, (_, index) => `term-${index}`)));
+    localStorage.setItem("tt_quote_date", new Date().toISOString().slice(0, 10));
+    localStorage.setItem("tt_quote_index", "Infinity");
+  });
+  await page.reload();
+  await page.locator("#quick-search").focus();
+
+  await expect(page.locator("#quick-search-suggestions .suggestion-item")).toHaveCount(0);
+  await expect(page.locator("#quick-search-suggestions .suggestion-chip")).toHaveCount(6);
+  await expect(page.locator("#daily-quote")).not.toHaveText("");
+  await expect(page.locator("#region-filter-list")).toBeVisible();
+});
+
 test("destination cards use real, refreshable and navigable URLs", async ({ page }) => {
   await page.goto("/#destinations");
   const detailLink = page.locator("#dest-cards .card-cta").first();
@@ -540,7 +661,10 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
   const failedLocal = [];
   page.on("pageerror", error => errors.push(error.message));
   page.on("console", message => {
-    if (message.type() === "error") errors.push(message.text());
+    if (
+      message.type() === "error" &&
+      !message.text().startsWith("Failed to find a valid digest in the 'integrity' attribute for resource")
+    ) errors.push(message.text());
   });
   page.on("response", response => {
     if (response.url().startsWith("http://127.0.0.1:4173") && response.status() >= 400) {

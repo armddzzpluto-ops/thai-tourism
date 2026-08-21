@@ -14,14 +14,14 @@ window.IMAGE_CURATION = {
       "Wat Tham Saeng Phet, Amnat Charoen Province",
       "ภาพพระมงคลมิ่งเมือง",
       "Voyage d'exploration en Indo-Chine (1873, Francis Garnier)",
-      "จังหวัดอำนาจเจริญ  Amnat Charoen -Mukdahan rd.",
+      "จังหวัดอำนาจเจริญ Amnat Charoen -Mukdahan rd.",
       "นายกรัฐมนตรี ปฏิบัติราชการจังหวัดอำนาจเจริญ 10ตุลาคม2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์)"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/amnat-charoen/gallery-1.webp",
         "caption": "Wat Tham Saeng Phet, Amnat Charoen Province",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:P.khiao&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:P.khiao (page does not exist)\">P.khiao\u003c/a>",
+        "photoCredit": "P.khiao",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Amnat_Charoen_Banner.jpg"
       },
       {
@@ -38,14 +38,14 @@ window.IMAGE_CURATION = {
       },
       {
         "file": "assets/images/provinces/amnat-charoen/gallery-4.webp",
-        "caption": "จังหวัดอำนาจเจริญ  Amnat Charoen -Mukdahan rd.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010041106/http://www.panoramio.com/user/1465176?with_photo_id=8615389\">JAMRAT\u003c/a>",
+        "caption": "จังหวัดอำนาจเจริญ Amnat Charoen -Mukdahan rd.",
+        "photoCredit": "JAMRAT",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_Amnat_Charoen_-Mukdahan_rd._-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/amnat-charoen/gallery-5.webp",
         "caption": "นายกรัฐมนตรี ปฏิบัติราชการจังหวัดอำนาจเจริญ 10ตุลาคม2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40561337@N07\">Government of Thailand\u003c/a>",
+        "photoCredit": "Government of Thailand",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5_%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D_10%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B2%E0%B8%84%E0%B8%A12552_(The_Official_Site_of_-_Flickr_-_Abhisit_Vejjajiva_(25).jpg"
       }
     ]
@@ -64,7 +64,7 @@ window.IMAGE_CURATION = {
       "File:Ang Thong 100.45010E 14.58332N.jpg",
       "Ang Thong Province Stadion",
       "Ang Thong WV Banner",
-      "\u003cp>Hlwong Pi Pant tattooing a Yant in Ang Tong Province.\n\u003c/p>\nFotographer - Spencer Littlewood",
+      "Hlwong Pi Pant tattooing a Yant in Ang Tong Province. Fotographer - Spencer Littlewood",
       "Ang Thong City Pillar Shrine"
     ],
     "attribution": [
@@ -83,19 +83,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/ang-thong/gallery-3.webp",
         "caption": "Ang Thong WV Banner",
-        "photoCredit": "Missvain\u003cbr>Original author: \u003ca href=\"//commons.wikimedia.org/wiki/User:Kittipong_khunnen\" title=\"User:Kittipong khunnen\">User:Kittipong khunnen\u003c/a>",
+        "photoCredit": "Missvain Original author: User:Kittipong khunnen",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_WV_Banner.jpg"
       },
       {
         "file": "assets/images/provinces/ang-thong/gallery-4.webp",
-        "caption": "\u003cp>Hlwong Pi Pant tattooing a Yant in Ang Tong Province.\n\u003c/p>\nFotographer - Spencer Littlewood",
-        "photoCredit": "\u003ca href=\"https://en.wikipedia.org/wiki/User:Sakyant\" class=\"extiw\" title=\"wikipedia:User:Sakyant\">Sakyant\u003c/a> at \u003ca href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia\u003c/a>",
+        "caption": "Hlwong Pi Pant tattooing a Yant in Ang Tong Province. Fotographer - Spencer Littlewood",
+        "photoCredit": "Sakyant at English Wikipedia",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Hlwongpipant-josh.jpg"
       },
       {
         "file": "assets/images/provinces/ang-thong/gallery-5.webp",
         "caption": "Ang Thong City Pillar Shrine",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "photoCredit": "Chainwit.",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ang_Thong_(2024)_-_Ang_Thong_City_Pillar_Shrine_%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_(%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99).jpg"
       }
     ]
@@ -117,19 +117,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/bangkok/gallery-1.webp",
         "caption": "Petrol Station near Soi Ramintra 5",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014201824/http://www.panoramio.com/user/1429473?with_photo_id=34915757\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Petrol_Station_near_Soi_Ramintra_5_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/bangkok/gallery-2.webp",
         "caption": "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "photoCredit": "Poonpun2016",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Phahonyothin.jpg"
       },
       {
         "file": "assets/images/provinces/bangkok/gallery-3.webp",
         "caption": "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:GRAD_KU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GRAD KU (page does not exist)\">GRAD KU\u003c/a>",
+        "photoCredit": "GRAD KU",
         "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU001.jpg"
       }
     ]
@@ -155,31 +155,31 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/bueng-kan/gallery-1.webp",
         "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104342/http://www.panoramio.com/user/1429473?with_photo_id=124374227\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(1).jpg"
       },
       {
         "file": "assets/images/provinces/bueng-kan/gallery-2.webp",
         "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031104319/http://www.panoramio.com/user/1429473?with_photo_id=124374224\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(2).jpg"
       },
       {
         "file": "assets/images/provinces/bueng-kan/gallery-3.webp",
         "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031011157/http://www.panoramio.com/user/1429473?with_photo_id=124374242\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(3).jpg"
       },
       {
         "file": "assets/images/provinces/bueng-kan/gallery-4.webp",
         "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173825/http://www.panoramio.com/user/1429473?with_photo_id=124374231\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(4).jpg"
       },
       {
         "file": "assets/images/provinces/bueng-kan/gallery-5.webp",
         "caption": "Nong Doen, Bung Khla District, Bueng Kan 38000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030173833/http://www.panoramio.com/user/1429473?with_photo_id=124374233\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Doen,_Bung_Khla_District,_Bueng_Kan_38000,_Thailand_-_panoramio_(5).jpg"
       }
     ]
@@ -201,7 +201,7 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/buri-ram/gallery-1.webp",
         "caption": "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Media_lib&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Media lib (page does not exist)\">Media lib\u003c/a>",
+        "photoCredit": "Media lib",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Buriram_Bsp_1995-99.jpg"
       },
       {
@@ -213,7 +213,7 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/buri-ram/gallery-3.webp",
         "caption": "Aerial view inside Phutthaisong School",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wiraphat_Raksat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wiraphat Raksat (page does not exist)\">Wiraphat Raksat\u003c/a>",
+        "photoCredit": "Wiraphat Raksat",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B9%84%E0%B8%98%E0%B8%AA%E0%B8%87.jpg"
       }
     ]
@@ -239,31 +239,31 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/chachoengsao/gallery-1.webp",
         "caption": "Aranyaprathet to Bangkok",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26781577@N07\">Clay Gilliland\u003c/a>",
+        "photoCredit": "Clay Gilliland",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Aranyaprathet_to_Bangkok_(15038623533).jpg"
       },
       {
         "file": "assets/images/provinces/chachoengsao/gallery-2.webp",
         "caption": "Aranyaprathet to Bangkok",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/26781577@N07\">Clay Gilliland\u003c/a>",
+        "photoCredit": "Clay Gilliland",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Aranyaprathet_to_Bangkok_(15658771865).jpg"
       },
       {
         "file": "assets/images/provinces/chachoengsao/gallery-3.webp",
         "caption": "Bang Kaeo, Mueang Chachoengsao District, Chachoengsao, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024215438/http://www.panoramio.com/user/7039051?with_photo_id=87148356\">khanawoot\u003c/a>",
+        "photoCredit": "khanawoot",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bang_Kaeo,_Mueang_Chachoengsao_District,_Chachoengsao,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/chachoengsao/gallery-4.webp",
         "caption": "Depan SMP 1 Pakong",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161026173331/http://www.panoramio.com/user/5002713?with_photo_id=77569750\">Vebra\u003c/a>",
+        "photoCredit": "Vebra",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Depan_SMP_1_Pakong_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/chachoengsao/gallery-5.webp",
         "caption": "Flying foxes - Wat Pho Bangkla",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025142829/http://www.panoramio.com/user/5109466?with_photo_id=77103203\">Thaweesak Churasri\u003c/a>",
+        "photoCredit": "Thaweesak Churasri",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Flying_foxes_-_Wat_Pho_Bangkla_-_panoramio.jpg"
       }
     ]
@@ -278,26 +278,26 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "Rice field@Chainat 09/2009",
-      "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
+      "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
       "supphaya sunrise"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/chai-nat/gallery-1.webp",
         "caption": "Rice field@Chainat 09/2009",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014092255/http://www.panoramio.com/user/1429473?with_photo_id=26506162\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Rice_field@Chainat_09-2009_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/chai-nat/gallery-2.webp",
-        "caption": "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161015055226/http://www.panoramio.com/user/1429473?with_photo_id=30589544\">::::=UT=::::\u003c/a>",
+        "caption": "Sunset@Thammamoon : พระอาทิตย์ตกดินท่าน้ำวัดธรรมมูล จ.ชัยนาท",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Sunset@Thammamoon_,_%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%95%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%A1%E0%B8%B9%E0%B8%A5_%E0%B8%88.%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/chai-nat/gallery-3.webp",
         "caption": "supphaya sunrise",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161012112107/http://www.panoramio.com/user/1429473?with_photo_id=17708602\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Supphaya_sunrise_-_panoramio.jpg"
       }
     ]
@@ -315,7 +315,7 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "Local commons in Chaiyaphum, Thailand, offer a free common grass to villagers. This picture of water buffalos - Bos bubalus - was taken by TORIKAI Yukihiro, a Japanese economist, in Sept. 3rd 2003.",
       "Bee Htaw Monzel (in the middle) with Nyah Kur people",
-      "\u003ci>Caleta elna noliteia\u003c/i>, male, set specimen, Thailand, Alan Cassidy photo.",
+      "Caleta elna noliteia , male, set specimen, Thailand, Alan Cassidy photo.",
       "File:Chaiyaphum 102.03069E 15.80519N.jpg",
       "อนุสาวรีย์พระยาภักดีชุมพล (แล) ที่หน้าวงเวียนศูนย์ราชการจังหวัดชัยภูมิ"
     ],
@@ -323,19 +323,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/chaiyaphum/gallery-1.webp",
         "caption": "Local commons in Chaiyaphum, Thailand, offer a free common grass to villagers. This picture of water buffalos - Bos bubalus - was taken by TORIKAI Yukihiro, a Japanese economist, in Sept. 3rd 2003.",
-        "photoCredit": "No machine-readable author provided. \u003ca href=\"//commons.wikimedia.org/wiki/User:Chiba007~commonswiki\" title=\"User:Chiba007~commonswiki\">Chiba007~commonswiki\u003c/a> assumed (based on copyright claims).",
+        "photoCredit": "No machine-readable author provided. Chiba007~commonswiki assumed (based on copyright claims).",
         "imageSource": "https://commons.wikimedia.org/wiki/File:2005-9usi-thai.jpg"
       },
       {
         "file": "assets/images/provinces/chaiyaphum/gallery-2.webp",
         "caption": "Bee Htaw Monzel (in the middle) with Nyah Kur people",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Borainmonzel&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Borainmonzel (page does not exist)\">Borainmonzel\u003c/a>",
+        "photoCredit": "Borainmonzel",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bee_Htaw_Monzel_(in_the_middle)_with_Nyah_Kur_people.jpg"
       },
       {
         "file": "assets/images/provinces/chaiyaphum/gallery-3.webp",
-        "caption": "\u003ci>Caleta elna noliteia\u003c/i>, male, set specimen, Thailand, Alan Cassidy photo.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Accassidy\" title=\"User:Accassidy\">Accassidy\u003c/a>",
+        "caption": "Caleta elna noliteia , male, set specimen, Thailand, Alan Cassidy photo.",
+        "photoCredit": "Accassidy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:CaletaElnaNoliteiaMUpUnAC1.jpg"
       },
       {
@@ -347,7 +347,7 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/chaiyaphum/gallery-5.webp",
         "caption": "อนุสาวรีย์พระยาภักดีชุมพล (แล) ที่หน้าวงเวียนศูนย์ราชการจังหวัดชัยภูมิ",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Ha6585&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ha6585 (page does not exist)\">Ha6585\u003c/a>",
+        "photoCredit": "Ha6585",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chaiyaphum_City.jpg"
       }
     ]
@@ -363,41 +363,41 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/chanthaburi/gallery-5.webp"
     ],
     "galleryCaptions": [
-      "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)",
+      "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together",
       "Ban Hin Lad the road",
-      "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne",
+      "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wi",
       "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
       "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/chanthaburi/gallery-1.webp",
-        "caption": "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:110203-M-9683P-245_(5428114119).jpg"
       },
       {
         "file": "assets/images/provinces/chanthaburi/gallery-2.webp",
         "caption": "Ban Hin Lad the road",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024022819/http://www.panoramio.com/user/844057?with_photo_id=58605015\">Adriaan Castermans\u003c/a>",
+        "photoCredit": "Adriaan Castermans",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Hin_Lad_the_road_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/chanthaburi/gallery-3.webp",
-        "caption": "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne",
+        "caption": "U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wi",
         "photoCredit": "Lance Cpl. Carl Payne",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Defense.gov_photo_essay_120119-M-HN458-013.jpg"
       },
       {
         "file": "assets/images/provinces/chanthaburi/gallery-4.webp",
         "caption": "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
-        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"3\">\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cspan typeof=\"mw:File/Frameless\">\u003ca href=\"//commons.wikimedia.org/wiki/File:KMITL_Radio_Amateur_Club_Operator.jpg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/60px-KMITL_Radio_Amateur_Club_Operator.jpg\" decoding=\"async\" width=\"50\" height=\"28\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/120px-KMITL_Radio_Amateur_Club_Operator.jpg 2x\" data-file-width=\"5472\" data-file-height=\"3072\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd>This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">Adirach Toumlamoon\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">message.\u003c/a> \u003cbr> (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">ข้อความแจ้งด้วยก็ได้\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Crystal_128_mail.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/40px-Crystal_128_mail.png\" decoding=\"async\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/60px-Crystal_128_mail.png 2x\" data-file-width=\"128\" data-file-height=\"128\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\n\u003ctbody>\u003ctr>\n\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.\u003cbr>Otherwise you may upload an edited image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003c/div>",
+        "photoCredit": "This Photo was taken by Adirach Toumlamoon . Feel free to use any of my images, but please mention me as the author and may send me a message. (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง ข้อความแจ้งด้วยก็ได้ ) Please do not upload an edited",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khirithan_Dam_1.jpg"
       },
       {
         "file": "assets/images/provinces/chanthaburi/gallery-5.webp",
         "caption": "เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ",
-        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"3\">\n\u003ctbody>\u003ctr>\n\u003ctd>\u003cspan typeof=\"mw:File/Frameless\">\u003ca href=\"//commons.wikimedia.org/wiki/File:KMITL_Radio_Amateur_Club_Operator.jpg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/60px-KMITL_Radio_Amateur_Club_Operator.jpg\" decoding=\"async\" width=\"50\" height=\"28\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/KMITL_Radio_Amateur_Club_Operator.jpg/120px-KMITL_Radio_Amateur_Club_Operator.jpg 2x\" data-file-width=\"5472\" data-file-height=\"3072\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd>This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">Adirach Toumlamoon\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">message.\u003c/a> \u003cbr> (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง\u003ca href=\"//commons.wikimedia.org/wiki/User:Adrich\" title=\"User:Adrich\">ข้อความแจ้งด้วยก็ได้\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Crystal_128_mail.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/40px-Crystal_128_mail.png\" decoding=\"async\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Crystal_128_mail.png/60px-Crystal_128_mail.png 2x\" data-file-width=\"128\" data-file-height=\"128\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\n\u003ctbody>\u003ctr>\n\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\n\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.\u003cbr>Otherwise you may upload an edited image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003c/div>",
+        "photoCredit": "This Photo was taken by Adirach Toumlamoon . Feel free to use any of my images, but please mention me as the author and may send me a message. (ภาพถ่ายสามารถนำไปใช้งานได้เลย แต่ขอให้ใส่เครดิตแก่ผู้ถ่ายเพื่อแสดงที่มาและอาจจะส่ง ข้อความแจ้งด้วยก็ได้ ) Please do not upload an edited",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khirithan_Dam_2.jpg"
       }
     ]
@@ -415,7 +415,7 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "Buak Hard Park (Chiangmai)",
       "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.\nThere is much speculation about why the rings are worn by the women of this tribe, many will tell you it is simply tradition. They use to protect them from tiger attacks as the tiger will go for the neck. They start at a young age and add to the rings over time.",
+      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
       "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
       "Follow THE PEACK ATV adventure"
     ],
@@ -423,31 +423,31 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/chiang-mai/gallery-1.webp",
         "caption": "Buak Hard Park (Chiangmai)",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kawin_Jungsakulrujirek&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kawin Jungsakulrujirek (page does not exist)\">Kawin Jungsakulrujirek\u003c/a>",
+        "photoCredit": "Kawin Jungsakulrujirek",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Buak_Hard_Park.jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-2.webp",
         "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-        "photoCredit": "\u003cbdi>\u003ca href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\">\u003cspan title=\"photographer\">Dennis G. Jarvis\u003c/span>\u003c/a>\u003c/bdi>",
+        "photoCredit": "Dennis G. Jarvis",
         "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4310_-_Long_Neck_Padong_Lady_(3731014077).jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-3.webp",
-        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.\nThere is much speculation about why the rings are worn by the women of this tribe, many will tell you it is simply tradition. They use to protect them from tiger attacks as the tiger will go for the neck. They start at a young age and add to the rings over time.",
-        "photoCredit": "\u003cbdi>\u003ca href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\">\u003cspan title=\"photographer\">Dennis G. Jarvis\u003c/span>\u003c/a>\u003c/bdi>",
+        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
+        "photoCredit": "Dennis G. Jarvis",
         "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4321_-_Young_Lady_of_the_Long_Neck_Padong_(3732482202).jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-4.webp",
         "caption": "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PhilipNalangan\" title=\"User:PhilipNalangan\">Philip Nalangan\u003c/a>",
+        "photoCredit": "Philip Nalangan",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Saket_Temple_Chiang_Mai_Thailand_2.jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-5.webp",
         "caption": "Follow THE PEACK ATV adventure",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022132233/http://www.panoramio.com/user/5477602?with_photo_id=54469139\">Maxim Cruiser\u003c/a>",
+        "photoCredit": "Maxim Cruiser",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Follow_THE_PEACK_ATV_adventure_-_panoramio.jpg"
       }
     ]
@@ -473,31 +473,31 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/chiang-rai/gallery-1.webp",
         "caption": "Photo of Chiang Rai.",
-        "photoCredit": "\u003cbdi>\u003ca href=\"https://en.wikipedia.org/wiki/en:Christopher_Michel\" class=\"extiw\" title=\"w:en:Christopher Michel\">\u003cspan title=\"American entrepreneur, photographer, and investor\">Christopher Michel\u003c/span>\u003c/a>\u003c/bdi>",
+        "photoCredit": "Christopher Michel",
         "imageSource": "https://commons.wikimedia.org/wiki/File:20100228_chiang_rai3_7642_(4444147157).jpg"
       },
       {
         "file": "assets/images/provinces/chiang-rai/gallery-2.webp",
         "caption": "Chiang Rai Province, Golden Triangle",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Heiko_Trurnit&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Heiko Trurnit (page does not exist)\">Heiko Trurnit\u003c/a>",
+        "photoCredit": "Heiko Trurnit",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Akha_Village_in_the_1980ies.jpg"
       },
       {
         "file": "assets/images/provinces/chiang-rai/gallery-3.webp",
         "caption": "Burmese-Chiang Rai",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Photon34\" title=\"User:Photon34\">Photon34\u003c/a>",
+        "photoCredit": "Photon34",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Burmese-Chiang_Rai.png"
       },
       {
         "file": "assets/images/provinces/chiang-rai/gallery-4.webp",
         "caption": "Chiang Rai",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino\u003c/a>",
+        "photoCredit": "Visions of Domino",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497707213).jpg"
       },
       {
         "file": "assets/images/provinces/chiang-rai/gallery-5.webp",
         "caption": "Chiang Rai",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino\u003c/a>",
+        "photoCredit": "Visions of Domino",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497708963).jpg"
       }
     ]
@@ -511,27 +511,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/chonburi/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)",
+      "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011. Cobra Gold is a regularly scheduled joint/combined exercise d",
       "สวนนงนุช",
       "Amata City Chonburi"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/chonburi/gallery-1.webp",
-        "caption": "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011. Cobra Gold is a regularly scheduled joint/combined exercise d",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:110211-M-JF183-033_(5448608116).jpg"
       },
       {
         "file": "assets/images/provinces/chonburi/gallery-2.webp",
         "caption": "สวนนงนุช",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:%E0%B8%AD%E0%B8%A0%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%A1&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:อภิราม (page does not exist)\">อภิราม\u003c/a>",
+        "photoCredit": "อภิราม",
         "imageSource": "https://commons.wikimedia.org/wiki/File:20190210_134122%E0%B8%84.jpg"
       },
       {
         "file": "assets/images/provinces/chonburi/gallery-3.webp",
         "caption": "Amata City Chonburi",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Paulinski123&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paulinski123 (page does not exist)\">Paulinski123\u003c/a>",
+        "photoCredit": "Paulinski123",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Amata_City_Chonburi.jpg"
       }
     ]
@@ -551,25 +551,25 @@ window.IMAGE_CURATION = {
       "A road in Thailand",
       "Chum Kho, Pathio District, Chumphon, Thailand",
       "File:Chumphon 99.17953E 10.49579N.jpg",
-      "Damage of the typhoon Gay in November 1989 in the Thai province \u003ca href=\"//commons.wikimedia.org/wiki/Chumphon\" title=\"Chumphon\">Chumphon\u003c/a>.\nPhoto taken in Pathiu(?) by H. Pollmeier."
+      "Damage of the typhoon Gay in November 1989 in the Thai province Chumphon . Photo taken in Pathiu(?) by H. Pollmeier."
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/chumphon/gallery-1.webp",
         "caption": "Silnice v provincii Phato v jižním Thajsku",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/4631368?with_photo_id=45305390\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2135).jpg"
       },
       {
         "file": "assets/images/provinces/chumphon/gallery-2.webp",
         "caption": "A road in Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016235730/http://www.panoramio.com/user/4631368?with_photo_id=45305406\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2137).jpg"
       },
       {
         "file": "assets/images/provinces/chumphon/gallery-3.webp",
         "caption": "Chum Kho, Pathio District, Chumphon, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102015659/http://www.panoramio.com/user/1429473?with_photo_id=124374399\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chum_Kho,_Pathio_District,_Chumphon,_Thailand_-_panoramio.jpg"
       },
       {
@@ -580,7 +580,7 @@ window.IMAGE_CURATION = {
       },
       {
         "file": "assets/images/provinces/chumphon/gallery-5.webp",
-        "caption": "Damage of the typhoon Gay in November 1989 in the Thai province \u003ca href=\"//commons.wikimedia.org/wiki/Chumphon\" title=\"Chumphon\">Chumphon\u003c/a>.\nPhoto taken in Pathiu(?) by H. Pollmeier.",
+        "caption": "Damage of the typhoon Gay in November 1989 in the Thai province Chumphon . Photo taken in Pathiu(?) by H. Pollmeier.",
         "photoCredit": "H. Pollmeier.",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_typhoon_damage_1.jpg"
       }
@@ -603,19 +603,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/kalasin/gallery-1.webp",
         "caption": "Dirt Bike Tuk-Tuk Conversion - Kalasin, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor\u003c/a>",
+        "photoCredit": "Marshall Astor",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Dirt_Bike_Tuk-Tuk_Conversion_-_Kalasin_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/kalasin/gallery-2.webp",
         "caption": "Drink Vendor Motorbike with Sidecar (Sign reads: \"Traditional Coffee\") - Temple on the Mountain, Kalasin, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/15965815@N00\">Marshall Astor\u003c/a>",
+        "photoCredit": "Marshall Astor",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Food_Vendor_Motorbike_with_Sidecar_-_Temple_on_the_Mountain_Kalasin_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/kalasin/gallery-3.webp",
         "caption": "Gull Wing Door Soda Delivery Truck - Kalasin, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/15965815@N00\">Marshall Astor\u003c/a> from Olympia, WA, United States",
+        "photoCredit": "Marshall Astor from Olympia, WA, United States",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Gull_Wing_Door_Soda_Delivery_Truck_-_Kalasin,_Thailand_(2474152740).jpg"
       }
     ]
@@ -630,7 +630,7 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "Biomass boiler, running on chaff (kamphaengphet plant,Thai)",
-      "\u003ci>Bouganvillea glabra\u003c/i> flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
+      "Bouganvillea glabra flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
       "Countryside shops 1956 Khamphang Phet"
     ],
     "attribution": [
@@ -642,14 +642,14 @@ window.IMAGE_CURATION = {
       },
       {
         "file": "assets/images/provinces/kamphaeng-phet/gallery-2.webp",
-        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "caption": "Bouganvillea glabra flowers in the Kamphaeng Phet Historical Park, Kamphaeng Phet Province, Thailand.",
+        "photoCredit": "PumpkinSky",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Kamphaeng_Phet_Historical_Park.jpg"
       },
       {
         "file": "assets/images/provinces/kamphaeng-phet/gallery-3.webp",
         "caption": "Countryside shops 1956 Khamphang Phet",
-        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "photoCredit": "Unknown author Unknown author",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Countryside_shops_1956_Khamphang_Phet.jpg"
       }
     ]
@@ -663,27 +663,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/kanchanaburi/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "This is the AMURTEL Children's and Mother's Home \u003ci>Baan Unrak\u003c/i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
-      "\u003cdiv class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]\u003c/div>",
+      "This is the AMURTEL Children's and Mother's Home Baan Unrak (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
+      "500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]",
       "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/kanchanaburi/gallery-1.webp",
-        "caption": "This is the AMURTEL Children's and Mother's Home \u003ci>Baan Unrak\u003c/i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Cornelius383\" title=\"User:Cornelius383\">Cornelius383\u003c/a>",
+        "caption": "This is the AMURTEL Children's and Mother's Home Baan Unrak (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
+        "photoCredit": "Cornelius383",
         "imageSource": "https://commons.wikimedia.org/wiki/File:02-Ananda_Marga_Children%27s_School_Sangkhlaburi.JPG"
       },
       {
         "file": "assets/images/provinces/kanchanaburi/gallery-2.webp",
-        "caption": "\u003cdiv class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]\u003c/div>",
-        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/AvisHek\">Avis Hek\u003c/a>\u003c/div>",
+        "caption": "500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]",
+        "photoCredit": "Avis Hek",
         "imageSource": "https://commons.wikimedia.org/wiki/File:500px_photo_(28391891).jpeg"
       },
       {
         "file": "assets/images/provinces/kanchanaburi/gallery-3.webp",
         "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "photoCredit": "Chainwit.",
         "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png"
       }
     ]
@@ -697,26 +697,26 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/khon-kaen/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the food stall - some appear to be customers waiting to order or be served, while others seem to be working at the cart preparing food.  The setting has the authentic atmosphere of a casual street food experience with simple plastic stools visible for customers to sit on. The warm glow from the food stall contrasts with the darker surroundings, creating that characteristic ambiance of night markets and street food culture that's so prevalent in Southeast Asia. This represents the vibrant street food culture that's an important part of everyday life and culinary traditions in Thailand.",
+      "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the fo",
       "Building 7, Khon Kaen Wittayayon School",
-      "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter."
+      "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with m"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/khon-kaen/gallery-1.webp",
-        "caption": "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the food stall - some appear to be customers waiting to order or be served, while others seem to be working at the cart preparing food.  The setting has the authentic atmosphere of a casual street food experience with simple plastic stools visible for customers to sit on. The warm glow from the food stall contrasts with the darker surroundings, creating that characteristic ambiance of night markets and street food culture that's so prevalent in Southeast Asia. This represents the vibrant street food culture that's an important part of everyday life and culinary traditions in Thailand.",
+        "caption": "This photo shows a nighttime street food scene, likely in Thailand (based on the Thai script visible on a sign). A mobile food cart or stall is set up on the side of the street with bright lights illuminating the cooking and serving area. Several people are gathered around the fo",
         "photoCredit": "Pattaya Patrol",
         "imageSource": "https://commons.wikimedia.org/wiki/File:A_woman_sitting_on_a_chair_next_to_a_food_cart_2025.jpg"
       },
       {
         "file": "assets/images/provinces/khon-kaen/gallery-2.webp",
         "caption": "Building 7, Khon Kaen Wittayayon School",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:JustRandomThai\" title=\"User:JustRandomThai\">JustRandomThai\u003c/a>",
+        "photoCredit": "JustRandomThai",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Building_7,_Khon_Kaen_Wittayayon_School.jpg"
       },
       {
         "file": "assets/images/provinces/khon-kaen/gallery-3.webp",
-        "caption": "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with melted cheese on top - Some crinkle-cut french fries on the side - A small white dish containing what appears to be a red sauce or ketchup The food is presented on a rustic wooden board, and the setting has a warm, casual dining atmosphere with a wooden table. The lighting creates an appetizing ambiance that highlights the textures and colors of the food. This appears to be a gourmet pub-style meal or restaurant burger platter.",
+        "caption": "This photo shows a delicious-looking meal served on a wooden serving board in what appears to be a restaurant or café. The platter features: - A burger with fresh lettuce on a glossy brioche bun, secured with a wooden skewer - What looks like a grilled meat steak or cutlet with m",
         "photoCredit": "Pattaya Patrol",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Burger_and_fries_on_a_wooden_plate.jpg"
       }
@@ -731,27 +731,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/krabi/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Transport of tourists and luggages from boat to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
-      "Tractor for the transport of tourists and luggages from boats to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
+      "Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
+      "Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
       "Greetings from the cleaning service"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/krabi/gallery-1.webp",
-        "caption": "Transport of tourists and luggages from boat to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Karelj\" title=\"User:Karelj\">Karelj\u003c/a>",
+        "caption": "Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
+        "photoCredit": "Karelj",
         "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_6.jpg"
       },
       {
         "file": "assets/images/provinces/krabi/gallery-2.webp",
-        "caption": "Tractor for the transport of tourists and luggages from boats to the seacoast in \u003ca href=\"//commons.wikimedia.org/wiki/Category:East_Rai_Leh\" title=\"Category:East Rai Leh\">East Rai Leh\u003c/a> in the \u003ca href=\"https://en.wikipedia.org/wiki/Krabi_Province\" class=\"extiw\" title=\"w:Krabi Province\">Krabi Province\u003c/a>, \u003ca href=\"https://en.wikipedia.org/wiki/Thailand\" class=\"extiw\" title=\"w:Thailand\">Thailand\u003c/a>, March 2018",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Karelj\" title=\"User:Karelj\">Karelj\u003c/a>",
+        "caption": "Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
+        "photoCredit": "Karelj",
         "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_7.jpg"
       },
       {
         "file": "assets/images/provinces/krabi/gallery-3.webp",
         "caption": "Greetings from the cleaning service",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/97702840@N00\">Jukka\u003c/a> from HELSINKI, Finland",
+        "photoCredit": "Jukka from HELSINKI, Finland",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Greetings_from_the_cleaning_service_(12359768683).jpg"
       }
     ]
@@ -767,25 +767,25 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "Ananas d'une plantation d'ananas dans les montagnes de la province de Lampang en Thaïlande en janvier 2023",
       "Lampang, Thailand",
-      "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses."
+      "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachet"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/lampang/gallery-1.webp",
         "caption": "Ananas d'une plantation d'ananas dans les montagnes de la province de Lampang en Thaïlande en janvier 2023",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "photoCredit": "Bienvenue en Thaïlande",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ananas_de_Tha%C3%AFlande.jpg"
       },
       {
         "file": "assets/images/provinces/lampang/gallery-2.webp",
         "caption": "Lampang, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161111102734/http://www.panoramio.com/user/5494478?with_photo_id=47788018\">gary4now\u003c/a>",
+        "photoCredit": "gary4now",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Lampang,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/lampang/gallery-3.webp",
-        "caption": "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachets d'herbes diverses.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "caption": "Il est conseillé aux bouddhistes d'être végétarien, c'est pourquoi dans ce marché situé dans les montagnes de Lampang près d'une grotte sacrée on ne vend ni viande, ni poisson mais seulement du riz et des plantes : sacs de riz riceberry, riz japonais, riz gluant noir... et sachet",
+        "photoCredit": "Bienvenue en Thaïlande",
         "imageSource": "https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_plantes_et_grotte_sacr%C3%A9e_dans_les_montagnes_de_Lampang_1.jpg"
       }
     ]
@@ -807,13 +807,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/lamphun/gallery-1.webp",
         "caption": "อนุสาวรีย์ครูบาศรีวิชัย สร้างขึ้น ณ จุดที่ขุดถนนจอบแรก เพื่อเป็นอนุสรน์สถานรำลึกถึงคุณของครูบาเจ้าศรีวิชัยในการนำกลุ่มชาวบ้าน ชาวเขา สร้างถนนขึ้นพระธาตุดอยสุเทพ",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kimtuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kimtuy (page does not exist)\">Kimtuy\u003c/a>",
+        "photoCredit": "Kimtuy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:AnuSawwaree_Khrubasriwichai.jpg"
       },
       {
         "file": "assets/images/provinces/lamphun/gallery-2.webp",
         "caption": "Mae Tha, Lamphun, THAILAND",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT\u003c/a> from FRANCE",
+        "photoCredit": "Bernard DUPONT from FRANCE",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Jewel_Beetle_(Sternocera_ruficornis)_(8247653334).jpg"
       },
       {
@@ -841,13 +841,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/loei/gallery-1.webp",
         "caption": "Attractions in Loei province",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Kunkawee72308&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kunkawee72308 (page does not exist)\">Kunkawee72308\u003c/a>",
+        "photoCredit": "Kunkawee72308",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Attractions_in_Loei_province.png"
       },
       {
         "file": "assets/images/provinces/loei/gallery-2.webp",
         "caption": "Highway 21 Junction in Phu Rua, Loei",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Swtcha007&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Swtcha007 (page does not exist)\">Swtcha007\u003c/a>",
+        "photoCredit": "Swtcha007",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Highway-21_Loei.jpg"
       },
       {
@@ -875,19 +875,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/lop-buri/gallery-1.webp",
         "caption": "This photograph shows Banana and Egg Cafe and its surroundings in Lopburi Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "photoCredit": "VN.NguyenDucDuy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Banana_and_Egg_Cafe_in_Lopburi.jpg"
       },
       {
         "file": "assets/images/provinces/lop-buri/gallery-2.webp",
         "caption": "File:IMG พุทธสถาน.jpg",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Thongdeethailand2531&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Thongdeethailand2531 (page does not exist)\">Thongdeethailand2531\u003c/a>",
+        "photoCredit": "Thongdeethailand2531",
         "imageSource": "https://commons.wikimedia.org/wiki/File:IMG_%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99.jpg"
       },
       {
         "file": "assets/images/provinces/lop-buri/gallery-3.webp",
         "caption": "ตัวอำเภอโคกสำโรง",
-        "photoCredit": "\u003ca href=\"https://th.wikipedia.org/wiki/Thongdeethailand\" class=\"extiw\" title=\"th:Thongdeethailand\">th:Thongdeethailand\u003c/a>",
+        "photoCredit": "th:Thongdeethailand",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Samrong_district_(2011).jpg"
       }
     ]
@@ -902,19 +902,19 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "เสาธง โรงเรียนปายวิทยาคาร เมื่อปี พ.ศ. 2564",
-      "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the tribe's village. A woman with a handmade string instrument offered to play a soulful music while we rested.",
+      "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the trib",
       "File:Longneckkaren.jpg"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/mae-hong-son/gallery-1.webp",
         "caption": "เสาธง โรงเรียนปายวิทยาคาร เมื่อปี พ.ศ. 2564",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Students_of_history&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Students of history (page does not exist)\">Students of history\u003c/a>",
+        "photoCredit": "Students of history",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Feungfa_Building,_Pai_Wittayakarn_School.jpg"
       },
       {
         "file": "assets/images/provinces/mae-hong-son/gallery-2.webp",
-        "caption": "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the tribe's village. A woman with a handmade string instrument offered to play a soulful music while we rested.",
+        "caption": "We decided to take a detour towards a Karen tribe west of Mae Hong Son, famous for their stretched necks. We received a few curious looks from the locals because of our extensive photographic equipment. Passing through a border control, we arrived at the main entrance to the trib",
         "photoCredit": "Pithawat Vachiramon",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Karen_woman_playing_instrument_Mae_Hong_Son_Province_THAILAND_March_2012.jpg"
       },
@@ -943,7 +943,7 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/maha-sarakham/gallery-1.webp",
         "caption": "my home",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Rungdiaday&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Rungdiaday (page does not exist)\">Rungdiaday\u003c/a>",
+        "photoCredit": "Rungdiaday",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Herritage.jpg"
       },
       {
@@ -955,7 +955,7 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/maha-sarakham/gallery-3.webp",
         "caption": "Kham Riang, Kantharawichai District, Maha Sarakham 44150, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102124729/http://www.panoramio.com/user/6847270?with_photo_id=98140354\">TonG_CB\u003c/a>",
+        "photoCredit": "TonG_CB",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Kham_Riang,_Kantharawichai_District,_Maha_Sarakham_44150,_Thailand_-_panoramio_(11).jpg"
       }
     ]
@@ -983,13 +983,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/mukdahan/gallery-2.webp",
         "caption": "แผนที่ธงจังหวัดมุกดาหาร",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "photoCredit": "Tonmi pasoy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Mukdahan.png"
       },
       {
         "file": "assets/images/provinces/mukdahan/gallery-3.webp",
         "caption": "Na Si Nuan, Mueang Mukdahan District, Mukdahan, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031053702/http://www.panoramio.com/user/1429473?with_photo_id=124395859\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Na_Si_Nuan,_Mueang_Mukdahan_District,_Mukdahan,_Thailand_-_panoramio_(1).jpg"
       }
     ]
@@ -1011,19 +1011,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nakhon-nayok/gallery-1.webp",
         "caption": "Bridge on the way to waterfall",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014080332/http://www.panoramio.com/user/1429473?with_photo_id=26740858\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bridge_on_the_way_to_waterfall_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-nayok/gallery-2.webp",
         "caption": "File:Flora of Thailand 7.JPG",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tris_T7\" title=\"User:Tris T7\">Tris_T7\u003c/a>",
+        "photoCredit": "Tris_T7",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Flora_of_Thailand_7.JPG"
       },
       {
         "file": "assets/images/provinces/nakhon-nayok/gallery-3.webp",
         "caption": "Ganesha Statue Nakornnayok",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Ohmaphat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ohmaphat (page does not exist)\">Ohmaphat\u003c/a>",
+        "photoCredit": "Ohmaphat",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ganesha_Nakornnayok_1.jpg"
       }
     ]
@@ -1051,13 +1051,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nakhon-pathom/gallery-2.webp",
         "caption": "Use for suck up the liquid to the graduated pipette",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Paweena.S&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Paweena.S (page does not exist)\">Paweena.S\u003c/a>",
+        "photoCredit": "Paweena.S",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bulb_.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-pathom/gallery-3.webp",
         "caption": "From Mcdonal",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025035742/http://www.panoramio.com/user/4366445?with_photo_id=88888343\">Phong  Phat G\u003c/a>",
+        "photoCredit": "Phong Phat G",
         "imageSource": "https://commons.wikimedia.org/wiki/File:From_Mcdonal_-_panoramio.jpg"
       }
     ]
@@ -1079,19 +1079,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nakhon-phanom/gallery-1.webp",
         "caption": "Chinese New Year in Nakhon Phanom Province is a great and interesting traditional event.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:643010120500Dh&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:643010120500Dh (page does not exist)\">643010120500Dh\u003c/a>",
+        "photoCredit": "643010120500Dh",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chinese_New_Year_Festival,_Nakhon_Phanom_Province.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-phanom/gallery-2.webp",
         "caption": "Mobile shop selling fruit juice in Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "photoCredit": "User:Mattes",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Lot_ken_shop.JPG"
       },
       {
         "file": "assets/images/provinces/nakhon-phanom/gallery-3.webp",
         "caption": "แผนที่ธงจังหวัดนครพนม",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "photoCredit": "Tonmi pasoy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nakhon_Phanom.png"
       }
     ]
@@ -1106,26 +1106,26 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "รูปปั้นไดโนเสาร์ที่จังหวัดนครราชสีมา",
-      "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District,  Nakhon Ratchasima Province, Thailand.",
-      "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pak Tong Chai, Nakhon Ratchasima province, Thailand, Jan. 24, 2012, during exercise Cobra Gold 2012. The foundation is part of a multipurpose building being constructed at the school. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)"
+      "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District, Nakhon Ratchasima Province, Thailand.",
+      "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pa"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/nakhon-ratchasima/gallery-1.webp",
         "caption": "รูปปั้นไดโนเสาร์ที่จังหวัดนครราชสีมา",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.Conan&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.Conan (page does not exist)\">Mr.Conan\u003c/a>",
+        "photoCredit": "Mr.Conan",
         "imageSource": "https://commons.wikimedia.org/wiki/File:DinosaursKorat.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-ratchasima/gallery-2.webp",
-        "caption": "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District,  Nakhon Ratchasima Province, Thailand.",
-        "photoCredit": "\u003ctable class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n\u003ctbody>\u003ctr class=\"plainlinks\">\n\u003ctd>\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/60px-Flag_of_Thailand.svg.png\" decoding=\"async\" width=\"50\" height=\"33\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/120px-Flag_of_Thailand.svg.png 2x\" data-file-width=\"900\" data-file-height=\"600\">\u003c/a>\u003c/span> This Photo was taken by \u003ci>\u003cb>\u003ca href=\"//commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\" title=\"User:Supanut Arunoprayote\">Supanut Arunoprayote\u003c/a>\u003c/b>\u003c/i>.\n\u003c/td>\n\u003ctd align=\"right\">Feel free to use any of my images, but please mention me as the author and may send me a \u003ca class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">message.\u003c/a> \u003cbr> (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง\u003ca class=\"external text\" href=\"https://commons.wikimedia.org/wiki/User:Supanut_Arunoprayote\">ข้อความบอกกล่าวด้วย\u003c/a>) \u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Contact_vmc2015.png\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/40px-Contact_vmc2015.png\" decoding=\"async\" width=\"40\" height=\"40\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Contact_vmc2015.png/120px-Contact_vmc2015.png 2x\" data-file-width=\"940\" data-file-height=\"940\">\u003c/a>\u003c/span>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\n\u003cdiv style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n\u003ctable>\u003ctbody>\u003ctr>\u003ctd style=\"padding:4px;\">\u003cspan typeof=\"mw:File\">\u003ca href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\">\u003cimg src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png\" decoding=\"async\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png 2x\" data-file-width=\"159\" data-file-height=\"142\">\u003c/a>\u003c/span>\n\u003c/td>\u003ctd style=\"padding:4px;\">\u003cdiv style=\"margin-top:0.5em;\">Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.\u003cbr>Please if you think that any changes should be required, please inform the author.\u003cbr>Otherwise you can upload a new image with a new name. Please use one of the templates \u003ca href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative\u003c/a> or \u003ca href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract\u003c/a>.\u003c/div>\n\u003c/td>\u003c/tr>\u003c/tbody>\u003c/table>\u003c/div>",
+        "caption": "The view of Lam Takhong from Yai Tieng mountain, Pak Chong District, Nakhon Ratchasima Province, Thailand.",
+        "photoCredit": "This Photo was taken by Supanut Arunoprayote . Feel free to use any of my images, but please mention me as the author and may send me a message. (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่ง ข้อความบอกกล่าวด้วย ) Please do not upload an updated image here without consul",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khao_Yai_Tieng_(I).jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-ratchasima/gallery-3.webp",
-        "caption": "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pak Tong Chai, Nakhon Ratchasima province, Thailand, Jan. 24, 2012, during exercise Cobra Gold 2012. The foundation is part of a multipurpose building being constructed at the school. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "U.S. Air Force Staff Sgt. Amy Slye, left, a broadcast journalist with the 18th Wing, videorecords Royal Thai Armed Forces and Indonesian service members, along with U.S. Soldiers with the 643rd Engineer Company, smoothing concrete over a foundation at the Ban Lumgoen school in Pa",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:120124-M-IJ457-062_(6766192875).jpg"
       }
     ]
@@ -1139,27 +1139,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/nakhon-sawan/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "\u003cdiv class=\"description\">\n500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]\u003c/div>",
+      "500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]",
       "Long-tailed macaque eating a peanut in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
       "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand."
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/nakhon-sawan/gallery-1.webp",
-        "caption": "\u003cdiv class=\"description\">\n500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]\u003c/div>",
-        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/albertlabermeier\">Albert Labermeier\u003c/a>\u003c/div>",
+        "caption": "500px provided description: 20160405 Dsc01481 Jpg [#2016 ,#Thailand ,#Khao Khitchakut]",
+        "photoCredit": "Albert Labermeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:20160405_Dsc01481_Jpg_(162967313).jpeg"
       },
       {
         "file": "assets/images/provinces/nakhon-sawan/gallery-2.webp",
         "caption": "Long-tailed macaque eating a peanut in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse\u003c/a>",
+        "photoCredit": "Rlevse",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_eating_peanut.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-sawan/gallery-3.webp",
         "caption": "Female long-tailed macaque with infant in Khao No-Khao Kaeo, Nakhon Sawan, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Rlevse\" title=\"User:Rlevse\">Rlevse\u003c/a>",
+        "photoCredit": "Rlevse",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Long-tailed_macaque_with_infant.jpg"
       }
     ]
@@ -1174,26 +1174,26 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "An Asian Giant Toad from Nakhon Si Thammarat, Thailand",
-      "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
-      "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>"
+      "This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following; Owner: Thai National Parks Link: www.thainationalparks.com/khao-luang-national-park",
+      "This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following; Owner: Thai National Parks Link: www.thainationalparks.com/khao-luang-national-park"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-1.webp",
         "caption": "An Asian Giant Toad from Nakhon Si Thammarat, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Psumuseum&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Psumuseum (page does not exist)\">Psumuseum\u003c/a>",
+        "photoCredit": "Psumuseum",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Giant_Toad.jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-2.webp",
-        "caption": "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen\u003c/a>",
+        "caption": "This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following; Owner: Thai National Parks Link: www.thainationalparks.com/khao-luang-national-park",
+        "photoCredit": "Rushen",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Microhyla_berdmorei,_Berdmore%27s_chorus_frog_-_Khao_Luang_National_Park_(29853193736).jpg"
       },
       {
         "file": "assets/images/provinces/nakhon-si-thammarat/gallery-3.webp",
-        "caption": "\u003cp>This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following;\n\u003c/p>\u003cp>Owner: Thai National Parks\n\u003c/p>\nLink: \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.thainationalparks.com/khao-luang-national-park\">www.thainationalparks.com/khao-luang-national-park\u003c/a>",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87521289@N07\">Rushen\u003c/a>",
+        "caption": "This photo is published under Creative Commons Attribution-Share-Alike Licence, means you are free to use this photo with attribution under same licence. For credits, please use following; Owner: Thai National Parks Link: www.thainationalparks.com/khao-luang-national-park",
+        "photoCredit": "Rushen",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Micryletta_inornata,_Inornate_chorus_frog_-_Khao_Luang_National_Park_(29774376932).jpg"
       }
     ]
@@ -1215,19 +1215,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nan/gallery-1.webp",
         "caption": "ศาลหลวงปู่ภูคา",
-        "photoCredit": "\u003ca href=\"https://th.wikipedia.org/wiki/User:%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%87\" class=\"extiw\" title=\"th:User:กาหลง\">th:User:กาหลง\u003c/a>",
+        "photoCredit": "th:User:กาหลง",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Luang_Poo_Phu_Kha,_March_2002.JPG"
       },
       {
         "file": "assets/images/provinces/nan/gallery-2.webp",
         "caption": "Historic Capitals of the Nan Kingdom",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ubs6u!d-onstory\" title=\"User:Ubs6u!d-onstory\">Ubs6u!d-onstory\u003c/a>",
+        "photoCredit": "Ubs6u!d-onstory",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nan_Kingdom_capitals.jpg"
       },
       {
         "file": "assets/images/provinces/nan/gallery-3.webp",
         "caption": "Montages of Nan Province, Thailand",
-        "photoCredit": "\u003cul>\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Phumin_Temple2.jpg\" title=\"File:Phumin Temple2.jpg\">file:Phumin Temple2.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:LannaPhoto\" title=\"User:LannaPhoto\">User:LannaPhoto\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:SriNan9.jpg\" title=\"File:SriNan9.jpg\">file:SriNan9.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Toey19863&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Toey19863 (page does not exist)\">User:Toey19863\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Ferry_Sirikit_Dam_Nan_river_2014_a.jpg\" title=\"File:Ferry Sirikit Dam Nan river 2014 a.jpg\">file:Ferry Sirikit Dam Nan river 2014 a.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:Takeaway\" title=\"User:Takeaway\">User:Takeaway\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B9%81%E0%B8%8A%E0%B9%88%E0%B9%81%E0%B8%AB%E0%B9%89%E0%B8%87CAT_6579.jpg\" title=\"File:วัดพระธาตุแช่แห้งCAT 6579.jpg\">file:วัดพระธาตุแช่แห้งCAT 6579.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Cat2you&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Cat2you (page does not exist)\">User:Cat2you\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4_%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%99.jpg\" title=\"File:พิพิธภัณฑสถานแห่งชาติ เมืองน่าน.jpg\">file:พิพิธภัณฑสถานแห่งชาติ เมืองน่าน.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitipoom_Rungnava&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitipoom Rungnava (page does not exist)\">User:Nitipoom Rungnava\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:WatPhraThatChangKham7.jpg\" title=\"File:WatPhraThatChangKham7.jpg\">file:WatPhraThatChangKham7.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/wiki/User:Peerawat.b\" title=\"User:Peerawat.b\">User:Peerawat.b\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:Prathat_khaonoi_03.jpg\" title=\"File:Prathat khaonoi 03.jpg\">file:Prathat khaonoi 03.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Khunkay&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Khunkay (page does not exist)\">User:Khunkay\u003c/a>\u003c/li>\n\u003cli>\u003ca href=\"//commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C030.jpg\" title=\"File:วัดภูมินทร์030.jpg\">file:วัดภูมินทร์030.jpg\u003c/a> : \u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:CKasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:CKasa (page does not exist)\">User:CKasa\u003c/a>\u003c/li>\u003c/ul>",
+        "photoCredit": "file:Phumin Temple2.jpg : User:LannaPhoto file:SriNan9.jpg : User:Toey19863 file:Ferry Sirikit Dam Nan river 2014 a.jpg : User:Takeaway file:วัดพระธาตุแช่แห้งCAT 6579.jpg : User:Cat2you file:พิพิธภัณฑสถานแห่งชาติ เมืองน่าน.jpg : User:Nitipoom Rungnava file:WatPhraThatChangKham7.j",
         "imageSource": "https://commons.wikimedia.org/wiki/File:NAN_PROVINCE_MONTAGES.jpg"
       }
     ]
@@ -1255,13 +1255,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/narathiwat/gallery-2.webp",
         "caption": "Kaluwo Nuea, Mueang Narathiwat District, Narathiwat 96000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101231836/http://www.panoramio.com/user/6667993?with_photo_id=129775819\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Kaluwo_Nuea,_Mueang_Narathiwat_District,_Narathiwat_96000,_Thailand_-_panoramio_(1).jpg"
       },
       {
         "file": "assets/images/provinces/narathiwat/gallery-3.webp",
         "caption": "Khok Khian, Mueang Narathiwat District, Narathiwat, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031052923/http://www.panoramio.com/user/6667993?with_photo_id=128164678\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khok_Khian,_Mueang_Narathiwat_District,_Narathiwat,_Thailand_-_panoramio.jpg"
       }
     ]
@@ -1283,19 +1283,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nong-bua-lamphu/gallery-1.webp",
         "caption": "Leaving Suwan North bound",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161024123529/http://www.panoramio.com/user/3025878?with_photo_id=75960270\">scottylu\u003c/a>",
+        "photoCredit": "scottylu",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Leaving_Suwan_North_bound_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/nong-bua-lamphu/gallery-2.webp",
         "caption": "แผนที่ธงจังหวัดหนองบัวลำภู",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Tonmi_pasoy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Tonmi pasoy (page does not exist)\">Tonmi pasoy\u003c/a>",
+        "photoCredit": "Tonmi pasoy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nong_Bua_Lam_Phu.png"
       },
       {
         "file": "assets/images/provinces/nong-bua-lamphu/gallery-3.webp",
         "caption": "Teak Tree close up",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161027062857/http://www.panoramio.com/user/3025878?with_photo_id=75960642\">scottylu\u003c/a>",
+        "photoCredit": "scottylu",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Teak_Tree_close_up_-_panoramio.jpg"
       }
     ]
@@ -1309,27 +1309,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/nong-khai/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "วัดคาทอลิกที่โนนแก้ว\nภาพถ่ายจากอุโฆษสาร 1953",
+      "วัดคาทอลิกที่โนนแก้ว ภาพถ่ายจากอุโฆษสาร 1953",
       "Agriculture in Nongkhai",
       "Agriculture in Nongkhai"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/nong-khai/gallery-1.webp",
-        "caption": "วัดคาทอลิกที่โนนแก้ว\nภาพถ่ายจากอุโฆษสาร 1953",
-        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "caption": "วัดคาทอลิกที่โนนแก้ว ภาพถ่ายจากอุโฆษสาร 1953",
+        "photoCredit": "Unknown author Unknown author",
         "imageSource": "https://commons.wikimedia.org/wiki/File:1953_Echoes_-_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%A5%E0%B8%B4%E0%B8%81_%E0%B8%97%E0%B8%B5%E0%B9%88_%E0%B9%82%E0%B8%99%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg"
       },
       {
         "file": "assets/images/provinces/nong-khai/gallery-2.webp",
         "caption": "Agriculture in Nongkhai",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102032545/http://www.panoramio.com/user/6767461?with_photo_id=92091540\">Udom PINTUWONG\u003c/a>",
+        "photoCredit": "Udom PINTUWONG",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(1).jpg"
       },
       {
         "file": "assets/images/provinces/nong-khai/gallery-3.webp",
         "caption": "Agriculture in Nongkhai",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030130203/http://www.panoramio.com/user/6767461?with_photo_id=92091557\">Udom PINTUWONG\u003c/a>",
+        "photoCredit": "Udom PINTUWONG",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Agriculture_in_Nongkhai_-_panoramio_(2).jpg"
       }
     ]
@@ -1351,19 +1351,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/nonthaburi/gallery-1.webp",
         "caption": "ศาลากลางหลังเก่าจังหวัดนนทบุรีเป็นมนต์เสน่ห์ที่สวยงามมากจนถึงปัจจุบัน",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Saknirun&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Saknirun (page does not exist)\">Saknirun\u003c/a>",
+        "photoCredit": "Saknirun",
         "imageSource": "https://commons.wikimedia.org/wiki/File:1%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5.jpg"
       },
       {
         "file": "assets/images/provinces/nonthaburi/gallery-2.webp",
         "caption": "รถ Toyota Coaster สาย 356 รังสิต - ปากเกร็ด หมายเลข 356-23",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Red_Penguin2710&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Red Penguin2710 (page does not exist)\">Red Penguin2710\u003c/a>",
+        "photoCredit": "Red Penguin2710",
         "imageSource": "https://commons.wikimedia.org/wiki/File:356-23_Coaster.jpg"
       },
       {
         "file": "assets/images/provinces/nonthaburi/gallery-3.webp",
         "caption": "บิ๊กซี เอ็กซ์ตร้า บางใหญ่ อำเภอบางบัวทอง จังหวัดนนทบุรี",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "photoCredit": "Poonpun2016",
         "imageSource": "https://commons.wikimedia.org/wiki/File:BigCExtraBangyai.jpg"
       }
     ]
@@ -1385,19 +1385,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/pathum-thani/gallery-1.webp",
         "caption": "100-Year Rahaeng Market",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wittawat_earth&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wittawat earth (page does not exist)\">Wittawat earth\u003c/a>",
+        "photoCredit": "Wittawat earth",
         "imageSource": "https://commons.wikimedia.org/wiki/File:100year.jpg"
       },
       {
         "file": "assets/images/provinces/pathum-thani/gallery-2.webp",
         "caption": "ทางหลวงแผ่นดินหมายเลข 307 บริเวณหน้าห้างสรรพสินค้าบิ๊กซี สาขาปทุมธานี",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "photoCredit": "Poonpun2016",
         "imageSource": "https://commons.wikimedia.org/wiki/File:307roadthai.jpg"
       },
       {
         "file": "assets/images/provinces/pathum-thani/gallery-3.webp",
         "caption": "ทางหลวงแผ่นดินหมายเลข 3111 บริเวณด้านหน้าศาลากลางจังหวัดปทุมธานี",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016\u003c/a>",
+        "photoCredit": "Poonpun2016",
         "imageSource": "https://commons.wikimedia.org/wiki/File:3111_Roadthai.jpg"
       }
     ]
@@ -1413,7 +1413,7 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "'ออแร ตานิง ตาเละห์เอาะ' เยาวชนนัดแฟลชม็อบ 'ปาตานีจะไม่ทน' | 2 ส.ค. 63",
       "A route direction in Don Yang Intersection.",
-      "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, Patani, he passed away on 27 Shawwal 1372/10 Jul 1953, in Kubur Padang, Keresik, Patani. His mother’s name was Hajah Halimah and she originated from Jambu, Patani. He studied in his early years under his father, Tok Chaok at the pondok bearing the same name and at Pondok Bendang Daya. Soon after, he went to study in Mecca for several years and finally at al-Azhar in Cairo.\nUpon his return to the peninsula, c. 1930, he took up his father’s former position as a teacher at Pondok Chaok. After three years, he moved to Keresik and opened a pondok at Kota Pepiri, where he was joined by another teacher named Haji Wan Su. Soon after, he opened another pondok at Istana Nilam, also in Keresik, named Madrasah al-Ma’arif al-Wataniah, where he was joined by teachers such as Ustaz Isma’il of Pendang, Kedah, Muhammad ‘Ali Don of Johor, and ‘Abd al-Majid Lubis of Sumatra. He became politically active from 1938 onwards and worked with Haji Sulong in the GEMPAR movement."
+      "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, "
     ],
     "attribution": [
       {
@@ -1425,12 +1425,12 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/pattani/gallery-2.webp",
         "caption": "A route direction in Don Yang Intersection.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:AHadi2021\" title=\"User:AHadi2021\">AHadi2021\u003c/a>",
+        "photoCredit": "AHadi2021",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Don_Yang_Intersection.jpg"
       },
       {
         "file": "assets/images/provinces/pattani/gallery-3.webp",
-        "caption": "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, Patani, he passed away on 27 Shawwal 1372/10 Jul 1953, in Kubur Padang, Keresik, Patani. His mother’s name was Hajah Halimah and she originated from Jambu, Patani. He studied in his early years under his father, Tok Chaok at the pondok bearing the same name and at Pondok Bendang Daya. Soon after, he went to study in Mecca for several years and finally at al-Azhar in Cairo.\nUpon his return to the peninsula, c. 1930, he took up his father’s former position as a teacher at Pondok Chaok. After three years, he moved to Keresik and opened a pondok at Kota Pepiri, where he was joined by another teacher named Haji Wan Su. Soon after, he opened another pondok at Istana Nilam, also in Keresik, named Madrasah al-Ma’arif al-Wataniah, where he was joined by teachers such as Ustaz Isma’il of Pendang, Kedah, Muhammad ‘Ali Don of Johor, and ‘Abd al-Majid Lubis of Sumatra. He became politically active from 1938 onwards and worked with Haji Sulong in the GEMPAR movement.",
+        "caption": "Haji Abdul Majid Abdullah. He is known by the nickname \"Haji Embong\" and is a scholar and enlightenment expert who was very active in the movement of the people's struggle together with Haji Sulong in the years before and after the second world war. Born in 1898 at Pondok Chaok, ",
         "photoCredit": "Ahmad Fathy Al-Patani",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Haji_Abdul_Majid_Embong_(1898-1953.jpg"
       }
@@ -1453,19 +1453,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phang-nga/gallery-1.webp",
         "caption": "บางมาราฮิลล์ อีกหนึ่งสถานที่ท่องเที่ยวในประเทศไทย",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Andrewvgestel\" title=\"User:Andrewvgestel\">Andrewvgestel\u003c/a>",
+        "photoCredit": "Andrewvgestel",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bangmarahill_,Phangnga_by_andrewvgestel.jpg"
       },
       {
         "file": "assets/images/provinces/phang-nga/gallery-2.webp",
         "caption": "Phang Nga Province, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021153913/http://www.panoramio.com/user/4631368?with_photo_id=51455285\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1570).jpg"
       },
       {
         "file": "assets/images/provinces/phang-nga/gallery-3.webp",
         "caption": "Ban Khem",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:BanKhem&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:BanKhem (page does not exist)\">BanKhem\u003c/a>",
+        "photoCredit": "BanKhem",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Khem_001.jpg"
       }
     ]
@@ -1487,19 +1487,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phatthalung/gallery-1.webp",
         "caption": "Dálnice v Thajsku",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023183522/http://www.panoramio.com/user/4631368?with_photo_id=51745600\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1738).jpg"
       },
       {
         "file": "assets/images/provinces/phatthalung/gallery-2.webp",
         "caption": "Kopec v Jižním Thajsku, provincie Phatthalung",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021004852/http://www.panoramio.com/user/4631368?with_photo_id=51745691\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1740).jpg"
       },
       {
         "file": "assets/images/provinces/phatthalung/gallery-3.webp",
         "caption": "Krajina v jižním Thajsku",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023223254/http://www.panoramio.com/user/4631368?with_photo_id=51745717\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(1741).jpg"
       }
     ]
@@ -1521,19 +1521,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phayao/gallery-1.webp",
         "caption": "File:Feel like in the avatar movie.jpg",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:HaRtist&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaRtist (page does not exist)\">hartist aqkaqzaq\u003c/a>",
+        "photoCredit": "hartist aqkaqzaq",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Feel_like_in_the_avatar_movie.jpg"
       },
       {
         "file": "assets/images/provinces/phayao/gallery-2.webp",
         "caption": "King Ngam Mueang Monument at Phayao Lake",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "photoCredit": "Chainwit.",
         "imageSource": "https://commons.wikimedia.org/wiki/File:King_Ngam_Mueang_Monument_in_Phayao_%E0%B8%A5%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%A3%E0%B8%A1%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%87%E0%B8%B3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87_%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
       },
       {
         "file": "assets/images/provinces/phayao/gallery-3.webp",
         "caption": "Phayao Lake's Market",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.\u003c/a>",
+        "photoCredit": "Chainwit.",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Kwan_Phayao_Market_%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%A7%E0%B9%8A%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2.jpg"
       }
     ]
@@ -1555,19 +1555,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phetchabun/gallery-1.webp",
         "caption": "Thailand",
-        "photoCredit": "Kawin Harasai \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@kawin\">kawin\u003c/a>",
+        "photoCredit": "Kawin Harasai kawin",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Artsy_Tablescape_(Unsplash).jpg"
       },
       {
         "file": "assets/images/provinces/phetchabun/gallery-2.webp",
         "caption": "mini Big C. Opened in December 2019 on Route 21, in Ban Klang, Si Thep District, Phetchabun Province, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:KusiD\" title=\"User:KusiD\">KusiD\u003c/a>",
+        "photoCredit": "KusiD",
         "imageSource": "https://commons.wikimedia.org/wiki/File:AS_mini_Big_C.jpg"
       },
       {
         "file": "assets/images/provinces/phetchabun/gallery-3.webp",
         "caption": "Vietnam",
-        "photoCredit": "paul morris \u003ca rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@oldskool2016\">oldskool2016\u003c/a>",
+        "photoCredit": "paul morris oldskool2016",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Beans_and_Spices_(Unsplash).jpg"
       }
     ]
@@ -1582,26 +1582,26 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "File:- panoramio (2464).jpg",
-      "Bypass Hua Hin  - Cha-am",
+      "Bypass Hua Hin - Cha-am",
       "CHA-AM FOREST PARK"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/phetchaburi/gallery-1.webp",
         "caption": "File:- panoramio (2464).jpg",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021151321/http://www.panoramio.com/user/4631368?with_photo_id=53111180\">Mozhar\u003c/a>",
+        "photoCredit": "Mozhar",
         "imageSource": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2464).jpg"
       },
       {
         "file": "assets/images/provinces/phetchaburi/gallery-2.webp",
-        "caption": "Bypass Hua Hin  - Cha-am",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022121840/http://www.panoramio.com/user/4976518?with_photo_id=51432879\">easy4444\u003c/a>",
+        "caption": "Bypass Hua Hin - Cha-am",
+        "photoCredit": "easy4444",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bypass_Hua_Hin_-_Cha-am_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/phetchaburi/gallery-3.webp",
         "caption": "CHA-AM FOREST PARK",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031064519/http://www.panoramio.com/user/5109466?with_photo_id=128056564\">Thaweesak Churasri\u003c/a>",
+        "photoCredit": "Thaweesak Churasri",
         "imageSource": "https://commons.wikimedia.org/wiki/File:CHA-AM_FOREST_PARK_-_panoramio_(1).jpg"
       }
     ]
@@ -1623,19 +1623,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phichit/gallery-1.webp",
         "caption": "Ban Nanuea Soi 1 (street) 06",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "photoCredit": "This is Arthur Morganar (RDR2-THR)",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_1_(street)_06.jpg"
       },
       {
         "file": "assets/images/provinces/phichit/gallery-2.webp",
         "caption": "Ban Nanuea Soi 1 (street) 07/ Soi",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "photoCredit": "This is Arthur Morganar (RDR2-THR)",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_1_(street)_07.jpg"
       },
       {
         "file": "assets/images/provinces/phichit/gallery-3.webp",
         "caption": "Ban Nanuea Soi 2 This is the local street from Thailand. IMG20240923183042.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:This_is_Arthur_Morganar_(RDR2-THR)\" title=\"User:This is Arthur Morganar (RDR2-THR)\">This is Arthur Morganar (RDR2-THR)\u003c/a>",
+        "photoCredit": "This is Arthur Morganar (RDR2-THR)",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nanuea_Soi_2_(street)_01.jpg"
       }
     ]
@@ -1649,27 +1649,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/phitsanulok/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Allison Bak, U.S. Marine Corps/Released)",
+      "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designe",
       "In Naresuan University",
       "Fay school"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/phitsanulok/gallery-1.webp",
-        "caption": "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Allison Bak, U.S. Marine Corps/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "Thai and U.S. soldiers stand in formation during the dedication of a multipurpose building that was built as part of Cobra Gold 2013 at a school in Wat Bot district, Phitsanulok province, Thailand, Feb. 20, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designe",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:130220-M-NN153-052_(8510743972).jpg"
       },
       {
         "file": "assets/images/provinces/phitsanulok/gallery-2.webp",
         "caption": "In Naresuan University",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:SemChamp1999&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:SemChamp1999 (page does not exist)\">SemChamp1999\u003c/a>",
+        "photoCredit": "SemChamp1999",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Champjg.jpg"
       },
       {
         "file": "assets/images/provinces/phitsanulok/gallery-3.webp",
         "caption": "Fay school",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Noenmaprang\" title=\"User:Noenmaprang\">Noenmaprang\u003c/a>",
+        "photoCredit": "Noenmaprang",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Fairy-girl.jpg"
       }
     ]
@@ -1691,19 +1691,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
         "caption": "Balloon Festival @ Ayuthaya",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014042208/http://www.panoramio.com/user/96256?with_photo_id=29742692\">Boonchai C\u003c/a>",
+        "photoCredit": "Boonchai C",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Balloon_Festival_@_Ayuthaya_-_panoramio_(46).jpg"
       },
       {
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
         "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016233103/http://www.panoramio.com/user/3232473?with_photo_id=41182187\">obarber in thailand\u003c/a>",
+        "photoCredit": "obarber in thailand",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(1).jpg"
       },
       {
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
         "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018024750/http://www.panoramio.com/user/3232473?with_photo_id=41182225\">obarber in thailand\u003c/a>",
+        "photoCredit": "obarber in thailand",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(2).jpg"
       }
     ]
@@ -1717,27 +1717,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/phrae/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "\"แพร่\" ในภาษาไทย (บน)\nและในคำเมืองอักษรธรรมล้านนา (ล่าง)",
-      "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - Dorsal side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
-      "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - △ Ventral side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>"
+      "\"แพร่\" ในภาษาไทย (บน) และในคำเมืองอักษรธรรมล้านนา (ล่าง)",
+      "Macroglossum affictitia - Dorsal side Collection of the Mathematician Laurent Schwartz",
+      "Macroglossum affictitia - △ Ventral side Collection of the Mathematician Laurent Schwartz"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/phrae/gallery-1.webp",
-        "caption": "\"แพร่\" ในภาษาไทย (บน)\nและในคำเมืองอักษรธรรมล้านนา (ล่าง)",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Go_myongx&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Go myongx (page does not exist)\">Go myongx\u003c/a>",
+        "caption": "\"แพร่\" ในภาษาไทย (บน) และในคำเมืองอักษรธรรมล้านนา (ล่าง)",
+        "photoCredit": "Go myongx",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Lanna-Phrae2.png"
       },
       {
         "file": "assets/images/provinces/phrae/gallery-2.webp",
-        "caption": "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - Dorsal side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
-        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens\u003c/a>\u003c/div>",
+        "caption": "Macroglossum affictitia - Dorsal side Collection of the Mathematician Laurent Schwartz",
+        "photoCredit": "Didier Descouens",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_dorsal.jpg"
       },
       {
         "file": "assets/images/provinces/phrae/gallery-3.webp",
-        "caption": "\u003ci>\u003ca href=\"https://en.wikipedia.org/wiki/Macroglossum_affictitia\" class=\"extiw\" title=\"en:Macroglossum affictitia\">Macroglossum affictitia\u003c/a>\u003c/i> - △ Ventral side\n\u003cdd>Collection of the Mathematician \u003ca href=\"https://en.wikipedia.org/wiki/Laurent_Schwartz\" class=\"extiw\" title=\"en:Laurent Schwartz\">Laurent Schwartz\u003c/a>\u003c/dd>",
-        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca href=\"//commons.wikimedia.org/wiki/User:Archaeodontosaurus\" title=\"User:Archaeodontosaurus\">Didier Descouens\u003c/a>\u003c/div>",
+        "caption": "Macroglossum affictitia - △ Ventral side Collection of the Mathematician Laurent Schwartz",
+        "photoCredit": "Didier Descouens",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Macroglossum_affictitia_MHNT_CUT_2010_0_Phrae_Province_Thailand_ventral.jpg"
       }
     ]
@@ -1759,13 +1759,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/phuket/gallery-1.webp",
         "caption": "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/72753560@N00\">jeff~\u003c/a>",
+        "photoCredit": "jeff~",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%22%E6%95%99%E7%B7%B4%22_%E6%B2%92%E6%9C%89%E4%BB%BB%E4%BD%95%E5%AE%89%E5%85%A8%E9%85%8D%E5%82%99_%E7%9B%B4%E6%8E%A5%E7%AB%99%E5%9C%A8%E7%B9%A9%E7%B4%A2%E4%B8%8A%E5%B0%B1%E4%B8%8A%E5%B7%A5%E4%BA%86_(29354339061).jpg"
       },
       {
         "file": "assets/images/provinces/phuket/gallery-2.webp",
         "caption": "2014atPHUKET",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Santi13301&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Santi13301 (page does not exist)\">Santi13301\u003c/a>",
+        "photoCredit": "Santi13301",
         "imageSource": "https://commons.wikimedia.org/wiki/File:2014atPHUKET.jpg"
       },
       {
@@ -1799,13 +1799,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/prachin-buri/gallery-2.webp",
         "caption": "Thailandia, visnu da provincia di prachinburi, vii-viii sec",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Sailko\" title=\"User:Sailko\">sailko\u003c/a>",
+        "photoCredit": "sailko",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Thailandia,_visnu_da_provincia_di_prachinburi,_vii-viii_sec.JPG"
       },
       {
         "file": "assets/images/provinces/prachin-buri/gallery-3.webp",
         "caption": "กังหัน winxplus.com",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018004938/http://www.panoramio.com/user/5609015?with_photo_id=48827923\">Pump\u003c/a>",
+        "photoCredit": "Pump",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%81%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%99_winxplus.com_-_panoramio.jpg"
       }
     ]
@@ -1827,19 +1827,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/prachuap-khiri-khan/gallery-1.webp",
         "caption": "Crystal Lagoons",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101183102/http://www.panoramio.com/user/5109466?with_photo_id=128056409\">Thaweesak Churasri\u003c/a>",
+        "photoCredit": "Thaweesak Churasri",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Crystal_Lagoons_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/prachuap-khiri-khan/gallery-2.webp",
         "caption": "Harbour Bang Pu",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011080520/http://www.panoramio.com/user/19953?with_photo_id=122492\">Andreas Hörstemeier\u003c/a>",
+        "photoCredit": "Andreas Hörstemeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Harbour_Bang_Pu_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/prachuap-khiri-khan/gallery-3.webp",
         "caption": "Huai Sat Yai, Hua Hin Prachuap Khiri Khan",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014175639/http://www.panoramio.com/user/4312852?with_photo_id=39822121\">All Fronts Quiet\u003c/a>",
+        "photoCredit": "All Fronts Quiet",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Huai_Sat_Yai,_Hua_Hin_Prachuap_Khiri_Khan_-_panoramio.jpg"
       }
     ]
@@ -1854,26 +1854,26 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "แหล่งแร่หาดส้มแป้น",
-      "\u003cdiv class=\"description\">\n500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]\u003c/div>",
+      "500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]",
       "Kamphuan, Suk Samran District, Ranong, Thailand"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/ranong/gallery-1.webp",
         "caption": "แหล่งแร่หาดส้มแป้น",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Wikhanet&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wikhanet (page does not exist)\">Wikhanet\u003c/a>",
+        "photoCredit": "Wikhanet",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Hadsompaen1.jpg"
       },
       {
         "file": "assets/images/provinces/ranong/gallery-2.webp",
-        "caption": "\u003cdiv class=\"description\">\n500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]\u003c/div>",
-        "photoCredit": "\u003cdiv class=\"fn value\">\n\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/wolfseye_art\">Wolfseye Art\u003c/a>\u003c/div>",
+        "caption": "500px provided description: Hat Som Paen Mountains [#lake ,#mountains ,#water reservoir ,#Thailand ,#Ranong ,#Hat Som Paen ,#Marion Wolf ,#wolfseye]",
+        "photoCredit": "Wolfseye Art",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Hat_Som_Paen_Mountains_(48635458).jpeg"
       },
       {
         "file": "assets/images/provinces/ranong/gallery-3.webp",
         "caption": "Kamphuan, Suk Samran District, Ranong, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031041506/http://www.panoramio.com/user/1429473?with_photo_id=124379143\">::::=UT=::::\u003c/a>",
+        "photoCredit": "::::=UT=::::",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Kamphuan,_Suk_Samran_District,_Ranong,_Thailand_-_panoramio_(2).jpg"
       }
     ]
@@ -1887,27 +1887,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/ratchaburi/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี     วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน์ วิมลรังครัตน์) @is50mm",
+      "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน",
       "Chet Samian, Photharam District, Ratchaburi 70120, Thailand",
       "condom"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/ratchaburi/gallery-1.webp",
-        "caption": "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี     วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน์ วิมลรังครัตน์) @is50mm",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40561337@N07\">Government of Thailand\u003c/a>",
+        "caption": "นายกรัฐมนตรี ออกอากาศสดรายการเชื่อมั่นประเทศไทยกับนายกฯ อภิสิทธิ์ เทปที่ 117 ณ เรือนจำกลางเขาบิน จังหวัดราชบุรี วันอาทิตย์ ที่ 24 เมษายน พ.ศ.2554 (Photographer attached to the Prime Minister of the Kingdom of Thailand (H.E.Mr.Abhisit Vejjajiva) : Peerapat Wimolrungkarat / พีรพัฒน",
+        "photoCredit": "Government of Thailand",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Abhisit_Vejjajiva_(3).jpg"
       },
       {
         "file": "assets/images/provinces/ratchaburi/gallery-2.webp",
         "caption": "Chet Samian, Photharam District, Ratchaburi 70120, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031045929/http://www.panoramio.com/user/4366445?with_photo_id=117183717\">Phong Phat G\u003c/a>",
+        "photoCredit": "Phong Phat G",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Samian,_Photharam_District,_Ratchaburi_70120,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/ratchaburi/gallery-3.webp",
         "caption": "condom",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161102214421/http://www.panoramio.com/user/8928001?with_photo_id=126545062\">Bundit Sincharoen\u003c/a>",
+        "photoCredit": "Bundit Sincharoen",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Condom_-_panoramio.jpg"
       }
     ]
@@ -1922,8 +1922,8 @@ window.IMAGE_CURATION = {
     ],
     "galleryCaptions": [
       "Watpapradoo School",
-      "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along with sailors from the Royal Thai Navy to help paint murals as part of Cooperation Afloat Readiness and Training (CARAT) Thailand 2010. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
-      "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)"
+      "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along w",
+      "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held ann"
     ],
     "attribution": [
       {
@@ -1934,14 +1934,14 @@ window.IMAGE_CURATION = {
       },
       {
         "file": "assets/images/provinces/rayong/gallery-2.webp",
-        "caption": "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along with sailors from the Royal Thai Navy to help paint murals as part of Cooperation Afloat Readiness and Training (CARAT) Thailand 2010. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "A young Thai boy helps U.S. Marine Staff Sgt. Kevin Tisdale clean a wall that will be used to paint a mural as part of a community service project at Ban Khaw Kan Song School in Rayong province, Thailand, May 15, 2010. U.S. Sailors, Coast Guardsmen and Marines volunteered along w",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-036_(4616427474).jpg"
       },
       {
         "file": "assets/images/provinces/rayong/gallery-3.webp",
-        "caption": "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held annually in Southeast Asia to strengthen relationships and enhance force readiness. (U.S. Navy photo by Mass Communication Specialist 2nd Class Eric J. Cutright/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "U.S. and Thai sailors pose May 15, 2010, by a Cooperation Afloat Readiness and Training (CARAT) Thailand 2010 mural they painted at the Ban Khaw Kan Song School in Rayong province, Thailand, as part of a community service project. CARAT is a series of bilateral exercises held ann",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:100515-N-0995C-232_(4616427974).jpg"
       }
     ]
@@ -1957,25 +1957,25 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "Bungfai Festival Photo in Suwannaphume , Roi ET",
       "แปรขบวน",
-      "\u003cp>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n\u003c/p>\nPhoto: U.Schmidt, 2006"
+      "Familie: Geotrupidae Groesse: 32 mm Fundort: Thailand, Chiang Noi, 1986 det. U.Schmidt Photo: U.Schmidt, 2006"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/roi-et/gallery-1.webp",
         "caption": "Bungfai Festival Photo in Suwannaphume , Roi ET",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Pleamir&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Pleamir (page does not exist)\">Pleamir\u003c/a>",
+        "photoCredit": "Pleamir",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bung_Fai_Sriphume_01.jpg"
       },
       {
         "file": "assets/images/provinces/roi-et/gallery-2.webp",
         "caption": "แปรขบวน",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Peerawit2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Peerawit2 (page does not exist)\">Peerawit2\u003c/a>",
+        "photoCredit": "Peerawit2",
         "imageSource": "https://commons.wikimedia.org/wiki/File:DJI0020.jpg"
       },
       {
         "file": "assets/images/provinces/roi-et/gallery-3.webp",
-        "caption": "\u003cp>Familie: Geotrupidae\nGroesse: 32 mm\nFundort: Thailand, Chiang Noi, 1986\ndet. U.Schmidt\n\u003c/p>\nPhoto: U.Schmidt, 2006",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/30703260@N08\">Udo Schmidt\u003c/a> from Deutschland",
+        "caption": "Familie: Geotrupidae Groesse: 32 mm Fundort: Thailand, Chiang Noi, 1986 det. U.Schmidt Photo: U.Schmidt, 2006",
+        "photoCredit": "Udo Schmidt from Deutschland",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Enoplotrupes_sharpi_Rothschild_%26_Jordan,_1893_male_(3915826460).jpg"
       }
     ]
@@ -1997,19 +1997,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/sa-kaeo/gallery-1.webp",
         "caption": "Found in marshland in Sa Kaeo, Thailand.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "photoCredit": "Thomas Brown",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Common_Toad_(Duttaphrynus_melanostictus).jpg"
       },
       {
         "file": "assets/images/provinces/sa-kaeo/gallery-2.webp",
         "caption": "Found in marshland in Sa Kaeo, Thailand.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "photoCredit": "Thomas Brown",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Asian_Common_Toad_(Duttaphrynus_melanostictus)2.jpg"
       },
       {
         "file": "assets/images/provinces/sa-kaeo/gallery-3.webp",
         "caption": "Found in marshland in Sa Kaeo, Thailand.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63048706@N06\">Thomas Brown\u003c/a>",
+        "photoCredit": "Thomas Brown",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Common_Tree_Frog_(Polypedates_leucomystax)10.jpg"
       }
     ]
@@ -2031,19 +2031,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/sakon-nakhon/gallery-1.webp",
         "caption": "Big street in Sakon Nakhon, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "photoCredit": "User:Mattes",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Big_street_in_Sakon_Nakhon.JPG"
       },
       {
         "file": "assets/images/provinces/sakon-nakhon/gallery-2.webp",
         "caption": "Empty medium sized Songthaew, seen in Sakon Nakon, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Mattes\" title=\"User:Mattes\">User:Mattes\u003c/a>",
+        "photoCredit": "User:Mattes",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Empty_Songthaew-Sakon_Nakhon.JPG"
       },
       {
         "file": "assets/images/provinces/sakon-nakhon/gallery-3.webp",
         "caption": "กองบัญชาการมณฑลทหารบกที่ 29 ค่ายกฤษณ์สีวะรา",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mtb29&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mtb29 (page does not exist)\">Mtb29\u003c/a>",
+        "photoCredit": "Mtb29",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Mtb29-001.jpg"
       }
     ]
@@ -2065,19 +2065,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/samut-prakan/gallery-1.webp",
         "caption": "BTS Samsong Station (E15), Samut Prakarn, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Sirakorn\" title=\"User:Sirakorn\">Sirakorn Lamyai\u003c/a>",
+        "photoCredit": "Sirakorn Lamyai",
         "imageSource": "https://commons.wikimedia.org/wiki/File:BTS_Samrong_station.jpg"
       },
       {
         "file": "assets/images/provinces/samut-prakan/gallery-2.webp",
         "caption": "A Toad in Samut Prakarn, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH\u003c/a>",
+        "photoCredit": "User:HAH",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_1.jpg"
       },
       {
         "file": "assets/images/provinces/samut-prakan/gallery-3.webp",
         "caption": "A Toad in Samut Prakarn, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:HAH\" title=\"User:HAH\">User:HAH\u003c/a>",
+        "photoCredit": "User:HAH",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bufo_melanostictus_Thailand_2.jpg"
       }
     ]
@@ -2099,19 +2099,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/samut-sakhon/gallery-1.webp",
         "caption": "30/2 ซอย หมู่ 4 หมู่บ้านประมง Tambon Phanthai Norasing, Amphoe Mueang Samut Sakhon, Chang Wat Samut Sakhon 74000, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030224546/http://www.panoramio.com/user/4366445?with_photo_id=117183692\">Phong Phat G\u003c/a>",
+        "photoCredit": "Phong Phat G",
         "imageSource": "https://commons.wikimedia.org/wiki/File:30-2_%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88_4_%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%87_Tambon_Phanthai_Norasing,_Amphoe_Mueang_Samut_Sakhon,_Chang_Wat_Samut_Sakhon_74000,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/samut-sakhon/gallery-2.webp",
         "caption": "Plantations de bananiers et de cocotiers dans la province de Samut Sakhon en Thaïlande",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Bienvenue_en_Tha%C3%AFlande\" title=\"User:Bienvenue en Thaïlande\">Bienvenue en Thaïlande\u003c/a>",
+        "photoCredit": "Bienvenue en Thaïlande",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bananiers_et_cocotiers.jpg"
       },
       {
         "file": "assets/images/provinces/samut-sakhon/gallery-3.webp",
         "caption": "Fish Market",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031130736/http://www.panoramio.com/user/8375149?with_photo_id=121623461\">mohigan\u003c/a>",
+        "photoCredit": "mohigan",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Fish_Market_-_panoramio_(3).jpg"
       }
     ]
@@ -2133,19 +2133,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/samut-songkhram/gallery-1.webp",
         "caption": "Making of coco sugar (on floating market road)",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:PA&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:PA (page does not exist)\">PA\u003c/a>",
+        "photoCredit": "PA",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Coco_-_canal.jpg"
       },
       {
         "file": "assets/images/provinces/samut-songkhram/gallery-2.webp",
         "caption": "Coconut Avenue",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161021065808/http://www.panoramio.com/user/4366445?with_photo_id=66418355\">Phong  Phat G\u003c/a>",
+        "photoCredit": "Phong Phat G",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Coconut_Avenue_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/samut-songkhram/gallery-3.webp",
         "caption": "couleur",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.panoramio.com/user/68509?with_photo_id=8605287\">phileon\u003c/a>",
+        "photoCredit": "phileon",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Couleur_-_panoramio.jpg"
       }
     ]
@@ -2167,19 +2167,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/saraburi/gallery-1.webp",
         "caption": "Cha Om, Kaeng Khoi District, Saraburi, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031085720/http://www.panoramio.com/user/5109466?with_photo_id=115433747\">Thaweesak Churasri\u003c/a>",
+        "photoCredit": "Thaweesak Churasri",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Cha_Om,_Kaeng_Khoi_District,_Saraburi,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/saraburi/gallery-2.webp",
         "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011230221/http://www.panoramio.com/user/19953?with_photo_id=2564694\">Andreas Hörstemeier\u003c/a>",
+        "photoCredit": "Andreas Hörstemeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier_(1).jpg"
       },
       {
         "file": "assets/images/provinces/saraburi/gallery-3.webp",
         "caption": "Chet Khot-Pong Kon Sao Nature Study Centre",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161010102123/http://www.panoramio.com/user/19953?with_photo_id=2564704\">Andreas Hörstemeier\u003c/a>",
+        "photoCredit": "Andreas Hörstemeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chet_Khot-Pong_Kon_Sao_Nature_Study_Centre_-_panoramio_-_Andreas_H%C3%B6rstemeier_(2).jpg"
       }
     ]
@@ -2201,19 +2201,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/satun/gallery-1.webp",
         "caption": "Ko Hin Ngam",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011122152/http://www.panoramio.com/user/19953?with_photo_id=197403\">Andreas Hörstemeier\u003c/a>",
+        "photoCredit": "Andreas Hörstemeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ko_Hin_Ngam_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/satun/gallery-2.webp",
         "caption": "Langu 001",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101211810/http://www.panoramio.com/user/8391074?with_photo_id=110191881\">Nopphasin Suksawat\u003c/a>",
+        "photoCredit": "Nopphasin Suksawat",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Langu_001_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/satun/gallery-3.webp",
         "caption": "Pakbara 28",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161031215802/http://www.panoramio.com/user/8391074?with_photo_id=115234320\">Nopphasin Suksawat\u003c/a>",
+        "photoCredit": "Nopphasin Suksawat",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Pakbara_28_-_panoramio.jpg"
       }
     ]
@@ -2235,19 +2235,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/si-sa-ket/gallery-1.webp",
         "caption": "สภาพตัวอำเภอขุขันธ์",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:ChasingTheDragon&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ChasingTheDragon (page does not exist)\">ChasingTheDragon\u003c/a>",
+        "photoCredit": "ChasingTheDragon",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Khukhan_town.jpg"
       },
       {
         "file": "assets/images/provinces/si-sa-ket/gallery-2.webp",
         "caption": "Location of Prang Ku and Prasat Hin Ban Samo in Amphoe Prang Ku",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ddalbiez\" title=\"User:Ddalbiez\">Ddalbiez\u003c/a>",
+        "photoCredit": "Ddalbiez",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_Prang_Ku.jpg"
       },
       {
         "file": "assets/images/provinces/si-sa-ket/gallery-3.webp",
         "caption": "number 226 road (ubon - sisaket)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161019212033/http://www.panoramio.com/user/4773955?with_photo_id=55182352\">มะเดื่อ แสลงหลวง\u003c/a>",
+        "photoCredit": "มะเดื่อ แสลงหลวง",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Number_226_road_(ubon_-_sisaket)_-_panoramio.jpg"
       }
     ]
@@ -2269,19 +2269,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/sing-buri/gallery-1.webp",
         "caption": "Nanayontrakit",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161026010124/http://www.panoramio.com/user/4224728?with_photo_id=76965110\">jitruksing\u003c/a>",
+        "photoCredit": "jitruksing",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Nanayontrakit_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/sing-buri/gallery-2.webp",
         "caption": "พระสังกัจจายนะ",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitigor&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitigor (page does not exist)\">Nitigor\u003c/a>",
+        "photoCredit": "Nitigor",
         "imageSource": "https://commons.wikimedia.org/wiki/File:SANGAJAY.jpg"
       },
       {
         "file": "assets/images/provinces/sing-buri/gallery-3.webp",
         "caption": "ห้างหุ้นส่วนจำกัด นานายนตรกิจ",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022033436/http://www.panoramio.com/user/4224728?with_photo_id=52957820\">jitruksing\u003c/a>",
+        "photoCredit": "jitruksing",
         "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94_%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%81%E0%B8%B4%E0%B8%88_-_panoramio.jpg"
       }
     ]
@@ -2303,19 +2303,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/songkhla/gallery-1.webp",
         "caption": "love",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Nitiphonbinsoh407&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nitiphonbinsoh407 (page does not exist)\">Nitiphonbinsoh407\u003c/a>",
+        "photoCredit": "Nitiphonbinsoh407",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Solle_2.jpg"
       },
       {
         "file": "assets/images/provinces/songkhla/gallery-2.webp",
         "caption": "The view from the main gate of Thaksin University's Songkhla campus.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Viola&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Viola (page does not exist)\">Kenichiro KUTSUNA\u003c/a>",
+        "photoCredit": "Kenichiro KUTSUNA",
         "imageSource": "https://commons.wikimedia.org/wiki/File:ThaksinUniv_songkhlacampus_eveningview.jpg"
       },
       {
         "file": "assets/images/provinces/songkhla/gallery-3.webp",
         "caption": "File:Unnamed2 - panoramio (1930).jpg",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101030217/http://www.panoramio.com/user/6667993?with_photo_id=111302110\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Unnamed2_-_panoramio_(1930).jpg"
       }
     ]
@@ -2329,27 +2329,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/sukhothai/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Rory Featherston, U.S. Army/Released)",
-      "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Luis A. Rodriguez III, U.S. Marine Corps/Released)",
+      "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise design",
+      "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure r",
       "Sukhothai"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/sukhothai/gallery-1.webp",
-        "caption": "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Rory Featherston, U.S. Army/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise design",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:130221-A-KW167-305_(8506779927).jpg"
       },
       {
         "file": "assets/images/provinces/sukhothai/gallery-2.webp",
-        "caption": "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Luis A. Rodriguez III, U.S. Marine Corps/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure r",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:140213-M-LT992-422_(12526334154).jpg"
       },
       {
         "file": "assets/images/provinces/sukhothai/gallery-3.webp",
         "caption": "Sukhothai",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37583176@N00\">Ninara\u003c/a> from Helsinki, Finland",
+        "photoCredit": "Ninara from Helsinki, Finland",
         "imageSource": "https://commons.wikimedia.org/wiki/File:4Y1A0672_Sukhothai_(33790505994).jpg"
       }
     ]
@@ -2371,13 +2371,13 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/suphan-buri/gallery-1.webp",
         "caption": "Map of Suphanburi province, Thailand, highlighting Amphoe Mueang Suphanburi",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Ahoerstemeier\" title=\"User:Ahoerstemeier\">Ahoerstemeier\u003c/a>",
+        "photoCredit": "Ahoerstemeier",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Amphoe_7201.png"
       },
       {
         "file": "assets/images/provinces/suphan-buri/gallery-2.webp",
         "caption": "Banharn-Jamsai Tower at Suphanburi, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:ScorpianPK&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ScorpianPK (page does not exist)\">ScorpianPK\u003c/a>",
+        "photoCredit": "ScorpianPK",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Banharn-Jamsai_Tower.jpg"
       },
       {
@@ -2405,19 +2405,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/surat-thani/gallery-1.webp",
         "caption": "Chapthawi, Ban Na Doem District, Surat Thani 84240, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101121232/http://www.panoramio.com/user/6667993?with_photo_id=117504480\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chapthawi,_Ban_Na_Doem_District,_Surat_Thani_84240,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/surat-thani/gallery-2.webp",
         "caption": "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg\u003c/a>",
+        "photoCredit": "Vyacheslav Argenberg",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_house,_Khao_Sok,_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/surat-thani/gallery-3.webp",
         "caption": "Cheow Lan (lake), Surat Thani, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg\u003c/a>",
+        "photoCredit": "Vyacheslav Argenberg",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_houses,_Khao_Sok,_Thailand.jpg"
       }
     ]
@@ -2439,19 +2439,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/surin/gallery-1.webp",
         "caption": "Adthaporn Singhawichai, Gouverneur der Provinz Surin (Thailand)",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:StagiaireMGIMO\" title=\"User:StagiaireMGIMO\">StagiaireMGIMO\u003c/a>",
+        "photoCredit": "StagiaireMGIMO",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Adthaporn_Singhawichai_(2017).jpg"
       },
       {
         "file": "assets/images/provinces/surin/gallery-2.webp",
         "caption": "Chumphon Buri Surin, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN\u003c/a>",
+        "photoCredit": "Mr.BuriramCN",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_02.jpg"
       },
       {
         "file": "assets/images/provinces/surin/gallery-3.webp",
         "caption": "Chumphon Buri Surin, Thailand",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Mr.BuriramCN&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mr.BuriramCN (page does not exist)\">Mr.BuriramCN\u003c/a>",
+        "photoCredit": "Mr.BuriramCN",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chumphon_Buri_03.jpg"
       }
     ]
@@ -2465,27 +2465,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/tak/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand.",
-      "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
+      "Bouganvillea glabra flowers in Tak Province, Thailand.",
+      "Bouganvillea glabra flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
       "Brahman cow in Tak Province, Thailand."
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/tak/gallery-1.webp",
-        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "caption": "Bouganvillea glabra flowers in Tak Province, Thailand.",
+        "photoCredit": "PumpkinSky",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak_1.JPG"
       },
       {
         "file": "assets/images/provinces/tak/gallery-2.webp",
-        "caption": "\u003ci>Bouganvillea glabra\u003c/i> flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "caption": "Bouganvillea glabra flowers in Tak Province, Thailand about 5-6 km north of Tak City, by the fish feeding pavillion.",
+        "photoCredit": "PumpkinSky",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bouganvillea_glabra_in_Tak.JPG"
       },
       {
         "file": "assets/images/provinces/tak/gallery-3.webp",
         "caption": "Brahman cow in Tak Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:PumpkinSky\" title=\"User:PumpkinSky\">PumpkinSky\u003c/a>",
+        "photoCredit": "PumpkinSky",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Brahman_Thai_cow.jpg"
       }
     ]
@@ -2501,13 +2501,13 @@ window.IMAGE_CURATION = {
     "galleryCaptions": [
       "4162, Tambon Mai Fat, Amphoe Sikao, Chang Wat Trang 92150, Thailand",
       "Trang, Thailand",
-      "\u003cb>original flickr:\u003c/b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand."
+      "original flickr: Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand."
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/trang/gallery-1.webp",
         "caption": "4162, Tambon Mai Fat, Amphoe Sikao, Chang Wat Trang 92150, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030214651/http://www.panoramio.com/user/6667993?with_photo_id=114145573\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:4162,_Tambon_Mai_Fat,_Amphoe_Sikao,_Chang_Wat_Trang_92150,_Thailand_-_panoramio.jpg"
       },
       {
@@ -2518,7 +2518,7 @@ window.IMAGE_CURATION = {
       },
       {
         "file": "assets/images/provinces/trang/gallery-3.webp",
-        "caption": "\u003cb>original flickr:\u003c/b> Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand.",
+        "caption": "original flickr: Na Tham Nuea, Kheng Chio Cemetery, Trang, Thailand.",
         "photoCredit": "Sharon Hahn Darlin",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Kheng_Chio_Cemetery,_Trang,_Thailand.jpg"
       }
@@ -2533,27 +2533,27 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/trat/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Matthew Troyer, U.S. Marine Corps/Released)",
-      "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Feb. 3, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
+      "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra G",
+      "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elemen",
       "3 shades of blue"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/trat/gallery-1.webp",
-        "caption": "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Matthew Troyer, U.S. Marine Corps/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "Royal Thai Marine Corps Petty Officer Sawasg Kamcun, with Engineer Company, Marine Division, welds a truss while constructing a classroom at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Jan. 23, 2013, as part of exercise Cobra Gold 2013. Cobra G",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:130123-M-IJ457-320_(8433207904).jpg"
       },
       {
         "file": "assets/images/provinces/trat/gallery-2.webp",
-        "caption": "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elementary School in Laem Ngop district, Trat province, Thailand, Feb. 3, 2013, as part of exercise Cobra Gold 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (U.S. Marine Corps photo by Sgt. Matthew Troyer/Released)",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos\u003c/a>",
+        "caption": "U.S. Marine Corps Cpl. Harrson Burrage, a combat engineer with Marine Wing Support Squadron 172, Marine Aircraft Group 36, 1st Marine Aircraft Wing, III Marine Expeditionary Force, shaves excess stucco from a window of a two-room building being constructed at Ban Nam Chiao Elemen",
+        "photoCredit": "U.S. Department of Defense Current Photos",
         "imageSource": "https://commons.wikimedia.org/wiki/File:130203-M-IJ457-031_(8454296948).jpg"
       },
       {
         "file": "assets/images/provinces/trat/gallery-3.webp",
         "caption": "3 shades of blue",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/34907359@N08\">cloud.shepherd\u003c/a>",
+        "photoCredit": "cloud.shepherd",
         "imageSource": "https://commons.wikimedia.org/wiki/File:3_shades_of_blue_(29416392316).jpg"
       }
     ]
@@ -2575,19 +2575,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/ubon-ratchathani/gallery-1.webp",
         "caption": "ชุมชนลูกหลานเจ้าคำผง จ.อุบลราชธานี",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:MEWNP&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:MEWNP (page does not exist)\">MEWNP\u003c/a>",
+        "photoCredit": "MEWNP",
         "imageSource": "https://commons.wikimedia.org/wiki/File:20220731_Wiki_ARS_Work_Page_18.jpg"
       },
       {
         "file": "assets/images/provinces/ubon-ratchathani/gallery-2.webp",
         "caption": "Ban Jamrat 300/34 M 11 Klang-Ar-Wuth road. Kham Yai. Ubon 34000 at UBISD",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161011070128/http://www.panoramio.com/user/1465176?with_photo_id=8594055\">JAMRAT\u003c/a>",
+        "photoCredit": "JAMRAT",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Jamrat_300-34_M_11_Klang-Ar-Wuth_road._Kham_Yai._Ubon_34000_at_UBISD_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/ubon-ratchathani/gallery-3.webp",
         "caption": "The Chong Mek Pass office in Amphoe Sirindhorn, under construction.",
-        "photoCredit": "No machine-readable author provided. \u003ca href=\"//commons.wikimedia.org/wiki/User:Oatz\" title=\"User:Oatz\">Oatz\u003c/a> assumed (based on copyright claims).",
+        "photoCredit": "No machine-readable author provided. Oatz assumed (based on copyright claims).",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Chong_Mek_Pass_in_Ubon_Ratchathani.jpg"
       }
     ]
@@ -2609,19 +2609,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/udon-thani/gallery-1.webp",
         "caption": "ท.6",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:KFPTRK&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:KFPTRK (page does not exist)\">KFPTRK\u003c/a>",
+        "photoCredit": "KFPTRK",
         "imageSource": "https://commons.wikimedia.org/wiki/File:101362957_lTJm_9caVgkMGWSPaBuF7NOYyIAPLL8dKja7eaOYrRI.jpg"
       },
       {
         "file": "assets/images/provinces/udon-thani/gallery-2.webp",
         "caption": "Mobile lunch vendor at Udon station, circa 1948",
-        "photoCredit": "Unknown author\u003cspan style=\"display: none;\">Unknown author\u003c/span>",
+        "photoCredit": "Unknown author Unknown author",
         "imageSource": "https://commons.wikimedia.org/wiki/File:1948-mobile-lunch-vendor-udon-thani.jpg"
       },
       {
         "file": "assets/images/provinces/udon-thani/gallery-3.webp",
         "caption": "Louis Marchadier, 3ième en haut en partant de la gauche",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:Snails63700&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Snails63700 (page does not exist)\">Snails63700\u003c/a>",
+        "photoCredit": "Snails63700",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_g%C3%A9n%C3%A9rale_King%27s_cup.jpg"
       }
     ]
@@ -2643,19 +2643,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/uthai-thani/gallery-1.webp",
         "caption": "This photograph shows the natural landscape inside Hup Pa Tat Cave in Uthai Thani Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "photoCredit": "VN.NguyenDucDuy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Hup_Pa_Tat_Cave_in_Uthai_Thani.jpg"
       },
       {
         "file": "assets/images/provinces/uthai-thani/gallery-2.webp",
         "caption": "灰岩鷦鹛 Limestone Wren-babbler (Napothera crispifrons) — at Hup Pa Tat.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/61860520@N07\">lonelyshrimp\u003c/a>",
+        "photoCredit": "lonelyshrimp",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Limestone_wren-babbler_(37917483062).jpg"
       },
       {
         "file": "assets/images/provinces/uthai-thani/gallery-3.webp",
         "caption": "This photograph shows the Giant Tree and its surrounding natural environment in Uthai Thani Province, Thailand.",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/w/index.php?title=User:VN.NguyenDucDuy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:VN.NguyenDucDuy (page does not exist)\">VN.NguyenDucDuy\u003c/a>",
+        "photoCredit": "VN.NguyenDucDuy",
         "imageSource": "https://commons.wikimedia.org/wiki/File:The_Giant_Tree_in_Uthai_Thani.jpg"
       }
     ]
@@ -2677,19 +2677,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/uttaradit/gallery-1.webp",
         "caption": "Ban Nam Rid, Uttaradit",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "photoCredit": "Tmd",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_01.png"
       },
       {
         "file": "assets/images/provinces/uttaradit/gallery-2.webp",
         "caption": "Ban Nam Rid, Uttaradit",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "photoCredit": "Tmd",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Nam_Rid,_Uttaradit_02.png"
       },
       {
         "file": "assets/images/provinces/uttaradit/gallery-3.webp",
         "caption": "Ban Wang Din",
-        "photoCredit": "\u003ca href=\"//commons.wikimedia.org/wiki/User:Tmd\" title=\"User:Tmd\">Tmd\u003c/a>",
+        "photoCredit": "Tmd",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Wang_Din_1.png"
       }
     ]
@@ -2711,19 +2711,19 @@ window.IMAGE_CURATION = {
       {
         "file": "assets/images/provinces/yala/gallery-1.webp",
         "caption": "Bala, Kabang District, Yala 95120, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101004119/http://www.panoramio.com/user/6667993?with_photo_id=127352855\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Bala,_Kabang_District,_Yala_95120,_Thailand_-_panoramio.jpg"
       },
       {
         "file": "assets/images/provinces/yala/gallery-2.webp",
         "caption": "Betong is a district of Yala Province, situated in the southernmost province of Thailand in Sankalakhiri mountain range.",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/leonlee28/\">leonlee28\u003c/a>",
+        "photoCredit": "leonlee28",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Betong.jpg"
       },
       {
         "file": "assets/images/provinces/yala/gallery-3.webp",
         "caption": "Budi, Mueang Yala District, Yala, Thailand",
-        "photoCredit": "\u003ca rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161030100018/http://www.panoramio.com/user/6667993?with_photo_id=104885915\">กิตติ เลขะกุล\u003c/a>",
+        "photoCredit": "กิตติ เลขะกุล",
         "imageSource": "https://commons.wikimedia.org/wiki/File:Budi,_Mueang_Yala_District,_Yala,_Thailand_-_panoramio.jpg"
       }
     ]

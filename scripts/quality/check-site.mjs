@@ -41,6 +41,11 @@ const curationData = read("js/image-curation-data.js");
 const style = read("css/style.css");
 const components = read("css/components.css");
 const enhancementStyles = read("css/enhancements.css");
+const destinationGenerator = read("scripts/build/generate-destination-pages.mjs");
+const memoryWorkflow = read(".github/workflows/update-ai-memory.yml");
+const curationWorkflow = read(".github/workflows/curate-all-provinces.yml");
+const checksWorkflow = read(".github/workflows/site-checks.yml");
+const curationSync = read("scripts/curation/sync-image-curation.mjs");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -52,6 +57,57 @@ const scriptSources = [...index.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["'][^
 for (const source of new Set(scriptSources)) {
   const count = scriptSources.filter(item => item === source).length;
   if (count > 1) failures.push(`duplicate script source: ${source} (${count})`);
+}
+
+function findRemoteExecutableTags(source) {
+  return [
+    ...source.matchAll(/<script\b[^>]*\bsrc=["']https:\/\/cdnjs\.cloudflare\.com\/[^"']+["'][^>]*>/gi),
+    ...source.matchAll(/<link\b(?=[^>]*\brel=["']stylesheet["'])(?=[^>]*\bhref=["']https:\/\/cdnjs\.cloudflare\.com\/[^"']+["'])[^>]*>/gi)
+  ].map(match => match[0]);
+}
+
+for (const [label, source] of [["index.html", index], ["destination generator", destinationGenerator]]) {
+  for (const tag of findRemoteExecutableTags(source)) {
+    if (!/\bintegrity=["']sha(?:384|512)-/i.test(tag) || !/\bcrossorigin=["']anonymous["']/i.test(tag)) {
+      failures.push(`${label} loads a remote executable asset without SRI and anonymous CORS`);
+    }
+  }
+}
+
+if (!/script\.integrity\s*=\s*['"]sha(?:384|512)-/.test(app)
+    || !/script\.crossOrigin\s*=\s*['"]anonymous['"]/.test(app)) {
+  failures.push("dynamic Chart.js loader must set reviewed SRI and anonymous CORS before loading");
+}
+
+if (/\brun:[^\n]*\$\{\{\s*inputs\./.test(memoryWorkflow)
+    || /git commit[^\n]*\$\{\{\s*inputs\./.test(memoryWorkflow)) {
+  failures.push("workflow_dispatch input must enter shell steps through quoted environment variables");
+}
+
+for (const [label, workflow] of [
+  ["site checks", checksWorkflow],
+  ["curation", curationWorkflow],
+  ["memory", memoryWorkflow]
+]) {
+  if (/uses:\s+[\w-]+\/[\w-]+@v\d+/i.test(workflow)) {
+    failures.push(`${label} workflow must pin third-party actions to full commit SHAs`);
+  }
+}
+
+if (!app.includes("function escapeHTMLAttribute(value)")
+    || !app.includes("function getSafeGalleryImageSource(value)")
+    || !curationSync.includes("const normalizePlainText =")
+    || !curationSync.includes("const normalizeGalleryPath =")) {
+  failures.push("external gallery metadata must be normalized at ingestion and escaped at SPA render sinks");
+}
+
+if (/\sstyle=["']/.test(index)) {
+  failures.push("index.html must use semantic classes instead of inline presentation styles");
+}
+
+if ((index.match(/class="hero-stat-icon"/g) || []).length !== 3
+    || !index.includes('class="hero-stats" aria-label="ขอบเขตข้อมูลโปรเจกต์"')) {
+  failures.push("Home hero coverage must keep three accessible icon-backed live metrics");
 }
 
 const dataIndex = scriptSources.indexOf("js/data.js");
@@ -356,6 +412,11 @@ try {
         || !detailHtml.includes('type="application/ld+json"')
         || !detailHtml.includes('property="og:title"')) {
         failures.push(`destination detail metadata is incomplete: ${slug}`);
+      }
+      for (const tag of findRemoteExecutableTags(detailHtml)) {
+        if (!/\bintegrity=["']sha(?:384|512)-/i.test(tag) || !/\bcrossorigin=["']anonymous["']/i.test(tag)) {
+          failures.push(`destination detail remote stylesheet lacks SRI: ${slug}`);
+        }
       }
     }
     if (!fs.existsSync(path.join(root, "sitemap.xml"))) failures.push("sitemap.xml is missing");

@@ -9,6 +9,29 @@ const outputPath = path.join(root, "js", "image-curation-data.js");
 const readJson = file =>
   JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/, ""));
 
+const normalizePlainText = (value, fallback = "") =>
+  String(value || fallback)
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;|&#160;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;|&#34;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 280);
+
+const normalizeGalleryPath = (value, slug) => {
+  const source = String(value || "").trim();
+  const safeSlug = String(slug).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`^assets/images/provinces/${safeSlug}/gallery-[1-5]\\.webp$`).test(source)
+    ? source
+    : "";
+};
+
 const validation = readJson(validationPath);
 const result = {};
 
@@ -24,7 +47,7 @@ for (const row of validation) {
     ? metadata.attribution.filter(item => String(item.role || "").startsWith("gallery-"))
     : [];
   const galleryImages = Array.isArray(metadata.galleryImages)
-    ? metadata.galleryImages
+    ? metadata.galleryImages.map(item => normalizeGalleryPath(item, slug)).filter(Boolean)
     : [];
 
   const complete =
@@ -38,13 +61,13 @@ for (const row of validation) {
     galleryCurated: complete,
     galleryImages: complete ? galleryImages : [],
     galleryCaptions: complete
-      ? attributions.map(item => String(item.caption || metadata.province || slug))
+      ? attributions.map(item => normalizePlainText(item.caption, metadata.province || slug))
       : [],
     attribution: complete
       ? attributions.map(item => ({
           file: item.file,
-          caption: item.caption,
-          photoCredit: item.photoCredit,
+          caption: normalizePlainText(item.caption, metadata.province || slug),
+          photoCredit: normalizePlainText(item.photoCredit, "Wikimedia Commons contributor"),
           imageSource: item.imageSource
         }))
       : []

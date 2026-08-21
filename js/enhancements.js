@@ -407,7 +407,7 @@
     const popular = destinations.slice(0, 6).map(d => d.name);
     const recentHTML = recent.length ? `
       <div class="suggestion-label">${tr("search.recent", "ค้นหาล่าสุด")} <button class="suggestion-clear" type="button" data-clear-recent>${tr("search.clear", "ล้าง")}</button></div>
-      ${recent.map(term => `<button class="suggestion-item" type="button" data-search-term="${escapeAttr(term)}"><span><i class="fas fa-clock"></i> ${term}</span></button>`).join("")}
+      ${recent.map(term => `<button class="suggestion-item" type="button" data-search-term="${escapeAttr(term)}"><span><i class="fas fa-clock"></i> ${escapeHTML(term)}</span></button>`).join("")}
     ` : "";
     return `${recentHTML}<div class="suggestion-label">${tr("search.popular", "จุดหมายยอดนิยม")}</div>
       <div class="suggestion-chips">${popular.map(term => `<button class="suggestion-chip" type="button" data-search-term="${escapeAttr(term)}">${term}</button>`).join("")}</div>`;
@@ -419,10 +419,18 @@
 
   function getRecentSearches() {
     try {
-      const value = JSON.parse(localStorage.getItem(recentStorageKey()) || "[]");
+      const stored = localStorage.getItem(recentStorageKey()) || "[]";
+      if (stored.length > 4096) {
+        localStorage.removeItem(recentStorageKey());
+        return [];
+      }
+      const value = JSON.parse(stored);
 
       return Array.isArray(value)
-        ? value.filter(item => typeof item === "string" && item.trim())
+        ? value
+            .filter(item => typeof item === "string" && item.trim())
+            .slice(0, 6)
+            .map(item => item.trim().slice(0, 80))
         : [];
     } catch {
       localStorage.removeItem(recentStorageKey());
@@ -461,14 +469,15 @@
     if (!quotes.length) return;
 
     function show(index) {
-      const q = quotes[index % quotes.length];
+      const safeIndex = ((index % quotes.length) + quotes.length) % quotes.length;
+      const q = quotes[safeIndex];
       text.textContent = q.text;
       author.textContent = `- ${q.author}`;
     }
 
     const today = new Date().toISOString().slice(0, 10);
     let index = Number(localStorage.getItem(STORAGE.quoteIndex));
-    if (localStorage.getItem(STORAGE.quoteDate) !== today || Number.isNaN(index)) {
+    if (localStorage.getItem(STORAGE.quoteDate) !== today || !Number.isSafeInteger(index)) {
       index = Math.floor(Math.random() * quotes.length);
       localStorage.setItem(STORAGE.quoteDate, today);
       localStorage.setItem(STORAGE.quoteIndex, String(index));
@@ -716,7 +725,14 @@
   }
 
   function escapeAttr(value) {
-    return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    return escapeHTML(value).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function escapeHTML(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   }
 
   function stripHTML(value) {

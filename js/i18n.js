@@ -487,7 +487,7 @@
     window.renderGallery?.();
     window.renderHomeGalleryPreview?.();
     window.hydratePromotionCardsFromSharedData?.();
-    window.initCharts?.();
+    if (typeof window.Chart === "function") window.initCharts?.();
 
     const modal = document.getElementById("modal");
     const destinationId = Number(modal?.dataset.destinationId);

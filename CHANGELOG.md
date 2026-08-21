@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-08-22 — Visual consistency and trust hardening
+- Reframed the Home Hero as a cinematic editorial split so the Chiang Mai landmark stays visible, with a reversed scrim, restrained ambient light and responsive fallback composition.
+- Rebuilt the three live coverage metrics as one icon-backed glass panel, enriched the search bridge and category surfaces, and kept reduced-motion/mobile behavior calm.
+- Replaced the remaining SPA inline presentation styles with semantic classes for the Home CTA, destination controls, route spacing, charts, forms, dialogs, lightbox and footer brand.
+- Removed delayed first-use rendering from the Home hero actions and Smart Trip Assistant, made theme changes atomic, and strengthened gold-button foreground contrast in Light and Dark Mode.
+- Completed Thai-first copy for the travel tips, inspiration tools and Smart Trip Assistant headings while preserving full English switching.
+- Added reviewed SRI and anonymous CORS metadata to Font Awesome, SweetAlert2 and the on-demand Chart.js loader across the SPA and all 77 generated destination pages.
+- Prevented language refreshes from warning before Chart.js is ready and made a failed on-demand chart load cleanly retryable.
+- Neutralized persisted recent-search markup, passed workflow-dispatch text through quoted environment variables, and added structural/browser regressions for these trust boundaries.
+- Converted externally sourced gallery captions to bounded plain text, allowlisted generated gallery paths and escaped every SPA gallery HTML/attribute sink.
+- Bounded oversized recent-search storage, normalized corrupt quote indexes and pinned every GitHub Action to a reviewed immutable commit.
+
 ## 2026-08-17 — Local Smart Trip Assistant
 - Evolved the backward-compatible `#promotions` route into a combined conversational trip planner and user-input budget calculator.
 - Added safe natural-language parsing for region, trip length, interests and optional budget without an external AI API or exposed key.

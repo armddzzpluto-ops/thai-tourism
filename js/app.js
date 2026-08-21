@@ -121,6 +121,26 @@ function getHomeGalleryPreview(limit = 5) {
   return selected;
 }
 
+function escapeHTMLText(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function escapeHTMLAttribute(value) {
+  return escapeHTMLText(value)
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getSafeGalleryImageSource(value) {
+  const source = String(value || '').trim();
+  return /^assets\/images\/provinces\/[a-z0-9-]+\/(?:hero|gallery-[1-5])\.webp$/.test(source)
+    ? source
+    : 'assets/images/provinces/bangkok/hero.webp';
+}
+
 function renderHomeGalleryPreview() {
   const container = document.getElementById('home-gallery-preview');
   if (!container) return;
@@ -139,17 +159,21 @@ function renderHomeGalleryPreview() {
   container.innerHTML = preview.map((image, index) => {
     const caption = image.cap || (window.I18N?.getLanguage() === 'en' ? 'Destination in Thailand' : 'สถานที่ท่องเที่ยวในประเทศไทย');
     const featuredClass = index === 0 ? ' is-featured' : '';
+    const openLabel = window.I18N?.t('gallery.openCollection') || 'เปิดคลังรูปภาพ';
+    const safeCaptionText = escapeHTMLText(caption);
+    const safeCaptionAttribute = escapeHTMLAttribute(caption);
+    const safeSource = escapeHTMLAttribute(getSafeGalleryImageSource(image.src));
 
     return `
       <button
         class="gallery-item${featuredClass}"
         type="button"
         onclick="showPage('gallery')"
-        aria-label="${window.I18N?.t('gallery.openCollection') || 'เปิดคลังรูปภาพ'}: ${caption}"
+        aria-label="${escapeHTMLAttribute(openLabel)}: ${safeCaptionAttribute}"
       >
         <img
-          src="${image.src}"
-          alt="${caption}"
+          src="${safeSource}"
+          alt="${safeCaptionAttribute}"
           loading="lazy"
           decoding="async"
           width="900"
@@ -158,7 +182,7 @@ function renderHomeGalleryPreview() {
         <div class="gallery-overlay" aria-hidden="true">
           <i class="fas fa-expand-alt"></i>
         </div>
-        <div class="gallery-caption">${caption}</div>
+        <div class="gallery-caption">${safeCaptionText}</div>
       </button>`;
   }).join('');
 }
@@ -603,6 +627,7 @@ let chartsInit = false;
 
 function applyTheme(theme) {
   const next = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.classList.add('theme-switching');
   document.documentElement.setAttribute('data-theme', next);
 
   const btn = document.getElementById('theme-toggle');
@@ -620,6 +645,10 @@ function applyTheme(theme) {
   }));
 
   window.I18N?.syncControls();
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => document.documentElement.classList.remove('theme-switching'));
+  });
 }
 
 function toggleTheme() {
@@ -809,12 +838,18 @@ function renderGallery() {
     return;
   }
 
-  el.innerHTML = galleryImages.map((img,i) => `
-    <button class="gallery-item fade-in" type="button" onclick="openLightbox(${i})" aria-label="${window.I18N?.t('gallery.open') || 'เปิดรูปภาพ'}: ${img.cap}">
-      <img src="${img.src}" alt="${img.cap}" loading="lazy" decoding="async">
-      <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
-      <div class="gallery-caption">${img.cap}</div>
-    </button>`).join('');
+  const openLabel = window.I18N?.t('gallery.open') || 'เปิดรูปภาพ';
+  el.innerHTML = galleryImages.map((img,i) => {
+    const safeCaptionText = escapeHTMLText(img.cap);
+    const safeCaptionAttribute = escapeHTMLAttribute(img.cap);
+    const safeSource = escapeHTMLAttribute(getSafeGalleryImageSource(img.src));
+    return `
+      <button class="gallery-item fade-in" type="button" onclick="openLightbox(${i})" aria-label="${escapeHTMLAttribute(openLabel)}: ${safeCaptionAttribute}">
+        <img src="${safeSource}" alt="${safeCaptionAttribute}" loading="lazy" decoding="async">
+        <div class="gallery-overlay" aria-hidden="true"><i class="fas fa-expand-alt"></i></div>
+        <div class="gallery-caption">${safeCaptionText}</div>
+      </button>`;
+  }).join('');
 
   el.dataset.rendered = 'true';
   observeFade();
@@ -1175,6 +1210,7 @@ function ensureChartLibrary() {
     if (existing) {
       existing.addEventListener('load', finish, { once: true });
       existing.addEventListener('error', () => {
+        existing.remove();
         chartLibraryPromise = null;
         reject(new Error('Unable to load Chart.js'));
       }, { once: true });
@@ -1182,11 +1218,15 @@ function ensureChartLibrary() {
     }
 
     const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
     script.async = true;
     script.dataset.chartLoader = 'true';
+    script.integrity = 'sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==';
+    script.crossOrigin = 'anonymous';
+    script.referrerPolicy = 'no-referrer';
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js';
     script.onload = finish;
     script.onerror = () => {
+      script.remove();
       chartLibraryPromise = null;
       reject(new Error('Unable to load Chart.js'));
     };
