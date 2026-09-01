@@ -1838,9 +1838,7 @@ footer .container{position:relative;z-index:1}
   #page-home > .home-hero .hero-content{padding-top:calc(var(--nav-h) + 72px)}
   #page-home > .home-hero .hero-title{max-width:13ch;font-size:clamp(2.65rem,11vw,4.2rem)}
   #page-home > .home-hero .hero-desc{max-width:38ch}
-  #page-home > .home-hero .hero-stats{position:static;width:100%;margin-top:var(--space-2xl);display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
-  #page-home > .home-hero .hero-stat-card{grid-template-columns:1fr;gap:8px;text-align:center;padding:14px 10px}
-  #page-home > .home-hero .hero-stat-icon{margin-inline:auto;width:40px;height:40px}
+  #page-home > .home-hero .hero-stats{width:100%}
   #page-home > .home-hero .hero-scroll{display:none}
   #page-home > .home-search-panel{margin-top:-44px;padding-inline:var(--space-lg)}
   #page-home > .home-search-panel .search-bar-inner{padding:22px;border-radius:22px}
@@ -1850,7 +1848,7 @@ footer .container{position:relative;z-index:1}
 }
 @media(max-width:640px){
   .section{padding-block:clamp(56px,14vw,72px)}
-  #page-home > .home-hero{min-height:820px}
+  #page-home > .home-hero{min-height:720px}
   #page-home > .home-hero .hero-content{padding-inline:18px;padding-top:calc(var(--nav-h) + 54px)}
   #page-home > .home-hero .hero-eyebrow{font-size:.72rem;letter-spacing:.04em}
   #page-home > .home-hero .hero-title{max-width:12ch;font-size:clamp(2.45rem,12.5vw,3.6rem)}
