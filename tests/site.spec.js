@@ -255,6 +255,16 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
   }
 });
 
+test("showcase navigation state and footer source remain trustworthy", async ({ page }) => {
+  await page.evaluate(() => window.scrollTo({ top: 700, left: 0, behavior: "auto" }));
+  await expect(page.locator(".navbar")).toHaveClass(/scrolled/);
+
+  const socials = page.locator(".footer-social .social-btn");
+  await expect(socials).toHaveCount(1);
+  await expect(socials.first()).toHaveAttribute("href", "https://github.com/armddzzpluto-ops/thai-tourism");
+  await expect(socials.first()).toHaveAttribute("rel", /noopener/);
+});
+
 test("user-facing emoji are replaced by one stable icon system", async ({ page }) => {
   for (const theme of ["light", "dark"]) {
     const snapshot = await page.evaluate(selectedTheme => {
