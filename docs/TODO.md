@@ -32,6 +32,7 @@
 - [x] Remove the detached green-gold route accent that resembled a loading bar
 - [x] Replace platform-dependent Emoji with one accessible icon system across the SPA and generated destination pages
 - [x] Add a bilingual local Smart Trip Assistant with a sourced Northeast five-day route and budget-calculator handoff
+- [x] Fix bilingual Smart Trip Assistant duration parsing for English hyphenated forms (for example "5-day") and lock Thai/English regression coverage
 - [x] Replace remaining SPA inline presentation styles with semantic route, CTA, search, dialog and lightbox components
 - [x] Pin third-party executable assets with SRI and harden recent-search/workflow input boundaries
 - [x] Recompose the Home Hero around its landmark image with responsive icon-backed live metrics and premium search/category continuity

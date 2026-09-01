@@ -442,6 +442,32 @@ test("Smart Trip Assistant builds the sourced Northeast five-day plan safely", a
   await expect(page.locator(".trip-plan-source a")).toContainText("Tourism Authority of Thailand");
 });
 
+test("Trip planner parser supports Thai and English duration phrases", async ({ page }) => {
+  const parsed = await page.evaluate(() => {
+    const cases = {
+      thaiWithBudget: "เที่ยวภาคอีสาน 5 วัน งบ 8,000 บาท",
+      thaiCompact: "5วัน",
+      englishHyphen: "Isan 5-day trip",
+      englishSpace: "Isan 5 day trip",
+      englishTripFor: "Trip for 5 days",
+      englishSentence: "I want a 5-day trip",
+      defaultDays: "เที่ยวภาคอีสาน เน้นธรรมชาติ"
+    };
+    const parse = window.parseTripPlannerRequest;
+    return Object.fromEntries(Object.entries(cases).map(([key, value]) => [key, parse(value)]));
+  });
+
+  expect(parsed.thaiWithBudget.days).toBe(5);
+  expect(parsed.thaiWithBudget.budget).toBe(8000);
+  expect(parsed.thaiCompact.days).toBe(5);
+  expect(parsed.englishHyphen.days).toBe(5);
+  expect(parsed.englishHyphen.region).toBe("northeast");
+  expect(parsed.englishSpace.days).toBe(5);
+  expect(parsed.englishTripFor.days).toBe(5);
+  expect(parsed.englishSentence.days).toBe(5);
+  expect(parsed.defaultDays.days).toBe(3);
+});
+
 test("Smart Trip Assistant suggestion chips and generic province plans remain useful", async ({ page }) => {
   await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
   await page.locator(".trip-suggestion").first().click();

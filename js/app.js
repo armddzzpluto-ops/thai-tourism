@@ -306,12 +306,18 @@ function formatTripCopy(template, variables = {}) {
 function parseTripPlannerRequest(value) {
   const normalized = String(value || '')
     .replace(/[๐-๙]/g, digit => String('๐๑๒๓๔๕๖๗๘๙'.indexOf(digit)))
+    .replace(/[‐‑‒–—]/g, '-')
     .toLowerCase()
     .trim();
-  const dayMatch = normalized.match(/(\d{1,2})\s*(?:วัน|days?|d\b)/i);
+  const dayMatch = [
+    /(\d{1,2})\s*วัน\b/i,
+    /(\d{1,2})\s*-\s*day(?:s)?\b/i,
+    /(\d{1,2})\s+day(?:s)?\b/i,
+    /\btrip\s+for\s+(\d{1,2})\s+day(?:s)?\b/i
+  ].map(pattern => normalized.match(pattern)).find(Boolean);
   const budgetMatch = normalized.match(/(?:งบ(?:ประมาณ)?|budget(?:\s+of)?)\s*(?:ประมาณ|ราว|about)?\s*(?:฿|thb)?\s*([\d,]+)/i);
   const regionPatterns = [
-    ['northeast', /อีสาน|ตะวันออกเฉียงเหนือ|north\s*east|northeast/],
+    ['northeast', /อีสาน|ตะวันออกเฉียงเหนือ|\bisan\b|north\s*east|northeast/],
     ['north', /ภาคเหนือ|ทางเหนือ|\bnorth(?:ern)?\b/],
     ['south', /ภาคใต้|ทางใต้|\bsouth(?:ern)?\b/],
     ['east', /ภาคตะวันออก|ทางตะวันออก|\beast(?:ern)?\b/],

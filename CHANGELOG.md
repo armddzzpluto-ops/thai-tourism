@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-01 - Fix bilingual trip duration parsing
+- Fixed the Smart Trip Assistant duration parser so English hyphenated phrases like "5-day" parse as 5 days instead of falling back to the default three-day plan.
+- Added safe normalization for Unicode hyphen variants and kept Thai duration parsing forms such as "5 วัน" and "5วัน" working.
+- Added English alias coverage for "Isan" so Northeast trip prompts map to the existing sourced route logic.
+- Added browser regression coverage for Thai and English duration phrases, default-day fallback behavior, and budget-versus-duration parsing boundaries.
+
 ## 2026-08-22 — Visual consistency and trust hardening
 - Reframed the Home Hero as a cinematic editorial split so the Chiang Mai landmark stays visible, with a reversed scrim, restrained ambient light and responsive fallback composition.
 - Rebuilt the three live coverage metrics as one icon-backed glass panel, enriched the search bridge and category surfaces, and kept reduced-motion/mobile behavior calm.
