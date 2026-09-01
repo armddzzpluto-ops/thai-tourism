@@ -1682,7 +1682,7 @@ body {
    Cinematic Thai-contemporary refinement without new runtime data.
    ========================================================== */
 .page > .section:not(.home-hero){position:relative;isolation:isolate;overflow:clip}
-.page > .section:not(.home-hero)::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:var(--ornament-opacity);background:radial-gradient(circle at 8% 12%,color-mix(in srgb,var(--color-accent) 8%,transparent),transparent 30rem),radial-gradient(circle at 92% 88%,color-mix(in srgb,var(--color-secondary) 9%,transparent),transparent 28rem)}
+#page-home > .section:not(.home-hero)::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:var(--ornament-opacity);background:radial-gradient(circle at 8% 12%,color-mix(in srgb,var(--color-accent) 8%,transparent),transparent 30rem),radial-gradient(circle at 92% 88%,color-mix(in srgb,var(--color-secondary) 9%,transparent),transparent 28rem)}
 .page > .section:not(.home-hero) > .container{position:relative;z-index:1}
 .section-header{max-width:780px;margin-inline:auto}
 .section-eyebrow{letter-spacing:.15em}
@@ -1724,7 +1724,7 @@ body {
 #page-home > .home-search-panel .search-bar-inner::before{content:"";position:absolute;inset:8px 18% auto;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,var(--border-ornament),transparent)}
 #page-home > .home-search-panel .search-input-row{border-color:var(--color-border-default);background:var(--surface-inset);box-shadow:inset 0 1px 0 rgba(255,255,255,.24)}
 #page-home > .home-search-panel .search-input-row:focus-within{border-color:var(--color-accent);box-shadow:var(--shadow-focus),inset 0 1px 0 rgba(255,255,255,.24)}
-#page-home > .home-search-panel .search-tag{min-height:34px;padding-inline:13px;background:var(--color-bg-primary);color:var(--color-text-secondary)}
+#page-home > .home-search-panel .search-tag{min-height:44px;padding-inline:13px;background:var(--color-bg-primary);color:var(--color-text-secondary)}
 #page-home > .home-search-panel .search-tag:hover,#page-home > .home-search-panel .search-tag:focus-visible{color:var(--color-text-primary);border-color:color-mix(in srgb,var(--color-accent) 42%,var(--color-border-default));background:color-mix(in srgb,var(--color-accent) 8%,var(--color-bg-primary))}
 
 /* Editorial route title plates */
