@@ -104,6 +104,17 @@
   --shadow-focus: 0 0 0 3px rgba(11,107,102,.16);
   --shadow-glow:  0 8px 24px rgba(11,107,102,.18);
 
+  /* Showcase depth and material aliases */
+  --surface-panel: color-mix(in srgb, var(--color-bg-tertiary) 94%, transparent);
+  --surface-elevated: color-mix(in srgb, var(--color-bg-tertiary) 98%, var(--color-bg-primary));
+  --surface-inset: color-mix(in srgb, var(--color-bg-secondary) 72%, var(--color-bg-primary));
+  --surface-glass: color-mix(in srgb, var(--color-bg-tertiary) 84%, transparent);
+  --border-ornament: color-mix(in srgb, var(--color-secondary) 34%, var(--color-border-light));
+  --shadow-card-hover: 0 18px 44px rgba(26,28,30,.14);
+  --shadow-floating: 0 28px 80px rgba(7,21,18,.18);
+  --motion-lift: 3px;
+  --ornament-opacity: .48;
+
   /* ======= TIER 9: RADIUS & LAYOUT ======= */
   --radius-2xs: 2px;
   --radius-xs:  6px;
@@ -372,11 +383,11 @@ html[data-theme="dark"] {
     radial-gradient(circle at 88% 100%, rgba(233,196,106,.05) 0, transparent 26rem);
 
   /* ======= DARK SHADOWS ======= */
-  --shadow-1:     0 2px 6px rgba(0,0,0,.35);
-  --shadow-2:     0 4px 14px rgba(0,0,0,.40);
-  --shadow-3:     0 14px 40px rgba(0,0,0,.50);
-  --shadow-4:     0 26px 70px rgba(0,0,0,.60);
-  --shadow-5:     0 26px 70px rgba(0,0,0,.70);
+  --shadow-1:     0 2px 8px rgba(0,0,0,.26);
+  --shadow-2:     0 6px 18px rgba(0,0,0,.30);
+  --shadow-3:     0 16px 42px rgba(0,0,0,.36);
+  --shadow-4:     0 28px 72px rgba(0,0,0,.42);
+  --shadow-5:     0 32px 88px rgba(0,0,0,.48);
   --shadow-xs:    var(--shadow-1);
   --shadow-sm:    var(--shadow-2);
   --shadow-md:    var(--shadow-3);
@@ -385,6 +396,9 @@ html[data-theme="dark"] {
 
   --shadow-focus: 0 0 0 3px rgba(73,185,169,.22);
   --shadow-glow:  0 8px 24px rgba(73,185,169,.24);
+  --shadow-card-hover: 0 18px 46px rgba(0,0,0,.34);
+  --shadow-floating: 0 30px 90px rgba(0,0,0,.42);
+  --ornament-opacity: .36;
 
   /* Update re-calibrated accent-rgba helpers for dark context */
   --accent-04:  rgba(73,185,169,.04);
