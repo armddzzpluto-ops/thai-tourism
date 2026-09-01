@@ -1825,7 +1825,7 @@ footer .container{position:relative;z-index:1}
 @media(max-width:1024px){
   #page-home > .home-hero{min-height:720px}
   #page-home > .home-hero .hero-title{max-width:12ch;font-size:clamp(2.7rem,7.4vw,4.8rem)}
-  #page-home > .home-hero .hero-stats{width:min(260px,29vw);right:4%}
+  #page-home > .home-hero .hero-stats{position:static;display:grid;grid-template-columns:1fr;width:min(100%,420px);margin-top:28px;gap:10px;transform:none;top:auto;right:auto;bottom:auto}
   .route-header{padding:28px}
   .budget-summary{position:static}
 }
