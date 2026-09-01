@@ -37,6 +37,7 @@
 - [x] Pin third-party executable assets with SRI and harden recent-search/workflow input boundaries
 - [x] Recompose the Home Hero around its landmark image with responsive icon-backed live metrics and premium search/category continuity
 - [x] Keep third-party gallery metadata inert, bound persisted UI collections and pin GitHub Actions to immutable revisions
+- [x] Complete the final showcase art-direction pass across the SPA and generated destination detail pages with responsive, reduced-motion and verified-footer safeguards
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

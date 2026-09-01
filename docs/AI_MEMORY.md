@@ -42,6 +42,8 @@
 - Route-critical hero and planner controls now render immediately, theme changes apply atomically, and semantic classes replace the remaining SPA inline presentation styles
 - CDN-hosted Font Awesome, SweetAlert2 and Chart.js bytes are version-pinned with reviewed SRI; persisted recent searches and manual memory-workflow inputs are treated as untrusted text
 - The Home Hero uses a landmark-safe editorial split on wide screens, icon-backed live coverage metrics and a simpler responsive fallback without duplicating data claims
+- The final showcase art direction now adds a calmer premium depth hierarchy across navigation, route title plates, destination cards, Gallery, Trip Planner, Dashboard, About, Contact, footer and all generated destination-detail pages without changing tourism data contracts
+- Navigation gains a requestAnimationFrame-throttled scrolled surface, while the footer exposes only the verified GitHub repository instead of placeholder social destinations
 - Wikimedia gallery captions are normalized to bounded plain text, image paths are locally allowlisted and both SPA gallery renderers contextually escape metadata before `innerHTML`
 - Persisted search history and quote indexes are size/type bounded, and all GitHub Actions run from reviewed immutable commit SHAs
 

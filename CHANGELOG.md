@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-02 - Final showcase art direction
+- Extended the existing emerald-and-temple-gold system with semantic material, ornament and depth tokens instead of introducing a second palette.
+- Reframed the Home opening, search bridge, route title plates, destination cards, category discovery, Gallery, Trip Planner, budget calculator, Dashboard, About, Contact and footer with restrained cinematic depth and consistent micro-interactions.
+- Applied the same premium visual language to all generated destination-detail pages through the shared stylesheet, without hand-editing generated province HTML or changing tourism data.
+- Added responsive art direction for Desktop, Notebook, Tablet and Mobile, kept reduced-motion behavior calm, and avoided animation libraries, video backgrounds or decorative runtime requests.
+- Added a throttled Navbar scrolled state and replaced placeholder footer social links with the verified project GitHub repository.
+- Added browser regression coverage for the Navbar presentation state and trustworthy footer destination.
+
 ## 2026-09-01 - Fix bilingual trip duration parsing
 - Fixed the Smart Trip Assistant duration parser so English hyphenated phrases like "5-day" parse as 5 days instead of falling back to the default three-day plan.
 - Added safe normalization for Unicode hyphen variants and kept Thai duration parsing forms such as "5 วัน" and "5วัน" working.
