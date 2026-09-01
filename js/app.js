@@ -310,7 +310,7 @@ function parseTripPlannerRequest(value) {
     .toLowerCase()
     .trim();
   const dayMatch = [
-    /(\d{1,2})\s*วัน\b/i,
+    /(\d{1,2})\s*วัน/i,
     /(\d{1,2})\s*-\s*day(?:s)?\b/i,
     /(\d{1,2})\s+day(?:s)?\b/i,
     /\btrip\s+for\s+(\d{1,2})\s+day(?:s)?\b/i
