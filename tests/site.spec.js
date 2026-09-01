@@ -77,6 +77,8 @@ test("critical route content renders immediately and primary controls keep reada
     const heroLayout = {
       iconCount: heroStats.querySelectorAll(".hero-stat-icon").length,
       statsDisplay: getComputedStyle(heroStats).display,
+      statsColumns: getComputedStyle(heroStats).gridTemplateColumns.split(" ").filter(Boolean).length,
+      statsWidth: heroStats.getBoundingClientRect().width,
       contentLeft: heroContent.getBoundingClientRect().left,
       viewportWidth: innerWidth
     };
@@ -87,6 +89,8 @@ test("critical route content renders immediately and primary controls keep reada
       heroAnimation: [getComputedStyle(heroTitle).animationName, getComputedStyle(heroActions).animationName],
       heroStatIcons: heroLayout.iconCount,
       heroStatsDisplay: heroLayout.statsDisplay,
+      heroStatsColumns: heroLayout.statsColumns,
+      heroStatsWidth: heroLayout.statsWidth,
       heroContentLeft: heroLayout.contentLeft,
       viewportWidth: heroLayout.viewportWidth,
       assistantOpacity: getComputedStyle(assistant).opacity,
@@ -98,11 +102,11 @@ test("critical route content renders immediately and primary controls keep reada
 
   expect(snapshot.heroAnimation).toEqual(["none", "none"]);
   expect(snapshot.heroStatIcons).toBe(3);
-  if (snapshot.viewportWidth > 1100) {
-    expect(snapshot.heroStatsDisplay).toBe("grid");
-    expect(snapshot.heroContentLeft).toBeLessThan(snapshot.viewportWidth * 0.4);
-  } else {
-    expect(snapshot.heroStatsDisplay).toBe("none");
+  expect(snapshot.heroStatsDisplay).toBe("grid");
+  expect(snapshot.heroContentLeft).toBeLessThan(snapshot.viewportWidth * 0.4);
+  if (snapshot.viewportWidth <= 768) {
+    expect(snapshot.heroStatsColumns).toBe(1);
+    expect(snapshot.heroStatsWidth).toBeLessThanOrEqual(420);
   }
   expect(snapshot.assistantOpacity).toBe("1");
   expect(snapshot.assistantTransform).toBe("none");
