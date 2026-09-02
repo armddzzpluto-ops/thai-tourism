@@ -134,28 +134,6 @@
     }, true);
   }
 
-  function initPlaceholderLinks() {
-    document.querySelectorAll(".footer-social a[href='#']").forEach(link => {
-      link.dataset.placeholderLink = "true";
-
-      link.addEventListener("click", event => {
-        event.preventDefault();
-
-        const message = window.I18N?.t("footer.placeholder")
-          || "This link is not available yet";
-
-        window.Swal?.fire?.({
-          toast: true,
-          position: "top-end",
-          icon: "info",
-          title: message,
-          showConfirmButton: false,
-          timer: 1800
-        });
-      });
-    });
-  }
-
   function initHistoryAndNetwork() {
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
@@ -173,7 +151,6 @@
   function init() {
     initDialogs();
     initImageFallback();
-    initPlaceholderLinks();
     initHistoryAndNetwork();
 
     document.addEventListener("languagechange", () => {

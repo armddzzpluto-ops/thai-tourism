@@ -1,12 +1,13 @@
 # Changelog
 
-## 2026-09-02 - Final showcase art direction
-- Extended the existing emerald-and-temple-gold system with semantic material, ornament and depth tokens instead of introducing a second palette.
-- Reframed the Home opening, search bridge, route title plates, destination cards, category discovery, Gallery, Trip Planner, budget calculator, Dashboard, About, Contact and footer with restrained cinematic depth and consistent micro-interactions.
-- Applied the same premium visual language to all generated destination-detail pages through the shared stylesheet, without hand-editing generated province HTML or changing tourism data.
-- Added responsive art direction for Desktop, Notebook, Tablet and Mobile, kept reduced-motion behavior calm, and avoided animation libraries, video backgrounds or decorative runtime requests.
-- Added a throttled Navbar scrolled state and replaced placeholder footer social links with the verified project GitHub repository.
-- Added browser regression coverage for the Navbar presentation state and trustworthy footer destination.
+## 2026-09-02 — Recover visual hierarchy and harden delivery
+- Removed the merged PR #41 showcase override layer after matched before/after screenshots showed oversized route-title cards, excess mobile whitespace and Home content pushed below the first viewport.
+- Preserved the verified bilingual duration parser, shared data contracts and existing accessible component system instead of reverting unrelated production fixes.
+- Kept Smart Trip Assistant controls above generated itineraries so mobile users can immediately revise a request, and connected the input to its local-processing disclosure.
+- Replaced non-functional social placeholders with one verified, bilingual GitHub source link and removed the retired placeholder handler and styling.
+- Removed superseded ripple, transition, back-to-top and floating-action CSS selectors after confirming their live replacements.
+- Added a pinned GitHub CodeQL workflow for JavaScript/TypeScript with the `security-extended` query suite on pull requests, `main` pushes and a weekly schedule.
+- Added structural and Playwright guards for compact route hierarchy, trustworthy footer links, planner continuity and English suggestion parsing; all 108 browser scenarios pass.
 
 ## 2026-09-01 - Fix bilingual trip duration parsing
 - Fixed the Smart Trip Assistant duration parser so English hyphenated phrases like "5-day" parse as 5 days instead of falling back to the default three-day plan.

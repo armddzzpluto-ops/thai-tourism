@@ -104,17 +104,6 @@
   --shadow-focus: 0 0 0 3px rgba(11,107,102,.16);
   --shadow-glow:  0 8px 24px rgba(11,107,102,.18);
 
-  /* Showcase depth and material aliases */
-  --surface-panel: color-mix(in srgb, var(--color-bg-tertiary) 94%, transparent);
-  --surface-elevated: color-mix(in srgb, var(--color-bg-tertiary) 98%, var(--color-bg-primary));
-  --surface-inset: color-mix(in srgb, var(--color-bg-secondary) 72%, var(--color-bg-primary));
-  --surface-glass: color-mix(in srgb, var(--color-bg-tertiary) 84%, transparent);
-  --border-ornament: color-mix(in srgb, var(--color-secondary) 34%, var(--color-border-light));
-  --shadow-card-hover: 0 18px 44px rgba(26,28,30,.14);
-  --shadow-floating: 0 28px 80px rgba(7,21,18,.18);
-  --motion-lift: 3px;
-  --ornament-opacity: .48;
-
   /* ======= TIER 9: RADIUS & LAYOUT ======= */
   --radius-2xs: 2px;
   --radius-xs:  6px;
@@ -383,11 +372,11 @@ html[data-theme="dark"] {
     radial-gradient(circle at 88% 100%, rgba(233,196,106,.05) 0, transparent 26rem);
 
   /* ======= DARK SHADOWS ======= */
-  --shadow-1:     0 2px 8px rgba(0,0,0,.26);
-  --shadow-2:     0 6px 18px rgba(0,0,0,.30);
-  --shadow-3:     0 16px 42px rgba(0,0,0,.36);
-  --shadow-4:     0 28px 72px rgba(0,0,0,.42);
-  --shadow-5:     0 32px 88px rgba(0,0,0,.48);
+  --shadow-1:     0 2px 6px rgba(0,0,0,.35);
+  --shadow-2:     0 4px 14px rgba(0,0,0,.40);
+  --shadow-3:     0 14px 40px rgba(0,0,0,.50);
+  --shadow-4:     0 26px 70px rgba(0,0,0,.60);
+  --shadow-5:     0 26px 70px rgba(0,0,0,.70);
   --shadow-xs:    var(--shadow-1);
   --shadow-sm:    var(--shadow-2);
   --shadow-md:    var(--shadow-3);
@@ -396,9 +385,6 @@ html[data-theme="dark"] {
 
   --shadow-focus: 0 0 0 3px rgba(73,185,169,.22);
   --shadow-glow:  0 8px 24px rgba(73,185,169,.24);
-  --shadow-card-hover: 0 18px 46px rgba(0,0,0,.34);
-  --shadow-floating: 0 30px 90px rgba(0,0,0,.42);
-  --ornament-opacity: .36;
 
   /* Update re-calibrated accent-rgba helpers for dark context */
   --accent-04:  rgba(73,185,169,.04);
@@ -1127,68 +1113,6 @@ select:focus-visible,
   outline:2px solid var(--accent);outline-offset:3px;border-radius:6px;
 }
 
-/* ─── 26. RIPPLE EFFECT ─────────────────────────────────── */
-.ripple{position:relative;overflow:hidden}
-.ripple-circle{
-  position:absolute;border-radius:50%;
-  background:var(--glass-h);
-  transform:scale(0);opacity:1;
-  animation:rippleAnim .65s ease-out forwards;
-  pointer-events:none;
-}
-@keyframes rippleAnim{to{transform:scale(2.8);opacity:0}}
-
-/* ─── 27. PAGE TRANSITION OVERLAY ───────────────────────── */
-.page-transition{
-  position:fixed;inset:0;background:var(--bg);z-index:6000;
-  opacity:0;visibility:hidden;pointer-events:none;
-  transition:opacity .42s ease;
-  display:flex;align-items:center;justify-content:center;
-}
-.page-transition.active{opacity:1;visibility:visible;pointer-events:all}
-.page-transition .pt-mark{font-size:2.2rem;animation:floatY 1.4s ease-in-out infinite}
-
-/* ─── 28. BACK TO TOP ───────────────────────────────────── */
-.back-top{
-  position:fixed;bottom:26px;left:26px;z-index:850;
-  width:46px;height:46px;border-radius:50%;
-  background:var(--glass);border:1px solid var(--glass-b);backdrop-filter:var(--blur);
-  color:var(--text);display:flex;align-items:center;justify-content:center;font-size:1rem;
-  opacity:0;visibility:hidden;transform:translateY(14px);
-  transition:opacity .3s var(--e),transform .3s var(--e),background .2s,color .2s;
-}
-.back-top.show{opacity:1;visibility:visible;transform:translateY(0)}
-.back-top:hover{background:var(--g1);color:var(--color-text-inverse);border-color:transparent}
-
-/* ─── 29. FLOATING ACTION BUTTON ────────────────────────── */
-.fab-wrap{position:fixed;bottom:26px;right:26px;z-index:850;display:flex;flex-direction:column;align-items:flex-end;gap:0}
-.fab-menu{display:flex;flex-direction:column;gap: var(--space-lg);align-items:flex-end;margin-bottom: var(--space-md);opacity:0;pointer-events:none;transform:translateY(12px) scale(.96);transition:all .28s var(--e)}
-.fab-menu.open{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
-.fab-item{
-  display:flex;align-items:center;gap:10px;
-  background:var(--bg3);border:1px solid var(--glass-b);
-  padding:6px 16px 6px 6px;border-radius:50px;box-shadow:var(--s2);
-  font-size:.82rem;font-weight:600;color:var(--text2);white-space:nowrap;
-  transition:transform .2s,border-color .2s,color .2s;
-}
-.fab-item:hover{transform:translateX(-4px);border-color:var(--accent-35);color:var(--accent)}
-.fab-item .fi-ico{
-  width:34px;height:34px;border-radius:50%;background:var(--glass);
-  display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:.92rem;flex-shrink:0;
-}
-.fab-main{
-  width:58px;height:58px;border-radius:50%;background:var(--g1);color:var(--color-text-inverse);
-  font-size:1.35rem;display:flex;align-items:center;justify-content:center;
-  box-shadow:var(--s2),0 0 0 0 var(--accent-40);
-  transition:transform .35s var(--e),box-shadow .35s;
-  animation:fabPulse 2.6s ease-in-out infinite;
-}
-.fab-main.open{transform:rotate(45deg)}
-@keyframes fabPulse{
-  0%,100%{box-shadow:var(--s2),0 0 0 0 var(--accent-35)}
-  50%{box-shadow:var(--s2),0 0 0 9px transparent}
-}
-
 /* ─── 30. SEARCH SUGGESTIONS ────────────────────────────── */
 .search-wrap-rel{position:relative;max-width:680px;margin:0 auto}
 .search-suggest{
@@ -1330,9 +1254,6 @@ select:focus-visible,
 }
 @media(max-width:600px){
   .budget-grid{grid-template-columns:1fr}
-  .fab-wrap{bottom:20px;right:20px}
-  .back-top{bottom:20px;left:20px;width:42px;height:42px}
-  .fab-main{width:52px;height:52px;font-size:1.2rem}
   .map-results-grid{grid-template-columns:1fr}
   .quote-box{padding:30px 22px}
   .quote-text{font-size:1rem}

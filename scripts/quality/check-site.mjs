@@ -41,10 +41,12 @@ const curationData = read("js/image-curation-data.js");
 const style = read("css/style.css");
 const components = read("css/components.css");
 const enhancementStyles = read("css/enhancements.css");
+const destinationDetailStyles = read("css/destination-detail.css");
 const destinationGenerator = read("scripts/build/generate-destination-pages.mjs");
 const memoryWorkflow = read(".github/workflows/update-ai-memory.yml");
 const curationWorkflow = read(".github/workflows/curate-all-provinces.yml");
 const checksWorkflow = read(".github/workflows/site-checks.yml");
+const codeqlWorkflow = read(".github/workflows/codeql.yml");
 const curationSync = read("scripts/curation/sync-image-curation.mjs");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
@@ -86,12 +88,19 @@ if (/\brun:[^\n]*\$\{\{\s*inputs\./.test(memoryWorkflow)
 
 for (const [label, workflow] of [
   ["site checks", checksWorkflow],
+  ["CodeQL", codeqlWorkflow],
   ["curation", curationWorkflow],
   ["memory", memoryWorkflow]
 ]) {
   if (/uses:\s+[\w-]+\/[\w-]+@v\d+/i.test(workflow)) {
     failures.push(`${label} workflow must pin third-party actions to full commit SHAs`);
   }
+}
+
+if (!codeqlWorkflow.includes("github/codeql-action/init@cdf488f595d80d6e07e03d4674febd5ab45fa938")
+    || !codeqlWorkflow.includes("github/codeql-action/analyze@cdf488f595d80d6e07e03d4674febd5ab45fa938")
+    || !codeqlWorkflow.includes("queries: security-extended")) {
+  failures.push("CodeQL must run the pinned security-extended JavaScript scan");
 }
 
 if (!app.includes("function escapeHTMLAttribute(value)")
@@ -204,8 +213,14 @@ if (/body\s*\{[^}]*background-size:[^;}]*\b\d+px\b/s.test(enhancementStyles)) {
 for (const token of ["--control-height", "--control-icon-size", "--control-radius"]) {
   if (!style.includes(token)) failures.push(`shared control token is missing: ${token}`);
 }
-for (const selector of [".theme-toggle-btn", ".card-fav", ".modal-close", ".social-btn"]) {
+for (const selector of [".theme-toggle-btn", ".card-fav", ".modal-close"]) {
   if (!enhancementStyles.includes(selector)) failures.push(`icon-control polish is missing: ${selector}`);
+}
+if (/SHOWCASE ART DIRECTION|SHOWCASE DETAIL POLISH/.test(`${enhancementStyles}\n${destinationDetailStyles}`)
+    || /\.route-header\s*\{[^}]*(?:border|box-shadow|background)\s*:/s.test(enhancementStyles)
+    || /#page-home\s*>\s*\.home-hero\s*\{[^}]*min-height\s*:/s.test(enhancementStyles)
+    || enhancements.includes("initNavigationPresentation")) {
+  failures.push("retired showcase overrides must not turn route headings or the Home Hero into oversized decorative surfaces");
 }
 const userFacingIconSources = `${index}\n${app}\n${read("scripts/build/generate-destination-pages.mjs")}`;
 if (/[\u{1F000}-\u{1FAFF}\u2764\u26F0\u26F1\u26E9]/u.test(userFacingIconSources)) {
@@ -251,11 +266,20 @@ if (!data.includes("window.TRIP_PLANNER_TEMPLATES =")) {
 if (!app.includes("parseTripPlannerRequest") || !app.includes("renderTripAssistant()")) {
   failures.push("local smart trip assistant is incomplete");
 }
+if (index.indexOf('id="trip-assistant-form"') > index.indexOf('id="trip-assistant-messages"')) {
+  failures.push("trip controls must remain before the live plan so mobile users can revise a route");
+}
 if (/api\.openai\.com|generativelanguage\.googleapis\.com|api\.anthropic\.com/.test(runtimeSources)) {
   failures.push("static trip assistant must not expose or call an external AI endpoint");
 }
 if (/\bPROMOTIONS\b|promotion-(?:stay|package)-grid|Sample price|ราคาตัวอย่าง/.test(runtimeSources)) {
   failures.push("retired sample promotion data or UI remains");
+}
+if (/footer-social|social-btn|footer\.placeholder|initPlaceholderLinks/.test(`${index}\n${translations}\n${read("js/core-stability.js")}\n${components}\n${enhancementStyles}`)) {
+  failures.push("placeholder social channels must not return; link to a real project destination instead");
+}
+if (/\.fab-wrap|\.fab-item|\.back-top\b|\.ripple(?:\W|$)|\.page-transition\b/.test(style)) {
+  failures.push("retired floating-action and transition CSS must not return to the base stylesheet");
 }
 if (!app.includes("renderBudgetCalculator()") || !index.includes('id="budget-total"')) {
   failures.push("trip budget calculator is incomplete");

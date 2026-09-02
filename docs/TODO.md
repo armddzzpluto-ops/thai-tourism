@@ -37,7 +37,10 @@
 - [x] Pin third-party executable assets with SRI and harden recent-search/workflow input boundaries
 - [x] Recompose the Home Hero around its landmark image with responsive icon-backed live metrics and premium search/category continuity
 - [x] Keep third-party gallery metadata inert, bound persisted UI collections and pin GitHub Actions to immutable revisions
-- [x] Complete the final showcase art-direction pass across the SPA and generated destination detail pages with responsive, reduced-motion and verified-footer safeguards
+- [x] Recover the compact route hierarchy after the oversized PR #41 showcase override and lock it with regression coverage
+- [x] Keep Smart Trip Assistant controls reachable above generated mobile plans and preserve bilingual duration parsing
+- [x] Replace placeholder social channels with the verified project repository link and remove their retired code/styles
+- [x] Add pinned CodeQL JavaScript/TypeScript scanning with structural configuration guards
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
@@ -52,4 +55,4 @@
 - [x] Playwright passes in Thai and English on all four viewport profiles
 - [x] No console errors, local HTTP errors, broken links or broken images
 - [x] Light/Dark, direct URL, refresh, back/forward, mouse, touch and keyboard verified
-- [x] `AI_MEMORY.md` and `CHANGELOG.md` updated
+- [x] `AI_MEMORY.md`, `TODO.md` and `CHANGELOG.md` updated
