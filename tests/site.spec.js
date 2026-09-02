@@ -228,7 +228,6 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
         theme: geometry(".theme-toggle-btn"),
         favorite: geometry(".card-fav"),
         close,
-        social: geometry(".social-btn"),
         hamburger: geometry(".hamburger"),
         isCompact: window.innerWidth <= 640
       };
@@ -241,7 +240,7 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
     expect(snapshot.navSearch.height).toBeGreaterThanOrEqual(44);
     expect(snapshot.navSearch.radius).toBe("12px");
 
-    for (const control of [snapshot.theme, snapshot.favorite, snapshot.close, snapshot.social]) {
+    for (const control of [snapshot.theme, snapshot.favorite, snapshot.close]) {
       expect(control.cssWidth).toBeGreaterThanOrEqual(44);
       expect(control.cssHeight).toBeGreaterThanOrEqual(44);
       expect(control.radius).toBe("12px");
@@ -255,14 +254,28 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
   }
 });
 
-test("showcase navigation state and footer source remain trustworthy", async ({ page }) => {
-  await page.evaluate(() => window.scrollTo({ top: 700, left: 0, behavior: "auto" }));
-  await expect(page.locator(".navbar")).toHaveClass(/scrolled/);
+test("route hierarchy stays compact and footer links to the verified project", async ({ page }) => {
+  const hierarchy = await page.evaluate(() => {
+    window.showPage("destinations", { updateHistory: false, scrollToTop: false });
+    const header = document.querySelector("#page-destinations .route-header");
+    const style = getComputedStyle(header);
+    return {
+      borderWidth: style.borderTopWidth,
+      boxShadow: style.boxShadow,
+      backgroundImage: style.backgroundImage
+    };
+  });
 
-  const socials = page.locator(".footer-social .social-btn");
-  await expect(socials).toHaveCount(1);
-  await expect(socials.first()).toHaveAttribute("href", "https://github.com/armddzzpluto-ops/thai-tourism");
-  await expect(socials.first()).toHaveAttribute("rel", /noopener/);
+  expect(hierarchy).toEqual({ borderWidth: "0px", boxShadow: "none", backgroundImage: "none" });
+
+  const source = page.locator(".footer-project-link");
+  await expect(source).toHaveCount(1);
+  await expect(source).toHaveAttribute("href", "https://github.com/armddzzpluto-ops/thai-tourism");
+  await expect(source).toHaveAttribute("rel", /noopener/);
+  await expect(page.locator(".footer-social, .social-btn, [data-placeholder-link]")).toHaveCount(0);
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(source).toContainText("View source on GitHub");
 });
 
 test("user-facing emoji are replaced by one stable icon system", async ({ page }) => {
@@ -480,8 +493,20 @@ test("Trip planner parser supports Thai and English duration phrases", async ({ 
 
 test("Smart Trip Assistant suggestion chips and generic province plans remain useful", async ({ page }) => {
   await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  expect(await page.evaluate(() => {
+    const form = document.querySelector("#trip-assistant-form");
+    const output = document.querySelector("#trip-assistant-messages");
+    return Boolean(form && output && (form.compareDocumentPosition(output) & Node.DOCUMENT_POSITION_FOLLOWING));
+  })).toBe(true);
   await page.locator(".trip-suggestion").first().click();
   await expect(page.locator(".trip-day-card")).toHaveCount(5);
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await page.locator(".trip-suggestion").first().click();
+  await expect(page.locator(".trip-day-card")).toHaveCount(5);
+  await expect(page.locator(".trip-plan-response h3")).toContainText("5-day Lower Northeast");
+
+  await page.evaluate(() => window.I18N.setLanguage("th"));
 
   await page.locator("#trip-assistant-input").fill("เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ");
   await page.locator("#trip-assistant-form button[type='submit']").click();

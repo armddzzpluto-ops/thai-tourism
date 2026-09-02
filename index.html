@@ -494,7 +494,6 @@ Discover The Land Of Smiles</span></div>
             <p>ไม่ใช้ API ภายนอกและไม่ส่งข้อความออกจากเว็บไซต์</p>
           </div>
         </div>
-        <div id="trip-assistant-messages" class="trip-assistant-messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
         <div class="trip-assistant-suggestions" aria-label="ตัวอย่างคำถาม">
           <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคอีสาน 5 วัน" data-prompt-en="Plan a 5-day Northeast trip"></button>
           <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ" data-prompt-en="Plan a 3-day nature trip in the North"></button>
@@ -504,11 +503,12 @@ Discover The Land Of Smiles</span></div>
           <label class="sr-only" for="trip-assistant-input">บอกทริปที่ต้องการ</label>
           <div class="trip-assistant-input-wrap">
             <i class="fas fa-message" aria-hidden="true"></i>
-            <input id="trip-assistant-input" name="tripRequest" type="text" maxlength="180" autocomplete="off" placeholder="เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ" required>
+            <input id="trip-assistant-input" name="tripRequest" type="text" maxlength="180" autocomplete="off" placeholder="เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ" aria-describedby="trip-assistant-disclosure" required>
           </div>
           <button class="btn-primary" type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>วางแผนให้ฉัน</span></button>
         </form>
-        <p class="trip-assistant-disclosure"><i class="fas fa-circle-info" aria-hidden="true"></i><span>เป็นระบบวางแผนจากกฎและข้อมูลในเว็บ ไม่ใช่ AI ภายนอก กรุณาตรวจสอบเวลาเปิด ค่าเข้าชม การเดินทาง และประกาศล่าสุดก่อนออกเดินทางจริง</span></p>
+        <p id="trip-assistant-disclosure" class="trip-assistant-disclosure"><i class="fas fa-circle-info" aria-hidden="true"></i><span>เป็นระบบวางแผนจากกฎและข้อมูลในเว็บ ไม่ใช่ AI ภายนอก กรุณาตรวจสอบเวลาเปิด ค่าเข้าชม การเดินทาง และประกาศล่าสุดก่อนออกเดินทางจริง</span></p>
+        <div id="trip-assistant-messages" class="trip-assistant-messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
       </section>
 
       <div class="budget-section-heading">
@@ -820,9 +820,9 @@ Discover The Land Of Smiles</span></div>
           Thailand<span>Travel</span>
         </a>
         <p>แหล่งรวมข้อมูลการท่องเที่ยวในประเทศไทย ครบครันทุกภูมิภาค จัดทำโดยนักศึกษา ปวส.</p>
-        <div class="footer-social">
-          <a href="https://github.com/armddzzpluto-ops/thai-tourism" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-        </div>
+        <a class="footer-project-link" href="https://github.com/armddzzpluto-ops/thai-tourism" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github" aria-hidden="true"></i><span>ดูซอร์สโค้ดบน GitHub</span>
+        </a>
       </div>
       <div class="footer-col">
         <h4>สถานที่ยอดนิยม</h4>

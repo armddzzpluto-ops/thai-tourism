@@ -80,7 +80,6 @@
   function initEnhancements() {
     installFallbacks();
     initScrollProgress();
-    initNavigationPresentation();
     initPageTransitions();
     initCounters();
     initSearchSuggestions();
@@ -125,26 +124,6 @@
       toggle.setAttribute("aria-pressed", next === "dark");
     }
     if (showMessage) notify(tr(next === "dark" ? "theme.darkEnabled" : "theme.lightEnabled", next === "dark" ? "เปิดโหมดมืดแล้ว" : "เปิดโหมดสว่างแล้ว"), "info");
-  }
-
-  function initNavigationPresentation() {
-    const navbar = document.querySelector(".navbar");
-    if (!navbar) return;
-
-    let frameRequested = false;
-    const update = () => {
-      frameRequested = false;
-      navbar.classList.toggle("scrolled", window.scrollY > 18);
-    };
-
-    const requestUpdate = () => {
-      if (frameRequested) return;
-      frameRequested = true;
-      requestAnimationFrame(update);
-    };
-
-    window.addEventListener("scroll", requestUpdate, { passive: true });
-    update();
   }
 
   function initScrollProgress() {

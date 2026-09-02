@@ -166,7 +166,7 @@
       "footer.regions": "ภูมิภาค",
       "footer.copyright": "© 2026 Thailand Travel Guide | โครงงานวิชาชีพ ปวส. สาขาเทคโนโลยีสารสนเทศ",
       "footer.made": "สร้างด้วยใจในประเทศไทย",
-      "footer.placeholder": "ลิงก์นี้ยังไม่เปิดใช้งาน",
+      "footer.source": "ดูซอร์สโค้ดบน GitHub",
 
       "place.phuket": "ภูเก็ต",
       "place.chiangMai": "เชียงใหม่",
@@ -307,7 +307,7 @@
       "footer.regions": "Regions",
       "footer.copyright": "© 2026 Thailand Travel Guide | Higher Vocational Certificate Project in Information Technology",
       "footer.made": "Made with care in Thailand",
-      "footer.placeholder": "This link is not available yet",
+      "footer.source": "View source on GitHub",
 
       "place.phuket": "Phuket",
       "place.chiangMai": "Chiang Mai",

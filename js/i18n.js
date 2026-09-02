@@ -44,6 +44,7 @@
     [".filter-btn[data-filter-value='ภาคตะวันออก']", "search.east"],
 
     [".footer-brand > p", "footer.description"],
+    [".footer-project-link span", "footer.source"],
     [".footer-grid > .footer-col:nth-child(2) h4", "footer.popular"],
     [".footer-grid > .footer-col:nth-child(3) h4", "footer.quick"],
     [".footer-grid > .footer-col:nth-child(4) h4", "footer.regions"],

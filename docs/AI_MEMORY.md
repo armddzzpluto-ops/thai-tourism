@@ -13,7 +13,7 @@
 - Shared destination source contains all 77 provinces
 - Gallery uses destination-owned image records; curated provinces require at least three verified gallery images
 - Light/Dark mode, history navigation, responsive layouts and keyboard interactions are active
-- Static GitHub Actions checks are active
+- Static GitHub Actions checks and pinned CodeQL JavaScript/TypeScript scanning are active
 - Playwright coverage is the required browser regression layer
 - All 77 destination cards have pre-rendered, shareable detail URLs with canonical and structured metadata
 - Working tree cleanup reduced tracked content from about 290 MB to 72 MB without removing runtime-referenced assets
@@ -42,10 +42,11 @@
 - Route-critical hero and planner controls now render immediately, theme changes apply atomically, and semantic classes replace the remaining SPA inline presentation styles
 - CDN-hosted Font Awesome, SweetAlert2 and Chart.js bytes are version-pinned with reviewed SRI; persisted recent searches and manual memory-workflow inputs are treated as untrusted text
 - The Home Hero uses a landmark-safe editorial split on wide screens, icon-backed live coverage metrics and a simpler responsive fallback without duplicating data claims
-- The final showcase art direction now adds a calmer premium depth hierarchy across navigation, route title plates, destination cards, Gallery, Trip Planner, Dashboard, About, Contact, footer and all generated destination-detail pages without changing tourism data contracts
-- Navigation gains a requestAnimationFrame-throttled scrolled surface, while the footer exposes only the verified GitHub repository instead of placeholder social destinations
 - Wikimedia gallery captions are normalized to bounded plain text, image paths are locally allowlisted and both SPA gallery renderers contextually escape metadata before `innerHTML`
 - Persisted search history and quote indexes are size/type bounded, and all GitHub Actions run from reviewed immutable commit SHAs
+- The PR #41 showcase override layer was removed after matched visual QA found oversized route-title surfaces and avoidable first-viewport whitespace; the established compact route hierarchy is guarded by static and browser checks
+- Smart Trip Assistant controls remain before generated results in document order, including on mobile, while the bilingual duration parser continues to recognize forms such as `5-day`
+- The footer exposes one verified bilingual GitHub source link instead of non-functional social placeholders
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -77,6 +78,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-02 · Visual hierarchy recovery and delivery hardening · Removed the oversized PR #41 showcase layer, retained its independent parser fix, restored mobile planning continuity, replaced placeholder social links, removed dead UI selectors and added pinned CodeQL scanning; 108 browser checks passed
 - 2026-09-01 · Bilingual trip duration parsing fix · Resolved English hyphenated day parsing (for example "5-day"), preserved Thai duration parsing, and added browser regressions for day parsing and budget boundary safety
 - 2026-08-22 · Cinematic Home composition · Reframed the Chiang Mai Hero, live metric panel and search/category transition for a richer but responsive first impression
 - 2026-08-22 · Gallery and workflow trust boundaries · Kept external image metadata inert, bounded persisted UI state and pinned GitHub Actions to immutable commits

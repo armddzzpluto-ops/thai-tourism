@@ -13,6 +13,9 @@
     <a href="https://github.com/armddzzpluto-ops/thai-tourism/actions/workflows/site-checks.yml">
       <img src="https://github.com/armddzzpluto-ops/thai-tourism/actions/workflows/site-checks.yml/badge.svg" alt="Site checks status">
     </a>
+    <a href="https://github.com/armddzzpluto-ops/thai-tourism/actions/workflows/codeql.yml">
+      <img src="https://github.com/armddzzpluto-ops/thai-tourism/actions/workflows/codeql.yml/badge.svg" alt="CodeQL status">
+    </a>
   </p>
 </div>
 
@@ -89,6 +92,7 @@ Thailand Travel Guide 2026 เป็นโครงงาน Portfolio ระด
 | Data visualization | Chart.js 4.4.1 |
 | Browser testing | Playwright |
 | Quality checks | Node.js scripts, GitHub Actions |
+| Security scanning | GitHub CodeQL for JavaScript/TypeScript |
 | Hosting | GitHub Pages |
 | Client storage | Web Storage API (`localStorage`) |
 
