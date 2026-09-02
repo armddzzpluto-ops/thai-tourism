@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-02 — Fix Home Hero metric wrapping
+- Reflowed each live metric card into a compact icon/value row with its label using the full card width, preventing Thai copy from collapsing into narrow vertical fragments.
+- Added browser geometry coverage at the supported Desktop and Notebook widths while preserving the intentionally hidden metric rail on Tablet and Mobile.
+
 ## 2026-09-02 — Recover visual hierarchy and harden delivery
 - Removed the merged PR #41 showcase override layer after matched before/after screenshots showed oversized route-title cards, excess mobile whitespace and Home content pushed below the first viewport.
 - Preserved the verified bilingual duration parser, shared data contracts and existing accessible component system instead of reverting unrelated production fixes.

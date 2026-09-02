@@ -47,6 +47,7 @@
 - The PR #41 showcase override layer was removed after matched visual QA found oversized route-title surfaces and avoidable first-viewport whitespace; the established compact route hierarchy is guarded by static and browser checks
 - Smart Trip Assistant controls remain before generated results in document order, including on mobile, while the bilingual duration parser continues to recognize forms such as `5-day`
 - The footer exposes one verified bilingual GitHub source link instead of non-functional social placeholders
+- Home Hero live metric labels span their full card width below the icon/value row so Thai and English remain readable on Desktop and Notebook
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -78,6 +79,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-02 · Home Hero metric wrapping fix · Reflowed the three live coverage cards so localized labels use the full card width and added responsive geometry regression coverage
 - 2026-09-02 · Visual hierarchy recovery and delivery hardening · Removed the oversized PR #41 showcase layer, retained its independent parser fix, restored mobile planning continuity, replaced placeholder social links, removed dead UI selectors and added pinned CodeQL scanning; 108 browser checks passed
 - 2026-09-01 · Bilingual trip duration parsing fix · Resolved English hyphenated day parsing (for example "5-day"), preserved Thai duration parsing, and added browser regressions for day parsing and budget boundary safety
 - 2026-08-22 · Cinematic Home composition · Reframed the Chiang Mai Hero, live metric panel and search/category transition for a richer but responsive first impression

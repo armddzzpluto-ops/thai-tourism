@@ -74,6 +74,17 @@ test("critical route content renders immediately and primary controls keep reada
     const heroActions = document.querySelector("#page-home .hero-btns");
     const heroContent = document.querySelector("#page-home .hero-content");
     const heroStats = document.querySelector("#page-home .hero-stats");
+    const heroMetricGeometry = [...heroStats.querySelectorAll(".hero-stat-card")].map(card => {
+      const cardRect = card.getBoundingClientRect();
+      const labelRect = card.querySelector(".stat-label").getBoundingClientRect();
+      const valueRect = card.querySelector(".stat-num").getBoundingClientRect();
+      return {
+        cardWidth: cardRect.width,
+        labelWidth: labelRect.width,
+        valueWidth: valueRect.width,
+        labelInsideCard: labelRect.left >= cardRect.left && labelRect.right <= cardRect.right
+      };
+    });
     const heroLayout = {
       iconCount: heroStats.querySelectorAll(".hero-stat-icon").length,
       statsDisplay: getComputedStyle(heroStats).display,
@@ -87,6 +98,7 @@ test("critical route content renders immediately and primary controls keep reada
       heroAnimation: [getComputedStyle(heroTitle).animationName, getComputedStyle(heroActions).animationName],
       heroStatIcons: heroLayout.iconCount,
       heroStatsDisplay: heroLayout.statsDisplay,
+      heroMetricGeometry,
       heroContentLeft: heroLayout.contentLeft,
       viewportWidth: heroLayout.viewportWidth,
       assistantOpacity: getComputedStyle(assistant).opacity,
@@ -101,6 +113,12 @@ test("critical route content renders immediately and primary controls keep reada
   if (snapshot.viewportWidth > 1100) {
     expect(snapshot.heroStatsDisplay).toBe("grid");
     expect(snapshot.heroContentLeft).toBeLessThan(snapshot.viewportWidth * 0.4);
+    expect(snapshot.heroMetricGeometry).toHaveLength(3);
+    for (const metric of snapshot.heroMetricGeometry) {
+      expect(metric.labelInsideCard).toBe(true);
+      expect(metric.valueWidth).toBeGreaterThan(20);
+      expect(metric.labelWidth).toBeGreaterThanOrEqual(metric.cardWidth * 0.75);
+    }
   } else {
     expect(snapshot.heroStatsDisplay).toBe("none");
   }
