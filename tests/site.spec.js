@@ -141,6 +141,28 @@ test("remote executable assets are pinned with subresource integrity", async ({ 
   expect(assets.every(asset => asset.crossorigin === "anonymous")).toBe(true);
 });
 
+test("primary navigation keeps the intentional six-item contract while dashboard stays non-primary", async ({ page }) => {
+  const expectedPages = ["home", "destinations", "promotions", "gallery", "about", "contact"];
+
+  const desktopPages = await page.locator(".nav-links a[data-page]").evaluateAll(links =>
+    links.map(link => link.getAttribute("data-page"))
+  );
+  const mobilePages = await page.locator(".mobile-menu a[data-page]").evaluateAll(links =>
+    links.map(link => link.getAttribute("data-page"))
+  );
+
+  expect(desktopPages).toEqual(expectedPages);
+  expect(mobilePages).toEqual(expectedPages);
+  expect(desktopPages).not.toContain("dashboard");
+  expect(mobilePages).not.toContain("dashboard");
+
+  await page.evaluate(() => window.showPage("about", { updateHistory: false, scrollToTop: false }));
+  const dashboardInternalLink = page.locator("#page-about .section-actions [onclick=\"showPage('dashboard')\"]");
+  await expect(dashboardInternalLink).toBeVisible();
+  await dashboardInternalLink.click();
+  await expect(page.locator("#page-dashboard")).toHaveClass(/active/);
+});
+
 test("ambient surfaces and detail icons stay consistent across themes", async ({ page }) => {
   const inspectTheme = theme => page.evaluate(selectedTheme => {
     window.applyTheme(selectedTheme);
