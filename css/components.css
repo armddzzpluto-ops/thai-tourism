@@ -4238,11 +4238,17 @@ html[data-theme="dark"] .navbar {
 #page-home > .home-hero .hero-stat-card {
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "icon value"
+    "label label";
   align-items: center;
+  align-content: center;
   min-width: 0;
   min-height: 76px;
   padding: 12px;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 8px;
   border-color: rgba(255, 255, 255, 0.13);
   border-radius: 14px;
   background: linear-gradient(145deg, rgba(18, 62, 53, 0.88), rgba(8, 38, 33, 0.76));
@@ -4250,6 +4256,7 @@ html[data-theme="dark"] .navbar {
 }
 
 #page-home > .home-hero .hero-stat-icon {
+  grid-area: icon;
   display: inline-grid;
   place-items: center;
   width: 36px;
@@ -4261,15 +4268,26 @@ html[data-theme="dark"] .navbar {
   font-size: 0.9rem;
 }
 
+#page-home > .home-hero .hero-stat-copy {
+  display: contents;
+}
+
 #page-home > .home-hero .hero-stat-card .stat-num {
+  grid-area: value;
+  min-width: 0;
   font-size: clamp(1.25rem, 1.5vw, 1.55rem);
   color: #efc67f;
 }
 
 #page-home > .home-hero .hero-stat-card .stat-label {
-  margin-top: 3px;
-  font-size: 0.67rem;
-  line-height: 1.35;
+  grid-area: label;
+  min-width: 0;
+  margin-top: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-wrap: balance;
+  word-break: normal;
+  overflow-wrap: normal;
   color: rgba(255, 255, 255, 0.68);
 }
 

@@ -41,6 +41,7 @@
 - [x] Keep Smart Trip Assistant controls reachable above generated mobile plans and preserve bilingual duration parsing
 - [x] Replace placeholder social channels with the verified project repository link and remove their retired code/styles
 - [x] Add pinned CodeQL JavaScript/TypeScript scanning with structural configuration guards
+- [x] Keep Home Hero live-metric labels readable in Thai and English across Desktop and Notebook widths
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
