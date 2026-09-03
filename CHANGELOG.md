@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-03 — Fix remaining Home search suggestion clipping
+- Found that the previously merged fix only addressed the outer search-bridge overflow; the suggestion box itself still capped its own height at `min(420px, 55vh)`, which is smaller than the worst-case combined recent (6) and popular (6) destination list, so the last chip row was sliced by the panel's own internal scroll clip and the following section showed through the cut.
+- Raised the suggestion panel's internal height cap to `min(680px, 80vh)` so every recent and popular destination chip renders fully within the panel across Desktop, Notebook, Tablet and Mobile, in both languages and themes.
+- Added a Playwright regression that opens the real dropdown, seeds a full recent-search list, and asserts every rendered chip is unclipped, uncovered by the following section and clickable.
+
 ## 2026-09-03 — Fix Home search suggestion clipping
 - Allowed the Home quick-search suggestion panel to extend beyond its decorative search bridge so popular and recent destinations remain fully visible instead of being cut off by the following section.
 - Added responsive Playwright geometry coverage for the expanded suggestion panel across all supported viewports.

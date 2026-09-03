@@ -181,6 +181,64 @@ test("home search suggestions remain visible beyond the search bridge", async ({
   expect(geometry.bottomEdgeVisible).toBe(true);
 });
 
+test("every popular and recent chip in the opened Home search dropdown stays visible and clickable", async ({ page }, testInfo) => {
+  const viewportByProject = {
+    desktop: { width: 1440, height: 900 },
+    notebook: { width: 1280, height: 800 },
+    tablet: { width: 768, height: 1024 },
+    mobile: { width: 390, height: 844 }
+  };
+  await page.setViewportSize(viewportByProject[testInfo.project.name] || viewportByProject.desktop);
+
+  await page.evaluate(() => {
+    localStorage.setItem("tt_recent_searches:th", JSON.stringify([
+      "เชียงใหม่",
+      "ภูเก็ต",
+      "กระบี่",
+      "กรุงเทพมหานคร",
+      "สุราษฎร์ธานี",
+      "อุบลราชธานี"
+    ]));
+  });
+  await page.reload();
+  await page.waitForFunction(() => window.I18N && window.showPage);
+  await page.evaluate(() => window.applyTheme("dark"));
+
+  await page.locator("#quick-search").scrollIntoViewIfNeeded();
+  await page.locator("#quick-search").focus();
+  const suggestions = page.locator("#quick-search-suggestions");
+  await expect(suggestions).toHaveClass(/is-open/);
+
+  const report = await suggestions.evaluate(box => {
+    const items = [...box.querySelectorAll(".suggestion-item, .suggestion-chip")];
+    return {
+      itemCount: items.length,
+      allWithinScrollableContent: box.scrollHeight <= box.clientHeight + 1,
+      // Items scrolled below the viewport are reached by page scroll, not clipped;
+      // only probe points that are actually on-screen for a real overlap check.
+      allUncovered: items.every(item => {
+        const rect = item.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+        const onScreen = x >= 0 && x <= window.innerWidth && y >= 0 && y <= window.innerHeight;
+        if (!onScreen) return true;
+        const probe = document.elementFromPoint(x, y);
+        return probe === item || item.contains(probe);
+      })
+    };
+  });
+
+  // Popular destinations chips (6) plus recent-search items (6) must both render.
+  expect(report.itemCount).toBe(12);
+  expect(report.allWithinScrollableContent).toBe(true);
+  expect(report.allUncovered).toBe(true);
+
+  const lastChip = page.locator("#quick-search-suggestions .suggestion-chip").last();
+  await expect(lastChip).toBeVisible();
+  await lastChip.click();
+  await expect(suggestions).not.toHaveClass(/is-open/);
+});
+
 test("primary navigation keeps the intentional six-item contract while dashboard stays non-primary", async ({ page }) => {
   const expectedPages = ["home", "destinations", "promotions", "gallery", "about", "contact"];
 

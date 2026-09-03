@@ -1067,8 +1067,11 @@ footer .footer-grid {
   display: none;
 }
 /* ─── Accessible search suggestions ───────────────────── */
+/* The cap must fit the worst-case combined "recent" (up to 6) and */
+/* "popular" (6) suggestion list across breakpoints and languages, or the */
+/* box clips its own last row and the following section shows through. */
 .suggestion-box {
-  max-height: min(420px, 55vh);
+  max-height: min(680px, 80vh);
   overflow-y: auto;
   overscroll-behavior: contain;
 }
