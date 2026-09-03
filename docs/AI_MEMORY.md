@@ -48,6 +48,7 @@
 - Smart Trip Assistant controls remain before generated results in document order, including on mobile, while the bilingual duration parser continues to recognize forms such as `5-day`
 - The footer exposes one verified bilingual GitHub source link instead of non-functional social placeholders
 - Home Hero live metric labels span their full card width below the icon/value row so Thai and English remain readable on Desktop and Notebook
+- Home quick-search suggestions may extend beyond the decorative search bridge and must never be clipped by the following content section
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -79,6 +80,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-03 · Home search suggestion clipping fix · Kept expanded recent/popular suggestions visible beyond the search bridge and added responsive geometry regression coverage
 - 2026-09-03 · Primary navigation contract regression guard · Added one focused Playwright test that locks the six-item desktop/mobile primary-nav order, blocks `dashboard` in primary menus and verifies Dashboard remains reachable through the existing internal non-primary link
 - 2026-09-02 · Home Hero metric wrapping fix · Reflowed the three live coverage cards so localized labels use the full card width and added responsive geometry regression coverage
 - 2026-09-02 · Visual hierarchy recovery and delivery hardening · Removed the oversized PR #41 showcase layer, retained its independent parser fix, restored mobile planning continuity, replaced placeholder social links, removed dead UI selectors and added pinned CodeQL scanning; 108 browser checks passed
