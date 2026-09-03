@@ -42,6 +42,7 @@
 - [x] Replace placeholder social channels with the verified project repository link and remove their retired code/styles
 - [x] Add pinned CodeQL JavaScript/TypeScript scanning with structural configuration guards
 - [x] Keep Home Hero live-metric labels readable in Thai and English across Desktop and Notebook widths
+- [x] Add a focused regression guard that locks the six-item desktop/mobile primary navigation contract while keeping Dashboard reachable via a non-primary internal link
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

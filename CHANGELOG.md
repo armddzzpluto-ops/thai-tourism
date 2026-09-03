@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-03 — Primary navigation contract regression guard
+- Added one focused Playwright regression that enforces the intentional six-item primary navigation order on desktop/mobile, rejects `dashboard` in both primary menus, and verifies Dashboard remains reachable from the existing internal non-primary link.
+
 ## 2026-09-02 — Fix Home Hero metric wrapping
 - Reflowed each live metric card into a compact icon/value row with its label using the full card width, preventing Thai copy from collapsing into narrow vertical fragments.
 - Added browser geometry coverage at the supported Desktop and Notebook widths while preserving the intentionally hidden metric rail on Tablet and Mobile.
