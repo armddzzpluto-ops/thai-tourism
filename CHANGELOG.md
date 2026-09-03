@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-03 — Fix Home search suggestion clipping
+- Allowed the Home quick-search suggestion panel to extend beyond its decorative search bridge so popular and recent destinations remain fully visible instead of being cut off by the following section.
+- Added responsive Playwright geometry coverage for the expanded suggestion panel across all supported viewports.
+
 ## 2026-09-03 — Primary navigation contract regression guard
 - Added one focused Playwright regression that enforces the intentional six-item primary navigation order on desktop/mobile, rejects `dashboard` in both primary menus, and verifies Dashboard remains reachable from the existing internal non-primary link.
 

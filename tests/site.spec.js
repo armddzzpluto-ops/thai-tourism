@@ -141,6 +141,46 @@ test("remote executable assets are pinned with subresource integrity", async ({ 
   expect(assets.every(asset => asset.crossorigin === "anonymous")).toBe(true);
 });
 
+test("home search suggestions remain visible beyond the search bridge", async ({ page }) => {
+  await page.evaluate(() => {
+    localStorage.setItem("tt_recent_searches:th", JSON.stringify([
+      "เชียงใหม่",
+      "ภูเก็ต",
+      "กระบี่",
+      "กรุงเทพมหานคร",
+      "สุราษฎร์ธานี",
+      "อุบลราชธานี"
+    ]));
+  });
+  await page.reload();
+  await page.waitForFunction(() => window.I18N && window.showPage);
+
+  await page.locator("#quick-search").focus();
+  const suggestions = page.locator("#quick-search-suggestions");
+  await expect(suggestions).toHaveClass(/is-open/);
+  await suggestions.scrollIntoViewIfNeeded();
+
+  const geometry = await suggestions.evaluate(box => {
+    const searchBridge = box.closest(".search-bar-inner");
+    const boxRect = box.getBoundingClientRect();
+    const bridgeRect = searchBridge.getBoundingClientRect();
+    const probe = document.elementFromPoint(
+      boxRect.left + boxRect.width / 2,
+      Math.min(window.innerHeight - 2, boxRect.bottom - 2)
+    );
+
+    return {
+      extendsBeyondBridge: boxRect.bottom > bridgeRect.bottom + 1,
+      bridgeOverflow: getComputedStyle(searchBridge).overflow,
+      bottomEdgeVisible: probe === box || box.contains(probe)
+    };
+  });
+
+  expect(geometry.extendsBeyondBridge).toBe(true);
+  expect(geometry.bridgeOverflow).toBe("visible");
+  expect(geometry.bottomEdgeVisible).toBe(true);
+});
+
 test("primary navigation keeps the intentional six-item contract while dashboard stays non-primary", async ({ page }) => {
   const expectedPages = ["home", "destinations", "promotions", "gallery", "about", "contact"];
 

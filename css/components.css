@@ -4298,7 +4298,7 @@ html[data-theme="dark"] .navbar {
 /* The search bridge and first content block continue the premium linework. */
 #page-home > .home-search-panel .search-bar-inner {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 #page-home > .home-search-panel .search-bar-inner::before {
