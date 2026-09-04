@@ -81,8 +81,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
-- 2026-09-04 · Corrected Home search suggestion clipping investigation · Reproduced the exact zero-history screenshot state at all four breakpoints, found it never approaches the original 420px cap, reverted the unneeded 680px cap increase, and replaced the regression with a zero-history visibility test plus a separate full-history internal-scroll test
-- 2026-09-03 · Remaining Home search suggestion clipping fix · Raised the suggestion panel's own internal height cap so the worst-case recent+popular chip list no longer self-clips its last row, and added a Playwright regression that opens the real dropdown and checks every chip for coverage
+- 2026-09-04 · Home search suggestion clipping investigation (no production fix required) · Reproduced the exact zero-history screenshot state at all four breakpoints, confirmed it already renders uncropped on latest `main`, reverted an unneeded interim `.suggestion-box` cap increase, and added a zero-history visibility regression plus a separate full-history internal-scroll regression
 - 2026-09-03 · Home search suggestion clipping fix · Kept expanded recent/popular suggestions visible beyond the search bridge and added responsive geometry regression coverage
 - 2026-09-03 · Primary navigation contract regression guard · Added one focused Playwright test that locks the six-item desktop/mobile primary-nav order, blocks `dashboard` in primary menus and verifies Dashboard remains reachable through the existing internal non-primary link
 - 2026-09-02 · Home Hero metric wrapping fix · Reflowed the three live coverage cards so localized labels use the full card width and added responsive geometry regression coverage
