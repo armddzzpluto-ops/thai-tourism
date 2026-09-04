@@ -1067,11 +1067,12 @@ footer .footer-grid {
   display: none;
 }
 /* ─── Accessible search suggestions ───────────────────── */
-/* The cap must fit the worst-case combined "recent" (up to 6) and */
-/* "popular" (6) suggestion list across breakpoints and languages, or the */
-/* box clips its own last row and the following section shows through. */
+/* Capped and internally scrollable: the reported zero-history "popular */
+/* destinations" state (~168px) never approaches this cap, so it renders */
+/* uncropped; the rare full recent+popular list scrolls inside its own */
+/* border/background instead of being clipped or fit at an oversized size. */
 .suggestion-box {
-  max-height: min(680px, 80vh);
+  max-height: min(420px, 55vh);
   overflow-y: auto;
   overscroll-behavior: contain;
 }

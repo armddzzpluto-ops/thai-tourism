@@ -49,7 +49,7 @@
 - The footer exposes one verified bilingual GitHub source link instead of non-functional social placeholders
 - Home Hero live metric labels span their full card width below the icon/value row so Thai and English remain readable on Desktop and Notebook
 - Home quick-search suggestions may extend beyond the decorative search bridge and must never be clipped by the following content section
-- The quick-search suggestion panel's own `max-height`/`overflow-y` scroll cap must stay large enough (min 680px/80vh) to fit the worst-case combined recent (6) + popular (6) chip list, or the panel self-clips its last row and the section behind shows through
+- The quick-search suggestion panel keeps its original `min(420px, 55vh)` internal scroll cap with `overflow-y: auto`; the reported zero-history "popular only" state never approaches it, and the rare worst-case combined recent (6) + popular (6) chip list scrolls inside the panel's own border/background instead of clipping
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -81,6 +81,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-04 · Corrected Home search suggestion clipping investigation · Reproduced the exact zero-history screenshot state at all four breakpoints, found it never approaches the original 420px cap, reverted the unneeded 680px cap increase, and replaced the regression with a zero-history visibility test plus a separate full-history internal-scroll test
 - 2026-09-03 · Remaining Home search suggestion clipping fix · Raised the suggestion panel's own internal height cap so the worst-case recent+popular chip list no longer self-clips its last row, and added a Playwright regression that opens the real dropdown and checks every chip for coverage
 - 2026-09-03 · Home search suggestion clipping fix · Kept expanded recent/popular suggestions visible beyond the search bridge and added responsive geometry regression coverage
 - 2026-09-03 · Primary navigation contract regression guard · Added one focused Playwright test that locks the six-item desktop/mobile primary-nav order, blocks `dashboard` in primary menus and verifies Dashboard remains reachable through the existing internal non-primary link

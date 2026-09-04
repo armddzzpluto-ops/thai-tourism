@@ -44,7 +44,7 @@
 - [x] Keep Home Hero live-metric labels readable in Thai and English across Desktop and Notebook widths
 - [x] Add a focused regression guard that locks the six-item desktop/mobile primary navigation contract while keeping Dashboard reachable via a non-primary internal link
 - [x] Keep Home quick-search recent/popular suggestions fully visible when they extend beyond the decorative search bridge
-- [x] Raise the quick-search suggestion panel's own internal height cap so the full recent+popular chip list never self-clips
+- [x] Verify the reported zero-history "popular only" clipping screenshot does not reproduce on latest `main`; keep the suggestion panel's original 420px/55vh scroll cap and let the rare full recent+popular list scroll internally instead of forcing an oversized panel
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

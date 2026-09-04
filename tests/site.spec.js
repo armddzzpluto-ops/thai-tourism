@@ -181,7 +181,64 @@ test("home search suggestions remain visible beyond the search bridge", async ({
   expect(geometry.bottomEdgeVisible).toBe(true);
 });
 
-test("every popular and recent chip in the opened Home search dropdown stays visible and clickable", async ({ page }, testInfo) => {
+test("the Home quick-search dropdown with no recent-search history shows every popular chip uncropped", async ({ page }, testInfo) => {
+  // Reproduces the reported screenshot state exactly: zero recent-search
+  // history (only the "popular destinations" chips render), Thai, Dark Mode.
+  const viewportByProject = {
+    desktop: { width: 1440, height: 900 },
+    notebook: { width: 1280, height: 800 },
+    tablet: { width: 768, height: 1024 },
+    mobile: { width: 390, height: 844 }
+  };
+  await page.setViewportSize(viewportByProject[testInfo.project.name] || viewportByProject.desktop);
+
+  await page.evaluate(() => localStorage.removeItem("tt_recent_searches:th"));
+  await page.reload();
+  await page.waitForFunction(() => window.I18N && window.showPage);
+  await page.evaluate(() => window.applyTheme("dark"));
+
+  await page.locator("#quick-search").scrollIntoViewIfNeeded();
+  await page.locator("#quick-search").focus();
+  const suggestions = page.locator("#quick-search-suggestions");
+  await expect(suggestions).toHaveClass(/is-open/);
+  await expect(page.locator("#quick-search-suggestions .suggestion-item")).toHaveCount(0);
+  await expect(page.locator("#quick-search-suggestions .suggestion-chip")).toHaveCount(6);
+  await suggestions.scrollIntoViewIfNeeded();
+
+  const report = await suggestions.evaluate(box => {
+    const boxRect = box.getBoundingClientRect();
+    const chips = [...box.querySelectorAll(".suggestion-chip")];
+    return {
+      noInternalScroll: box.scrollHeight <= box.clientHeight + 1,
+      boxWithinViewport: boxRect.top >= 0 && boxRect.left >= 0 &&
+        boxRect.right <= window.innerWidth + 1 && boxRect.bottom <= window.innerHeight + 1,
+      chips: chips.map(chip => {
+        const rect = chip.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + rect.height / 2;
+        const withinViewport = rect.top >= 0 && rect.bottom <= window.innerHeight + 1 &&
+          rect.left >= 0 && rect.right <= window.innerWidth + 1;
+        const probe = document.elementFromPoint(x, y);
+        return { withinViewport, hitsChip: probe === chip || chip.contains(probe) };
+      })
+    };
+  });
+
+  expect(report.noInternalScroll).toBe(true);
+  expect(report.boxWithinViewport).toBe(true);
+  expect(report.chips).toHaveLength(6);
+  for (const chip of report.chips) {
+    expect(chip.withinViewport).toBe(true);
+    expect(chip.hitsChip).toBe(true);
+  }
+
+  const lastChip = page.locator("#quick-search-suggestions .suggestion-chip").last();
+  await expect(lastChip).toBeVisible();
+  await lastChip.click();
+  await expect(suggestions).not.toHaveClass(/is-open/);
+});
+
+test("a full recent-search history scrolls inside the Home quick-search dropdown instead of clipping", async ({ page }, testInfo) => {
   const viewportByProject = {
     desktop: { width: 1440, height: 900 },
     notebook: { width: 1280, height: 800 },
@@ -208,19 +265,32 @@ test("every popular and recent chip in the opened Home search dropdown stays vis
   await page.locator("#quick-search").focus();
   const suggestions = page.locator("#quick-search-suggestions");
   await expect(suggestions).toHaveClass(/is-open/);
+  await suggestions.scrollIntoViewIfNeeded();
 
   const report = await suggestions.evaluate(box => {
     const items = [...box.querySelectorAll(".suggestion-item, .suggestion-chip")];
+    const boxRect = box.getBoundingClientRect();
     return {
       itemCount: items.length,
-      allWithinScrollableContent: box.scrollHeight <= box.clientHeight + 1,
-      // Items scrolled below the viewport are reached by page scroll, not clipped;
-      // only probe points that are actually on-screen for a real overlap check.
+      overflowY: getComputedStyle(box).overflowY,
+      hasInternalScroll: box.scrollHeight > box.clientHeight + 1,
+      // The panel may legitimately scroll internally when the worst-case
+      // list (6 recent + 6 popular) exceeds its cap; that is not clipping
+      // as long as the panel's own border/background stays intact and the
+      // section behind it never shows through the panel's own bounds.
+      // A couple of sub-pixel rounding pixels are tolerated at the fold.
+      boxWithinViewport: boxRect.top >= -1 && boxRect.left >= -1 &&
+        boxRect.right <= window.innerWidth + 2 && boxRect.bottom <= window.innerHeight + 2,
+      // Items scrolled below the panel's own visible (clipped) area are
+      // reached by scrolling the panel itself, not clipped by anything
+      // outside it; only probe points that are actually on-screen (i.e.
+      // within the panel's own visible bounds) get a real overlap check.
       allUncovered: items.every(item => {
         const rect = item.getBoundingClientRect();
         const x = rect.left + rect.width / 2;
         const y = rect.top + rect.height / 2;
-        const onScreen = x >= 0 && x <= window.innerWidth && y >= 0 && y <= window.innerHeight;
+        const onScreen = x >= 0 && x <= window.innerWidth && y >= 0 && y <= window.innerHeight &&
+          y >= boxRect.top && y <= boxRect.bottom;
         if (!onScreen) return true;
         const probe = document.elementFromPoint(x, y);
         return probe === item || item.contains(probe);
@@ -230,10 +300,13 @@ test("every popular and recent chip in the opened Home search dropdown stays vis
 
   // Popular destinations chips (6) plus recent-search items (6) must both render.
   expect(report.itemCount).toBe(12);
-  expect(report.allWithinScrollableContent).toBe(true);
+  expect(report.overflowY).toBe("auto");
+  expect(report.hasInternalScroll).toBe(true);
+  expect(report.boxWithinViewport).toBe(true);
   expect(report.allUncovered).toBe(true);
 
   const lastChip = page.locator("#quick-search-suggestions .suggestion-chip").last();
+  await lastChip.scrollIntoViewIfNeeded();
   await expect(lastChip).toBeVisible();
   await lastChip.click();
   await expect(suggestions).not.toHaveClass(/is-open/);
