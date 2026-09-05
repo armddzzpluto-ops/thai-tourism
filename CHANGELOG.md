@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-04 — Investigate Home search suggestion clipping (no production fix required)
+- Re-investigated after review: cleared `tt_recent_searches:th` and reproduced the exact reported state (zero recent-search history, Thai, Dark Mode, popular-chips-only panel) at Desktop, Notebook, Tablet and Mobile. That ~168px panel never approaches the `min(420px, 55vh)` suggestion-box cap and already renders fully uncropped on latest `main`; the clipping did not reproduce.
+- A prior commit on this branch had temporarily raised `.suggestion-box` `max-height` to `min(680px, 80vh)` to address a different, unreported scenario (worst-case 6 recent + 6 popular list); that change has been reverted back to the original `min(420px, 55vh)`, so the net production CSS diff is only a clarifying comment. The rare full recent+popular list still scrolls inside the panel's own border/background via the existing `overflow-y: auto` instead of clipping.
+- Added two Playwright regressions: one that reproduces the zero-history screenshot state and asserts the panel and every popular chip render fully on-screen and hit-test correctly with no internal scroll needed, and one that seeds the full 6+6 list and asserts the panel scrolls internally (not clipped/covered) and its last chip remains reachable and clickable via scroll.
+
 ## 2026-09-03 — Fix Home search suggestion clipping
 - Allowed the Home quick-search suggestion panel to extend beyond its decorative search bridge so popular and recent destinations remain fully visible instead of being cut off by the following section.
 - Added responsive Playwright geometry coverage for the expanded suggestion panel across all supported viewports.

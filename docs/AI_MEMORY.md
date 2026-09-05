@@ -49,6 +49,7 @@
 - The footer exposes one verified bilingual GitHub source link instead of non-functional social placeholders
 - Home Hero live metric labels span their full card width below the icon/value row so Thai and English remain readable on Desktop and Notebook
 - Home quick-search suggestions may extend beyond the decorative search bridge and must never be clipped by the following content section
+- The quick-search suggestion panel keeps its original `min(420px, 55vh)` internal scroll cap with `overflow-y: auto`; the reported zero-history "popular only" state never approaches it, and the rare worst-case combined recent (6) + popular (6) chip list scrolls inside the panel's own border/background instead of clipping
 
 ## Source-of-truth map
 - `AGENTS.md`: agent rules and definition of done
@@ -80,6 +81,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-04 · Home search suggestion clipping investigation (no production fix required) · Reproduced the exact zero-history screenshot state at all four breakpoints, confirmed it already renders uncropped on latest `main`, reverted an unneeded interim `.suggestion-box` cap increase, and added a zero-history visibility regression plus a separate full-history internal-scroll regression
 - 2026-09-03 · Home search suggestion clipping fix · Kept expanded recent/popular suggestions visible beyond the search bridge and added responsive geometry regression coverage
 - 2026-09-03 · Primary navigation contract regression guard · Added one focused Playwright test that locks the six-item desktop/mobile primary-nav order, blocks `dashboard` in primary menus and verifies Dashboard remains reachable through the existing internal non-primary link
 - 2026-09-02 · Home Hero metric wrapping fix · Reflowed the three live coverage cards so localized labels use the full card width and added responsive geometry regression coverage

@@ -1067,6 +1067,10 @@ footer .footer-grid {
   display: none;
 }
 /* ─── Accessible search suggestions ───────────────────── */
+/* Capped and internally scrollable: the reported zero-history "popular */
+/* destinations" state (~168px) never approaches this cap, so it renders */
+/* uncropped; the rare full recent+popular list scrolls inside its own */
+/* border/background instead of being clipped or fit at an oversized size. */
 .suggestion-box {
   max-height: min(420px, 55vh);
   overflow-y: auto;
