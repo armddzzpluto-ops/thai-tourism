@@ -3912,12 +3912,6 @@ html[data-theme="dark"] .navbar {
   flex-wrap: wrap;
 }
 
-.destination-results-status {
-  max-width: none;
-  margin: 0 0 18px;
-  text-align: left;
-}
-
 .no-results-title {
   color: var(--color-primary);
   font-size: 1.1rem;
