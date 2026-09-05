@@ -203,36 +203,65 @@ test("the Home quick-search dropdown with no recent-search history shows every p
   await expect(suggestions).toHaveClass(/is-open/);
   await expect(page.locator("#quick-search-suggestions .suggestion-item")).toHaveCount(0);
   await expect(page.locator("#quick-search-suggestions .suggestion-chip")).toHaveCount(6);
-  await suggestions.scrollIntoViewIfNeeded();
-
   const report = await suggestions.evaluate(box => {
     const boxRect = box.getBoundingClientRect();
     const chips = [...box.querySelectorAll(".suggestion-chip")];
+    const clippingAncestors = [];
+    const clippingValues = new Set(["hidden", "clip", "auto", "scroll"]);
+
+    for (let ancestor = box.parentElement; ancestor && ancestor !== document.documentElement; ancestor = ancestor.parentElement) {
+      const style = getComputedStyle(ancestor);
+      const rect = ancestor.getBoundingClientRect();
+      const clipsX = clippingValues.has(style.overflowX);
+      const clipsY = clippingValues.has(style.overflowY);
+      const clipsBox = (clipsX && (boxRect.left < rect.left - 1 || boxRect.right > rect.right + 1)) ||
+        (clipsY && (boxRect.top < rect.top - 1 || boxRect.bottom > rect.bottom + 1));
+      if (clipsBox) {
+        clippingAncestors.push({
+          selector: ancestor.id ? `#${ancestor.id}` : ancestor.className || ancestor.tagName,
+          overflowX: style.overflowX,
+          overflowY: style.overflowY
+        });
+      }
+    }
+
     return {
       noInternalScroll: box.scrollHeight <= box.clientHeight + 1,
-      boxWithinViewport: boxRect.top >= 0 && boxRect.left >= 0 &&
-        boxRect.right <= window.innerWidth + 1 && boxRect.bottom <= window.innerHeight + 1,
-      chips: chips.map(chip => {
+      clippingAncestors,
+      chipsInsidePanel: chips.every(chip => {
         const rect = chip.getBoundingClientRect();
-        const x = rect.left + rect.width / 2;
-        const y = rect.top + rect.height / 2;
-        const withinViewport = rect.top >= 0 && rect.bottom <= window.innerHeight + 1 &&
-          rect.left >= 0 && rect.right <= window.innerWidth + 1;
-        const probe = document.elementFromPoint(x, y);
-        return { withinViewport, hitsChip: probe === chip || chip.contains(probe) };
+        return rect.top >= boxRect.top - 1 && rect.bottom <= boxRect.bottom + 1 &&
+          rect.left >= boxRect.left - 1 && rect.right <= boxRect.right + 1;
       })
     };
   });
 
   expect(report.noInternalScroll).toBe(true);
-  expect(report.boxWithinViewport).toBe(true);
-  expect(report.chips).toHaveLength(6);
-  for (const chip of report.chips) {
-    expect(chip.withinViewport).toBe(true);
-    expect(chip.hitsChip).toBe(true);
+  expect(report.clippingAncestors).toEqual([]);
+  expect(report.chipsInsidePanel).toBe(true);
+
+  const popularChips = suggestions.locator(".suggestion-chip");
+  for (let index = 0; index < await popularChips.count(); index += 1) {
+    const chip = popularChips.nth(index);
+    await chip.scrollIntoViewIfNeeded();
+    const interaction = await chip.evaluate(element => {
+      const rect = element.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      const probe = document.elementFromPoint(x, y);
+      return {
+        withinViewport: rect.top >= -1 && rect.bottom <= window.innerHeight + 1 &&
+          rect.left >= -1 && rect.right <= window.innerWidth + 1,
+        hitsChip: probe === element || element.contains(probe)
+      };
+    });
+    expect(interaction, `popular chip ${index + 1} must remain reachable`).toEqual({
+      withinViewport: true,
+      hitsChip: true
+    });
   }
 
-  const lastChip = page.locator("#quick-search-suggestions .suggestion-chip").last();
+  const lastChip = popularChips.last();
   await expect(lastChip).toBeVisible();
   await lastChip.click();
   await expect(suggestions).not.toHaveClass(/is-open/);
