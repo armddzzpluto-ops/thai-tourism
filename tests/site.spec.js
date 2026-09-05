@@ -847,6 +847,9 @@ test("saved destinations can be filtered and stay bilingual", async ({ page }) =
   await page.waitForFunction(() => window.I18N && window.showPage);
   await page.evaluate(() => window.showPage("destinations", { updateHistory: false }));
 
+  await expect(page.locator("#destination-results-status")).toHaveCount(0);
+  await expect(page.locator("#dest-cards .dest-card")).toHaveCount(77);
+
   const filter = page.locator("#favorites-filter");
   await expect(filter).toContainText("รายการโปรด (2)");
   await filter.click();

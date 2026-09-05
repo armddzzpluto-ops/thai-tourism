@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-05 — Remove redundant destination result summary
+- Removed the “showing X of 77 destinations” line in Thai and English so the filter toolbar flows directly into destination cards, while preserving search, region filters, favorites and the 77-province dataset.
+
 ## 2026-09-04 — Investigate Home search suggestion clipping (no production fix required)
 - Re-investigated after review: cleared `tt_recent_searches:th` and reproduced the exact reported state (zero recent-search history, Thai, Dark Mode, popular-chips-only panel) at Desktop, Notebook, Tablet and Mobile. That ~168px panel never approaches the `min(420px, 55vh)` suggestion-box cap and already renders fully uncropped on latest `main`; the clipping did not reproduce.
 - A prior commit on this branch had temporarily raised `.suggestion-box` `max-height` to `min(680px, 80vh)` to address a different, unreported scenario (worst-case 6 recent + 6 popular list); that change has been reverted back to the original `min(420px, 55vh)`, so the net production CSS diff is only a clarifying comment. The rare full recent+popular list still scrolls inside the panel's own border/background via the existing `overflow-y: auto` instead of clipping.

@@ -140,10 +140,8 @@
       "favorite.removed": "นำออกจากรายการโปรดแล้ว",
       "favorite.filter": "รายการโปรด ({count})",
       "favorite.filterLabel": "แสดงเฉพาะรายการโปรด",
-      "favorite.status": "แสดงรายการโปรด {count} จาก {saved} รายการ",
       "favorite.emptyTitle": "ยังไม่มีสถานที่โปรดที่ตรงกับตัวกรอง",
       "favorite.emptyDescription": "กดรูปหัวใจบนการ์ดสถานที่เพื่อบันทึกไว้ดูภายหลัง",
-      "destination.status": "แสดง {count} จาก {total} สถานที่",
       "destination.emptyTitle": "ไม่พบสถานที่ที่ค้นหา",
       "destination.emptyDescription": "ลองค้นหาด้วยคำอื่น หรือเลือกภูมิภาคอื่น",
 
@@ -281,10 +279,8 @@
       "favorite.removed": "Removed from favorites",
       "favorite.filter": "Favorites ({count})",
       "favorite.filterLabel": "Show saved destinations only",
-      "favorite.status": "Showing {count} of {saved} saved destinations",
       "favorite.emptyTitle": "No saved destinations match these filters",
       "favorite.emptyDescription": "Use the heart button on a destination card to save it for later",
-      "destination.status": "Showing {count} of {total} destinations",
       "destination.emptyTitle": "No destinations found",
       "destination.emptyDescription": "Try another search or choose a different region",
 
