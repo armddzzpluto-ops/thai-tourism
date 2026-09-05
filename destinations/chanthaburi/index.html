@@ -19,53 +19,68 @@
 </head>
 <body class="destination-detail-page">
   <header class="detail-header">
-    <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
-    <nav aria-label="Destination navigation">
-      <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
-      <button id="detail-language" type="button" aria-label="Switch language">EN</button>
-    </nav>
+    <div class="detail-header-inner">
+      <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
+      <nav aria-label="Destination navigation">
+        <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
+        <button id="detail-theme" class="detail-icon-button" type="button" aria-label="ใช้ธีมสว่าง"><i class="fas fa-sun" aria-hidden="true"></i></button>
+        <button id="detail-language" type="button" aria-label="Switch language">EN</button>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="detail-hero">
       <img src="../../assets/images/provinces/chanthaburi/hero.webp" alt="Gem market street browsing" fetchpriority="high">
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-content">
-        <a href="../../#destinations" data-th="← กลับไปหน้าสถานที่" data-en="← Back to destinations">← กลับไปหน้าสถานที่</a>
-        <p data-th="จังหวัดจันทบุรี · ธรรมชาติ" data-en="Chanthaburi · nature">จังหวัดจันทบุรี · ธรรมชาติ</p>
+        <a class="detail-back" href="../../#destinations"><i class="fas fa-arrow-left" aria-hidden="true"></i><span data-th="กลับไปหน้าสถานที่" data-en="Back to destinations">กลับไปหน้าสถานที่</span></a>
+        <div class="detail-hero-meta" aria-label="Destination summary">
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i><span data-th="จังหวัดจันทบุรี" data-en="Chanthaburi">จังหวัดจันทบุรี</span></span>
+          <span><i class="fas fa-compass" aria-hidden="true"></i><span data-th="ธรรมชาติ" data-en="nature">ธรรมชาติ</span></span>
+        </div>
         <h1 data-th="จันทบุรี" data-en="Chanthaburi">จันทบุรี</h1>
       </div>
     </section>
-    <div class="detail-layout">
-      <article class="detail-content">
+    <div class="detail-page-shell">
+      <section class="detail-summary" aria-label="Province overview">
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-map-location-dot"></i></span><div><span data-th="จังหวัด" data-en="Province">จังหวัด</span><strong data-th="จันทบุรี" data-en="Chanthaburi">จันทบุรี</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-earth-asia"></i></span><div><span data-th="ภูมิภาค" data-en="Region">ภูมิภาค</span><strong data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-clock"></i></span><div><span data-th="สถานะข้อมูล" data-en="Data status">สถานะข้อมูล</span><strong data-th="รอตรวจสอบ" data-en="Pending verification">รอตรวจสอบ</strong></div></div>
+      </section>
+      <div class="detail-layout">
+        <article class="detail-content">
         <section class="detail-panel">
-          <h2 data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</h2>
+          <h2><i class="fas fa-book-open" aria-hidden="true"></i><span data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</span></h2>
           <p data-th="จันทบุรี เป็นจุดหมายด้านธรรมชาติในจังหวัดจันทบุรี เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง" data-en="The gem-trading capital of Southeast Asia; Phliu and Krathing waterfalls cut through pristine coastal jungle.">จันทบุรี เป็นจุดหมายด้านธรรมชาติในจังหวัดจันทบุรี เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง</p>
         </section>
         
         <section class="detail-panel" aria-labelledby="verified-heading">
-          <h2 id="verified-heading" data-th="สถานะข้อมูลสถานที่" data-en="Attraction data status">สถานะข้อมูลสถานที่</h2>
+          <h2 id="verified-heading"><i class="fas fa-clock" aria-hidden="true"></i><span data-th="สถานะข้อมูลสถานที่" data-en="Attraction data status">สถานะข้อมูลสถานที่</span></h2>
           <p data-th="ข้อมูลสถานที่เฉพาะ เวลาเปิด–ปิด และค่าเข้าชมกำลังรอตรวจสอบจากแหล่งทางการ จึงยังไม่แสดงข้อมูลคาดเดา" data-en="Specific attraction, opening-hour and admission data are awaiting verification from an official source, so no estimated details are shown.">ข้อมูลสถานที่เฉพาะ เวลาเปิด–ปิด และค่าเข้าชมกำลังรอตรวจสอบจากแหล่งทางการ จึงยังไม่แสดงข้อมูลคาดเดา</p>
           <div class="detail-actions"><a href="https://www.google.com/maps/search/?api=1&amp;query=Gem%20market%20street%20browsing%2C%20Chanthaburi%2C%20Thailand" target="_blank" rel="noopener noreferrer" data-th="ค้นหาจังหวัดบน Google Maps" data-en="Find the province on Google Maps">ค้นหาจังหวัดบน Google Maps</a></div>
         </section>
-        <section class="detail-panel" aria-labelledby="gallery-heading">
-          <h2 id="gallery-heading" data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</h2>
-          <div class="detail-gallery"><figure><img src="../../assets/images/provinces/chanthaburi/hero.webp" alt="Gem market street browsing" loading="eager" decoding="async"><figcaption>Gem market street browsing</figcaption></figure>
-          <figure><img src="../../assets/images/provinces/chanthaburi/gallery-1.webp" alt="Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)" loading="lazy" decoding="async"><figcaption>Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together to clean a cement mixer used in the construction of a classroom during exercise Cobra Gold 2011 at Baan Pong Wua School, Rayong Province, Kingdom of Thailand, Feb.  3, 2011. Humanitarian and Civic Assistance programs conducted by Thailand and the United States Armed Forces demonstrate a commitment to humanitarian interests and improving the quality of life and general welfare of residents in the area. (U.S. Marine Corps photo by Lance Cpl. Alejandro Pena/Released)</figcaption></figure>
+        </article>
+        <aside class="detail-sidebar">
+          <div class="detail-panel detail-sidebar-card">
+            <span class="detail-sidebar-kicker" data-th="วางแผนให้ง่ายขึ้น" data-en="Plan with confidence">วางแผนให้ง่ายขึ้น</span>
+            <h2><i class="fas fa-map" aria-hidden="true"></i><span data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</span></h2>
+            <dl class="detail-facts">
+              <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="จันทบุรี" data-en="Chanthaburi">จันทบุรี</dd></div>
+              <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</dd></div>
+            </dl>
+            <a class="detail-sidebar-action" href="https://www.google.com/maps/search/?api=1&amp;query=Gem%20market%20street%20browsing%2C%20Chanthaburi%2C%20Thailand" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-arrow" aria-hidden="true"></i><span data-th="เปิดจังหวัดใน Google Maps" data-en="Open province in Google Maps">เปิดจังหวัดใน Google Maps</span></a>
+          </div>
+        </aside>
+      </div>
+      <section class="detail-panel detail-gallery-panel" aria-labelledby="gallery-heading">
+        <div class="detail-section-heading"><div><span class="detail-section-kicker" data-th="มุมมองของจุดหมาย" data-en="Destination gallery">มุมมองของจุดหมาย</span><h2 id="gallery-heading"><i class="fas fa-images" aria-hidden="true"></i><span data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</span></h2></div><span class="detail-image-count">6</span></div>
+        <div class="detail-gallery"><figure><img src="../../assets/images/provinces/chanthaburi/hero.webp" alt="Gem market street browsing" loading="eager" decoding="async"><figcaption>Gem market street browsing</figcaption></figure>
+          <figure><img src="../../assets/images/provinces/chanthaburi/gallery-1.webp" alt="Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together" loading="lazy" decoding="async"><figcaption>Royal Thai Marine Corps Petty Officer 1st Class Apichat Roonlertpol, left, engineer, Combat Engineer Battalion, and U.S. Marine Corps Lance Cpl. Gabriel F. Salazar, combat engineer, Marine Wing Support Squadron 172, Marine Wing Support Group 17, 1st Marine Air Wing, work together</figcaption></figure>
           <figure><img src="../../assets/images/provinces/chanthaburi/gallery-2.webp" alt="Ban Hin Lad the road" loading="lazy" decoding="async"><figcaption>Ban Hin Lad the road</figcaption></figure>
-          <figure><img src="../../assets/images/provinces/chanthaburi/gallery-3.webp" alt="U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne" loading="lazy" decoding="async"><figcaption>U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wing Support Squadron 172. During the ceremony four columns were blessed, symbolizing good fortune and protection for the workers and students. U.S. Marine Corps photo by Lance Cpl. Carl Payne</figcaption></figure>
+          <figure><img src="../../assets/images/provinces/chanthaburi/gallery-3.webp" alt="U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wi" loading="lazy" decoding="async"><figcaption>U.S., Royal Thai Marines, and members of the community participate in the opening ceremony for the construction of a multipurpose building during Cobra Gold 2012 at the Ban Khunsong School in Chanthaburi province, Thailand, Jan. 19, 2012. The Marines are assigned to the Marine Wi</figcaption></figure>
           <figure><img src="../../assets/images/provinces/chanthaburi/gallery-4.webp" alt="เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ" loading="lazy" decoding="async"><figcaption>เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ</figcaption></figure>
           <figure><img src="../../assets/images/provinces/chanthaburi/gallery-5.webp" alt="เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ" loading="lazy" decoding="async"><figcaption>เขื่อนคิรีธาร บริเวณทิศใต้ใกล้คันดินกั้นน้ำ</figcaption></figure></div>
-        </section>
-      </article>
-      <aside class="detail-sidebar">
-        <div class="detail-panel">
-          <h2 data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</h2>
-          <dl class="detail-facts">
-            <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="จันทบุรี" data-en="Chanthaburi">จันทบุรี</dd></div>
-            <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</dd></div>
-          </dl>
-        </div>
-      </aside>
+      </section>
     </div>
   </main>
   <footer><p>© 2026 Thailand Travel Guide · <a href="https://github.com/armddzzpluto-ops/thai-tourism">GitHub</a></p></footer>
