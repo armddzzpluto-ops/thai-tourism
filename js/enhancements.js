@@ -675,6 +675,10 @@
     document.addEventListener("click", event => {
       if (fab && !fab.contains(event.target)) closeFab();
     });
+    document.getElementById("fab-theme")?.addEventListener("click", () => {
+      closeFab();
+      document.getElementById("theme-toggle")?.click();
+    });
     document.getElementById("fab-search")?.addEventListener("click", () => {
       closeFab();
       window.showPage?.("destinations");

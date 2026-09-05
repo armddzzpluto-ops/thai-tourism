@@ -582,7 +582,13 @@ html[data-theme="light"] .theme-toggle-btn {
   box-shadow: var(--shadow-sm);
 }
 
-.fab-menu-wrap.open .fab-main-btn { transform: rotate(45deg); }
+.fab-main-btn > i {
+  transition: transform var(--transition);
+}
+
+.fab-menu-wrap.open .fab-main-btn > i {
+  transform: rotate(45deg);
+}
 
 .fab-menu-panel {
   position: absolute;

@@ -46,6 +46,7 @@
 - [x] Keep Home quick-search recent/popular suggestions fully visible when they extend beyond the decorative search bridge
 - [x] Verify the reported zero-history "popular only" clipping screenshot does not reproduce on latest `main`; keep the suggestion panel's original 420px/55vh scroll cap and let the rare full recent+popular list scroll internally instead of forcing an oversized panel
 - [x] Remove the redundant bilingual “showing X of 77” destination summary while preserving search and filter behavior
+- [x] Repair duplicated floating-action labels, restore Theme switching and keep the main action geometry stable when open
 
 ## Next phase
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches

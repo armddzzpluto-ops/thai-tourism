@@ -494,6 +494,41 @@ test("buttons and icon controls use one stable geometry system", async ({ page }
   }
 });
 
+test("floating actions keep one localized label and the theme action works", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+
+  const wrap = page.locator("#fab-menu-wrap");
+  const main = page.locator("#fab-main");
+  const panel = page.locator("#fab-menu-panel");
+  const themeAction = page.locator("#fab-theme");
+  const html = page.locator("html");
+
+  await main.click();
+  await expect(wrap).toHaveClass(/open/);
+  await expect(main).toHaveAttribute("aria-expanded", "true");
+  await expect(panel).toBeVisible();
+
+  expect(await panel.locator("button").allTextContents()).toEqual(["สุ่ม", "คำคม", "ธีม", "ค้นหา"]);
+  await expect(panel.locator("button > [data-i18n-label]")).toHaveCount(4);
+
+  const openTransforms = await page.evaluate(() => ({
+    button: getComputedStyle(document.getElementById("fab-main")).transform,
+    icon: getComputedStyle(document.querySelector("#fab-main > i")).transform
+  }));
+  expect(openTransforms.button).toBe("none");
+  expect(openTransforms.icon).not.toBe("none");
+
+  const initialTheme = await html.getAttribute("data-theme");
+  await themeAction.click();
+  await expect(html).toHaveAttribute("data-theme", initialTheme === "dark" ? "light" : "dark");
+  await expect(wrap).not.toHaveClass(/open/);
+  await expect(main).toHaveAttribute("aria-expanded", "false");
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await main.click();
+  expect(await panel.locator("button").allTextContents()).toEqual(["Random", "Quote", "Theme", "Search"]);
+});
+
 test("route hierarchy stays compact and footer links to the verified project", async ({ page }) => {
   const hierarchy = await page.evaluate(() => {
     window.showPage("destinations", { updateHistory: false, scrollToTop: false });
