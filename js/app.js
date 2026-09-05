@@ -802,15 +802,8 @@ function renderDestCards(filter = '', search = '') {
     return matchRegion && matchSearch && matchFavorite;
   });
 
-  const status = document.getElementById('destination-results-status');
   const noResults = document.getElementById('no-results');
   const tr = (key, variables, fallback) => window.I18N?.t(key, variables) || fallback;
-
-  if (status) {
-    status.textContent = showFavoritesOnly
-      ? tr('favorite.status', { count: filtered.length, saved: favorites.length }, `แสดงรายการโปรด ${filtered.length} จาก ${favorites.length} รายการ`)
-      : tr('destination.status', { count: filtered.length, total: destinations.length }, `แสดง ${filtered.length} จาก ${destinations.length} สถานที่`);
-  }
 
   syncFavoritesFilterControl();
 
