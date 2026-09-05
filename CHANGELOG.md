@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-05 — Repair and polish the floating action menu
+- Removed duplicate Thai/English labels from every floating action, connected the Theme action to the canonical theme toggle, and kept the main control stable while rotating only its plus icon into a close icon.
+- Added responsive Playwright coverage for localized labels, menu state and theme switching.
+
 ## 2026-09-05 — Remove redundant destination result summary
 - Removed the “showing X of 77 destinations” line in Thai and English so the filter toolbar flows directly into destination cards, while preserving search, region filters, favorites and the 77-province dataset.
 
