@@ -19,51 +19,66 @@
 </head>
 <body class="destination-detail-page">
   <header class="detail-header">
-    <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
-    <nav aria-label="Destination navigation">
-      <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
-      <button id="detail-language" type="button" aria-label="Switch language">EN</button>
-    </nav>
+    <div class="detail-header-inner">
+      <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
+      <nav aria-label="Destination navigation">
+        <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
+        <button id="detail-theme" class="detail-icon-button" type="button" aria-label="ใช้ธีมสว่าง"><i class="fas fa-sun" aria-hidden="true"></i></button>
+        <button id="detail-language" type="button" aria-label="Switch language">EN</button>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="detail-hero">
       <img src="../../assets/images/provinces/chonburi/hero.webp" alt="Jomtien Beach watersports" fetchpriority="high">
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-content">
-        <a href="../../#destinations" data-th="← กลับไปหน้าสถานที่" data-en="← Back to destinations">← กลับไปหน้าสถานที่</a>
-        <p data-th="จังหวัดชลบุรี · ทะเล" data-en="Chonburi · beach">จังหวัดชลบุรี · ทะเล</p>
+        <a class="detail-back" href="../../#destinations"><i class="fas fa-arrow-left" aria-hidden="true"></i><span data-th="กลับไปหน้าสถานที่" data-en="Back to destinations">กลับไปหน้าสถานที่</span></a>
+        <div class="detail-hero-meta" aria-label="Destination summary">
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i><span data-th="จังหวัดชลบุรี" data-en="Chonburi">จังหวัดชลบุรี</span></span>
+          <span><i class="fas fa-compass" aria-hidden="true"></i><span data-th="ทะเล" data-en="beach">ทะเล</span></span>
+        </div>
         <h1 data-th="พัทยา" data-en="Pattaya">พัทยา</h1>
       </div>
     </section>
-    <div class="detail-layout">
-      <article class="detail-content">
+    <div class="detail-page-shell">
+      <section class="detail-summary" aria-label="Province overview">
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-map-location-dot"></i></span><div><span data-th="จังหวัด" data-en="Province">จังหวัด</span><strong data-th="ชลบุรี" data-en="Chonburi">ชลบุรี</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-earth-asia"></i></span><div><span data-th="ภูมิภาค" data-en="Region">ภูมิภาค</span><strong data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-clock"></i></span><div><span data-th="สถานะข้อมูล" data-en="Data status">สถานะข้อมูล</span><strong data-th="รอตรวจสอบ" data-en="Pending verification">รอตรวจสอบ</strong></div></div>
+      </section>
+      <div class="detail-layout">
+        <article class="detail-content">
         <section class="detail-panel">
-          <h2 data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</h2>
+          <h2><i class="fas fa-book-open" aria-hidden="true"></i><span data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</span></h2>
           <p data-th="พัทยา เป็นจุดหมายด้านทะเลในจังหวัดชลบุรี เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง" data-en="The closest beach escape from Bangkok, packed with water sports, malls and family attractions.">พัทยา เป็นจุดหมายด้านทะเลในจังหวัดชลบุรี เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง</p>
         </section>
         
         <section class="detail-panel" aria-labelledby="verified-heading">
-          <h2 id="verified-heading" data-th="สถานะข้อมูลสถานที่" data-en="Attraction data status">สถานะข้อมูลสถานที่</h2>
+          <h2 id="verified-heading"><i class="fas fa-clock" aria-hidden="true"></i><span data-th="สถานะข้อมูลสถานที่" data-en="Attraction data status">สถานะข้อมูลสถานที่</span></h2>
           <p data-th="ข้อมูลสถานที่เฉพาะ เวลาเปิด–ปิด และค่าเข้าชมกำลังรอตรวจสอบจากแหล่งทางการ จึงยังไม่แสดงข้อมูลคาดเดา" data-en="Specific attraction, opening-hour and admission data are awaiting verification from an official source, so no estimated details are shown.">ข้อมูลสถานที่เฉพาะ เวลาเปิด–ปิด และค่าเข้าชมกำลังรอตรวจสอบจากแหล่งทางการ จึงยังไม่แสดงข้อมูลคาดเดา</p>
           <div class="detail-actions"><a href="https://www.google.com/maps/search/?api=1&amp;query=Jomtien%20Beach%20watersports%2C%20Chonburi%2C%20Thailand" target="_blank" rel="noopener noreferrer" data-th="ค้นหาจังหวัดบน Google Maps" data-en="Find the province on Google Maps">ค้นหาจังหวัดบน Google Maps</a></div>
         </section>
-        <section class="detail-panel" aria-labelledby="gallery-heading">
-          <h2 id="gallery-heading" data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</h2>
-          <div class="detail-gallery"><figure><img src="../../assets/images/provinces/chonburi/hero.webp" alt="Jomtien Beach watersports" loading="eager" decoding="async"><figcaption>Jomtien Beach watersports</figcaption></figure>
-          <figure><img src="../../assets/images/provinces/chonburi/gallery-1.webp" alt="A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)" loading="lazy" decoding="async"><figcaption>A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011.  Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies.  DoD photo by Pfc. Nathaniel J. Henry, U.S. Marine Corps.  (Released)</figcaption></figure>
+        </article>
+        <aside class="detail-sidebar">
+          <div class="detail-panel detail-sidebar-card">
+            <span class="detail-sidebar-kicker" data-th="วางแผนให้ง่ายขึ้น" data-en="Plan with confidence">วางแผนให้ง่ายขึ้น</span>
+            <h2><i class="fas fa-map" aria-hidden="true"></i><span data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</span></h2>
+            <dl class="detail-facts">
+              <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="ชลบุรี" data-en="Chonburi">ชลบุรี</dd></div>
+              <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</dd></div>
+            </dl>
+            <a class="detail-sidebar-action" href="https://www.google.com/maps/search/?api=1&amp;query=Jomtien%20Beach%20watersports%2C%20Chonburi%2C%20Thailand" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-arrow" aria-hidden="true"></i><span data-th="เปิดจังหวัดใน Google Maps" data-en="Open province in Google Maps">เปิดจังหวัดใน Google Maps</span></a>
+          </div>
+        </aside>
+      </div>
+      <section class="detail-panel detail-gallery-panel" aria-labelledby="gallery-heading">
+        <div class="detail-section-heading"><div><span class="detail-section-kicker" data-th="มุมมองของจุดหมาย" data-en="Destination gallery">มุมมองของจุดหมาย</span><h2 id="gallery-heading"><i class="fas fa-images" aria-hidden="true"></i><span data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</span></h2></div><span class="detail-image-count">4</span></div>
+        <div class="detail-gallery"><figure><img src="../../assets/images/provinces/chonburi/hero.webp" alt="Jomtien Beach watersports" loading="eager" decoding="async"><figcaption>Jomtien Beach watersports</figcaption></figure>
+          <figure><img src="../../assets/images/provinces/chonburi/gallery-1.webp" alt="A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011. Cobra Gold is a regularly scheduled joint/combined exercise d" loading="lazy" decoding="async"><figcaption>A U.S. Marine Corps infantryman with the 31st Marine Expeditionary Unit, 3rd Marine Expeditionary Brigade (Forward) participates in a mock assault during exercise Cobra Gold 2011 in Hat Yao, Thailand, on Feb. 11, 2011. Cobra Gold is a regularly scheduled joint/combined exercise d</figcaption></figure>
           <figure><img src="../../assets/images/provinces/chonburi/gallery-2.webp" alt="สวนนงนุช" loading="lazy" decoding="async"><figcaption>สวนนงนุช</figcaption></figure>
           <figure><img src="../../assets/images/provinces/chonburi/gallery-3.webp" alt="Amata City Chonburi" loading="lazy" decoding="async"><figcaption>Amata City Chonburi</figcaption></figure></div>
-        </section>
-      </article>
-      <aside class="detail-sidebar">
-        <div class="detail-panel">
-          <h2 data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</h2>
-          <dl class="detail-facts">
-            <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="ชลบุรี" data-en="Chonburi">ชลบุรี</dd></div>
-            <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคตะวันออก" data-en="east">ภาคตะวันออก</dd></div>
-          </dl>
-        </div>
-      </aside>
+      </section>
     </div>
   </main>
   <footer><p>© 2026 Thailand Travel Guide · <a href="https://github.com/armddzzpluto-ops/thai-tourism">GitHub</a></p></footer>

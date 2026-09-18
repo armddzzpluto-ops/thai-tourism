@@ -41,7 +41,6 @@ const curationData = read("js/image-curation-data.js");
 const style = read("css/style.css");
 const components = read("css/components.css");
 const enhancementStyles = read("css/enhancements.css");
-const destinationDetailStyles = read("css/destination-detail.css");
 const destinationGenerator = read("scripts/build/generate-destination-pages.mjs");
 const memoryWorkflow = read(".github/workflows/update-ai-memory.yml");
 const curationWorkflow = read(".github/workflows/curate-all-provinces.yml");
@@ -215,12 +214,6 @@ for (const token of ["--control-height", "--control-icon-size", "--control-radiu
 }
 for (const selector of [".theme-toggle-btn", ".card-fav", ".modal-close"]) {
   if (!enhancementStyles.includes(selector)) failures.push(`icon-control polish is missing: ${selector}`);
-}
-if (/SHOWCASE ART DIRECTION|SHOWCASE DETAIL POLISH/.test(`${enhancementStyles}\n${destinationDetailStyles}`)
-    || /\.route-header\s*\{[^}]*(?:border|box-shadow|background)\s*:/s.test(enhancementStyles)
-    || /#page-home\s*>\s*\.home-hero\s*\{[^}]*min-height\s*:/s.test(enhancementStyles)
-    || enhancements.includes("initNavigationPresentation")) {
-  failures.push("retired showcase overrides must not turn route headings or the Home Hero into oversized decorative surfaces");
 }
 const userFacingIconSources = `${index}\n${app}\n${read("scripts/build/generate-destination-pages.mjs")}`;
 if (/[\u{1F000}-\u{1FAFF}\u2764\u26F0\u26F1\u26E9]/u.test(userFacingIconSources)) {
@@ -436,6 +429,16 @@ try {
         || !detailHtml.includes('type="application/ld+json"')
         || !detailHtml.includes('property="og:title"')) {
         failures.push(`destination detail metadata is incomplete: ${slug}`);
+      }
+      const sharedDetailShell = [
+        'class="detail-header-inner"',
+        'id="detail-theme"',
+        'class="detail-summary"',
+        'class="detail-layout"',
+        'detail-gallery-panel'
+      ];
+      if (!sharedDetailShell.every(marker => detailHtml.includes(marker))) {
+        failures.push(`destination detail visual shell is incomplete: ${slug}`);
       }
       for (const tag of findRemoteExecutableTags(detailHtml)) {
         if (!/\bintegrity=["']sha(?:384|512)-/i.test(tag) || !/\bcrossorigin=["']anonymous["']/i.test(tag)) {

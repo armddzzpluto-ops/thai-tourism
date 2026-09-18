@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-05 — Refresh all 77 province detail pages
+- Rebuilt the shared destination-detail template into a wider editorial layout with a layered Hero, three-item overview rail, clearer content/sidebar hierarchy and a full-width responsive gallery.
+- Added a page-level Light/Dark control, bilingual control labels, all-77 structural guards and focused Playwright coverage for responsive geometry, images, language and theme behavior.
+
 ## 2026-09-05 — Repair and polish the floating action menu
 - Removed duplicate Thai/English labels from every floating action, connected the Theme action to the canonical theme toggle, and kept the main control stable while rotating only its plus icon into a close icon.
 - Added responsive Playwright coverage for localized labels, menu state and theme switching.

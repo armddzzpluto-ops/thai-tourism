@@ -19,31 +19,43 @@
 </head>
 <body class="destination-detail-page">
   <header class="detail-header">
-    <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
-    <nav aria-label="Destination navigation">
-      <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
-      <button id="detail-language" type="button" aria-label="Switch language">EN</button>
-    </nav>
+    <div class="detail-header-inner">
+      <a class="detail-brand" href="../../#home" aria-label="Thailand Travel Guide home"><span class="detail-brand-icon" aria-hidden="true"><i class="fas fa-spa"></i></span>Thailand<span>Travel</span></a>
+      <nav aria-label="Destination navigation">
+        <a href="../../#destinations" data-th="สถานที่ทั้งหมด" data-en="All destinations">สถานที่ทั้งหมด</a>
+        <button id="detail-theme" class="detail-icon-button" type="button" aria-label="ใช้ธีมสว่าง"><i class="fas fa-sun" aria-hidden="true"></i></button>
+        <button id="detail-language" type="button" aria-label="Switch language">EN</button>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="detail-hero">
       <img src="../../assets/images/provinces/krabi/hero.webp" alt="Railay Beach rock climbing" fetchpriority="high">
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-content">
-        <a href="../../#destinations" data-th="← กลับไปหน้าสถานที่" data-en="← Back to destinations">← กลับไปหน้าสถานที่</a>
-        <p data-th="จังหวัดกระบี่ · ทะเล" data-en="Krabi · beach">จังหวัดกระบี่ · ทะเล</p>
+        <a class="detail-back" href="../../#destinations"><i class="fas fa-arrow-left" aria-hidden="true"></i><span data-th="กลับไปหน้าสถานที่" data-en="Back to destinations">กลับไปหน้าสถานที่</span></a>
+        <div class="detail-hero-meta" aria-label="Destination summary">
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i><span data-th="จังหวัดกระบี่" data-en="Krabi">จังหวัดกระบี่</span></span>
+          <span><i class="fas fa-compass" aria-hidden="true"></i><span data-th="ทะเล" data-en="beach">ทะเล</span></span>
+        </div>
         <h1 data-th="กระบี่" data-en="Krabi">กระบี่</h1>
       </div>
     </section>
-    <div class="detail-layout">
-      <article class="detail-content">
+    <div class="detail-page-shell">
+      <section class="detail-summary" aria-label="Province overview">
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-map-location-dot"></i></span><div><span data-th="จังหวัด" data-en="Province">จังหวัด</span><strong data-th="กระบี่" data-en="Krabi">กระบี่</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-earth-asia"></i></span><div><span data-th="ภูมิภาค" data-en="Region">ภูมิภาค</span><strong data-th="ภาคใต้" data-en="south">ภาคใต้</strong></div></div>
+        <div class="detail-summary-item"><span class="detail-summary-icon" aria-hidden="true"><i class="fas fa-shield-heart"></i></span><div><span data-th="สถานะข้อมูล" data-en="Data status">สถานะข้อมูล</span><strong data-th="ตรวจสอบแล้ว" data-en="Verified">ตรวจสอบแล้ว</strong></div></div>
+      </section>
+      <div class="detail-layout">
+        <article class="detail-content">
         <section class="detail-panel">
-          <h2 data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</h2>
+          <h2><i class="fas fa-book-open" aria-hidden="true"></i><span data-th="เกี่ยวกับจุดหมายนี้" data-en="About this destination">เกี่ยวกับจุดหมายนี้</span></h2>
           <p data-th="กระบี่ เป็นจุดหมายด้านทะเลในจังหวัดกระบี่ เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง" data-en="Dramatic limestone karsts rising from emerald water — one of the most photographed coastlines on Earth.">กระบี่ เป็นจุดหมายด้านทะเลในจังหวัดกระบี่ เหมาะสำหรับใช้วางแผนการเดินทางและตรวจสอบข้อมูลสถานที่จากแหล่งอ้างอิง</p>
         </section>
         
         <section class="detail-panel" aria-labelledby="verified-heading">
-          <h2 id="verified-heading" data-th="ข้อมูลสถานที่ที่ตรวจสอบแล้ว" data-en="Verified attraction information">ข้อมูลสถานที่ที่ตรวจสอบแล้ว</h2>
+          <h2 id="verified-heading"><i class="fas fa-shield-heart" aria-hidden="true"></i><span data-th="ข้อมูลสถานที่ที่ตรวจสอบแล้ว" data-en="Verified attraction information">ข้อมูลสถานที่ที่ตรวจสอบแล้ว</span></h2>
           <dl class="detail-facts">
             <div><dt data-th="สถานที่ท่องเที่ยว" data-en="Attraction">สถานที่ท่องเที่ยว</dt><dd data-th="อ่าวไร่เลย์" data-en="Ao Railay (Railay Bay)">อ่าวไร่เลย์</dd></div>
             <div><dt data-th="เวลาเปิด–ปิด" data-en="Opening hours">เวลาเปิด–ปิด</dt><dd data-th="พื้นที่ชายหาดเปิดตลอดวัน; เวลาเรือขึ้นอยู่กับผู้ให้บริการและสภาพอากาศ" data-en="Beach area is open all day; boat times depend on operators and weather.">พื้นที่ชายหาดเปิดตลอดวัน; เวลาเรือขึ้นอยู่กับผู้ให้บริการและสภาพอากาศ</dd></div>
@@ -56,23 +68,26 @@
           </div>
           <p class="verified-date"><span data-th="ตรวจสอบล่าสุด" data-en="Last verified">ตรวจสอบล่าสุด</span>: 2026-08-08</p>
         </section>
-        <section class="detail-panel" aria-labelledby="gallery-heading">
-          <h2 id="gallery-heading" data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</h2>
-          <div class="detail-gallery"><figure><img src="../../assets/images/provinces/krabi/hero.webp" alt="Railay Beach rock climbing" loading="eager" decoding="async"><figcaption>Railay Beach rock climbing</figcaption></figure>
-          <figure><img src="../../assets/images/provinces/krabi/gallery-1.webp" alt="Transport of tourists and luggages from boat to the seacoast in &lt;a href=&quot;//commons.wikimedia.org/wiki/Category:East_Rai_Leh&quot; title=&quot;Category:East Rai Leh&quot;&gt;East Rai Leh&lt;/a&gt; in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Krabi_Province&quot; class=&quot;extiw&quot; title=&quot;w:Krabi Province&quot;&gt;Krabi Province&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Thailand&quot; class=&quot;extiw&quot; title=&quot;w:Thailand&quot;&gt;Thailand&lt;/a&gt;, March 2018" loading="lazy" decoding="async"><figcaption>Transport of tourists and luggages from boat to the seacoast in &lt;a href=&quot;//commons.wikimedia.org/wiki/Category:East_Rai_Leh&quot; title=&quot;Category:East Rai Leh&quot;&gt;East Rai Leh&lt;/a&gt; in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Krabi_Province&quot; class=&quot;extiw&quot; title=&quot;w:Krabi Province&quot;&gt;Krabi Province&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Thailand&quot; class=&quot;extiw&quot; title=&quot;w:Thailand&quot;&gt;Thailand&lt;/a&gt;, March 2018</figcaption></figure>
-          <figure><img src="../../assets/images/provinces/krabi/gallery-2.webp" alt="Tractor for the transport of tourists and luggages from boats to the seacoast in &lt;a href=&quot;//commons.wikimedia.org/wiki/Category:East_Rai_Leh&quot; title=&quot;Category:East Rai Leh&quot;&gt;East Rai Leh&lt;/a&gt; in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Krabi_Province&quot; class=&quot;extiw&quot; title=&quot;w:Krabi Province&quot;&gt;Krabi Province&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Thailand&quot; class=&quot;extiw&quot; title=&quot;w:Thailand&quot;&gt;Thailand&lt;/a&gt;, March 2018" loading="lazy" decoding="async"><figcaption>Tractor for the transport of tourists and luggages from boats to the seacoast in &lt;a href=&quot;//commons.wikimedia.org/wiki/Category:East_Rai_Leh&quot; title=&quot;Category:East Rai Leh&quot;&gt;East Rai Leh&lt;/a&gt; in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Krabi_Province&quot; class=&quot;extiw&quot; title=&quot;w:Krabi Province&quot;&gt;Krabi Province&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Thailand&quot; class=&quot;extiw&quot; title=&quot;w:Thailand&quot;&gt;Thailand&lt;/a&gt;, March 2018</figcaption></figure>
+        </article>
+        <aside class="detail-sidebar">
+          <div class="detail-panel detail-sidebar-card">
+            <span class="detail-sidebar-kicker" data-th="วางแผนให้ง่ายขึ้น" data-en="Plan with confidence">วางแผนให้ง่ายขึ้น</span>
+            <h2><i class="fas fa-map" aria-hidden="true"></i><span data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</span></h2>
+            <dl class="detail-facts">
+              <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="กระบี่" data-en="Krabi">กระบี่</dd></div>
+              <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคใต้" data-en="south">ภาคใต้</dd></div>
+            </dl>
+            <a class="detail-sidebar-action" href="https://www.google.com/maps/search/?api=1&amp;query=Railay%20Beach%20rock%20climbing%2C%20Krabi%2C%20Thailand" target="_blank" rel="noopener noreferrer"><i class="fas fa-location-arrow" aria-hidden="true"></i><span data-th="เปิดจังหวัดใน Google Maps" data-en="Open province in Google Maps">เปิดจังหวัดใน Google Maps</span></a>
+          </div>
+        </aside>
+      </div>
+      <section class="detail-panel detail-gallery-panel" aria-labelledby="gallery-heading">
+        <div class="detail-section-heading"><div><span class="detail-section-kicker" data-th="มุมมองของจุดหมาย" data-en="Destination gallery">มุมมองของจุดหมาย</span><h2 id="gallery-heading"><i class="fas fa-images" aria-hidden="true"></i><span data-th="รูปภาพที่เชื่อมกับสถานที่" data-en="Images linked to this destination">รูปภาพที่เชื่อมกับสถานที่</span></h2></div><span class="detail-image-count">4</span></div>
+        <div class="detail-gallery"><figure><img src="../../assets/images/provinces/krabi/hero.webp" alt="Railay Beach rock climbing" loading="eager" decoding="async"><figcaption>Railay Beach rock climbing</figcaption></figure>
+          <figure><img src="../../assets/images/provinces/krabi/gallery-1.webp" alt="Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018" loading="lazy" decoding="async"><figcaption>Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018</figcaption></figure>
+          <figure><img src="../../assets/images/provinces/krabi/gallery-2.webp" alt="Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018" loading="lazy" decoding="async"><figcaption>Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018</figcaption></figure>
           <figure><img src="../../assets/images/provinces/krabi/gallery-3.webp" alt="Greetings from the cleaning service" loading="lazy" decoding="async"><figcaption>Greetings from the cleaning service</figcaption></figure></div>
-        </section>
-      </article>
-      <aside class="detail-sidebar">
-        <div class="detail-panel">
-          <h2 data-th="ข้อมูลจังหวัด" data-en="Province information">ข้อมูลจังหวัด</h2>
-          <dl class="detail-facts">
-            <div><dt data-th="จังหวัด" data-en="Province">จังหวัด</dt><dd data-th="กระบี่" data-en="Krabi">กระบี่</dd></div>
-            <div><dt data-th="ภูมิภาค" data-en="Region">ภูมิภาค</dt><dd data-th="ภาคใต้" data-en="south">ภาคใต้</dd></div>
-          </dl>
-        </div>
-      </aside>
+      </section>
     </div>
   </main>
   <footer><p>© 2026 Thailand Travel Guide · <a href="https://github.com/armddzzpluto-ops/thai-tourism">GitHub</a></p></footer>
