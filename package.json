@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build:destinations": "node scripts/build/generate-destination-pages.mjs",
+    "curate:showcase": "node scripts/curation/curate-showcase-galleries.mjs && node scripts/curation/sync-image-curation.mjs",
     "check": "node scripts/quality/check-site.mjs",
     "verify": "npm run check && npm run test:e2e",
     "test:e2e": "playwright test",

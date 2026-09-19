@@ -494,6 +494,9 @@ function normalizeDestinationSchema(destination) {
   destination.galleryCaptions = destination.galleryCurated && Array.isArray(curation.galleryCaptions)
     ? curation.galleryCaptions.slice(0, destination.galleryImages.length - 1)
     : [];
+  destination.galleryCaptionsTh = destination.galleryCurated && Array.isArray(curation.galleryCaptionsTh)
+    ? curation.galleryCaptionsTh.slice(0, destination.galleryImages.length - 1)
+    : [];
   destination.galleryAttribution = destination.galleryCurated && Array.isArray(curation.attribution)
     ? curation.attribution
     : [];

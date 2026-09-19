@@ -5,9 +5,7 @@
   "galleryImages": [
     "assets/images/provinces/chiang-mai/gallery-1.webp",
     "assets/images/provinces/chiang-mai/gallery-2.webp",
-    "assets/images/provinces/chiang-mai/gallery-3.webp",
-    "assets/images/provinces/chiang-mai/gallery-4.webp",
-    "assets/images/provinces/chiang-mai/gallery-5.webp"
+    "assets/images/provinces/chiang-mai/gallery-3.webp"
   ],
   "attribution": [
     {
@@ -25,9 +23,11 @@
       "slug": "chiang-mai",
       "role": "gallery-1",
       "file": "assets/images/provinces/chiang-mai/gallery-1.webp",
-      "caption": "Buak Hard Park (Chiangmai)",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kawin_Jungsakulrujirek&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kawin Jungsakulrujirek (page does not exist)\">Kawin Jungsakulrujirek</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Buak_Hard_Park.jpg",
+      "caption": "Wat Phra That Doi Suthep, Chiang Mai",
+      "captionTh": "วัดพระธาตุดอยสุเทพราชวรวิหาร จังหวัดเชียงใหม่",
+      "photoCredit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Wat_Phra_That_Doi_Suthep,_Doi_Suthep,_Thailand.jpg",
       "isFallback": false
     },
     {
@@ -35,9 +35,11 @@
       "slug": "chiang-mai",
       "role": "gallery-2",
       "file": "assets/images/provinces/chiang-mai/gallery-2.webp",
-      "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-      "photoCredit": "<bdi><a href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\"><span title=\"photographer\">Dennis G. Jarvis</span></a></bdi>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4310_-_Long_Neck_Padong_Lady_(3731014077).jpg",
+      "caption": "Tha Phae Gate and Chiang Mai's old city wall",
+      "captionTh": "ประตูท่าแพและแนวกำแพงเมืองเก่าเชียงใหม่",
+      "photoCredit": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:20171105_Tha_Phae_Gate_Chiang_Mai_9784_DxO.jpg",
       "isFallback": false
     },
     {
@@ -45,29 +47,11 @@
       "slug": "chiang-mai",
       "role": "gallery-3",
       "file": "assets/images/provinces/chiang-mai/gallery-3.webp",
-      "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.\nThere is much speculation about why the rings are worn by the women of this tribe, many will tell you it is simply tradition. They use to protect them from tiger attacks as the tiger will go for the neck. They start at a young age and add to the rings over time.",
-      "photoCredit": "<bdi><a href=\"https://www.wikidata.org/wiki/Q122977591\" class=\"extiw\" title=\"d:Q122977591\"><span title=\"photographer\">Dennis G. Jarvis</span></a></bdi>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4321_-_Young_Lady_of_the_Long_Neck_Padong_(3732482202).jpg",
-      "isFallback": false
-    },
-    {
-      "province": "Chiang Mai",
-      "slug": "chiang-mai",
-      "role": "gallery-4",
-      "file": "assets/images/provinces/chiang-mai/gallery-4.webp",
-      "caption": "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:PhilipNalangan\" title=\"User:PhilipNalangan\">Philip Nalangan</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Saket_Temple_Chiang_Mai_Thailand_2.jpg",
-      "isFallback": false
-    },
-    {
-      "province": "Chiang Mai",
-      "slug": "chiang-mai",
-      "role": "gallery-5",
-      "file": "assets/images/provinces/chiang-mai/gallery-5.webp",
-      "caption": "Follow THE PEACK ATV adventure",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161022132233/http://www.panoramio.com/user/5477602?with_photo_id=54469139\">Maxim Cruiser</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Follow_THE_PEACK_ATV_adventure_-_panoramio.jpg",
+      "caption": "A royal pagoda in Doi Inthanon National Park",
+      "captionTh": "พระมหาธาตุบนดอยอินทนนท์ จังหวัดเชียงใหม่",
+      "photoCredit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Inthanon,_Royal_Pagoda,_Thailand.jpg",
       "isFallback": false
     }
   ]

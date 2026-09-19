@@ -72,10 +72,19 @@ for (const [index, destination] of destinations.entries()) {
         </section>`;
 
   const galleryHtml = gallery.map((source, imageIndex) => {
-    const caption = imageIndex === 0
+    const captionEn = imageIndex === 0
       ? (destination.caption || destination.name)
       : (destination.galleryCaptions?.[imageIndex - 1] || destination.caption || destination.name);
-    return `<figure><img src="../../${escapeHtml(source)}" alt="${escapeHtml(caption)}" loading="${imageIndex === 0 ? "eager" : "lazy"}" decoding="async"><figcaption>${escapeHtml(caption)}</figcaption></figure>`;
+    const captionTh = imageIndex === 0
+      ? `${thaiName} จังหวัด${thaiProvince}`
+      : (destination.galleryCaptionsTh?.[imageIndex - 1] || `${thaiName} ภาพที่ ${imageIndex + 1}`);
+    const bilingualAttributes = destination.galleryCaptionsTh?.length
+      ? ` data-th-alt="${escapeHtml(captionTh)}" data-en-alt="${escapeHtml(captionEn)}"`
+      : "";
+    const caption = destination.galleryCaptionsTh?.length
+      ? `<figcaption data-th="${escapeHtml(captionTh)}" data-en="${escapeHtml(captionEn)}">${escapeHtml(captionTh)}</figcaption>`
+      : `<figcaption>${escapeHtml(captionEn)}</figcaption>`;
+    return `<figure><img src="../../${escapeHtml(source)}" alt="${escapeHtml(destination.galleryCaptionsTh?.length ? captionTh : captionEn)}"${bilingualAttributes} loading="${imageIndex === 0 ? "eager" : "lazy"}" decoding="async">${caption}</figure>`;
   }).join("\n          ");
 
   const jsonLd = JSON.stringify({

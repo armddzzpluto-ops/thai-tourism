@@ -23,9 +23,11 @@
       "slug": "surat-thani",
       "role": "gallery-1",
       "file": "assets/images/provinces/surat-thani/gallery-1.webp",
-      "caption": "Chapthawi, Ban Na Doem District, Surat Thani 84240, Thailand",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161101121232/http://www.panoramio.com/user/6667993?with_photo_id=117504480\">กิตติ เลขะกุล</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Chapthawi,_Ban_Na_Doem_District,_Surat_Thani_84240,_Thailand_-_panoramio.jpg",
+      "caption": "The viewpoint on Ko Wua Ta Lap in Mu Ko Ang Thong National Park",
+      "captionTh": "จุดชมวิวเกาะวัวตาหลับในอุทยานแห่งชาติหมู่เกาะอ่างทอง",
+      "photoCredit": "ViseMoD",
+      "license": "CC BY-SA 3.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Ko_Wua_Ta_Lap.jpg",
       "isFallback": false
     },
     {
@@ -33,9 +35,11 @@
       "slug": "surat-thani",
       "role": "gallery-2",
       "file": "assets/images/provinces/surat-thani/gallery-2.webp",
-      "caption": "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_house,_Khao_Sok,_Thailand.jpg",
+      "caption": "Cheow Lan Lake, Surat Thani",
+      "captionTh": "ทะเลสาบเชี่ยวหลาน จังหวัดสุราษฎร์ธานี",
+      "photoCredit": "Original: Vyacheslav Argenberg Derivative work: The Cosmonaut",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Trees_rising_out_of_Cheow_Lan_Lake,_blue_sky,_eternal_summer_in_Surat_Thani_edited.jpg",
       "isFallback": false
     },
     {
@@ -43,9 +47,11 @@
       "slug": "surat-thani",
       "role": "gallery-3",
       "file": "assets/images/provinces/surat-thani/gallery-3.webp",
-      "caption": "Cheow Lan (lake), Surat Thani, Thailand.",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_houses,_Khao_Sok,_Thailand.jpg",
+      "caption": "Limestone mountains in Khao Sok National Park",
+      "captionTh": "ภูเขาหินปูนในอุทยานแห่งชาติเขาสก จังหวัดสุราษฎร์ธานี",
+      "photoCredit": "Supanut Arunoprayote",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Khao_Sok_National_Park_20240520.jpg",
       "isFallback": false
     }
   ]

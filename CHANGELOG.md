@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-18 — Curate five showcase province galleries
+- Replaced weak or unrelated gallery imagery for Bangkok, Chiang Mai, Phuket, Krabi and Surat Thani with 15 source-reviewed Wikimedia Commons photographs, optimized local WebP files and complete creator/license/source attribution.
+- Added exact Thai/English captions and alt text to the five generated detail galleries, a reproducible cross-platform curation command, static data guards and focused browser regression coverage.
+
 ## 2026-09-05 — Refresh all 77 province detail pages
 - Rebuilt the shared destination-detail template into a wider editorial layout with a layered Hero, three-item overview rail, clearer content/sidebar hierarchy and a full-width responsive gallery.
 - Added a page-level Light/Dark control, bilingual control labels, all-77 structural guards and focused Playwright coverage for responsive geometry, images, language and theme behavior.

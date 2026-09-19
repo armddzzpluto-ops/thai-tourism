@@ -56,6 +56,10 @@ for (const row of validation) {
     galleryImages.length >= 3 &&
     attributions.length >= 3;
 
+  const galleryCaptionsTh = complete
+    ? attributions.map(item => normalizePlainText(item.captionTh)).filter(Boolean)
+    : [];
+
   result[slug] = {
     status: complete ? "complete" : String(row.status || "needs-curation"),
     galleryCurated: complete,
@@ -63,13 +67,20 @@ for (const row of validation) {
     galleryCaptions: complete
       ? attributions.map(item => normalizePlainText(item.caption, metadata.province || slug))
       : [],
+    ...(galleryCaptionsTh.length ? { galleryCaptionsTh } : {}),
     attribution: complete
-      ? attributions.map(item => ({
-          file: item.file,
-          caption: normalizePlainText(item.caption, metadata.province || slug),
-          photoCredit: normalizePlainText(item.photoCredit, "Wikimedia Commons contributor"),
-          imageSource: item.imageSource
-        }))
+      ? attributions.map(item => {
+          const captionTh = normalizePlainText(item.captionTh);
+          const license = normalizePlainText(item.license);
+          return {
+            file: item.file,
+            caption: normalizePlainText(item.caption, metadata.province || slug),
+            ...(captionTh ? { captionTh } : {}),
+            photoCredit: normalizePlainText(item.photoCredit, "Wikimedia Commons contributor"),
+            ...(license ? { license } : {}),
+            imageSource: item.imageSource
+          };
+        })
       : []
   };
 }

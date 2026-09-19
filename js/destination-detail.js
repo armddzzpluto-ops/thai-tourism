@@ -22,6 +22,9 @@
     document.querySelectorAll("[data-th][data-en]").forEach(element => {
       element.textContent = element.dataset[next];
     });
+    document.querySelectorAll("[data-th-alt][data-en-alt]").forEach(element => {
+      element.alt = next === "en" ? element.dataset.enAlt : element.dataset.thAlt;
+    });
     if (button) {
       button.textContent = next === "th" ? "EN" : "TH";
       button.setAttribute("aria-label", next === "th" ? "Switch to English" : "เปลี่ยนเป็นภาษาไทย");

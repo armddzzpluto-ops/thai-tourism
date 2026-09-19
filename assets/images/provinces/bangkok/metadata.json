@@ -23,9 +23,11 @@
       "slug": "bangkok",
       "role": "gallery-1",
       "file": "assets/images/provinces/bangkok/gallery-1.webp",
-      "caption": "Petrol Station near Soi Ramintra 5",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014201824/http://www.panoramio.com/user/1429473?with_photo_id=34915757\">::::=UT=::::</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Petrol_Station_near_Soi_Ramintra_5_-_panoramio.jpg",
+      "caption": "The Grand Palace at sunrise, Bangkok",
+      "captionTh": "พระบรมมหาราชวังยามพระอาทิตย์ขึ้น กรุงเทพฯ",
+      "photoCredit": "Bjørn Erik Pedersen",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:A_roof_of_a_building_at_the_Grand_Palace,_Bangkok,_sunrise,_2017.jpg",
       "isFallback": false
     },
     {
@@ -33,9 +35,11 @@
       "slug": "bangkok",
       "role": "gallery-2",
       "file": "assets/images/provinces/bangkok/gallery-2.webp",
-      "caption": "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Poonpun2016\" title=\"User:Poonpun2016\">Poonpun2016</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Phahonyothin.jpg",
+      "caption": "Wat Arun beside the Chao Phraya River, Bangkok",
+      "captionTh": "พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา กรุงเทพฯ",
+      "photoCredit": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_30.jpg",
       "isFallback": false
     },
     {
@@ -43,9 +47,11 @@
       "slug": "bangkok",
       "role": "gallery-3",
       "file": "assets/images/provinces/bangkok/gallery-3.webp",
-      "caption": "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:GRAD_KU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:GRAD KU (page does not exist)\">GRAD KU</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU001.jpg",
+      "caption": "Yaowarat Road in Bangkok's Chinatown",
+      "captionTh": "ถนนเยาวราชในย่านไชน่าทาวน์ กรุงเทพฯ",
+      "photoCredit": "Marcin Konsek",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Samphanthawong,_Ulica_Yaowarat_(05).jpg",
       "isFallback": false
     }
   ]

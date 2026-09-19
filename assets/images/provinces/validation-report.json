@@ -18,7 +18,8 @@
     "slug": "bangkok",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-09-18"
   },
   {
     "province": "Bueng Kan",
@@ -66,8 +67,9 @@
     "province": "Chiang Mai",
     "slug": "chiang-mai",
     "status": "complete",
-    "galleryCount": 5,
-    "fallbackCount": 0
+    "galleryCount": 3,
+    "fallbackCount": 0,
+    "reviewedOn": "2026-09-18"
   },
   {
     "province": "Chiang Rai",
@@ -123,7 +125,8 @@
     "slug": "krabi",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-09-18"
   },
   {
     "province": "Lampang",
@@ -333,7 +336,8 @@
     "slug": "phuket",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-09-18"
   },
   {
     "province": "Prachin Buri",
@@ -466,7 +470,8 @@
     "slug": "surat-thani",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-09-18"
   },
   {
     "province": "Surin",
