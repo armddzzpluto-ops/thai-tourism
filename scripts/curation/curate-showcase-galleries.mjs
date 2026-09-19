@@ -1,7 +1,12 @@
 import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
-import os from "node:os";
 import path from "node:path";
+import {
+  MAX_IMAGE_BYTES,
+  assertTrustedCommonsUrl,
+  normalizePlainText,
+  validateImageBytes
+} from "./curation-safety.mjs";
 
 const root = process.cwd();
 const provinceRoot = path.join(root, "assets", "images", "provinces");
@@ -13,19 +18,6 @@ const userAgent = "ThaiTourismShowcaseCurator/1.0 (https://github.com/armddzzplu
 
 const readJson = file => JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/, ""));
 const writeJson = (file, value) => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
-
-const stripMarkup = value => String(value || "")
-  .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
-  .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
-  .replace(/<[^>]+>/g, " ")
-  .replace(/&nbsp;|&#160;/gi, " ")
-  .replace(/&amp;/gi, "&")
-  .replace(/&quot;|&#34;/gi, '"')
-  .replace(/&#39;|&apos;/gi, "'")
-  .replace(/&lt;/gi, "<")
-  .replace(/&gt;/gi, ">")
-  .replace(/\s+/g, " ")
-  .trim();
 
 const commandExists = command => spawnSync(command, ["-version"], { stdio: "ignore" }).status === 0;
 const cwebp = commandExists("cwebp") ? "cwebp" : null;
@@ -74,32 +66,51 @@ async function resolveCommonsFile(fileTitle) {
   }
 
   return {
-    downloadUrl: info.thumburl || info.url,
-    imageSource: info.descriptionurl,
-    photoCredit: stripMarkup(info.extmetadata?.Artist?.value) || "Wikimedia Commons contributor",
-    license: stripMarkup(info.extmetadata?.LicenseShortName?.value || info.extmetadata?.UsageTerms?.value)
+    downloadUrl: assertTrustedCommonsUrl(info.thumburl || info.url, "upload.wikimedia.org"),
+    imageSource: assertTrustedCommonsUrl(info.descriptionurl, "commons.wikimedia.org").href,
+    photoCredit: normalizePlainText(info.extmetadata?.Artist?.value) || "Wikimedia Commons contributor",
+    license: normalizePlainText(info.extmetadata?.LicenseShortName?.value || info.extmetadata?.UsageTerms?.value)
   };
 }
 
-async function downloadFile(url, destination) {
+async function downloadImage(url) {
   const response = await fetch(url, {
     headers: { "User-Agent": userAgent },
+    redirect: "error",
     signal: AbortSignal.timeout(120000)
   });
   if (!response.ok) throw new Error(`Image download failed (${response.status}): ${url}`);
-  fs.writeFileSync(destination, Buffer.from(await response.arrayBuffer()));
+  const declaredSize = Number(response.headers.get("content-length") || 0);
+  if (declaredSize > MAX_IMAGE_BYTES) throw new Error(`Image response exceeds ${MAX_IMAGE_BYTES} bytes`);
+  if (!response.body) throw new Error(`Image response has no body: ${url}`);
+
+  const reader = response.body.getReader();
+  const chunks = [];
+  let receivedSize = 0;
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    receivedSize += value.byteLength;
+    if (receivedSize > MAX_IMAGE_BYTES) {
+      await reader.cancel();
+      throw new Error(`Image response exceeds ${MAX_IMAGE_BYTES} bytes`);
+    }
+    chunks.push(Buffer.from(value));
+  }
+
+  return validateImageBytes(Buffer.concat(chunks, receivedSize), response.headers.get("content-type"));
 }
 
 function convertToWebp(input, output) {
   if (cwebp) {
-    execFileSync(cwebp, ["-quiet", "-q", "82", "-resize", "1600", "0", input, "-o", output]);
+    execFileSync(cwebp, ["-quiet", "-q", "82", "-resize", "1600", "0", "-", "-o", output], { input });
     return;
   }
 
   const args = imagemagick === "magick"
-    ? ["convert", input, "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output]
-    : [input, "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output];
-  execFileSync(imagemagick, args);
+    ? ["convert", "-", "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output]
+    : ["-", "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output];
+  execFileSync(imagemagick, args, { input });
 }
 
 for (const slug of slugs) {
@@ -109,61 +120,55 @@ for (const slug of slugs) {
   if (!provinceMeta) throw new Error(`Province is missing from the manifest: ${slug}`);
 
   const provinceDir = path.join(provinceRoot, slug);
-  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `thai-showcase-${slug}-`));
   const galleryImages = [];
   const galleryAttribution = [];
 
-  try {
-    for (const [index, image] of provinceSource.images.entries()) {
-      const resolved = await resolveCommonsFile(image.fileTitle);
-      const input = path.join(tempDir, `source-${index + 1}`);
-      const relativeOutput = `assets/images/provinces/${slug}/gallery-${index + 1}.webp`;
-      const absoluteOutput = path.join(root, relativeOutput);
-      await downloadFile(resolved.downloadUrl, input);
-      convertToWebp(input, absoluteOutput);
-      console.log(`  gallery-${index + 1}: ${image.fileTitle}`);
+  for (const [index, image] of provinceSource.images.entries()) {
+    const resolved = await resolveCommonsFile(image.fileTitle);
+    const relativeOutput = `assets/images/provinces/${slug}/gallery-${index + 1}.webp`;
+    const absoluteOutput = path.join(root, relativeOutput);
+    const input = await downloadImage(resolved.downloadUrl);
+    convertToWebp(input, absoluteOutput);
+    console.log(`  gallery-${index + 1}: ${image.fileTitle}`);
 
-      galleryImages.push(relativeOutput);
-      galleryAttribution.push({
-        province: provinceSource.province,
-        slug,
-        role: `gallery-${index + 1}`,
-        file: relativeOutput,
-        caption: image.captionEn,
-        captionTh: image.captionTh,
-        photoCredit: stripMarkup(image.photoCredit) || resolved.photoCredit,
-        license: resolved.license,
-        imageSource: resolved.imageSource,
-        isFallback: false
-      });
-    }
-
-    for (const retiredIndex of [4, 5]) {
-      const retired = path.join(provinceDir, `gallery-${retiredIndex}.webp`);
-      if (fs.existsSync(retired)) fs.rmSync(retired);
-    }
-
-    const metadataPath = path.join(provinceDir, "metadata.json");
-    const metadata = readJson(metadataPath);
-    const hero = Array.isArray(metadata.attribution)
-      ? metadata.attribution.find(item => item.role === "hero")
-      : null;
-    metadata.galleryImages = galleryImages;
-    metadata.attribution = [...(hero ? [hero] : []), ...galleryAttribution];
-    writeJson(metadataPath, metadata);
-
-    provinceMeta.galleryImages = galleryImages;
-    provinceMeta.attribution = metadata.attribution;
-
-    const validationRow = validationBySlug.get(slug);
-    if (!validationRow) throw new Error(`Province is missing from validation data: ${slug}`);
-    validationRow.status = "complete";
-    validationRow.galleryCount = 3;
-    validationRow.fallbackCount = 0;
-    validationRow.reviewedOn = "2026-09-18";
-  } finally {
-    fs.rmSync(tempDir, { recursive: true, force: true });
+    galleryImages.push(relativeOutput);
+    galleryAttribution.push({
+      province: provinceSource.province,
+      slug,
+      role: `gallery-${index + 1}`,
+      file: relativeOutput,
+      caption: image.captionEn,
+      captionTh: image.captionTh,
+      photoCredit: normalizePlainText(image.photoCredit) || resolved.photoCredit,
+      license: resolved.license,
+      imageSource: resolved.imageSource,
+      isFallback: false
+    });
   }
+
+  for (const retiredIndex of [4, 5]) {
+    const retired = path.join(provinceDir, `gallery-${retiredIndex}.webp`);
+    if (fs.existsSync(retired)) fs.rmSync(retired);
+  }
+
+  const metadataPath = path.join(provinceDir, "metadata.json");
+  const metadata = readJson(metadataPath);
+  const hero = Array.isArray(metadata.attribution)
+    ? metadata.attribution.find(item => item.role === "hero")
+    : null;
+  metadata.galleryImages = galleryImages;
+  metadata.attribution = [...(hero ? [hero] : []), ...galleryAttribution];
+  writeJson(metadataPath, metadata);
+
+  provinceMeta.galleryImages = galleryImages;
+  provinceMeta.attribution = metadata.attribution;
+
+  const validationRow = validationBySlug.get(slug);
+  if (!validationRow) throw new Error(`Province is missing from validation data: ${slug}`);
+  validationRow.status = "complete";
+  validationRow.galleryCount = 3;
+  validationRow.fallbackCount = 0;
+  validationRow.reviewedOn = "2026-09-18";
 }
 
 writeJson(manifestPath, manifest);

@@ -12,6 +12,7 @@ const expectedScriptLayout = [
   "scripts/quality/check-site.mjs",
   "scripts/build/generate-destination-pages.mjs",
   "scripts/curation/curate-province-gallery-batch.ps1",
+  "scripts/curation/curation-safety.mjs",
   "scripts/curation/curate-showcase-galleries.mjs",
   "scripts/curation/sync-image-curation.mjs",
   "scripts/maintenance/update-ai-memory.mjs"
@@ -48,6 +49,7 @@ const curationWorkflow = read(".github/workflows/curate-all-provinces.yml");
 const checksWorkflow = read(".github/workflows/site-checks.yml");
 const codeqlWorkflow = read(".github/workflows/codeql.yml");
 const curationSync = read("scripts/curation/sync-image-curation.mjs");
+const curationSafety = read("scripts/curation/curation-safety.mjs");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -105,7 +107,8 @@ if (!codeqlWorkflow.includes("github/codeql-action/init@cdf488f595d80d6e07e03d46
 
 if (!app.includes("function escapeHTMLAttribute(value)")
     || !app.includes("function getSafeGalleryImageSource(value)")
-    || !curationSync.includes("const normalizePlainText =")
+    || !curationSync.includes('import { normalizePlainText } from "./curation-safety.mjs"')
+    || !curationSafety.includes("export function normalizePlainText")
     || !curationSync.includes("const normalizeGalleryPath =")) {
   failures.push("external gallery metadata must be normalized at ingestion and escaped at SPA render sinks");
 }
