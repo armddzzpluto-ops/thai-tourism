@@ -1,0 +1,103 @@
+{
+  "bangkok": {
+    "province": "Bangkok",
+    "images": [
+      {
+        "fileTitle": "File:A roof of a building at the Grand Palace, Bangkok, sunrise, 2017.jpg",
+        "captionEn": "The Grand Palace at sunrise, Bangkok",
+        "captionTh": "พระบรมมหาราชวังยามพระอาทิตย์ขึ้น กรุงเทพฯ"
+      },
+      {
+        "fileTitle": "File:Templo Wat Arun, Bangkok, Tailandia, 2013-08-22, DD 30.jpg",
+        "captionEn": "Wat Arun beside the Chao Phraya River, Bangkok",
+        "captionTh": "พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา กรุงเทพฯ"
+      },
+      {
+        "fileTitle": "File:2016 Bangkok, Dystrykt Samphanthawong, Ulica Yaowarat (05).jpg",
+        "captionEn": "Yaowarat Road in Bangkok's Chinatown",
+        "captionTh": "ถนนเยาวราชในย่านไชน่าทาวน์ กรุงเทพฯ"
+      }
+    ]
+  },
+  "chiang-mai": {
+    "province": "Chiang Mai",
+    "images": [
+      {
+        "fileTitle": "File:Wat Phra That Doi Suthep, Doi Suthep, Thailand.jpg",
+        "captionEn": "Wat Phra That Doi Suthep, Chiang Mai",
+        "captionTh": "วัดพระธาตุดอยสุเทพราชวรวิหาร จังหวัดเชียงใหม่"
+      },
+      {
+        "fileTitle": "File:20171105 Tha Phae Gate Chiang Mai 9784 DxO.jpg",
+        "captionEn": "Tha Phae Gate and Chiang Mai's old city wall",
+        "captionTh": "ประตูท่าแพและแนวกำแพงเมืองเก่าเชียงใหม่"
+      },
+      {
+        "fileTitle": "File:Doi Inthanon, Royal Pagoda, Thailand.jpg",
+        "captionEn": "A royal pagoda in Doi Inthanon National Park",
+        "captionTh": "พระมหาธาตุบนดอยอินทนนท์ จังหวัดเชียงใหม่"
+      }
+    ]
+  },
+  "phuket": {
+    "province": "Phuket",
+    "images": [
+      {
+        "fileTitle": "File:Phuket old town (52549766215).jpg",
+        "captionEn": "Sino-Portuguese architecture in Phuket Old Town",
+        "captionTh": "สถาปัตยกรรมชิโน–โปรตุกีสในย่านเมืองเก่าภูเก็ต"
+      },
+      {
+        "fileTitle": "File:Beautiful Sunset on Promthep Cape, Phuket island, Thailand.jpg",
+        "captionEn": "Sunset at Promthep Cape, Phuket",
+        "captionTh": "พระอาทิตย์ตกที่แหลมพรหมเทพ จังหวัดภูเก็ต"
+      },
+      {
+        "fileTitle": "File:Phuket - Kata Beach 001.jpg",
+        "captionEn": "Kata Beach, Phuket",
+        "captionTh": "หาดกะตะ จังหวัดภูเก็ต"
+      }
+    ]
+  },
+  "krabi": {
+    "province": "Krabi",
+    "images": [
+      {
+        "fileTitle": "File:Railay Beach 5.jpg",
+        "captionEn": "Railay Beach and its limestone cliffs, Krabi",
+        "captionTh": "หาดไร่เลย์และหน้าผาหินปูน จังหวัดกระบี่"
+      },
+      {
+        "fileTitle": "File:Thale Waek Hat Noppharat Thara-Mu Ko Phi Phi National Park Krabi Thailand.jpg",
+        "captionEn": "Thale Waek in Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+        "captionTh": "ทะเลแหวกในอุทยานแห่งชาติหาดนพรัตน์ธารา–หมู่เกาะพีพี"
+      },
+      {
+        "fileTitle": "File:White sand beach, Koh Poda tropical archipelago, Krabi, Thailand.jpg",
+        "captionEn": "White-sand beach at Ko Poda, Krabi",
+        "captionTh": "หาดทรายขาวบนเกาะปอดะ จังหวัดกระบี่"
+      }
+    ]
+  },
+  "surat-thani": {
+    "province": "Surat Thani",
+    "images": [
+      {
+        "fileTitle": "File:Ko Wua Ta Lap.jpg",
+        "captionEn": "The viewpoint on Ko Wua Ta Lap in Mu Ko Ang Thong National Park",
+        "captionTh": "จุดชมวิวเกาะวัวตาหลับในอุทยานแห่งชาติหมู่เกาะอ่างทอง"
+      },
+      {
+        "fileTitle": "File:Trees rising out of Cheow Lan Lake, blue sky, eternal summer in Surat Thani edited.jpg",
+        "captionEn": "Cheow Lan Lake, Surat Thani",
+        "captionTh": "ทะเลสาบเชี่ยวหลาน จังหวัดสุราษฎร์ธานี"
+      },
+      {
+        "fileTitle": "File:Khao Sok National Park 20240520.jpg",
+        "photoCredit": "Supanut Arunoprayote",
+        "captionEn": "Limestone mountains in Khao Sok National Park",
+        "captionTh": "ภูเขาหินปูนในอุทยานแห่งชาติเขาสก จังหวัดสุราษฎร์ธานี"
+      }
+    ]
+  }
+}

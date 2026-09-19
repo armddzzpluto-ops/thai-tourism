@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { normalizePlainText } from "./curation-safety.mjs";
 
 const root = process.cwd();
 const provinceRoot = path.join(root, "assets", "images", "provinces");
@@ -8,21 +9,6 @@ const outputPath = path.join(root, "js", "image-curation-data.js");
 
 const readJson = file =>
   JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/, ""));
-
-const normalizePlainText = (value, fallback = "") =>
-  String(value || fallback)
-    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;|&#160;/gi, " ")
-    .replace(/&amp;/gi, "&")
-    .replace(/&quot;|&#34;/gi, '"')
-    .replace(/&#39;|&apos;/gi, "'")
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 280);
 
 const normalizeGalleryPath = (value, slug) => {
   const source = String(value || "").trim();
@@ -56,6 +42,10 @@ for (const row of validation) {
     galleryImages.length >= 3 &&
     attributions.length >= 3;
 
+  const galleryCaptionsTh = complete
+    ? attributions.map(item => normalizePlainText(item.captionTh)).filter(Boolean)
+    : [];
+
   result[slug] = {
     status: complete ? "complete" : String(row.status || "needs-curation"),
     galleryCurated: complete,
@@ -63,13 +53,20 @@ for (const row of validation) {
     galleryCaptions: complete
       ? attributions.map(item => normalizePlainText(item.caption, metadata.province || slug))
       : [],
+    ...(galleryCaptionsTh.length ? { galleryCaptionsTh } : {}),
     attribution: complete
-      ? attributions.map(item => ({
-          file: item.file,
-          caption: normalizePlainText(item.caption, metadata.province || slug),
-          photoCredit: normalizePlainText(item.photoCredit, "Wikimedia Commons contributor"),
-          imageSource: item.imageSource
-        }))
+      ? attributions.map(item => {
+          const captionTh = normalizePlainText(item.captionTh);
+          const license = normalizePlainText(item.license);
+          return {
+            file: item.file,
+            caption: normalizePlainText(item.caption, metadata.province || slug),
+            ...(captionTh ? { captionTh } : {}),
+            photoCredit: normalizePlainText(item.photoCredit, "Wikimedia Commons contributor"),
+            ...(license ? { license } : {}),
+            imageSource: item.imageSource
+          };
+        })
       : []
   };
 }

@@ -60,3 +60,15 @@ test("province detail language and theme controls update the live page", async (
   await expect(page.locator(".detail-summary-item").nth(2)).toContainText("Verified");
   await expect(theme).toHaveAttribute("aria-label", "Use light theme");
 });
+
+test("showcase province gallery keeps reviewed bilingual captions and alt text", async ({ page }) => {
+  await page.goto("/destinations/phuket/");
+
+  const oldTown = page.locator(".detail-gallery figure").nth(1);
+  await expect(oldTown.locator("figcaption")).toHaveText("สถาปัตยกรรมชิโน–โปรตุกีสในย่านเมืองเก่าภูเก็ต");
+  await expect(oldTown.locator("img")).toHaveAttribute("alt", "สถาปัตยกรรมชิโน–โปรตุกีสในย่านเมืองเก่าภูเก็ต");
+
+  await page.locator("#detail-language").click();
+  await expect(oldTown.locator("figcaption")).toHaveText("Sino-Portuguese architecture in Phuket Old Town");
+  await expect(oldTown.locator("img")).toHaveAttribute("alt", "Sino-Portuguese architecture in Phuket Old Town");
+});

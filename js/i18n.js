@@ -447,9 +447,11 @@
         .replace(/^-+|-+$/g, "");
       if (language !== "th") {
         item.caption = `${original.name}, ${original.province}`;
-        item.galleryCaptions = (original.galleryImages || [])
-          .slice(1)
-          .map((_, imageIndex) => `${original.name} image ${imageIndex + 2}`);
+        item.galleryCaptions = Array.isArray(original.galleryCaptionsTh) && original.galleryCaptionsTh.length
+          && Array.isArray(original.galleryCaptions) && original.galleryCaptions.length
+          ? original.galleryCaptions.slice()
+          : (original.galleryImages || []).slice(1)
+            .map((_, imageIndex) => `${original.name} image ${imageIndex + 2}`);
         return;
       }
 
@@ -469,9 +471,10 @@
       item.distance = "ตรวจสอบเส้นทางจากตำแหน่งของคุณ";
       item.weather = "ตรวจสอบพยากรณ์อากาศล่าสุด";
       item.caption = `${name} จังหวัด${item.province}`;
-      item.galleryCaptions = (original.galleryImages || [])
-        .slice(1)
-        .map((_, imageIndex) => `${name} ภาพที่ ${imageIndex + 2}`);
+      item.galleryCaptions = Array.isArray(original.galleryCaptionsTh) && original.galleryCaptionsTh.length
+        ? original.galleryCaptionsTh.slice()
+        : (original.galleryImages || []).slice(1)
+          .map((_, imageIndex) => `${name} ภาพที่ ${imageIndex + 2}`);
     });
 
     localizeSharedCollections(language);

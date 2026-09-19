@@ -12,6 +12,8 @@ const expectedScriptLayout = [
   "scripts/quality/check-site.mjs",
   "scripts/build/generate-destination-pages.mjs",
   "scripts/curation/curate-province-gallery-batch.ps1",
+  "scripts/curation/curation-safety.mjs",
+  "scripts/curation/curate-showcase-galleries.mjs",
   "scripts/curation/sync-image-curation.mjs",
   "scripts/maintenance/update-ai-memory.mjs"
 ];
@@ -47,6 +49,7 @@ const curationWorkflow = read(".github/workflows/curate-all-provinces.yml");
 const checksWorkflow = read(".github/workflows/site-checks.yml");
 const codeqlWorkflow = read(".github/workflows/codeql.yml");
 const curationSync = read("scripts/curation/sync-image-curation.mjs");
+const curationSafety = read("scripts/curation/curation-safety.mjs");
 
 if (/^<<<<<<< |^=======$|^>>>>>>> /m.test(index)) {
   failures.push("index.html contains Git conflict markers");
@@ -104,7 +107,8 @@ if (!codeqlWorkflow.includes("github/codeql-action/init@cdf488f595d80d6e07e03d46
 
 if (!app.includes("function escapeHTMLAttribute(value)")
     || !app.includes("function getSafeGalleryImageSource(value)")
-    || !curationSync.includes("const normalizePlainText =")
+    || !curationSync.includes('import { normalizePlainText } from "./curation-safety.mjs"')
+    || !curationSafety.includes("export function normalizePlainText")
     || !curationSync.includes("const normalizeGalleryPath =")) {
   failures.push("external gallery metadata must be normalized at ingestion and escaped at SPA render sinks");
 }
@@ -413,6 +417,8 @@ try {
     if (new Set(ids).size !== ids.length) failures.push("duplicate destination IDs found");
 
     const selectedSlugs = context.window.CROSS_PAGE_DESTINATION_SLUGS;
+    const showcaseSlugs = ["bangkok", "chiang-mai", "phuket", "krabi", "surat-thani"];
+    const imageCuration = context.window.IMAGE_CURATION || {};
     const destinationSlugs = new Set(destinations.map(item => item.provinceSlug || item.slug));
     const generatedDetailPages = destinations.filter(item =>
       fs.existsSync(path.join(root, "destinations", item.provinceSlug || item.slug, "index.html"))
@@ -440,10 +446,32 @@ try {
       if (!sharedDetailShell.every(marker => detailHtml.includes(marker))) {
         failures.push(`destination detail visual shell is incomplete: ${slug}`);
       }
+      if (showcaseSlugs.includes(slug)) {
+        const bilingualGalleryMarkers = ["data-th-alt=", "data-en-alt=", "<figcaption data-th="];
+        if (!bilingualGalleryMarkers.every(marker => detailHtml.includes(marker))) {
+          failures.push(`showcase destination gallery is not bilingual: ${slug}`);
+        }
+      }
       for (const tag of findRemoteExecutableTags(detailHtml)) {
         if (!/\bintegrity=["']sha(?:384|512)-/i.test(tag) || !/\bcrossorigin=["']anonymous["']/i.test(tag)) {
           failures.push(`destination detail remote stylesheet lacks SRI: ${slug}`);
         }
+      }
+    }
+    for (const slug of showcaseSlugs) {
+      const gallery = imageCuration[slug];
+      if (!gallery?.galleryCurated || gallery.galleryImages?.length !== 3
+        || gallery.galleryCaptions?.length !== 3 || gallery.galleryCaptionsTh?.length !== 3
+        || gallery.attribution?.length !== 3) {
+        failures.push(`showcase gallery contract is incomplete: ${slug}`);
+        continue;
+      }
+      if (gallery.galleryImages.some(source => !fs.existsSync(path.join(root, source)))) {
+        failures.push(`showcase gallery contains a missing local image: ${slug}`);
+      }
+      if (gallery.attribution.some(item => !item.caption || !item.captionTh || !item.photoCredit
+        || !item.license || !/^https:\/\/commons\.wikimedia\.org\//.test(item.imageSource || ""))) {
+        failures.push(`showcase gallery attribution is incomplete: ${slug}`);
       }
     }
     if (!fs.existsSync(path.join(root, "sitemap.xml"))) failures.push("sitemap.xml is missing");

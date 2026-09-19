@@ -109,28 +109,39 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/bangkok/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Petrol Station near Soi Ramintra 5",
-      "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
-      "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568"
+      "The Grand Palace at sunrise, Bangkok",
+      "Wat Arun beside the Chao Phraya River, Bangkok",
+      "Yaowarat Road in Bangkok's Chinatown"
+    ],
+    "galleryCaptionsTh": [
+      "พระบรมมหาราชวังยามพระอาทิตย์ขึ้น กรุงเทพฯ",
+      "พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา กรุงเทพฯ",
+      "ถนนเยาวราชในย่านไชน่าทาวน์ กรุงเทพฯ"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/bangkok/gallery-1.webp",
-        "caption": "Petrol Station near Soi Ramintra 5",
-        "photoCredit": "::::=UT=::::",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Petrol_Station_near_Soi_Ramintra_5_-_panoramio.jpg"
+        "caption": "The Grand Palace at sunrise, Bangkok",
+        "captionTh": "พระบรมมหาราชวังยามพระอาทิตย์ขึ้น กรุงเทพฯ",
+        "photoCredit": "Bjørn Erik Pedersen",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:A_roof_of_a_building_at_the_Grand_Palace,_Bangkok,_sunrise,_2017.jpg"
       },
       {
         "file": "assets/images/provinces/bangkok/gallery-2.webp",
-        "caption": "ถนนพหลโยธิน บริเวณเขตพญาไท กรุงเทพมหานคร",
-        "photoCredit": "Poonpun2016",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Phahonyothin.jpg"
+        "caption": "Wat Arun beside the Chao Phraya River, Bangkok",
+        "captionTh": "พระปรางค์วัดอรุณริมแม่น้ำเจ้าพระยา กรุงเทพฯ",
+        "photoCredit": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun,_Bangkok,_Tailandia,_2013-08-22,_DD_30.jpg"
       },
       {
         "file": "assets/images/provinces/bangkok/gallery-3.webp",
-        "caption": "พ.ศ. 2568 มหาวิทยาลัยเกษตรศาสตร์ได้ออกประกาศมหาวิทยาลัยเกษตรศาสตร์ เรื่อง แต่งตั้งคณะอนุกรรมการเพื่อการจัดตั้งคณะเภสัชศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ เพิ่มเติม ครั้งที่ 1 ลงวันที่ 10 มกราคม 2568",
-        "photoCredit": "GRAD KU",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:PharmacyKU001.jpg"
+        "caption": "Yaowarat Road in Bangkok's Chinatown",
+        "captionTh": "ถนนเยาวราชในย่านไชน่าทาวน์ กรุงเทพฯ",
+        "photoCredit": "Marcin Konsek",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:2016_Bangkok,_Dystrykt_Samphanthawong,_Ulica_Yaowarat_(05).jpg"
       }
     ]
   },
@@ -408,47 +419,42 @@ window.IMAGE_CURATION = {
     "galleryImages": [
       "assets/images/provinces/chiang-mai/gallery-1.webp",
       "assets/images/provinces/chiang-mai/gallery-2.webp",
-      "assets/images/provinces/chiang-mai/gallery-3.webp",
-      "assets/images/provinces/chiang-mai/gallery-4.webp",
-      "assets/images/provinces/chiang-mai/gallery-5.webp"
+      "assets/images/provinces/chiang-mai/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Buak Hard Park (Chiangmai)",
-      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-      "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-      "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
-      "Follow THE PEACK ATV adventure"
+      "Wat Phra That Doi Suthep, Chiang Mai",
+      "Tha Phae Gate and Chiang Mai's old city wall",
+      "A royal pagoda in Doi Inthanon National Park"
+    ],
+    "galleryCaptionsTh": [
+      "วัดพระธาตุดอยสุเทพราชวรวิหาร จังหวัดเชียงใหม่",
+      "ประตูท่าแพและแนวกำแพงเมืองเก่าเชียงใหม่",
+      "พระมหาธาตุบนดอยอินทนนท์ จังหวัดเชียงใหม่"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/chiang-mai/gallery-1.webp",
-        "caption": "Buak Hard Park (Chiangmai)",
-        "photoCredit": "Kawin Jungsakulrujirek",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Buak_Hard_Park.jpg"
+        "caption": "Wat Phra That Doi Suthep, Chiang Mai",
+        "captionTh": "วัดพระธาตุดอยสุเทพราชวรวิหาร จังหวัดเชียงใหม่",
+        "photoCredit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Wat_Phra_That_Doi_Suthep,_Doi_Suthep,_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-2.webp",
-        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-        "photoCredit": "Dennis G. Jarvis",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4310_-_Long_Neck_Padong_Lady_(3731014077).jpg"
+        "caption": "Tha Phae Gate and Chiang Mai's old city wall",
+        "captionTh": "ประตูท่าแพและแนวกำแพงเมืองเก่าเชียงใหม่",
+        "photoCredit": "Jakub Hałun",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:20171105_Tha_Phae_Gate_Chiang_Mai_9784_DxO.jpg"
       },
       {
         "file": "assets/images/provinces/chiang-mai/gallery-3.webp",
-        "caption": "Long Neck Padong people are a unique hill tribe in Thailand as some of the women choose to wear a brass coil that over time elongates the neck as much as double. Originating in the Shan State in Burma these people are a small minority of the Karennin or Red Karen people of Burma.",
-        "photoCredit": "Dennis G. Jarvis",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:DGJ_4321_-_Young_Lady_of_the_Long_Neck_Padong_(3732482202).jpg"
-      },
-      {
-        "file": "assets/images/provinces/chiang-mai/gallery-4.webp",
-        "caption": "Doi Saket temple is an important pilgrimage site in Chiang Mai. It is located on a hill about twenty kilometers from the city.",
-        "photoCredit": "Philip Nalangan",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Saket_Temple_Chiang_Mai_Thailand_2.jpg"
-      },
-      {
-        "file": "assets/images/provinces/chiang-mai/gallery-5.webp",
-        "caption": "Follow THE PEACK ATV adventure",
-        "photoCredit": "Maxim Cruiser",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Follow_THE_PEACK_ATV_adventure_-_panoramio.jpg"
+        "caption": "A royal pagoda in Doi Inthanon National Park",
+        "captionTh": "พระมหาธาตุบนดอยอินทนนท์ จังหวัดเชียงใหม่",
+        "photoCredit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Doi_Inthanon,_Royal_Pagoda,_Thailand.jpg"
       }
     ]
   },
@@ -731,28 +737,39 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/krabi/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
-      "Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
-      "Greetings from the cleaning service"
+      "Railay Beach and its limestone cliffs, Krabi",
+      "Thale Waek in Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+      "White-sand beach at Ko Poda, Krabi"
+    ],
+    "galleryCaptionsTh": [
+      "หาดไร่เลย์และหน้าผาหินปูน จังหวัดกระบี่",
+      "ทะเลแหวกในอุทยานแห่งชาติหาดนพรัตน์ธารา–หมู่เกาะพีพี",
+      "หาดทรายขาวบนเกาะปอดะ จังหวัดกระบี่"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/krabi/gallery-1.webp",
-        "caption": "Transport of tourists and luggages from boat to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
-        "photoCredit": "Karelj",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_6.jpg"
+        "caption": "Railay Beach and its limestone cliffs, Krabi",
+        "captionTh": "หาดไร่เลย์และหน้าผาหินปูน จังหวัดกระบี่",
+        "photoCredit": "kallerna",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Railay_Beach_5.jpg"
       },
       {
         "file": "assets/images/provinces/krabi/gallery-2.webp",
-        "caption": "Tractor for the transport of tourists and luggages from boats to the seacoast in East Rai Leh in the Krabi Province , Thailand , March 2018",
-        "photoCredit": "Karelj",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:East_Railay_Leh,_Krabi_province,_Thailand_2018_7.jpg"
+        "caption": "Thale Waek in Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+        "captionTh": "ทะเลแหวกในอุทยานแห่งชาติหาดนพรัตน์ธารา–หมู่เกาะพีพี",
+        "photoCredit": "Gentlesteven",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Thale_Waek_Hat_Noppharat_Thara-Mu_Ko_Phi_Phi_National_Park_Krabi_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/krabi/gallery-3.webp",
-        "caption": "Greetings from the cleaning service",
-        "photoCredit": "Jukka from HELSINKI, Finland",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Greetings_from_the_cleaning_service_(12359768683).jpg"
+        "caption": "White-sand beach at Ko Poda, Krabi",
+        "captionTh": "หาดทรายขาวบนเกาะปอดะ จังหวัดกระบี่",
+        "photoCredit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:White_sand_beach,_Koh_Poda_tropical_archipelago,_Krabi,_Thailand.jpg"
       }
     ]
   },
@@ -1751,28 +1768,39 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/phuket/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
-      "2014atPHUKET",
-      "2018 Phuket capsized boat being lifted from the seabed"
+      "Sino-Portuguese architecture in Phuket Old Town",
+      "Sunset at Promthep Cape, Phuket",
+      "Kata Beach, Phuket"
+    ],
+    "galleryCaptionsTh": [
+      "สถาปัตยกรรมชิโน–โปรตุกีสในย่านเมืองเก่าภูเก็ต",
+      "พระอาทิตย์ตกที่แหลมพรหมเทพ จังหวัดภูเก็ต",
+      "หาดกะตะ จังหวัดภูเก็ต"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/phuket/gallery-1.webp",
-        "caption": "\"教練\" 沒有任何安全配備 直接站在繩索上就上工了",
-        "photoCredit": "jeff~",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:%22%E6%95%99%E7%B7%B4%22_%E6%B2%92%E6%9C%89%E4%BB%BB%E4%BD%95%E5%AE%89%E5%85%A8%E9%85%8D%E5%82%99_%E7%9B%B4%E6%8E%A5%E7%AB%99%E5%9C%A8%E7%B9%A9%E7%B4%A2%E4%B8%8A%E5%B0%B1%E4%B8%8A%E5%B7%A5%E4%BA%86_(29354339061).jpg"
+        "caption": "Sino-Portuguese architecture in Phuket Old Town",
+        "captionTh": "สถาปัตยกรรมชิโน–โปรตุกีสในย่านเมืองเก่าภูเก็ต",
+        "photoCredit": "Mussi Katz from Israel",
+        "license": "CC0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phuket_old_town_(52549766215).jpg"
       },
       {
         "file": "assets/images/provinces/phuket/gallery-2.webp",
-        "caption": "2014atPHUKET",
-        "photoCredit": "Santi13301",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:2014atPHUKET.jpg"
+        "caption": "Sunset at Promthep Cape, Phuket",
+        "captionTh": "พระอาทิตย์ตกที่แหลมพรหมเทพ จังหวัดภูเก็ต",
+        "photoCredit": "Phuket@photographer.net",
+        "license": "CC BY 2.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Beautiful_Sunset_on_Promthep_Cape,_Phuket_island,_Thailand.jpg"
       },
       {
         "file": "assets/images/provinces/phuket/gallery-3.webp",
-        "caption": "2018 Phuket capsized boat being lifted from the seabed",
-        "photoCredit": "ผู้จัดการ ออนไลน์ (Manager Online)",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:2018_Phuket_capsized_boat.jpg"
+        "caption": "Kata Beach, Phuket",
+        "captionTh": "หาดกะตะ จังหวัดภูเก็ต",
+        "photoCredit": "ADwarf",
+        "license": "Public domain",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phuket_-_Kata_Beach_001.jpg"
       }
     ]
   },
@@ -2397,28 +2425,39 @@ window.IMAGE_CURATION = {
       "assets/images/provinces/surat-thani/gallery-3.webp"
     ],
     "galleryCaptions": [
-      "Chapthawi, Ban Na Doem District, Surat Thani 84240, Thailand",
-      "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
-      "Cheow Lan (lake), Surat Thani, Thailand."
+      "The viewpoint on Ko Wua Ta Lap in Mu Ko Ang Thong National Park",
+      "Cheow Lan Lake, Surat Thani",
+      "Limestone mountains in Khao Sok National Park"
+    ],
+    "galleryCaptionsTh": [
+      "จุดชมวิวเกาะวัวตาหลับในอุทยานแห่งชาติหมู่เกาะอ่างทอง",
+      "ทะเลสาบเชี่ยวหลาน จังหวัดสุราษฎร์ธานี",
+      "ภูเขาหินปูนในอุทยานแห่งชาติเขาสก จังหวัดสุราษฎร์ธานี"
     ],
     "attribution": [
       {
         "file": "assets/images/provinces/surat-thani/gallery-1.webp",
-        "caption": "Chapthawi, Ban Na Doem District, Surat Thani 84240, Thailand",
-        "photoCredit": "กิตติ เลขะกุล",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Chapthawi,_Ban_Na_Doem_District,_Surat_Thani_84240,_Thailand_-_panoramio.jpg"
+        "caption": "The viewpoint on Ko Wua Ta Lap in Mu Ko Ang Thong National Park",
+        "captionTh": "จุดชมวิวเกาะวัวตาหลับในอุทยานแห่งชาติหมู่เกาะอ่างทอง",
+        "photoCredit": "ViseMoD",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Ko_Wua_Ta_Lap.jpg"
       },
       {
         "file": "assets/images/provinces/surat-thani/gallery-2.webp",
-        "caption": "Droplets of water suspended in air over the lake. Thai forest with natural jungle sounds. This area harbours 40% of all native trees in Thailand. Cheow Lan (lake), Surat Thani, Thailand.",
-        "photoCredit": "Vyacheslav Argenberg",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_house,_Khao_Sok,_Thailand.jpg"
+        "caption": "Cheow Lan Lake, Surat Thani",
+        "captionTh": "ทะเลสาบเชี่ยวหลาน จังหวัดสุราษฎร์ธานี",
+        "photoCredit": "Original: Vyacheslav Argenberg Derivative work: The Cosmonaut",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Trees_rising_out_of_Cheow_Lan_Lake,_blue_sky,_eternal_summer_in_Surat_Thani_edited.jpg"
       },
       {
         "file": "assets/images/provinces/surat-thani/gallery-3.webp",
-        "caption": "Cheow Lan (lake), Surat Thani, Thailand.",
-        "photoCredit": "Vyacheslav Argenberg",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake,_Floating_houses,_Khao_Sok,_Thailand.jpg"
+        "caption": "Limestone mountains in Khao Sok National Park",
+        "captionTh": "ภูเขาหินปูนในอุทยานแห่งชาติเขาสก จังหวัดสุราษฎร์ธานี",
+        "photoCredit": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Khao_Sok_National_Park_20240520.jpg"
       }
     ]
   },
