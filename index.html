@@ -482,7 +482,7 @@ Discover The Land Of Smiles</span></div>
         <span class="section-eyebrow">วางแผนก่อนเดินทาง</span>
         <h1 class="section-title">ผู้ช่วยวางแผน<span class="gold">ทริปไทย</span></h1>
         <div class="divider"></div>
-        <p class="section-desc">พิมพ์ภูมิภาค จำนวนวัน และความสนใจ ระบบจะจัดเส้นทางจากข้อมูลโครงการพร้อมบอกแหล่งอ้างอิงอย่างโปร่งใส</p>
+        <p class="section-desc">เลือกภูมิภาค จำนวนวัน ผู้เดินทาง ความสนใจ และจังหวะการเที่ยว เพื่อสร้างแผนรายวันที่บันทึกไว้ในอุปกรณ์และนำไปคำนวณงบต่อได้</p>
       </div>
       <section class="trip-assistant" aria-labelledby="trip-assistant-title">
         <div class="trip-assistant-heading">
@@ -493,19 +493,82 @@ Discover The Land Of Smiles</span></div>
             <p>ไม่ใช้ API ภายนอกและไม่ส่งข้อความออกจากเว็บไซต์</p>
           </div>
         </div>
-        <div class="trip-assistant-suggestions" aria-label="ตัวอย่างคำถาม">
-          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคอีสาน 5 วัน" data-prompt-en="Plan a 5-day Northeast trip"></button>
-          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ" data-prompt-en="Plan a 3-day nature trip in the North"></button>
-          <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวทะเลภาคใต้ 4 วัน" data-prompt-en="Plan a 4-day beach trip in the South"></button>
-        </div>
-        <form id="trip-assistant-form" class="trip-assistant-form">
-          <label class="sr-only" for="trip-assistant-input">บอกทริปที่ต้องการ</label>
-          <div class="trip-assistant-input-wrap">
-            <i class="fas fa-message" aria-hidden="true"></i>
-            <input id="trip-assistant-input" name="tripRequest" type="text" maxlength="180" autocomplete="off" placeholder="เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ" aria-describedby="trip-assistant-disclosure" required>
+        <form id="trip-builder-form" class="trip-builder-form">
+          <div class="trip-builder-intro">
+            <div>
+              <span id="trip-builder-step" class="trip-builder-step">ขั้นตอนที่ 1</span>
+              <h3 id="trip-builder-title">กำหนดทริปของคุณ</h3>
+            </div>
+            <span id="trip-builder-storage" class="trip-builder-storage"><i class="fas fa-shield-halved" aria-hidden="true"></i> บันทึกเฉพาะในอุปกรณ์นี้</span>
           </div>
-          <button class="btn-primary" type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>วางแผนให้ฉัน</span></button>
+          <div class="trip-builder-grid">
+            <label class="trip-builder-field" for="trip-builder-region">
+              <span id="trip-builder-region-label">ภูมิภาค</span>
+              <select id="trip-builder-region" name="region">
+                <option value="">ทั่วประเทศไทย</option>
+                <option value="north">ภาคเหนือ</option>
+                <option value="central">ภาคกลาง</option>
+                <option value="northeast">ภาคอีสาน</option>
+                <option value="east">ภาคตะวันออก</option>
+                <option value="south">ภาคใต้</option>
+              </select>
+            </label>
+            <label class="trip-builder-field" for="trip-builder-days">
+              <span id="trip-builder-days-label">จำนวนวัน</span>
+              <input id="trip-builder-days" name="days" type="number" min="1" max="10" step="1" value="3" inputmode="numeric" required>
+            </label>
+            <label class="trip-builder-field" for="trip-builder-travelers">
+              <span id="trip-builder-travelers-label">ผู้เดินทาง</span>
+              <input id="trip-builder-travelers" name="travelers" type="number" min="1" max="50" step="1" value="1" inputmode="numeric" required>
+            </label>
+            <label class="trip-builder-field" for="trip-builder-interest">
+              <span id="trip-builder-interest-label">ความสนใจหลัก</span>
+              <select id="trip-builder-interest" name="interest">
+                <option value="">เที่ยวแบบหลากหลาย</option>
+                <option value="nature">ธรรมชาติ</option>
+                <option value="beach">ทะเลและเกาะ</option>
+                <option value="mountain">ภูเขา</option>
+                <option value="temple">วัดและประวัติศาสตร์</option>
+                <option value="culture">วัฒนธรรมและอาหาร</option>
+              </select>
+            </label>
+            <label class="trip-builder-field" for="trip-builder-pace">
+              <span id="trip-builder-pace-label">จังหวะการเที่ยว</span>
+              <select id="trip-builder-pace" name="pace">
+                <option value="relaxed">สบาย ๆ — พักจังหวัดละ 2 วัน</option>
+                <option value="balanced" selected>สมดุล — ไม่เร่งเกินไป</option>
+                <option value="active">เต็มที่ — จังหวัดใหม่ทุกวัน</option>
+              </select>
+            </label>
+            <label class="trip-builder-field" for="trip-builder-budget">
+              <span id="trip-builder-budget-label">งบรวมโดยประมาณ (บาท)</span>
+              <input id="trip-builder-budget" name="budget" type="number" min="0" max="100000000" step="500" placeholder="ไม่บังคับ" inputmode="numeric">
+            </label>
+          </div>
+          <div class="trip-builder-actions">
+            <button id="trip-builder-submit" class="btn-primary" type="submit"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i><span>สร้างแผนทริป</span></button>
+            <button id="trip-builder-reset" class="trip-builder-reset" type="reset"><i class="fas fa-rotate-left" aria-hidden="true"></i><span>เริ่มใหม่</span></button>
+          </div>
         </form>
+
+        <details class="trip-quick-request">
+          <summary id="trip-quick-summary"><i class="fas fa-message" aria-hidden="true"></i><span>หรือพิมพ์คำขอแบบด่วน</span></summary>
+          <div class="trip-quick-content">
+            <div class="trip-assistant-suggestions" aria-label="ตัวอย่างคำถาม">
+              <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคอีสาน 5 วัน" data-prompt-en="Plan a 5-day Northeast trip"></button>
+              <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวภาคเหนือ 3 วัน เน้นธรรมชาติ" data-prompt-en="Plan a 3-day nature trip in the North"></button>
+              <button type="button" class="trip-suggestion" data-prompt-th="เที่ยวทะเลภาคใต้ 4 วัน" data-prompt-en="Plan a 4-day beach trip in the South"></button>
+            </div>
+            <form id="trip-assistant-form" class="trip-assistant-form">
+              <label class="sr-only" for="trip-assistant-input">บอกทริปที่ต้องการ</label>
+              <div class="trip-assistant-input-wrap">
+                <i class="fas fa-message" aria-hidden="true"></i>
+                <input id="trip-assistant-input" name="tripRequest" type="text" maxlength="180" autocomplete="off" placeholder="เช่น อยากเที่ยวภาคอีสาน 5 วัน ชอบธรรมชาติ" aria-describedby="trip-assistant-disclosure" required>
+              </div>
+              <button class="btn-primary" type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>วางแผนให้ฉัน</span></button>
+            </form>
+          </div>
+        </details>
         <p id="trip-assistant-disclosure" class="trip-assistant-disclosure"><i class="fas fa-circle-info" aria-hidden="true"></i><span>เป็นระบบวางแผนจากกฎและข้อมูลในเว็บ ไม่ใช่ AI ภายนอก กรุณาตรวจสอบเวลาเปิด ค่าเข้าชม การเดินทาง และประกาศล่าสุดก่อนออกเดินทางจริง</span></p>
         <div id="trip-assistant-messages" class="trip-assistant-messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
       </section>

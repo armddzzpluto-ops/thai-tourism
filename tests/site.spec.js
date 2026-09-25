@@ -718,6 +718,7 @@ test("Budget calculator uses user inputs and articles resolve shared destination
 
 test("Smart Trip Assistant builds the sourced Northeast five-day plan safely", async ({ page }) => {
   await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  await page.locator(".trip-quick-request summary").click();
   await page.locator("#trip-assistant-input").fill('<img src=x onerror="window.tripXss=true"> อาจารย์อยากเที่ยวภาคอีสาน 5 วัน งบ 8,000 บาท');
   await page.locator("#trip-assistant-form button[type='submit']").click();
 
@@ -731,13 +732,48 @@ test("Smart Trip Assistant builds the sourced Northeast five-day plan safely", a
   await expect(page.locator(".trip-plan-source a")).toHaveAttribute("href", /^https:\/\/www\.tourismthailand\.org\/Trip-Planner\//);
   await expect(page.locator("#budget-days")).toHaveValue("5");
   await expect(page.locator("#budget-nights")).toHaveValue("4");
-  await expect(page.locator("#trip-assistant-messages img")).toHaveCount(0);
+  await expect(page.locator("#trip-assistant-messages .trip-day-image")).toHaveCount(5);
+  await expect(page.locator("#trip-assistant-messages img:not(.trip-day-image)")).toHaveCount(0);
   expect(await page.evaluate(() => window.tripXss === true)).toBe(false);
 
   await page.evaluate(() => window.I18N.setLanguage("en"));
   await expect(page.locator(".trip-plan-response h3")).toContainText("5-day Lower Northeast");
   await expect(page.locator(".trip-plan-response")).not.toContainText(thaiPattern);
   await expect(page.locator(".trip-plan-source a")).toContainText("Tourism Authority of Thailand");
+});
+
+test("Smart Trip Assistant builds, saves and restores a structured trip workflow", async ({ page }) => {
+  await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  await page.locator("#trip-builder-region").selectOption("south");
+  await page.locator("#trip-builder-days").fill("4");
+  await page.locator("#trip-builder-travelers").fill("3");
+  await page.locator("#trip-builder-interest").selectOption("beach");
+  await page.locator("#trip-builder-pace").selectOption("relaxed");
+  await page.locator("#trip-builder-budget").fill("12000");
+  await page.locator("#trip-builder-submit").click();
+
+  const cards = page.locator("#trip-assistant-messages .trip-day-card");
+  await expect(cards).toHaveCount(4);
+  await expect(page.locator(".trip-plan-summary")).toContainText("4 วัน");
+  await expect(page.locator(".trip-plan-summary")).toContainText("3 คน");
+  await expect(page.locator(".trip-plan-route")).toBeVisible();
+  await expect(page.locator(".trip-day-image")).toHaveCount(4);
+  await expect(page.locator("#budget-travelers")).toHaveValue("3");
+  await expect(page.locator("#budget-days")).toHaveValue("4");
+  await expect(page.locator("#budget-nights")).toHaveValue("3");
+
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("tt_trip_plan_v1")));
+  expect(stored).toMatchObject({ region: "south", days: 4, travelers: 3, interest: "beach", pace: "relaxed", budget: 12000 });
+
+  await page.reload();
+  await page.evaluate(() => window.showPage("promotions", { updateHistory: false }));
+  await expect(page.locator("#trip-builder-region")).toHaveValue("south");
+  await expect(page.locator("#trip-assistant-messages .trip-day-card")).toHaveCount(4);
+
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(page.locator("#trip-builder-title")).toHaveText("Set up your trip");
+  await expect(page.locator(".trip-plan-summary")).toContainText("4 days");
+  await expect(page.locator(".trip-plan-saved")).toContainText("Latest plan saved");
 });
 
 test("Trip planner parser supports Thai and English duration phrases", async ({ page }) => {
@@ -773,6 +809,7 @@ test("Smart Trip Assistant suggestion chips and generic province plans remain us
     const output = document.querySelector("#trip-assistant-messages");
     return Boolean(form && output && (form.compareDocumentPosition(output) & Node.DOCUMENT_POSITION_FOLLOWING));
   })).toBe(true);
+  await page.locator(".trip-quick-request summary").click();
   await page.locator(".trip-suggestion").first().click();
   await expect(page.locator(".trip-day-card")).toHaveCount(5);
 

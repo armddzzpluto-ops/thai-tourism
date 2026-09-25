@@ -49,9 +49,9 @@
 - [x] Repair duplicated floating-action labels, restore Theme switching and keep the main action geometry stable when open
 - [x] Refresh all 77 generated province detail pages with a wider responsive hierarchy, overview rail, theme control and full-width gallery
 - [x] Curate Bangkok, Chiang Mai, Phuket, Krabi and Surat Thani as a visually reviewed showcase set with exact bilingual captions, complete attribution and a security-hardened ingestion pipeline
+- [x] Complete Smart Trip Assistant as a structured end-to-end planner with saved daily routes, responsive imagery, editing, printing and budget-calculator handoff
 
 ## Next phase
-- [ ] Finish the Smart Trip Assistant as one end-to-end usable planning flow after the showcase PR passes and merges
 - [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
 - [ ] Add authoritative numeric coordinates where an official source publishes them
 - [ ] Confirm that each province hero/gallery depicts the selected primary attraction before linking it to that attraction

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-25 — Complete the Smart Trip Assistant workflow
+- Rebuilt the planner around a bilingual structured form for region, trip length, travellers, interests, travel pace and optional budget while retaining the safe free-text shortcut.
+- Added responsive day-by-day province plans with trusted local imagery, route and trip summaries, source-aware attraction details, edit/print/budget actions and browser-only save/restore.
+- Synced trip length and traveller count into the budget calculator, added print styling and expanded Playwright coverage across all four supported viewport profiles; all 156 browser scenarios pass.
+
 ## 2026-09-18 — Curate five showcase province galleries
 - Replaced weak or unrelated gallery imagery for Bangkok, Chiang Mai, Phuket, Krabi and Surat Thani with 15 source-reviewed Wikimedia Commons photographs, optimized local WebP files and complete creator/license/source attribution.
 - Added exact Thai/English captions and alt text to the five generated detail galleries, a reproducible cross-platform curation command, static data guards and focused browser regression coverage.
