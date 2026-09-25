@@ -37,6 +37,7 @@
 - Non-Home routes no longer draw the detached green-gold pseudo-element that resembled a stuck loading bar
 - User-facing operating-system Emoji have been replaced by the existing Font Awesome icon system across the SPA shell, dynamic favorites and all generated destination pages
 - The backward-compatible `#promotions` route now combines a local bilingual Smart Trip Assistant with the existing budget calculator; it parses region, days, interests and budget without an external AI API
+- Smart Trip Assistant now provides a complete structured workflow for region, days, travellers, interest, pace and optional budget; it renders a responsive image-backed daily route, saves the latest plan only in local storage, supports editing/printing and hands trip dimensions to the budget calculator
 - The exact Northeast five-day request resolves to a dated TAT-sourced Buri Ram–Si Sa Ket–Ubon Ratchathani itinerary, while other requests stay at province level unless attraction data is source-verified
 - Smart Trip Assistant duration parsing now recognizes Thai and English day phrases including hyphenated English forms such as "5-day" and preserves explicit day counts instead of defaulting to three days
 - Route-critical hero and planner controls now render immediately, theme changes apply atomically, and semantic classes replace the remaining SPA inline presentation styles
@@ -85,6 +86,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-09-25 · Complete Smart Trip Assistant workflow · Added a structured bilingual trip builder, responsive image-backed daily plans, browser-only save/restore, edit/print/budget handoff and all-viewport regression coverage; 156 browser scenarios pass
 - 2026-09-18 · Five-province showcase gallery curation · Replaced weak imagery for the five verified provinces with 15 visually reviewed Commons assets, reproducible and security-hardened cross-platform curation, full attribution and bilingual detail-page captions
 - 2026-09-05 · All-province detail refresh · Rebuilt the shared generator/CSS for 77 wider, responsive bilingual detail pages with theme control, structural guards and focused browser coverage
 - 2026-09-05 · Floating action menu repair · Removed duplicated bilingual action labels, restored the Theme action and stabilized the open-state button geometry with focused Playwright coverage

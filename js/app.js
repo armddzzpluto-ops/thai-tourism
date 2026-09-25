@@ -272,7 +272,18 @@ const TRIP_ASSISTANT_COPY = {
     budget: 'คุณระบุงบประมาณประมาณ {budget} บาท ระบบไม่เดาราคาให้ และได้ตั้งจำนวนวันในเครื่องคำนวณงบด้านล่างไว้แล้ว',
     noBudget: 'ระบบตั้งจำนวนวันในเครื่องคำนวณงบด้านล่างให้แล้ว คุณสามารถกรอกค่าใช้จ่ายจริงของตัวเองต่อได้',
     disclaimer: 'แผนนี้เป็นจุดเริ่มต้น ไม่ใช่การจองหรือข้อมูลแบบเรียลไทม์ โปรดตรวจเวลาเปิด ค่าเข้าชม สภาพอากาศ และการเดินทางล่าสุดก่อนออกเดินทาง',
-    localOnly: 'ข้อความนี้ประมวลผลในเบราว์เซอร์และไม่ถูกส่งไปยังบริการ AI ภายนอก'
+    localOnly: 'แผนล่าสุดถูกบันทึกเฉพาะในเบราว์เซอร์เครื่องนี้ และไม่ถูกส่งไปยังบริการ AI ภายนอก',
+    builderStep: 'ขั้นตอนที่ 1', builderTitle: 'กำหนดทริปของคุณ', storage: 'บันทึกเฉพาะในอุปกรณ์นี้',
+    regionLabel: 'ภูมิภาค', daysLabel: 'จำนวนวัน', travelersLabel: 'ผู้เดินทาง',
+    interestLabel: 'ความสนใจหลัก', paceLabel: 'จังหวะการเที่ยว', budgetLabel: 'งบรวมโดยประมาณ (บาท)',
+    optional: 'ไม่บังคับ', build: 'สร้างแผนทริป', reset: 'เริ่มใหม่', quick: 'หรือพิมพ์คำขอแบบด่วน',
+    regions: { all: 'ทั่วประเทศไทย', north: 'ภาคเหนือ', central: 'ภาคกลาง', northeast: 'ภาคอีสาน', east: 'ภาคตะวันออก', south: 'ภาคใต้' },
+    interests: { all: 'เที่ยวแบบหลากหลาย', nature: 'ธรรมชาติ', beach: 'ทะเลและเกาะ', mountain: 'ภูเขา', temple: 'วัดและประวัติศาสตร์', culture: 'วัฒนธรรมและอาหาร' },
+    paces: { relaxed: 'สบาย ๆ — พักจังหวัดละ 2 วัน', balanced: 'สมดุล — ไม่เร่งเกินไป', active: 'เต็มที่ — จังหวัดใหม่ทุกวัน' },
+    paceShort: { relaxed: 'สบาย ๆ', balanced: 'สมดุล', active: 'เต็มที่' },
+    summaryDays: 'วัน', summaryTravelers: 'คน', summaryPace: 'จังหวะ', route: 'เส้นทาง',
+    edit: 'ปรับแผน', budgetAction: 'คำนวณงบต่อ', print: 'พิมพ์แผน', saved: 'บันทึกแผนล่าสุดแล้ว',
+    requestSummary: '{region} {days} วัน · {travelers} คน · {interest} · {pace}'
   },
   en: {
     welcomeTitle: 'Describe the trip you want',
@@ -289,11 +300,23 @@ const TRIP_ASSISTANT_COPY = {
     budget: 'You mentioned a budget of about THB {budget}. The planner does not invent prices, and the trip length is ready in the budget calculator below.',
     noBudget: 'The trip length is ready in the budget calculator below, where you can enter your own real estimates.',
     disclaimer: 'This plan is a starting point, not a booking or live information. Confirm opening hours, admission, weather and current transport before travelling.',
-    localOnly: 'Your message is processed in this browser and is not sent to an external AI service.'
+    localOnly: 'Your latest plan is saved only in this browser and is not sent to an external AI service.',
+    builderStep: 'Step 1', builderTitle: 'Set up your trip', storage: 'Saved only on this device',
+    regionLabel: 'Region', daysLabel: 'Days', travelersLabel: 'Travellers',
+    interestLabel: 'Main interest', paceLabel: 'Travel pace', budgetLabel: 'Estimated total budget (THB)',
+    optional: 'Optional', build: 'Build itinerary', reset: 'Start over', quick: 'Or type a quick request',
+    regions: { all: 'All Thailand', north: 'North', central: 'Central', northeast: 'Northeast', east: 'East', south: 'South' },
+    interests: { all: 'A varied trip', nature: 'Nature', beach: 'Beaches & islands', mountain: 'Mountains', temple: 'Temples & history', culture: 'Culture & food' },
+    paces: { relaxed: 'Relaxed — stay two days per province', balanced: 'Balanced — comfortable pace', active: 'Active — a new province each day' },
+    paceShort: { relaxed: 'Relaxed', balanced: 'Balanced', active: 'Active' },
+    summaryDays: 'days', summaryTravelers: 'travellers', summaryPace: 'Pace', route: 'Route',
+    edit: 'Edit trip', budgetAction: 'Continue to budget', print: 'Print plan', saved: 'Latest plan saved',
+    requestSummary: '{days} days in {region} · {travelers} travellers · {interest} · {pace}'
   }
 };
 
-let lastTripAssistantQuery = '';
+let lastTripAssistantRequest = null;
+const TRIP_PLAN_STORAGE_KEY = 'tt_trip_plan_v1';
 
 function getTripAssistantLanguage() {
   return window.I18N?.getLanguage?.() === 'en' || document.documentElement.lang === 'en' ? 'en' : 'th';
@@ -334,15 +357,20 @@ function parseTripPlannerRequest(value) {
   return {
     raw: String(value || '').trim(),
     days: Math.min(10, Math.max(1, Number(dayMatch?.[1]) || 3)),
+    travelers: 1,
     region: regionPatterns.find(([, pattern]) => pattern.test(normalized))?.[0] || null,
     interest: interestPatterns.find(([, pattern]) => pattern.test(normalized))?.[0] || null,
-    budget: budgetMatch ? Number(budgetMatch[1].replace(/,/g, '')) : null
+    pace: 'balanced',
+    budget: budgetMatch ? Number(budgetMatch[1].replace(/,/g, '')) : null,
+    source: 'quick'
   };
 }
 
 function getTripTemplate(request) {
   const templates = Array.isArray(window.TRIP_PLANNER_TEMPLATES) ? window.TRIP_PLANNER_TEMPLATES : [];
-  return templates.find(template => template.region === request.region && template.days === request.days) || null;
+  return request.pace === 'balanced'
+    ? templates.find(template => template.region === request.region && template.days === request.days) || null
+    : null;
 }
 
 function buildGenericTripDays(request, language) {
@@ -353,13 +381,17 @@ function buildGenericTripDays(request, language) {
   const candidates = [...interestMatches, ...inRegion.filter(destination => !interestMatches.includes(destination))];
   const fallback = candidates.length ? candidates : destinations;
 
+  const paceDivisor = request.pace === 'relaxed' ? 2 : request.pace === 'active' ? 1 : 1.5;
+
   return Array.from({ length: request.days }, (_, index) => {
-    const destination = fallback[index % fallback.length];
+    const destination = fallback[Math.floor(index / paceDivisor) % fallback.length];
     const attraction = destination?.primaryAttraction || null;
     return {
       day: index + 1,
       provinceSlug: destination?.provinceSlug || destination?.slug || '',
       province: destination?.province || destination?.name || '',
+      image: destination?.heroImage || '',
+      category: normalizeCategoryList(destination)[0] || '',
       stops: attraction?.name?.[language] ? [attraction.name[language]] : [],
       verifiedAttraction: Boolean(attraction)
     };
@@ -376,6 +408,8 @@ function buildTripPlan(request) {
       title: template.title[language], meta: copy.exactMeta,
       days: template.itinerary.map(item => ({
         day: item.day, provinceSlug: item.provinceSlug, province: item.province[language],
+        image: getDestinationBySlug(item.provinceSlug)?.heroImage || '',
+        category: normalizeCategoryList(getDestinationBySlug(item.provinceSlug) || {})[0] || '',
         stops: item.stops[language], verifiedAttraction: true
       })),
       source: template.source, request
@@ -403,6 +437,71 @@ function createTripMessage(kind) {
   return message;
 }
 
+function clampTripNumber(value, min, max, fallback) {
+  const number = Math.round(Number(value));
+  return Number.isFinite(number) ? Math.min(max, Math.max(min, number)) : fallback;
+}
+
+function getTripBuilderRequest(form) {
+  const language = getTripAssistantLanguage();
+  const copy = TRIP_ASSISTANT_COPY[language];
+  const region = form.elements.region.value || null;
+  const interest = form.elements.interest.value || null;
+  const pace = ['relaxed', 'balanced', 'active'].includes(form.elements.pace.value)
+    ? form.elements.pace.value
+    : 'balanced';
+  const days = clampTripNumber(form.elements.days.value, 1, 10, 3);
+  const travelers = clampTripNumber(form.elements.travelers.value, 1, 50, 1);
+  const budgetValue = Number(form.elements.budget.value);
+  const budget = Number.isFinite(budgetValue) && budgetValue > 0 ? Math.round(budgetValue) : null;
+  const request = { region, interest, pace, days, travelers, budget, source: 'builder' };
+  request.raw = formatTripCopy(copy.requestSummary, {
+    region: copy.regions[region || 'all'],
+    days,
+    travelers,
+    interest: copy.interests[interest || 'all'],
+    pace: copy.paceShort[pace]
+  });
+  return request;
+}
+
+function setTripBuilderRequest(form, request) {
+  if (!form || !request) return;
+  form.elements.region.value = request.region || '';
+  form.elements.days.value = String(clampTripNumber(request.days, 1, 10, 3));
+  form.elements.travelers.value = String(clampTripNumber(request.travelers, 1, 50, 1));
+  form.elements.interest.value = request.interest || '';
+  form.elements.pace.value = request.pace || 'balanced';
+  form.elements.budget.value = request.budget || '';
+}
+
+function saveTripRequest(request) {
+  try {
+    localStorage.setItem(TRIP_PLAN_STORAGE_KEY, JSON.stringify(request));
+  } catch (_) {
+    // The planner remains fully usable when storage is unavailable.
+  }
+}
+
+function loadTripRequest() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(TRIP_PLAN_STORAGE_KEY) || 'null');
+    if (!saved || typeof saved !== 'object') return null;
+    return {
+      region: ['north', 'central', 'northeast', 'east', 'south'].includes(saved.region) ? saved.region : null,
+      interest: ['nature', 'beach', 'mountain', 'temple', 'culture'].includes(saved.interest) ? saved.interest : null,
+      pace: ['relaxed', 'balanced', 'active'].includes(saved.pace) ? saved.pace : 'balanced',
+      days: clampTripNumber(saved.days, 1, 10, 3),
+      travelers: clampTripNumber(saved.travelers, 1, 50, 1),
+      budget: Number(saved.budget) > 0 ? Math.round(Number(saved.budget)) : null,
+      source: saved.source === 'quick' ? 'quick' : 'builder',
+      raw: typeof saved.raw === 'string' ? saved.raw.slice(0, 180) : ''
+    };
+  } catch (_) {
+    return null;
+  }
+}
+
 function renderTripAssistantWelcome(container, copy) {
   const message = createTripMessage('assistant');
   const icon = document.createElement('span');
@@ -416,9 +515,10 @@ function renderTripAssistantWelcome(container, copy) {
   container.replaceChildren(message);
 }
 
-function syncTripDaysToBudget(days) {
+function syncTripDaysToBudget(days, travelers = 1) {
   const form = document.getElementById('budget-form');
   if (!form) return;
+  form.elements.travelers.value = String(clampTripNumber(travelers, 1, 50, 1));
   form.elements.days.value = String(days);
   form.elements.nights.value = String(Math.max(0, days - 1));
   form.dispatchEvent(new Event('input', { bubbles: true }));
@@ -430,7 +530,16 @@ function renderTripPlan(plan) {
   const language = getTripAssistantLanguage();
   const copy = TRIP_ASSISTANT_COPY[language];
   const userMessage = createTripMessage('user');
-  userMessage.append(createTripTextElement('p', '', plan.request.raw));
+  const requestText = plan.request.source === 'builder'
+    ? formatTripCopy(copy.requestSummary, {
+      region: copy.regions[plan.request.region || 'all'],
+      days: plan.request.days,
+      travelers: plan.request.travelers || 1,
+      interest: copy.interests[plan.request.interest || 'all'],
+      pace: copy.paceShort[plan.request.pace || 'balanced']
+    })
+    : plan.request.raw;
+  userMessage.append(createTripTextElement('p', '', requestText));
   const response = createTripMessage('assistant');
   const icon = document.createElement('span');
   icon.className = 'trip-message-avatar';
@@ -440,14 +549,57 @@ function renderTripPlan(plan) {
   content.className = 'trip-plan-response';
   content.append(createTripTextElement('h3', '', plan.title));
   content.append(createTripTextElement('p', 'trip-plan-meta', plan.meta));
+
+  const summary = document.createElement('div');
+  summary.className = 'trip-plan-summary';
+  [
+    ['fa-calendar-days', `${plan.request.days} ${copy.summaryDays}`],
+    ['fa-user-group', `${plan.request.travelers || 1} ${copy.summaryTravelers}`],
+    ['fa-map', copy.regions[plan.request.region || 'all']],
+    ['fa-gauge-high', `${copy.summaryPace}: ${copy.paceShort[plan.request.pace || 'balanced']}`]
+  ].forEach(([iconName, text]) => {
+    const item = document.createElement('span');
+    const itemIcon = document.createElement('i');
+    itemIcon.className = `fas ${iconName}`;
+    itemIcon.setAttribute('aria-hidden', 'true');
+    item.append(itemIcon, document.createTextNode(text));
+    summary.append(item);
+  });
+  content.append(summary);
+
+  const route = [...new Set(plan.days.map(item => item.province).filter(Boolean))];
+  if (route.length) {
+    const routeLine = document.createElement('p');
+    routeLine.className = 'trip-plan-route';
+    const routeIcon = document.createElement('i');
+    routeIcon.className = 'fas fa-route';
+    routeIcon.setAttribute('aria-hidden', 'true');
+    routeLine.append(routeIcon, document.createTextNode(`${copy.route}: ${route.join(' → ')}`));
+    content.append(routeLine);
+  }
+
   const grid = document.createElement('div');
   grid.className = 'trip-day-grid';
 
   plan.days.forEach(item => {
     const card = document.createElement('article');
     card.className = 'trip-day-card';
+    if (item.image) {
+      const image = document.createElement('img');
+      image.className = 'trip-day-image';
+      image.src = getSafeGalleryImageSource(item.image);
+      image.alt = item.province;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.width = 480;
+      image.height = 260;
+      card.append(image);
+    }
     card.append(createTripTextElement('span', 'trip-day-number', `${copy.day} ${item.day}`));
     card.append(createTripTextElement('h4', '', item.province));
+    if (item.category && copy.interests[item.category]) {
+      card.append(createTripTextElement('span', 'trip-day-category', copy.interests[item.category]));
+    }
     if (item.stops.length) {
       const list = document.createElement('ul');
       item.stops.forEach(stop => {
@@ -496,18 +648,97 @@ function renderTripPlan(plan) {
   content.append(createTripTextElement('p', 'trip-plan-budget', budgetText));
   content.append(createTripTextElement('p', 'trip-plan-disclaimer', copy.disclaimer));
   content.append(createTripTextElement('p', 'trip-plan-local', copy.localOnly));
+
+  const actions = document.createElement('div');
+  actions.className = 'trip-plan-actions';
+  const actionItems = [
+    ['edit', 'fa-sliders', copy.edit],
+    ['budget', 'fa-calculator', copy.budgetAction],
+    ['print', 'fa-print', copy.print]
+  ];
+  actionItems.forEach(([action, iconName, text]) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.tripAction = action;
+    button.className = action === 'budget' ? 'btn-primary' : 'trip-plan-action';
+    const buttonIcon = document.createElement('i');
+    buttonIcon.className = `fas ${iconName}`;
+    buttonIcon.setAttribute('aria-hidden', 'true');
+    button.append(buttonIcon, document.createTextNode(text));
+    actions.append(button);
+  });
+  const savedStatus = createTripTextElement('span', 'trip-plan-saved', copy.saved);
+  const savedIcon = document.createElement('i');
+  savedIcon.className = 'fas fa-circle-check';
+  savedIcon.setAttribute('aria-hidden', 'true');
+  savedStatus.prepend(savedIcon);
+  actions.append(savedStatus);
+  content.append(actions);
+
   response.append(icon, content);
   container.replaceChildren(userMessage, response);
-  syncTripDaysToBudget(plan.request.days);
+  container.querySelector('[data-trip-action="edit"]')?.addEventListener('click', () => {
+    document.getElementById('trip-builder-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById('trip-builder-region')?.focus({ preventScroll: true });
+  });
+  container.querySelector('[data-trip-action="budget"]')?.addEventListener('click', () => {
+    document.querySelector('.budget-section-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('budget-room')?.focus({ preventScroll: true });
+  });
+  container.querySelector('[data-trip-action="print"]')?.addEventListener('click', () => window.print());
+  syncTripDaysToBudget(plan.request.days, plan.request.travelers || 1);
+  lastTripAssistantRequest = { ...plan.request, raw: requestText };
+  saveTripRequest(lastTripAssistantRequest);
 }
 
 function renderTripAssistant() {
   const form = document.getElementById('trip-assistant-form');
+  const builder = document.getElementById('trip-builder-form');
   const container = document.getElementById('trip-assistant-messages');
   const input = document.getElementById('trip-assistant-input');
-  if (!form || !container || !input) return;
+  if (!form || !builder || !container || !input) return;
   const language = getTripAssistantLanguage();
   const copy = TRIP_ASSISTANT_COPY[language];
+
+  const setText = (id, value) => {
+    const element = document.getElementById(id);
+    if (element) element.textContent = value;
+  };
+  setText('trip-builder-step', copy.builderStep);
+  setText('trip-builder-title', copy.builderTitle);
+  const storage = document.getElementById('trip-builder-storage');
+  if (storage) storage.lastChild.textContent = ` ${copy.storage}`;
+  setText('trip-builder-region-label', copy.regionLabel);
+  setText('trip-builder-days-label', copy.daysLabel);
+  setText('trip-builder-travelers-label', copy.travelersLabel);
+  setText('trip-builder-interest-label', copy.interestLabel);
+  setText('trip-builder-pace-label', copy.paceLabel);
+  setText('trip-builder-budget-label', copy.budgetLabel);
+  const setButtonContent = (button, iconName, text) => {
+    if (!button) return;
+    const icon = document.createElement('i');
+    icon.className = `fas ${iconName}`;
+    icon.setAttribute('aria-hidden', 'true');
+    button.replaceChildren(icon, createTripTextElement('span', '', text));
+  };
+  const buildButton = document.getElementById('trip-builder-submit');
+  setButtonContent(buildButton, 'fa-wand-magic-sparkles', copy.build);
+  const resetButton = document.getElementById('trip-builder-reset');
+  setButtonContent(resetButton, 'fa-rotate-left', copy.reset);
+  const quickSummary = document.querySelector('#trip-quick-summary span');
+  if (quickSummary) quickSummary.textContent = copy.quick;
+  builder.elements.budget.placeholder = copy.optional;
+
+  const setOptions = (select, entries) => {
+    if (!select) return;
+    [...select.options].forEach(option => {
+      option.textContent = entries[option.value || 'all'];
+    });
+  };
+  setOptions(builder.elements.region, copy.regions);
+  setOptions(builder.elements.interest, copy.interests);
+  setOptions(builder.elements.pace, copy.paces);
+
   const label = form.querySelector('label[for="trip-assistant-input"]');
   const buttonLabel = form.querySelector('button[type="submit"] span');
   if (label) label.textContent = copy.inputLabel;
@@ -518,28 +749,57 @@ function renderTripAssistant() {
     button.textContent = language === 'en' ? button.dataset.promptEn : button.dataset.promptTh;
   });
 
-  if (lastTripAssistantQuery) {
-    input.value = lastTripAssistantQuery;
-    renderTripPlan(buildTripPlan(parseTripPlannerRequest(lastTripAssistantQuery)));
+  if (!lastTripAssistantRequest) {
+    lastTripAssistantRequest = loadTripRequest();
+    if (lastTripAssistantRequest) setTripBuilderRequest(builder, lastTripAssistantRequest);
+  }
+
+  if (lastTripAssistantRequest) {
+    input.value = lastTripAssistantRequest.source === 'quick' ? lastTripAssistantRequest.raw : '';
+    renderTripPlan(buildTripPlan(lastTripAssistantRequest));
   } else {
     renderTripAssistantWelcome(container, copy);
   }
 
-  if (form.dataset.bound === 'true') return;
-  form.addEventListener('submit', event => {
-    event.preventDefault();
-    const query = input.value.trim();
-    if (!query) { input.focus(); return; }
-    lastTripAssistantQuery = query;
-    renderTripPlan(buildTripPlan(parseTripPlannerRequest(query)));
-  });
-  document.querySelectorAll('.trip-suggestion').forEach(button => {
-    button.addEventListener('click', () => {
-      input.value = getTripAssistantLanguage() === 'en' ? button.dataset.promptEn : button.dataset.promptTh;
-      form.requestSubmit();
+  if (builder.dataset.bound !== 'true') {
+    builder.addEventListener('submit', event => {
+      event.preventDefault();
+      const request = getTripBuilderRequest(builder);
+      lastTripAssistantRequest = request;
+      renderTripPlan(buildTripPlan(request));
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  });
-  form.dataset.bound = 'true';
+    builder.addEventListener('reset', () => {
+      requestAnimationFrame(() => {
+        lastTripAssistantRequest = null;
+        input.value = '';
+        try { localStorage.removeItem(TRIP_PLAN_STORAGE_KEY); } catch (_) { /* Storage is optional. */ }
+        renderTripAssistantWelcome(container, TRIP_ASSISTANT_COPY[getTripAssistantLanguage()]);
+        syncTripDaysToBudget(1, 1);
+      });
+    });
+    builder.dataset.bound = 'true';
+  }
+
+  if (form.dataset.bound !== 'true') {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const query = input.value.trim();
+      if (!query) { input.focus(); return; }
+      const request = parseTripPlannerRequest(query);
+      request.travelers = clampTripNumber(builder.elements.travelers.value, 1, 50, 1);
+      lastTripAssistantRequest = request;
+      setTripBuilderRequest(builder, request);
+      renderTripPlan(buildTripPlan(request));
+    });
+    document.querySelectorAll('.trip-suggestion').forEach(button => {
+      button.addEventListener('click', () => {
+        input.value = getTripAssistantLanguage() === 'en' ? button.dataset.promptEn : button.dataset.promptTh;
+        form.requestSubmit();
+      });
+    });
+    form.dataset.bound = 'true';
+  }
 }
 
 window.parseTripPlannerRequest = parseTripPlannerRequest;
