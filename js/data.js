@@ -332,6 +332,36 @@ const DESTINATIONS = [
    visitable place and carry their own hours, admission and sources. Never
    promote an activity suggestion into this collection without verification. */
 const VERIFIED_ATTRACTIONS = {
+  "chiang-rai": {
+    id: "wat-rong-khun", name: {"th": "วัดร่องขุ่น", "en": "Wat Rong Khun, Chiang Rai"},
+    hours: {"th": "โปรดตรวจสอบเวลาเข้าชมอุโบสถและห้องแสดงภาพกับสถานที่ก่อนเดินทาง", "en": "Confirm visiting hours for the temple hall and art gallery with the venue."},
+    admission: {"th": "โปรดตรวจสอบค่าธรรมเนียมล่าสุดและประเภทบัตรกับสถานที่ก่อนเดินทาง", "en": "Confirm current admission charges and ticket categories with the venue before visiting."},
+    officialSource: "https://cbtthailand.dasta.or.th/webapp/relattraction/content/727/", sourceLabel: "DASTA", verifiedOn: "2026-10-28"
+  },
+  "sukhothai": {
+    id: "sukhothai-historical-park", name: {"th": "อุทยานประวัติศาสตร์สุโขทัย", "en": "Sukhothai Historical Park"},
+    hours: {"th": "ททท. ญี่ปุ่นระบุ 06:30–19:30 น. ทุกวัน (ข้อมูลสิงหาคม 2026); ตรวจสอบประกาศก่อนเดินทาง", "en": "TAT Japan lists daily hours of 06:30–19:30 (August 2026 information); check current notices before visiting."},
+    admission: {"th": "โปรดตรวจสอบค่าธรรมเนียมล่าสุดและประเภทบัตรกับสถานที่ก่อนเดินทาง", "en": "Confirm current admission charges and ticket categories with the venue before visiting."},
+    officialSource: "https://www.thailandtravel.or.jp/sukhothai-historical-park/", sourceLabel: "Tourism Authority of Thailand, Japan", verifiedOn: "2026-10-28"
+  },
+  "buri-ram": {
+    id: "phanom-rung-historical-park", name: {"th": "อุทยานประวัติศาสตร์พนมรุ้ง", "en": "Phanom Rung Historical Park, Buri Ram"},
+    hours: {"th": "ททท. ญี่ปุ่นระบุ 06:00–18:00 น. ทุกวัน; ตรวจสอบประกาศของอุทยานก่อนเดินทาง", "en": "TAT Japan lists daily hours of 06:00–18:00; check current park notices before visiting."},
+    admission: {"th": "โปรดตรวจสอบค่าธรรมเนียมล่าสุดและประเภทบัตรกับสถานที่ก่อนเดินทาง", "en": "Confirm current admission charges and ticket categories with the venue before visiting."},
+    officialSource: "https://www.thailandtravel.or.jp/phanom-rung-historical-park/", sourceLabel: "Tourism Authority of Thailand, Japan", verifiedOn: "2026-10-28"
+  },
+  "phra-nakhon-si-ayutthaya": {
+    id: "wat-mahathat-ayutthaya", name: {"th": "วัดมหาธาตุ พระนครศรีอยุธยา", "en": "Wat Mahathat, Phra Nakhon Si Ayutthaya"},
+    hours: {"th": "แหล่งอ้างอิงนี้ไม่ระบุเวลาเปิด–ปิด; โปรดตรวจสอบกับอุทยานก่อนเดินทาง", "en": "This source does not state opening hours; confirm with the historical park before visiting."},
+    admission: {"th": "โปรดตรวจสอบค่าธรรมเนียมล่าสุดและประเภทบัตรกับสถานที่ก่อนเดินทาง", "en": "Confirm current admission charges and ticket categories with the venue before visiting."},
+    officialSource: "https://go.ayutthaya.go.th/tourist-attraction/wat-mahathat-phra-nakhon-si-ayutthaya/", sourceLabel: "Phra Nakhon Si Ayutthaya Provincial Office", verifiedOn: "2026-10-28"
+  },
+  "kanchanaburi": {
+    id: "bridge-over-river-kwai", name: {"th": "สะพานข้ามแม่น้ำแคว", "en": "Bridge over the River Kwai, Kanchanaburi"},
+    hours: {"th": "ททท. มาเลเซียระบุเปิดตลอดวัน; ตรวจสอบการจำกัดพื้นที่และประกาศหน้างาน", "en": "TAT Malaysia lists all-day access; check local access restrictions and notices."},
+    admission: {"th": "โปรดตรวจสอบค่าธรรมเนียมล่าสุดและประเภทบัตรกับสถานที่ก่อนเดินทาง", "en": "Confirm current admission charges and ticket categories with the venue before visiting."},
+    officialSource: "https://tourismthailand.my/home/bridge-over-the-river-kwai", sourceLabel: "Tourism Authority of Thailand, Malaysia", verifiedOn: "2026-10-28"
+  },
   phuket: {
     id: "phuket-old-town", name: { th: "ย่านเมืองเก่าภูเก็ต", en: "Phuket Old Town" },
     hours: { th: "พื้นที่สาธารณะเปิดตลอดวัน; ถนนคนเดินวันอาทิตย์ 16:00–22:00 น.", en: "Public streets are open all day; Sunday Walking Street runs 16:00–22:00." },

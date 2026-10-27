@@ -970,7 +970,7 @@ test("province and verified attraction records remain separate", async ({ page }
     ).length
   }));
 
-  expect(result).toEqual({ provinces: 77, verified: 5, wrongTypes: 0, promotedActivities: 0 });
+  expect(result).toEqual({ provinces: 77, verified: 10, wrongTypes: 0, promotedActivities: 0 });
 
   await page.evaluate(() => window.openModal(5));
   await expect(page.locator("#modal-info")).toContainText("พระบรมมหาราชวัง");
@@ -978,7 +978,7 @@ test("province and verified attraction records remain separate", async ({ page }
   await expect(page.locator("#modal-info a[href*='agoda.com/search']")).toHaveCount(1);
   await expect(page.locator("#modal-info .modal-info-item")).toHaveCount(3);
 
-  await page.evaluate(() => window.openModal(6));
+  await page.evaluate(() => window.openModal(window.destinations.find(item => !item.primaryAttraction).id));
   await expect(page.locator("#modal-info")).toContainText("กำลังรอตรวจสอบ");
 });
 
@@ -1075,4 +1075,39 @@ test("routing, console and local resources remain healthy", async ({ page }) => 
 
   expect(errors).toEqual([]);
   expect(failedLocal).toEqual([]);
+});
+
+
+test("second attraction batch keeps bilingual source panels and map searches usable", async ({ page }) => {
+  const batch = [
+    ["chiang-rai", "วัดร่องขุ่น", "Wat Rong Khun, Chiang Rai"],
+    ["sukhothai", "อุทยานประวัติศาสตร์สุโขทัย", "Sukhothai Historical Park"],
+    ["buri-ram", "อุทยานประวัติศาสตร์พนมรุ้ง", "Phanom Rung Historical Park, Buri Ram"],
+    ["phra-nakhon-si-ayutthaya", "วัดมหาธาตุ พระนครศรีอยุธยา", "Wat Mahathat, Phra Nakhon Si Ayutthaya"],
+    ["kanchanaburi", "สะพานข้ามแม่น้ำแคว", "Bridge over the River Kwai, Kanchanaburi"]
+  ];
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.message));
+  for (const [slug, th, en] of batch) {
+    await page.goto(`/destinations/${slug}/`);
+    const panel = page.locator("section[aria-labelledby='verified-heading']");
+    for (const language of ["th", "en"]) {
+      if (await page.locator("html").getAttribute("lang") !== language) await page.locator("#detail-language").click();
+      await expect(panel).toContainText(language === "th" ? th : en);
+      await expect(panel).toContainText("2026-10-28");
+      const map = new URL(await panel.locator("a[href*='google.com/maps/search']").getAttribute("href"));
+      expect(map.searchParams.get("query")).toBe(`${en}, Thailand`);
+      const source = panel.locator("a[data-en='Official source']");
+      await expect(source).toHaveAttribute("href", /^https:\/\//);
+      for (const theme of ["light", "dark"]) {
+        if (await page.locator("html").getAttribute("data-theme") !== theme) await page.locator("#detail-theme").click();
+        await expect(panel).toBeVisible();
+        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+      }
+    }
+    await page.reload();
+    await expect(panel).toContainText(en);
+    expect(await page.locator("img").evaluateAll(images => images.filter(img => img.complete && img.naturalWidth === 0).length)).toBe(0);
+  }
+  expect(errors).toEqual([]);
 });

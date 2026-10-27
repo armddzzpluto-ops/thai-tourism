@@ -51,8 +51,11 @@
 - [x] Curate Bangkok, Chiang Mai, Phuket, Krabi and Surat Thani as a visually reviewed showcase set with exact bilingual captions, complete attribution and a security-hardened ingestion pipeline
 - [x] Complete Smart Trip Assistant as a structured end-to-end planner with saved daily routes, responsive imagery, editing, printing and budget-calculator handoff
 
+- [x] Add five source-reviewed attraction records for Chiang Rai, Sukhothai, Buri Ram, Ayutthaya and Kanchanaburi (10/77 total)
+
 ## Next phase
-- [ ] Verify attraction records for the remaining 72 provinces in small source-reviewed batches
+- [ ] Re-curate the second-batch province galleries: metadata includes unrelated event, military, chart and school images; no attraction-photo association has been verified
+- [ ] Verify attraction records for the remaining 67 provinces in small source-reviewed batches
 - [ ] Add authoritative numeric coordinates where an official source publishes them
 - [ ] Confirm that each province hero/gallery depicts the selected primary attraction before linking it to that attraction
 - [ ] Continue splitting page markup into maintainable components without changing public selectors

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-28 — Verify five more province attractions
+- Added official-source attraction records for Chiang Rai, Sukhothai, Buri Ram, Ayutthaya and Kanchanaburi, increasing coverage to 10/77.
+- Regenerated detail pages and documented source limits, fees requiring confirmation and unresolved image matching.
+- Added bilingual, theme and responsive checks for all five new detail panels.
+
 ## 2026-09-25 — Complete the Smart Trip Assistant workflow
 - Rebuilt the planner around a bilingual structured form for region, trip length, travellers, interests, travel pace and optional budget while retaining the safe free-text shortcut.
 - Added responsive day-by-day province plans with trusted local imagery, route and trip summaries, source-aware attraction details, edit/print/budget actions and browser-only save/restore.
