@@ -20,11 +20,11 @@
 - Home, Destinations, Promotions, Gallery and Modal resolve destination identity, names and images from `window.DESTINATIONS`
 - Dashboard displays dataset coverage computed from live destination/gallery records; it does not claim tourism totals
 - Fabricated weather, traveler reviews, prices, ratings, people and contact channels have been removed
-- Province and attraction records are separate; 5/77 provinces currently have one sourced attraction record and all others expose an honest pending-verification state
+- Province and attraction records are separate; 10/77 provinces currently have one sourced attraction record and all others expose an honest pending-verification state
 - The legacy Promotions route now hosts a user-input trip budget calculator; sample packages and provider-style prices have been removed
 - The Destinations route can filter the existing local favorites list, updates saved counts live and provides bilingual empty states
 - A project-local maintainer skill and `npm run verify` encode the repository workflow for compatible AI agents and contributors
-- The repository README presents the live site, real responsive screenshots, architecture, verification workflow and honest 5/77 attraction-verification status
+- The repository README presents the live site, real responsive screenshots, architecture, verification workflow and honest 10/77 attraction-verification status
 - Light and Dark Mode now share one emerald-and-temple-gold identity; Dark Mode uses deep emerald ink surfaces and warm readable foregrounds instead of the former blue/navy remap
 - Light Mode uses a warm cream canvas, softly raised cards and visible warm-gray borders so boundaries remain legible on bright displays
 - Shared Light/Dark ambient gradients, squircle icon containers and reusable detail-card layouts now provide consistent background depth, alignment and micro-spacing across Home and About content
@@ -86,6 +86,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-10-28 · Second attraction batch · Added five bilingual, source-reviewed records (Chiang Rai, Sukhothai, Buri Ram, Ayutthaya, Kanchanaburi). Fees and unconfirmed hours remain explicit confirmation prompts; province imagery is not certified as attraction imagery. See docs/attraction-verification-2026-10-28.md.
 - 2026-09-25 · Complete Smart Trip Assistant workflow · Added a structured bilingual trip builder, responsive image-backed daily plans, browser-only save/restore, edit/print/budget handoff and all-viewport regression coverage; 156 browser scenarios pass
 - 2026-09-18 · Five-province showcase gallery curation · Replaced weak imagery for the five verified provinces with 15 visually reviewed Commons assets, reproducible and security-hardened cross-platform curation, full attribution and bilingual detail-page captions
 - 2026-09-05 · All-province detail refresh · Rebuilt the shared generator/CSS for 77 wider, responsive bilingual detail pages with theme control, structural guards and focused browser coverage
