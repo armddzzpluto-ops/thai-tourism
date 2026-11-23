@@ -311,6 +311,18 @@
 
     input.addEventListener("focus", render);
 
+    // Clear the old language immediately, before a new focus can reopen this list.
+    document.addEventListener("languagechange", () => {
+      clearTimeout(inputTimer);
+      if (document.activeElement === input || box.contains(document.activeElement)) {
+        input.focus();
+        render();
+      } else {
+        setOpen(false);
+        box.replaceChildren();
+      }
+    });
+
     input.addEventListener("keydown", event => {
       if (event.key === "ArrowDown") {
         event.preventDefault();
@@ -597,11 +609,6 @@
   }
 
   function refreshLocalizedEnhancements() {
-    document.querySelectorAll(".suggestion-box").forEach(box => {
-      box.classList.remove("is-open");
-      box.replaceChildren();
-    });
-
     initRegionExplorer();
     initBlog();
     initFAQ();
