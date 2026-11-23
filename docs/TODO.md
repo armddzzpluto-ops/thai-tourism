@@ -1,6 +1,7 @@
 # TODO
 
 ## Completed foundation
+- [x] Keep primary route links shareable and browsing usable when storage is blocked; cover keyboard history clearing and make the bilingual audit independent of line endings.
 - [x] Canonical agent and Copilot instructions
 - [x] Playwright coverage for Desktop, Notebook, Tablet and Mobile
 - [x] Automated phase-memory workflow

@@ -23,6 +23,50 @@ test.beforeEach(async ({ page }) => {
   await page.waitForFunction(() => window.I18N && window.showPage);
 });
 
+test("direct routes and browsing work when storage is blocked", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", error => errors.push(error.message));
+  await page.addInitScript(() => Object.defineProperty(window, "localStorage", {
+    get() { throw new DOMException("Storage unavailable", "SecurityError"); }
+  }));
+  await page.goto("/#destinations");
+  await expect(page.locator("#page-destinations")).toBeVisible();
+  await expect(page.locator("#dest-cards .dest-card")).toHaveCount(77);
+  await page.locator("#dest-cards .card-fav").first().click();
+  await page.locator("#favorites-filter").click();
+  await expect(page.locator("#dest-cards .dest-card")).toHaveCount(1);
+  await page.evaluate(() => window.I18N.setLanguage("en"));
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.evaluate(() => window.showPage("gallery"));
+  await page.goBack();
+  await expect(page.locator("#page-destinations")).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
+test("recent history clears with Enter and Space in both languages", async ({ page }) => {
+  const input = page.locator("#quick-search");
+  const clear = page.locator("#quick-search-suggestions [data-clear-recent]");
+  for (const [lang, key] of [["th", "Enter"], ["en", "Space"]]) {
+    await page.evaluate(language => {
+      window.I18N.setLanguage(language);
+      localStorage.setItem("tt_recent_searches:" + language, JSON.stringify(["Bangkok"]));
+    }, lang);
+    await input.blur();
+    await input.focus();
+    await clear.focus();
+    await clear.press(key);
+    await expect(clear).toHaveCount(0);
+    await expect(input).toBeFocused();
+    expect(await page.evaluate(language => localStorage.getItem("tt_recent_searches:" + language), lang)).toBeNull();
+  }
+});
+
+test("desktop and mobile links expose the actual route", async ({ page }) => {
+  for (const link of await page.locator(".nav-links a[data-page], #mobileMenu a[data-page]").all()) {
+    await expect(link).toHaveAttribute("href", "#" + await link.getAttribute("data-page"));
+  }
+});
+
 test("light and dark themes keep one emerald-and-gold identity", async ({ page }) => {
   const snapshot = theme => page.evaluate(selectedTheme => {
     window.applyTheme(selectedTheme);

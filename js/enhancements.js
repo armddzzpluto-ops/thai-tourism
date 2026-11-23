@@ -6,7 +6,6 @@
   "use strict";
 
   const STORAGE = {
-    theme: "tt_theme",
     recent: "tt_recent_searches",
     quoteDate: "tt_daily_quote_date",
     quoteIndex: "tt_daily_quote_index"
@@ -104,26 +103,6 @@
       };
     }
 
-  }
-
-  function initTheme() {
-    /* Theme is handled by the core application runtime. */
-  }
-
-  function currentTheme() {
-    return document.documentElement.getAttribute("data-theme") || "light";
-  }
-
-  function applyTheme(theme, showMessage) {
-    const next = theme === "dark" ? "dark" : "light";
-    const toggle = document.getElementById("theme-toggle");
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem(STORAGE.theme, next);
-    if (toggle) {
-      toggle.innerHTML = next === "dark" ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-      toggle.setAttribute("aria-pressed", next === "dark");
-    }
-    if (showMessage) notify(tr(next === "dark" ? "theme.darkEnabled" : "theme.lightEnabled", next === "dark" ? "เปิดโหมดมืดแล้ว" : "เปิดโหมดสว่างแล้ว"), "info");
   }
 
   function initScrollProgress() {
@@ -296,7 +275,7 @@
       const query = input.value.trim().toLowerCase();
       const source = Array.isArray(window.destinations) ? window.destinations : [];
       const matches = query
-        ? source.filter(destination => matchesDestination(destination, query)).slice(0, 6)
+        ? source.filter(destination => matchesDestinationSearch(destination, query)).slice(0, 6)
         : [];
 
       box.innerHTML = query
@@ -310,15 +289,14 @@
         button.setAttribute("aria-selected", "false");
         button.id = `${box.id}-option-${index}`;
 
-        button.addEventListener("mousedown", event => {
-          event.preventDefault();
-          choose(button);
-        });
+        button.addEventListener("click", () => choose(button));
       });
 
-      box.querySelector("[data-clear-recent]")?.addEventListener("mousedown", event => {
-        event.preventDefault();
-        localStorage.removeItem(recentStorageKey());
+      box.querySelector("[data-clear-recent]")?.addEventListener("click", event => {
+        // The clicked control disappears when the list is rebuilt.
+        event.stopPropagation();
+        sitePreferences.removeItem(recentStorageKey());
+        input.focus();
         render();
         notify(tr("search.cleared", "ล้างประวัติการค้นหาแล้ว"), "info");
       });
@@ -332,6 +310,18 @@
     });
 
     input.addEventListener("focus", render);
+
+    // Clear the old language immediately, before a new focus can reopen this list.
+    document.addEventListener("languagechange", () => {
+      clearTimeout(inputTimer);
+      if (document.activeElement === input || box.contains(document.activeElement)) {
+        input.focus();
+        render();
+      } else {
+        setOpen(false);
+        box.replaceChildren();
+      }
+    });
 
     input.addEventListener("keydown", event => {
       if (event.key === "ArrowDown") {
@@ -375,21 +365,6 @@
     });
   }
 
-  function matchesDestination(d, q) {
-    return [
-      d.name,
-      d.province,
-      d.region,
-      d.badge,
-      d.desc,
-      ...(d.tags || []),
-      ...(d.category || []),
-      ...(d.activities || []),
-      ...(d.searchKeywords || [])
-    ]
-      .some(value => String(value).toLowerCase().includes(q));
-  }
-
   function renderMatches(matches) {
     if (!matches.length) {
       return `<div class="empty-state"><i class="fas fa-search"></i>${tr("search.noResults", "ยังไม่พบสถานที่ที่ตรงคำค้น")}</div>`;
@@ -419,9 +394,9 @@
 
   function getRecentSearches() {
     try {
-      const stored = localStorage.getItem(recentStorageKey()) || "[]";
+      const stored = sitePreferences.getItem(recentStorageKey()) || "[]";
       if (stored.length > 4096) {
-        localStorage.removeItem(recentStorageKey());
+        sitePreferences.removeItem(recentStorageKey());
         return [];
       }
       const value = JSON.parse(stored);
@@ -433,7 +408,7 @@
             .map(item => item.trim().slice(0, 80))
         : [];
     } catch {
-      localStorage.removeItem(recentStorageKey());
+      sitePreferences.removeItem(recentStorageKey());
       return [];
     }
   }
@@ -443,7 +418,7 @@
     if (!clean) return;
     const recent = getRecentSearches().filter(item => item.toLowerCase() !== clean.toLowerCase());
     recent.unshift(clean);
-    localStorage.setItem(recentStorageKey(), JSON.stringify(recent.slice(0, 6)));
+    sitePreferences.setItem(recentStorageKey(), JSON.stringify(recent.slice(0, 6)));
   }
 
   function initRandomDestination() {
@@ -476,17 +451,17 @@
     }
 
     const today = new Date().toISOString().slice(0, 10);
-    let index = Number(localStorage.getItem(STORAGE.quoteIndex));
-    if (localStorage.getItem(STORAGE.quoteDate) !== today || !Number.isSafeInteger(index)) {
+    let index = Number(sitePreferences.getItem(STORAGE.quoteIndex));
+    if (sitePreferences.getItem(STORAGE.quoteDate) !== today || !Number.isSafeInteger(index)) {
       index = Math.floor(Math.random() * quotes.length);
-      localStorage.setItem(STORAGE.quoteDate, today);
-      localStorage.setItem(STORAGE.quoteIndex, String(index));
+      sitePreferences.setItem(STORAGE.quoteDate, today);
+      sitePreferences.setItem(STORAGE.quoteIndex, String(index));
     }
     show(index);
 
     const refresh = () => {
       index = (index + 1 + Math.floor(Math.random() * (quotes.length - 1))) % quotes.length;
-      localStorage.setItem(STORAGE.quoteIndex, String(index));
+      sitePreferences.setItem(STORAGE.quoteIndex, String(index));
       show(index);
       notify(tr("action.quoteChanged", "เปลี่ยนคำคมท่องเที่ยวแล้ว"), "info");
     };
@@ -634,11 +609,6 @@
   }
 
   function refreshLocalizedEnhancements() {
-    document.querySelectorAll(".suggestion-box").forEach(box => {
-      box.classList.remove("is-open");
-      box.replaceChildren();
-    });
-
     initRegionExplorer();
     initBlog();
     initFAQ();
@@ -646,7 +616,7 @@
     const quotes = getSharedQuotes();
     const quoteText = document.getElementById("daily-quote");
     const quoteAuthor = document.getElementById("daily-quote-author");
-    const quoteIndex = Number(localStorage.getItem(STORAGE.quoteIndex)) || 0;
+    const quoteIndex = Number(sitePreferences.getItem(STORAGE.quoteIndex)) || 0;
     const quote = quotes[quoteIndex % Math.max(quotes.length, 1)];
     if (quote && quoteText && quoteAuthor) {
       quoteText.textContent = quote.text;

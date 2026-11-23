@@ -1,4 +1,23 @@
 /* Core SPA application module */
+// Keep UI preferences usable for this page when browser storage is unavailable.
+const sitePreferences = (() => {
+  const temporary = new Map();
+  return {
+    getItem(key) {
+      if (temporary.has(key)) return temporary.get(key);
+      try { return localStorage.getItem(key); } catch { return null; }
+    },
+    setItem(key, value) {
+      try { localStorage.setItem(key, value); temporary.delete(key); }
+      catch { temporary.set(key, String(value)); }
+    },
+    removeItem(key) {
+      try { localStorage.removeItem(key); temporary.delete(key); }
+      catch { temporary.set(key, null); }
+    }
+  };
+})();
+
 // ===== DATA =====
 let destinations = [];
 let galleryImages = [];
@@ -878,12 +897,12 @@ window.__hydrateTravelData = function hydrateTravelData() {
 // ===== STATE =====
 let favorites = [];
 try {
-  const savedFavorites = JSON.parse(localStorage.getItem('tt_favs') || '[]');
+  const savedFavorites = JSON.parse(sitePreferences.getItem('tt_favs') || '[]');
   favorites = Array.isArray(savedFavorites)
     ? [...new Set(savedFavorites.map(Number).filter(Number.isInteger))]
     : [];
 } catch (error) {
-  localStorage.removeItem('tt_favs');
+  sitePreferences.removeItem('tt_favs');
   console.warn('Invalid favorites data was cleared', error);
 }
 let activeFilter = '';
@@ -921,11 +940,7 @@ function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme') || 'light';
   const next = current === 'dark' ? 'light' : 'dark';
 
-  try {
-    localStorage.setItem('tt_theme', next);
-  } catch (error) {
-    console.warn('Theme preference could not be saved', error);
-  }
+  sitePreferences.setItem('tt_theme', next);
 
   applyTheme(next);
 }
@@ -991,6 +1006,7 @@ function matchesDestinationSearch(destination, query) {
     destination.name,
     destination.province,
     destination.region,
+    destination.badge,
     destination.desc,
     destination.longDesc,
     destination.weather,
@@ -999,6 +1015,7 @@ function matchesDestinationSearch(destination, query) {
     ...(destination.tags || []),
     ...(destination.category || []),
     ...(destination.keywords || []),
+    ...(destination.activities || []),
     ...(destination.searchKeywords || [])
   ];
   return values.filter(Boolean).some(value => String(value).toLowerCase().includes(q));
@@ -1155,11 +1172,7 @@ function toggleFav(id) {
     favorites.splice(idx,1);
     Swal.fire({ toast:true, position:'top-end', icon:'info', title:window.I18N?.t('favorite.removed') || 'นำออกจากรายการโปรดแล้ว', showConfirmButton:false, timer:1800 });
   }
-  try {
-    localStorage.setItem('tt_favs', JSON.stringify(favorites));
-  } catch (error) {
-    console.warn('Favorites could not be saved', error);
-  }
+  sitePreferences.setItem('tt_favs', JSON.stringify(favorites));
   syncFavoriteButtons(id);
   syncFavoritesFilterControl();
   if (currentPage === 'destinations' && showFavoritesOnly) filterCards();
@@ -1778,7 +1791,7 @@ function observeFade() {
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
-  applyTheme(localStorage.getItem('tt_theme') || 'light');
+  applyTheme(sitePreferences.getItem('tt_theme') || 'light');
 
   const themeToggleBtn = document.getElementById('theme-toggle');
   if (themeToggleBtn) {
@@ -1790,6 +1803,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('a[onclick]').forEach(link => {
     link.addEventListener('click', event => event.preventDefault());
+  });
+
+  document.querySelectorAll('.nav-links a[data-page], #mobileMenu a[data-page]').forEach(link => {
+    link.addEventListener('click', event => {
+      // Let the browser handle opening a real route link in another tab.
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      showPage(link.dataset.page);
+    });
   });
 
   const initialPage = getPageFromHash();
