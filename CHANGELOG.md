@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-23 - Navigation, search and storage reliability
+- Preserve direct routes and page-local preferences when browser storage is denied.
+- Give primary navigation real route links and use the same destination matcher for suggestions and results.
+- Support keyboard activation of search-history controls and inspect runtime translation pairs without depending on source line endings.
+
 ## 2026-10-28 — Verify five more province attractions
 - Added official-source attraction records for Chiang Rai, Sukhothai, Buri Ram, Ayutthaya and Kanchanaburi, increasing coverage to 10/77.
 - Regenerated detail pages and documented source limits, fees requiring confirmation and unresolved image matching.
