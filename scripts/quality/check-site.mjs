@@ -358,16 +358,12 @@ if (!app.includes("item.provinceSlug || item.slug")) {
   failures.push("promotion hydration does not use the stable province slug");
 }
 
-const pairMatch = translations.match(/const staticPairs = (\[\[.*?\]\]);/s);
-if (!pairMatch) {
-  failures.push("unable to parse static bilingual text pairs");
-} else {
+{
   try {
-    const parsedPairs = JSON.parse(pairMatch[1]);
-    const pushedPairs = translations.match(/staticPairs\.push\(([\s\S]*?)\);\n\n  window\.TRANSLATIONS/);
-    if (pushedPairs) {
-      parsedPairs.push(...vm.runInNewContext(`[${pushedPairs[1]}]`));
-    }
+    // Inspect the same exported pairs the site uses, regardless of source line endings.
+    const translationContext = { window: {} };
+    vm.runInNewContext(translations, translationContext, { filename: "js/translations.js" });
+    const parsedPairs = translationContext.window.TRANSLATIONS.staticPairs;
     const translatedThai = new Set(parsedPairs.map(pair => pair[0]));
     const staticMarkup = index
       .replace(/<script\b[\s\S]*?<\/script>/gi, "")
