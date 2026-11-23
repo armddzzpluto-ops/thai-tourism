@@ -35,10 +35,11 @@ test("generated province detail uses the responsive shared visual shell", async 
     expect(new Set(geometry.galleryTops).size).toBe(4);
   }
 
-  const brokenImages = await page.locator("img").evaluateAll(images =>
-    images.filter(image => !image.complete || image.naturalWidth === 0).map(image => image.getAttribute("src"))
-  );
-  expect(brokenImages).toEqual([]);
+  // Mobile galleries load on approach; verify each actual image after scrolling to it.
+  for (const image of await page.locator("img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(node => node.complete && node.naturalWidth > 0)).toBe(true);
+  }
 });
 
 test("province detail language and theme controls update the live page", async ({ page }) => {
