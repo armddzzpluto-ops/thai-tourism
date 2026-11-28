@@ -86,6 +86,7 @@
 - No checkpoints, terminal probes, retired bundles, raw province JPGs or orphan extended-gallery assets
 
 ## Automated Phase Log
+- 2026-11-29: Replaced the three gallery selections for each second-batch province; the file-level sources and bilingual descriptions live in the showcase manifest. The five hero images were not changed or verified.
 - 2026-11-23: Primary navigation uses native hash links with SPA handling for ordinary clicks. Favorites, recent searches, quotes and theme preferences can fall back to page memory; search suggestions and destination results share a matcher.
 - 2026-10-28 · Second attraction batch · Added five bilingual, source-reviewed records (Chiang Rai, Sukhothai, Buri Ram, Ayutthaya, Kanchanaburi). Fees and unconfirmed hours remain explicit confirmation prompts; province imagery is not certified as attraction imagery. See docs/attraction-verification-2026-10-28.md.
 - 2026-09-25 · Complete Smart Trip Assistant workflow · Added a structured bilingual trip builder, responsive image-backed daily plans, browser-only save/restore, edit/print/budget handoff and all-viewport regression coverage; 156 browser scenarios pass

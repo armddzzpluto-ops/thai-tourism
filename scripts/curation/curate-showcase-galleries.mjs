@@ -29,8 +29,8 @@ if (!cwebp && !imagemagick) {
 
 const sources = readJson(sourcePath);
 const showcaseSlugs = Object.keys(sources);
-if (showcaseSlugs.length !== 5 || Object.values(sources).some(item => item.images?.length !== 3)) {
-  throw new Error("The showcase source manifest must contain exactly five provinces and three images per province.");
+if (!showcaseSlugs.length || Object.values(sources).some(item => item.images?.length !== 3)) {
+  throw new Error("Each showcase province must have three source images.");
 }
 const requestedSlugs = process.argv.slice(2);
 const slugs = requestedSlugs.length ? requestedSlugs : showcaseSlugs;
@@ -66,7 +66,9 @@ async function resolveCommonsFile(fileTitle) {
   }
 
   return {
-    downloadUrl: assertTrustedCommonsUrl(info.thumburl || info.url, "upload.wikimedia.org"),
+    downloadUrl: info.thumburl && new URL(info.thumburl).hostname === "thumb.wikimedia.org"
+      ? assertTrustedCommonsUrl(info.thumburl, "thumb.wikimedia.org")
+      : assertTrustedCommonsUrl(info.thumburl || info.url, "upload.wikimedia.org"),
     imageSource: assertTrustedCommonsUrl(info.descriptionurl, "commons.wikimedia.org").href,
     photoCredit: normalizePlainText(info.extmetadata?.Artist?.value) || "Wikimedia Commons contributor",
     license: normalizePlainText(info.extmetadata?.LicenseShortName?.value || info.extmetadata?.UsageTerms?.value)
@@ -102,14 +104,12 @@ async function downloadImage(url) {
 }
 
 function convertToWebp(input, output) {
-  if (cwebp) {
+  if (cwebp && imagemagick !== "magick") {
     execFileSync(cwebp, ["-quiet", "-q", "82", "-resize", "1600", "0", "-", "-o", output], { input });
     return;
   }
 
-  const args = imagemagick === "magick"
-    ? ["convert", "-", "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output]
-    : ["-", "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output];
+  const args = ["-", "-auto-orient", "-resize", "1600x1600>", "-quality", "82", output];
   execFileSync(imagemagick, args, { input });
 }
 
@@ -168,7 +168,7 @@ for (const slug of slugs) {
   validationRow.status = "complete";
   validationRow.galleryCount = 3;
   validationRow.fallbackCount = 0;
-  validationRow.reviewedOn = "2026-09-18";
+  validationRow.reviewedOn = provinceSource.reviewedOn || "2026-09-18";
 }
 
 writeJson(manifestPath, manifest);

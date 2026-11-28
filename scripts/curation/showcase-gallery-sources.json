@@ -1,4 +1,112 @@
 {
+  "chiang-rai": {
+    "province": "Chiang Rai",
+    "reviewedOn": "2026-11-29",
+    "images": [
+      {
+        "fileTitle": "File:Wat Rong Khun-001.jpg",
+        "captionEn": "White temple spire and sculpted tree at Wat Rong Khun",
+        "captionTh": "ยอดอาคารสีขาวและไม้ตัดแต่งที่วัดร่องขุ่น"
+      },
+      {
+        "fileTitle": "File:White Temple XXI.jpg",
+        "captionEn": "Ornate white gable beside the lawn at Wat Rong Khun",
+        "captionTh": "หน้าบันลวดลายสีขาวริมสนามหญ้าที่วัดร่องขุ่น"
+      },
+      {
+        "fileTitle": "File:Chiang Rai - Wat Rong Khun - 0024.jpg",
+        "captionEn": "Bridge and white facade reflected in the pond at Wat Rong Khun",
+        "captionTh": "สะพานและเงาสะท้อนของอาคารสีขาวในสระที่วัดร่องขุ่น"
+      }
+    ]
+  },
+  "sukhothai": {
+    "province": "Sukhothai",
+    "reviewedOn": "2026-11-29",
+    "images": [
+      {
+        "fileTitle": "File:Wat Mahathat, Sukhothai (I).jpg",
+        "photoCredit": "Supanut Arunoprayote",
+        "captionEn": "Wat Mahathat reflected in the water at Sukhothai Historical Park",
+        "captionTh": "เงาสะท้อนวัดมหาธาตุในสระน้ำ อุทยานประวัติศาสตร์สุโขทัย"
+      },
+      {
+        "fileTitle": "File:13th Century Thai City of Sukhothai- Wat Mahathat, Buddha Statue, Sukhothai Historical Park.jpg",
+        "captionEn": "Seated Buddha against a brick wall at Wat Mahathat, Sukhothai",
+        "captionTh": "พระพุทธรูปประทับนั่งหน้าผนังอิฐที่วัดมหาธาตุ สุโขทัย"
+      },
+      {
+        "fileTitle": "File:Sukhothai Historical Park Wat Mahathat 05.jpg",
+        "captionEn": "Seated Buddha lit at night at Wat Mahathat, Sukhothai",
+        "captionTh": "พระพุทธรูปประทับนั่งท่ามกลางแสงไฟยามค่ำที่วัดมหาธาตุ สุโขทัย"
+      }
+    ]
+  },
+  "buri-ram": {
+    "province": "Buri Ram",
+    "reviewedOn": "2026-11-29",
+    "images": [
+      {
+        "fileTitle": "File:Phanom Rung castle pathway.jpg",
+        "captionEn": "Raised approach leading to the sanctuary at Phanom Rung",
+        "captionTh": "ทางเดินยกระดับมุ่งสู่ปราสาทพนมรุ้ง"
+      },
+      {
+        "fileTitle": "File:Phanom Rung Buriram Thailand 02.jpg",
+        "captionEn": "Stone posts lining the approach at Phanom Rung",
+        "captionTh": "เสาหินเรียงตามแนวทางเดินขึ้นปราสาทพนมรุ้ง"
+      },
+      {
+        "fileTitle": "File:Phanom Rung Buriram Thailand 06.jpg",
+        "captionEn": "Stone entrance and courtyard pool at Phanom Rung",
+        "captionTh": "ซุ้มประตูหินและสระน้ำในลานปราสาทพนมรุ้ง"
+      }
+    ]
+  },
+  "phra-nakhon-si-ayutthaya": {
+    "province": "Phra Nakhon Si Ayutthaya",
+    "reviewedOn": "2026-11-29",
+    "images": [
+      {
+        "fileTitle": "File:Templo Mahathat, Ayutthaya, Tailandia, 2013-08-23, DD 16.jpg",
+        "captionEn": "Scaffolding around a brick tower at Wat Mahathat, Ayutthaya, in 2013",
+        "captionTh": "นั่งร้านรอบยอดปรางค์อิฐที่วัดมหาธาตุ อยุธยา เมื่อปี 2556"
+      },
+      {
+        "fileTitle": "File:Templo Mahathat, Ayutthaya, Tailandia, 2013-08-23, DD 06.jpg",
+        "captionEn": "Brick tower beyond the courtyard at Wat Mahathat, Ayutthaya",
+        "captionTh": "ปรางค์อิฐที่มองเห็นจากลานวัดมหาธาตุ อยุธยา"
+      },
+      {
+        "fileTitle": "File:Templo Mahathat, Ayutthaya, Tailandia, 2013-08-23, DD 22.jpg",
+        "captionEn": "Seated Buddha beside a brick tower at Wat Mahathat, Ayutthaya",
+        "captionTh": "พระพุทธรูปประทับนั่งข้างปรางค์อิฐที่วัดมหาธาตุ อยุธยา"
+      }
+    ]
+  },
+  "kanchanaburi": {
+    "province": "Kanchanaburi",
+    "reviewedOn": "2026-11-29",
+    "images": [
+      {
+        "fileTitle": "File:River Kwai bridge (20).jpg",
+        "captionEn": "Passenger train crossing the River Kwai bridge in Kanchanaburi",
+        "captionTh": "ขบวนรถโดยสารบนสะพานข้ามแม่น้ำแคว กาญจนบุรี"
+      },
+      {
+        "fileTitle": "File:Kwai bridge Pano.jpg",
+        "captionEn": "Panoramic view of the River Kwai bridge and riverbank",
+        "captionTh": "ภาพมุมกว้างของสะพานข้ามแม่น้ำแควและชุมชนริมฝั่ง",
+        "photoCredit": "Supanut Arunoprayote"
+      },
+      {
+        "fileTitle": "File:River Kwai Bridge Railway Station.jpg",
+        "captionEn": "Train beside the platform at River Kwai Bridge station",
+        "captionTh": "ขบวนรถไฟข้างชานชาลาที่สถานีสะพานแควใหญ่",
+        "photoCredit": "Supanut Arunoprayote"
+      }
+    ]
+  },
   "bangkok": {
     "province": "Bangkok",
     "images": [

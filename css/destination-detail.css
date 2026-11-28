@@ -424,6 +424,14 @@
 
 .detail-gallery figure:hover img { transform: scale(1.025); }
 
+.detail-gallery small a {
+  display: inline-block;
+  margin: 6px 13px 0;
+  color: var(--text-mid);
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+}
+
 .detail-gallery figcaption {
   min-height: 56px;
   padding: 11px 13px;

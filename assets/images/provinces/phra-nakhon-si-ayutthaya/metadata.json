@@ -23,9 +23,11 @@
       "slug": "phra-nakhon-si-ayutthaya",
       "role": "gallery-1",
       "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
-      "caption": "Balloon Festival @ Ayuthaya",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014042208/http://www.panoramio.com/user/96256?with_photo_id=29742692\">Boonchai C</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Balloon_Festival_@_Ayuthaya_-_panoramio_(46).jpg",
+      "caption": "Scaffolding around a brick tower at Wat Mahathat, Ayutthaya, in 2013",
+      "captionTh": "นั่งร้านรอบยอดปรางค์อิฐที่วัดมหาธาตุ อยุธยา เมื่อปี 2556",
+      "photoCredit": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_16.jpg",
       "isFallback": false
     },
     {
@@ -33,9 +35,11 @@
       "slug": "phra-nakhon-si-ayutthaya",
       "role": "gallery-2",
       "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
-      "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016233103/http://www.panoramio.com/user/3232473?with_photo_id=41182187\">obarber in thailand</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(1).jpg",
+      "caption": "Brick tower beyond the courtyard at Wat Mahathat, Ayutthaya",
+      "captionTh": "ปรางค์อิฐที่มองเห็นจากลานวัดมหาธาตุ อยุธยา",
+      "photoCredit": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_06.jpg",
       "isFallback": false
     },
     {
@@ -43,9 +47,11 @@
       "slug": "phra-nakhon-si-ayutthaya",
       "role": "gallery-3",
       "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
-      "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-      "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018024750/http://www.panoramio.com/user/3232473?with_photo_id=41182225\">obarber in thailand</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(2).jpg",
+      "caption": "Seated Buddha beside a brick tower at Wat Mahathat, Ayutthaya",
+      "captionTh": "พระพุทธรูปประทับนั่งข้างปรางค์อิฐที่วัดมหาธาตุ อยุธยา",
+      "photoCredit": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_22.jpg",
       "isFallback": false
     }
   ]
