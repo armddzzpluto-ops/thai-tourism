@@ -246,9 +246,11 @@
         "slug": "buri-ram",
         "role": "gallery-1",
         "file": "assets/images/provinces/buri-ram/gallery-1.webp",
-        "caption": "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Media_lib&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Media lib (page does not exist)\">Media lib</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Buriram_Bsp_1995-99.jpg",
+        "caption": "Raised approach leading to the sanctuary at Phanom Rung",
+        "captionTh": "ทางเดินยกระดับมุ่งสู่ปราสาทพนมรุ้ง",
+        "photoCredit": "Z3144228",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_castle_pathway.jpg",
         "isFallback": false
       },
       {
@@ -256,9 +258,11 @@
         "slug": "buri-ram",
         "role": "gallery-2",
         "file": "assets/images/provinces/buri-ram/gallery-2.webp",
-        "caption": "Gross Provincial Product (GPP) der Provinz Buriram (in Mio. Baht, zum gültigen Marktpreis)",
-        "photoCredit": "World24",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:GPP_Buriram.jpg",
+        "caption": "Stone posts lining the approach at Phanom Rung",
+        "captionTh": "เสาหินเรียงตามแนวทางเดินขึ้นปราสาทพนมรุ้ง",
+        "photoCredit": "Philip Nalangan",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_Buriram_Thailand_02.jpg",
         "isFallback": false
       },
       {
@@ -266,9 +270,11 @@
         "slug": "buri-ram",
         "role": "gallery-3",
         "file": "assets/images/provinces/buri-ram/gallery-3.webp",
-        "caption": "Aerial view inside Phutthaisong School",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wiraphat_Raksat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wiraphat Raksat (page does not exist)\">Wiraphat Raksat</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B9%84%E0%B8%98%E0%B8%AA%E0%B8%87.jpg",
+        "caption": "Stone entrance and courtyard pool at Phanom Rung",
+        "captionTh": "ซุ้มประตูหินและสระน้ำในลานปราสาทพนมรุ้ง",
+        "photoCredit": "Philip Nalangan",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_Buriram_Thailand_06.jpg",
         "isFallback": false
       }
     ]
@@ -612,9 +618,7 @@
     "galleryImages": [
       "assets/images/provinces/chiang-rai/gallery-1.webp",
       "assets/images/provinces/chiang-rai/gallery-2.webp",
-      "assets/images/provinces/chiang-rai/gallery-3.webp",
-      "assets/images/provinces/chiang-rai/gallery-4.webp",
-      "assets/images/provinces/chiang-rai/gallery-5.webp"
+      "assets/images/provinces/chiang-rai/gallery-3.webp"
     ],
     "attribution": [
       {
@@ -632,9 +636,11 @@
         "slug": "chiang-rai",
         "role": "gallery-1",
         "file": "assets/images/provinces/chiang-rai/gallery-1.webp",
-        "caption": "Photo of Chiang Rai.",
-        "photoCredit": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Christopher_Michel\" class=\"extiw\" title=\"w:en:Christopher Michel\"><span title=\"American entrepreneur, photographer, and investor\">Christopher Michel</span></a></bdi>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:20100228_chiang_rai3_7642_(4444147157).jpg",
+        "caption": "White temple spire and sculpted tree at Wat Rong Khun",
+        "captionTh": "ยอดอาคารสีขาวและไม้ตัดแต่งที่วัดร่องขุ่น",
+        "photoCredit": "Ddalbiez",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Wat_Rong_Khun-001.jpg",
         "isFallback": false
       },
       {
@@ -642,9 +648,11 @@
         "slug": "chiang-rai",
         "role": "gallery-2",
         "file": "assets/images/provinces/chiang-rai/gallery-2.webp",
-        "caption": "Chiang Rai Province, Golden Triangle",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Heiko_Trurnit&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Heiko Trurnit (page does not exist)\">Heiko Trurnit</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Akha_Village_in_the_1980ies.jpg",
+        "caption": "Ornate white gable beside the lawn at Wat Rong Khun",
+        "captionTh": "หน้าบันลวดลายสีขาวริมสนามหญ้าที่วัดร่องขุ่น",
+        "photoCredit": "Hans-Jürgen Neubert",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:White_Temple_XXI.jpg",
         "isFallback": false
       },
       {
@@ -652,29 +660,11 @@
         "slug": "chiang-rai",
         "role": "gallery-3",
         "file": "assets/images/provinces/chiang-rai/gallery-3.webp",
-        "caption": "Burmese-Chiang Rai",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Photon34\" title=\"User:Photon34\">Photon34</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Burmese-Chiang_Rai.png",
-        "isFallback": false
-      },
-      {
-        "province": "Chiang Rai",
-        "slug": "chiang-rai",
-        "role": "gallery-4",
-        "file": "assets/images/provinces/chiang-rai/gallery-4.webp",
-        "caption": "Chiang Rai",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497707213).jpg",
-        "isFallback": false
-      },
-      {
-        "province": "Chiang Rai",
-        "slug": "chiang-rai",
-        "role": "gallery-5",
-        "file": "assets/images/provinces/chiang-rai/gallery-5.webp",
-        "caption": "Chiang Rai",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/99092496@N00\">Visions of Domino</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_(23497708963).jpg",
+        "caption": "Bridge and white facade reflected in the pond at Wat Rong Khun",
+        "captionTh": "สะพานและเงาสะท้อนของอาคารสีขาวในสระที่วัดร่องขุ่น",
+        "photoCredit": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Chiang_Rai_-_Wat_Rong_Khun_-_0024.jpg",
         "isFallback": false
       }
     ]
@@ -882,9 +872,11 @@
         "slug": "kanchanaburi",
         "role": "gallery-1",
         "file": "assets/images/provinces/kanchanaburi/gallery-1.webp",
-        "caption": "This is the AMURTEL Children's and Mother's Home <i>Baan Unrak</i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Cornelius383\" title=\"User:Cornelius383\">Cornelius383</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:02-Ananda_Marga_Children%27s_School_Sangkhlaburi.JPG",
+        "caption": "Passenger train crossing the River Kwai bridge in Kanchanaburi",
+        "captionTh": "ขบวนรถโดยสารบนสะพานข้ามแม่น้ำแคว กาญจนบุรี",
+        "photoCredit": "Krzysztof Golik",
+        "license": "CC BY-SA 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:River_Kwai_bridge_(20).jpg",
         "isFallback": false
       },
       {
@@ -892,9 +884,11 @@
         "slug": "kanchanaburi",
         "role": "gallery-2",
         "file": "assets/images/provinces/kanchanaburi/gallery-2.webp",
-        "caption": "<div class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]</div>",
-        "photoCredit": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/AvisHek\">Avis Hek</a></div>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:500px_photo_(28391891).jpeg",
+        "caption": "Panoramic view of the River Kwai bridge and riverbank",
+        "captionTh": "ภาพมุมกว้างของสะพานข้ามแม่น้ำแควและชุมชนริมฝั่ง",
+        "photoCredit": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Kwai_bridge_Pano.jpg",
         "isFallback": false
       },
       {
@@ -902,9 +896,11 @@
         "slug": "kanchanaburi",
         "role": "gallery-3",
         "file": "assets/images/provinces/kanchanaburi/gallery-3.webp",
-        "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
-        "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png",
+        "caption": "Train beside the platform at River Kwai Bridge station",
+        "captionTh": "ขบวนรถไฟข้างชานชาลาที่สถานีสะพานแควใหญ่",
+        "photoCredit": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:River_Kwai_Bridge_Railway_Station.jpg",
         "isFallback": false
       }
     ]
@@ -2292,9 +2288,11 @@
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-1",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-1.webp",
-        "caption": "Balloon Festival @ Ayuthaya",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161014042208/http://www.panoramio.com/user/96256?with_photo_id=29742692\">Boonchai C</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Balloon_Festival_@_Ayuthaya_-_panoramio_(46).jpg",
+        "caption": "Scaffolding around a brick tower at Wat Mahathat, Ayutthaya, in 2013",
+        "captionTh": "นั่งร้านรอบยอดปรางค์อิฐที่วัดมหาธาตุ อยุธยา เมื่อปี 2556",
+        "photoCredit": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_16.jpg",
         "isFallback": false
       },
       {
@@ -2302,9 +2300,11 @@
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-2",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-2.webp",
-        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161016233103/http://www.panoramio.com/user/3232473?with_photo_id=41182187\">obarber in thailand</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(1).jpg",
+        "caption": "Brick tower beyond the courtyard at Wat Mahathat, Ayutthaya",
+        "captionTh": "ปรางค์อิฐที่มองเห็นจากลานวัดมหาธาตุ อยุธยา",
+        "photoCredit": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_06.jpg",
         "isFallback": false
       },
       {
@@ -2312,9 +2312,11 @@
         "slug": "phra-nakhon-si-ayutthaya",
         "role": "gallery-3",
         "file": "assets/images/provinces/phra-nakhon-si-ayutthaya/gallery-3.webp",
-        "caption": "Ban Pho, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161018024750/http://www.panoramio.com/user/3232473?with_photo_id=41182225\">obarber in thailand</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:Ban_Pho,_Bang_Pa-in_District,_Phra_Nakhon_Si_Ayutthaya_13160,_Thailand_-_panoramio_-_obarber_in_thailand_(2).jpg",
+        "caption": "Seated Buddha beside a brick tower at Wat Mahathat, Ayutthaya",
+        "captionTh": "พระพุทธรูปประทับนั่งข้างปรางค์อิฐที่วัดมหาธาตุ อยุธยา",
+        "photoCredit": "Diego Delso",
+        "license": "CC BY-SA 3.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Templo_Mahathat,_Ayutthaya,_Tailandia,_2013-08-23,_DD_22.jpg",
         "isFallback": false
       }
     ]
@@ -3286,9 +3288,11 @@
         "slug": "sukhothai",
         "role": "gallery-1",
         "file": "assets/images/provinces/sukhothai/gallery-1.webp",
-        "caption": "A Thai service member provides security at the landing zone of the observation point for the combined arms live-fire exercise during Cobra Gold 2013 in Ban Dan Lan Hoi, Sukhothai province, Thailand, Feb. 21, 2013. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Sgt. Rory Featherston, U.S. Army/Released)",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:130221-A-KW167-305_(8506779927).jpg",
+        "caption": "Wat Mahathat reflected in the water at Sukhothai Historical Park",
+        "captionTh": "เงาสะท้อนวัดมหาธาตุในสระน้ำ อุทยานประวัติศาสตร์สุโขทัย",
+        "photoCredit": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Wat_Mahathat,_Sukhothai_(I).jpg",
         "isFallback": false
       },
       {
@@ -3296,9 +3300,11 @@
         "slug": "sukhothai",
         "role": "gallery-2",
         "file": "assets/images/provinces/sukhothai/gallery-2.webp",
-        "caption": "Ziraphinya Somari, center, sticks her tongue out for multinational medical professionals during a cooperative health engagement in Sukhothai, Thailand, Feb. 13, 2014, during exercise Cobra Gold 2014. Cobra Gold is a regularly scheduled joint/combined exercise designed to ensure regional peace and strengthen the ability of the Royal Thai Armed Forces to defend Thailand or respond to regional contingencies. (DoD photo by Lance Cpl. Luis A. Rodriguez III, U.S. Marine Corps/Released)",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39955793@N07\">U.S. Department of Defense Current Photos</a>",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:140213-M-LT992-422_(12526334154).jpg",
+        "caption": "Seated Buddha against a brick wall at Wat Mahathat, Sukhothai",
+        "captionTh": "พระพุทธรูปประทับนั่งหน้าผนังอิฐที่วัดมหาธาตุ สุโขทัย",
+        "photoCredit": "Gary Todd",
+        "license": "Public domain",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:13th_Century_Thai_City_of_Sukhothai-_Wat_Mahathat,_Buddha_Statue,_Sukhothai_Historical_Park.jpg",
         "isFallback": false
       },
       {
@@ -3306,9 +3312,11 @@
         "slug": "sukhothai",
         "role": "gallery-3",
         "file": "assets/images/provinces/sukhothai/gallery-3.webp",
-        "caption": "Sukhothai",
-        "photoCredit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/37583176@N00\">Ninara</a> from Helsinki, Finland",
-        "imageSource": "https://commons.wikimedia.org/wiki/File:4Y1A0672_Sukhothai_(33790505994).jpg",
+        "caption": "Seated Buddha lit at night at Wat Mahathat, Sukhothai",
+        "captionTh": "พระพุทธรูปประทับนั่งท่ามกลางแสงไฟยามค่ำที่วัดมหาธาตุ สุโขทัย",
+        "photoCredit": "Ninaras",
+        "license": "CC BY 4.0",
+        "imageSource": "https://commons.wikimedia.org/wiki/File:Sukhothai_Historical_Park_Wat_Mahathat_05.jpg",
         "isFallback": false
       }
     ]

@@ -23,9 +23,11 @@
       "slug": "kanchanaburi",
       "role": "gallery-1",
       "file": "assets/images/provinces/kanchanaburi/gallery-1.webp",
-      "caption": "This is the AMURTEL Children's and Mother's Home <i>Baan Unrak</i> (\"House of Joy\") in Sangkhlaburi (North-West of Kanchanaburi Province of Thayland, close to Myanmar).",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Cornelius383\" title=\"User:Cornelius383\">Cornelius383</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:02-Ananda_Marga_Children%27s_School_Sangkhlaburi.JPG",
+      "caption": "Passenger train crossing the River Kwai bridge in Kanchanaburi",
+      "captionTh": "ขบวนรถโดยสารบนสะพานข้ามแม่น้ำแคว กาญจนบุรี",
+      "photoCredit": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:River_Kwai_bridge_(20).jpg",
       "isFallback": false
     },
     {
@@ -33,9 +35,11 @@
       "slug": "kanchanaburi",
       "role": "gallery-2",
       "file": "assets/images/provinces/kanchanaburi/gallery-2.webp",
-      "caption": "<div class=\"description\">\n500px provided description: Untitled [#thailand ,#bangkok ,#floating market ,#damnoen saduak]</div>",
-      "photoCredit": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/AvisHek\">Avis Hek</a></div>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:500px_photo_(28391891).jpeg",
+      "caption": "Panoramic view of the River Kwai bridge and riverbank",
+      "captionTh": "ภาพมุมกว้างของสะพานข้ามแม่น้ำแควและชุมชนริมฝั่ง",
+      "photoCredit": "Supanut Arunoprayote",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Kwai_bridge_Pano.jpg",
       "isFallback": false
     },
     {
@@ -43,9 +47,11 @@
       "slug": "kanchanaburi",
       "role": "gallery-3",
       "file": "assets/images/provinces/kanchanaburi/gallery-3.webp",
-      "caption": "A Thai Buddhist monk talking to a Catholic priest in a temple in Kanchanaburi",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/wiki/User:Chainwit.\" title=\"User:Chainwit.\">Chainwit.</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:A_Thai_monk_talks_to_a_papa.png",
+      "caption": "Train beside the platform at River Kwai Bridge station",
+      "captionTh": "ขบวนรถไฟข้างชานชาลาที่สถานีสะพานแควใหญ่",
+      "photoCredit": "Supanut Arunoprayote",
+      "license": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:River_Kwai_Bridge_Railway_Station.jpg",
       "isFallback": false
     }
   ]

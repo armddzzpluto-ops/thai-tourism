@@ -33,7 +33,8 @@
     "slug": "buri-ram",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-11-29"
   },
   {
     "province": "Chachoengsao",
@@ -75,8 +76,9 @@
     "province": "Chiang Rai",
     "slug": "chiang-rai",
     "status": "complete",
-    "galleryCount": 5,
-    "fallbackCount": 0
+    "galleryCount": 3,
+    "fallbackCount": 0,
+    "reviewedOn": "2026-11-29"
   },
   {
     "province": "Chonburi",
@@ -111,7 +113,8 @@
     "slug": "kanchanaburi",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-11-29"
   },
   {
     "province": "Khon Kaen",
@@ -322,7 +325,8 @@
     "slug": "phra-nakhon-si-ayutthaya",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-11-29"
   },
   {
     "province": "Phrae",
@@ -456,7 +460,8 @@
     "slug": "sukhothai",
     "status": "complete",
     "galleryCount": 3,
-    "fallbackCount": 0
+    "fallbackCount": 0,
+    "reviewedOn": "2026-11-29"
   },
   {
     "province": "Suphan Buri",

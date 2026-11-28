@@ -23,9 +23,11 @@
       "slug": "buri-ram",
       "role": "gallery-1",
       "file": "assets/images/provinces/buri-ram/gallery-1.webp",
-      "caption": "Gross Provincial Product of Buriram Province, Thailand (1995-99)",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Media_lib&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Media lib (page does not exist)\">Media lib</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Buriram_Bsp_1995-99.jpg",
+      "caption": "Raised approach leading to the sanctuary at Phanom Rung",
+      "captionTh": "ทางเดินยกระดับมุ่งสู่ปราสาทพนมรุ้ง",
+      "photoCredit": "Z3144228",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_castle_pathway.jpg",
       "isFallback": false
     },
     {
@@ -33,9 +35,11 @@
       "slug": "buri-ram",
       "role": "gallery-2",
       "file": "assets/images/provinces/buri-ram/gallery-2.webp",
-      "caption": "Gross Provincial Product (GPP) der Provinz Buriram (in Mio. Baht, zum gültigen Marktpreis)",
-      "photoCredit": "World24",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:GPP_Buriram.jpg",
+      "caption": "Stone posts lining the approach at Phanom Rung",
+      "captionTh": "เสาหินเรียงตามแนวทางเดินขึ้นปราสาทพนมรุ้ง",
+      "photoCredit": "Philip Nalangan",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_Buriram_Thailand_02.jpg",
       "isFallback": false
     },
     {
@@ -43,9 +47,11 @@
       "slug": "buri-ram",
       "role": "gallery-3",
       "file": "assets/images/provinces/buri-ram/gallery-3.webp",
-      "caption": "Aerial view inside Phutthaisong School",
-      "photoCredit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wiraphat_Raksat&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wiraphat Raksat (page does not exist)\">Wiraphat Raksat</a>",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AA%E0%B8%B9%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B9%84%E0%B8%98%E0%B8%AA%E0%B8%87.jpg",
+      "caption": "Stone entrance and courtyard pool at Phanom Rung",
+      "captionTh": "ซุ้มประตูหินและสระน้ำในลานปราสาทพนมรุ้ง",
+      "photoCredit": "Philip Nalangan",
+      "license": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Phanom_Rung_Buriram_Thailand_06.jpg",
       "isFallback": false
     }
   ]

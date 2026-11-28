@@ -31,7 +31,7 @@ Prefer images from:
 - If the pipeline cannot execute: stop the batch, report the blocking issue, and do not partially curate metadata.
 - Resume curation only after the pipeline is restored.
 - Use `scripts/curation/curate-province-gallery-batch.ps1` for general province batches.
-- Use `npm run curate:showcase` for the reviewed Bangkok, Chiang Mai, Phuket, Krabi and Surat Thani showcase set. Its exact Commons file list and bilingual captions live in `scripts/curation/showcase-gallery-sources.json`.
+- Use `npm run curate:showcase` for the ten reviewed province galleries. Their exact Commons file lists and bilingual captions live in `scripts/curation/showcase-gallery-sources.json`.
 - The showcase runner verifies live Commons metadata, records creator/license/source attribution, writes optimized WebP assets and regenerates `js/image-curation-data.js`. It supports `cwebp` and ImageMagick so the reviewed workflow is reproducible across maintainer environments.
 - Do not reintroduce retired download/build scripts or hand-edit generated curation data.
 

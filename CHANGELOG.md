@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-29 - Second-batch province galleries
+- Replaced 15 gallery selections across Chiang Rai, Sukhothai, Buri Ram, Ayutthaya and Kanchanaburi. Reviewed bilingual galleries now link their photos to Commons credits on the detail pages.
+
 ## 2026-11-23 - Navigation, search and storage reliability
 - Preserve direct routes and page-local preferences when browser storage is denied.
 - Give primary navigation real route links and use the same destination matcher for suggestions and results.

@@ -413,7 +413,7 @@ try {
     if (new Set(ids).size !== ids.length) failures.push("duplicate destination IDs found");
 
     const selectedSlugs = context.window.CROSS_PAGE_DESTINATION_SLUGS;
-    const showcaseSlugs = ["bangkok", "chiang-mai", "phuket", "krabi", "surat-thani"];
+    const showcaseSlugs = Object.keys(JSON.parse(read("scripts/curation/showcase-gallery-sources.json")));
     const imageCuration = context.window.IMAGE_CURATION || {};
     const destinationSlugs = new Set(destinations.map(item => item.provinceSlug || item.slug));
     const generatedDetailPages = destinations.filter(item =>

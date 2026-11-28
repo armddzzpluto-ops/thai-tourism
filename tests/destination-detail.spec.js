@@ -1,4 +1,25 @@
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
+
+const gallerySources = JSON.parse(readFileSync(new URL("../scripts/curation/showcase-gallery-sources.json", import.meta.url), "utf8"));
+for (const [slug, record] of Object.entries(gallerySources).filter(([, item]) => item.reviewedOn === "2026-11-29")) {
+  test(`reviewed gallery: ${slug}`, async ({ page }) => {
+    await page.goto(`/destinations/${slug}/`);
+    const pictures = page.locator(".detail-gallery figure");
+    await expect(pictures).toHaveCount(4); // Unchanged hero, then three reviewed photos.
+    for (const lang of ["th", "en"]) {
+      if (lang === "en") await page.locator("#detail-language").click();
+      for (const [i, photo] of record.images.entries()) {
+        const figure = pictures.nth(i + 1);
+        const caption = lang === "th" ? photo.captionTh : photo.captionEn;
+        await expect(figure.locator("figcaption")).toHaveText(caption);
+        await expect(figure.locator("img")).toHaveAttribute("alt", caption);
+        const href = await figure.locator("a").getAttribute("href");
+        expect(decodeURIComponent(new URL(href).pathname).replaceAll("_", " ")).toBe("/wiki/" + photo.fileTitle);
+      }
+    }
+  });
+}
 
 test("generated province detail uses the responsive shared visual shell", async ({ page }) => {
   await page.goto("/destinations/sa-kaeo/");

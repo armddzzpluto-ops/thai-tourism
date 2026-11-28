@@ -84,7 +84,11 @@ for (const [index, destination] of destinations.entries()) {
     const caption = destination.galleryCaptionsTh?.length
       ? `<figcaption data-th="${escapeHtml(captionTh)}" data-en="${escapeHtml(captionEn)}">${escapeHtml(captionTh)}</figcaption>`
       : `<figcaption>${escapeHtml(captionEn)}</figcaption>`;
-    return `<figure><img src="../../${escapeHtml(source)}" alt="${escapeHtml(destination.galleryCaptionsTh?.length ? captionTh : captionEn)}"${bilingualAttributes} loading="${imageIndex === 0 ? "eager" : "lazy"}" decoding="async">${caption}</figure>`;
+    const credit = destination.galleryAttribution?.find(item => item.file === source && item.captionTh && item.license);
+    const creditLink = credit && /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/i.test(credit.imageSource)
+      ? `<small><a href="${escapeHtml(credit.imageSource)}">${escapeHtml(credit.photoCredit)} · ${escapeHtml(credit.license)}</a></small>`
+      : "";
+    return `<figure><img src="../../${escapeHtml(source)}" alt="${escapeHtml(destination.galleryCaptionsTh?.length ? captionTh : captionEn)}"${bilingualAttributes} loading="${imageIndex === 0 ? "eager" : "lazy"}" decoding="async">${creditLink}${caption}</figure>`;
   }).join("\n          ");
 
   const jsonLd = JSON.stringify({
